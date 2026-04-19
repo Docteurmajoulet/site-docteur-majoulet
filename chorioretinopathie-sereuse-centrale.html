@@ -235,10 +235,11 @@
     MEGA MENU v5 — injecté par migrate_v5.py (2026-04-19)
    ================================================================ */
 header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(249,247,242,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
-.header-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 76px; }
+.header-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 76px; position: relative; }
+.nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
-nav.main-nav { flex: 1; display: flex; justify-content: center; }
+nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
 nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
@@ -291,13 +292,76 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Alexandre Majoulet — Accueil">
-            Dr Alexandre Majoulet
-            <span class="subtitle">Ophtalmologue · Rétinologue · Boulogne</span>
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
+            Dr Majoulet — Rétinologue
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
-                <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">Le Dr Majoulet</a></li>
+                <li class="nav-item" data-megamenu>
+                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-chirurgies">
+                        Chirurgie
+                        <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="mega-panel" id="mega-chirurgies" role="menu">
+                        <div class="mega-grid-chir">
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/vitrectomie">Vitrectomie</a></li>
+                                    <li><a href="/chirurgie-decollement-retine">Chirurgie du décollement de rétine</a></li>
+                                    <li><a href="/injection-intravitreenne">Injection intravitréenne</a></li>
+                                    <li><a href="/photocoagulation-laser">Photocoagulation laser rétinienne</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/chirurgie-cataracte">Phacoémulsification</a></li>
+                                    <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
+                                    <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
+                                    <li><a href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
+                                    <li><a href="/cataracte-secondaire-laser-yag">Laser YAG (cataracte secondaire)</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-glaucome">Chirurgie du glaucome</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/laser-slt">Laser SLT</a></li>
+                                    <li><a href="/iridotomie-laser-yag">Iridotomie laser YAG</a></li>
+                                    <li><a href="/migs">MIGS (chirurgie mini-invasive)</a></li>
+                                    <li><a href="/trabeculectomie">Trabéculectomie</a></li>
+                                    <li><a href="/sclerectomie-profonde-non-perforante">Sclérectomie profonde non perforante</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-surface-oculaire">Surface oculaire</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/ipl-lipiflow">IPL &amp; LipiFlow</a></li>
+                                    <li><a href="/incision-chalazion">Incision de chalazion</a></li>
+                                    <li><a href="/bouchons-meatiques">Bouchons méatiques</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col col-associes">
+                                <h3>Chez mes associés</h3>
+                                <p class="associes-intro">Spécialités pratiquées par mes confrères du cabinet Ophtalife, Boulogne-Billancourt.</p>
+                                <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
+                                </ul>
+                                <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
+                                    <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
+                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
+                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-item" data-megamenu>
                     <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-pathologies">
                         Pathologies
@@ -361,73 +425,8 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                         </div>
                     </div>
                 </li>
-                <li class="nav-item" data-megamenu>
-                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-chirurgies">
-                        Chirurgies
-                        <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
-                    <div class="mega-panel" id="mega-chirurgies" role="menu">
-                        <div class="mega-grid-chir">
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/vitrectomie">Vitrectomie</a></li>
-                                    <li><a href="/chirurgie-decollement-retine">Chirurgie du décollement de rétine</a></li>
-                                    <li><a href="/injection-intravitreenne">Injection intravitréenne</a></li>
-                                    <li><a href="/photocoagulation-laser">Photocoagulation laser rétinienne</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/chirurgie-cataracte">Phacoémulsification</a></li>
-                                    <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
-                                    <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
-                                    <li><a href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
-                                    <li><a href="/cataracte-secondaire-laser-yag">Laser YAG (cataracte secondaire)</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-glaucome">Chirurgie du glaucome</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/laser-slt">Laser SLT</a></li>
-                                    <li><a href="/iridotomie-laser-yag">Iridotomie laser YAG</a></li>
-                                    <li><a href="/migs">MIGS (chirurgie mini-invasive)</a></li>
-                                    <li><a href="/trabeculectomie">Trabéculectomie</a></li>
-                                    <li><a href="/sclerectomie-profonde-non-perforante">Sclérectomie profonde non perforante</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-surface-oculaire">Surface oculaire</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/ipl-lipiflow">IPL &amp; LipiFlow</a></li>
-                                    <li><a href="/incision-chalazion">Incision de chalazion</a></li>
-                                    <li><a href="/bouchons-meatiques">Bouchons méatiques</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col col-associes">
-                                <h3>Chez mes associés</h3>
-                                <p class="associes-intro">Spécialités pratiquées par mes confrères du cabinet Ophtalife, Boulogne-Billancourt.</p>
-                                <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
-                                </ul>
-                                <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
-                                    <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
-                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
+                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>

@@ -1,7 +1,7 @@
 # Paquet de déploiement — docteurmajoulet.com
 
 **Date de génération :** 19 avril 2026
-**Version :** v5.2 (mega menu + 9 pillars + 8 optiques + 8 urgences/pédiatrie + 16 fiches transition Batch 5)
+**Version :** v5.5 (header simplifié : logo gauche « Dr Majoulet — Rétinologue » + spacer + Chirurgie · Pathologies · À propos · Contact + bouton Doctolib ; homepage restaurée depuis backup avec nouveau header)
 
 Ce dossier contient **tout ce qu'il faut uploader sur GitHub** pour mettre en
 ligne la nouvelle version du site via Netlify. Rien d'autre. Aucun fichier de

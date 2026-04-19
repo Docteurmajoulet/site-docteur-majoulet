@@ -230,6 +230,7 @@
             --shadow-lg: 0 8px 40px rgba(40,51,57,0.1);
             --radius: 12px;
             --radius-sm: 8px;
+    --accent-chir: #6b5d3f;
         }
 
         html { scroll-behavior: smooth; font-size: 16px; }
@@ -439,14 +440,17 @@
         /* ===== SPECIALTIES ===== */
         #specialites { background: var(--blanc); }
 
-        .specialties-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .specialties-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        @media (max-width: 1100px) { .specialties-grid { grid-template-columns: repeat(2, 1fr); } }
 
         .specialty-card {
             background: var(--blanc-naturel);
             border-radius: var(--radius);
-            padding: 36px 28px;
+            padding: 30px 24px 26px;
             border: 1px solid var(--border);
             transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
         }
         .specialty-card:hover {
             transform: translateY(-4px);
@@ -455,17 +459,33 @@
         }
 
         .specialty-icon {
-            width: 64px; height: 64px;
+            width: 56px; height: 56px;
             background: var(--prusse);
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             overflow: hidden;
         }
-        .specialty-icon img { width: 40px; height: 40px; object-fit: contain; }
+        .specialty-icon img { width: 34px; height: 34px; object-fit: contain; }
 
-        .specialty-card h3 { margin-bottom: 10px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
-        .specialty-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.65; font-weight: 400; }
+        .specialty-card h3 { margin-bottom: 10px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .specialty-card p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; font-weight: 400; margin-bottom: 14px; }
+
+        .specialty-card .card-link {
+            margin-top: auto;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--prusse);
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s, color 0.2s;
+        }
+        .specialty-card .card-link:hover { color: var(--prusse-light); gap: 10px; }
+        .specialty-card .card-link::after { content: "→"; font-size: 0.9rem; }
 
         /* ===== PARCOURS ===== */
         #parcours { background: var(--blanc-naturel); }
@@ -742,101 +762,58 @@
             .fade-in { opacity: 1; transform: none; }
         }
     
-
-/* === Header v5.5 — mega menu === */
 /* ================================================================
-    MEGA MENU v5 — identique sur toutes les pages
+    MEGA MENU v5 — injecté par migrate_v5.py (2026-04-19)
    ================================================================ */
 header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(249,247,242,0.97); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
-
-.header-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 76px; position: relative; }
-.nav-item[data-megamenu] { position: static; }
-
+.header-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 76px; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
-
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
-
-nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
-
-.nav-list { list-style: none; display: flex; gap: 4px; }
-
-.nav-item { position: relative; }
-
-.nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
-
-.nav-link:hover, .nav-link:focus-visible, .nav-item.is-open .nav-link { color: var(--prusse); }
-
-.nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
-
-.nav-item.is-open .caret { transform: rotate(180deg); }
-
-.mega-panel { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-8px); min-width: 1140px; max-width: 96vw; background: var(--blanc); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 16px 48px rgba(40,51,57,0.14); padding: 32px 36px 28px; opacity: 0; visibility: hidden; transition: opacity 0.18s, visibility 0.18s, transform 0.18s; }
-
-.nav-item.is-open .mega-panel { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
-
+nav.main-nav { flex: 1; display: flex; justify-content: center; }
+nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
+nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
+nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
+nav.main-nav .nav-link:hover, nav.main-nav .nav-link:focus-visible, nav.main-nav .nav-item.is-open .nav-link { color: var(--prusse); }
+nav.main-nav .nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
+nav.main-nav .nav-item.is-open .caret { transform: rotate(180deg); }
+.mega-panel { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-8px); min-width: 1140px; max-width: 96vw; background: var(--blanc, #ffffff); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 16px 48px rgba(40,51,57,0.14); padding: 32px 36px 28px; opacity: 0; visibility: hidden; transition: opacity 0.18s, visibility 0.18s, transform 0.18s; }
+nav.main-nav .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 .mega-grid-pathos { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr 1.2fr; gap: 28px; }
-
 .mega-grid-chir { display: grid; grid-template-columns: 1.3fr 1.3fr 1.1fr 1fr 1.2fr; gap: 24px; }
-
 .mega-col h3 { font-size: 0.75rem; font-weight: 700; color: var(--prusse); text-transform: uppercase; letter-spacing: 0.1em; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid var(--sable); margin-top: 0; }
-
 .mega-col h3 a { color: var(--prusse); display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
-
 .mega-col h3 a:hover { color: var(--prusse-light); }
-
 .mega-col h3 a::after { content: "→"; font-size: 0.8rem; opacity: 0.6; transition: transform 0.2s; }
-
 .mega-col h3 a:hover::after { transform: translateX(3px); }
-
-.mega-list { list-style: none; display: flex; flex-direction: column; gap: 2px; padding-left: 0; }
-
+.mega-list { list-style: none; display: flex; flex-direction: column; gap: 2px; padding-left: 0; margin-bottom: 0; }
 .mega-list li { margin-bottom: 0; }
-
 .mega-list a { display: block; padding: 6px 8px; font-size: 0.86rem; color: var(--text-light); border-radius: 6px; transition: all 0.15s; position: relative; text-decoration: none; }
-
 .mega-list a:hover, .mega-list a:focus-visible { background: var(--blanc-naturel); color: var(--prusse); padding-left: 12px; }
-
-.mega-subhead { font-size: 0.68rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.12em; padding: 12px 8px 4px; margin-top: 8px; border-top: 1px dashed var(--border); }
-
+.mega-subhead { font-size: 0.68rem; font-weight: 700; color: var(--text-muted, #7a8a92); text-transform: uppercase; letter-spacing: 0.12em; padding: 12px 8px 4px; margin-top: 8px; border-top: 1px dashed var(--border); }
 .mega-subhead:first-child { border-top: none; margin-top: 0; padding-top: 0; }
-
 .mega-list a.external::after { content: "↗"; margin-left: 6px; font-size: 0.75rem; color: var(--sable); font-weight: 600; }
-
-.col-associes { background: var(--blanc-naturel); border-radius: var(--radius-sm); padding: 14px 14px 10px; margin-top: -6px; }
-
+.col-associes { background: var(--blanc-naturel); border-radius: var(--radius-sm, 8px); padding: 14px 14px 10px; margin-top: -6px; }
 .col-associes h3 { border-bottom-color: var(--bleu-gris); }
-
-.col-associes .associes-intro { font-size: 0.72rem; color: var(--text-muted); padding: 2px 4px 8px; line-height: 1.4; font-style: italic; }
-
-.nav-cta { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: 50px; background: var(--prusse); color: var(--blanc-naturel); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.15s; }
-
-.nav-cta:hover { background: var(--prusse-light); transform: translateY(-1px); color: var(--blanc-naturel); }
-
-.mobile-toggle { display: none; background: none; border: none; width: 40px; height: 40px; cursor: pointer; padding: 0; position: relative; }
-
-.mobile-toggle span { position: absolute; left: 8px; right: 8px; height: 2px; background: var(--prusse); border-radius: 1px; transition: all 0.25s; }
-
-.mobile-toggle span:nth-child(1) { top: 13px; }
-
-.mobile-toggle span:nth-child(2) { top: 19px; }
-
-.mobile-toggle span:nth-child(3) { top: 25px; }
-
-body.menu-open .mobile-toggle span:nth-child(1) { top: 19px; transform: rotate(45deg); }
-
-body.menu-open .mobile-toggle span:nth-child(2) { opacity: 0; }
-
-body.menu-open .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-45deg); }
-
+.col-associes .associes-intro { font-size: 0.72rem; color: var(--text-muted, #7a8a92); padding: 2px 4px 8px; line-height: 1.4; font-style: italic; }
+header.site-header .nav-cta { display: inline-flex; align-items: center; gap: 8px; padding: 11px 22px; border-radius: 50px; background: var(--prusse); color: var(--blanc-naturel); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+header.site-header .nav-cta:hover { background: var(--prusse-light); transform: translateY(-1px); color: var(--blanc-naturel); }
+header.site-header .mobile-toggle { display: none; background: none; border: none; width: 40px; height: 40px; cursor: pointer; padding: 0; position: relative; }
+header.site-header .mobile-toggle span { position: absolute; left: 8px; right: 8px; height: 2px; background: var(--prusse); border-radius: 1px; transition: all 0.25s; }
+header.site-header .mobile-toggle span:nth-child(1) { top: 13px; } header.site-header .mobile-toggle span:nth-child(2) { top: 19px; } header.site-header .mobile-toggle span:nth-child(3) { top: 25px; }
+body.menu-open header.site-header .mobile-toggle span:nth-child(1) { top: 19px; transform: rotate(45deg); }
+body.menu-open header.site-header .mobile-toggle span:nth-child(2) { opacity: 0; }
+body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-45deg); }
 @media (max-width: 980px) {
-    nav.main-nav { display: none; } .mobile-toggle { display: block; } .nav-cta.desktop { display: none; }
+    nav.main-nav { display: none; } header.site-header .mobile-toggle { display: block; } header.site-header .nav-cta.desktop { display: none; }
     body.menu-open nav.main-nav { display: block; position: fixed; top: 76px; left: 0; right: 0; bottom: 0; background: var(--blanc-naturel); overflow-y: auto; z-index: 99; padding: 20px 24px 60px; }
-    .nav-list { flex-direction: column; gap: 0; }
-    .nav-link { width: 100%; padding: 18px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
+    nav.main-nav .nav-list { flex-direction: column; gap: 0; }
+    nav.main-nav .nav-link { width: 100%; padding: 18px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
     .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 16px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
-    .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
+    nav.main-nav .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
     .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; gap: 18px; }
 }
+/* ============= END MEGA MENU v5 ============= */
+
 </style>
 </head>
 <body>
@@ -846,76 +823,13 @@ body.menu-open .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-
 <!-- ===== NAVIGATION ===== -->
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Alexandre Majoulet — Accueil">
+            Dr Alexandre Majoulet
+            <span class="subtitle">Ophtalmologue · Rétinologue · Boulogne</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
-                <li class="nav-item" data-megamenu>
-                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-chirurgies">
-                        Chirurgie
-                        <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    </button>
-                    <div class="mega-panel" id="mega-chirurgies" role="menu">
-                        <div class="mega-grid-chir">
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/vitrectomie">Vitrectomie</a></li>
-                                    <li><a href="/chirurgie-decollement-retine">Chirurgie du décollement de rétine</a></li>
-                                    <li><a href="/injection-intravitreenne">Injection intravitréenne</a></li>
-                                    <li><a href="/photocoagulation-laser">Photocoagulation laser rétinienne</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/chirurgie-cataracte">Phacoémulsification</a></li>
-                                    <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
-                                    <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
-                                    <li><a href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
-                                    <li><a href="/cataracte-secondaire-laser-yag">Laser YAG (cataracte secondaire)</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-glaucome">Chirurgie du glaucome</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/laser-slt">Laser SLT</a></li>
-                                    <li><a href="/iridotomie-laser-yag">Iridotomie laser YAG</a></li>
-                                    <li><a href="/migs">MIGS (chirurgie mini-invasive)</a></li>
-                                    <li><a href="/trabeculectomie">Trabéculectomie</a></li>
-                                    <li><a href="/sclerectomie-profonde-non-perforante">Sclérectomie profonde non perforante</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/chirurgie-surface-oculaire">Surface oculaire</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/ipl-lipiflow">IPL &amp; LipiFlow</a></li>
-                                    <li><a href="/incision-chalazion">Incision de chalazion</a></li>
-                                    <li><a href="/bouchons-meatiques">Bouchons méatiques</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col col-associes">
-                                <h3>Chez mes associés</h3>
-                                <p class="associes-intro">Spécialités pratiquées par mes confrères du cabinet Ophtalife, Boulogne-Billancourt.</p>
-                                <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
-                                </ul>
-                                <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
-                                    <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">Le Dr Majoulet</a></li>
                 <li class="nav-item" data-megamenu>
                     <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-pathologies">
                         Pathologies
@@ -979,8 +893,73 @@ body.menu-open .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-
                         </div>
                     </div>
                 </li>
-                <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item" data-megamenu>
+                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-chirurgies">
+                        Chirurgies
+                        <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="mega-panel" id="mega-chirurgies" role="menu">
+                        <div class="mega-grid-chir">
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/vitrectomie">Vitrectomie</a></li>
+                                    <li><a href="/chirurgie-decollement-retine">Chirurgie du décollement de rétine</a></li>
+                                    <li><a href="/injection-intravitreenne">Injection intravitréenne</a></li>
+                                    <li><a href="/photocoagulation-laser">Photocoagulation laser rétinienne</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/chirurgie-cataracte">Phacoémulsification</a></li>
+                                    <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
+                                    <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
+                                    <li><a href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
+                                    <li><a href="/cataracte-secondaire-laser-yag">Laser YAG (cataracte secondaire)</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-glaucome">Chirurgie du glaucome</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/laser-slt">Laser SLT</a></li>
+                                    <li><a href="/iridotomie-laser-yag">Iridotomie laser YAG</a></li>
+                                    <li><a href="/migs">MIGS (chirurgie mini-invasive)</a></li>
+                                    <li><a href="/trabeculectomie">Trabéculectomie</a></li>
+                                    <li><a href="/sclerectomie-profonde-non-perforante">Sclérectomie profonde non perforante</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col">
+                                <h3><a href="/chirurgie-surface-oculaire">Surface oculaire</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/ipl-lipiflow">IPL &amp; LipiFlow</a></li>
+                                    <li><a href="/incision-chalazion">Incision de chalazion</a></li>
+                                    <li><a href="/bouchons-meatiques">Bouchons méatiques</a></li>
+                                </ul>
+                            </div>
+                            <div class="mega-col col-associes">
+                                <h3>Chez mes associés</h3>
+                                <p class="associes-intro">Spécialités pratiquées par mes confrères du cabinet Ophtalife, Boulogne-Billancourt.</p>
+                                <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
+                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
+                                </ul>
+                                <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
+                                    <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
+                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
+                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -1024,62 +1003,86 @@ body.menu-open .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-
     </div>
 </section>
 
-<!-- ===== SPÉCIALITÉS ===== -->
+<!-- ===== PATHOLOGIES ===== -->
 <section id="specialites">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-label">Domaines d'expertise</div>
-            <h2>Spécialités</h2>
-            <p>Une prise en charge complète des pathologies rétiniennes et de la cataracte, avec les techniques les plus récentes.</p>
+            <div class="section-label">Pathologies prises en charge</div>
+            <h2>Ce que je soigne</h2>
+            <p>Consultation, suivi et chirurgie des principales pathologies rétiniennes et du segment antérieur. Cliquez sur une pathologie pour en savoir plus.</p>
         </div>
         <div class="specialties-grid">
-            <!-- Suivi ophtalmologique -->
+            <!-- DMLA -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Lentilles.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="DMLA.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
-                <h3>Suivi ophtalmologique</h3>
-                <p>Consultation ophtalmologique complète, prescription de lunettes et lentilles de contact, dépistage des pathologies oculaires (glaucome, DMLA, rétinopathie diabétique).</p>
+                <h3>DMLA</h3>
+                <p>Dégénérescence maculaire liée à l'âge, forme sèche et exsudative. Diagnostic par OCT et traitement par injections intravitréennes d'anti-VEGF.</p>
+                <a class="card-link" href="/dmla" aria-label="En savoir plus sur la DMLA">En savoir plus</a>
             </div>
-            <!-- Chirurgie de la rétine -->
+            <!-- Rétinopathie diabétique -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Chirurgie-Retine.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="Diabete.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
-                <h3>Chirurgie de la rétine</h3>
-                <p>Chirurgie vitréo-rétinienne : décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive de dernière génération.</p>
+                <h3>Rétinopathie diabétique</h3>
+                <p>Dépistage, suivi et traitement de la rétinopathie diabétique et de l'œdème maculaire diabétique (laser, IVT, vitrectomie si besoin).</p>
+                <a class="card-link" href="/retinopathie-diabetique" aria-label="En savoir plus sur la rétinopathie diabétique">En savoir plus</a>
+            </div>
+            <!-- Décollement de rétine -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Chirurgie-Retine.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Décollement de rétine</h3>
+                <p>Urgence chirurgicale vitréo-rétinienne. Prise en charge par vitrectomie mini-invasive 25/27G ou indentation sclérale selon le cas.</p>
+                <a class="card-link" href="/decollement-retine" aria-label="En savoir plus sur le décollement de rétine">En savoir plus</a>
+            </div>
+            <!-- Occlusions veineuses -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Injections.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Occlusions veineuses</h3>
+                <p>Occlusion de branche ou de veine centrale de la rétine. Bilan étiologique et traitement de l'œdème maculaire par injections intravitréennes.</p>
+                <a class="card-link" href="/occlusions-veineuses" aria-label="En savoir plus sur les occlusions veineuses rétiniennes">En savoir plus</a>
+            </div>
+            <!-- Trou maculaire -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Echographie-Oculaire.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Trou maculaire</h3>
+                <p>Interruption anatomique du centre de la rétine entraînant une baisse d'acuité visuelle. Traitement chirurgical par vitrectomie avec pelage et tamponnement gazeux.</p>
+                <a class="card-link" href="/trou-maculaire" aria-label="En savoir plus sur le trou maculaire">En savoir plus</a>
+            </div>
+            <!-- Membrane épirétinienne -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Echographie-Oculaire.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Membrane épirétinienne</h3>
+                <p>Voile fibreux se développant à la surface de la macula, responsable de métamorphopsies. Pelage chirurgical lorsque la gêne visuelle est significative.</p>
+                <a class="card-link" href="/membrane-epiretinienne" aria-label="En savoir plus sur la membrane épirétinienne">En savoir plus</a>
             </div>
             <!-- Cataracte -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Cataracte.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="Cataracte.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
-                <h3>Chirurgie de la cataracte</h3>
-                <p>Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique). Récupération visuelle rapide et indolore.</p>
-            </div>
-            <!-- IVT -->
-            <div class="specialty-card fade-in">
-                <div class="specialty-icon">
-                    <img src="Injections.png" alt="" width="40" height="40" loading="lazy" decoding="async">
-                </div>
-                <h3>Injections intravitréennes</h3>
-                <p>IVT d'anti-VEGF et de corticoïdes pour le traitement de la DMLA exsudative, de l'œdème maculaire diabétique et des occlusions veineuses rétiniennes.</p>
-            </div>
-            <!-- DMLA -->
-            <div class="specialty-card fade-in">
-                <div class="specialty-icon">
-                    <img src="DMLA.png" alt="" width="40" height="40" loading="lazy" decoding="async">
-                </div>
-                <h3>DMLA</h3>
-                <p>Diagnostic et traitement de la dégénérescence maculaire liée à l'âge (forme sèche et exsudative). Suivi par OCT et injections intravitréennes d'anti-VEGF.</p>
+                <h3>Cataracte</h3>
+                <p>Opacification du cristallin liée à l'âge. Phacoémulsification par micro-incision avec implant personnalisé (monofocal, torique, multifocal / EDOF).</p>
+                <a class="card-link" href="/cataracte" aria-label="En savoir plus sur la cataracte">En savoir plus</a>
             </div>
             <!-- Glaucome -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Glaucome.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="Glaucome.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
                 <h3>Glaucome</h3>
-                <p>Dépistage, suivi et traitement du glaucome. Mesure de la pression intraoculaire, champ visuel, OCT des fibres nerveuses et prise en charge médicale ou chirurgicale.</p>
+                <p>Dépistage, mesure de la pression intraoculaire, champ visuel, OCT des fibres nerveuses. Traitement médical, laser SLT ou chirurgical selon les cas.</p>
+                <a class="card-link" href="/glaucome" aria-label="En savoir plus sur le glaucome">En savoir plus</a>
             </div>
         </div>
     </div>
@@ -1427,7 +1430,6 @@ body.menu-open .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 </script>
-
 
 <script>
 (function () {
