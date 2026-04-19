@@ -730,9 +730,13 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .header-inner { max-width: 1240px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 76px; position: relative; }
 .nav-item[data-megamenu] { position: static; }
 
-.site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
+.site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; white-space: nowrap; }
 
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+
+.site-logo .logo-city { color: var(--text-light); font-weight: 500; }
+
+@media (min-width: 980px) and (max-width: 1199px) { .site-logo .logo-city { display: none; } }
 
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 
@@ -824,8 +828,8 @@ body.menu-open .mobile-toggle span:nth-child(3) { top: 19px; transform: rotate(-
 <!-- ===== NAVIGATION ===== -->
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue à Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">à Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
