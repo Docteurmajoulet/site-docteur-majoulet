@@ -1,0 +1,91 @@
+# ==============================================================
+# Netlify _redirects — docteurmajoulet.com
+# Dr Alexandre Majoulet — Cabinet Ophtalife
+# --------------------------------------------------------------
+# Référence : https://docs.netlify.com/routing/redirects/
+# Syntaxe : [from]  [to]  [status]  [!force / conditions]
+# ==============================================================
+
+# ---------- 1. Canonicalisation du domaine ----------
+# Redirection 301 de docteur-majoulet.com (avec tiret) vers le domaine canonique sans tiret.
+# ⚠️ Prérequis Netlify :
+#   - Ajouter docteur-majoulet.com comme "Domain alias" dans Settings → Domain management.
+#   - Définir docteurmajoulet.com comme "Primary domain" (Netlify gère alors auto le 301).
+# La règle ci-dessous agit en filet de sécurité si Netlify ne déclenche pas la redirection auto.
+https://docteur-majoulet.com/*     https://docteurmajoulet.com/:splat     301!
+https://www.docteur-majoulet.com/* https://docteurmajoulet.com/:splat     301!
+http://docteur-majoulet.com/*      https://docteurmajoulet.com/:splat     301!
+
+# ---------- 2. www → apex (canonical sans www) ----------
+https://www.docteurmajoulet.com/*  https://docteurmajoulet.com/:splat     301!
+http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
+
+# ---------- 3. Pretty URLs (évite le .html visible) ----------
+# Netlify sert automatiquement /page quand page.html existe (option "Pretty URLs" activée par défaut).
+# Les règles suivantes ajoutent une redirection 301 depuis l'URL .html vers l'URL propre,
+# pour consolider le signal canonique SEO.
+/pathologies.html                /pathologies                301!
+/mentions-legales.html           /mentions-legales           301!
+/confidentialite.html            /confidentialite            301!
+/publications.html               /publications               301!
+# Pages pathologies (Batch 2 — éclatement SEO/GEO) :
+/dmla.html                       /dmla                       301!
+/decollement-retine.html         /decollement-retine         301!
+/trou-maculaire.html             /trou-maculaire             301!
+/membrane-epiretinienne.html     /membrane-epiretinienne     301!
+/retinopathie-diabetique.html    /retinopathie-diabetique    301!
+/cataracte.html                  /cataracte                  301!
+/occlusions-veineuses.html       /occlusions-veineuses       301!
+/dechirure-retine-corps-flottants.html  /dechirure-retine-corps-flottants  301!
+/chorioretinopathie-sereuse-centrale.html  /chorioretinopathie-sereuse-centrale  301!
+/glaucome.html                   /glaucome                   301!
+/myopie-forte.html               /myopie-forte               301!
+/secheresse-oculaire.html        /secheresse-oculaire        301!
+/uveites.html                    /uveites                    301!
+/vitrectomie.html                /vitrectomie                301!
+/injection-intravitreenne.html   /injection-intravitreenne   301!
+/keratocone.html                 /keratocone                 301!
+/decollement-posterieur-vitre.html  /decollement-posterieur-vitre  301!
+/retinite-pigmentaire.html       /retinite-pigmentaire       301!
+/cataracte-secondaire-laser-yag.html  /cataracte-secondaire-laser-yag  301!
+/hypertension-oculaire.html      /hypertension-oculaire      301!
+/chalazion.html                  /chalazion                  301!
+/blepharite.html                 /blepharite                 301!
+# Fiches « Suivi & corrections optiques » (Batch 3 — 2026-04-19) :
+/bilan-ophtalmologique.html      /bilan-ophtalmologique      301!
+/myopie.html                     /myopie                     301!
+/hypermetropie.html              /hypermetropie              301!
+/astigmatisme.html               /astigmatisme               301!
+/presbytie.html                  /presbytie                  301!
+/lunettes-prescription.html      /lunettes-prescription      301!
+/lentilles-de-contact.html       /lentilles-de-contact       301!
+/suivi-diabete-hta.html          /suivi-diabete-hta          301!
+# Page bio dédiée (à créer ultérieurement si besoin) :
+# /bio.html                      /bio                        301!
+# Pillars (Phase 3 — 2026-04-19) : 5 Pathologies + 4 Chirurgies :
+/retine.html                     /retine                     301!
+/cataracte-cristallin.html       /cataracte-cristallin       301!
+/glaucome-pression-oculaire.html /glaucome-pression-oculaire 301!
+/cornee-surface-paupieres.html   /cornee-surface-paupieres   301!
+/suivi-corrections-optiques.html /suivi-corrections-optiques 301!
+/chirurgie-retine.html           /chirurgie-retine           301!
+/chirurgie-cataracte.html        /chirurgie-cataracte        301!
+/chirurgie-glaucome.html         /chirurgie-glaucome         301!
+/chirurgie-surface-paupieres.html /chirurgie-surface-paupieres 301!
+# Batch 4 (2026-04-19) : 8 fiches « Urgences ophtalmologiques + Pédiatrie / dépistage » :
+/urgences-ophtalmologiques.html       /urgences-ophtalmologiques       301!
+/occlusion-artere-centrale-retine.html /occlusion-artere-centrale-retine 301!
+/baisse-brutale-vision.html           /baisse-brutale-vision           301!
+/flashs-phosphenes-myodesopsies.html  /flashs-phosphenes-myodesopsies  301!
+/amblyopie.html                       /amblyopie                       301!
+/strabisme-enfant.html                /strabisme-enfant                301!
+/depistage-visuel-enfant.html         /depistage-visuel-enfant         301!
+/myopie-enfant-freination.html        /myopie-enfant-freination        301!
+
+# ---------- 4. Anciennes URLs éventuelles ----------
+# (À compléter après audit de la Search Console : ajouter ici les anciennes URLs qui 404)
+# /ancienne-page   /nouvelle-page   301
+
+# ---------- 5. 404 personnalisée ----------
+# Netlify sert automatiquement /404.html si présent.
+# Pas de règle explicite nécessaire.
