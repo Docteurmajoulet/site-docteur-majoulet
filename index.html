@@ -440,14 +440,17 @@
         /* ===== SPECIALTIES ===== */
         #specialites { background: var(--blanc); }
 
-        .specialties-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+        .specialties-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; }
+        @media (max-width: 1100px) { .specialties-grid { grid-template-columns: repeat(2, 1fr); } }
 
         .specialty-card {
             background: var(--blanc-naturel);
             border-radius: var(--radius);
-            padding: 36px 28px;
+            padding: 30px 24px 26px;
             border: 1px solid var(--border);
             transition: all 0.3s;
+            display: flex;
+            flex-direction: column;
         }
         .specialty-card:hover {
             transform: translateY(-4px);
@@ -456,17 +459,33 @@
         }
 
         .specialty-icon {
-            width: 64px; height: 64px;
+            width: 56px; height: 56px;
             background: var(--prusse);
             border-radius: 50%;
             display: flex; align-items: center; justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             overflow: hidden;
         }
-        .specialty-icon img { width: 40px; height: 40px; object-fit: contain; }
+        .specialty-icon img { width: 34px; height: 34px; object-fit: contain; }
 
-        .specialty-card h3 { margin-bottom: 10px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
-        .specialty-card p { color: var(--text-muted); font-size: 0.88rem; line-height: 1.65; font-weight: 400; }
+        .specialty-card h3 { margin-bottom: 10px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.06em; }
+        .specialty-card p { color: var(--text-muted); font-size: 0.85rem; line-height: 1.6; font-weight: 400; margin-bottom: 14px; }
+
+        .specialty-card .card-link {
+            margin-top: auto;
+            font-size: 0.78rem;
+            font-weight: 600;
+            color: var(--prusse);
+            text-decoration: none;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: gap 0.2s, color 0.2s;
+        }
+        .specialty-card .card-link:hover { color: var(--prusse-light); gap: 10px; }
+        .specialty-card .card-link::after { content: "→"; font-size: 0.9rem; }
 
         /* ===== PARCOURS ===== */
         #parcours { background: var(--blanc-naturel); }
@@ -984,62 +1003,86 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
     </div>
 </section>
 
-<!-- ===== SPÉCIALITÉS ===== -->
+<!-- ===== PATHOLOGIES ===== -->
 <section id="specialites">
     <div class="container">
         <div class="section-header fade-in">
-            <div class="section-label">Domaines d'expertise</div>
-            <h2>Spécialités</h2>
-            <p>Une prise en charge complète des pathologies rétiniennes et de la cataracte, avec les techniques les plus récentes.</p>
+            <div class="section-label">Pathologies prises en charge</div>
+            <h2>Ce que je soigne</h2>
+            <p>Consultation, suivi et chirurgie des principales pathologies rétiniennes et du segment antérieur. Cliquez sur une pathologie pour en savoir plus.</p>
         </div>
         <div class="specialties-grid">
-            <!-- Suivi ophtalmologique -->
+            <!-- DMLA -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Lentilles.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="DMLA.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
-                <h3>Suivi ophtalmologique</h3>
-                <p>Consultation ophtalmologique complète, prescription de lunettes et lentilles de contact, dépistage des pathologies oculaires (glaucome, DMLA, rétinopathie diabétique).</p>
+                <h3>DMLA</h3>
+                <p>Dégénérescence maculaire liée à l'âge, forme sèche et exsudative. Diagnostic par OCT et traitement par injections intravitréennes d'anti-VEGF.</p>
+                <a class="card-link" href="/dmla" aria-label="En savoir plus sur la DMLA">En savoir plus</a>
             </div>
-            <!-- Chirurgie de la rétine -->
+            <!-- Rétinopathie diabétique -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Chirurgie-Retine.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="Diabete.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
-                <h3>Chirurgie de la rétine</h3>
-                <p>Chirurgie vitréo-rétinienne : décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive de dernière génération.</p>
+                <h3>Rétinopathie diabétique</h3>
+                <p>Dépistage, suivi et traitement de la rétinopathie diabétique et de l'œdème maculaire diabétique (laser, IVT, vitrectomie si besoin).</p>
+                <a class="card-link" href="/retinopathie-diabetique" aria-label="En savoir plus sur la rétinopathie diabétique">En savoir plus</a>
+            </div>
+            <!-- Décollement de rétine -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Chirurgie-Retine.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Décollement de rétine</h3>
+                <p>Urgence chirurgicale vitréo-rétinienne. Prise en charge par vitrectomie mini-invasive 25/27G ou indentation sclérale selon le cas.</p>
+                <a class="card-link" href="/decollement-retine" aria-label="En savoir plus sur le décollement de rétine">En savoir plus</a>
+            </div>
+            <!-- Occlusions veineuses -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Injections.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Occlusions veineuses</h3>
+                <p>Occlusion de branche ou de veine centrale de la rétine. Bilan étiologique et traitement de l'œdème maculaire par injections intravitréennes.</p>
+                <a class="card-link" href="/occlusions-veineuses" aria-label="En savoir plus sur les occlusions veineuses rétiniennes">En savoir plus</a>
+            </div>
+            <!-- Trou maculaire -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Echographie-Oculaire.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Trou maculaire</h3>
+                <p>Interruption anatomique du centre de la rétine entraînant une baisse d'acuité visuelle. Traitement chirurgical par vitrectomie avec pelage et tamponnement gazeux.</p>
+                <a class="card-link" href="/trou-maculaire" aria-label="En savoir plus sur le trou maculaire">En savoir plus</a>
+            </div>
+            <!-- Membrane épirétinienne -->
+            <div class="specialty-card fade-in">
+                <div class="specialty-icon">
+                    <img src="Echographie-Oculaire.png" alt="" width="34" height="34" loading="lazy" decoding="async">
+                </div>
+                <h3>Membrane épirétinienne</h3>
+                <p>Voile fibreux se développant à la surface de la macula, responsable de métamorphopsies. Pelage chirurgical lorsque la gêne visuelle est significative.</p>
+                <a class="card-link" href="/membrane-epiretinienne" aria-label="En savoir plus sur la membrane épirétinienne">En savoir plus</a>
             </div>
             <!-- Cataracte -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Cataracte.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="Cataracte.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
-                <h3>Chirurgie de la cataracte</h3>
-                <p>Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique). Récupération visuelle rapide et indolore.</p>
-            </div>
-            <!-- IVT -->
-            <div class="specialty-card fade-in">
-                <div class="specialty-icon">
-                    <img src="Injections.png" alt="" width="40" height="40" loading="lazy" decoding="async">
-                </div>
-                <h3>Injections intravitréennes</h3>
-                <p>IVT d'anti-VEGF et de corticoïdes pour le traitement de la DMLA exsudative, de l'œdème maculaire diabétique et des occlusions veineuses rétiniennes.</p>
-            </div>
-            <!-- DMLA -->
-            <div class="specialty-card fade-in">
-                <div class="specialty-icon">
-                    <img src="DMLA.png" alt="" width="40" height="40" loading="lazy" decoding="async">
-                </div>
-                <h3>DMLA</h3>
-                <p>Diagnostic et traitement de la dégénérescence maculaire liée à l'âge (forme sèche et exsudative). Suivi par OCT et injections intravitréennes d'anti-VEGF.</p>
+                <h3>Cataracte</h3>
+                <p>Opacification du cristallin liée à l'âge. Phacoémulsification par micro-incision avec implant personnalisé (monofocal, torique, multifocal / EDOF).</p>
+                <a class="card-link" href="/cataracte" aria-label="En savoir plus sur la cataracte">En savoir plus</a>
             </div>
             <!-- Glaucome -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Glaucome.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <img src="Glaucome.png" alt="" width="34" height="34" loading="lazy" decoding="async">
                 </div>
                 <h3>Glaucome</h3>
-                <p>Dépistage, suivi et traitement du glaucome. Mesure de la pression intraoculaire, champ visuel, OCT des fibres nerveuses et prise en charge médicale ou chirurgicale.</p>
+                <p>Dépistage, mesure de la pression intraoculaire, champ visuel, OCT des fibres nerveuses. Traitement médical, laser SLT ou chirurgical selon les cas.</p>
+                <a class="card-link" href="/glaucome" aria-label="En savoir plus sur le glaucome">En savoir plus</a>
             </div>
         </div>
     </div>
