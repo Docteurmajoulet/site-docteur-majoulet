@@ -82,6 +82,24 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /depistage-visuel-enfant.html         /depistage-visuel-enfant         301!
 /myopie-enfant-freination.html        /myopie-enfant-freination        301!
 
+# Batch 5 (2026-04-19) : 16 fiches de transition (bio + contact + 14 chirurgies) :
+/le-dr-majoulet.html                     /le-dr-majoulet                     301!
+/contact.html                            /contact                            301!
+/implants-monofocaux.html                /implants-monofocaux                301!
+/implants-toriques.html                  /implants-toriques                  301!
+/implants-multifocaux.html               /implants-multifocaux               301!
+/laser-slt.html                          /laser-slt                          301!
+/iridotomie-laser-yag.html               /iridotomie-laser-yag               301!
+/migs.html                               /migs                               301!
+/trabeculectomie.html                    /trabeculectomie                    301!
+/sclerectomie-profonde-non-perforante.html  /sclerectomie-profonde-non-perforante  301!
+/chirurgie-decollement-retine.html       /chirurgie-decollement-retine       301!
+/photocoagulation-laser.html             /photocoagulation-laser             301!
+/chirurgie-surface-oculaire.html         /chirurgie-surface-oculaire         301!
+/ipl-lipiflow.html                       /ipl-lipiflow                       301!
+/incision-chalazion.html                 /incision-chalazion                 301!
+/bouchons-meatiques.html                 /bouchons-meatiques                 301!
+
 # ---------- 4. Anciennes URLs éventuelles ----------
 # (À compléter après audit de la Search Console : ajouter ici les anciennes URLs qui 404)
 # /ancienne-page   /nouvelle-page   301
