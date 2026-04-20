@@ -202,8 +202,8 @@ body.menu-open { overflow: hidden; }
     nav.main-nav .nav-link { width: 100%; padding: 16px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
     .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 12px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
     nav.main-nav .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
-    .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; grid-template-areas: none; gap: 12px; }
-    .mega-grid-chir .mega-col-associes .associes-sub-grid { grid-template-columns: 1fr; gap: 6px 0; }
+    .mega-grid-pathos, .mega-grid-chir { display: flex; flex-direction: column; gap: 12px; }
+    .mega-grid-chir .mega-col-associes .associes-sub-grid { display: flex; flex-direction: column; gap: 6px; }
     /* Sections critiques tablette : grilles 2 col */
     .specialties-grid, .pathologies-grid, .chirurgies-grid, .conditions-grid { grid-template-columns: repeat(2, 1fr); }
 }
