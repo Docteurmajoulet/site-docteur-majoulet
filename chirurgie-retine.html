@@ -292,15 +292,52 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 .skip-link { position: absolute; left: -9999px; top: 0; padding: 12px 20px; background: var(--prusse); color: var(--blanc-naturel); font-weight: 600; text-decoration: none; z-index: 1000; }
 .skip-link:focus { left: 16px; top: 16px; color: var(--blanc-naturel); }
-@media (max-width: 980px) {
-    nav.main-nav { display: none; } .mobile-toggle { display: block; } .nav-cta.desktop { display: none; }
-    body.menu-open nav.main-nav { display: block; position: fixed; top: 76px; left: 0; right: 0; bottom: 0; background: var(--blanc-naturel); overflow-y: auto; z-index: 99; padding: 20px 24px 60px; }
-    .nav-list { flex-direction: column; gap: 0; }
-    .nav-link { width: 100%; padding: 18px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
-    .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 16px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
-    .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
-    .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; grid-template-areas: none; gap: 18px; }
-    .mega-grid-chir .mega-col-associes .associes-sub-grid { grid-template-columns: 1fr; gap: 8px 0; }
+/* ===== Menu mobile : overlay backdrop ===== */
+.menu-overlay { position: fixed; inset: 0; background: rgba(40,51,57,0.5); opacity: 0; visibility: hidden; z-index: 98; transition: opacity 0.25s ease, visibility 0.25s ease; pointer-events: none; }
+body.menu-open .menu-overlay { opacity: 1; visibility: visible; pointer-events: auto; }
+body.menu-open { overflow: hidden; }
+
+/* Tablette + mobile : drawer latéral droit + accordion mega-panels */
+@media (max-width: 1024px) {
+    nav.main-nav { display: none; }
+    header.site-header .mobile-toggle { display: block; }
+    header.site-header .nav-cta.desktop { display: none; }
+    body.menu-open nav.main-nav {
+        display: block; position: fixed; top: 0; right: 0; bottom: 0; left: auto;
+        width: min(380px, 88vw); background: var(--blanc-naturel);
+        box-shadow: -4px 0 24px rgba(40,51,57,0.18);
+        overflow-y: auto; z-index: 99;
+        padding: 92px 24px 40px;
+        transform: translateX(0); transition: transform 0.25s ease;
+    }
+    nav.main-nav .nav-list { flex-direction: column; gap: 0; }
+    nav.main-nav .nav-link { width: 100%; padding: 16px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
+    .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 12px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
+    nav.main-nav .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
+    .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; grid-template-areas: none; gap: 12px; }
+    .mega-grid-chir .mega-col-associes .associes-sub-grid { grid-template-columns: 1fr; gap: 6px 0; }
+    /* Sections critiques tablette : grilles 2 col */
+    .specialties-grid, .pathologies-grid, .chirurgies-grid, .conditions-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+    body.menu-open nav.main-nav { width: min(340px, 90vw); padding: 88px 20px 32px; }
+    /* Sections critiques mobile : 1 colonne */
+    .hero-content, .specialties-grid, .parcours-content, .contact-grid,
+    .pathologies-grid, .chirurgies-grid, .conditions-grid,
+    .author-block, .author-content { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+    .hero-content { text-align: center; }
+    .hero-visual { order: -1; }
+    footer .container p { font-size: 0.76rem; line-height: 1.7; }
+}
+
+@media (max-width: 480px) {
+    body.menu-open nav.main-nav { width: 100vw; box-shadow: none; }
+    h2 { font-size: 1.4rem; }
+    .hero h1 { font-size: 1.6rem; }
+    section { padding: 60px 0; }
+    footer .container p { font-size: 0.72rem; line-height: 1.6; }
 }
 @media (max-width: 720px) {
     article.pathology-content { padding: 26px 22px; }
@@ -335,6 +372,9 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 </head>
 <body>
 <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+<!-- ===== MENU MOBILE OVERLAY ===== -->
+<div class="menu-overlay" aria-hidden="true"></div>
 
 <header class="site-header">
     <div class="header-inner">
@@ -659,8 +699,17 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
         item.addEventListener('keydown', (e) => { if (e.key === 'Escape') { item.classList.remove('is-open'); trigger.setAttribute('aria-expanded','false'); trigger.focus(); } });
     });
     document.addEventListener('click', (e) => { items.forEach(item => { if (!item.contains(e.target)) { item.classList.remove('is-open'); const t = item.querySelector('.nav-link'); if (t) t.setAttribute('aria-expanded','false'); } }); });
-    const toggle = document.querySelector('.mobile-toggle'); const body = document.body;
-    if (toggle) { toggle.addEventListener('click', () => { const o = body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', o ? 'true' : 'false'); toggle.setAttribute('aria-label', o ? 'Fermer le menu' : 'Ouvrir le menu'); }); }
+        const toggle = document.querySelector('.mobile-toggle');
+    const overlay = document.querySelector('.menu-overlay');
+    const body = document.body;
+    const megaItems = document.querySelectorAll('.nav-item[data-megamenu]');
+    function openMenu() { body.classList.add('menu-open'); if (toggle) { toggle.setAttribute('aria-expanded','true'); toggle.setAttribute('aria-label','Fermer le menu'); } }
+    function closeMenu() { body.classList.remove('menu-open'); if (toggle) { toggle.setAttribute('aria-expanded','false'); toggle.setAttribute('aria-label','Ouvrir le menu'); } megaItems.forEach(it => { it.classList.remove('is-open'); const t = it.querySelector('.nav-link'); if (t) t.setAttribute('aria-expanded','false'); }); }
+    if (toggle) { toggle.addEventListener('click', () => { body.classList.contains('menu-open') ? closeMenu() : openMenu(); }); }
+    if (overlay) { overlay.addEventListener('click', closeMenu); }
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && body.classList.contains('menu-open')) { closeMenu(); if (toggle) toggle.focus(); } });
+    document.querySelectorAll('nav.main-nav a').forEach(link => { link.addEventListener('click', () => { if (window.innerWidth <= 1024) closeMenu(); }); });
+    window.addEventListener('resize', () => { if (window.innerWidth > 1024 && body.classList.contains('menu-open')) closeMenu(); });
 })();
 </script>
 
