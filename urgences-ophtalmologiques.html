@@ -285,19 +285,19 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 body.menu-open .menu-overlay { opacity: 1; visibility: visible; pointer-events: auto; }
 body.menu-open { overflow: hidden; }
 
-/* Tablette + mobile : drawer latéral droit + accordion mega-panels */
+/* Tablette + mobile : menu plein écran descendant + accordion mega-panels */
 @media (max-width: 1024px) {
     nav.main-nav { display: none; }
     header.site-header .mobile-toggle { display: block; }
     header.site-header .nav-cta.desktop { display: none; }
     body.menu-open nav.main-nav {
-        display: block; position: fixed; top: 0; right: 0; bottom: 0; left: auto;
-        width: min(380px, 88vw); background: var(--blanc-naturel);
-        box-shadow: -4px 0 24px rgba(40,51,57,0.18);
+        display: block; position: fixed; top: 76px; left: 0; right: 0; bottom: 0;
+        background: var(--blanc-naturel);
         overflow-y: auto; z-index: 99;
-        padding: 92px 24px 40px;
-        transform: translateX(0); transition: transform 0.25s ease;
+        padding: 20px 24px 60px;
+        animation: navFadeIn 0.22s ease;
     }
+    @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
     nav.main-nav .nav-list { flex-direction: column; gap: 0; }
     nav.main-nav .nav-link { width: 100%; padding: 16px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
     .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 12px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
@@ -309,7 +309,6 @@ body.menu-open { overflow: hidden; }
 }
 
 @media (max-width: 768px) {
-    body.menu-open nav.main-nav { width: min(340px, 90vw); padding: 88px 20px 32px; }
     /* Sections critiques mobile : 1 colonne */
     .hero-content, .specialties-grid, .parcours-content, .contact-grid,
     .pathologies-grid, .chirurgies-grid, .conditions-grid,
@@ -321,7 +320,7 @@ body.menu-open { overflow: hidden; }
 }
 
 @media (max-width: 480px) {
-    body.menu-open nav.main-nav { width: 100vw; box-shadow: none; }
+    body.menu-open nav.main-nav { top: 68px; padding: 16px 20px 48px; }
     h2 { font-size: 1.4rem; }
     .hero h1 { font-size: 1.6rem; }
     section { padding: 60px 0; }
