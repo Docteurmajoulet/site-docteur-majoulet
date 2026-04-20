@@ -161,20 +161,17 @@ nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padd
 .mega-grid-pathos { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr 1.2fr; gap: 28px; }
 .mega-grid-chir {
     display: grid;
-    grid-template-columns: 1.2fr 1.1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-areas:
-        "retine cataracte glaucome surface"
-        "lasers lasers associes associes";
+        "retine cataracte glaucome surface lasers"
+        "associes associes associes associes associes";
     gap: 24px 24px;
 }
 .mega-grid-chir .mega-col-retine    { grid-area: retine; }
 .mega-grid-chir .mega-col-cataracte { grid-area: cataracte; }
 .mega-grid-chir .mega-col-glaucome  { grid-area: glaucome; }
 .mega-grid-chir .mega-col-surface   { grid-area: surface; }
-.mega-grid-chir .mega-col-lasers    { grid-area: lasers; background: var(--blanc-naturel); border-radius: var(--radius-sm, 8px); padding: 14px 16px 10px; }
-.mega-grid-chir .mega-col-lasers h3 { border-bottom-color: var(--sable); }
-.mega-grid-chir .mega-col-lasers .lasers-intro { font-size: 0.72rem; color: var(--text-muted, #7a8a92); padding: 2px 4px 10px; line-height: 1.4; font-style: italic; }
-.mega-grid-chir .mega-col-lasers .lasers-sub-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px 20px; }
+.mega-grid-chir .mega-col-lasers    { grid-area: lasers; }
 .mega-grid-chir .mega-col-associes  { grid-area: associes; }
 .mega-grid-chir .mega-col-associes .associes-sub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
 .mega-col h3 { font-size: 0.75rem; font-weight: 700; color: var(--prusse); text-transform: uppercase; letter-spacing: 0.1em; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid var(--sable); margin-top: 0; }
@@ -274,7 +271,6 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
     .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 16px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
     .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
     .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; grid-template-areas: none; gap: 18px; }
-    .mega-grid-chir .mega-col-lasers .lasers-sub-grid,
     .mega-grid-chir .mega-col-associes .associes-sub-grid { grid-template-columns: 1fr; gap: 8px 0; }
 }
 @media (max-width: 720px) {
@@ -304,7 +300,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     <div class="mega-panel" id="mega-chirurgies" role="menu">
                         <div class="mega-grid-chir">
 
-                            <!-- ── Row 1 : actes chirurgicaux ── -->
+                            <!-- ── Row 1 : actes chirurgicaux + lasers médicaux ── -->
                             <div class="mega-col mega-col-retine">
                                 <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
                                 <ul class="mega-list" role="list">
@@ -340,34 +336,18 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                                     <li><a href="/bouchons-meatiques">Bouchons méatiques</a></li>
                                 </ul>
                             </div>
-
-                            <!-- ── Row 2 : lasers médicaux + IVT (non-chirurgical) + associés ── -->
                             <div class="mega-col mega-col-lasers">
-                                <h3>Lasers médicaux &amp; injections</h3>
-                                <p class="lasers-intro">Actes médicaux sans incision, en consultation ou en hôpital de jour.</p>
-                                <div class="lasers-sub-grid">
-                                    <div>
-                                        <div class="mega-subhead">Rétine</div>
-                                        <ul class="mega-list" role="list">
-                                            <li><a href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
-                                            <li><a href="/photocoagulation-laser" aria-current="page">PPR &amp; laser focal</a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <div class="mega-subhead">Glaucome</div>
-                                        <ul class="mega-list" role="list">
-                                            <li><a href="/laser-slt">Trabéculoplastie SLT</a></li>
-                                            <li><a href="/iridotomie-laser-yag">Iridotomie périphérique (YAG)</a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <div class="mega-subhead">Cataracte secondaire</div>
-                                        <ul class="mega-list" role="list">
-                                            <li><a href="/cataracte-secondaire-laser-yag">Capsulotomie YAG</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <h3>Lasers médicaux &amp; IVT</h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
+                                    <li><a href="/photocoagulation-laser" aria-current="page">PPR &amp; laser focal</a></li>
+                                    <li><a href="/laser-slt">Trabéculoplastie SLT</a></li>
+                                    <li><a href="/iridotomie-laser-yag">Iridotomie périphérique (YAG)</a></li>
+                                    <li><a href="/cataracte-secondaire-laser-yag">Capsulotomie YAG</a></li>
+                                </ul>
                             </div>
+
+                            <!-- ── Row 2 : chez mes associés ── -->
                             <div class="mega-col col-associes mega-col-associes">
                                 <h3>Chez mes associés</h3>
                                 <p class="associes-intro">Spécialités pratiquées par mes confrères du Cabinet Ophtalife, Boulogne-Billancourt.</p>
@@ -393,7 +373,6 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                                 </div>
                             </div>
 
-                        </div>
                         </div>
                     </div>
                 </li>
