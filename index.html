@@ -465,28 +465,51 @@
 
         .parcours-text p { color: var(--text-light); margin-bottom: 16px; font-size: 0.95rem; font-weight: 400; }
 
-        .parcours-highlights { display: flex; flex-direction: column; gap: 18px; }
+        .parcours-highlights { display: flex; flex-direction: column; gap: 20px; }
 
-        .highlight-item {
-            display: flex; gap: 18px; align-items: flex-start;
+        .parcours-card {
             background: var(--blanc);
-            padding: 22px;
+            padding: 24px 26px;
             border-radius: var(--radius);
             border-left: 3px solid var(--sable);
         }
 
-        .highlight-year {
-            font-size: 0.75rem; font-weight: 700;
+        .parcours-card-header {
+            display: flex; align-items: center; gap: 10px;
+            margin-bottom: 16px; padding-bottom: 12px;
+            border-bottom: 1px solid rgba(191, 178, 151, 0.22);
+        }
+        .parcours-card-header h3 {
+            font-size: 0.78rem; font-weight: 700;
+            color: var(--prusse);
+            text-transform: uppercase; letter-spacing: 0.08em;
+            margin: 0;
+        }
+        .parcours-card-icon {
+            width: 22px; height: 22px;
+            display: inline-flex; align-items: center; justify-content: center;
+            color: var(--sable);
+            flex-shrink: 0;
+        }
+        .parcours-card-icon svg { width: 18px; height: 18px; stroke: currentColor; fill: none; stroke-width: 1.8; }
+
+        .parcours-card-list { display: flex; flex-direction: column; gap: 14px; }
+
+        .parcours-card-item { display: flex; gap: 14px; align-items: flex-start; }
+        .parcours-card-year {
+            font-size: 0.7rem; font-weight: 700;
             color: var(--sable);
             text-transform: uppercase; letter-spacing: 0.06em;
-            white-space: nowrap; min-width: 90px;
+            white-space: nowrap; min-width: 82px;
+            padding-top: 2px;
         }
-
-        .highlight-text h4 {
-            font-size: 0.9rem; font-weight: 600;
-            color: var(--prusse); margin-bottom: 4px;
+        .parcours-card-content h4 {
+            font-size: 0.88rem; font-weight: 600;
+            color: var(--prusse); margin: 0 0 3px 0;
         }
-        .highlight-text p { font-size: 0.84rem; color: var(--text-muted); margin: 0; }
+        .parcours-card-content p {
+            font-size: 0.82rem; color: var(--text-muted); margin: 0;
+        }
 
         /* ===== PUBLICATIONS ===== */
         #publications { background: var(--blanc); }
@@ -1109,62 +1132,113 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                 </p>
             </div>
             <div class="parcours-highlights fade-in">
-                <div class="highlight-item">
-                    <div class="highlight-year">Depuis 2024</div>
-                    <div class="highlight-text">
-                        <h4>Praticien Contractuel — CHNO des Quinze-Vingts</h4>
-                        <p>Service d'ophtalmologie du Pr Baudouin — Activité de rétine chirurgicale et d'urgences ophtalmologiques</p>
+
+                <!-- Carte 1 : Postes -->
+                <div class="parcours-card">
+                    <div class="parcours-card-header">
+                        <span class="parcours-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m-11 0h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/></svg>
+                        </span>
+                        <h3>Postes &amp; fonctions</h3>
+                    </div>
+                    <div class="parcours-card-list">
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">Depuis 2024</div>
+                            <div class="parcours-card-content">
+                                <h4>Praticien Contractuel — CHNO des Quinze-Vingts</h4>
+                                <p>Service du Pr Baudouin — Rétine chirurgicale &amp; urgences ophtalmologiques</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">Depuis 2024</div>
+                            <div class="parcours-card-content">
+                                <h4>Co-fondateur — Cabinet Ophtalife</h4>
+                                <p>Consultations &amp; chirurgie ophtalmologique à Boulogne-Billancourt — Secteur 2 OPTAM</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2022 – 2024</div>
+                            <div class="parcours-card-content">
+                                <h4>Assistant des Hôpitaux de Paris — CHNO des Quinze-Vingts</h4>
+                                <p>Assistanat en ophtalmologie dans le service du Pr Christophe Baudouin</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">Internat</div>
+                            <div class="parcours-card-content">
+                                <h4>Ancien Interne des Hôpitaux de Paris</h4>
+                                <p>Internat en ophtalmologie au sein de l'Assistance Publique – Hôpitaux de Paris (AP-HP)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">Aujourd'hui</div>
-                    <div class="highlight-text">
-                        <h4>Co-fondateur — Cabinet Ophtalife</h4>
-                        <p>Consultations et chirurgie ophtalmologique à Boulogne-Billancourt — Secteur 2 conventionné (OPTAM)</p>
+
+                <!-- Carte 2 : Diplômes & certifications -->
+                <div class="parcours-card">
+                    <div class="parcours-card-header">
+                        <span class="parcours-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 2 8l10 5 10-5-10-5Zm0 5v9m-6-3v3a2 2 0 0 0 1 1.732l4 2.31a2 2 0 0 0 2 0l4-2.31A2 2 0 0 0 18 17v-3"/></svg>
+                        </span>
+                        <h3>Diplômes &amp; certifications</h3>
+                    </div>
+                    <div class="parcours-card-list">
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2024</div>
+                            <div class="parcours-card-content">
+                                <h4>DIU Chirurgie Vitréo-Rétinienne</h4>
+                                <p>Université Paris-Saclay (Paris 11) — Diplôme Inter-Universitaire</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2023</div>
+                            <div class="parcours-card-content">
+                                <h4>DES d'Ophtalmologie</h4>
+                                <p>Université de Versailles-Saint-Quentin-en-Yvelines (UVSQ)</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2022</div>
+                            <div class="parcours-card-content">
+                                <h4>FEBO — European Board of Ophthalmology</h4>
+                                <p>Fellow of the European Board of Ophthalmology (Bruxelles) — certification européenne</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">2024</div>
-                    <div class="highlight-text">
-                        <h4>DIU Chirurgie Vitréo-Rétinienne</h4>
-                        <p>Université Paris-Saclay (Paris 11) — Diplôme Inter-Universitaire de chirurgie vitréo-rétinienne</p>
+
+                <!-- Carte 3 : Recherche & rayonnement -->
+                <div class="parcours-card">
+                    <div class="parcours-card-header">
+                        <span class="parcours-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5Zm4 3h8M8 12h8M8 16h5"/></svg>
+                        </span>
+                        <h3>Recherche &amp; rayonnement</h3>
+                    </div>
+                    <div class="parcours-card-list">
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">Publications</div>
+                            <div class="parcours-card-content">
+                                <h4>Articles scientifiques indexés PubMed</h4>
+                                <p>Auteur et co-auteur dans <em>Journal of Clinical Medicine</em>, <em>Journal Français d'Ophtalmologie</em>, <em>Documenta Ophthalmologica</em>. <a href="/publications" style="color: var(--sable); font-weight: 600;">Voir la bibliographie →</a></p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">Congrès</div>
+                            <div class="parcours-card-content">
+                                <h4>Communications &amp; enseignement</h4>
+                                <p>Interventions à la <strong>SFO</strong> (Société Française d'Ophtalmologie), aux <strong>JRO</strong> et au <strong>15-20 Institute</strong> (CHNO des Quinze-Vingts).</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">Médias</div>
+                            <div class="parcours-card-content">
+                                <h4>Interventions journaux &amp; JT</h4>
+                                <p>Expertise ophtalmologique citée dans la presse écrite et les journaux télévisés grand public.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">2023</div>
-                    <div class="highlight-text">
-                        <h4>DES d'Ophtalmologie</h4>
-                        <p>Université de Versailles-Saint-Quentin-en-Yvelines (UVSQ) — Diplôme d'Études Spécialisées</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">2022 – 2024</div>
-                    <div class="highlight-text">
-                        <h4>Assistant — CHNO des Quinze-Vingts</h4>
-                        <p>Assistanat en ophtalmologie dans le service du Pr Christophe Baudouin (Quinze-Vingts, Paris)</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">2022</div>
-                    <div class="highlight-text">
-                        <h4>FEBO — European Board of Ophthalmology</h4>
-                        <p>Fellow of the European Board of Ophthalmology (Bruxelles) — certification européenne en ophtalmologie</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">Internat</div>
-                    <div class="highlight-text">
-                        <h4>Ancien interne des Hôpitaux de Paris</h4>
-                        <p>Internat en ophtalmologie au sein de l'Assistance Publique – Hôpitaux de Paris (AP-HP)</p>
-                    </div>
-                </div>
-                <div class="highlight-item">
-                    <div class="highlight-year">Recherche</div>
-                    <div class="highlight-text">
-                        <h4>Publications scientifiques</h4>
-                        <p>Auteur et co-auteur d'articles dans des revues indexées PubMed (J Clin Med, J Fr Ophtalmol, Doc Ophthalmol) — ORCID&nbsp;: 0000-0003-1116-1937</p>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
