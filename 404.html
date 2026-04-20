@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page introuvable (404) — Dr Alexandre Majoulet, Ophtalmologue Boulogne-Billancourt</title>
+    <meta name="description" content="La page recherchée n'existe pas. Retrouvez le Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt.">
+    <meta name="robots" content="noindex, follow">
+    <meta name="theme-color" content="#283339">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <style>
+        :root {
+            --prusse: #283339;
+            --sable: #C8B898;
+            --blanc-naturel: #F9F7F2;
+            --texte: #2b2b2b;
+            --texte-clair: #5a5a5a;
+            --bordure: #e5e2dc;
+            --alerte-fond: #fff4e6;
+            --alerte-bordure: #e07b1a;
+            --alerte-texte: #8a4510;
+        }
+
+        *, *::before, *::after { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: var(--blanc-naturel);
+            color: var(--texte);
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* ===== Header minimal ===== */
+        header.site-header {
+            background: #fff;
+            border-bottom: 1px solid var(--bordure);
+            padding: 20px 24px;
+        }
+        .site-logo {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: var(--prusse);
+            text-decoration: none;
+            display: inline-flex;
+            flex-direction: column;
+            line-height: 1.15;
+        }
+        .site-logo .logo-city {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: var(--texte-clair);
+        }
+
+        /* ===== Main 404 ===== */
+        main {
+            flex: 1;
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+            width: 100%;
+        }
+
+        .code-404 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 5.5rem;
+            font-weight: 700;
+            color: var(--prusse);
+            line-height: 1;
+            margin: 24px 0 8px;
+            letter-spacing: -2px;
+        }
+        h1 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin: 0 0 16px;
+            color: var(--prusse);
+        }
+        p.lead {
+            font-size: 1.05rem;
+            color: var(--texte-clair);
+            margin: 0 0 28px;
+        }
+
+        .btn-accueil {
+            display: inline-block;
+            background: var(--prusse);
+            color: #fff;
+            padding: 14px 28px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.98rem;
+            letter-spacing: 0.02em;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .btn-accueil:hover,
+        .btn-accueil:focus-visible {
+            background: #1a2228;
+        }
+        .btn-accueil:focus-visible {
+            outline: 3px solid var(--sable);
+            outline-offset: 3px;
+        }
+
+        .btn-doctolib {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #fff;
+            color: var(--prusse);
+            border: 2px solid var(--prusse);
+            padding: 12px 24px;
+            border-radius: 999px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            margin-left: 12px;
+            transition: background 0.2s;
+        }
+        .btn-doctolib:hover,
+        .btn-doctolib:focus-visible {
+            background: var(--prusse);
+            color: #fff;
+        }
+        .btn-doctolib:focus-visible {
+            outline: 3px solid var(--sable);
+            outline-offset: 3px;
+        }
+
+        /* ===== Bloc Urgences ophtalmologiques ===== */
+        .urgences {
+            margin-top: 56px;
+            background: var(--alerte-fond);
+            border: 1px solid var(--alerte-bordure);
+            border-left: 4px solid var(--alerte-bordure);
+            padding: 24px 28px;
+            border-radius: 8px;
+        }
+        .urgences h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.25rem;
+            color: var(--alerte-texte);
+            margin: 0 0 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .urgences h2::before {
+            content: "⚠";
+            font-size: 1.4rem;
+        }
+        .urgences p {
+            margin: 8px 0;
+            color: var(--texte);
+            font-size: 0.96rem;
+        }
+        .urgences ul {
+            margin: 12px 0 0;
+            padding-left: 22px;
+            color: var(--texte);
+            font-size: 0.96rem;
+        }
+        .urgences ul li {
+            margin-bottom: 10px;
+        }
+        .urgences ul li strong {
+            color: var(--prusse);
+        }
+        .urgences .en-savoir-plus {
+            margin-top: 18px;
+            font-size: 0.9rem;
+        }
+        .urgences a {
+            color: var(--alerte-texte);
+            font-weight: 600;
+        }
+
+        /* ===== Liens rapides ===== */
+        .liens-rapides {
+            margin-top: 48px;
+        }
+        .liens-rapides h2 {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 1.2rem;
+            color: var(--prusse);
+            margin: 0 0 16px;
+        }
+        .liens-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 12px;
+        }
+        .liens-grid a {
+            display: block;
+            background: #fff;
+            border: 1px solid var(--bordure);
+            padding: 14px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--prusse);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: border-color 0.15s, background 0.15s;
+        }
+        .liens-grid a:hover,
+        .liens-grid a:focus-visible {
+            border-color: var(--prusse);
+            background: var(--blanc-naturel);
+        }
+        .liens-grid a:focus-visible {
+            outline: 2px solid var(--prusse);
+            outline-offset: 2px;
+        }
+
+        /* ===== Footer ===== */
+        footer {
+            background: #fff;
+            border-top: 1px solid var(--bordure);
+            padding: 20px 24px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--texte-clair);
+        }
+        footer a {
+            color: var(--prusse);
+            text-decoration: none;
+        }
+        footer a:hover { text-decoration: underline; }
+
+        /* Mobile */
+        @media (max-width: 520px) {
+            .code-404 { font-size: 4.5rem; }
+            h1 { font-size: 1.45rem; }
+            .btn-doctolib { margin-left: 0; margin-top: 12px; }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <a href="/" class="site-logo">
+        Dr Majoulet — Rétinologue
+        <span class="logo-city">Boulogne-Billancourt</span>
+    </a>
+</header>
+
+<main>
+    <p class="code-404">404</p>
+    <h1>Cette page n'existe pas</h1>
+    <p class="lead">La page que vous cherchez a peut-être été déplacée ou n'existe plus. Utilisez les liens ci-dessous pour retrouver ce que vous cherchez.</p>
+
+    <div>
+        <a href="/" class="btn-accueil">Retour à l'accueil</a>
+        <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-doctolib">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            Prendre rendez-vous
+        </a>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- Bloc Urgences — mis en avant même sur 404, car un patient     -->
+    <!-- peut arriver ici en tapant mal une URL en situation urgente.  -->
+    <!-- ============================================================ -->
+    <aside class="urgences" aria-labelledby="urgences-title">
+        <h2 id="urgences-title">En cas d'urgence ophtalmologique</h2>
+        <p>Si vous présentez une <strong>baisse brutale de vision</strong>, des <strong>flashs lumineux</strong>, des <strong>corps flottants soudains</strong>, un <strong>œil rouge et douloureux</strong> ou un <strong>traumatisme oculaire</strong>, consultez sans délai l'un des trois services d'urgence ophtalmologique publics ouverts 24h/24 en Île-de-France :</p>
+        <ul>
+            <li><strong>CHNO des Quinze-Vingts</strong> — 28 rue de Charenton, Paris 12<sup>e</sup>. Référence nationale, tout motif ophtalmologique.</li>
+            <li><strong>Fondation Ophtalmologique Adolphe de Rothschild</strong> — 29 rue Manin, Paris 19<sup>e</sup>. Urgences ophtalmologiques et neuro-ophtalmologiques.</li>
+            <li><strong>Ophtalmopôle — Hôpital Cochin (AP-HP)</strong> — 27 rue du Faubourg Saint-Jacques, Paris 14<sup>e</sup>. Urgences ophtalmologiques spécialisées.</li>
+        </ul>
+        <p class="en-savoir-plus">
+            <a href="/urgences-ophtalmologiques">En savoir plus sur les urgences ophtalmologiques →</a>
+        </p>
+    </aside>
+
+    <section class="liens-rapides">
+        <h2>Liens utiles</h2>
+        <div class="liens-grid">
+            <a href="/le-dr-majoulet">À propos du Dr Majoulet</a>
+            <a href="/pathologies">Toutes les pathologies</a>
+            <a href="/contact">Contact & accès cabinet</a>
+            <a href="/baisse-brutale-vision">Baisse brutale de vision</a>
+            <a href="/decollement-retine">Décollement de rétine</a>
+            <a href="/dmla">DMLA</a>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Dr Alexandre Majoulet — Chirurgien Ophtalmologue &middot;
+       <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife</a> &middot;
+       37 Rue d'Aguesseau, 92100 Boulogne-Billancourt &middot;
+       <a href="/mentions-legales">Mentions légales</a> &middot;
+       <a href="/confidentialite">Confidentialité</a>
+    </p>
+</footer>
+
+</body>
+</html>
