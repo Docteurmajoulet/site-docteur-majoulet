@@ -198,6 +198,12 @@
         footer a { color: rgba(249,247,242,0.55); }
         :focus { outline: none; }
         :focus-visible { outline: 3px solid var(--bleu-gris); outline-offset: 3px; border-radius: 4px; }
+        .btn-primary:focus-visible, .btn-doctolib:focus-visible, .hero-cta:focus-visible, .nav-cta:focus-visible { outline-color: var(--sable); outline-offset: 4px; }
+        nav.main-nav .nav-link:focus-visible, .mega-list a:focus-visible { outline: 2px solid var(--prusse); outline-offset: 4px; border-radius: 4px; }
+        /* Fix #7 — lien actif du menu (WCAG 2.4.8) */
+        .nav-link[aria-current="page"] { color: var(--prusse); font-weight: 600; }
+        .mega-list a[aria-current="page"] { background: var(--blanc-naturel); color: var(--prusse); font-weight: 600; padding-left: 12px; }
+
         .skip-link { position: absolute; left: -9999px; top: 0; padding: 12px 20px; background: var(--prusse); color: var(--blanc-naturel); font-weight: 600; text-decoration: none; z-index: 1000; }
         .skip-link:focus { left: 16px; top: 16px; color: var(--blanc-naturel); }
         @media (max-width: 720px) {
@@ -359,7 +365,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                                     <li><a href="/chorioretinopathie-sereuse-centrale">Choriorétinopathie séreuse</a></li>
                                     <li><a href="/decollement-retine">Décollement de rétine</a></li>
                                     <li><a href="/dechirure-retine-corps-flottants">Déchirure / corps flottants</a></li>
-                                    <li><a href="/decollement-posterieur-vitre">Décollement postérieur du vitré</a></li>
+                                    <li><a href="/decollement-posterieur-vitre" aria-current="page">Décollement postérieur du vitré</a></li>
                                     <li><a href="/retinite-pigmentaire">Rétinite pigmentaire</a></li>
                                     <li><a href="/myopie-forte">Myopie forte</a></li>
                                 </ul>

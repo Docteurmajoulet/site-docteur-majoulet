@@ -688,6 +688,10 @@
             outline-color: var(--sable);
             outline-offset: 4px;
         }
+        /* Fix #7 — lien actif du menu (WCAG 2.4.8) */
+        .nav-link[aria-current="page"] { color: var(--prusse); font-weight: 600; }
+        .mega-list a[aria-current="page"] { background: var(--blanc-naturel); color: var(--prusse); font-weight: 600; padding-left: 12px; }
+
 
         /* ===== A11Y — Skip link ===== */
         .skip-link {
@@ -972,7 +976,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <!-- Suivi ophtalmologique -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Lentilles.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <picture><source srcset="Lentilles.webp" type="image/webp"><img src="Lentilles.png" alt="" width="40" height="40" loading="lazy" decoding="async"></picture>
                 </div>
                 <h3>Suivi ophtalmologique</h3>
                 <p>Consultation ophtalmologique complète, prescription de lunettes et lentilles de contact, dépistage des pathologies oculaires (glaucome, DMLA, rétinopathie diabétique).</p>
@@ -980,7 +984,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <!-- Chirurgie de la rétine -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Chirurgie-Retine.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.png" alt="" width="40" height="40" loading="lazy" decoding="async"></picture>
                 </div>
                 <h3>Chirurgie de la rétine</h3>
                 <p>Chirurgie vitréo-rétinienne : décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive de dernière génération.</p>
@@ -988,7 +992,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <!-- Cataracte -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Cataracte.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <picture><source srcset="Cataracte.webp" type="image/webp"><img src="Cataracte.png" alt="" width="40" height="40" loading="lazy" decoding="async"></picture>
                 </div>
                 <h3>Chirurgie de la cataracte</h3>
                 <p>Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique). Récupération visuelle rapide et indolore.</p>
@@ -996,7 +1000,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <!-- IVT -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Injections.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <picture><source srcset="Injections.webp" type="image/webp"><img src="Injections.png" alt="" width="40" height="40" loading="lazy" decoding="async"></picture>
                 </div>
                 <h3>Injections intravitréennes</h3>
                 <p>IVT d'anti-VEGF et de corticoïdes pour le traitement de la DMLA exsudative, de l'œdème maculaire diabétique et des occlusions veineuses rétiniennes.</p>
@@ -1004,7 +1008,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <!-- DMLA -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="DMLA.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.png" alt="" width="40" height="40" loading="lazy" decoding="async"></picture>
                 </div>
                 <h3>DMLA</h3>
                 <p>Diagnostic et traitement de la dégénérescence maculaire liée à l'âge (forme sèche et exsudative). Suivi par OCT et injections intravitréennes d'anti-VEGF.</p>
@@ -1012,7 +1016,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <!-- Glaucome -->
             <div class="specialty-card fade-in">
                 <div class="specialty-icon">
-                    <img src="Glaucome.png" alt="" width="40" height="40" loading="lazy" decoding="async">
+                    <picture><source srcset="Glaucome.webp" type="image/webp"><img src="Glaucome.png" alt="" width="40" height="40" loading="lazy" decoding="async"></picture>
                 </div>
                 <h3>Glaucome</h3>
                 <p>Dépistage, suivi et traitement du glaucome. Mesure de la pression intraoculaire, champ visuel, OCT des fibres nerveuses et prise en charge médicale ou chirurgicale.</p>
@@ -1025,7 +1029,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section style="padding: 3rem 0;">
     <div class="container">
         <div class="fade-in">
-            <img src="Chirurgie.png" alt="Dr Alexandre Majoulet au microscope opératoire lors d'une chirurgie vitréo-rétinienne" width="700" height="467" loading="lazy" decoding="async" style="width: 100%; max-width: 700px; height: auto; border-radius: 12px; display: block; margin: 0 auto;">
+            <picture><source srcset="Chirurgie.webp" type="image/webp"><img src="Chirurgie.png" alt="Dr Alexandre Majoulet au microscope opératoire lors d'une chirurgie vitréo-rétinienne" width="700" height="467" loading="lazy" decoding="async" style="width: 100%; max-width: 700px; height: auto; border-radius: 12px; display: block; margin: 0 auto;"></picture>
         </div>
     </div>
 </section>

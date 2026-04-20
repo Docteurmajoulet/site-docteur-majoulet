@@ -407,6 +407,9 @@
             outline-color: var(--sable);
             outline-offset: 4px;
         }
+        /* Fix #7 — lien actif du menu (WCAG 2.4.8) */
+        .nav-link[aria-current="page"] { color: var(--prusse); font-weight: 600; }
+        .mega-list a[aria-current="page"] { background: var(--blanc-naturel); color: var(--prusse); font-weight: 600; padding-left: 12px; }
         .faq-question:focus-visible {
             outline-color: var(--bleu-gris);
             outline-offset: 2px;
@@ -578,7 +581,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                     </div>
                 </li>
                 <li class="nav-item" data-megamenu>
-                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-pathologies">
+                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-pathologies" aria-current="page">
                         Pathologies
                         <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
@@ -685,7 +688,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="dmla">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="DMLA.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Dégénérescence maculaire liée à l'âge (DMLA)</h2>
                 <h3>Définition</h3>
@@ -710,7 +713,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="retinopathie-diabetique">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Diabete.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Diabete.webp" type="image/webp"><img src="Diabete.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Rétinopathie diabétique</h2>
                 <h3>Définition</h3>
@@ -735,7 +738,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="occlusion-veineuse">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Diabete.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Diabete.webp" type="image/webp"><img src="Diabete.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Occlusions veineuses rétiniennes</h2>
                 <h3>Définition</h3>
@@ -761,7 +764,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="crsc">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="DMLA.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Choriorétinopathie séreuse centrale (CRSC)</h2>
                 <h3>Définition</h3>
@@ -785,7 +788,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="myopie-forte">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="DMLA.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Myopie forte et complications rétiniennes</h2>
                 <h3>Définition</h3>
@@ -809,7 +812,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="uveites">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Surface-Oculaire.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Surface-Oculaire.webp" type="image/webp"><img src="Surface-Oculaire.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Uvéites postérieures</h2>
                 <h3>Définition</h3>
@@ -877,7 +880,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="decollement-retine">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Décollement de rétine</h2>
                 <h3>Définition</h3>
@@ -903,7 +906,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="membrane-epiretinienne">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Membrane épirétinienne</h2>
                 <h3>Définition</h3>
@@ -926,7 +929,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="trou-maculaire">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Trou maculaire</h2>
                 <h3>Définition</h3>
@@ -949,7 +952,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="hemorragie-intravitreenne">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Hémorragie intravitréenne</h2>
                 <h3>Définition</h3>
@@ -972,7 +975,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <section class="pathologies-section" id="luxation-cristallin">
     <div class="container">
         <div class="pathology-content fade-in">
-            <div class="pathology-icon"><img src="Cataracte.png" alt="" width="44" height="44" loading="lazy" decoding="async"></div>
+            <div class="pathology-icon"><picture><source srcset="Cataracte.webp" type="image/webp"><img src="Cataracte.png" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
             <div class="pathology-body">
                 <h2>Luxation de cristallin et d'implant intraoculaire</h2>
                 <h3>Définition</h3>
