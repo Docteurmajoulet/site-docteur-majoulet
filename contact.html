@@ -169,7 +169,24 @@ nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padd
 .mega-panel { position: absolute; top: 100%; left: 50%; transform: translateX(-50%) translateY(-8px); min-width: 1140px; max-width: 96vw; background: var(--blanc); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 16px 48px rgba(40,51,57,0.14); padding: 32px 36px 28px; opacity: 0; visibility: hidden; transition: opacity 0.18s, visibility 0.18s, transform 0.18s; }
 .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); }
 .mega-grid-pathos { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1.1fr 1.2fr; gap: 28px; }
-.mega-grid-chir { display: grid; grid-template-columns: 1.3fr 1.3fr 1.1fr 1fr 1.2fr; gap: 24px; }
+.mega-grid-chir {
+    display: grid;
+    grid-template-columns: 1.2fr 1.1fr 1fr 1fr;
+    grid-template-areas:
+        "retine cataracte glaucome surface"
+        "lasers lasers associes associes";
+    gap: 24px 24px;
+}
+.mega-grid-chir .mega-col-retine    { grid-area: retine; }
+.mega-grid-chir .mega-col-cataracte { grid-area: cataracte; }
+.mega-grid-chir .mega-col-glaucome  { grid-area: glaucome; }
+.mega-grid-chir .mega-col-surface   { grid-area: surface; }
+.mega-grid-chir .mega-col-lasers    { grid-area: lasers; background: var(--blanc-naturel); border-radius: var(--radius-sm, 8px); padding: 14px 16px 10px; }
+.mega-grid-chir .mega-col-lasers h3 { border-bottom-color: var(--sable); }
+.mega-grid-chir .mega-col-lasers .lasers-intro { font-size: 0.72rem; color: var(--text-muted, #7a8a92); padding: 2px 4px 10px; line-height: 1.4; font-style: italic; }
+.mega-grid-chir .mega-col-lasers .lasers-sub-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px 20px; }
+.mega-grid-chir .mega-col-associes  { grid-area: associes; }
+.mega-grid-chir .mega-col-associes .associes-sub-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px 18px; }
 .mega-col h3 { font-size: 0.75rem; font-weight: 700; color: var(--prusse); text-transform: uppercase; letter-spacing: 0.1em; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid var(--sable); margin-top: 0; }
 .mega-col h3 a { color: var(--prusse); display: inline-flex; align-items: center; gap: 6px; text-decoration: none; }
 .mega-col h3 a:hover { color: var(--prusse-light); }
@@ -263,7 +280,9 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
     .nav-link { width: 100%; padding: 18px 0; border-bottom: 1px solid var(--border); justify-content: space-between; }
     .mega-panel { position: static; transform: none; min-width: 100%; max-width: 100%; box-shadow: none; border: none; padding: 16px 0 20px; background: transparent; opacity: 0; visibility: hidden; max-height: 0; overflow: hidden; transition: max-height 0.3s, opacity 0.3s; }
     .nav-item.is-open .mega-panel { opacity: 1; visibility: visible; max-height: 4000px; transform: none; }
-    .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; gap: 18px; }
+    .mega-grid-pathos, .mega-grid-chir { grid-template-columns: 1fr; grid-template-areas: none; gap: 18px; }
+    .mega-grid-chir .mega-col-lasers .lasers-sub-grid,
+    .mega-grid-chir .mega-col-associes .associes-sub-grid { grid-template-columns: 1fr; gap: 8px 0; }
 }
 @media (max-width: 720px) {
     article.pathology-content { padding: 26px 22px; }
@@ -291,61 +310,97 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     </button>
                     <div class="mega-panel" id="mega-chirurgies" role="menu">
                         <div class="mega-grid-chir">
-                            <div class="mega-col">
+
+                            <!-- ── Row 1 : actes chirurgicaux ── -->
+                            <div class="mega-col mega-col-retine">
                                 <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/vitrectomie">Vitrectomie</a></li>
+                                    <li><a href="/vitrectomie">Vitrectomie (25G / 27G)</a></li>
                                     <li><a href="/chirurgie-decollement-retine">Chirurgie du décollement de rétine</a></li>
-                                    <li><a href="/injection-intravitreenne">Injection intravitréenne</a></li>
-                                    <li><a href="/photocoagulation-laser">Photocoagulation laser rétinienne</a></li>
+                                    <li><a href="/trou-maculaire">Chirurgie du trou maculaire</a></li>
+                                    <li><a href="/membrane-epiretinienne">Chirurgie de la membrane épirétinienne</a></li>
+                                    <li><a href="/chirurgie-retine">Chirurgie de l'hémorragie intravitréenne</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-col">
+                            <div class="mega-col mega-col-cataracte">
                                 <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/chirurgie-cataracte">Phacoémulsification</a></li>
                                     <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
                                     <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
                                     <li><a href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
-                                    <li><a href="/cataracte-secondaire-laser-yag">Laser YAG (cataracte secondaire)</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-col">
+                            <div class="mega-col mega-col-glaucome">
                                 <h3><a href="/chirurgie-glaucome">Chirurgie du glaucome</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/laser-slt">Laser SLT</a></li>
-                                    <li><a href="/iridotomie-laser-yag">Iridotomie laser YAG</a></li>
                                     <li><a href="/migs">MIGS (chirurgie mini-invasive)</a></li>
                                     <li><a href="/trabeculectomie">Trabéculectomie</a></li>
                                     <li><a href="/sclerectomie-profonde-non-perforante">Sclérectomie profonde non perforante</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-col">
+                            <div class="mega-col mega-col-surface">
                                 <h3><a href="/chirurgie-surface-oculaire">Surface oculaire</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/ipl-lipiflow">IPL &amp; LipiFlow</a></li>
+                                    <li><a href="/ipl">IPL (lumière pulsée)</a></li>
                                     <li><a href="/incision-chalazion">Incision de chalazion</a></li>
                                     <li><a href="/bouchons-meatiques">Bouchons méatiques</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-col col-associes">
-                                <h3>Chez mes associés</h3>
-                                <p class="associes-intro">Spécialités pratiquées par mes confrères du cabinet Ophtalife, Boulogne-Billancourt.</p>
-                                <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
-                                    <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
-                                </ul>
-                                <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
-                                    <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
-                                    <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
-                                </ul>
+
+                            <!-- ── Row 2 : lasers médicaux + IVT (non-chirurgical) + associés ── -->
+                            <div class="mega-col mega-col-lasers">
+                                <h3>Lasers médicaux &amp; injections</h3>
+                                <p class="lasers-intro">Actes médicaux sans incision, en consultation ou en hôpital de jour.</p>
+                                <div class="lasers-sub-grid">
+                                    <div>
+                                        <div class="mega-subhead">Rétine</div>
+                                        <ul class="mega-list" role="list">
+                                            <li><a href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
+                                            <li><a href="/photocoagulation-laser">PPR &amp; laser focal</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="mega-subhead">Glaucome</div>
+                                        <ul class="mega-list" role="list">
+                                            <li><a href="/laser-slt">Trabéculoplastie SLT</a></li>
+                                            <li><a href="/iridotomie-laser-yag">Iridotomie périphérique (YAG)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="mega-subhead">Cataracte secondaire</div>
+                                        <ul class="mega-list" role="list">
+                                            <li><a href="/cataracte-secondaire-laser-yag">Capsulotomie YAG</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                            <div class="mega-col col-associes mega-col-associes">
+                                <h3>Chez mes associés</h3>
+                                <p class="associes-intro">Spécialités pratiquées par mes confrères du Cabinet Ophtalife, Boulogne-Billancourt.</p>
+                                <div class="associes-sub-grid">
+                                    <div>
+                                        <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
+                                        <ul class="mega-list" role="list">
+                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
+                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
+                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
+                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
+                                        <ul class="mega-list" role="list">
+                                            <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
+                                            <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
+                                            <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
+                                            <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
                         </div>
                     </div>
                 </li>

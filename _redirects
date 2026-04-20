@@ -96,7 +96,10 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /chirurgie-decollement-retine.html       /chirurgie-decollement-retine       301!
 /photocoagulation-laser.html             /photocoagulation-laser             301!
 /chirurgie-surface-oculaire.html         /chirurgie-surface-oculaire         301!
-/ipl-lipiflow.html                       /ipl-lipiflow                       301!
+/ipl.html                                /ipl                                301!
+# 2026-04-20 : renommage ipl-lipiflow → ipl (LipiFlow non pratiqué au cabinet)
+/ipl-lipiflow.html                       /ipl                                301!
+/ipl-lipiflow                            /ipl                                301!
 /incision-chalazion.html                 /incision-chalazion                 301!
 /bouchons-meatiques.html                 /bouchons-meatiques                 301!
 
