@@ -123,6 +123,8 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+.site-logo .logo-city { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; text-transform: uppercase; }
+/* media query retirée : le span est désormais sur une 2e ligne, plus de risque de débordement horizontal */
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 .nav-list { list-style: none; display: flex; gap: 4px; }
 .nav-item { position: relative; }
@@ -252,8 +254,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -386,7 +388,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -396,7 +399,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="page-header">
     <div class="container">
-        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> &nbsp;›&nbsp; <a href="pathologies.html">Pathologies</a> &nbsp;›&nbsp; Suivi & corrections optiques</nav>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp; Suivi & corrections optiques</nav>
         <h1>Suivi & corrections optiques</h1>
         <p class="tagline">Bilan annuel, amétropies, lunettes, lentilles, suivi des pathologies chroniques</p>
     </div>
@@ -408,14 +411,14 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
             <h2>Pathologies et interventions prises en charge</h2>
             <div class="pillar-cards">
-                <a class="pillar-card" href="bilan-ophtalmologique.html"><h3>Bilan ophtalmologique</h3><p>Consultation annuelle : acuité, réfraction, PIO, fond d'œil. Rythme variable selon l'âge et les antécédents.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="myopie.html"><h3>Myopie</h3><p>Œil trop long, vision floue de loin. Freination chez l'enfant (atropine faible dose, Ortho-K, verres de freination).</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="hypermetropie.html"><h3>Hypermétropie</h3><p>Œil trop court. Risque de glaucome aigu, de strabisme accommodatif chez l'enfant.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="astigmatisme.html"><h3>Astigmatisme</h3><p>Cornée non sphérique. Correction par lunettes, lentilles toriques ou implant torique.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="presbytie.html"><h3>Presbytie</h3><p>Diminution de l'accommodation après 45 ans. Verres progressifs, monovision, implants multifocaux.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="lunettes-prescription.html"><h3>Lunettes & prescription</h3><p>Lecture de l'ordonnance, choix des verres, 100 % Santé, validité de la prescription.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="lentilles-de-contact.html"><h3>Lentilles de contact</h3><p>Types de lentilles, hygiène, prévention de la kératite amibienne, rythme de renouvellement.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="suivi-diabete-hta.html"><h3>Suivi diabète / HTA</h3><p>Fond d'œil annuel (diabète), surveillance rétinienne (HTA). Rythmes selon HbA1c et stade rétinopathie.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/bilan-ophtalmologique"><h3>Bilan ophtalmologique</h3><p>Consultation annuelle : acuité, réfraction, PIO, fond d'œil. Rythme variable selon l'âge et les antécédents.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/myopie"><h3>Myopie</h3><p>Œil trop long, vision floue de loin. Freination chez l'enfant (atropine faible dose, Ortho-K, verres de freination).</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/hypermetropie"><h3>Hypermétropie</h3><p>Œil trop court. Risque de glaucome aigu, de strabisme accommodatif chez l'enfant.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/astigmatisme"><h3>Astigmatisme</h3><p>Cornée non sphérique. Correction par lunettes, lentilles toriques ou implant torique.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/presbytie"><h3>Presbytie</h3><p>Diminution de l'accommodation après 45 ans. Verres progressifs, monovision, implants multifocaux.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/lunettes-prescription"><h3>Lunettes & prescription</h3><p>Lecture de l'ordonnance, choix des verres, 100 % Santé, validité de la prescription.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/lentilles-de-contact"><h3>Lentilles de contact</h3><p>Types de lentilles, hygiène, prévention de la kératite amibienne, rythme de renouvellement.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/suivi-diabete-hta"><h3>Suivi diabète / HTA</h3><p>Fond d'œil annuel (diabète), surveillance rétinienne (HTA). Rythmes selon HbA1c et stade rétinopathie.</p><span class="read-more">En savoir plus</span></a>
             </div>
 
             <section class="parcours-list"><h3>Parcours patient</h3><ol><li><strong>Interrogatoire</strong> : symptômes visuels, antécédents ophtalmologiques et généraux, traitements en cours, conditions de travail.</li><li><strong>Mesure de l'acuité visuelle</strong> : de loin (Monoyer ou Snellen) et de près (Parinaud), œil par œil.</li><li><strong>Réfraction</strong> : objective (réfractomètre automatique, skiascopie chez l'enfant) puis subjective pour affiner la prescription.</li><li><strong>Examen complet</strong> : biomicroscopie (segment antérieur), mesure de la PIO, fond d'œil dilaté si indiqué.</li><li><strong>Prescription</strong> : lunettes, lentilles, ou orientation vers un examen complémentaire (OCT, champ visuel) si anomalie détectée.</li></ol></section>
@@ -446,7 +449,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                 <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-rdv">Rendez-vous sur Doctolib</a>
             </div>
 
-            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="bilan-ophtalmologique.html" class="related-link">Bilan ophtalmologique</a><a href="myopie.html" class="related-link">Myopie</a><a href="hypermetropie.html" class="related-link">Hypermétropie</a><a href="astigmatisme.html" class="related-link">Astigmatisme</a><a href="presbytie.html" class="related-link">Presbytie</a><a href="lunettes-prescription.html" class="related-link">Lunettes & prescription</a></div></section>
+            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="/bilan-ophtalmologique" class="related-link">Bilan ophtalmologique</a><a href="/myopie" class="related-link">Myopie</a><a href="/hypermetropie" class="related-link">Hypermétropie</a><a href="/astigmatisme" class="related-link">Astigmatisme</a><a href="/presbytie" class="related-link">Presbytie</a><a href="/lunettes-prescription" class="related-link">Lunettes & prescription</a></div></section>
         </article>
     </div>
 </main>

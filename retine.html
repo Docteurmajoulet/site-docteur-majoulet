@@ -123,6 +123,8 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+.site-logo .logo-city { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; text-transform: uppercase; }
+/* media query retirée : le span est désormais sur une 2e ligne, plus de risque de débordement horizontal */
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 .nav-list { list-style: none; display: flex; gap: 4px; }
 .nav-item { position: relative; }
@@ -252,8 +254,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -386,7 +388,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -396,7 +399,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="page-header">
     <div class="container">
-        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> &nbsp;›&nbsp; <a href="pathologies.html">Pathologies</a> &nbsp;›&nbsp; Pathologies de la rétine</nav>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp; Pathologies de la rétine</nav>
         <h1>Pathologies de la rétine</h1>
         <p class="tagline">Cœur d'expertise du Dr Majoulet — diagnostic médical et chirurgical des atteintes rétiniennes</p>
     </div>
@@ -408,24 +411,24 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
             <h2>Pathologies et interventions prises en charge</h2>
             <div class="pillar-cards">
-                <a class="pillar-card" href="dmla.html"><h3>DMLA</h3><p>Dégénérescence maculaire liée à l'âge — forme sèche et forme humide, suivi OCT, injections anti-VEGF.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="retinopathie-diabetique.html"><h3>Rétinopathie diabétique</h3><p>Atteinte rétinienne du diabète. Dépistage annuel, laser, IVT, chirurgie si nécessaire.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="trou-maculaire.html"><h3>Trou maculaire</h3><p>Rupture de pleine épaisseur du centre de la macula. Traitement chirurgical par vitrectomie.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="membrane-epiretinienne.html"><h3>Membrane épirétinienne</h3><p>Voile cellulaire à la surface de la macula. Chirurgie par pelage si gêne visuelle.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="occlusions-veineuses.html"><h3>Occlusions veineuses</h3><p>OVCR et OBVR. Prise en charge par IVT anti-VEGF ou corticoïdes, laser ciblé.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="chorioretinopathie-sereuse-centrale.html"><h3>Choriorétinopathie séreuse</h3><p>Décollement séreux de la macula. Surveillance, photothérapie dynamique si chronique.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="decollement-retine.html"><h3>Décollement de rétine</h3><p>Urgence chirurgicale. Vitrectomie avec tamponnement gaz ou silicone.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="dechirure-retine-corps-flottants.html"><h3>Déchirure / corps flottants</h3><p>Signes d'alerte d'un décollement imminent. Laser préventif en urgence.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="decollement-posterieur-vitre.html"><h3>Décollement postérieur du vitré</h3><p>Phénomène physiologique fréquent avec l'âge. Distinguer du pathologique.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="retinite-pigmentaire.html"><h3>Rétinite pigmentaire</h3><p>Dystrophie héréditaire des photorécepteurs. Conseil génétique, suivi périodique.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="myopie-forte.html"><h3>Myopie forte</h3><p>Myopie ≥ −6 dioptries. Complications rétiniennes spécifiques, dépistage régulier.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/dmla"><h3>DMLA</h3><p>Dégénérescence maculaire liée à l'âge — forme sèche et forme humide, suivi OCT, injections anti-VEGF.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/retinopathie-diabetique"><h3>Rétinopathie diabétique</h3><p>Atteinte rétinienne du diabète. Dépistage annuel, laser, IVT, chirurgie si nécessaire.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/trou-maculaire"><h3>Trou maculaire</h3><p>Rupture de pleine épaisseur du centre de la macula. Traitement chirurgical par vitrectomie.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/membrane-epiretinienne"><h3>Membrane épirétinienne</h3><p>Voile cellulaire à la surface de la macula. Chirurgie par pelage si gêne visuelle.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/occlusions-veineuses"><h3>Occlusions veineuses</h3><p>OVCR et OBVR. Prise en charge par IVT anti-VEGF ou corticoïdes, laser ciblé.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/chorioretinopathie-sereuse-centrale"><h3>Choriorétinopathie séreuse</h3><p>Décollement séreux de la macula. Surveillance, photothérapie dynamique si chronique.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/decollement-retine"><h3>Décollement de rétine</h3><p>Urgence chirurgicale. Vitrectomie avec tamponnement gaz ou silicone.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/dechirure-retine-corps-flottants"><h3>Déchirure / corps flottants</h3><p>Signes d'alerte d'un décollement imminent. Laser préventif en urgence.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/decollement-posterieur-vitre"><h3>Décollement postérieur du vitré</h3><p>Phénomène physiologique fréquent avec l'âge. Distinguer du pathologique.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/retinite-pigmentaire"><h3>Rétinite pigmentaire</h3><p>Dystrophie héréditaire des photorécepteurs. Conseil génétique, suivi périodique.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/myopie-forte"><h3>Myopie forte</h3><p>Myopie ≥ −6 dioptries. Complications rétiniennes spécifiques, dépistage régulier.</p><span class="read-more">En savoir plus</span></a>
             </div>
 
             <section class="parcours-list"><h3>Parcours patient</h3><ol><li><strong>Consultation initiale</strong> : interrogatoire, acuité visuelle, examen biomicroscopique, fond d'œil dilaté.</li><li><strong>Imagerie rétinienne</strong> : OCT maculaire (coupes micrométriques), rétinophotographies, angiographie à la fluorescéine si indiqué.</li><li><strong>Diagnostic et plan thérapeutique</strong> : explication du mécanisme, options médicales (IVT, laser) ou chirurgicales (vitrectomie), calendrier prévisionnel.</li><li><strong>Traitement</strong> : IVT en salle dédiée (anti-VEGF, corticoïde), laser rétinien en consultation, ou vitrectomie programmée au bloc opératoire.</li><li><strong>Suivi</strong> : contrôles OCT rapprochés après IVT, consultation post-opératoire à J1/J7/M1/M3 après vitrectomie.</li></ol></section>
 
             <h2>Expertise du Dr Majoulet</h2>
             <div class="expertise-block">
-                <h3>Activité rétinienne du cabinet</h3><p>Le Dr Majoulet consacre la part principale de son activité à la rétine médicale et chirurgicale. Les consultations rétiniennes, les injections intravitréennes et les chirurgies vitréorétiniennes (vitrectomie 25G, chirurgie du décollement, chirurgie maculaire) constituent son cœur de pratique.</p><p>Les publications du Dr Majoulet indexées sur PubMed et les communications scientifiques figurent sur la <a href="publications.html">page publications</a> du site.</p>
+                <h3>Activité rétinienne du cabinet</h3><p>Le Dr Majoulet consacre la part principale de son activité à la rétine médicale et chirurgicale. Les consultations rétiniennes, les injections intravitréennes et les chirurgies vitréorétiniennes (vitrectomie 25G, chirurgie du décollement, chirurgie maculaire) constituent son cœur de pratique.</p><p>Les publications du Dr Majoulet indexées sur PubMed et les communications scientifiques figurent sur la <a href="/publications">page publications</a> du site.</p>
                 <p class="meta">Dr Alexandre Majoulet — RPPS 10101500121 — ORCID 0000-0003-1116-1937 — Cabinet Ophtalife, 4 avenue du Général Leclerc, 92100 Boulogne-Billancourt.</p>
             </div>
 
@@ -449,7 +452,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                 <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-rdv">Rendez-vous sur Doctolib</a>
             </div>
 
-            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="dmla.html" class="related-link">DMLA</a><a href="retinopathie-diabetique.html" class="related-link">Rétinopathie diabétique</a><a href="decollement-retine.html" class="related-link">Décollement de rétine</a><a href="vitrectomie.html" class="related-link">Vitrectomie</a><a href="injection-intravitreenne.html" class="related-link">Injection intravitréenne</a><a href="publications.html" class="related-link">Publications du Dr Majoulet</a></div></section>
+            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="/dmla" class="related-link">DMLA</a><a href="/retinopathie-diabetique" class="related-link">Rétinopathie diabétique</a><a href="/decollement-retine" class="related-link">Décollement de rétine</a><a href="/vitrectomie" class="related-link">Vitrectomie</a><a href="/injection-intravitreenne" class="related-link">Injection intravitréenne</a><a href="/publications" class="related-link">Publications du Dr Majoulet</a></div></section>
         </article>
     </div>
 </main>

@@ -52,12 +52,6 @@
             {
                 "@type": "ListItem",
                 "position": 2,
-                "name": "Pathologies",
-                "item": "https://docteurmajoulet.com/pathologies"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
                 "name": "Contact & accès",
                 "item": "https://docteurmajoulet.com/contact"
             }
@@ -155,6 +149,8 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+.site-logo .logo-city { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; text-transform: uppercase; }
+/* media query retirée : le span est désormais sur une 2e ligne, plus de risque de débordement horizontal */
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 .nav-list { list-style: none; display: flex; gap: 4px; }
 .nav-item { position: relative; }
@@ -262,8 +258,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -396,7 +392,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -407,7 +404,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="page-header">
     <div class="container">
-        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp; Contact & accès</nav>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; Contact & accès</nav>
         <h1>Contact & accès</h1>
         <p class="tagline">Cabinet Ophtalife · Boulogne-Billancourt</p>
     </div>
@@ -471,7 +468,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
     <p><strong>Signes nécessitant une consultation en urgence :</strong> baisse brutale
     de vision, voile noir, éclairs lumineux associés à de nombreux corps flottants,
     douleur oculaire intense, œil rouge avec vision trouble, traumatisme oculaire.</p>
-    <p><strong>Voir notre <a href="urgences-ophtalmologiques.html">page dédiée aux urgences ophtalmologiques</a></strong>
+    <p><strong>Voir notre <a href="/urgences-ophtalmologiques">page dédiée aux urgences ophtalmologiques</a></strong>
     pour savoir quoi faire.</p>
     <p>En dehors des heures d'ouverture du cabinet ou en cas d'urgence vitale :
     <strong>SAMU — 15</strong> ou urgences ophtalmologiques du CHNO des Quinze-Vingts

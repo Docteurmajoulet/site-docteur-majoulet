@@ -123,6 +123,8 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+.site-logo .logo-city { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; text-transform: uppercase; }
+/* media query retirée : le span est désormais sur une 2e ligne, plus de risque de débordement horizontal */
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 .nav-list { list-style: none; display: flex; gap: 4px; }
 .nav-item { position: relative; }
@@ -252,8 +254,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -386,7 +388,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -396,7 +399,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="page-header">
     <div class="container">
-        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> &nbsp;›&nbsp; <a href="pathologies.html">Chirurgies</a> &nbsp;›&nbsp; Chirurgie de la rétine</nav>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Chirurgies</a> &nbsp;›&nbsp; Chirurgie de la rétine</nav>
         <h1>Chirurgie de la rétine</h1>
         <p class="tagline">Vitrectomie 25G, chirurgie maculaire, traitement du décollement — cœur de pratique chirurgicale</p>
     </div>
@@ -408,12 +411,12 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
             <h2>Pathologies et interventions prises en charge</h2>
             <div class="pillar-cards">
-                <a class="pillar-card" href="vitrectomie.html"><h3>Vitrectomie</h3><p>Ablation du vitré par micro-incisions 25G. Traitement des décollements, trous, membranes, hémorragies.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="injection-intravitreenne.html"><h3>Injection intravitréenne</h3><p>Injection d'anti-VEGF (DMLA, OBVR, OVCR, œdème diabétique) ou de corticoïde à libération prolongée.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="decollement-retine.html"><h3>Chirurgie du décollement de rétine</h3><p>Urgence chirurgicale. Vitrectomie avec tamponnement gaz ou silicone, parfois associée à l'indentation sclérale.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="trou-maculaire.html"><h3>Chirurgie du trou maculaire</h3><p>Vitrectomie + pelage de la membrane limitante interne + tamponnement gazeux + posture face-vers-le-bas.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="membrane-epiretinienne.html"><h3>Chirurgie de la membrane épirétinienne</h3><p>Pelage microchirurgical de la membrane pour restaurer la forme maculaire.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="retinopathie-diabetique.html"><h3>Laser rétinien (photocoagulation)</h3><p>Photocoagulation panrétinienne (rétinopathie diabétique proliférante) ou ciblée (déchirure, décollement localisé).</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/vitrectomie"><h3>Vitrectomie</h3><p>Ablation du vitré par micro-incisions 25G. Traitement des décollements, trous, membranes, hémorragies.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/injection-intravitreenne"><h3>Injection intravitréenne</h3><p>Injection d'anti-VEGF (DMLA, OBVR, OVCR, œdème diabétique) ou de corticoïde à libération prolongée.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/decollement-retine"><h3>Chirurgie du décollement de rétine</h3><p>Urgence chirurgicale. Vitrectomie avec tamponnement gaz ou silicone, parfois associée à l'indentation sclérale.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/trou-maculaire"><h3>Chirurgie du trou maculaire</h3><p>Vitrectomie + pelage de la membrane limitante interne + tamponnement gazeux + posture face-vers-le-bas.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/membrane-epiretinienne"><h3>Chirurgie de la membrane épirétinienne</h3><p>Pelage microchirurgical de la membrane pour restaurer la forme maculaire.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/retinopathie-diabetique"><h3>Laser rétinien (photocoagulation)</h3><p>Photocoagulation panrétinienne (rétinopathie diabétique proliférante) ou ciblée (déchirure, décollement localisé).</p><span class="read-more">En savoir plus</span></a>
             </div>
 
             <section class="parcours-list"><h3>Parcours patient</h3><ol><li><strong>Consultation pré-opératoire</strong> : confirmation diagnostique (OCT, fond d'œil), discussion des bénéfices et des risques, signature du consentement éclairé.</li><li><strong>Bilan anesthésique</strong> : consultation avec l'anesthésiste, bilan biologique éventuel selon les antécédents, arrêt modulé des anticoagulants/antiagrégants selon l'avis cardiologique.</li><li><strong>Intervention</strong> : en ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.</li><li><strong>Suites immédiates</strong> : pansement occlusif le jour de l'intervention, retrait à J1. Posture stricte (face-vers-le-bas) pendant 5 à 7 jours après chirurgie du trou maculaire.</li><li><strong>Suivi post-opératoire</strong> : contrôles à J1, J7, M1, M3 et M6 avec OCT. Collyres antibio-anti-inflammatoires pendant 4 à 6 semaines.</li></ol></section>
@@ -444,7 +447,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                 <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-rdv">Rendez-vous sur Doctolib</a>
             </div>
 
-            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="vitrectomie.html" class="related-link">Vitrectomie (fiche complète)</a><a href="injection-intravitreenne.html" class="related-link">Injection intravitréenne</a><a href="decollement-retine.html" class="related-link">Décollement de rétine</a><a href="trou-maculaire.html" class="related-link">Trou maculaire</a><a href="membrane-epiretinienne.html" class="related-link">Membrane épirétinienne</a><a href="dmla.html" class="related-link">DMLA</a></div></section>
+            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="/vitrectomie" class="related-link">Vitrectomie (fiche complète)</a><a href="/injection-intravitreenne" class="related-link">Injection intravitréenne</a><a href="/decollement-retine" class="related-link">Décollement de rétine</a><a href="/trou-maculaire" class="related-link">Trou maculaire</a><a href="/membrane-epiretinienne" class="related-link">Membrane épirétinienne</a><a href="/dmla" class="related-link">DMLA</a></div></section>
         </article>
     </div>
 </main>

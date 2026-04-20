@@ -239,6 +239,8 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+.site-logo .logo-city { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; text-transform: uppercase; }
+/* media query retirée : le span est désormais sur une 2e ligne, plus de risque de débordement horizontal */
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
@@ -292,8 +294,8 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -426,7 +428,8 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -437,8 +440,8 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 <header class="page-header">
     <div class="container">
         <nav class="breadcrumb-mini" aria-label="Fil d'Ariane">
-            <a href="index.html">Accueil</a> &nbsp;›&nbsp;
-            <a href="pathologies.html">Pathologies</a> &nbsp;›&nbsp;
+            <a href="/">Accueil</a> &nbsp;›&nbsp;
+            <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp;
             CRSC
         </nav>
         <h1>Choriorétinopathie Séreuse Centrale</h1>
@@ -683,12 +686,12 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <div class="related-pathologies">
                 <h3>Autres pathologies rétiniennes prises en charge</h3>
                 <div class="related-grid">
-                    <a class="related-link" href="dmla.html">DMLA</a>
-                    <a class="related-link" href="decollement-retine.html">Décollement de rétine</a>
-                    <a class="related-link" href="trou-maculaire.html">Trou maculaire</a>
-                    <a class="related-link" href="membrane-epiretinienne.html">Membrane épirétinienne</a>
-                    <a class="related-link" href="occlusions-veineuses.html">Occlusions veineuses</a>
-                    <a class="related-link" href="pathologies.html">Voir toutes les pathologies</a>
+                    <a class="related-link" href="/dmla">DMLA</a>
+                    <a class="related-link" href="/decollement-retine">Décollement de rétine</a>
+                    <a class="related-link" href="/trou-maculaire">Trou maculaire</a>
+                    <a class="related-link" href="/membrane-epiretinienne">Membrane épirétinienne</a>
+                    <a class="related-link" href="/occlusions-veineuses">Occlusions veineuses</a>
+                    <a class="related-link" href="/pathologies">Voir toutes les pathologies</a>
                 </div>
             </div>
 
@@ -702,7 +705,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
 
 <footer role="contentinfo">
     <div class="container">
-        <p>&copy; 2026 Dr Alexandre Majoulet — Chirurgien Ophtalmologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife</a> &middot; 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt &middot; <a href="mentions-legales.html">Mentions légales</a> &middot; <a href="confidentialite.html">Confidentialité</a></p>
+        <p>&copy; 2026 Dr Alexandre Majoulet — Chirurgien Ophtalmologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife</a> &middot; 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a></p>
     </div>
 </footer>
 

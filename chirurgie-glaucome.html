@@ -123,6 +123,8 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 .nav-item[data-megamenu] { position: static; }
 .site-logo { font-size: 0.92rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.08em; text-transform: uppercase; line-height: 1.2; text-decoration: none; }
 .site-logo .subtitle { display: block; font-size: 0.7rem; font-weight: 300; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; }
+.site-logo .logo-city { display: block; font-size: 0.7rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.14em; margin-top: 2px; text-transform: uppercase; }
+/* media query retirée : le span est désormais sur une 2e ligne, plus de risque de débordement horizontal */
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 .nav-list { list-style: none; display: flex; gap: 4px; }
 .nav-item { position: relative; }
@@ -252,8 +254,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="site-header">
     <div class="header-inner">
-        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue — Accueil">
-            Dr Majoulet — Rétinologue
+        <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
+            Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
@@ -386,7 +388,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
-                <li class="nav-item"><a href="/#contact" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="/publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
         <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
@@ -396,7 +399,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="page-header">
     <div class="container">
-        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a> &nbsp;›&nbsp; <a href="pathologies.html">Chirurgies</a> &nbsp;›&nbsp; Chirurgie du glaucome</nav>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Chirurgies</a> &nbsp;›&nbsp; Chirurgie du glaucome</nav>
         <h1>Chirurgie du glaucome</h1>
         <p class="tagline">Laser SLT, chirurgie filtrante, MIGS — escalade thérapeutique du glaucome</p>
     </div>
@@ -408,8 +411,8 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
             <h2>Pathologies et interventions prises en charge</h2>
             <div class="pillar-cards">
-                <a class="pillar-card" href="glaucome.html"><h3>Glaucome (fiche pathologie)</h3><p>Neuropathie optique, examens, traitement médical et suivi. Escalade thérapeutique détaillée.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="hypertension-oculaire.html"><h3>Hypertension oculaire</h3><p>Élévation de PIO sans atteinte. Surveillance rapprochée, parfois SLT préventif.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/glaucome"><h3>Glaucome (fiche pathologie)</h3><p>Neuropathie optique, examens, traitement médical et suivi. Escalade thérapeutique détaillée.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/hypertension-oculaire"><h3>Hypertension oculaire</h3><p>Élévation de PIO sans atteinte. Surveillance rapprochée, parfois SLT préventif.</p><span class="read-more">En savoir plus</span></a>
                 <div class="pillar-card soft"><span class="badge">fiche à venir</span><h3>Trabéculoplastie sélective (SLT)</h3><p>Laser d'angle appliqué au trabéculum. Réduit la PIO de 20 à 30 %. Geste de consultation, sans suite.</p><span class="read-more">Bientôt en ligne</span></div>
                 <div class="pillar-card soft"><span class="badge">fiche à venir</span><h3>Iridotomie YAG</h3><p>Petite perforation iridienne au laser YAG. Traitement du glaucome par fermeture de l'angle.</p><span class="read-more">Bientôt en ligne</span></div>
                 <div class="pillar-card soft"><span class="badge">fiche à venir</span><h3>MIGS</h3><p>Chirurgie micro-invasive. Stents trabéculaires (iStent, Hydrus). Souvent associée à la phacoémulsification.</p><span class="read-more">Bientôt en ligne</span></div>
@@ -444,7 +447,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
                 <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-rdv">Rendez-vous sur Doctolib</a>
             </div>
 
-            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="glaucome.html" class="related-link">Glaucome (fiche complète)</a><a href="hypertension-oculaire.html" class="related-link">Hypertension oculaire</a><a href="bilan-ophtalmologique.html" class="related-link">Bilan ophtalmologique</a><a href="chirurgie-cataracte.html" class="related-link">Chirurgie de la cataracte</a><a href="publications.html" class="related-link">Publications</a><a href="retine.html" class="related-link">Pathologies de la rétine</a></div></section>
+            <section class="related-pathologies"><h3>Pages associées</h3><div class="related-grid"><a href="/glaucome" class="related-link">Glaucome (fiche complète)</a><a href="/hypertension-oculaire" class="related-link">Hypertension oculaire</a><a href="/bilan-ophtalmologique" class="related-link">Bilan ophtalmologique</a><a href="/chirurgie-cataracte" class="related-link">Chirurgie de la cataracte</a><a href="/publications" class="related-link">Publications</a><a href="/retine" class="related-link">Pathologies de la rétine</a></div></section>
         </article>
     </div>
 </main>
