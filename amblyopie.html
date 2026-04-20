@@ -299,7 +299,8 @@ body.menu-open { overflow: hidden; }
     header.site-header .mobile-toggle { display: block; }
     header.site-header .nav-cta.desktop { display: none; }
     body.menu-open nav.main-nav {
-        display: block; position: fixed; top: 76px; left: 0; right: 0; bottom: 0;
+        display: block; position: fixed; top: 76px; left: 0; right: 0;
+        height: calc(100vh - 76px);
         background: var(--blanc-naturel);
         overflow-y: auto; z-index: 99;
         padding: 20px 24px 60px;
@@ -328,7 +329,7 @@ body.menu-open { overflow: hidden; }
 }
 
 @media (max-width: 480px) {
-    body.menu-open nav.main-nav { top: 68px; padding: 16px 20px 48px; }
+    body.menu-open nav.main-nav { top: 68px; height: calc(100vh - 68px); padding: 16px 20px 48px; }
     h2 { font-size: 1.4rem; }
     .hero h1 { font-size: 1.6rem; }
     section { padding: 60px 0; }
