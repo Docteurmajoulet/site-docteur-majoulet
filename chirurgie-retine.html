@@ -36,7 +36,7 @@
   "description": "Chirurgie vitréorétinienne pratiquée par le Dr Majoulet : vitrectomie 25G, chirurgie du décollement de rétine, injections intravitréennes, laser rétinien. Cabinet Ophtalife, Boulogne-Billancourt.",
   "url": "https://docteurmajoulet.com/chirurgie-retine",
   "inLanguage": "fr",
-  "lastReviewed": "2026-04-19",
+  "lastReviewed": "2026-04-20",
   "author": {
     "@type": "Physician",
     "name": "Dr Alexandre Majoulet",
@@ -59,6 +59,14 @@
 }</script>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://docteurmajoulet.com/"},
+    {"@type": "ListItem", "position": 2, "name": "Chirurgie de la rétine", "item": "https://docteurmajoulet.com/chirurgie-retine"}
+  ]
+}</script>
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -66,7 +74,7 @@
       "name": "La vitrectomie est-elle douloureuse ?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Non. L'anesthésie loco-régionale rend l'intervention indolore. Les suites sont plus inconfortables que douloureuses : sensation de corps étranger, larmoiement, rougeur conjonctivale, qui s'estompent en quelques jours."
+        "text": "Non. L'anesthésie loco-régionale (péribulbaire) rend l'intervention indolore. Les suites sont plus inconfortables que douloureuses : sensation de corps étranger, larmoiement, rougeur conjonctivale, qui s'estompent en quelques jours. Un traitement antalgique simple (paracétamol) est généralement suffisant."
       }
     },
     {
@@ -99,6 +107,38 @@
       "acceptedAnswer": {
         "@type": "Answer",
         "text": "Non, jamais tant que la bulle de gaz persiste (2 à 6 semaines selon le gaz utilisé). La dépressurisation en altitude entraîne une expansion brutale de la bulle et une élévation dangereuse de la pression intraoculaire. L'information est remise par écrit avant la sortie."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Faut-il arrêter les anticoagulants ou antiagrégants avant l'intervention ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La gestion est individualisée en concertation avec le cardiologue ou le médecin prescripteur. La vitrectomie 25G par micro-incisions est peu hémorragique : la plupart des antiagrégants (aspirine faible dose) peuvent être poursuivis. Les anticoagulants oraux directs sont souvent arrêtés 24 à 48 h avant. Aucune décision d'arrêt n'est prise sans avis médical préalable."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel délai avant la récupération visuelle ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Très variable selon l'indication. Après une vitrectomie pour membrane épirétinienne, l'amélioration visuelle est progressive sur 3 à 6 mois. Après une chirurgie de trou maculaire, la récupération est plus lente (6 à 12 mois). Dans le décollement de rétine, le pronostic dépend surtout de l'atteinte maculaire préopératoire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quels sont les principaux risques d'une vitrectomie ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Les complications sérieuses restent rares : endophtalmie (infection intraoculaire ≈ 0,03 à 0,1 %), décollement de rétine post-opératoire, hypertonie transitoire, cataracte accélérée chez le phaque de plus de 50 ans, œdème maculaire. Le rapport bénéfice-risque est systématiquement discuté lors de la consultation pré-opératoire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quelle est la prise en charge par l'Assurance Maladie ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, intégralement pris en charge par l'Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassements d'honoraires éventuels) est remis avant toute intervention."
       }
     }
   ]
@@ -471,7 +511,7 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 
 <header class="page-header">
     <div class="container">
-        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Chirurgies</a> &nbsp;›&nbsp; Chirurgie de la rétine</nav>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; Chirurgie de la rétine</nav>
         <h1>Chirurgie de la rétine</h1>
         <p class="tagline">Vitrectomie 25G, chirurgie maculaire, traitement du décollement — cœur de pratique chirurgicale</p>
     </div>
@@ -479,16 +519,78 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
 <main id="main-content">
     <div class="container">
         <article class="pathology-content">
-            <div class="pillar-intro"><p>La chirurgie vitréorétinienne traite les affections du vitré et de la rétine : décollement de rétine, trou maculaire, membrane épirétinienne, hémorragie du vitré, rétinopathie diabétique proliférante. La technique de référence est la vitrectomie par micro-incisions (25G ou 27G), pratiquée sous anesthésie loco-régionale en ambulatoire ou en courte hospitalisation.</p><p>Le Dr Majoulet pratique régulièrement la vitrectomie et les injections intravitréennes (IVT). Les décisions chirurgicales font l'objet d'une explication détaillée avec le patient avant l'intervention.</p></div>
+            <div class="pillar-intro">
+                <p>La <strong>chirurgie vitréo-rétinienne</strong> traite les affections du vitré et de la rétine : décollement de rétine, trou maculaire, membrane épirétinienne, hémorragie intravitréenne, complications sévères de la rétinopathie diabétique. Elle repose aujourd'hui principalement sur la <strong>vitrectomie postérieure par micro-incisions</strong> (25G ou 27G), pratiquée sous anesthésie locorégionale, le plus souvent en ambulatoire.</p>
+                <p>Le Dr Alexandre Majoulet est <strong>titulaire du DIU de Chirurgie Vitréo-Rétinienne</strong> (Paris-Saclay, 2024) et exerce cette activité chirurgicale au Cabinet Ophtalife (Boulogne-Billancourt). Il prend en charge l'ensemble des pathologies vitréo-rétiniennes chirurgicales et réalise les gestes complémentaires associés : injections intravitréennes (IVT), laser rétinien (photocoagulation panrétinienne, barrage de déchirure), iridotomie YAG.</p>
+                <p>Chaque indication chirurgicale fait l'objet d'une <strong>consultation préopératoire dédiée</strong>, d'un examen complet incluant OCT maculaire et fond d'œil panoramique, de la remise d'un document d'information et du recueil du consentement éclairé. Le délai de réflexion, le rapport bénéfice-risque et les alternatives thérapeutiques sont systématiquement discutés.</p>
+            </div>
+
+            <div class="key-facts">
+                <div class="key-fact">
+                    <div class="key-fact-number">25G / 27G</div>
+                    <div class="key-fact-label">Vitrectomie par micro-incisions (0,5 et 0,4 mm)</div>
+                </div>
+                <div class="key-fact">
+                    <div class="key-fact-number">Ambulatoire</div>
+                    <div class="key-fact-label">Sortie le jour même dans la majorité des cas</div>
+                </div>
+                <div class="key-fact">
+                    <div class="key-fact-number">DIU VR</div>
+                    <div class="key-fact-label">Titulaire du DIU Chirurgie Vitréo-Rétinienne (Paris-Saclay 2024)</div>
+                </div>
+            </div>
 
             <h2>Pathologies et interventions prises en charge</h2>
             <div class="pillar-cards">
-                <a class="pillar-card" href="/vitrectomie"><h3>Vitrectomie</h3><p>Ablation du vitré par micro-incisions 25G. Traitement des décollements, trous, membranes, hémorragies.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="/injection-intravitreenne"><h3>Injection intravitréenne</h3><p>Injection d'anti-VEGF (DMLA, OBVR, OVCR, œdème diabétique) ou de corticoïde à libération prolongée.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="/decollement-retine"><h3>Chirurgie du décollement de rétine</h3><p>Urgence chirurgicale. Vitrectomie avec tamponnement gaz ou silicone, parfois associée à l'indentation sclérale.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="/trou-maculaire"><h3>Chirurgie du trou maculaire</h3><p>Vitrectomie + pelage de la membrane limitante interne + tamponnement gazeux + posture face-vers-le-bas.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="/membrane-epiretinienne"><h3>Chirurgie de la membrane épirétinienne</h3><p>Pelage microchirurgical de la membrane pour restaurer la forme maculaire.</p><span class="read-more">En savoir plus</span></a>
-                <a class="pillar-card" href="/retinopathie-diabetique"><h3>Laser rétinien (photocoagulation)</h3><p>Photocoagulation panrétinienne (rétinopathie diabétique proliférante) ou ciblée (déchirure, décollement localisé).</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/vitrectomie"><h3>Vitrectomie 25G / 27G</h3><p>Technique de référence de la chirurgie du vitré et de la rétine. Indications multiples : décollement, trou, membrane, hémorragie, rétinopathie diabétique compliquée.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/chirurgie-decollement-retine"><h3>Chirurgie du décollement de rétine</h3><p>Urgence chirurgicale. Indentation sclérale chez le sujet jeune phaque, vitrectomie dans les autres cas, tamponnement par gaz ou silicone.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/trou-maculaire"><h3>Chirurgie du trou maculaire</h3><p>Vitrectomie + pelage de la membrane limitante interne (MLI) + tamponnement gazeux. Positionnement post-opératoire requis.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/membrane-epiretinienne"><h3>Chirurgie de la membrane épirétinienne</h3><p>Pelage microchirurgical de la membrane et de la MLI sous bleu brillant, pour restaurer l'architecture maculaire et améliorer la vision centrale.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="#hemorragie-intravitreenne"><h3>Hémorragie intravitréenne</h3><p>Vitrectomie en cas d'hémorragie persistante ou abondante, notamment dans la rétinopathie diabétique proliférante et après décollement postérieur du vitré.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/injection-intravitreenne"><h3>Injections intravitréennes (IVT)</h3><p>Injection d'anti-VEGF (DMLA, œdème maculaire diabétique, occlusions veineuses) ou de corticoïdes à libération prolongée. Geste ambulatoire court.</p><span class="read-more">En savoir plus</span></a>
+                <a class="pillar-card" href="/photocoagulation-laser"><h3>Laser rétinien</h3><p>Photocoagulation panrétinienne (PPR) dans la rétinopathie diabétique proliférante, laser focal maculaire, barrage de déchirure rétinienne.</p><span class="read-more">En savoir plus</span></a>
+            </div>
+
+            <h2>Mon approche chirurgicale</h2>
+            <div class="forme-box" style="border-left-color: var(--accent-chir, #6b5d3f);">
+                <h3 style="margin-top:0;">Décollement de rétine — règle de décision</h3>
+                <p>Ma stratégie dans le <a href="/chirurgie-decollement-retine">décollement de rétine rhegmatogène</a> distingue deux situations :</p>
+                <ul>
+                    <li><strong>Indentation sclérale</strong> lorsque trois conditions sont réunies : patient de <strong>moins de 50 ans</strong>, œil <strong>phaque</strong>, et <strong>déchirure facilement indentable</strong>. Cette approche préserve le vitré, évite la cataracte post-vitrectomie et dispense de tamponnement interne.</li>
+                    <li><strong>Vitrectomie postérieure 25G (V3V / PPV)</strong> dans tous les autres cas : sujet plus âgé, pseudophake, déchirures multiples ou postérieures, hémorragie associée, prolifération vitréo-rétinienne débutante.</li>
+                </ul>
+                <p>Chaque cas fait l'objet d'une discussion individualisée avec le patient.</p>
+            </div>
+
+            <div class="forme-box">
+                <h3>Chirurgie maculaire (trou, membrane épirétinienne)</h3>
+                <p>La vitrectomie 25G ou 27G est associée à un <strong>pelage de la membrane limitante interne (MLI)</strong> sous coloration par bleu brillant. Le tamponnement gazeux (SF6 ou C3F8) et le positionnement postural sont adaptés à la taille et à la chronicité du trou maculaire. Pour la membrane épirétinienne isolée, le tamponnement gazeux est discuté au cas par cas.</p>
+            </div>
+
+            <div class="forme-box">
+                <h3>Chirurgie combinée cataracte + vitrectomie (<em>phaco-vitrectomie</em>)</h3>
+                <p>Chez le patient phaque de plus de 50 ans pour qui une vitrectomie est programmée, une <strong>chirurgie combinée</strong> (phacoémulsification + pose d'implant intraoculaire + vitrectomie) peut être proposée en un seul temps opératoire, afin d'éviter une cataracte accélérée post-vitrectomie qui nécessiterait une seconde intervention.</p>
+            </div>
+
+            <h2 id="hemorragie-intravitreenne">Hémorragie intravitréenne</h2>
+            <p>L'<strong>hémorragie intravitréenne</strong> est un saignement dans la cavité vitréenne qui entraîne une <strong>baisse brutale de la vision</strong> par opacification du milieu transparent que constitue le vitré. Elle peut se manifester par une perception de corps flottants rouges ou noirs (« pluie de suie »), un voile, ou une perte quasi-complète de la vision selon son abondance.</p>
+            <h3>Principales causes</h3>
+            <ul>
+                <li><strong>Rétinopathie diabétique proliférante</strong> : néovaisseaux prérétiniens ou prépapillaires qui saignent. Cause la plus fréquente chez le patient diabétique mal équilibré ou à rétinopathie avancée.</li>
+                <li><strong>Décollement postérieur du vitré avec déchirure rétinienne</strong> : le vaisseau rétinien déchiré saigne dans le vitré. Toute hémorragie intravitréenne dans ce contexte <strong>impose la recherche d'une déchirure</strong> (au besoin par échographie B si le fond d'œil n'est pas accessible).</li>
+                <li><strong>Occlusion veineuse rétinienne</strong>, notamment les formes ischémiques avec néovascularisation.</li>
+                <li><strong>Traumatisme</strong> contusif ou perforant.</li>
+                <li><strong>Autres causes</strong> : dégénérescence maculaire liée à l'âge exsudative (plus rarement), macroanévrisme artériel rétinien, télangiectasies de Coats, drépanocytose, etc.</li>
+            </ul>
+            <h3>Prise en charge</h3>
+            <ul>
+                <li><strong>Identification urgente de la cause</strong> : examen au biomicroscope, échographie B-mode si le fond d'œil est inaccessible, OCT maculaire dès que possible, angiographie à la fluorescéine selon le contexte.</li>
+                <li><strong>Traitement de la cause sous-jacente</strong> : injection d'anti-VEGF, laser panrétinien, traitement d'une déchirure.</li>
+                <li><strong>Surveillance avec repos en position semi-assise</strong> pour favoriser la sédimentation de l'hémorragie en cas de forme modérée et sans déchirure décelée.</li>
+                <li><strong>Vitrectomie postérieure 25G</strong> indiquée en cas d'hémorragie abondante empêchant la visualisation du fond d'œil et le traitement étiologique, d'hémorragie persistante (typiquement au-delà de 4 à 8 semaines), d'association à une déchirure rétinienne ou à un décollement de rétine. La vitrectomie permet d'évacuer le sang, d'identifier et de traiter la cause (laser, photocoagulation), et de prévenir les complications (prolifération vitréo-rétinienne, hémorragies à répétition).</li>
+            </ul>
+            <div class="alert-urgence">
+                <p><strong>Urgence relative.</strong> Une baisse de vision brutale avec corps flottants nombreux ou voile doit faire consulter rapidement pour écarter une déchirure rétinienne ou un décollement de rétine sous-jacent.</p>
             </div>
 
             <section class="parcours-list"><h3>Parcours patient</h3><ol><li><strong>Consultation pré-opératoire</strong> : confirmation diagnostique (OCT, fond d'œil), discussion des bénéfices et des risques, signature du consentement éclairé.</li><li><strong>Bilan anesthésique</strong> : consultation avec l'anesthésiste, bilan biologique éventuel selon les antécédents, arrêt modulé des anticoagulants/antiagrégants selon l'avis cardiologique.</li><li><strong>Intervention</strong> : en ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.</li><li><strong>Suites immédiates</strong> : pansement occlusif le jour de l'intervention, retrait à J1. Posture stricte (face-vers-le-bas) pendant 5 à 7 jours après chirurgie du trou maculaire.</li><li><strong>Suivi post-opératoire</strong> : contrôles à J1, J7, M1, M3 et M6 avec OCT. Collyres antibio-anti-inflammatoires pendant 4 à 6 semaines.</li></ol></section>
@@ -500,11 +602,16 @@ footer.site-footer a { color: rgba(249,247,242,0.55); }
             </div>
 
             <section><h2>Questions fréquentes</h2>
-<div class="qr-block"><p class="q">La vitrectomie est-elle douloureuse ?</p><p class="r">Non. L'anesthésie loco-régionale rend l'intervention indolore. Les suites sont plus inconfortables que douloureuses : sensation de corps étranger, larmoiement, rougeur conjonctivale, qui s'estompent en quelques jours.</p></div>
+<div class="qr-block"><p class="q">La vitrectomie est-elle douloureuse ?</p><p class="r">Non. L'anesthésie loco-régionale (péribulbaire) rend l'intervention indolore. Les suites sont plus inconfortables que douloureuses : sensation de corps étranger, larmoiement, rougeur conjonctivale, qui s'estompent en quelques jours. Un traitement antalgique simple (paracétamol) est généralement suffisant.</p></div>
 <div class="qr-block"><p class="q">Combien de temps dure l'hospitalisation ?</p><p class="r">La plupart des vitrectomies se pratiquent en ambulatoire (sortie le jour même). Une courte hospitalisation de 24 h peut être proposée pour les patients isolés ou pour certaines indications (décollement complexe, vitrectomie sous huile de silicone).</p></div>
 <div class="qr-block"><p class="q">Faut-il vraiment tenir la posture face-vers-le-bas après un trou maculaire ?</p><p class="r">Oui, c'est essentiel pendant 5 à 7 jours si un tamponnement gazeux est utilisé : la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.</p></div>
 <div class="qr-block"><p class="q">Une cataracte peut-elle apparaître après une vitrectomie ?</p><p class="r">Oui, c'est fréquent chez le patient phaque de plus de 50 ans. La vitrectomie accélère la sénescence du cristallin. Une chirurgie combinée vitrectomie + phacoémulsification peut être discutée selon l'indication.</p></div>
 <div class="qr-block"><p class="q">Peut-on reprendre l'avion après une vitrectomie sous gaz ?</p><p class="r">Non, jamais tant que la bulle de gaz persiste (2 à 6 semaines selon le gaz utilisé). La dépressurisation en altitude entraîne une expansion brutale de la bulle et une élévation dangereuse de la pression intraoculaire. L'information est remise par écrit avant la sortie.</p></div>
+<div class="qr-block"><p class="q">Faut-il arrêter les anticoagulants ou antiagrégants avant l'intervention ?</p><p class="r">La gestion est individualisée en concertation avec le cardiologue ou le médecin prescripteur. La vitrectomie 25G par micro-incisions est peu hémorragique : la plupart des antiagrégants (aspirine faible dose) peuvent être poursuivis. Les anticoagulants oraux directs (AOD) sont souvent arrêtés 24 à 48 h avant. Aucune décision d'arrêt n'est prise sans avis médical préalable.</p></div>
+<div class="qr-block"><p class="q">Quel délai avant la récupération visuelle ?</p><p class="r">Très variable selon l'indication. Après une vitrectomie pour membrane épirétinienne, l'amélioration visuelle est progressive sur 3 à 6 mois. Après une chirurgie de trou maculaire, la récupération est plus lente (6 à 12 mois). Dans le décollement de rétine, le pronostic dépend surtout de l'atteinte maculaire préopératoire. Une seconde chirurgie de cataracte est fréquemment nécessaire 6 à 12 mois plus tard chez le patient phaque.</p></div>
+<div class="qr-block"><p class="q">Quels sont les principaux risques d'une vitrectomie ?</p><p class="r">Les complications sérieuses restent rares : endophtalmie (infection intraoculaire ≈ 0,03 à 0,1 % — rapport SFO), décollement de rétine post-opératoire, hypertonie transitoire, cataracte accélérée chez le phaque (très fréquente au-delà de 50 ans), œdème maculaire. Le rapport bénéfice-risque est systématiquement discuté lors de la consultation pré-opératoire et le consentement éclairé signé.</p></div>
+<div class="qr-block"><p class="q">Quelle est la prise en charge par l'Assurance Maladie ?</p><p class="r">La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, intégralement pris en charge par l'Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassements d'honoraires éventuels) est remis avant toute intervention conformément à la réglementation.</p></div>
+<div class="qr-block"><p class="q">Quel arrêt de travail prévoir ?</p><p class="r">Variable selon la profession et l'indication : 1 à 2 semaines pour une chirurgie simple sans tamponnement gazeux, 2 à 4 semaines si posture post-opératoire imposée (trou maculaire, décollement avec gaz), jusqu'à 4 à 6 semaines pour les cas complexes. Un arrêt de travail est systématiquement remis le jour de l'intervention.</p></div>
 </section>
 
             <div class="eeat-block">

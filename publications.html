@@ -36,7 +36,7 @@
         "url": "https://docteurmajoulet.com/publications",
         "name": "Publications scientifiques — Dr Alexandre Majoulet",
         "description": "Bibliographie scientifique indexée PubMed, mentions presse et communications du Dr Alexandre Majoulet.",
-        "dateModified": "2026-04-18",
+        "dateModified": "2026-04-20",
         "mainEntity": {
             "@type": "Physician",
             "@id": "https://docteurmajoulet.com/#physician",
@@ -268,31 +268,12 @@
         .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
 
         /* ===== NAV ===== */
-        nav {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            background: rgba(249,247,242,0.97); backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border);
-        }
-        .nav-inner {
-            max-width: 1100px; margin: 0 auto; padding: 0 24px;
-            display: flex; align-items: center; justify-content: space-between; height: 72px;
-        }
-        .nav-logo { font-size: 0.82rem; font-weight: 600; color: var(--prusse); letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; }
-        .nav-logo span { font-weight: 300; }
-        .nav-links { display: flex; gap: 32px; list-style: none; }
-        .nav-links a { font-size: 0.82rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; }
-        .nav-links a:hover { color: var(--prusse); }
-        .nav-cta {
-            display: inline-flex; align-items: center; gap: 8px;
-            padding: 10px 24px; border-radius: 50px;
-            background: var(--prusse); color: var(--blanc-naturel);
-            font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em;
-            text-transform: uppercase; text-decoration: none;
-        }
-        .nav-cta:hover { background: var(--prusse-light); color: var(--blanc-naturel); }
+        /* ===== LEGACY NAV STYLES RETIRÉS (remplacés par header.site-header v5 ci-dessous).
+           La règle `nav { position: fixed ... }` faisait passer la <nav class="main-nav">
+           en position fixe plein-écran et recouvrait le logo. */
 
         /* ===== HEADER ===== */
-        .page-header { padding: 140px 0 50px; background: var(--prusse); text-align: center; }
+        .page-header { padding: 50px 0 40px; background: var(--prusse); text-align: center; }
         .page-header h1 { color: var(--blanc-naturel); }
         .page-header p { color: rgba(249,247,242,0.65); font-size: 0.95rem; font-weight: 300; max-width: 620px; margin: 0 auto; }
         .header-meta { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-top: 18px; }
@@ -431,7 +412,7 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
-nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
+nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; white-space: nowrap; }
 nav.main-nav .nav-link:hover, nav.main-nav .nav-link:focus-visible, nav.main-nav .nav-item.is-open .nav-link { color: var(--prusse); }
 nav.main-nav .nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
 nav.main-nav .nav-item.is-open .caret { transform: rotate(180deg); }

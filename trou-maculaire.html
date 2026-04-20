@@ -36,8 +36,8 @@
         "description": "Fiche d'information patient sur le trou maculaire idiopathique : classification OCT, chirurgie par vitrectomie avec pelage de la membrane limitante interne et tamponnement par gaz.",
         "inLanguage": "fr-FR",
         "datePublished": "2026-04-18",
-        "dateModified": "2026-04-18",
-        "lastReviewed": "2026-04-18",
+        "dateModified": "2026-04-20",
+        "lastReviewed": "2026-04-20",
         "reviewedBy": {
             "@type": "Physician",
             "@id": "https://docteurmajoulet.com/#physician",
@@ -75,7 +75,7 @@
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://docteurmajoulet.com/"},
-                {"@type": "ListItem", "position": 2, "name": "Pathologies", "item": "https://docteurmajoulet.com/pathologies"},
+                {"@type": "ListItem", "position": 2, "name": "Chirurgie de la rétine", "item": "https://docteurmajoulet.com/chirurgie-retine"},
                 {"@type": "ListItem", "position": 3, "name": "Trou maculaire", "item": "https://docteurmajoulet.com/trou-maculaire"}
             ]
         }
@@ -289,7 +289,7 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
-nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
+nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; white-space: nowrap; }
 nav.main-nav .nav-link:hover, nav.main-nav .nav-link:focus-visible, nav.main-nav .nav-item.is-open .nav-link { color: var(--prusse); }
 nav.main-nav .nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
 nav.main-nav .nav-item.is-open .caret { transform: rotate(180deg); }
@@ -536,7 +536,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
     <div class="container">
         <nav class="breadcrumb-mini" aria-label="Fil d'Ariane">
             <a href="/">Accueil</a> &nbsp;›&nbsp;
-            <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp;
+            <a href="/chirurgie-retine">Chirurgie de la rétine</a> &nbsp;›&nbsp;
             Trou maculaire
         </nav>
         <h1>Trou Maculaire</h1>
@@ -706,10 +706,36 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                 <li>Des métamorphopsies qui régressent plus lentement que l'acuité.</li>
                 <li>Un risque résiduel de <strong>réouverture</strong> du trou de l'ordre de 2 à 5 %.</li>
                 <li>Un risque de <strong>décollement de rétine</strong> post-vitrectomie de 1 à 3 %.</li>
+                <li>Un risque estimé à <strong>10-15 %</strong> de survenue d'un trou maculaire sur l'œil controlatéral, justifiant une surveillance régulière.</li>
             </ul>
             <p>
                 Plus la chirurgie est <strong>précoce</strong> (moins de 6 à 12 mois d'évolution) et plus le trou
                 est de petite taille, meilleur est le résultat fonctionnel final.
+            </p>
+
+            <h2>Approche du Dr Majoulet</h2>
+            <div class="forme-box" style="border-left-color: var(--accent-chir, #6b5d3f);">
+                <h3>Principes techniques appliqués</h3>
+                <ul>
+                    <li><strong>Vitrectomie 25G</strong> en routine, 27G réservée à des indications sélectionnées.</li>
+                    <li><strong>Coloration systématique de la MLI au bleu brillant</strong> (Dual Blue) — agent de coloration peu toxique pour la rétine, préféré au vert d'indocyanine (ICG).</li>
+                    <li><strong>Pelage MLI étendu</strong> sur environ 2 diamètres papillaires autour du trou.</li>
+                    <li><strong>Technique du lambeau inversé de MLI</strong> (Michalewska 2010) pour les <strong>grands trous &gt; 400 µm</strong> et les trous chroniques : amélioration documentée du taux de fermeture (méta-analyses 2019-2021) au prix d'une récupération fonctionnelle parfois plus lente.</li>
+                    <li><strong>Choix du gaz</strong> adapté : SF6 18-20 % pour les trous petits/moyens avec posture courte ; C3F8 14 % pour les grands trous, les trous chroniques et les contextes myopes.</li>
+                    <li><strong>Chirurgie combinée phaco-vitrectomie</strong> discutée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter la chirurgie secondaire de cataracte quasi systématique.</li>
+                    <li><strong>Surveillance de l'œil controlatéral</strong> avec OCT à chaque contrôle.</li>
+                </ul>
+            </div>
+
+            <h2>Pour aller plus loin — données scientifiques</h2>
+            <ul>
+                <li><strong>Kelly &amp; Wendel</strong> (<em>Arch Ophthalmol</em>, 1991) ont décrit la première série chirurgicale de trous maculaires par vitrectomie avec tamponnement gazeux, avec un taux de fermeture de l'ordre de 58 %. L'addition du pelage de la MLI a progressivement fait monter ce taux au-delà de 90 % (méta-analyse Spiteri Cornish et al., <em>Cochrane</em>, 2013 ; Lois et al., <em>Arch Ophthalmol</em>, 2011 — étude FILMS).</li>
+                <li><strong>Michalewska et al.</strong> (<em>Ophthalmology</em>, 2010) ont introduit la <strong>technique du lambeau inversé de MLI</strong>, qui permet d'améliorer sensiblement les résultats anatomiques dans les grands trous (&gt; 400 µm).</li>
+                <li>La <strong>classification IVTS</strong> (<em>International Vitreomacular Traction Study</em>, Duker et al., <em>Ophthalmology</em>, 2013) a standardisé la terminologie (syndrome de traction vitréomaculaire, trou maculaire de pleine épaisseur classé par diamètre minimal en OCT).</li>
+                <li>Les données sur le <strong>positionnement face-vers-le-bas abrégé</strong> (24-72 h) dans les trous &lt; 400 µm sont issues de plusieurs essais randomisés (Pasu et al., <em>Ophthalmology</em>, 2020 ; Guillaubey et al., <em>Am J Ophthalmol</em>, 2008).</li>
+            </ul>
+            <p style="font-size:0.85rem; font-style:italic;">
+                Références indicatives pour le lecteur averti ; elles ne se substituent pas à l'information remise en consultation.
             </p>
 
             <h2>Questions fréquentes des patients</h2>

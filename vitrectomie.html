@@ -35,8 +35,8 @@
         "description": "Fiche patient détaillée sur la vitrectomie mini-invasive (25G / 27G) : indications, déroulement, positionnement post-opératoire, tamponnements (SF6, C3F8, huile de silicone), suites et risques.",
         "inLanguage": "fr-FR",
         "datePublished": "2026-04-18",
-        "dateModified": "2026-04-18",
-        "lastReviewed": "2026-04-18",
+        "dateModified": "2026-04-20",
+        "lastReviewed": "2026-04-20",
         "reviewedBy": {
             "@type": "Physician",
             "@id": "https://docteurmajoulet.com/#physician",
@@ -57,7 +57,7 @@
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://docteurmajoulet.com/"},
-                {"@type": "ListItem", "position": 2, "name": "Pathologies", "item": "https://docteurmajoulet.com/pathologies"},
+                {"@type": "ListItem", "position": 2, "name": "Chirurgie de la rétine", "item": "https://docteurmajoulet.com/chirurgie-retine"},
                 {"@type": "ListItem", "position": 3, "name": "Vitrectomie", "item": "https://docteurmajoulet.com/vitrectomie"}
             ]
         }
@@ -216,7 +216,7 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
-nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
+nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; white-space: nowrap; }
 nav.main-nav .nav-link:hover, nav.main-nav .nav-link:focus-visible, nav.main-nav .nav-item.is-open .nav-link { color: var(--prusse); }
 nav.main-nav .nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
 nav.main-nav .nav-item.is-open .caret { transform: rotate(180deg); }
@@ -463,7 +463,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
     <div class="container">
         <nav class="breadcrumb-mini" aria-label="Fil d'Ariane">
             <a href="/">Accueil</a> &nbsp;›&nbsp;
-            <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp;
+            <a href="/chirurgie-retine">Chirurgie de la rétine</a> &nbsp;›&nbsp;
             Vitrectomie
         </nav>
         <h1>Vitrectomie</h1>
@@ -531,9 +531,9 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                 <p>
                     Traitement chirurgical des <strong>décollements de rétine</strong> par déchirure(s) :
                     vitrectomie + recherche et traitement des déchirures (laser ou cryo) +
-                    tamponnement par gaz ou huile de silicone. Alternative ou complément
-                    à l'indentation sclérale (cryo-indentation).
-                    Voir <a href="/decollement-retine">Décollement de rétine</a>.
+                    tamponnement par gaz ou huile de silicone.
+                    <strong>Algorithme du Dr Majoulet</strong> : une <a href="/chirurgie-decollement-retine">indentation sclérale</a> est privilégiée lorsque trois conditions sont réunies — patient de <strong>moins de 50 ans</strong>, œil <strong>phaque</strong>, <strong>déchirure facilement indentable</strong>. Dans tous les autres cas (patient plus âgé, pseudophake, déchirures multiples ou postérieures, cas complexes), la <strong>vitrectomie postérieure 25G (PPV)</strong> est retenue.
+                    Voir <a href="/chirurgie-decollement-retine">Chirurgie du décollement de rétine</a> et <a href="/decollement-retine">Décollement de rétine (fiche pathologie)</a>.
                 </p>
             </div>
 
@@ -707,6 +707,23 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                 <li><strong>Œdème maculaire</strong> post-opératoire.</li>
             </ul>
 
+            <h2>Pour aller plus loin — données scientifiques</h2>
+            <p>
+                La vitrectomie a connu deux évolutions majeures depuis les années 2000 :
+                le passage aux <strong>micro-incisions transconjonctivales auto-obturantes</strong>
+                (25G en 2002, 27G en 2010) et la systématisation du <strong>pelage de la membrane limitante interne</strong> (MLI)
+                dans la chirurgie maculaire.
+            </p>
+            <ul>
+                <li><strong>Pelage MLI dans le trou maculaire</strong> : le pelage de la MLI colorée (bleu brillant, Dual Blue) améliore significativement le taux de fermeture anatomique, qui dépasse aujourd'hui <strong>90 %</strong> en un seul temps opératoire (méta-analyse Spiteri Cornish et al., <em>Cochrane Database Syst Rev</em>, 2013).</li>
+                <li><strong>Cataracte post-vitrectomie</strong> : chez le patient phaque de plus de 50 ans, la progression d'une cataracte nucléaire est quasi-constante dans les 24 mois post-vitrectomie, ce qui motive la proposition fréquente d'une chirurgie combinée phaco-vitrectomie (Thompson, <em>Ophthalmology</em>, 2003 ; Feng &amp; Adelman, <em>Retina</em>, 2014).</li>
+                <li><strong>Endophtalmie</strong> : les registres post-2010 retrouvent une fréquence d'endophtalmie après vitrectomie 25G / 27G de l'ordre de <strong>0,02 à 0,05 %</strong>, inférieure ou équivalente à celle rapportée pour la 20G classique, à condition du respect strict de l'aseptie et de l'étanchéité des trocarts (Govetto et al., <em>Ophthalmologica</em>, 2017).</li>
+                <li><strong>Positionnement post-opératoire</strong> dans le trou maculaire : plusieurs travaux récents (dont Pasu et al., <em>Ophthalmology</em>, 2020) suggèrent qu'un positionnement face-vers-le-bas de <strong>24 à 72 heures</strong> peut suffire dans les trous de petit diamètre, sans dégrader le taux de fermeture. La durée prescrite reste adaptée individuellement en fonction de la taille du trou et du tamponnement retenu.</li>
+            </ul>
+            <p style="font-size:0.85rem; font-style:italic;">
+                Les références ci-dessus sont citées à titre indicatif pour le lecteur averti et ne se substituent pas à l'information remise en consultation.
+            </p>
+
             <h2>Questions fréquentes</h2>
 
             <div class="qr-block">
@@ -750,6 +767,40 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                 L'altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure.
                 Délai : <strong>2 semaines</strong> (SF6) ou <strong>6 à 8 semaines</strong> (C3F8).
                 Si l'intervention a été faite sous huile de silicone, le vol est possible sans délai.</p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">Combien de temps d'arrêt de travail prévoir ?</p>
+                <p class="r">Variable selon la profession et l'indication :
+                <strong>1 à 2 semaines</strong> après une vitrectomie simple sans tamponnement gazeux (membrane épirétinienne, corps flottants),
+                <strong>2 à 4 semaines</strong> en cas de posture post-opératoire (trou maculaire, décollement avec gaz),
+                jusqu'à <strong>4 à 6 semaines</strong> pour les cas complexes (rétinopathie diabétique, décollement avec silicone).
+                Un arrêt de travail adapté est systématiquement remis le jour de l'intervention.</p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">Faut-il arrêter les anticoagulants avant l'intervention ?</p>
+                <p class="r">La décision est prise en concertation avec le cardiologue ou le médecin prescripteur.
+                La vitrectomie 25G ou 27G par micro-incisions est <strong>peu hémorragique</strong> :
+                l'<strong>aspirine à faible dose est généralement poursuivie</strong>.
+                Les <strong>anticoagulants oraux directs (AOD)</strong> sont souvent arrêtés <strong>24 à 48 h</strong> avant,
+                les antivitamine K relayés selon le protocole habituel. <strong>Aucune décision d'arrêt n'est prise sans avis médical préalable.</strong></p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">L'intervention est-elle prise en charge par la Sécurité sociale ?</p>
+                <p class="r">Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l'indication) est un acte
+                <strong>intégralement pris en charge par l'Assurance Maladie</strong> sur la base des tarifs conventionnels.
+                Un devis détaillé (base de remboursement et dépassements d'honoraires éventuels) est remis avant l'intervention conformément à la réglementation.</p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">Peut-on opérer les deux yeux en même temps ?</p>
+                <p class="r"><strong>Non.</strong> La vitrectomie est pratiquée un œil à la fois,
+                et les deux yeux ne sont jamais opérés au cours du même temps opératoire. Un délai d'au moins
+                quelques semaines est respecté entre les deux yeux lorsqu'une bilatéralisation est nécessaire,
+                afin de limiter les conséquences fonctionnelles (vision transitoirement basse avec la bulle de gaz)
+                et de sécuriser la prise en charge en cas de complication.</p>
             </div>
 
             <!-- E-E-A-T block -->

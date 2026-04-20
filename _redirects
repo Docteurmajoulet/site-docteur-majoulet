@@ -71,7 +71,9 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /chirurgie-retine.html           /chirurgie-retine           301!
 /chirurgie-cataracte.html        /chirurgie-cataracte        301!
 /chirurgie-glaucome.html         /chirurgie-glaucome         301!
-/chirurgie-surface-paupieres.html /chirurgie-surface-paupieres 301!
+# 2026-04-20 : chirurgie-surface-paupieres consolidé sur chirurgie-surface-oculaire
+/chirurgie-surface-paupieres.html /chirurgie-surface-oculaire 301!
+/chirurgie-surface-paupieres      /chirurgie-surface-oculaire 301!
 # Batch 4 (2026-04-19) : 8 fiches « Urgences ophtalmologiques + Pédiatrie / dépistage » :
 /urgences-ophtalmologiques.html       /urgences-ophtalmologiques       301!
 /occlusion-artere-centrale-retine.html /occlusion-artere-centrale-retine 301!

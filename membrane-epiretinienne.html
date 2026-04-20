@@ -36,8 +36,8 @@
         "description": "Fiche d'information patient sur la membrane épirétinienne : mécanismes, classification OCT de Govetto, indications chirurgicales et technique du pelage.",
         "inLanguage": "fr-FR",
         "datePublished": "2026-04-18",
-        "dateModified": "2026-04-18",
-        "lastReviewed": "2026-04-18",
+        "dateModified": "2026-04-20",
+        "lastReviewed": "2026-04-20",
         "reviewedBy": {
             "@type": "Physician",
             "@id": "https://docteurmajoulet.com/#physician",
@@ -75,7 +75,7 @@
             "@type": "BreadcrumbList",
             "itemListElement": [
                 {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://docteurmajoulet.com/"},
-                {"@type": "ListItem", "position": 2, "name": "Pathologies", "item": "https://docteurmajoulet.com/pathologies"},
+                {"@type": "ListItem", "position": 2, "name": "Chirurgie de la rétine", "item": "https://docteurmajoulet.com/chirurgie-retine"},
                 {"@type": "ListItem", "position": 3, "name": "Membrane épirétinienne", "item": "https://docteurmajoulet.com/membrane-epiretinienne"}
             ]
         }
@@ -275,7 +275,7 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
-nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
+nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; white-space: nowrap; }
 nav.main-nav .nav-link:hover, nav.main-nav .nav-link:focus-visible, nav.main-nav .nav-item.is-open .nav-link { color: var(--prusse); }
 nav.main-nav .nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
 nav.main-nav .nav-item.is-open .caret { transform: rotate(180deg); }
@@ -522,7 +522,7 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
     <div class="container">
         <nav class="breadcrumb-mini" aria-label="Fil d'Ariane">
             <a href="/">Accueil</a> &nbsp;›&nbsp;
-            <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp;
+            <a href="/chirurgie-retine">Chirurgie de la rétine</a> &nbsp;›&nbsp;
             Membrane épirétinienne
         </nav>
         <h1>Membrane Épirétinienne</h1>
@@ -663,10 +663,34 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
             <ul>
                 <li><strong>Amélioration de l'acuité visuelle</strong> dans 80 à 90 % des cas, avec un gain moyen de 2 lignes.</li>
                 <li><strong>Récupération progressive sur 3 à 6 mois</strong>.</li>
-                <li><strong>Les métamorphopsies régressent plus lentement et partiellement</strong> : elles peuvent persister à un degré modéré.</li>
-                <li><strong>Récidive rare</strong> (< 5 %) lorsque le pelage associe MER + MLI.</li>
-                <li>Complications rares : <strong>déchirure rétinienne</strong> (2-3 %), <strong>décollement de rétine</strong> post-opératoire (< 2 %), <strong>endophtalmie</strong> (< 0,1 %).</li>
+                <li><strong>Les métamorphopsies régressent plus lentement et partiellement</strong> : elles peuvent persister à un degré modéré, d'où l'importance d'une indication posée avant l'apparition d'une désorganisation rétinienne sévère.</li>
+                <li><strong>Récidive rare</strong> (&lt; 5 %) lorsque le pelage associe MER + MLI.</li>
+                <li>Complications rares : <strong>déchirure rétinienne</strong> (2-3 %), <strong>décollement de rétine</strong> post-opératoire (&lt; 2 %), <strong>endophtalmie</strong> (&lt; 0,1 %).</li>
             </ul>
+
+            <h2>Approche du Dr Majoulet</h2>
+            <div class="forme-box" style="border-left-color: var(--accent-chir, #6b5d3f);">
+                <h3>Principes techniques appliqués</h3>
+                <ul>
+                    <li><strong>Indication posée sur le retentissement fonctionnel</strong> (acuité, métamorphopsies, gêne quotidienne) confronté à l'OCT (classification de Govetto), jamais sur la seule image morphologique.</li>
+                    <li><strong>Vitrectomie 25G</strong> en routine, avec induction d'un décollement postérieur du vitré si nécessaire.</li>
+                    <li><strong>Pelage systématique MER + MLI</strong> sous coloration par bleu brillant (Dual Blue) — la double étape limite le risque de récidive, validée par les méta-analyses récentes.</li>
+                    <li><strong>Pas de tamponnement gazeux</strong> en règle pour une MER isolée — donc <strong>pas de posture</strong> post-opératoire et aucune restriction de vol.</li>
+                    <li><strong>Chirurgie combinée phaco-vitrectomie</strong> proposée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une chirurgie secondaire de cataracte quasi systématique dans les 12 à 24 mois.</li>
+                    <li><strong>Information du patient sur la dynamique de récupération</strong> : l'amélioration visuelle se poursuit jusqu'à 6 à 12 mois ; une stabilisation à 3 mois n'est pas la valeur finale.</li>
+                </ul>
+            </div>
+
+            <h2>Pour aller plus loin — données scientifiques</h2>
+            <ul>
+                <li><strong>Govetto et al.</strong> (<em>Am J Ophthalmol</em>, 2017) ont proposé la classification OCT en 4 stades utilisée en routine, reposant sur la conservation de la dépression fovéolaire et la présence d'<em>ectopic inner foveal layers</em> — marqueurs pronostiques désormais validés.</li>
+                <li>La <strong>supériorité du pelage combiné MER + MLI</strong> sur le pelage isolé de la MER, en termes de réduction du risque de récidive, est documentée par plusieurs méta-analyses (Chang et al., <em>Retina</em>, 2017 ; Azuma et al., <em>Retina</em>, 2017). L'impact fonctionnel additionnel à long terme reste débattu.</li>
+                <li>Les études suggèrent qu'un <strong>pelage précoce</strong> (avant désorganisation fovéolaire importante, stades 1-2 de Govetto) est associé à un meilleur gain visuel et à une récupération plus prévisible.</li>
+                <li><strong>Cataracte post-vitrectomie</strong> : chez le patient phaque &gt; 50 ans, une cataracte nucléaire apparaît dans 70 à 90 % des cas dans les 24 mois (Feng &amp; Adelman, <em>Retina</em>, 2014), ce qui motive la fréquente chirurgie combinée.</li>
+            </ul>
+            <p style="font-size:0.85rem; font-style:italic;">
+                Références indicatives pour le lecteur averti ; elles ne se substituent pas à l'information remise en consultation.
+            </p>
 
             <h2>Questions fréquentes des patients</h2>
 
@@ -708,6 +732,33 @@ body.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 19px; 
                 apparaît dans 70 à 90 % des cas dans les 12 à 24 mois post-vitrectomie.
                 Une <strong>chirurgie combinée</strong> (vitrectomie + phacoémulsification + implant)
                 peut être proposée en un temps, évitant la seconde intervention.</p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">Y aura-t-il un gaz dans l'œil après la chirurgie ?</p>
+                <p class="r"><strong>Non, habituellement</strong>, en cas de membrane épirétinienne isolée,
+                aucun tamponnement par gaz n'est nécessaire. L'œil est rempli de liquide physiologique (BSS).
+                Il n'y a donc <strong>pas de posture particulière</strong>, pas de contre-indication au voyage aérien,
+                et la vision redevient progressivement perceptible dans les jours qui suivent l'intervention.
+                Seule une association à un trou maculaire (rare) imposerait un tamponnement et une posture.</p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">Si je ne me fais pas opérer, la vision va-t-elle continuer à baisser ?</p>
+                <p class="r">L'évolution d'une MER peut être lente et rester stable pendant des années,
+                ou au contraire progresser sur plusieurs mois. Un <strong>suivi OCT tous les 6 à 12 mois</strong>
+                permet de documenter l'évolution (épaisseur fovéolaire, apparition d'<em>ectopic inner foveal layers</em>,
+                apparition de kystes). Une chirurgie trop tardive, sur une rétine très désorganisée,
+                donne un résultat fonctionnel moins favorable — d'où l'importance de ne pas tarder
+                lorsque la gêne s'installe.</p>
+            </div>
+
+            <div class="qr-block">
+                <p class="q">La chirurgie est-elle prise en charge par la Sécurité sociale ?</p>
+                <p class="r">Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM,
+                <strong>intégralement pris en charge par l'Assurance Maladie</strong> sur la base du tarif conventionnel.
+                Un devis détaillé (base de remboursement, dépassements d'honoraires éventuels)
+                est remis avant toute intervention.</p>
             </div>
 
             <!-- E-E-A-T block -->

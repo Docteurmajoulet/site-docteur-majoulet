@@ -55,11 +55,8 @@
         a:hover { color: var(--bleu-gris); }
         .container { max-width: 820px; margin: 0 auto; padding: 0 24px; }
 
-        nav {
-            position: fixed; top: 0; left: 0; right: 0; z-index: 100;
-            background: rgba(249,247,242,0.97); backdrop-filter: blur(12px);
-            border-bottom: 1px solid var(--border);
-        }
+        /* Legacy `nav { position: fixed }` retirée : s'appliquait par erreur au
+           <nav class="main-nav"> du mega-menu v5 et masquait le logo. */
         .nav-inner {
             max-width: 1100px; margin: 0 auto; padding: 0 24px;
             display: flex; align-items: center; justify-content: space-between; height: 72px;
@@ -130,7 +127,7 @@ header.site-header { position: sticky; top: 0; z-index: 100; background: rgba(24
 nav.main-nav { flex: 1; display: flex; justify-content: flex-end; gap: 8px; padding-right: 18px; }
 nav.main-nav .nav-list { list-style: none; display: flex; gap: 4px; padding-left: 0; margin-bottom: 0; }
 nav.main-nav .nav-item { position: relative; margin-bottom: 0; }
-nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; }
+nav.main-nav .nav-link { display: inline-flex; align-items: center; gap: 6px; padding: 26px 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-light); letter-spacing: 0.05em; text-transform: uppercase; transition: color 0.2s; cursor: pointer; background: none; border: none; font-family: inherit; text-decoration: none; white-space: nowrap; }
 nav.main-nav .nav-link:hover, nav.main-nav .nav-link:focus-visible, nav.main-nav .nav-item.is-open .nav-link { color: var(--prusse); }
 nav.main-nav .nav-link .caret { width: 10px; height: 10px; transition: transform 0.2s; }
 nav.main-nav .nav-item.is-open .caret { transform: rotate(180deg); }
