@@ -24,11 +24,11 @@
   Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()
 
   # --- Content-Security-Policy ---
-  # Autorise : fonts.googleapis.com / fonts.gstatic.com (Montserrat),
-  # doctolib.fr (lien CTA), google.com/maps (iframe contact).
-  # 'unsafe-inline' pour <style> et <script> est temporairement nécessaire : le JS et les styles sont inline dans le HTML.
-  # TODO : externaliser CSS/JS et supprimer 'unsafe-inline' (recommandation OWASP).
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; frame-src https://www.google.com https://www.doctolib.fr; connect-src 'self'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+  # Phase 4.2 : Montserrat self-hosted → plus besoin d'autoriser fonts.googleapis.com / fonts.gstatic.com.
+  # Autorise : doctolib.fr (CTA sortant), google.com/maps (iframe contact), images HTTPS (schémas JSON-LD).
+  # 'unsafe-inline' pour <style>/<script> reste nécessaire : JS et CSS sont inline dans le HTML.
+  # TODO : externaliser CSS/JS et supprimer 'unsafe-inline' (recommandation OWASP) — Phase 5.
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; frame-src https://www.google.com https://www.doctolib.fr; connect-src 'self'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
 
 # ---------- Cache : assets versionnables (images, fonts) ----------
 /*.png
@@ -39,9 +39,20 @@
   Cache-Control: public, max-age=31536000, immutable
 /*.webp
   Cache-Control: public, max-age=31536000, immutable
+/*.avif
+  Cache-Control: public, max-age=31536000, immutable
 /*.svg
   Cache-Control: public, max-age=31536000, immutable
 /*.woff2
+  Cache-Control: public, max-age=31536000, immutable
+
+# ---------- Cache dédié : /fonts/ et /img/ (Phase 4.2 & 4.3) ----------
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+  Access-Control-Allow-Origin: *
+/img/*
+  Cache-Control: public, max-age=31536000, immutable
+/img/icons/*
   Cache-Control: public, max-age=31536000, immutable
 
 # ---------- Cache : HTML (revalidation systématique) ----------
