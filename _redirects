@@ -105,6 +105,16 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /incision-chalazion.html                 /incision-chalazion                 301!
 /bouchons-meatiques.html                 /bouchons-meatiques                 301!
 
+# Batch 6 (2026-04-22) : 8 nouvelles fiches pathologies (Rétine +3, Cornée +5) :
+/oedeme-maculaire-cystoide.html            /oedeme-maculaire-cystoide            301!
+/hemorragie-intravitreenne.html            /hemorragie-intravitreenne            301!
+/neovaisseaux-choroidiens-myope-fort.html  /neovaisseaux-choroidiens-myope-fort  301!
+/keratite.html                             /keratite                             301!
+/photokeratite.html                        /photokeratite                        301!
+/conjonctivite.html                        /conjonctivite                        301!
+/pterygion.html                            /pterygion                            301!
+/dystrophie-cornee-fuchs.html              /dystrophie-cornee-fuchs              301!
+
 # ---------- 4. Anciennes URLs éventuelles ----------
 # (À compléter après audit de la Search Console : ajouter ici les anciennes URLs qui 404)
 # /ancienne-page   /nouvelle-page   301

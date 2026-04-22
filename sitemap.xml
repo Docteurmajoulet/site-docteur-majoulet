@@ -395,6 +395,55 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+    <!-- ================== Batch 6 (2026-04-22) : 8 nouvelles fiches pathologies (Rétine +3, Cornée +5) ================== -->
+    <url>
+        <loc>https://docteurmajoulet.com/oedeme-maculaire-cystoide</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/hemorragie-intravitreenne</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/keratite</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/photokeratite</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/conjonctivite</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/pterygion</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://docteurmajoulet.com/dystrophie-cornee-fuchs</loc>
+        <lastmod>2026-04-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
     <url>
         <loc>https://docteurmajoulet.com/mentions-legales</loc>
         <lastmod>2026-04-18</lastmod>
