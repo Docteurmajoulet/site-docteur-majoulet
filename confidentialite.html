@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Tronc CSS commun (charte + reset + a11y) -->
+    <link rel="stylesheet" href="/main.css">
+
     <!-- Preconnect Doctolib : anticipe TCP+TLS pour CTA prise de RDV -->
     <link rel="preconnect" href="https://www.doctolib.fr">
     <link rel="dns-prefetch" href="https://www.doctolib.fr">
@@ -27,22 +30,7 @@
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-700.woff2">
     <link rel="stylesheet" href="/fonts/fonts.css">
     <style>
-        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-        :root {
-            --prusse: #283339;
-            --prusse-light: #344047;
-            --bleu-gris: #9AAAB2;
-            --sable: #BFB297;
-            --blanc-naturel: #F9F7F2;
-            --blanc: #ffffff;
-            --vert-fonce: #2c3a37;
-            --text: #283339;
-            --text-light: #5a6a72;
-            --border: #e2ddd4;
-            --radius: 12px;
-    --accent-chir: #6b5d3f;
-        }
-        html { scroll-behavior: smooth; font-size: 16px; }
+            html { scroll-behavior: smooth; font-size: 16px; }
         body {
             font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
             color: var(--text); line-height: 1.7;

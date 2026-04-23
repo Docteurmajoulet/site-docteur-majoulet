@@ -1,0 +1,81 @@
+/*
+ * main.css — Tronc commun du site docteurmajoulet.com
+ *
+ * Ce fichier regroupe les éléments partagés par toutes les pages :
+ *   - Variables CSS (charte Ophtalife : palette, ombres, radius)
+ *   - Reset universel
+ *   - Skip link accessibilité (WCAG 2.1 SC 2.4.1)
+ *
+ * Les règles spécifiques à chaque fiche restent en <style> inline
+ * dans la page correspondante. Ce découpage maximise le cache navigateur
+ * (main.css téléchargé une seule fois) sans fragiliser les maquettes.
+ */
+
+:root {
+    /* Charte Ophtalife — palette principale */
+    --prusse: #283339;
+    --prusse-light: #344047;
+    --prusse-dark: #1f282d;
+    --bleu-gris: #9AAAB2;
+    --bleu-gris-light: #b8c5cb;
+    --sable: #BFB297;
+    --sable-light: #d4cbb5;
+    --sable-clair: #d4c9b2;
+    --blanc-naturel: #F9F7F2;
+    --blanc: #ffffff;
+    /* Couleurs secondaires */
+    --vert-gris: #94a8a2;
+    --vert-fonce: #2c3a37;
+    --brun: #60544d;
+    --accent-chir: #6b5d3f;
+    /* Texte (conservation des deux familles de noms existantes : --text et --texte) */
+    --text: #283339;
+    --text-light: #5a6a72;
+    --text-muted: #7a8a92;
+    --texte: #2b2b2b;
+    --texte-clair: #5a5a5a;
+    /* Bordures / radius */
+    --border: #e2ddd4;
+    --bordure: #e5e2dc;
+    --radius: 12px;
+    --radius-sm: 8px;
+    /* Ombres */
+    --shadow-sm: 0 1px 3px rgba(40,51,57,0.06);
+    --shadow-md: 0 4px 20px rgba(40,51,57,0.08);
+    --shadow-lg: 0 8px 40px rgba(40,51,57,0.1);
+    /* Alertes (encadrés urgence / attention) */
+    --alerte-bordure: #e07b1a;
+    --alerte-fond: #fff4e6;
+    --alerte-texte: #8a4510;
+}
+
+/* Reset universel */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/*
+ * Skip link (WCAG 2.1 SC 2.4.1 — Bypass Blocks) :
+ * permet aux utilisateurs de clavier et lecteurs d'écran de sauter
+ * directement au contenu principal sans parcourir l'en-tête/menu.
+ * Caché hors focus via translation, visible au focus clavier.
+ */
+.skip-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    padding: 12px 20px;
+    background: var(--prusse);
+    color: var(--blanc);
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 0 0 var(--radius-sm) 0;
+    transform: translateY(-120%);
+    transition: transform 0.15s ease-out;
+}
+.skip-link:focus {
+    transform: translateY(0);
+    outline: 3px solid var(--sable);
+    outline-offset: 2px;
+}

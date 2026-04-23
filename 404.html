@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Tronc CSS commun (charte + reset + a11y) -->
+    <link rel="stylesheet" href="/main.css">
+
     <!-- Preconnect Doctolib : anticipe TCP+TLS pour CTA prise de RDV -->
     <link rel="preconnect" href="https://www.doctolib.fr">
     <link rel="dns-prefetch" href="https://www.doctolib.fr">
@@ -20,19 +23,7 @@
     <link rel="manifest" href="/site.webmanifest">
 
     <style>
-        :root {
-            --prusse: #283339;
-            --sable: #C8B898;
-            --blanc-naturel: #F9F7F2;
-            --texte: #2b2b2b;
-            --texte-clair: #5a5a5a;
-            --bordure: #e5e2dc;
-            --alerte-fond: #fff4e6;
-            --alerte-bordure: #e07b1a;
-            --alerte-texte: #8a4510;
-        }
-
-        *, *::before, *::after { box-sizing: border-box; }
+            *, *::before, *::after { box-sizing: border-box; }
         html, body { margin: 0; padding: 0; }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
