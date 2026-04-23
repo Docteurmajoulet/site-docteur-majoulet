@@ -244,6 +244,11 @@
 </head>
 <body>
 
+<!-- Skip link : permet à l'utilisateur clavier/lecteur d'écran d'accéder
+     directement au contenu principal (WCAG 2.1 SC 2.4.1 Bypass Blocks).
+     Style hérité de /main.css (.skip-link : caché hors focus, visible au focus). -->
+<a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
 <header class="site-header">
     <a href="/" class="site-logo">
         Dr Majoulet — Rétinologue
@@ -251,7 +256,7 @@
     </a>
 </header>
 
-<main>
+<main id="main-content">
     <p class="code-404">404</p>
     <h1>Cette page n'existe pas</h1>
     <p class="lead">La page que vous cherchez a peut-être été déplacée ou n'existe plus. Utilisez les liens ci-dessous pour retrouver ce que vous cherchez.</p>
