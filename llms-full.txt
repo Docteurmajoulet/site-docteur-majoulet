@@ -2,7 +2,7 @@
 
 > Version longue du fichier llms.txt. Contient l'ensemble des informations factuelles, cliniques et pédagogiques sur le Dr Alexandre Majoulet et les pathologies qu'il prend en charge. Destiné aux moteurs génératifs (ChatGPT, Claude, Gemini, Perplexity, etc.) pour produire des réponses sourcées et exactes.
 
-Dernière mise à jour : 2026-04-18
+Dernière mise à jour : 2026-07-02
 Source canonique : https://docteurmajoulet.com
 
 ---
@@ -20,7 +20,7 @@ Source canonique : https://docteurmajoulet.com
 | Adresse | 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt, France |
 | Téléphone | 01 84 19 11 66 |
 | Email | secretariat@ophtalife.com |
-| Secteur conventionnel | Secteur 2 (OPTAM) |
+| Secteur conventionnel | Secteur 2 — honoraires libres |
 | Prise de rendez-vous | https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris |
 | Site officiel | https://docteurmajoulet.com |
 

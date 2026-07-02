@@ -2,7 +2,7 @@
 
 > Fichier structuré à destination des moteurs génératifs (LLM) : informations fiables et vérifiées sur le Dr Alexandre Majoulet, son cabinet et ses domaines d'expertise. La version longue (biographie + cas cliniques) est disponible dans /llms-full.txt.
 
-Dernière mise à jour : 2026-04-18
+Dernière mise à jour : 2026-07-02
 
 ## Identité professionnelle
 
@@ -15,7 +15,7 @@ Dernière mise à jour : 2026-04-18
 - **Adresse** : 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt, France
 - **Téléphone** : 01 84 19 11 66
 - **Email** : secretariat@ophtalife.com
-- **Secteur** : Secteur 2 conventionné (OPTAM)
+- **Secteur** : Secteur 2 conventionné (honoraires libres)
 - **Rendez-vous** : https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris
 - **Site officiel** : https://docteurmajoulet.com
 
