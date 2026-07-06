@@ -471,6 +471,8 @@
 
         .parcours-text p { color: var(--text-light); margin-bottom: 16px; font-size: 0.95rem; font-weight: 400; }
 
+        .parcours-text .parcours-card { margin-top: 28px; }
+
         .parcours-highlights { display: flex; flex-direction: column; gap: 20px; }
 
         .parcours-card {
@@ -507,6 +509,7 @@
             color: var(--sable);
             text-transform: uppercase; letter-spacing: 0.06em;
             white-space: nowrap; min-width: 82px;
+            flex-shrink: 0;
             padding-top: 2px;
         }
         .parcours-card-content h4 {
@@ -1148,6 +1151,39 @@ body.menu-open { overflow: hidden; }
                     des <strong>consultations spécialisées</strong> ainsi que des <strong>interventions chirurgicales</strong>.
                     Les interventions sont réalisées à la <strong>Clinique Jouvenet</strong> à Paris 16.
                 </p>
+
+                <!-- Carte Diplômes (déplacée sous le texte le 2026-07-06 pour équilibrer les colonnes) : Diplômes & certifications -->
+                <div class="parcours-card">
+                    <div class="parcours-card-header">
+                        <span class="parcours-card-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 2 8l10 5 10-5-10-5Zm0 5v9m-6-3v3a2 2 0 0 0 1 1.732l4 2.31a2 2 0 0 0 2 0l4-2.31A2 2 0 0 0 18 17v-3"/></svg>
+                        </span>
+                        <h3>Diplômes &amp; certifications</h3>
+                    </div>
+                    <div class="parcours-card-list">
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2024</div>
+                            <div class="parcours-card-content">
+                                <h4>DIU Chirurgie Vitréo-Rétinienne</h4>
+                                <p>Université Paris-Saclay (Paris 11) — Diplôme Inter-Universitaire</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2023</div>
+                            <div class="parcours-card-content">
+                                <h4>DES d'Ophtalmologie</h4>
+                                <p>Université de Versailles-Saint-Quentin-en-Yvelines (UVSQ)</p>
+                            </div>
+                        </div>
+                        <div class="parcours-card-item">
+                            <div class="parcours-card-year">2022</div>
+                            <div class="parcours-card-content">
+                                <h4>FEBO — European Board of Ophthalmology</h4>
+                                <p>Fellow of the European Board of Ophthalmology (Bruxelles) — certification européenne</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="parcours-highlights fade-in">
 
@@ -1191,38 +1227,6 @@ body.menu-open { overflow: hidden; }
                     </div>
                 </div>
 
-                <!-- Carte 2 : Diplômes & certifications -->
-                <div class="parcours-card">
-                    <div class="parcours-card-header">
-                        <span class="parcours-card-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3 2 8l10 5 10-5-10-5Zm0 5v9m-6-3v3a2 2 0 0 0 1 1.732l4 2.31a2 2 0 0 0 2 0l4-2.31A2 2 0 0 0 18 17v-3"/></svg>
-                        </span>
-                        <h3>Diplômes &amp; certifications</h3>
-                    </div>
-                    <div class="parcours-card-list">
-                        <div class="parcours-card-item">
-                            <div class="parcours-card-year">2024</div>
-                            <div class="parcours-card-content">
-                                <h4>DIU Chirurgie Vitréo-Rétinienne</h4>
-                                <p>Université Paris-Saclay (Paris 11) — Diplôme Inter-Universitaire</p>
-                            </div>
-                        </div>
-                        <div class="parcours-card-item">
-                            <div class="parcours-card-year">2023</div>
-                            <div class="parcours-card-content">
-                                <h4>DES d'Ophtalmologie</h4>
-                                <p>Université de Versailles-Saint-Quentin-en-Yvelines (UVSQ)</p>
-                            </div>
-                        </div>
-                        <div class="parcours-card-item">
-                            <div class="parcours-card-year">2022</div>
-                            <div class="parcours-card-content">
-                                <h4>FEBO — European Board of Ophthalmology</h4>
-                                <p>Fellow of the European Board of Ophthalmology (Bruxelles) — certification européenne</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <!-- Carte 3 : Recherche & rayonnement -->
                 <div class="parcours-card">
