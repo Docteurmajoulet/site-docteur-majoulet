@@ -40,37 +40,37 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /chorioretinopathie-sereuse-centrale.html  /chorioretinopathie-sereuse-centrale  301!
 /glaucome.html                   /glaucome                   301!
 /myopie-forte.html               /myopie-forte               301!
-/secheresse-oculaire.html        /secheresse-oculaire        301!
-/uveites.html                    /uveites                    301!
+/secheresse-oculaire.html                /cornee-surface-paupieres#secheresse   301!
+/uveites.html                            /cornee-surface-paupieres#uveites   301!
 /vitrectomie.html                /vitrectomie                301!
 /injection-intravitreenne.html   /injection-intravitreenne   301!
 /keratocone.html                 /keratocone                 301!
 /decollement-posterieur-vitre.html  /decollement-posterieur-vitre  301!
 /retinite-pigmentaire.html       /retinite-pigmentaire       301!
 /cataracte-secondaire-laser-yag.html  /cataracte-secondaire-laser-yag  301!
-/hypertension-oculaire.html      /hypertension-oculaire      301!
-/chalazion.html                  /chalazion                  301!
-/blepharite.html                 /blepharite                 301!
+/hypertension-oculaire.html              /glaucome#hto   301!
+/chalazion.html                          /cornee-surface-paupieres#chalazion   301!
+/blepharite.html                         /cornee-surface-paupieres#blepharite   301!
 # Fiches « Suivi & corrections optiques » (Batch 3 — 2026-04-19) :
-/bilan-ophtalmologique.html      /bilan-ophtalmologique      301!
+/bilan-ophtalmologique.html              /suivi-corrections-optiques#bilan   301!
 /myopie.html                     /myopie                     301!
 /hypermetropie.html              /hypermetropie              301!
-/astigmatisme.html               /astigmatisme               301!
-/presbytie.html                  /presbytie                  301!
-/lunettes-prescription.html      /lunettes-prescription      301!
-/lentilles-de-contact.html       /lentilles-de-contact       301!
+/astigmatisme.html                       /suivi-corrections-optiques#astigmatisme   301!
+/presbytie.html                          /suivi-corrections-optiques#presbytie   301!
+/lunettes-prescription.html              /suivi-corrections-optiques#lunettes   301!
+/lentilles-de-contact.html               /suivi-corrections-optiques#lentilles   301!
 /suivi-diabete-hta.html          /suivi-diabete-hta          301!
 # Page bio dédiée (à créer ultérieurement si besoin) :
 # /bio.html                      /bio                        301!
 # Pillars (Phase 3 — 2026-04-19) : 5 Pathologies + 4 Chirurgies :
 /retine.html                     /retine                     301!
-/cataracte-cristallin.html       /cataracte-cristallin       301!
-/glaucome-pression-oculaire.html /glaucome-pression-oculaire 301!
+/cataracte-cristallin.html               /cataracte   301!
+/glaucome-pression-oculaire.html         /glaucome   301!
 /cornee-surface-paupieres.html   /cornee-surface-paupieres   301!
 /suivi-corrections-optiques.html /suivi-corrections-optiques 301!
 /chirurgie-retine.html           /chirurgie-retine           301!
 /chirurgie-cataracte.html        /chirurgie-cataracte        301!
-/chirurgie-glaucome.html         /chirurgie-glaucome         301!
+/chirurgie-glaucome.html                 /glaucome#chirurgie   301!
 # 2026-04-20 : chirurgie-surface-paupieres consolidé sur chirurgie-surface-oculaire
 /chirurgie-surface-paupieres.html /chirurgie-surface-oculaire 301!
 /chirurgie-surface-paupieres      /chirurgie-surface-oculaire 301!
@@ -80,40 +80,72 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /baisse-brutale-vision.html           /baisse-brutale-vision           301!
 /flashs-phosphenes-myodesopsies.html  /flashs-phosphenes-myodesopsies  301!
 /amblyopie.html                       /amblyopie                       301!
-/strabisme-enfant.html                /strabisme-enfant                301!
+/strabisme-enfant.html                   /depistage-visuel-enfant#strabisme   301!
 /depistage-visuel-enfant.html         /depistage-visuel-enfant         301!
-/myopie-enfant-freination.html        /myopie-enfant-freination        301!
-
+/myopie-enfant-freination.html           /depistage-visuel-enfant#freination-myopie   301!
 # Batch 5 (2026-04-19) : 16 fiches de transition (bio + contact + 14 chirurgies) :
 /le-dr-majoulet.html                     /le-dr-majoulet                     301!
 /contact.html                            /contact                            301!
 /implants-monofocaux.html                /implants-monofocaux                301!
 /implants-toriques.html                  /implants-toriques                  301!
 /implants-multifocaux.html               /implants-multifocaux               301!
-/laser-slt.html                          /laser-slt                          301!
-/iridotomie-laser-yag.html               /iridotomie-laser-yag               301!
-/migs.html                               /migs                               301!
-/trabeculectomie.html                    /trabeculectomie                    301!
-/sclerectomie-profonde-non-perforante.html  /sclerectomie-profonde-non-perforante  301!
-/chirurgie-decollement-retine.html       /chirurgie-decollement-retine       301!
+/laser-slt.html                          /glaucome#slt   301!
+/iridotomie-laser-yag.html               /glaucome#iridotomie   301!
+/migs.html                               /glaucome#migs   301!
+/trabeculectomie.html                    /glaucome#trabeculectomie   301!
+/sclerectomie-profonde-non-perforante.html/glaucome#trabeculectomie   301!
+/chirurgie-decollement-retine.html       /decollement-retine#traitement-chirurgical   301!
 /photocoagulation-laser.html             /photocoagulation-laser             301!
 /chirurgie-surface-oculaire.html         /chirurgie-surface-oculaire         301!
-/ipl.html                                /ipl                                301!
+/ipl.html                                /chirurgie-surface-oculaire#ipl   301!
 # 2026-04-20 : renommage ipl-lipiflow → ipl (LipiFlow non pratiqué au cabinet)
 /ipl-lipiflow.html                       /ipl                                301!
 /ipl-lipiflow                            /ipl                                301!
-/incision-chalazion.html                 /incision-chalazion                 301!
-/bouchons-meatiques.html                 /bouchons-meatiques                 301!
-
+/incision-chalazion.html                 /chirurgie-surface-oculaire#chalazion   301!
+/bouchons-meatiques.html                 /chirurgie-surface-oculaire#bouchons-meatiques   301!
 # Batch 6 (2026-04-22) : 8 nouvelles fiches pathologies (Rétine +3, Cornée +5) :
 /oedeme-maculaire-cystoide.html            /oedeme-maculaire-cystoide            301!
 /hemorragie-intravitreenne.html            /hemorragie-intravitreenne            301!
 /neovaisseaux-choroidiens-myope-fort.html  /neovaisseaux-choroidiens-myope-fort  301!
-/keratite.html                             /keratite                             301!
-/photokeratite.html                        /photokeratite                        301!
-/conjonctivite.html                        /conjonctivite                        301!
-/pterygion.html                            /pterygion                            301!
-/dystrophie-cornee-fuchs.html              /dystrophie-cornee-fuchs              301!
+/keratite.html                           /cornee-surface-paupieres#keratite   301!
+/photokeratite.html                      /cornee-surface-paupieres#photokeratite   301!
+/conjonctivite.html                      /cornee-surface-paupieres#conjonctivite   301!
+/pterygion.html                          /cornee-surface-paupieres#pterygion   301!
+/dystrophie-cornee-fuchs.html            /cornee-surface-paupieres#dystrophie-fuchs   301!
+
+# ==============================================================
+# Consolidation SEO 2026-07-06 : fusion de 29 fiches dans leurs pages piliers
+# (recentrage rétine / cataracte — cf. PLAN_CONSOLIDATION_SEO_20260706.md)
+# ==============================================================
+/glaucome-pression-oculaire              /glaucome   301!
+/hypertension-oculaire                   /glaucome#hto   301!
+/chirurgie-glaucome                      /glaucome#chirurgie   301!
+/laser-slt                               /glaucome#slt   301!
+/iridotomie-laser-yag                    /glaucome#iridotomie   301!
+/migs                                    /glaucome#migs   301!
+/trabeculectomie                         /glaucome#trabeculectomie   301!
+/sclerectomie-profonde-non-perforante    /glaucome#trabeculectomie   301!
+/secheresse-oculaire                     /cornee-surface-paupieres#secheresse   301!
+/blepharite                              /cornee-surface-paupieres#blepharite   301!
+/chalazion                               /cornee-surface-paupieres#chalazion   301!
+/conjonctivite                           /cornee-surface-paupieres#conjonctivite   301!
+/keratite                                /cornee-surface-paupieres#keratite   301!
+/photokeratite                           /cornee-surface-paupieres#photokeratite   301!
+/pterygion                               /cornee-surface-paupieres#pterygion   301!
+/dystrophie-cornee-fuchs                 /cornee-surface-paupieres#dystrophie-fuchs   301!
+/uveites                                 /cornee-surface-paupieres#uveites   301!
+/ipl                                     /chirurgie-surface-oculaire#ipl   301!
+/incision-chalazion                      /chirurgie-surface-oculaire#chalazion   301!
+/bouchons-meatiques                      /chirurgie-surface-oculaire#bouchons-meatiques   301!
+/astigmatisme                            /suivi-corrections-optiques#astigmatisme   301!
+/presbytie                               /suivi-corrections-optiques#presbytie   301!
+/lunettes-prescription                   /suivi-corrections-optiques#lunettes   301!
+/lentilles-de-contact                    /suivi-corrections-optiques#lentilles   301!
+/bilan-ophtalmologique                   /suivi-corrections-optiques#bilan   301!
+/strabisme-enfant                        /depistage-visuel-enfant#strabisme   301!
+/myopie-enfant-freination                /depistage-visuel-enfant#freination-myopie   301!
+/cataracte-cristallin                    /cataracte   301!
+/chirurgie-decollement-retine            /decollement-retine#traitement-chirurgical   301!
 
 # ---------- 4. Anciennes URLs éventuelles ----------
 # (À compléter après audit de la Search Console : ajouter ici les anciennes URLs qui 404)

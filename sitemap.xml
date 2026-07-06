@@ -26,7 +26,7 @@
     </url>
     <url>
         <loc>https://docteurmajoulet.com/decollement-retine</loc>
-        <lastmod>2026-07-02</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
@@ -74,24 +74,12 @@
     </url>
     <url>
         <loc>https://docteurmajoulet.com/glaucome</loc>
-        <lastmod>2026-07-02</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
         <loc>https://docteurmajoulet.com/myopie-forte</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/secheresse-oculaire</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/uveites</loc>
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -133,30 +121,6 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://docteurmajoulet.com/hypertension-oculaire</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/chalazion</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/blepharite</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/bilan-ophtalmologique</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
         <loc>https://docteurmajoulet.com/myopie</loc>
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
@@ -167,30 +131,6 @@
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/astigmatisme</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/presbytie</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/lunettes-prescription</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/lentilles-de-contact</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
     </url>
     <url>
         <loc>https://docteurmajoulet.com/suivi-diabete-hta</loc>
@@ -235,22 +175,10 @@
         <priority>0.85</priority>
     </url>
     <url>
-        <loc>https://docteurmajoulet.com/strabisme-enfant</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
         <loc>https://docteurmajoulet.com/depistage-visuel-enfant</loc>
-        <lastmod>2026-07-02</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/myopie-enfant-freination</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://docteurmajoulet.com/retine</loc>
@@ -259,26 +187,14 @@
         <priority>0.95</priority>
     </url>
     <url>
-        <loc>https://docteurmajoulet.com/cataracte-cristallin</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/glaucome-pression-oculaire</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
         <loc>https://docteurmajoulet.com/cornee-surface-paupieres</loc>
-        <lastmod>2026-07-02</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
     <url>
         <loc>https://docteurmajoulet.com/suivi-corrections-optiques</loc>
-        <lastmod>2026-07-02</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
     </url>
@@ -293,12 +209,6 @@
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/chirurgie-glaucome</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
     </url>
     <url>
         <loc>https://docteurmajoulet.com/le-dr-majoulet</loc>
@@ -331,42 +241,6 @@
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://docteurmajoulet.com/laser-slt</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/iridotomie-laser-yag</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/migs</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/trabeculectomie</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/sclerectomie-profonde-non-perforante</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/chirurgie-decollement-retine</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
         <loc>https://docteurmajoulet.com/photocoagulation-laser</loc>
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
@@ -374,25 +248,7 @@
     </url>
     <url>
         <loc>https://docteurmajoulet.com/chirurgie-surface-oculaire</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/ipl</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/incision-chalazion</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/bouchons-meatiques</loc>
-        <lastmod>2026-07-02</lastmod>
+        <lastmod>2026-07-06</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
@@ -413,35 +269,5 @@
         <lastmod>2026-07-02</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/keratite</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/photokeratite</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.85</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/conjonctivite</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/pterygion</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://docteurmajoulet.com/dystrophie-cornee-fuchs</loc>
-        <lastmod>2026-07-02</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
     </url>
 </urlset>
