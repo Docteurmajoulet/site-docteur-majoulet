@@ -93,14 +93,14 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /iridotomie-laser-yag.html               /glaucome#iridotomie   301!
 /migs.html                               /glaucome#migs   301!
 /trabeculectomie.html                    /glaucome#trabeculectomie   301!
-/sclerectomie-profonde-non-perforante.html/glaucome#trabeculectomie   301!
+/sclerectomie-profonde-non-perforante.html   /glaucome#trabeculectomie   301!
 /chirurgie-decollement-retine.html       /decollement-retine#traitement-chirurgical   301!
 /photocoagulation-laser.html             /photocoagulation-laser             301!
 /chirurgie-surface-oculaire.html         /chirurgie-surface-oculaire         301!
 /ipl.html                                /chirurgie-surface-oculaire#ipl   301!
 # 2026-04-20 : renommage ipl-lipiflow → ipl (LipiFlow non pratiqué au cabinet)
-/ipl-lipiflow.html                       /ipl                                301!
-/ipl-lipiflow                            /ipl                                301!
+/ipl-lipiflow.html                       /chirurgie-surface-oculaire#ipl     301!
+/ipl-lipiflow                            /chirurgie-surface-oculaire#ipl     301!
 /incision-chalazion.html                 /chirurgie-surface-oculaire#chalazion   301!
 /bouchons-meatiques.html                 /chirurgie-surface-oculaire#bouchons-meatiques   301!
 # Batch 6 (2026-04-22) : 8 nouvelles fiches pathologies (Rétine +3, Cornée +5) :
