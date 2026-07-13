@@ -147,6 +147,10 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /cataracte-cristallin                    /cataracte   301!
 /chirurgie-decollement-retine            /decollement-retine#traitement-chirurgical   301!
 
+# Cluster DMLA (2026-07-06) : nouvelles pages satellites
+/grille-amsler.html              /grille-amsler              301!
+/dmla-seche.html                 /dmla-seche                 301!
+
 # ---------- 4. Anciennes URLs éventuelles ----------
 # (À compléter après audit de la Search Console : ajouter ici les anciennes URLs qui 404)
 # /ancienne-page   /nouvelle-page   301
