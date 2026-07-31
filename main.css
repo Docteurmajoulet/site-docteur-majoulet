@@ -89,7 +89,7 @@
 
 /* --- Topbar urgence --- */
 .topbar { background: var(--prusse-dark); font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
-.topbar-inner { max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.topbar-inner { max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 .topbar-urgence { color: var(--sable-light); font-size: 0.75rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .topbar-urgence:hover { color: var(--blanc-naturel); }
 .topbar-info { color: rgba(249,247,242,0.55); font-size: 0.75rem; font-weight: 400; white-space: nowrap; }
