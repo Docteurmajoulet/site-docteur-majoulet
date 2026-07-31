@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css">
+    <link rel="stylesheet" href="/main.css?v=20260730">
 
     <!-- Preconnect Doctolib : anticipe TCP+TLS pour CTA prise de RDV -->
     <link rel="preconnect" href="https://www.doctolib.fr">
@@ -48,7 +48,7 @@
   "description": "Prise en charge par le Dr Alexandre Majoulet, ophtalmologue rétinologue à Boulogne-Billancourt : DMLA, rétinopathie diabétique, trou maculaire, membrane épirétinienne, occlusions veineuses, décollement de rétine et autres atteintes rétiniennes.",
   "url": "https://docteurmajoulet.com/retine",
   "inLanguage": "fr",
-  "lastReviewed": "2026-04-19",
+  "lastReviewed": "2026-07-30",
   "author": {
     "@type": "Physician",
     "name": "Dr Alexandre Majoulet",
@@ -338,6 +338,8 @@ body.menu-open { overflow: hidden; }
 <!-- ===== MENU MOBILE OVERLAY ===== -->
 <div class="menu-overlay" aria-hidden="true"></div>
 
+<!-- Topbar urgence -->
+<div class="topbar"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques">&#9888; Urgence r&eacute;tinienne : cr&eacute;neau sous 24-48&nbsp;h<span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><a href="tel:+33184191166">01 84 19 11 66</a> &middot; 37 rue d'Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
 <header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
@@ -514,7 +516,8 @@ body.menu-open { overflow: hidden; }
                 <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-        <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
+        <a href="tel:+33184191166" class="nav-tel">01 84 19 11 66</a>
+                <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
         <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
     </div>
 </header>
@@ -524,6 +527,7 @@ body.menu-open { overflow: hidden; }
         <nav class="breadcrumb-mini" aria-label="Fil d'Ariane"><a href="/">Accueil</a> &nbsp;›&nbsp; <a href="/pathologies">Pathologies</a> &nbsp;›&nbsp; Pathologies de la rétine</nav>
         <h1>Pathologies de la rétine</h1>
         <p class="tagline">Cœur d'expertise du Dr Majoulet — diagnostic médical et chirurgical des atteintes rétiniennes</p>
+        <a class="btn-rdv page-header-cta" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" style="display:inline-block;">Prendre rendez-vous</a>
     </div>
 </header>
 <main id="main-content">
@@ -549,7 +553,16 @@ body.menu-open { overflow: hidden; }
                 <a class="pillar-card" href="/neovaisseaux-choroidiens-myope-fort"><h3>Néovaisseaux choroïdiens (myope fort)</h3><p>NVC compliquant la myopie forte. Diagnostic OCT/angio-OCT, injections anti-VEGF en urgence.</p><span class="read-more">En savoir plus</span></a>
             </div>
 
-            <section class="parcours-list"><h3>Parcours patient</h3><ol><li><strong>Consultation initiale</strong> : interrogatoire, acuité visuelle, examen biomicroscopique, fond d'œil dilaté.</li><li><strong>Imagerie rétinienne</strong> : OCT maculaire (coupes micrométriques), rétinophotographies, angiographie à la fluorescéine si indiqué.</li><li><strong>Diagnostic et plan thérapeutique</strong> : explication du mécanisme, options médicales (IVT, laser) ou chirurgicales (vitrectomie), calendrier prévisionnel.</li><li><strong>Traitement</strong> : IVT en salle dédiée (anti-VEGF, corticoïde), laser rétinien en consultation, ou vitrectomie programmée au bloc opératoire.</li><li><strong>Suivi</strong> : contrôles OCT rapprochés après IVT, consultation post-opératoire à J1/J7/M1/M3 après vitrectomie.</li></ol></section>
+            <section class="parcours-steps"><h3>Parcours patient</h3><div class="steps">
+        <div class="step"><div class="step-num">1</div><h4>Consultation initiale</h4><p>Interrogatoire, acuité visuelle, examen biomicroscopique, fond d'œil dilaté.</p></div>
+        <div class="step"><div class="step-num">2</div><h4>Imagerie rétinienne</h4><p>OCT maculaire (coupes micrométriques), rétinophotographies, angiographie à la fluorescéine si indiqué.</p></div>
+        <div class="step"><div class="step-num">3</div><h4>Diagnostic et plan thérapeutique</h4><p>Explication du mécanisme, options médicales (IVT, laser) ou chirurgicales (vitrectomie), calendrier prévisionnel.</p></div>
+        <div class="step"><div class="step-num">4</div><h4>Traitement</h4><p>IVT en salle dédiée (anti-VEGF, corticoïde), laser rétinien en consultation, ou vitrectomie programmée au bloc opératoire.</p></div>
+        <div class="step"><div class="step-num">5</div><h4>Suivi</h4><p>Contrôles OCT rapprochés après IVT, consultation post-opératoire à J1/J7/M1/M3 après vitrectomie.</p></div>
+    </div></section>
+
+<div class="alerte-urgence"><strong>&#9888; Urgence ophtalmologique</strong>
+Baisse brutale de vision, pluie de corps flottants, éclairs lumineux ou voile noir : <a href="/urgences-ophtalmologiques">consultez en urgence</a> — créneau proposé sous 24-48&nbsp;h. Cabinet Ophtalife : <a href="tel:+33184191166">01 84 19 11 66</a>.</div>
 
             <h2>Expertise du Dr Majoulet</h2>
             <div class="expertise-block">
@@ -574,13 +587,13 @@ body.menu-open { overflow: hidden; }
     </p>
     <p class="meta">
         Contenu rédigé et revu selon les recommandations de la <a href="https://www.sfo-online.fr/" target="_blank" rel="noopener">Société Française d'Ophtalmologie (SFO)</a> et de l'<a href="https://www.euretina.org/" target="_blank" rel="noopener">EURETINA (European Society of Retina Specialists)</a>.<br>
-        Dernière révision : 20 avril 2026.
+        Dernière révision : 30 juillet 2026.
     </p>
 </div>
 
             <div class="cta-block">
-                <h3>Prendre rendez-vous</h3>
-                <p>Les consultations du Dr Majoulet se déroulent au Cabinet Ophtalife, Boulogne-Billancourt.</p>
+                    <h3>Consultation rétine à Boulogne-Billancourt</h3>
+                    <p>OCT sur place le jour même — injection sans délai si elle est indiquée.</p>
                 <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-rdv">Rendez-vous sur Doctolib</a>
             </div>
 

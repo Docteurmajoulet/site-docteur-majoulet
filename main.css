@@ -79,3 +79,79 @@
     outline: 3px solid var(--sable);
     outline-offset: 2px;
 }
+
+
+/* ============================================================
+   Composants v2 — intégration maquettes Claude Design (07/2026)
+   Topbar urgence, téléphone header, chips hero, trust-cards,
+   rangée USP, parcours en étapes, encadré urgence, cartes implants
+   ============================================================ */
+
+/* --- Topbar urgence --- */
+.topbar { background: var(--prusse-dark); font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
+.topbar-inner { max-width: 1200px; margin: 0 auto; padding: 8px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.topbar-urgence { color: var(--sable-light); font-size: 0.75rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.topbar-urgence:hover { color: var(--blanc-naturel); }
+.topbar-info { color: rgba(249,247,242,0.55); font-size: 0.75rem; font-weight: 400; white-space: nowrap; }
+.topbar-info a { color: inherit; text-decoration: none; }
+.topbar-info a:hover { color: var(--blanc-naturel); }
+@media (max-width: 900px) { .topbar-info { display: none; } .topbar-inner { justify-content: center; } }
+@media (max-width: 560px) { .tb-plus { display: none; } }
+
+/* --- Téléphone header --- */
+.nav-tel { display: inline-flex; align-items: center; gap: 7px; padding: 10px 20px; border-radius: 50px; border: 1px solid var(--border); color: var(--prusse); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; transition: border-color 0.2s; white-space: nowrap; }
+.nav-tel:hover { border-color: var(--prusse); }
+@media (max-width: 1120px) { .nav-tel { display: none; } }
+
+/* --- Chips hero --- */
+.hero-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
+.hero-chips .hero-tag, .hero-chips .chip { margin-bottom: 0; }
+
+/* --- Note sous les boutons hero --- */
+.hero-note { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; margin: -22px 0 34px; }
+
+/* --- Trust cards (home) --- */
+.trust-section { background: var(--blanc-naturel); padding: 0 0 56px; }
+.trust-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.trust-card { display: block; background: var(--blanc); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; text-decoration: none; transition: all 0.25s; }
+.trust-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+.trust-card .tc-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
+.trust-card .tc-text { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; line-height: 1.5; }
+.trust-card.urgence { background: var(--alerte-fond); border-color: var(--alerte-bordure); }
+.trust-card.urgence .tc-title, .trust-card.urgence .tc-text { color: var(--alerte-texte); }
+@media (max-width: 860px) { .trust-cards { grid-template-columns: 1fr; } }
+
+/* --- Rangée USP (home) --- */
+.usp-section { background: var(--blanc); padding: 52px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+.usp-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: center; }
+.usp-check { width: 40px; height: 40px; margin: 0 auto 12px; border-radius: 50%; background: var(--sable-light); color: var(--prusse); font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.usp .usp-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 4px; }
+.usp .usp-text { font-size: 0.82rem; color: var(--text-muted); font-weight: 400; }
+@media (max-width: 860px) { .usp-row { grid-template-columns: repeat(2, 1fr); gap: 22px; } }
+
+/* --- Parcours patient en étapes --- */
+.parcours-steps { margin: 44px 0; }
+.parcours-steps > h3 { text-align: center; font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 30px; }
+.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
+.step-num { width: 34px; height: 34px; border-radius: 50%; background: var(--sable-light); color: var(--prusse); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
+.step h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
+.step p { font-size: 0.82rem; color: var(--text-muted); font-weight: 400; line-height: 1.55; }
+@media (max-width: 960px) { .steps { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
+
+/* --- Encadré urgence --- */
+.alerte-urgence { border-left: 4px solid var(--alerte-bordure); background: var(--alerte-fond); color: var(--alerte-texte); padding: 18px 22px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 0.92rem; line-height: 1.6; margin: 36px 0; }
+.alerte-urgence strong { display: block; text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.06em; margin-bottom: 5px; }
+.alerte-urgence a { color: inherit; font-weight: 600; }
+
+/* --- Cartes implants (fiche cataracte) --- */
+.implant-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 26px 0 34px; }
+.implant-card { display: block; background: var(--blanc-naturel); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 22px 18px; text-decoration: none; transition: all 0.25s; }
+.implant-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--sable); }
+.implant-card .ic-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
+.implant-card .ic-text { font-size: 0.83rem; color: var(--text-muted); font-weight: 400; line-height: 1.55; margin-bottom: 10px; }
+.implant-card .ic-more { font-size: 0.78rem; font-weight: 600; color: var(--prusse); border-bottom: 2px solid var(--sable); padding-bottom: 2px; }
+@media (max-width: 760px) { .implant-cards { grid-template-columns: 1fr; } }
+
+/* --- CTA en-tête de page (piliers) --- */
+.page-header-cta { margin-top: 18px; }
