@@ -5581,12 +5581,25 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     }
 }
 
-/* --- CRAFT v4b — trust-cards : alignement des 3 encadrés (2026-08-19) ---
-   Les titres passent sur 1 ou 2 lignes selon la carte : on réserve une
-   hauteur de titre constante pour que les textes partent du même axe. */
+/* --- CRAFT v4b/c — trust-cards : alignement des 3 encadrés (2026-08-19) ---
+   1. Les titres passent sur 1 ou 2 lignes selon la carte : zone de titre
+      constante pour que les textes partent du même axe.
+   2. Cartes explicitement étirées sur la même hauteur de rangée.
+   3. Respiration au-dessus (le hero est désormais sombre : les cartes ne
+      doivent plus toucher le bandeau).
+   4. Transition ciblée (plus de `all` : aucun glissement de position
+      pendant chargement/reflow). */
+.trust-section {
+    padding: 64px 0 72px;
+}
+.trust-cards {
+    align-items: stretch;
+}
 .trust-card {
     display: flex;
     flex-direction: column;
+    margin: 0;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
 }
 .trust-card .tc-title {
     line-height: 1.35;
@@ -5594,6 +5607,9 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     margin-bottom: 8px;
 }
 @media (max-width: 860px) {
+    .trust-section {
+        padding: 44px 0 52px;
+    }
     .trust-card .tc-title {
         min-height: 0;
     }
