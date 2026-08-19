@@ -5226,3 +5226,356 @@ article.pathology-content .eeat-block a {
 article.pathology-content .eeat-block .meta {
     color: var(--text-muted);
 }
+
+/* ============================================================
+   CRAFT v4 — HERO HOME « bandeau signature » (2026-08-19)
+   Le hero devient l'expression la plus profonde du système :
+   ardoise Ophtalife pleine largeur, portrait fondu dans le fond
+   (harmonisation colorimétrique dédiée img/dr-majoulet-hero-*),
+   lockup typographique en capitales espacées, coupe OCT dessinée
+   au chargement (moment focal unique), CTA cuivre.
+   Contenu, H1 et liens strictement inchangés (SEO).
+   ============================================================ */
+
+/* --- Section : surface ardoise, grain discret --- */
+body.page-index .hero-v3 {
+    background: linear-gradient(168deg, #1f282d 0%, #283339 52%, #2c3840 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+body.page-index .hero-v3::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    pointer-events: none;
+}
+body.page-index .hero-v3 .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* --- Grille : le texte respire, le portrait tient la colonne --- */
+body.page-index .hero-v3 .hero-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.06fr) minmax(0, 0.94fr);
+    gap: 56px;
+    align-items: stretch;
+    min-height: 0;
+}
+body.page-index .hero-v3 .hero-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 84px 0 96px;
+}
+
+/* --- Lockup H1 : capitales espacées, trois temps --- */
+body.page-index .hero-v3 h1 {
+    margin: 0 0 22px;
+    text-transform: uppercase;
+}
+body.page-index .hero-v3 .h1-name {
+    display: block;
+    font-size: clamp(0.92rem, 0.82rem + 0.3vw, 1.02rem);
+    font-weight: 600;
+    letter-spacing: 0.22em;
+    line-height: 1.5;
+    color: var(--sable);
+    margin-bottom: 18px;
+}
+body.page-index .hero-v3 .h1-major {
+    display: block;
+    font-size: clamp(2.25rem, 1.5rem + 2.3vw, 3.1rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.032em;
+    color: var(--blanc-naturel);
+}
+body.page-index .hero-v3 .h1-amp {
+    color: var(--sable);
+    font-weight: 600;
+}
+body.page-index .hero-v3 .h1-city {
+    display: block;
+    font-size: clamp(1.02rem, 0.9rem + 0.42vw, 1.26rem);
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    line-height: 1.5;
+    color: var(--sable);
+    margin-top: 16px;
+}
+
+/* --- Texte sur ardoise : hiérarchie teintée, jamais grise --- */
+body.page-index .hero-v3 .hero-subtitle {
+    font-size: 1.02rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: var(--bleu-gris-light);
+    margin-bottom: 28px;
+    max-width: 34ch;
+}
+body.page-index .hero-v3 .hero-text {
+    color: var(--bleu-gris);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    max-width: 52ch;
+    margin-bottom: 16px;
+}
+body.page-index .hero-v3 .hero-text:last-of-type {
+    margin-bottom: 34px;
+}
+body.page-index .hero-v3 .hero-text strong {
+    color: var(--blanc-naturel);
+    font-weight: 600;
+}
+body.page-index .hero-v3 .hero-text a {
+    color: var(--blanc-naturel);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(191, 178, 151, 0.6);
+    text-underline-offset: 3px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+}
+body.page-index .hero-v3 .hero-text a:hover {
+    color: var(--sable-light);
+    text-decoration-color: var(--sable);
+}
+
+/* --- Actions : cuivre intact, outline passé en clair --- */
+body.page-index .hero-v3 .hero-buttons {
+    margin-bottom: 24px;
+}
+body.page-index .hero-v3 .btn-outline {
+    color: var(--blanc-naturel);
+    border: 1.5px solid rgba(249, 247, 242, 0.32);
+    background: transparent;
+}
+body.page-index .hero-v3 .btn-outline:hover {
+    border-color: var(--sable);
+    color: var(--sable-light);
+}
+body.page-index .hero-v3 .btn-primary:focus-visible,
+body.page-index .hero-v3 .btn-outline:focus-visible {
+    outline: 2px solid var(--sable);
+    outline-offset: 3px;
+}
+body.page-index .hero-v3 .hero-note {
+    margin: 0 0 34px;
+    font-size: 0.8rem;
+    color: var(--bleu-gris);
+}
+body.page-index .hero-v3 .hero-note a {
+    white-space: nowrap;
+}
+
+/* --- Chips : réassurance en pied de colonne, filet fin --- */
+body.page-index .hero-v3 .hero-chips {
+    margin: 0;
+    padding-top: 24px;
+    border-top: 1px solid rgba(191, 178, 151, 0.22);
+}
+body.page-index .hero-v3 .hero-tag {
+    border: 1px solid rgba(191, 178, 151, 0.38);
+    color: var(--sable-light);
+    background: transparent;
+    margin-bottom: 0;
+    font-size: 0.68rem;
+    letter-spacing: 0.13em;
+    padding: 6px 14px;
+}
+
+/* --- Portrait : fondu dans l'ardoise (prise de vue continue) --- */
+body.page-index .hero-v3 .hero-visual {
+    position: relative;
+    overflow: visible;
+    min-height: 540px;
+}
+body.page-index .hero-v3 .hero-visual::before {
+    content: "";
+    position: absolute;
+    inset: -6% -14%;
+    background: radial-gradient(56% 50% at 54% 36%, rgba(66, 80, 90, 0.5) 0%, rgba(66, 80, 90, 0) 72%);
+    pointer-events: none;
+}
+body.page-index .hero-v3 .hero-photo {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    max-height: none;
+    min-height: 0;
+    aspect-ratio: auto;
+}
+body.page-index .hero-v3 .hero-photo picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+body.page-index .hero-v3 .hero-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 18%;
+}
+/* voile de raccord : chaque bord du portrait se fond dans l'ardoise locale */
+body.page-index .hero-v3 .hero-photo::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+        linear-gradient(to bottom, rgba(31, 40, 45, 0.96) 0%, rgba(31, 40, 45, 0) 30%),
+        linear-gradient(to right, rgba(36, 45, 51, 0.96) 0%, rgba(36, 45, 51, 0) 40%),
+        linear-gradient(to left, rgba(42, 53, 61, 0.95) 0%, rgba(42, 53, 61, 0) 32%),
+        linear-gradient(to top, rgba(41, 52, 60, 1) 3%, rgba(41, 52, 60, 0) 36%);
+}
+
+/* --- Coupe OCT : le motif signature, dessiné une seule fois --- */
+body.page-index .hero-v3 .hero-oct {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 12px;
+    height: 52px;
+    opacity: 0.6;
+    pointer-events: none;
+    z-index: 1;
+}
+body.page-index .hero-v3 .hero-oct svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+body.page-index .hero-v3 .hero-oct-path {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+    animation: heroOctDraw 1.6s cubic-bezier(0.16, 1, 0.3, 1) 0.5s forwards;
+}
+@keyframes heroOctDraw {
+    to { stroke-dashoffset: 0; }
+}
+
+/* --- Entrée : une seule séquence orchestrée (chargement) --- */
+@keyframes heroRise {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: none; }
+}
+body.page-index .hero-v3 .h1-name   { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0s both; }
+body.page-index .hero-v3 .h1-major  { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.08s both; }
+body.page-index .hero-v3 .h1-city   { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.16s both; }
+body.page-index .hero-v3 .hero-subtitle { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.24s both; }
+body.page-index .hero-v3 .hero-text     { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both; }
+body.page-index .hero-v3 .hero-buttons  { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both; }
+body.page-index .hero-v3 .hero-note     { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
+body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.56s both; }
+
+@media (prefers-reduced-motion: reduce) {
+    body.page-index .hero-v3 .h1-name,
+    body.page-index .hero-v3 .h1-major,
+    body.page-index .hero-v3 .h1-city,
+    body.page-index .hero-v3 .hero-subtitle,
+    body.page-index .hero-v3 .hero-text,
+    body.page-index .hero-v3 .hero-buttons,
+    body.page-index .hero-v3 .hero-note,
+    body.page-index .hero-v3 .hero-chips,
+    body.page-index .hero-v3 .hero-oct-path {
+        animation: none;
+    }
+    body.page-index .hero-v3 .hero-oct-path {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* --- Tablette --- */
+@media (max-width: 1024px) {
+    body.page-index .hero-v3 .hero-content {
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 36px;
+    }
+    body.page-index .hero-v3 .hero-left {
+        padding: 64px 0 84px;
+    }
+    body.page-index .hero-v3 .hero-visual {
+        min-height: 460px;
+    }
+}
+
+/* --- Mobile : portrait en ouverture, texte fondu dessous --- */
+@media (max-width: 768px) {
+    body.page-index .hero-v3 .hero-content {
+        grid-template-columns: 1fr;
+        gap: 0;
+        text-align: center;
+    }
+    body.page-index .hero-v3 .hero-visual {
+        order: -1;
+        min-height: 0;
+        height: min(64vw, 430px);
+        margin: 18px -24px 0;
+    }
+    body.page-index .hero-v3 .hero-visual::before {
+        inset: -4% -10%;
+        background: radial-gradient(60% 55% at 50% 34%, rgba(66, 80, 90, 0.45) 0%, rgba(66, 80, 90, 0) 72%);
+    }
+    body.page-index .hero-v3 .hero-photo img {
+        object-position: center 12%;
+    }
+    body.page-index .hero-v3 .hero-photo::after {
+        background:
+            linear-gradient(to bottom, rgba(31, 40, 45, 0.95) 0%, rgba(31, 40, 45, 0) 26%),
+            linear-gradient(to right, rgba(36, 45, 51, 0.9) 0%, rgba(36, 45, 51, 0) 24%),
+            linear-gradient(to left, rgba(42, 53, 61, 0.9) 0%, rgba(42, 53, 61, 0) 24%),
+            linear-gradient(to top, rgba(40, 51, 57, 1) 6%, rgba(40, 51, 57, 0) 46%);
+    }
+    body.page-index .hero-v3 .h1-major {
+        font-size: clamp(1.85rem, 1.15rem + 3vw, 2.35rem);
+    }
+    body.page-index .hero-v3 .hero-left {
+        padding: 0 0 72px;
+        margin-top: -30px;
+        position: relative;
+        z-index: 1;
+    }
+    body.page-index .hero-v3 .h1-name {
+        margin-bottom: 14px;
+    }
+    body.page-index .hero-v3 .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 24px;
+    }
+    body.page-index .hero-v3 .hero-text {
+        max-width: 38ch;
+        margin: 0 auto 14px;
+    }
+    body.page-index .hero-v3 .hero-text:last-of-type {
+        margin-bottom: 30px;
+    }
+    body.page-index .hero-v3 .hero-buttons {
+        justify-content: center;
+        margin-bottom: 22px;
+    }
+    body.page-index .hero-v3 .hero-note {
+        margin-bottom: 30px;
+    }
+    body.page-index .hero-v3 .hero-chips {
+        justify-content: center;
+    }
+    body.page-index .hero-v3 .hero-oct {
+        bottom: 8px;
+        height: 40px;
+        opacity: 0.5;
+    }
+}
+
+@media (max-width: 480px) {
+    body.page-index .hero-v3 .hero-visual {
+        height: min(74vw, 360px);
+    }
+    body.page-index .hero-v3 .hero-left {
+        margin-top: -24px;
+    }
+}

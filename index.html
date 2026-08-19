@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260819">
+    <link rel="stylesheet" href="/main.css?v=20260819h">
     <title>Dr Alexandre Majoulet — Ophtalmologue & Rétinologue Boulogne</title>
     <meta name="description" content="Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt : rétine, DMLA, cataracte, glaucome. Cabinet Ophtalife. Prenez RDV.">
     <meta name="keywords" content="ophtalmologue Boulogne-Billancourt, rétinologue, chirurgie rétine, DMLA, cataracte, décollement de rétine, injection intravitréenne, Dr Majoulet, Ophtalife">
@@ -233,14 +233,14 @@
 
     <!-- Preload LCP hero portrait — AVIF + WebP avec type= : chaque navigateur ne charge que ce qu'il supporte -->
     <link rel="preload" as="image" type="image/avif"
-          href="/img/dr-majoulet-800.avif"
-          imagesrcset="/img/dr-majoulet-400.avif 400w, /img/dr-majoulet-800.avif 800w, /img/dr-majoulet-1200.avif 1200w"
-          imagesizes="(max-width: 860px) 100vw, 600px"
+          href="/img/dr-majoulet-hero-800.avif"
+          imagesrcset="/img/dr-majoulet-hero-400.avif 400w, /img/dr-majoulet-hero-800.avif 800w, /img/dr-majoulet-hero-1200.avif 1200w"
+          imagesizes="(max-width: 860px) 100vw, 560px"
           fetchpriority="high">
     <link rel="preload" as="image" type="image/webp"
-          href="/img/dr-majoulet-800.webp"
-          imagesrcset="/img/dr-majoulet-400.webp 400w, /img/dr-majoulet-800.webp 800w, /img/dr-majoulet-1200.webp 1200w"
-          imagesizes="(max-width: 860px) 100vw, 600px"
+          href="/img/dr-majoulet-hero-800.webp"
+          imagesrcset="/img/dr-majoulet-hero-400.webp 400w, /img/dr-majoulet-hero-800.webp 800w, /img/dr-majoulet-hero-1200.webp 1200w"
+          imagesizes="(max-width: 860px) 100vw, 560px"
           fetchpriority="high">
 
     <!-- DNS-prefetch : tiers non critiques (RDV Doctolib, Maps) -->
@@ -447,13 +447,12 @@
 
 <main id="main-content">
 
-<!-- ===== HERO ===== -->
-<section class="hero" id="presentation" aria-labelledby="hero-title">
+<!-- ===== HERO (v3 — ardoise signature, 2026-08-19) ===== -->
+<section class="hero hero-v3" id="presentation" aria-labelledby="hero-title">
     <div class="container">
         <div class="hero-content">
             <div class="hero-left">
-                <div class="hero-chips"><span class="hero-tag">Secteur 2 conventionné</span><span class="hero-tag">FEBO</span><span class="hero-tag">CHNO Quinze-Vingts</span></div>
-                <h1 id="hero-title">Dr Alexandre Majoulet, ophtalmologue & rétinologue à Boulogne-Billancourt</h1>
+                <h1 id="hero-title"><span class="h1-name">Dr Alexandre Majoulet,</span> <span class="h1-major">ophtalmologue <br><span class="h1-amp">&amp;</span> rétinologue</span> <span class="h1-city">à Boulogne-Billancourt</span></h1>
                 <p class="hero-subtitle">Chirurgien Ophtalmologue spécialiste de la rétine & de la cataracte</p>
                 <p class="hero-text">
                     <strong>Co-fondateur du Cabinet Ophtalife</strong>, <strong>Praticien Contractuel au CHNO des Quinze-Vingts</strong> (service du Pr&nbsp;Baudouin), ancien interne des <strong>Hôpitaux de Paris</strong>, FEBO et titulaire du DIU de Chirurgie Vitréo-Rétinienne.
@@ -472,17 +471,23 @@
                     <a href="#specialites" class="btn-outline">En savoir plus</a>
                 </div>
                 <p class="hero-note">Urgences rétiniennes : créneaux dédiés sous 24-48&nbsp;h via Doctolib ou au <a href="tel:+33184191166" style="color:inherit;">01 84 19 11 66</a>.</p>
+                <div class="hero-chips"><span class="hero-tag">Secteur 2 conventionné</span><span class="hero-tag">FEBO</span><span class="hero-tag">CHNO Quinze-Vingts</span></div>
             </div>
             <div class="hero-visual">
                 <div class="hero-photo">
                     <picture>
-                        <source type="image/avif" srcset="/img/dr-majoulet-400.avif 400w, /img/dr-majoulet-800.avif 800w, /img/dr-majoulet-1200.avif 1200w" sizes="(max-width: 860px) 100vw, 600px">
-                        <source type="image/webp" srcset="/img/dr-majoulet-400.webp 400w, /img/dr-majoulet-800.webp 800w, /img/dr-majoulet-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 600px">
-                        <img src="/img/dr-majoulet-800.jpg" srcset="/img/dr-majoulet-400.jpg 400w, /img/dr-majoulet-800.jpg 800w, /img/dr-majoulet-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 600px" alt="Portrait du Dr Alexandre Majoulet, chirurgien ophtalmologue à Boulogne-Billancourt" width="800" height="800" fetchpriority="high" decoding="async">
+                        <source type="image/avif" srcset="/img/dr-majoulet-hero-400.avif 400w, /img/dr-majoulet-hero-800.avif 800w, /img/dr-majoulet-hero-1200.avif 1200w" sizes="(max-width: 860px) 100vw, 560px">
+                        <source type="image/webp" srcset="/img/dr-majoulet-hero-400.webp 400w, /img/dr-majoulet-hero-800.webp 800w, /img/dr-majoulet-hero-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 560px">
+                        <img src="/img/dr-majoulet-hero-800.jpg" srcset="/img/dr-majoulet-hero-400.jpg 400w, /img/dr-majoulet-hero-800.jpg 800w, /img/dr-majoulet-hero-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 560px" alt="Portrait du Dr Alexandre Majoulet, chirurgien ophtalmologue à Boulogne-Billancourt" width="800" height="800" fetchpriority="high" decoding="async">
                     </picture>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="hero-oct" aria-hidden="true">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" focusable="false">
+            <path class="hero-oct-path" pathLength="1" d="M0,30 C150,25 300,23 400,25 C480,27 520,29 565,38 C588,43 612,43 635,38 C680,29 720,27 800,25 C900,23 1050,25 1200,30" fill="none" stroke="#BFB297" stroke-width="1.6"/>
+        </svg>
     </div>
 </section>
 
