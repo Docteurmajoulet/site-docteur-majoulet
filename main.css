@@ -5316,7 +5316,8 @@ body.page-index .hero-v3 .hero-subtitle {
     letter-spacing: 0.01em;
     color: var(--bleu-gris-light);
     margin-bottom: 28px;
-    max-width: 34ch;
+    max-width: 52ch;
+    text-wrap: balance;
 }
 body.page-index .hero-v3 .hero-text {
     color: var(--bleu-gris);
@@ -5577,5 +5578,23 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     }
     body.page-index .hero-v3 .hero-left {
         margin-top: -24px;
+    }
+}
+
+/* --- CRAFT v4b — trust-cards : alignement des 3 encadrés (2026-08-19) ---
+   Les titres passent sur 1 ou 2 lignes selon la carte : on réserve une
+   hauteur de titre constante pour que les textes partent du même axe. */
+.trust-card {
+    display: flex;
+    flex-direction: column;
+}
+.trust-card .tc-title {
+    line-height: 1.35;
+    min-height: 2.7em;
+    margin-bottom: 8px;
+}
+@media (max-width: 860px) {
+    .trust-card .tc-title {
+        min-height: 0;
     }
 }
