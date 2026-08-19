@@ -5007,3 +5007,222 @@ header.site-header .nav-cta:hover {
     padding: 0;
     border: none;
 }
+
+/* ============================================================
+   CRAFT v3 — élévation du gabarit (2026-08-19)
+   « Précision sereine », exécution relevée : échelle typographique,
+   signature OCT, surfaces navigateur thémées, CTA en point d'orgue.
+   Playbooks Impeccable : bolder + craft-floor (pas de kicker, pas de
+   numérotation décorative, pas de liseré épais, un seul motif).
+   ============================================================ */
+
+/* --- 1. Échelle typographique : le bandeau de page s'affirme --- */
+header.page-header {
+    padding: 72px 0 64px;
+    position: relative;
+    overflow: hidden;
+}
+header.page-header h1 {
+    font-size: clamp(2.1rem, 1.35rem + 2vw, 3rem);
+    letter-spacing: 0.045em;
+    line-height: 1.22;
+    max-width: 21ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+header.page-header .tagline {
+    font-size: 1.02rem;
+    margin-top: 14px;
+    letter-spacing: 0.01em;
+}
+/* signature : coupe OCT stylisée (dépression fovéolaire) au bas du bandeau */
+header.page-header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    height: 44px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 60' preserveAspectRatio='none'%3E%3Cpath d='M0,30 C150,25 300,23 400,25 C480,27 520,29 565,38 C588,43 612,43 635,38 C680,29 720,27 800,25 C900,23 1050,25 1200,30' fill='none' stroke='%23BFB297' stroke-width='1.6'/%3E%3C/svg%3E");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    opacity: 0.45;
+    pointer-events: none;
+}
+
+/* --- 2. Sections : plus d'air au-dessus, filet court éditorial --- */
+article.pathology-content h2 {
+    font-size: 1.42rem;
+    margin-top: 64px;
+    margin-bottom: 18px;
+    padding-bottom: 14px;
+    border-bottom: none;
+    position: relative;
+}
+article.pathology-content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 52px;
+    height: 2px;
+    background: var(--sable);
+}
+article.pathology-content > p,
+article.pathology-content > ul,
+article.pathology-content > ol {
+    max-width: 68ch;
+}
+
+/* --- 3. Encadré urgence : signal net sans liseré épais --- */
+.alert-urgence {
+    border-left: none;
+    border: 1px solid rgba(217, 140, 42, 0.45);
+    border-radius: var(--radius);
+    padding: 20px 24px 20px 58px;
+    position: relative;
+    background: #fdf3e0;
+}
+.alert-urgence::before {
+    content: "";
+    position: absolute;
+    left: 22px;
+    top: 22px;
+    width: 22px;
+    height: 22px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238a4510' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13.5'/%3E%3Ccircle cx='12' cy='17' r='0.4'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* --- 4. FAQ : questions posées, réponses en retrait fin --- */
+.qr-block .q {
+    font-weight: 600;
+    color: var(--prusse);
+    font-size: 1rem;
+    margin-top: 26px;
+    margin-bottom: 8px;
+}
+.qr-block .r {
+    border-left: 1px solid var(--border);
+    padding-left: 18px;
+    margin-bottom: 0;
+}
+
+/* --- 5. CTA de fin de fiche : le point d'orgue de la page --- */
+article.pathology-content .cta-block {
+    background: var(--prusse);
+    border: none;
+    border-radius: 16px;
+    padding: 44px 40px;
+    margin-top: 56px;
+}
+article.pathology-content .cta-block h3 {
+    color: var(--blanc-naturel);
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+article.pathology-content .cta-block p {
+    color: var(--bleu-gris);
+    max-width: 58ch;
+    margin-left: auto;
+    margin-right: auto;
+}
+article.pathology-content .cta-block .btn-rdv {
+    margin-top: 8px;
+    padding: 15px 36px;
+}
+
+/* --- 6. Liens connexes : pills fines, hover cuivre --- */
+.related-link {
+    transition: border-color 0.2s, color 0.2s, transform 0.15s;
+}
+.related-link:hover {
+    border-color: var(--cuivre-rdv) !important;
+    color: var(--cuivre-rdv) !important;
+    transform: translateY(-1px);
+}
+
+/* --- 7. Surfaces navigateur : la page est « construite », pas assemblée --- */
+::selection {
+    background: var(--sable-light);
+    color: var(--prusse-dark);
+}
+article.pathology-content a:not(.btn-rdv):not(.related-link) {
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+html {
+    scrollbar-color: var(--bleu-gris) var(--blanc-naturel);
+    scrollbar-width: thin;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+body::-webkit-scrollbar-track {
+    background: var(--blanc-naturel);
+}
+body::-webkit-scrollbar-thumb {
+    background: var(--bleu-gris);
+    border-radius: 5px;
+    border: 2px solid var(--blanc-naturel);
+}
+
+/* --- 8. Bloc auteur : cohérent avec le CTA sombre --- */
+article.pathology-content .eeat-block {
+    border-radius: 16px;
+    padding: 30px 32px;
+}
+article.pathology-content .eeat-block h3 {
+    color: var(--sable);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* --- 9. Home : le hero s'affirme --- */
+:where(body.page-index) .hero h1,
+:where(body.page-index) h1 {
+    font-size: clamp(2.05rem, 1.4rem + 1.8vw, 2.75rem);
+    line-height: 1.18;
+}
+
+/* --- Responsive du bandeau relevé --- */
+@media (max-width: 768px) {
+    header.page-header {
+        padding: 52px 0 52px;
+    }
+    header.page-header h1 {
+        font-size: clamp(1.7rem, 1.35rem + 2.4vw, 2.2rem);
+    }
+    article.pathology-content h2 {
+        margin-top: 48px;
+    }
+    article.pathology-content .cta-block {
+        padding: 34px 24px;
+    }
+}
+
+/* --- 8b. Bloc auteur en clair : le CTA sombre reste l'unique point d'orgue --- */
+article.pathology-content .eeat-block {
+    background: var(--blanc);
+    color: var(--text-light);
+    border: 1px solid var(--border);
+}
+article.pathology-content .eeat-block h3 {
+    color: var(--prusse);
+}
+article.pathology-content .eeat-block p {
+    color: var(--text-light);
+}
+article.pathology-content .eeat-block strong {
+    color: var(--prusse);
+}
+article.pathology-content .eeat-block a {
+    color: var(--prusse);
+}
+article.pathology-content .eeat-block .meta {
+    color: var(--text-muted);
+}
