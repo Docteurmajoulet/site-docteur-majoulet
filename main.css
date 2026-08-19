@@ -4876,3 +4876,104 @@ body.m12.menu-open nav.main-nav {
     line-height: 1.6;
 }
 }
+
+/* ============================================================
+   REFONTE CONVERSION — lot home (2026-08-19)
+   DESIGN.md « Précision sereine » : accent Cuivre RDV #9C4B2E,
+   réservé à la prise de rendez-vous (règle du geste unique).
+   ============================================================ */
+:root {
+    --cuivre-rdv: #9C4B2E;
+    --cuivre-rdv-deep: #82391F;
+}
+
+/* --- CTA header (site-wide) : l'action RDV porte l'accent conversion --- */
+.nav-cta {
+    background: var(--cuivre-rdv);
+}
+.nav-cta:hover {
+    background: var(--cuivre-rdv-deep);
+    transform: translateY(-1px);
+}
+.nav-cta:focus-visible {
+    outline: 2px solid var(--cuivre-rdv-deep);
+    outline-offset: 2px;
+}
+
+/* --- CTA principal du hero (home) et de /pathologies --- */
+:where(body.page-index) .btn-primary,
+:where(body.page-pathologies) .btn-primary {
+    background: var(--cuivre-rdv);
+}
+:where(body.page-index) .btn-primary:hover,
+:where(body.page-pathologies) .btn-primary:hover {
+    background: var(--cuivre-rdv-deep);
+}
+:where(body.page-index) .btn-primary:focus-visible,
+:where(body.page-pathologies) .btn-primary:focus-visible {
+    outline: 2px solid var(--cuivre-rdv-deep);
+    outline-offset: 2px;
+}
+
+/* --- Portrait hero : recadrage naturel, colonne non étirée --- */
+:where(body.page-index) .hero-content {
+    align-items: center;
+}
+:where(body.page-index) .hero-photo {
+    height: auto;
+    max-height: 700px;
+    aspect-ratio: 4 / 5;
+}
+
+/* --- Barre RDV fixe (mobile) — HTML présent sur la home (lot 1) --- */
+.sticky-rdv {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 90;
+    display: none;
+    padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
+    background: rgba(249, 247, 242, 0.96);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border);
+}
+.sticky-rdv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 13px 20px;
+    border-radius: 50px;
+    background: var(--cuivre-rdv);
+    color: #ffffff;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.sticky-rdv a:active {
+    background: var(--cuivre-rdv-deep);
+}
+.sticky-rdv a:focus-visible {
+    outline: 2px solid var(--cuivre-rdv-deep);
+    outline-offset: 2px;
+}
+@media (max-width: 768px) {
+    .sticky-rdv {
+        display: block;
+    }
+    body.has-sticky-rdv {
+        padding-bottom: 74px;
+    }
+}
+
+/* correctif spécificité : le CTA header est défini via header.site-header .nav-cta dans les scopes */
+header.site-header .nav-cta {
+    background: var(--cuivre-rdv);
+}
+header.site-header .nav-cta:hover {
+    background: var(--cuivre-rdv-deep);
+    transform: translateY(-1px);
+}
