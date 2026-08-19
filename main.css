@@ -931,7 +931,7 @@ body.page-404 {
     stroke-width: 1.5;
 }
 
-:where(body.page-index) .contact-item h4 {
+:where(body.page-index) .contact-item h3, :where(body.page-index) .contact-item h4 {
     font-size: 0.75rem;
     font-weight: 600;
     color: rgba(249,247,242,0.4);
@@ -4976,4 +4976,34 @@ header.site-header .nav-cta {
 header.site-header .nav-cta:hover {
     background: var(--cuivre-rdv-deep);
     transform: translateY(-1px);
+}
+
+/* --- Lot fiches (2026-08-19) : le CTA « Prendre rendez-vous » des fiches
+       (.btn-rdv, 45 pages) porte l'accent conversion --- */
+.btn-rdv {
+    background: var(--cuivre-rdv);
+}
+.btn-rdv:hover {
+    background: var(--cuivre-rdv-deep);
+    color: var(--blanc-naturel);
+}
+.btn-rdv:focus-visible {
+    outline: 2px solid var(--cuivre-rdv-deep);
+    outline-offset: 2px;
+}
+
+
+/* --- Fix hiérarchie (détecteur Impeccable) : les h4 des infos pratiques
+       deviennent des h3 (h2 > h3) en conservant leur rendu exact --- */
+:where(body.page-index) .contact-item h3 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.7;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: rgba(249, 247, 242, 0.4);
+    margin-top: 0;
+    margin-bottom: 4px;
+    padding: 0;
+    border: none;
 }
