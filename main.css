@@ -31,7 +31,7 @@
     /* Texte (conservation des deux familles de noms existantes : --text et --texte) */
     --text: #283339;
     --text-light: #5a6a72;
-    --text-muted: #7a8a92;
+    --text-muted: #5d6d75;   /* 20/08/2026 : ex-#7a8a92 (3,6:1) -> 5,0:1 sur blanc naturel, WCAG AA */
     --texte: #2b2b2b;
     --texte-clair: #5a5a5a;
     /* Bordures / radius */
@@ -786,7 +786,7 @@ body.page-404 {
     border-radius: 50px;
     background: var(--sable-light);
     color: var(--brun);
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.04em;
@@ -934,7 +934,7 @@ body.page-404 {
 :where(body.page-index) .contact-item h3, :where(body.page-index) .contact-item h4 {
     font-size: 0.75rem;
     font-weight: 600;
-    color: rgba(249,247,242,0.4);
+    color: rgba(249,247,242,0.72);
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-bottom: 4px;
@@ -1005,7 +1005,7 @@ body.page-404 {
 
 :where(body.v20) footer {
     background: var(--vert-fonce);
-    color: rgba(249,247,242,0.4);
+    color: rgba(249,247,242,0.72);
     padding: 28px 0;
     text-align: center;
     font-size: 0.78rem;
@@ -1015,7 +1015,7 @@ body.page-404 {
 :where(body.page-index) footer,
 :where(body.page-pathologies) footer {
     background: var(--vert-fonce);
-    color: rgba(249,247,242,0.4);
+    color: rgba(249,247,242,0.72);
     padding: 28px 0;
     text-align: center;
     font-size: 0.78rem;
@@ -1033,7 +1033,7 @@ body.page-404 {
 }
 
 :where(body.v19) footer a {
-    color: rgba(249,247,242,0.55);
+    color: rgba(249,247,242,0.8);
 }
 
 :where(body.page-404) footer a {
@@ -1412,7 +1412,7 @@ body.page-404 {
 }
 
 :where(body.v4) .mega-subhead {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: var(--text-muted, #7a8a92);
     text-transform: uppercase;
@@ -1423,7 +1423,7 @@ body.page-404 {
 }
 
 :where(body.v11) .mega-subhead {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     font-weight: 700;
     color: var(--text-muted);
     text-transform: uppercase;
@@ -1851,7 +1851,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 
 :where(body.v10) .page-header .breadcrumb-mini {
-    color: rgba(249,247,242,0.55);
+    color: rgba(249,247,242,0.75);
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -1859,7 +1859,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 
 :where(body.page-decollement-retine) .page-header .breadcrumb-mini {
-    color: rgba(255,255,255,0.7);
+    color: rgba(255,255,255,0.8);
     font-size: 0.75rem;
     letter-spacing: 0.08em;
     text-transform: uppercase;
@@ -1867,7 +1867,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 
 :where(body.v10) .page-header .breadcrumb-mini a {
-    color: rgba(249,247,242,0.7);
+    color: rgba(249,247,242,0.85);
     text-decoration: none;
 }
 
@@ -2034,7 +2034,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 
 :where(body.v7) .alert-urgence strong {
-    color: #b66c12;
+    color: var(--alerte-texte); /* 20/08/2026 : ex-#b66c12 (3,7:1) */
 }
 
 :where(body.page-dechirure-retine-corps-flottants) .alert-urgence strong {
@@ -2234,7 +2234,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 
 :where(body.v5) footer.site-footer {
     background: var(--vert-fonce);
-    color: rgba(249,247,242,0.4);
+    color: rgba(249,247,242,0.72);
     padding: 28px 0;
     text-align: center;
     font-size: 0.78rem;
@@ -2242,7 +2242,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 
 :where(body.v5) footer.site-footer a {
-    color: rgba(249,247,242,0.55);
+    color: rgba(249,247,242,0.8);
 }
 
 :where(body.v16) .btn-primary:focus-visible, :where(body.v16) .btn-doctolib:focus-visible, :where(body.v16) .hero-cta:focus-visible, :where(body.v16) .nav-cta:focus-visible {
@@ -2659,7 +2659,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 
 :where(body.v9) .pillar-card.soft .badge {
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--text-muted);
@@ -2846,7 +2846,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     font-weight: 600;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--bleu-gris);
+    color: var(--text-muted); /* 20/08/2026 : ex-bleu-gris (2,4:1) */
     margin-bottom: 6px;
 }
 
@@ -5384,7 +5384,7 @@ body.page-index .hero-v3 .hero-tag {
     color: var(--sable-light);
     background: transparent;
     margin-bottom: 0;
-    font-size: 0.68rem;
+    font-size: 0.72rem;
     letter-spacing: 0.13em;
     padding: 6px 14px;
 }
@@ -5613,4 +5613,101 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     .trust-card .tc-title {
         min-height: 0;
     }
+}
+
+/* ==============================================================
+   ACCESSIBILITÉ — Contrastes WCAG 2.1 AA (lot du 20/08/2026)
+   Audit Playwright sur les 51 pages x 2 viewports : 685 échecs -> 0.
+   ============================================================== */
+
+/* Pied de page sombre : le <p> global (:where(body.v1) p) imposait --text-light (2,1:1 sur vert foncé). */
+:where(body.v5) footer.site-footer p,
+:where(body.v20) footer p,
+:where(body.page-index) footer p,
+:where(body.page-pathologies) footer p {
+    color: rgba(249, 247, 242, 0.72);
+}
+:where(body.v5) footer.site-footer a,
+:where(body.v20) footer a,
+:where(body.page-index) footer a,
+:where(body.page-pathologies) footer a {
+    color: rgba(249, 247, 242, 0.8);
+}
+
+/* Bloc CTA ardoise : <strong> héritait de :where(body.v1) strong (ardoise sur ardoise, invisible). */
+article.pathology-content .cta-block p strong {
+    color: var(--blanc-naturel);
+}
+
+/* ==============================================================
+   « NOS TRAVAUX » — publications propres citées dans les fiches (20/08/2026)
+   Même surface que .expertise-block ; titre aligné sur le bloc auteur ; liseré 1 px.
+   ============================================================== */
+article.pathology-content .travaux-block {
+    background: var(--blanc-naturel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px 28px;
+    margin: 28px 0;
+}
+article.pathology-content .travaux-block h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 0.85rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--prusse);
+}
+article.pathology-content .travaux-block p {
+    font-size: 0.92rem;
+}
+article.pathology-content .travaux-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 12px;
+}
+article.pathology-content .travaux-list li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 12px;
+    font-size: 0.92rem;
+}
+article.pathology-content .travaux-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 8px;
+    height: 1px;
+    background: var(--sable);
+}
+article.pathology-content .travaux-ref {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+article.pathology-content .travaux-ref a,
+article.pathology-content .travaux-block a {
+    color: var(--prusse);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    text-decoration-color: rgba(40, 51, 57, 0.35);
+    overflow-wrap: anywhere;
+}
+article.pathology-content .travaux-note {
+    margin: 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+/* Piliers (.expertise-block) : la référence reste discrète sous le paragraphe */
+:where(body.v9) .expertise-block .travaux-ref {
+    display: block;
+    margin-top: 6px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+:where(body.v9) .expertise-block .travaux-ref a {
+    color: var(--prusse);
+    overflow-wrap: anywhere;
 }
