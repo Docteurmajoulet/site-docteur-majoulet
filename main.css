@@ -6518,3 +6518,81 @@ nav.main-nav .drawer-horaires {
 .alert-urgence .alert-hopitaux {
     margin-bottom: 0;
 }
+
+/* ============================================================
+   CRAFT v10 — Hero : trois repères sous le paragraphe (20/08/2026)
+   Ophtalife (cofondateur) · Quinze-Vingts (ancien assistant et
+   praticien contractuel) · Chirurgie et consultation — liste sobre
+   entre le paragraphe et les boutons, puces en filet sable 1 px.
+   Desktop : la colonne gagne ~72 px ; on en rend une partie
+   (respirations du lockup et du bandeau resserrées de 4 à 20 px)
+   pour garder le bouton RDV le plus haut possible à 1366×768.
+   Mobile : l'action reste en tête (ordre 3), la liste suit le
+   paragraphe (ordre 5 ; note 6, chips 7) ; bloc centré, lignes
+   alignées à gauche pour que les filets restent sur un même axe.
+   ============================================================ */
+body.page-index .hero-v3 .hero-text {
+    margin-bottom: 14px;
+}
+body.page-index .hero-v3 .hero-facts {
+    list-style: none;
+    margin: 0 0 24px;
+    padding: 0;
+    font-size: 0.86rem;
+    line-height: 1.45;
+    color: var(--bleu-gris-light);
+    animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.37s both;
+}
+body.page-index .hero-v3 .hero-facts li {
+    position: relative;
+    margin: 0 0 6px;
+    padding: 0 0 0 26px;
+}
+body.page-index .hero-v3 .hero-facts li:last-child {
+    margin-bottom: 0;
+}
+body.page-index .hero-v3 .hero-facts li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 14px;
+    height: 1px;
+    background: var(--sable);
+}
+body.page-index .hero-v3 .hero-facts strong {
+    color: var(--blanc-naturel);
+    font-weight: 600;
+}
+@media (min-width: 769px) {
+    body.page-index .hero-v3 h1 {
+        margin-bottom: 18px;
+    }
+    body.page-index .hero-v3 .h1-city {
+        margin-top: 12px;
+    }
+    body.page-index .hero-v3 .hero-subtitle {
+        margin-bottom: 22px;
+    }
+}
+@media (min-width: 1025px) {
+    body.page-index .hero-v3 .hero-left {
+        padding: 64px 0 80px;
+    }
+}
+@media (max-width: 768px) {
+    body.page-index .hero-v3 .hero-facts {
+        order: 5;
+        width: fit-content;
+        max-width: 100%;
+        margin: 0 auto 28px;
+        text-align: left;
+    }
+    body.page-index .hero-v3 .hero-note { order: 6; }
+    body.page-index .hero-v3 .hero-chips { order: 7; }
+}
+@media (prefers-reduced-motion: reduce) {
+    body.page-index .hero-v3 .hero-facts {
+        animation: none;
+    }
+}
