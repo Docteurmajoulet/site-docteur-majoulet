@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260820">
+    <link rel="stylesheet" href="/main.css?v=20260820b">
 
     <!-- Preconnect Doctolib : anticipe TCP+TLS pour CTA prise de RDV -->
     <link rel="preconnect" href="https://www.doctolib.fr">
@@ -46,160 +46,128 @@
         </a>
         <nav class="main-nav" aria-label="Navigation principale">
             <ul class="nav-list" role="list">
+                <li class="nav-item nav-item--compact" data-megamenu>
+                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-dmla">
+                        DMLA
+                        <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <div class="mega-panel mega-panel--compact" id="mega-dmla" role="menu">
+                        <div class="mega-grid-dmla">
+                            <div class="mega-col">
+                                <h3><a href="/dmla">DMLA</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/dmla">Comprendre la DMLA : formes, symptômes, traitements</a></li>
+                                    <li><a href="/dmla-seche">DMLA sèche (atrophique)</a></li>
+                                    <li><a href="/injection-intravitreenne">Injections intravitréennes (anti-VEGF)</a></li>
+                                    <li><a href="/grille-amsler">Grille d'Amsler : autosurveillance</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
                 <li class="nav-item" data-megamenu>
                     <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-chirurgies">
-                        Chirurgie
+                        Chirurgies
                         <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
                     <div class="mega-panel" id="mega-chirurgies" role="menu">
-                        <div class="mega-grid-chir">
-
-                            <!-- ── Row 1 : actes chirurgicaux + lasers médicaux ── -->
-                            <div class="mega-col mega-col-retine">
+                        <div class="mega-grid-chir3">
+                            <div class="mega-col">
                                 <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/vitrectomie">Vitrectomie (25G / 27G)</a></li>
-                                    <li><a href="/decollement-retine#traitement-chirurgical">Chirurgie du décollement de rétine</a></li>
-                                    <li><a href="/trou-maculaire">Chirurgie du trou maculaire</a></li>
-                                    <li><a href="/membrane-epiretinienne">Chirurgie de la membrane épirétinienne</a></li>
-                                    <li><a href="/hemorragie-intravitreenne">Chirurgie de l'hémorragie intravitréenne</a></li>
+                                    <li><a href="/vitrectomie">Vitrectomie 25G / 27G</a></li>
+                                    <li><a href="/decollement-retine">Décollement de rétine</a></li>
+                                    <li><a href="/membrane-epiretinienne">Membrane épirétinienne</a></li>
+                                    <li><a href="/trou-maculaire">Trou maculaire</a></li>
+                                    <li><a href="/hemorragie-intravitreenne">Hémorragie intravitréenne</a></li>
+                                    <li><a href="/luxation-cristallin-implant">Luxation du cristallin ou de l'implant</a></li>
+                                </ul>
+                                <div class="mega-subhead">Signes d'alerte — créneau sous 24-48 h</div>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/dechirure-retine-corps-flottants">Déchirure de rétine, corps flottants</a></li>
+                                    <li><a href="/flashs-phosphenes-myodesopsies">Flashs et phosphènes</a></li>
+                                    <li><a href="/decollement-posterieur-vitre">Décollement postérieur du vitré</a></li>
+                                    <li><a href="/baisse-brutale-vision">Baisse brutale de la vision</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-col mega-col-cataracte">
+                            <div class="mega-col">
                                 <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/chirurgie-cataracte">Phacoémulsification</a></li>
+                                    <li><a href="/cataracte">La cataracte : quand opérer ?</a></li>
+                                    <li><a href="/chirurgie-cataracte">L'opération (phacoémulsification)</a></li>
                                     <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
                                     <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
                                     <li><a href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
+                                    <li><a href="/cataracte-secondaire-laser-yag">Cataracte secondaire (laser YAG)</a></li>
                                 </ul>
                             </div>
-                            <div class="mega-col mega-col-glaucome">
-                                <h3><a href="/glaucome#chirurgie">Chirurgie du glaucome</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/glaucome#migs">MIGS (chirurgie mini-invasive)</a></li>
-                                    <li><a href="/glaucome#trabeculectomie">Trabéculectomie</a></li>
-                                    <li><a href="/glaucome#trabeculectomie">Sclérectomie profonde non perforante</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col mega-col-surface">
-                                <h3><a href="/chirurgie-surface-oculaire">Surface oculaire</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/chirurgie-surface-oculaire#ipl">IPL (lumière pulsée)</a></li>
-                                    <li><a href="/chirurgie-surface-oculaire#chalazion">Incision de chalazion</a></li>
-                                    <li><a href="/chirurgie-surface-oculaire#bouchons-meatiques">Bouchons méatiques</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col mega-col-lasers">
-                                <h3>Lasers médicaux &amp; IVT</h3>
+                            <div class="mega-col">
+                                <h3>Lasers médicaux &amp; injections</h3>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
-                                    <li><a href="/photocoagulation-laser">PPR &amp; laser focal</a></li>
+                                    <li><a href="/photocoagulation-laser">Photocoagulation laser (PPR, laser focal)</a></li>
+                                    <li><a href="/cataracte-secondaire-laser-yag">Capsulotomie au laser YAG</a></li>
                                     <li><a href="/glaucome#slt">Trabéculoplastie SLT</a></li>
                                     <li><a href="/glaucome#iridotomie">Iridotomie périphérique (YAG)</a></li>
-                                    <li><a href="/cataracte-secondaire-laser-yag">Capsulotomie YAG</a></li>
+                                </ul>
+                                <div class="mega-subhead">Glaucome</div>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/glaucome#chirurgie">Chirurgie du glaucome (MIGS, filtrante)</a></li>
                                 </ul>
                             </div>
-
-                            <!-- ── Row 2 : chez mes associés ── -->
                             <div class="mega-col col-associes mega-col-associes">
-                                <h3>Chez mes associés</h3>
-                                <p class="associes-intro">Spécialités pratiquées par mes confrères du Cabinet Ophtalife, Boulogne-Billancourt.</p>
-                                <div class="associes-sub-grid">
-                                    <div>
-                                        <div class="mega-subhead">Chirurgie des paupières — <em>Dr Léo Prudhomme</em></div>
-                                        <ul class="mega-list" role="list">
-                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ptose</a></li>
-                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Ectropion &amp; entropion</a></li>
-                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Blépharoplastie</a></li>
-                                            <li><a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Voies lacrymales (DCR)</a></li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <div class="mega-subhead">Chirurgie réfractive — <em>Dr Alexandre Hage</em></div>
-                                        <ul class="mega-list" role="list">
-                                            <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">LASIK</a></li>
-                                            <li><a href="https://www.ophtahage.com/photokeratectomierefractive" target="_blank" rel="noopener" class="external">PKR</a></li>
-                                            <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">SMILE</a></li>
-                                            <li><a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Implants phaques (ICL)</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <p class="associes-line"><strong>Chez mes associés du Cabinet Ophtalife :</strong> chirurgie des paupières (ptose, ectropion, blépharoplastie, voies lacrymales) — <a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Dr Léo Prudhomme</a> &middot; chirurgie réfractive (LASIK, PKR, SMILE, ICL) — <a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Dr Alexandre Hage</a></p>
                             </div>
-
                         </div>
                     </div>
                 </li>
                 <li class="nav-item" data-megamenu>
                     <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-pathologies">
-                        Pathologies
+                        Autres pathologies
                         <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
                     <div class="mega-panel" id="mega-pathologies" role="menu">
-                        <div class="mega-grid-pathos">
+                        <div class="mega-grid-autres">
                             <div class="mega-col">
-                                <h3><a href="/retine">Rétine &amp; macula</a></h3>
+                                <h3><a href="/pathologies#retine-medicale">Rétine médicale</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/dmla">DMLA</a></li>
                                     <li><a href="/retinopathie-diabetique">Rétinopathie diabétique</a></li>
+                                    <li><a href="/occlusions-veineuses">Occlusions veineuses rétiniennes</a></li>
+                                    <li><a href="/occlusion-artere-centrale-retine">Occlusion de l'artère centrale</a></li>
                                     <li><a href="/oedeme-maculaire-cystoide">Œdème maculaire cystoïde</a></li>
-                                    <li><a href="/trou-maculaire">Trou maculaire</a></li>
-                                    <li><a href="/membrane-epiretinienne">Membrane épirétinienne</a></li>
-                                    <li><a href="/occlusions-veineuses">Occlusions veineuses</a></li>
-                                    <li><a href="/hemorragie-intravitreenne">Hémorragie intravitréenne</a></li>
-                                    <li><a href="/chorioretinopathie-sereuse-centrale">Choriorétinopathie séreuse</a></li>
-                                    <li><a href="/decollement-retine">Décollement de rétine</a></li>
-                                    <li><a href="/dechirure-retine-corps-flottants">Déchirure / corps flottants</a></li>
-                                    <li><a href="/flashs-phosphenes-myodesopsies">Flashs, phosphènes &amp; myodésopsies</a></li>
-                                    <li><a href="/occlusion-artere-centrale-retine">Occlusion artère centrale</a></li>
-                                    <li><a href="/decollement-posterieur-vitre">Décollement postérieur du vitré</a></li>
-                                    <li><a href="/retinite-pigmentaire">Rétinite pigmentaire</a></li>
+                                    <li><a href="/chorioretinopathie-sereuse-centrale">Choriorétinopathie séreuse centrale</a></li>
                                     <li><a href="/myopie-forte">Myopie forte</a></li>
-                                    <li><a href="/neovaisseaux-choroidiens-myope-fort">Néovaisseaux choroïdiens (myope fort)</a></li>
+                                    <li><a href="/neovaisseaux-choroidiens-myope-fort">Néovaisseaux du myope fort</a></li>
+                                    <li><a href="/retinite-pigmentaire">Rétinite pigmentaire</a></li>
+                                    <li><a href="/suivi-diabete-hta">Suivi diabète &amp; hypertension</a></li>
                                 </ul>
                             </div>
                             <div class="mega-col">
-                                <h3><a href="/cataracte">Cataracte &amp; cristallin</a></h3>
+                                <h3><a href="/glaucome">Glaucome</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/cataracte">Cataracte</a></li>
-                                    <li><a href="/cataracte-secondaire-laser-yag">Cataracte secondaire</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/glaucome">Glaucome &amp; HTO</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/glaucome">Glaucome</a></li>
+                                    <li><a href="/glaucome">Glaucome chronique</a></li>
                                     <li><a href="/glaucome#hto">Hypertension oculaire</a></li>
+                                    <li><a href="/glaucome#laser">Traitements : laser et chirurgie</a></li>
+                                </ul>
+                                <h3><a href="/secheresse-oculaire">Surface oculaire</a></h3>
+                                <ul class="mega-list" role="list">
+                                    <li><a href="/secheresse-oculaire">Sécheresse oculaire</a></li>
+                                    <li><a href="/secheresse-oculaire#blepharite">Blépharite</a></li>
+                                    <li><a href="/secheresse-oculaire#ipl">IPL (lumière pulsée)</a></li>
+                                    <li><a href="/secheresse-oculaire#chalazion">Chalazion</a></li>
                                 </ul>
                             </div>
                             <div class="mega-col">
-                                <h3><a href="/cornee-surface-paupieres">Cornée &amp; paupières</a></h3>
+                                <h3><a href="/suivi-corrections-optiques">Vue &amp; corrections optiques</a></h3>
                                 <ul class="mega-list" role="list">
-                                    <li><a href="/keratocone">Kératocône</a></li>
-                                    <li><a href="/cornee-surface-paupieres#keratite">Kératite infectieuse</a></li>
-                                    <li><a href="/cornee-surface-paupieres#photokeratite">Photokératite (UV)</a></li>
-                                    <li><a href="/cornee-surface-paupieres#conjonctivite">Conjonctivite</a></li>
-                                    <li><a href="/cornee-surface-paupieres#pterygion">Ptérygion</a></li>
-                                    <li><a href="/cornee-surface-paupieres#dystrophie-fuchs">Dystrophie de Fuchs</a></li>
-                                    <li><a href="/cornee-surface-paupieres#secheresse">Sécheresse oculaire</a></li>
-                                    <li><a href="/cornee-surface-paupieres#blepharite">Blépharite</a></li>
-                                    <li><a href="/cornee-surface-paupieres#chalazion">Chalazion</a></li>
-                                    <li><a href="/cornee-surface-paupieres#uveites">Uvéites</a></li>
-                                </ul>
-                            </div>
-                            <div class="mega-col">
-                                <h3><a href="/suivi-corrections-optiques">Suivi &amp; corrections optiques</a></h3>
-                                <ul class="mega-list" role="list">
-                                    <li><a href="/suivi-corrections-optiques#bilan">Bilan ophtalmologique annuel</a></li>
+                                    <li><a href="/suivi-corrections-optiques#bilan">Bilan ophtalmologique</a></li>
                                     <li><a href="/myopie">Myopie</a></li>
                                     <li><a href="/hypermetropie">Hypermétropie</a></li>
                                     <li><a href="/suivi-corrections-optiques#astigmatisme">Astigmatisme</a></li>
                                     <li><a href="/suivi-corrections-optiques#presbytie">Presbytie</a></li>
-                                    <li><a href="/suivi-corrections-optiques#lunettes">Lunettes &amp; prescription</a></li>
                                     <li><a href="/suivi-corrections-optiques#lentilles">Lentilles de contact</a></li>
-                                    <li><a href="/suivi-diabete-hta">Suivi diabète &amp; HTA</a></li>
                                 </ul>
-                                <div class="mega-subhead">Pédiatrie</div>
+                                <div class="mega-subhead">Enfant</div>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/depistage-visuel-enfant">Dépistage visuel</a></li>
                                     <li><a href="/amblyopie">Amblyopie</a></li>
@@ -208,14 +176,13 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="mega-footer"><a href="/pathologies" class="mega-footer-link">Voir toutes les pathologies →</a></div>
+                        <div class="mega-footer"><a href="/urgences-ophtalmologiques" class="mega-footer-link">Urgences ophtalmologiques</a><a href="/pathologies" class="mega-footer-link">Toutes les pathologies →</a></div>
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
                 <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-        <a href="tel:+33184191166" class="nav-tel">01 84 19 11 66</a>
                 <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
         <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
     </div>

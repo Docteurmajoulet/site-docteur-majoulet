@@ -5711,3 +5711,229 @@ article.pathology-content .travaux-note {
     color: var(--prusse);
     overflow-wrap: anywhere;
 }
+
+
+/* ============================================================
+   NAV v5 — 3 onglets : DMLA / Chirurgies / Autres pathologies
+   (20/08/2026 — simplification du menu, cf. mémoire projet)
+   Bloc AUTONOME : il ne dépend d'aucune variante (vN, mN) et
+   redéfinit tout ce dont les panneaux ont besoin, desktop puis
+   mobile (≤ 1024 px, même seuil que MOBILE_BP du script menu).
+   Les anciennes classes .mega-grid-chir / .mega-grid-pathos ne
+   sont plus utilisées dans le HTML (règles conservées, inertes).
+   ============================================================ */
+
+/* --- Panneau ----------------------------------------------- */
+nav.main-nav .mega-panel {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%) translateY(-8px);
+    min-width: 940px;
+    max-width: 96vw;
+    max-height: none;
+    overflow: visible;
+    background: var(--blanc, #ffffff);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: 0 16px 48px rgba(40,51,57,0.14);
+    padding: 30px 34px 26px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.18s, visibility 0.18s, transform 0.18s;
+}
+nav.main-nav .nav-item.is-open .mega-panel {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+/* Panneau compact (DMLA) : aligné à gauche sous son onglet */
+nav.main-nav .mega-panel--compact {
+    min-width: 340px;
+    left: 0;
+    transform: translateX(0) translateY(-8px);
+    padding: 22px 24px 18px;
+}
+nav.main-nav .nav-item.is-open .mega-panel--compact {
+    transform: translateX(0) translateY(0);
+}
+/* Ancrage : les panneaux larges se centrent dans .header-inner
+   (position: relative) — l'onglet est donc en position static ;
+   seul l'onglet compact (DMLA) reste relative pour ancrer son
+   panneau sous lui. Corrige l'ancien conflit v2 static / v4 relative. */
+nav.main-nav .nav-item[data-megamenu] { position: static; }
+nav.main-nav .nav-item[data-megamenu].nav-item--compact { position: relative; }
+
+
+/* --- Encombrement du header : 5 onglets au lieu de 4 ----------
+   Logo + 5 onglets + bouton RDV ne laissent plus de place à la
+   pastille téléphone (.nav-tel) dans un header de 1240 px : elle est
+   retirée (le numéro reste dans la topbar et dans le tiroir mobile). */
+nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
+header.site-header .nav-tel { display: none; }
+
+/* --- Grilles ------------------------------------------------ */
+.mega-grid-dmla { display: block; }
+.mega-grid-chir3 {
+    display: grid;
+    grid-template-columns: 1.25fr 1fr 1.05fr;
+    gap: 22px 30px;
+}
+.mega-grid-chir3 .mega-col-associes { grid-column: 1 / -1; }
+.mega-grid-autres {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr 1fr;
+    gap: 22px 30px;
+}
+
+/* --- Colonnes, titres, listes ------------------------------- */
+.mega-col { min-width: 0; }
+.mega-col h3 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--prusse);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+    margin: 0 0 12px;
+    border-bottom: 2px solid var(--sable);
+}
+.mega-col h3:not(:first-child) { margin-top: 18px; }
+.mega-col h3 a {
+    color: var(--prusse);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+}
+.mega-col h3 a:hover { color: var(--prusse-light); }
+.mega-col h3 a::after {
+    content: "→";
+    font-size: 0.8rem;
+    opacity: 0.6;
+    transition: transform 0.2s;
+}
+.mega-col h3 a:hover::after { transform: translateX(3px); }
+
+.mega-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-left: 0;
+    margin: 0;
+}
+.mega-list li { margin: 0; }
+.mega-list a {
+    display: block;
+    padding: 6px 8px;
+    font-size: 0.86rem;
+    line-height: 1.35;
+    color: var(--text-light);
+    border-radius: 6px;
+    transition: background 0.15s, color 0.15s, padding-left 0.15s;
+    text-decoration: none;
+}
+.mega-list a:hover, .mega-list a:focus-visible {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+    padding-left: 12px;
+}
+.mega-list a[aria-current="page"] { color: var(--prusse); font-weight: 600; }
+.mega-list a.external::after,
+.associes-line a.external::after {
+    content: "↗";
+    margin-left: 5px;
+    font-size: 0.75rem;
+    color: var(--sable);
+    font-weight: 600;
+}
+
+.mega-subhead {
+    font-size: 0.72rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding: 12px 8px 4px;
+    margin-top: 8px;
+    border-top: 1px dashed var(--border);
+}
+
+/* --- Ligne « associés » (compacte) -------------------------- */
+.col-associes {
+    background: var(--blanc-naturel);
+    border-radius: var(--radius-sm, 8px);
+    padding: 12px 16px;
+    margin-top: 4px;
+}
+.associes-line {
+    margin: 0;
+    font-size: 0.8rem;
+    line-height: 1.55;
+    color: var(--text-light);
+}
+.associes-line strong { color: var(--prusse); font-weight: 600; }
+.associes-line a { color: var(--prusse); text-decoration: none; font-weight: 600; }
+.associes-line a:hover { text-decoration: underline; }
+
+/* --- Pied de panneau ---------------------------------------- */
+.mega-footer {
+    margin-top: 20px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: flex-end;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+.mega-footer-link {
+    font-size: 0.82rem;
+    color: var(--prusse);
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.02em;
+}
+.mega-footer-link:hover, .mega-footer-link:focus-visible {
+    color: var(--prusse-light);
+    text-decoration: underline;
+}
+
+/* --- Mobile / tablette : accordéon dans le tiroir ------------ */
+@media (max-width: 1024px) {
+    nav.main-nav .mega-panel,
+    nav.main-nav .mega-panel--compact {
+        position: static;
+        left: auto;
+        right: auto;
+        transform: none;
+        min-width: 100%;
+        max-width: 100%;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        background: transparent;
+        opacity: 0;
+        visibility: hidden;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s, opacity 0.3s;
+    }
+    nav.main-nav .nav-item.is-open .mega-panel,
+    nav.main-nav .nav-item.is-open .mega-panel--compact {
+        opacity: 1;
+        visibility: visible;
+        max-height: 4000px;
+        transform: none;
+        padding: 12px 0 20px;
+    }
+    .mega-grid-dmla, .mega-grid-chir3, .mega-grid-autres {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    .mega-grid-chir3 .mega-col-associes { grid-column: auto; }
+    .mega-footer { justify-content: flex-start; }
+}

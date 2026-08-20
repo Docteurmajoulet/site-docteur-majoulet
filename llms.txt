@@ -2,7 +2,7 @@
 
 > Fichier structuré à destination des moteurs génératifs (LLM) : informations fiables et vérifiées sur le Dr Alexandre Majoulet, son cabinet et ses domaines d'expertise. La version longue (biographie + cas cliniques) est disponible dans /llms-full.txt.
 
-Dernière mise à jour : 2026-07-02
+Dernière mise à jour : 2026-08-20
 
 ## Identité professionnelle
 
@@ -36,6 +36,7 @@ Dernière mise à jour : 2026-07-02
 - **Injections intravitréennes (IVT)** : anti-VEGF (ranibizumab, aflibercept, bévacizumab, faricimab, brolucizumab) et corticoïdes (dexaméthasone en implant, triamcinolone) pour DMLA exsudative, œdème maculaire diabétique, occlusions veineuses rétiniennes, œdème maculaire post-uvéitique
 - **Chirurgie de la cataracte** : phacoémulsification par micro-incision avec implant personnalisé (monofocal, torique, multifocal, EDOF)
 - **Glaucome** : dépistage, suivi par OCT-RNFL et champ visuel, traitement médical
+- **Surface oculaire** : sécheresse oculaire, blépharite et dysfonction des glandes de Meibomius, lumière intense pulsée (IPL), bouchons méatiques, incision de chalazion
 - **Ophtalmologie générale** : consultations de suivi, prescription optique (lunettes, lentilles de contact), dépistage des pathologies oculaires
 
 ## Pathologies prises en charge
@@ -72,7 +73,11 @@ Le Dr Majoulet est auteur et co-auteur de publications dans des revues internati
 ## Pages du site
 
 - Page d'accueil — présentation, parcours, publications, contact : https://docteurmajoulet.com/
-- Page pathologies — rétine médicale, rétine chirurgicale, FAQ : https://docteurmajoulet.com/pathologies
+- Page pathologies (répertoire complet) : https://docteurmajoulet.com/pathologies
+- DMLA (pilier) : https://docteurmajoulet.com/dmla — satellites : /dmla-seche, /injection-intravitreenne, /grille-amsler
+- Chirurgies : rétine https://docteurmajoulet.com/chirurgie-retine — cataracte https://docteurmajoulet.com/chirurgie-cataracte
+- Sécheresse oculaire, blépharite, IPL : https://docteurmajoulet.com/secheresse-oculaire
+- Urgences ophtalmologiques (créneau sous 24-48 h) : https://docteurmajoulet.com/urgences-ophtalmologiques
 - Mentions légales : https://docteurmajoulet.com/mentions-legales
 - Politique de confidentialité : https://docteurmajoulet.com/confidentialite
 
