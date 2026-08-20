@@ -6810,3 +6810,304 @@ body.page-index .parcours-more .sc-more:focus-visible {
         padding-top: 0;
     }
 }
+
+/* ============================================================
+   CRAFT v12 — Home, section « Informations pratiques » (20/08/2026 soir)
+   Fiche pratique en lignes label / valeur (dl), téléphone en grand,
+   bouton Doctolib intégré au bloc, carte Google étirée à la hauteur
+   de la fiche (plus de vide sous la carte). Les anciennes règles
+   .contact-grid / .contact-info-card / .contact-item restent en place
+   (orphelines, lot dette CSS).
+   Marqueur d'idempotence : CONTACT-V12
+   ============================================================ */
+body.page-index #contact .section-header {
+    margin-bottom: 44px;
+}
+body.page-index #contact .section-header p {
+    color: rgba(249, 247, 242, 0.66);
+}
+body.page-index .contact-v12 {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+    gap: 32px;
+    align-items: stretch;
+}
+body.page-index .contact-card-v12 {
+    background: rgba(249, 247, 242, 0.05);
+    border: 1px solid rgba(249, 247, 242, 0.1);
+    border-radius: var(--radius);
+    padding: 10px 36px 30px;
+    min-width: 0;
+}
+body.page-index .cv12-list {
+    margin: 0;
+}
+body.page-index .cv12-row {
+    display: grid;
+    grid-template-columns: 124px minmax(0, 1fr);
+    gap: 6px 20px;
+    padding: 18px 0;
+    border-top: 1px solid rgba(249, 247, 242, 0.1);
+    align-items: start;
+}
+body.page-index .cv12-row:first-child {
+    border-top: none;
+}
+body.page-index .cv12-row dt {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-top: 3px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(249, 247, 242, 0.72);
+}
+body.page-index .cv12-row dd {
+    margin: 0;
+    min-width: 0;
+}
+body.page-index .cv12-row dd p {
+    margin: 0;
+    color: rgba(249, 247, 242, 0.88);
+    font-size: 0.95rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+body.page-index .cv12-row dd p + p,
+body.page-index .cv12-row dd .cv12-hours + p,
+body.page-index .cv12-row dd .cv12-mail + p {
+    margin-top: 4px;
+}
+body.page-index .cv12-ico {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--bleu-gris);
+}
+body.page-index .cv12-arrow {
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    transition: transform 0.2s;
+}
+body.page-index .cv12-strong {
+    color: var(--blanc-naturel);
+    font-weight: 600;
+    font-size: 1.02rem;
+    letter-spacing: 0.01em;
+}
+body.page-index .cv12-muted {
+    color: rgba(249, 247, 242, 0.66);
+    font-size: 0.88rem;
+}
+body.page-index .cv12-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 8px;
+    color: var(--sable-light);
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(212, 203, 181, 0.4);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+body.page-index .cv12-link:hover,
+body.page-index .cv12-link:focus-visible {
+    color: var(--blanc-naturel);
+    border-color: rgba(249, 247, 242, 0.7);
+}
+body.page-index .cv12-link:hover .cv12-arrow {
+    transform: translateX(3px);
+}
+/* Horaires : jours à gauche, plages à droite (chiffres tabulaires) */
+body.page-index .cv12-hours {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+}
+body.page-index .cv12-hours li {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+    color: rgba(249, 247, 242, 0.88);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 2px 0;
+}
+body.page-index .cv12-hours .cv12-h {
+    color: var(--blanc-naturel);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+}
+body.page-index .cv12-hours .cv12-closed {
+    color: rgba(249, 247, 242, 0.66);
+    font-weight: 400;
+    font-style: italic;
+}
+/* Secrétariat : le numéro en grand, l'email en dessous */
+body.page-index .cv12-tel {
+    display: inline-block;
+    color: var(--blanc-naturel);
+    font-size: 1.45rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    line-height: 1.25;
+    text-decoration: none;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.2s;
+}
+body.page-index .cv12-tel:hover,
+body.page-index .cv12-tel:focus-visible {
+    color: var(--sable-light);
+}
+body.page-index .cv12-mail {
+    display: block;
+    margin-top: 4px;
+    color: var(--sable-light);
+    font-size: 0.95rem;
+    font-weight: 400;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(212, 203, 181, 0.45);
+    overflow-wrap: anywhere;
+    transition: color 0.2s;
+}
+body.page-index .cv12-mail:hover,
+body.page-index .cv12-mail:focus-visible {
+    color: var(--blanc-naturel);
+    text-decoration-color: rgba(249, 247, 242, 0.7);
+}
+/* Action : bouton Doctolib intégré (geste unique cuivre) + note */
+body.page-index .cv12-action {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 14px 24px;
+    margin-top: 4px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(249, 247, 242, 0.1);
+}
+body.page-index .cv12-action .btn-doctolib {
+    padding: 14px 30px;
+    font-size: 0.84rem;
+}
+body.page-index .cv12-action .btn-doctolib svg {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+body.page-index .cv12-action-note {
+    margin: 0;
+    color: rgba(249, 247, 242, 0.66);
+    font-size: 0.85rem;
+    line-height: 1.55;
+}
+body.page-index .cv12-action-note a {
+    color: rgba(249, 247, 242, 0.88);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(249, 247, 242, 0.35);
+}
+body.page-index .cv12-action-note a:hover,
+body.page-index .cv12-action-note a:focus-visible {
+    color: var(--blanc-naturel);
+    text-decoration-color: rgba(249, 247, 242, 0.8);
+}
+/* Carte : même hauteur que la fiche, lien d'ouverture sous la carte */
+body.page-index .contact-v12 .contact-map {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 0;
+}
+body.page-index .contact-v12 .contact-map iframe {
+    display: block;
+    flex: 1 1 auto;
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+    border: 1px solid rgba(249, 247, 242, 0.1);
+    border-radius: var(--radius);
+    background: rgba(249, 247, 242, 0.05);
+}
+body.page-index .cv12-map-note {
+    margin: 0;
+    text-align: right;
+    font-size: 0.82rem;
+}
+body.page-index .cv12-map-note a {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: rgba(249, 247, 242, 0.66);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+body.page-index .cv12-map-note a:hover,
+body.page-index .cv12-map-note a:focus-visible {
+    color: var(--blanc-naturel);
+}
+body.page-index .cv12-map-note a:hover .cv12-arrow {
+    transform: translateX(3px);
+}
+@media (max-width: 860px) {
+    body.page-index .contact-v12 {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+    }
+    body.page-index .contact-v12 .contact-map iframe {
+        height: 300px;
+        min-height: 0;
+        flex: 0 0 auto;
+    }
+}
+@media (max-width: 640px) {
+    body.page-index .contact-card-v12 {
+        padding: 6px 24px 24px;
+    }
+    body.page-index .cv12-row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+        padding: 18px 0;
+    }
+    body.page-index .cv12-row dt {
+        padding-top: 0;
+    }
+    body.page-index .cv12-hours {
+        max-width: none;
+    }
+    body.page-index .cv12-action {
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 12px;
+    }
+    body.page-index .cv12-action .btn-doctolib {
+        justify-content: center;
+        width: 100%;
+    }
+}
+@media (max-width: 480px) {
+    body.page-index .contact-card-v12 {
+        padding: 4px 18px 20px;
+    }
+    body.page-index .cv12-btn-more {
+        display: none;
+    }
+    body.page-index .cv12-tel {
+        font-size: 1.3rem;
+    }
+    body.page-index .cv12-action .btn-doctolib {
+        padding: 14px 18px;
+        font-size: 0.8rem;
+    }
+}
