@@ -5557,22 +5557,22 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     body.page-index .hero-v3 .hero-visual {
         order: -1;
         min-height: 0;
-        height: min(64vw, 430px);
+        height: min(70vw, 460px);
         margin: 18px -24px 0;
     }
     body.page-index .hero-v3 .hero-visual::before {
-        inset: -4% -10%;
-        background: radial-gradient(60% 55% at 50% 34%, rgba(66, 80, 90, 0.45) 0%, rgba(66, 80, 90, 0) 72%);
+        inset: -4% -10% -14%;
+        background: radial-gradient(60% 50% at 50% 30%, rgba(66, 80, 90, 0.45) 0%, rgba(66, 80, 90, 0) 72%);
     }
     body.page-index .hero-v3 .hero-photo img {
-        object-position: center 12%;
+        object-position: center 42%;
     }
     body.page-index .hero-v3 .hero-photo::after {
         background:
             linear-gradient(to bottom, rgba(31, 40, 45, 0.95) 0%, rgba(31, 40, 45, 0) 26%),
             linear-gradient(to right, rgba(36, 45, 51, 0.9) 0%, rgba(36, 45, 51, 0) 24%),
             linear-gradient(to left, rgba(42, 53, 61, 0.9) 0%, rgba(42, 53, 61, 0) 24%),
-            linear-gradient(to top, rgba(40, 51, 57, 1) 6%, rgba(40, 51, 57, 0) 46%);
+            linear-gradient(to top, rgba(40, 51, 57, 1) 14%, rgba(40, 51, 57, 0) 52%);
     }
     body.page-index .hero-v3 .h1-major {
         font-size: clamp(1.85rem, 1.15rem + 3vw, 2.35rem);
@@ -5617,7 +5617,7 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
 
 @media (max-width: 480px) {
     body.page-index .hero-v3 .hero-visual {
-        height: min(74vw, 360px);
+        height: min(80vw, 380px);
     }
     body.page-index .hero-v3 .hero-left {
         margin-top: -24px;
@@ -6451,4 +6451,70 @@ footer .footer-meta {
     body.page-index .contact-item a {
         overflow-wrap: anywhere;
     }
+}
+
+/* ============================================================
+   CRAFT v9 — Lot Impeccable 5 « chemin urgent » (20/08/2026)
+   Horaires du cabinet (fiche Google, confirmés le 20/08) partout où
+   le patient doit décider : alerte, tiroir, contact ; hôpitaux
+   d'urgence avec adresse et téléphone cliquable.
+   ============================================================ */
+.alert-urgence .alert-hopitaux {
+    list-style: none;
+    margin: 0 0 14px;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1.55;
+    color: var(--text);
+}
+.alert-urgence .alert-hopitaux li {
+    padding: 6px 0;
+    border-top: 1px solid rgba(217, 140, 42, 0.25);
+}
+.alert-urgence .alert-hopitaux li:first-child {
+    border-top: none;
+}
+.alert-urgence .alert-hopitaux a,
+.alert-urgence .alert-horaires a {
+    color: var(--prusse);
+    font-weight: 600;
+    white-space: nowrap;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(40, 51, 57, 0.35);
+}
+.alert-urgence .alert-horaires {
+    margin: 12px 0 0;
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--text-light);
+}
+nav.main-nav .drawer-horaires {
+    display: none;
+}
+@media (max-width: 1024px) {
+    nav.main-nav .drawer-horaires {
+        display: block;
+        margin: 2px 0 0;
+        font-size: 0.76rem;
+        line-height: 1.5;
+        color: var(--text-light);
+        text-align: center;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    nav.main-nav .drawer-horaires {
+        flex: 1 1 100%;
+    }
+}
+.alert-urgence .alert-sous-titre {
+    margin: 18px 0 4px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #8a4510;
+}
+.alert-urgence .alert-hopitaux {
+    margin-bottom: 0;
 }

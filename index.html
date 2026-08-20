@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260820f">
+    <link rel="stylesheet" href="/main.css?v=20260820h">
     <title>Dr Alexandre Majoulet — Ophtalmologue & Rétinologue Boulogne</title>
     <meta name="description" content="Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt : rétine, DMLA, cataracte, glaucome. Cabinet Ophtalife. Prenez RDV.">
     <meta name="keywords" content="ophtalmologue Boulogne-Billancourt, rétinologue, chirurgie rétine, DMLA, cataracte, décollement de rétine, injection intravitréenne, Dr Majoulet, Ophtalife">
@@ -180,7 +180,8 @@
         "medicalSpecialty": "Ophthalmology",
         "priceRange": "Secteur 2",
         "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"}
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday"], "opens": "09:00", "closes": "20:00"},
+            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Friday","Saturday"], "opens": "09:00", "closes": "18:00"}
         ],
         "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJJ2pdc01gamsRjxCY0-gYVWg",
         "identifier": {"@type": "PropertyValue", "propertyID": "GooglePlaceID", "value": "ChIJJ2pdc01gamsRjxCY0-gYVWg"},
@@ -233,8 +234,8 @@
 
     <!-- Preload LCP hero portrait — AVIF seul (Chromium/Safari 16.4+ chargeaient les deux formats ; le WebP reste le repli du <picture>) -->
     <link rel="preload" as="image" type="image/avif"
-          href="/img/dr-majoulet-hero-800.avif"
-          imagesrcset="/img/dr-majoulet-hero-400.avif 400w, /img/dr-majoulet-hero-800.avif 800w, /img/dr-majoulet-hero-1200.avif 1200w"
+          href="/img/dr-majoulet-hero2-800.avif"
+          imagesrcset="/img/dr-majoulet-hero2-400.avif 400w, /img/dr-majoulet-hero2-800.avif 800w, /img/dr-majoulet-hero2-1080.avif 1080w"
           imagesizes="(max-width: 860px) 100vw, 560px"
           fetchpriority="high">
 
@@ -266,6 +267,7 @@
             <div class="drawer-actions">
                 <a class="drawer-tel" href="tel:+33184191166"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 01 84 19 11 66</a>
                 <a class="drawer-rdv" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <p class="drawer-horaires">Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h</p>
             </div>
             <ul class="nav-list" role="list">
                 <li class="nav-item nav-item--compact" data-megamenu>
@@ -435,9 +437,9 @@
             <div class="hero-visual">
                 <div class="hero-photo">
                     <picture>
-                        <source type="image/avif" srcset="/img/dr-majoulet-hero-400.avif 400w, /img/dr-majoulet-hero-800.avif 800w, /img/dr-majoulet-hero-1200.avif 1200w" sizes="(max-width: 860px) 100vw, 560px">
-                        <source type="image/webp" srcset="/img/dr-majoulet-hero-400.webp 400w, /img/dr-majoulet-hero-800.webp 800w, /img/dr-majoulet-hero-1200.webp 1200w" sizes="(max-width: 860px) 100vw, 560px">
-                        <img src="/img/dr-majoulet-hero-800.jpg" srcset="/img/dr-majoulet-hero-400.jpg 400w, /img/dr-majoulet-hero-800.jpg 800w, /img/dr-majoulet-hero-1200.jpg 1200w" sizes="(max-width: 860px) 100vw, 560px" alt="Portrait du Dr Alexandre Majoulet, chirurgien ophtalmologue à Boulogne-Billancourt" width="800" height="800" fetchpriority="high" decoding="async">
+                        <source type="image/avif" srcset="/img/dr-majoulet-hero2-400.avif 400w, /img/dr-majoulet-hero2-800.avif 800w, /img/dr-majoulet-hero2-1080.avif 1080w" sizes="(max-width: 860px) 100vw, 560px">
+                        <source type="image/webp" srcset="/img/dr-majoulet-hero2-400.webp 400w, /img/dr-majoulet-hero2-800.webp 800w, /img/dr-majoulet-hero2-1080.webp 1080w" sizes="(max-width: 860px) 100vw, 560px">
+                        <img src="/img/dr-majoulet-hero2-800.jpg" srcset="/img/dr-majoulet-hero2-400.jpg 400w, /img/dr-majoulet-hero2-800.jpg 800w, /img/dr-majoulet-hero2-1080.jpg 1080w" sizes="(max-width: 860px) 100vw, 560px" alt="Portrait du Dr Alexandre Majoulet, chirurgien ophtalmologue à Boulogne-Billancourt" width="1080" height="1360" fetchpriority="high" decoding="async">
                     </picture>
                 </div>
             </div>
@@ -746,6 +748,15 @@
                 <div class="contact-item">
                     <div class="contact-item-icon">
                         <svg viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="12" x2="15" y2="14"/></svg>
+                    </div>
+                    <div>
+                        <h3>Horaires</h3>
+                        <p>Lundi, mercredi, jeudi : 9 h – 20 h<br>Mardi, vendredi, samedi : 9 h – 18 h<br>Dimanche : fermé</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-item-icon">
+                        <svg viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="5" width="20" height="14" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/><line x1="6" y1="15" x2="10" y2="15"/></svg>
                     </div>
                     <div>
                         <h3>Honoraires</h3>
