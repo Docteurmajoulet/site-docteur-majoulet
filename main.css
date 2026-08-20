@@ -6619,3 +6619,194 @@ body.page-index .hero-v3 .hero-facts strong {
         animation: none;
     }
 }
+
+/* ============================================================
+   CRAFT v11 — Home, section « Formation & expérience » (20/08/2026 soir)
+   Retour au récit : le texte du parcours à gauche (l'hôpital d'abord :
+   internat des Hôpitaux de Paris, Quinze-Vingts, Rothschild, assistanat,
+   praticien contractuel), une seule carte « Postes & diplômes » à droite,
+   la recherche en une ligne discrète sous le texte. Remplace la grille
+   3 cartes du lot « parcours » de l'après-midi, dont le CSS n'avait
+   jamais été ajouté (marqueur « CRAFT v10 » déjà pris par le bloc hero :
+   d'où la flèche « En savoir plus » non dimensionnée en prod).
+   Marqueur d'idempotence : PARCOURS-V11
+   ============================================================ */
+body.page-index #parcours .section-header {
+    max-width: 760px;
+}
+body.page-index .parcours-v11 {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 56px;
+    align-items: start;
+}
+body.page-index .parcours-recit p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    line-height: 1.75;
+    font-weight: 400;
+    margin: 0 0 16px;
+}
+body.page-index .parcours-recit p:last-child {
+    margin-bottom: 0;
+}
+body.page-index .parcours-recit strong {
+    color: var(--prusse);
+    font-weight: 600;
+}
+body.page-index .parcours-recit sup {
+    font-size: 0.7em;
+}
+/* Recherche, sociétés savantes, médias : une ligne secondaire, pas un bloc */
+body.page-index .parcours-recit .parcours-recherche {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid var(--border);
+    font-size: 0.85rem;
+    line-height: 1.65;
+    color: var(--text-muted);
+}
+body.page-index .parcours-recit .parcours-recherche .link-quiet {
+    white-space: nowrap;
+}
+
+/* Carte unique « Postes & diplômes » */
+body.page-index .parcours-reperes {
+    margin: 0;
+    padding: 24px 26px 20px;
+}
+body.page-index .parcours-reperes .parcours-card-header {
+    margin-bottom: 14px;
+}
+body.page-index .pr-group {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--sable-fonce);
+    margin: 0 0 2px;
+}
+body.page-index .parcours-list + .pr-group {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+}
+body.page-index .parcours-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body.page-index .parcours-list li {
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-top: 1px solid rgba(191, 178, 151, 0.18);
+}
+body.page-index .parcours-list li:first-child {
+    border-top: none;
+}
+body.page-index .pc-when {
+    flex: none;
+    min-width: 86px;
+    padding-top: 3px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: var(--sable-fonce);
+}
+body.page-index .pc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+}
+body.page-index .pc-what {
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--prusse);
+}
+body.page-index .pc-where {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: var(--text-muted);
+}
+body.page-index .pc-where sup {
+    font-size: 0.7em;
+}
+
+/* Hero : les trois paragraphes reviennent ; on reprend un peu de hauteur
+   (padding haut, interligne, respirations) pour garder le bouton RDV
+   visible à 1366×768 */
+@media (min-width: 769px) {
+    body.page-index .hero-v3 .hero-subtitle {
+        margin-bottom: 18px;
+    }
+    body.page-index .hero-v3 .hero-text {
+        line-height: 1.65;
+        margin-bottom: 12px;
+    }
+    body.page-index .hero-v3 .hero-text:last-of-type {
+        margin-bottom: 30px;
+    }
+}
+@media (min-width: 1025px) {
+    body.page-index .hero-v3 .hero-left {
+        padding: 48px 0 72px;
+    }
+}
+
+/* Lien de fin de section (flèche dimensionnée : 16 px, plus jamais 300 px) */
+body.page-index .parcours-more {
+    text-align: center;
+    margin: 36px 0 0;
+}
+body.page-index .parcours-more .sc-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--prusse);
+    text-decoration: none;
+    transition: gap 0.2s;
+}
+body.page-index .parcours-more .sc-more .ico {
+    width: 16px;
+    height: 16px;
+    flex: none;
+}
+body.page-index .parcours-more .sc-more:hover,
+body.page-index .parcours-more .sc-more:focus-visible {
+    gap: 12px;
+}
+
+@media (max-width: 1024px) {
+    body.page-index .parcours-v11 {
+        gap: 32px;
+    }
+    body.page-index .parcours-reperes {
+        padding: 22px 20px 18px;
+    }
+}
+@media (max-width: 860px) {
+    body.page-index .parcours-v11 {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 28px;
+    }
+}
+@media (max-width: 480px) {
+    body.page-index .parcours-list li {
+        flex-direction: column;
+        gap: 3px;
+    }
+    body.page-index .pc-when {
+        min-width: 0;
+        padding-top: 0;
+    }
+}
