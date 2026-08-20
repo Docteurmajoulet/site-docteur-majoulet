@@ -6138,3 +6138,103 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     border-color: var(--blanc-naturel);
     color: var(--blanc-naturel);
 }
+
+/* ============================================================
+   CRAFT v6 — Lot Impeccable 2 (20/08/2026)
+   1. Alerte décollement en deux niveaux + actions (Appeler / créneau
+      urgence) — pas de cuivre dans l'ambre (règle des deux chaleurs).
+   2. Titres : les <h3> qui suivaient directement le H1 deviennent des
+      <h2 class="h-sub"> (plan de titres valide) en conservant leur
+      apparence de sous-titre.
+   ============================================================ */
+.alert-urgence .alert-niveau {
+    color: var(--text);
+    font-size: 0.96rem;
+    line-height: 1.6;
+    margin: 0 0 12px;
+}
+.alert-urgence .alert-niveau:last-of-type {
+    margin-bottom: 0;
+}
+.alert-urgence .alert-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 18px 0 2px;
+}
+.alert-urgence .alert-actions a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 12px 18px;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+.alert-urgence .btn-alert-tel {
+    background: var(--prusse);
+    color: var(--blanc-naturel);
+}
+.alert-urgence .btn-alert-tel:hover {
+    background: var(--prusse-light);
+    color: var(--blanc-naturel);
+}
+.alert-urgence .btn-alert-rdv {
+    background: var(--blanc);
+    color: var(--prusse);
+    border: 2px solid var(--prusse);
+    padding: 10px 18px;
+}
+.alert-urgence .btn-alert-rdv:hover {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+}
+.alert-urgence .alert-actions .ico {
+    width: 18px;
+    height: 18px;
+    flex: none;
+}
+@media (max-width: 600px) {
+    .alert-urgence .alert-actions a {
+        flex: 1 1 100%;
+    }
+}
+article.pathology-content h2.h-sub,
+h2.h-sub {
+    font-size: 1.05rem;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+article.pathology-content h2.h-sub::after,
+h2.h-sub::after {
+    display: none;
+}
+@media (max-width: 600px) {
+    .alert-urgence.alert-urgence--niveaux {
+        padding: 54px 18px 18px;
+    }
+    .alert-urgence.alert-urgence--niveaux::before {
+        left: 18px;
+        top: 18px;
+    }
+    .alert-urgence .alert-actions a {
+        font-size: 0.76rem;
+        padding: 12px 14px;
+    }
+    .alert-urgence .btn-alert-rdv {
+        padding: 10px 14px;
+    }
+    .alert-urgence .btn-alert-tel .num {
+        display: none;
+    }
+}
