@@ -4928,7 +4928,10 @@ body.m12.menu-open nav.main-nav {
 
 /* --- Barre d'action fixe (mobile + tablette ≤ 1024 px) : « Appeler · Prendre rendez-vous »
    Lot Impeccable 20/08/2026 : visible dès que le CTA du header disparaît (≤ 1024 px),
-   deux cibles de 48 px, téléphone joignable depuis toutes les fiches. --- */
+   deux cibles de 48 px, téléphone joignable depuis toutes les fiches.
+   20/08/2026 (retour d'Alexandre) : sur téléphone (< 600 px) le bouton Appeler devient
+   un disque de 48 px à icône seule (nom accessible = aria-label) et « Prendre rendez-vous »
+   occupe toute la largeur restante ; tablette 600-1024 px inchangée (libellé conservé). --- */
 .sticky-rdv {
     position: fixed;
     left: 0;
@@ -5004,11 +5007,35 @@ body.m12.menu-open nav.main-nav {
         padding-right: calc(50% - 280px);
     }
 }
-@media (max-width: 360px) {
-    .sticky-rdv a {
-        font-size: 0.74rem;
+/* Téléphone (< 600 px) : Appeler = icône seule, RDV pleine largeur */
+@media (max-width: 599px) {
+    .sticky-rdv .sticky-tel {
+        width: 48px;
+        height: 48px;
+        padding: 0;
+        border-radius: 50%;
+    }
+    .sticky-rdv .sticky-tel .lbl {
+        display: none;
+    }
+    .sticky-rdv .sticky-tel .ico {
+        width: 21px;
+        height: 21px;
+    }
+    .sticky-rdv .sticky-doctolib {
+        flex: 1 1 auto;
+        min-width: 0;
+        font-size: 0.85rem;
+        letter-spacing: 0.04em;
+    }
+}
+/* Très petits écrans (≤ 340 px) : on resserre le libellé RDV plutôt que de le couper */
+@media (max-width: 340px) {
+    .sticky-rdv .sticky-doctolib {
+        font-size: 0.76rem;
         letter-spacing: 0.03em;
-        padding: 12px 14px;
+        padding-left: 12px;
+        padding-right: 12px;
     }
 }
 
@@ -6401,14 +6428,10 @@ body.page-index .specialty-icon svg {
 footer .footer-meta {
     opacity: 1;
 }
-/* Très petits écrans (≤ 360 px) */
+/* Très petits écrans (≤ 360 px) — barre fixe : règles tel/libellé déplacées
+   dans le bloc « Téléphone (< 600 px) » (20/08/2026) ; on garde le repli
+   sur deux lignes du libellé RDV au cas où la police rendrait plus large. */
 @media (max-width: 360px) {
-    .sticky-rdv .sticky-tel .lbl {
-        display: none;
-    }
-    .sticky-rdv .sticky-tel {
-        padding: 10px 14px;
-    }
     .sticky-rdv .sticky-doctolib {
         min-width: 0;
         white-space: normal;
