@@ -6238,3 +6238,81 @@ h2.h-sub::after {
         display: none;
     }
 }
+
+/* ============================================================
+   CRAFT v7 — Lot Impeccable 3 « distill home » (20/08/2026)
+   Craft-floor : plus de kicker au-dessus des titres, icônes dessinées
+   (SVG) à la place des glyphes unicode, aucun liseré coloré > 1 px,
+   le cuivre sur le CTA final, la carte urgence sort de l'ambre
+   (ambre = signal, jamais une surface d'action), boutons du hero
+   remontés sous le sous-titre sur mobile.
+   ============================================================ */
+/* Topbar : pictogramme SVG à la place de ⚠ */
+.topbar-urgence {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+}
+.topbar-urgence .ico {
+    width: 14px;
+    height: 14px;
+    flex: none;
+    color: var(--ambre-urgence, #d98c2a);
+}
+/* USP : coche dessinée */
+.usp-check .ico {
+    width: 18px;
+    height: 18px;
+}
+/* Carte « RDV rapide » : surface neutre, pictogramme ambre, texte lisible */
+body.page-index .trust-card.urgence {
+    background: var(--blanc);
+    border-color: var(--border);
+}
+body.page-index .trust-card.urgence .tc-title {
+    color: var(--prusse);
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+}
+body.page-index .trust-card.urgence .tc-title::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    flex: none;
+    margin-top: 1px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d98c2a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13.5'/%3E%3Ccircle cx='12' cy='17' r='0.4'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+body.page-index .trust-card.urgence .tc-text {
+    color: var(--text-light);
+}
+/* CTA final de la home : geste unique cuivre */
+body.page-index .btn-doctolib {
+    background: var(--cuivre-rdv);
+    color: #ffffff;
+}
+body.page-index .btn-doctolib:hover,
+body.page-index .btn-doctolib:focus-visible {
+    background: var(--cuivre-rdv-deep);
+    color: #ffffff;
+}
+/* Liserés : cartes du parcours et chiffres clés passent en filet 1 px */
+body.page-index .parcours-card {
+    border-left: none;
+    border: 1px solid var(--border);
+}
+.key-fact {
+    border-left: none;
+    border: 1px solid var(--border);
+}
+/* Hero mobile : l'action avant la présentation */
+@media (max-width: 768px) {
+    body.page-index .hero-v3 h1 { order: 1; }
+    body.page-index .hero-v3 .hero-subtitle { order: 2; }
+    body.page-index .hero-v3 .hero-buttons { order: 3; margin: 6px 0 26px; }
+    body.page-index .hero-v3 .hero-text { order: 4; }
+    body.page-index .hero-v3 .hero-note { order: 5; }
+    body.page-index .hero-v3 .hero-chips { order: 6; }
+}
