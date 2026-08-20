@@ -21,6 +21,7 @@
     --sable: #BFB297;
     --sable-light: #d4cbb5;
     --sable-clair: #d4c9b2;
+    --sable-fonce: #7d6f52; /* sable pour texte : 4,9:1 sur blanc (20/08/2026) */
     --blanc-naturel: #F9F7F2;
     --blanc: #ffffff;
     /* Couleurs secondaires */
@@ -4925,7 +4926,9 @@ body.m12.menu-open nav.main-nav {
     aspect-ratio: 4 / 5;
 }
 
-/* --- Barre RDV fixe (mobile) — HTML présent sur la home (lot 1) --- */
+/* --- Barre d'action fixe (mobile + tablette ≤ 1024 px) : « Appeler · Prendre rendez-vous »
+   Lot Impeccable 20/08/2026 : visible dès que le CTA du header disparaît (≤ 1024 px),
+   deux cibles de 48 px, téléphone joignable depuis toutes les fiches. --- */
 .sticky-rdv {
     position: fixed;
     left: 0;
@@ -4933,39 +4936,79 @@ body.m12.menu-open nav.main-nav {
     bottom: 0;
     z-index: 90;
     display: none;
+    gap: 10px;
     padding: 10px 14px calc(10px + env(safe-area-inset-bottom));
     background: rgba(249, 247, 242, 0.96);
+    -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     border-top: 1px solid var(--border);
 }
 .sticky-rdv a {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 13px 20px;
+    min-height: 48px;
+    padding: 12px 18px;
     border-radius: 50px;
-    background: var(--cuivre-rdv);
-    color: #ffffff;
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s;
 }
-.sticky-rdv a:active {
+.sticky-rdv .sticky-doctolib {
+    flex: 1 1 auto;
+    background: var(--cuivre-rdv);
+    color: #ffffff;
+}
+.sticky-rdv .sticky-doctolib:hover,
+.sticky-rdv .sticky-doctolib:active {
     background: var(--cuivre-rdv-deep);
+    color: #ffffff;
+}
+.sticky-rdv .sticky-tel {
+    flex: 0 0 auto;
+    background: var(--blanc);
+    color: var(--prusse);
+    border: 2px solid var(--prusse);
+    padding: 10px 18px;
+}
+.sticky-rdv .sticky-tel:hover,
+.sticky-rdv .sticky-tel:active {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+}
+.sticky-rdv .ico {
+    width: 18px;
+    height: 18px;
+    flex: none;
 }
 .sticky-rdv a:focus-visible {
-    outline: 2px solid var(--cuivre-rdv-deep);
+    outline: 3px solid var(--prusse);
     outline-offset: 2px;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .sticky-rdv {
-        display: block;
+        display: flex;
     }
     body.has-sticky-rdv {
-        padding-bottom: 74px;
+        padding-bottom: 76px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .sticky-rdv {
+        padding-left: calc(50% - 280px);
+        padding-right: calc(50% - 280px);
+    }
+}
+@media (max-width: 360px) {
+    .sticky-rdv a {
+        font-size: 0.74rem;
+        letter-spacing: 0.03em;
+        padding: 12px 14px;
     }
 }
 
@@ -5936,4 +5979,162 @@ header.site-header .nav-tel { display: none; }
     }
     .mega-grid-chir3 .mega-col-associes { grid-column: auto; }
     .mega-footer { justify-content: flex-start; }
+}
+
+/* ============================================================
+   CRAFT v5 — Lot « critique Impeccable » du 20/08/2026
+   Sources : .impeccable/critique/2026-08-20T08-10-20Z__*.md
+   (rebasé sur la nav v5 et le lot contrastes du même jour)
+   1. Tiroir mobile/tablette : téléphone + RDV en tête (aucune
+      action n'était atteignable entre 769 et 1024 px).
+   2. Contraste AA restant : labels de section, années du parcours,
+      anneau de focus.
+   3. Fiches urgence (décollement, déchirure) : retour dans la
+      palette — bandeau ardoise, badge ambre, bouton hospitalier en
+      outline ; le cuivre redevient l'unique bouton chaud.
+   ============================================================ */
+
+/* --- 1. Tiroir (≤ 1024 px) : actions en tête, masquées sur desktop --- */
+.drawer-actions {
+    display: none;
+}
+@media (max-width: 1024px) {
+    nav.main-nav .drawer-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 4px 0 18px;
+        margin-bottom: 6px;
+        border-bottom: 1px solid var(--border);
+    }
+    nav.main-nav .drawer-actions a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 48px;
+        padding: 12px 16px;
+        border-radius: 50px;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+    nav.main-nav .drawer-actions .drawer-tel {
+        background: var(--blanc);
+        color: var(--prusse);
+        border: 2px solid var(--prusse);
+        padding: 10px 16px;
+    }
+    nav.main-nav .drawer-actions .drawer-rdv {
+        background: var(--cuivre-rdv);
+        color: #ffffff;
+    }
+    nav.main-nav .drawer-actions .drawer-rdv:hover,
+    nav.main-nav .drawer-actions .drawer-rdv:active {
+        background: var(--cuivre-rdv-deep);
+    }
+    nav.main-nav .drawer-actions .ico {
+        width: 18px;
+        height: 18px;
+        flex: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    nav.main-nav .drawer-actions {
+        flex-direction: row;
+    }
+    nav.main-nav .drawer-actions a {
+        flex: 1 1 0;
+    }
+}
+
+/* --- 2. Contraste AA restant --- */
+/* Labels de section (home) : bleu-gris 2,4:1 → texte doux 5,2:1 (sections .fade-in, invisibles pour un audit au chargement) */
+body.page-index .section-label {
+    color: var(--text-light);
+    border-color: var(--border);
+}
+/* Années du parcours : sable 2,1:1 → sable foncé 4,9:1 */
+body.page-index .parcours-card-year {
+    color: var(--sable-fonce);
+}
+/* Intitulés du bloc contact sombre : 40 % (3,1:1) → 72 % (6,6:1) */
+body.page-index .contact-item h3,
+body.page-index .contact-item h4 {
+    color: rgba(249, 247, 242, 0.72);
+}
+/* Anneau de focus : bleu-gris 2,2:1 sur crème → ardoise (12:1) ; sable clair sur les surfaces sombres */
+:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+}
+.topbar :focus-visible,
+.hero :focus-visible,
+header.page-header :focus-visible,
+footer :focus-visible,
+.cta-block :focus-visible,
+body.menu-open .mobile-toggle:focus-visible {
+    outline-color: var(--sable-light);
+}
+
+/* --- 3. Fiches urgence dans la palette --- */
+body.page-decollement-retine header.page-header,
+body.page-dechirure-retine-corps-flottants header.page-header {
+    background: var(--prusse);
+}
+body.page-decollement-retine .urgence-badge,
+body.page-dechirure-retine-corps-flottants .page-header .urgence-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #fdf3e0;
+    color: #8a4510;
+    border: 1px solid rgba(217, 140, 42, 0.55);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+body.page-decollement-retine .urgence-badge .ico,
+body.page-dechirure-retine-corps-flottants .urgence-badge .ico {
+    width: 15px;
+    height: 15px;
+    flex: none;
+}
+body.page-decollement-retine .alert-urgence strong,
+body.page-dechirure-retine-corps-flottants .alert-urgence strong {
+    color: #8a4510;
+}
+/* Bouton hospitalier : outline clair dans le bloc CTA sombre, même hauteur que le cuivre */
+article.pathology-content .cta-block .btn-rdv,
+article.pathology-content .cta-block .btn-urgence {
+    margin: 8px 6px 0;
+    min-height: 52px;
+    box-sizing: border-box;
+}
+article.pathology-content .cta-block .btn-rdv {
+    padding: 15px 32px;
+}
+article.pathology-content .cta-block .btn-urgence {
+    padding: 13px 30px;
+}
+body.page-decollement-retine .btn-urgence,
+body.page-dechirure-retine-corps-flottants .btn-urgence {
+    background: transparent;
+    color: var(--blanc-naturel);
+    border: 2px solid rgba(249, 247, 242, 0.55);
+}
+body.page-decollement-retine .btn-urgence:hover,
+body.page-dechirure-retine-corps-flottants .btn-urgence:hover,
+body.page-decollement-retine .btn-urgence:focus-visible,
+body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
+    background: rgba(249, 247, 242, 0.12);
+    border-color: var(--blanc-naturel);
+    color: var(--blanc-naturel);
 }

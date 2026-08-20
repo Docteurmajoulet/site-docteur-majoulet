@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260820b">
+    <link rel="stylesheet" href="/main.css?v=20260820c">
     <title>Grille d'Amsler : test DMLA à faire chez soi — Dr Majoulet</title>
     <meta name="description" content="Grille d'Amsler à imprimer (PDF) : mode d'emploi, interprétation, quand consulter. Autosurveillance quotidienne de la macula. Dr Majoulet, Boulogne.">
     <meta name="keywords" content="grille d'Amsler, test DMLA, métamorphopsies, autosurveillance macula, scotome central, DMLA dépistage, Dr Majoulet, ophtalmologue Boulogne-Billancourt">
@@ -110,7 +110,11 @@
         <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
             Dr Majoulet — Rétinologue <span class="logo-city">Boulogne-Billancourt</span>
         </a>
-        <nav class="main-nav" aria-label="Navigation principale">
+        <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+            <div class="drawer-actions">
+                <a class="drawer-tel" href="tel:+33184191166"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 01 84 19 11 66</a>
+                <a class="drawer-rdv" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous</a>
+            </div>
             <ul class="nav-list" role="list">
                 <li class="nav-item nav-item--compact" data-megamenu>
                     <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-dmla">
@@ -476,7 +480,10 @@
     window.addEventListener('resize', () => { if (window.innerWidth > 1024 && body.classList.contains('menu-open')) closeMenu(); });
 })();
 </script>
-<div class="sticky-rdv"><a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous</a></div>
+<div class="sticky-rdv">
+    <a class="sticky-tel" href="tel:+33184191166"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler</a>
+    <a class="sticky-doctolib" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous</a>
+</div>
 
 </body>
 </html>
