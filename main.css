@@ -7111,3 +7111,120 @@ body.page-index .cv12-map-note a:hover .cv12-arrow {
         font-size: 0.8rem;
     }
 }
+
+/* ============================================================
+   CTA-2026-08-21 — Lot CTA (21/08/2026) : bloc de fin de fiche
+   Un libellé unique « Prendre rendez-vous (sur Doctolib) »,
+   un seul couple d'actions par bloc (Doctolib + téléphone),
+   bouton fantôme pour le téléphone / les urgences, ligne
+   « Ou par téléphone » ; « sur Doctolib » masqué ≤ 480 px.
+   Marqueur d'idempotence : CTA-2026-08-21 (ne pas réutiliser).
+   ============================================================ */
+/* Texte réservé aux lecteurs d'écran (même définition dans le lot a11y) */
+.sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+article.pathology-content .cta-block .cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 12px;
+    margin-top: 8px;
+}
+article.pathology-content .cta-block .cta-actions .btn-rdv,
+article.pathology-content .cta-block .cta-actions .btn-ghost,
+article.pathology-content .cta-block .cta-actions .btn-urgence {
+    margin: 0;
+}
+article.pathology-content .cta-block .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 52px;
+    box-sizing: border-box;
+    padding: 13px 28px;
+    border-radius: 50px;
+    border: 2px solid rgba(249, 247, 242, 0.55);
+    background: transparent;
+    color: var(--blanc-naturel);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+article.pathology-content .cta-block .btn-ghost:hover,
+article.pathology-content .cta-block .btn-ghost:focus-visible {
+    background: rgba(249, 247, 242, 0.12);
+    border-color: var(--blanc-naturel);
+    color: var(--blanc-naturel);
+}
+article.pathology-content .cta-block .cta-actions .btn-rdv,
+article.pathology-content .cta-block .btn-ghost {
+    gap: 0; /* les espaces sont portés par les marges des <span>, pas par le gap flex */
+}
+article.pathology-content .cta-block .btn-more,
+article.pathology-content .cta-block .btn-ghost .lbl-more,
+article.pathology-content .cta-block .btn-ghost .num {
+    margin-left: 0.32em;
+}
+article.pathology-content .cta-block .btn-ghost svg {
+    width: 18px;
+    height: 18px;
+    flex: 0 0 18px;
+    margin-right: 9px;
+}
+article.pathology-content .cta-block .btn-ghost .num {
+    font-variant-numeric: tabular-nums;
+}
+article.pathology-content .cta-block .cta-alt {
+    margin: 16px auto 0;
+    font-size: 0.9rem;
+    color: rgba(249, 247, 242, 0.72);
+    max-width: none;
+}
+article.pathology-content .cta-block .cta-alt a {
+    color: var(--blanc-naturel);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(249, 247, 242, 0.45);
+}
+article.pathology-content .cta-block .cta-alt a:hover,
+article.pathology-content .cta-block .cta-alt a:focus-visible {
+    text-decoration-color: var(--blanc-naturel);
+}
+@media (max-width: 480px) {
+    article.pathology-content .cta-block .btn-more {
+        display: none;
+    }
+    article.pathology-content .cta-block .cta-actions .btn-rdv,
+    article.pathology-content .cta-block .cta-actions .btn-ghost,
+    article.pathology-content .cta-block .cta-actions .btn-urgence {
+        width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+        font-size: 0.82rem;
+        letter-spacing: 0.03em;
+    }
+    article.pathology-content .cta-block .btn-ghost .num {
+        display: none;
+    }
+}
+@media (max-width: 380px) {
+    article.pathology-content .cta-block .btn-ghost .lbl-more {
+        display: none;
+    }
+}
