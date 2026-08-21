@@ -10,7 +10,6 @@
  * dans la page correspondante. Ce découpage maximise le cache navigateur
  * (main.css téléchargé une seule fois) sans fragiliser les maquettes.
  */
-
 :root {
     /* Charte Ophtalife — palette principale */
     --prusse: #283339;
@@ -49,10 +48,8 @@
     --alerte-fond: #fff4e6;
     --alerte-texte: #8a4510;
 }
-
 /* Reset universel */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
 /*
  * Skip link (WCAG 2.1 SC 2.4.1 — Bypass Blocks) :
  * permet aux utilisateurs de clavier et lecteurs d'écran de sauter
@@ -80,14 +77,11 @@
     outline: 3px solid var(--sable);
     outline-offset: 2px;
 }
-
-
 /* ============================================================
    Composants v2 — intégration maquettes Claude Design (07/2026)
    Topbar urgence, téléphone header, chips hero, trust-cards,
    rangée USP, parcours en étapes, encadré urgence, cartes implants
    ============================================================ */
-
 /* --- Topbar urgence --- */
 .topbar { background: var(--prusse-dark); font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif; }
 .topbar-inner { max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
@@ -96,21 +90,18 @@
 .topbar-info { color: rgba(249,247,242,0.55); font-size: 0.75rem; font-weight: 400; white-space: nowrap; }
 .topbar-info a { color: inherit; text-decoration: none; }
 .topbar-info a:hover { color: var(--blanc-naturel); }
-@media (max-width: 900px) { .topbar-info { display: none; } .topbar-inner { justify-content: center; } }
-@media (max-width: 560px) { .tb-plus { display: none; } }
-
-/* --- Téléphone header --- */
-.nav-tel { display: inline-flex; align-items: center; gap: 7px; padding: 10px 20px; border-radius: 50px; border: 1px solid var(--border); color: var(--prusse); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.04em; text-decoration: none; transition: border-color 0.2s; white-space: nowrap; }
-.nav-tel:hover { border-color: var(--prusse); }
-@media (max-width: 1120px) { .nav-tel { display: none; } }
-
+@media (max-width: 900px) {
+.topbar-info { display: none; }
+.topbar-inner { justify-content: center; }
+}
+@media (max-width: 560px) {
+.tb-plus { display: none; }
+}
 /* --- Chips hero --- */
 .hero-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
 .hero-chips .hero-tag, .hero-chips .chip { margin-bottom: 0; }
-
 /* --- Note sous les boutons hero --- */
 .hero-note { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; margin: -22px 0 34px; }
-
 /* --- Trust cards (home) --- */
 .trust-section { background: var(--blanc-naturel); padding: 0 0 56px; }
 .trust-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -120,31 +111,18 @@
 .trust-card .tc-text { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; line-height: 1.5; }
 .trust-card.urgence { background: var(--alerte-fond); border-color: var(--alerte-bordure); }
 .trust-card.urgence .tc-title, .trust-card.urgence .tc-text { color: var(--alerte-texte); }
-@media (max-width: 860px) { .trust-cards { grid-template-columns: 1fr; } }
-
+@media (max-width: 860px) {
+.trust-cards { grid-template-columns: 1fr; }
+}
 /* --- Rangée USP (home) --- */
 .usp-section { background: var(--blanc); padding: 52px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 .usp-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; text-align: center; }
 .usp-check { width: 40px; height: 40px; margin: 0 auto 12px; border-radius: 50%; background: var(--sable-light); color: var(--prusse); font-weight: 700; display: flex; align-items: center; justify-content: center; }
 .usp .usp-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 4px; }
 .usp .usp-text { font-size: 0.82rem; color: var(--text-muted); font-weight: 400; }
-@media (max-width: 860px) { .usp-row { grid-template-columns: repeat(2, 1fr); gap: 22px; } }
-
-/* --- Parcours patient en étapes --- */
-.parcours-steps { margin: 44px 0; }
-.parcours-steps > h3 { text-align: center; font-size: 1.15rem; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 30px; }
-.steps { display: grid; grid-template-columns: repeat(5, 1fr); gap: 22px; }
-.step-num { width: 34px; height: 34px; border-radius: 50%; background: var(--sable-light); color: var(--prusse); font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; margin-bottom: 10px; }
-.step h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
-.step p { font-size: 0.82rem; color: var(--text-muted); font-weight: 400; line-height: 1.55; }
-@media (max-width: 960px) { .steps { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 560px) { .steps { grid-template-columns: 1fr; } }
-
-/* --- Encadré urgence --- */
-.alerte-urgence { border-left: 4px solid var(--alerte-bordure); background: var(--alerte-fond); color: var(--alerte-texte); padding: 18px 22px; border-radius: 0 var(--radius-sm) var(--radius-sm) 0; font-size: 0.92rem; line-height: 1.6; margin: 36px 0; }
-.alerte-urgence strong { display: block; text-transform: uppercase; font-size: 0.78rem; letter-spacing: 0.06em; margin-bottom: 5px; }
-.alerte-urgence a { color: inherit; font-weight: 600; }
-
+@media (max-width: 860px) {
+.usp-row { grid-template-columns: repeat(2, 1fr); gap: 22px; }
+}
 /* --- Cartes implants (fiche cataracte) --- */
 .implant-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin: 26px 0 34px; }
 .implant-card { display: block; background: var(--blanc-naturel); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 22px 18px; text-decoration: none; transition: all 0.25s; }
@@ -152,22 +130,18 @@
 .implant-card .ic-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
 .implant-card .ic-text { font-size: 0.83rem; color: var(--text-muted); font-weight: 400; line-height: 1.55; margin-bottom: 10px; }
 .implant-card .ic-more { font-size: 0.78rem; font-weight: 600; color: var(--prusse); border-bottom: 2px solid var(--sable); padding-bottom: 2px; }
-@media (max-width: 760px) { .implant-cards { grid-template-columns: 1fr; } }
-
-/* --- CTA en-tête de page (piliers) --- */
-.page-header-cta { margin-top: 18px; }
-
+@media (max-width: 760px) {
+.implant-cards { grid-template-columns: 1fr; }
+}
 /* ============================================================
    SECTION CENTRALISÉE (2026-08-19) — fusion des <style> par page
    Scopes :where(body.<classe>) => spécificité d'origine préservée.
    v* = variantes hors-media ; m* = séquences responsive.
    ============================================================ */
-
 body.v2 {
     scroll-behavior: smooth;
     font-size: 16px;
 }
-
 body.v1 {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text);
@@ -175,7 +149,6 @@ body.v1 {
     background: var(--blanc-naturel);
     -webkit-font-smoothing: antialiased;
 }
-
 body.v26 {
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, sans-serif;
     color: var(--text);
@@ -183,7 +156,6 @@ body.v26 {
     background: var(--blanc-naturel);
     -webkit-font-smoothing: antialiased;
 }
-
 body.page-404 {
     font-family: "Helvetica Neue", Arial, sans-serif;
     background: var(--blanc-naturel);
@@ -193,14 +165,12 @@ body.page-404 {
     display: flex;
     flex-direction: column;
 }
-
 :where(body.v6) h1, :where(body.v6) h2, :where(body.v6) h3 {
     color: var(--prusse);
     line-height: 1.3;
     letter-spacing: 0.02em;
     font-weight: 600;
 }
-
 :where(body.page-index) h1, :where(body.page-index) h2, :where(body.page-index) h3,
 :where(body.page-pathologies) h1, :where(body.page-pathologies) h2, :where(body.page-pathologies) h3 {
     font-family: "Montserrat", sans-serif;
@@ -208,7 +178,6 @@ body.page-404 {
     line-height: 1.3;
     letter-spacing: 0.02em;
 }
-
 :where(body.v1) h2 {
     font-size: 1.3rem;
     margin-top: 44px;
@@ -218,7 +187,6 @@ body.page-404 {
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border);
 }
-
 :where(body.page-confidentialite) h2,
 :where(body.page-mentions-legales) h2 {
     font-size: 1.25rem;
@@ -227,7 +195,6 @@ body.page-404 {
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-
 :where(body.page-index) h2,
 :where(body.page-pathologies) h2 {
     font-size: 1.9rem;
@@ -236,7 +203,6 @@ body.page-404 {
     letter-spacing: 0.06em;
     margin-bottom: 1rem;
 }
-
 :where(body.page-publications) h2 {
     font-size: 1.35rem;
     margin-top: 48px;
@@ -246,80 +212,61 @@ body.page-404 {
     padding-bottom: 12px;
     border-bottom: 1px solid var(--border);
 }
-
 :where(body.v1) h3 {
     font-size: 1.05rem;
     margin-top: 24px;
     margin-bottom: 10px;
 }
-
-:where(body.page-confidentialite) h3,
-:where(body.page-mentions-legales) h3 {
-    font-size: 1rem;
-    margin-top: 20px;
-    margin-bottom: 8px;
-}
-
 :where(body.page-index) h3,
 :where(body.page-pathologies) h3 {
     font-size: 1.15rem;
     font-weight: 600;
 }
-
 :where(body.page-publications) h3 {
     font-size: 1.02rem;
     margin-bottom: 8px;
     font-weight: 600;
 }
-
 :where(body.v6) a {
     color: var(--prusse);
     text-decoration: underline;
 }
-
 :where(body.page-index) a,
 :where(body.page-pathologies) a {
     color: var(--prusse);
     text-decoration: none;
     transition: color 0.2s;
 }
-
 :where(body.v2) a:hover {
     color: var(--bleu-gris);
 }
-
 :where(body.v1) .container {
     max-width: 860px;
     margin: 0 auto;
     padding: 0 24px;
 }
-
 :where(body.page-confidentialite) .container,
 :where(body.page-mentions-legales) .container {
     max-width: 820px;
     margin: 0 auto;
     padding: 0 24px;
 }
-
 :where(body.page-index) .container,
 :where(body.page-pathologies) .container {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
 }
-
 :where(body.page-publications) .container {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 24px;
 }
-
 :where(body.page-index) .hero {
     background: var(--blanc-naturel);
     position: relative;
     overflow: hidden;
 }
-
 :where(body.page-index) .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -327,14 +274,12 @@ body.page-404 {
     align-items: stretch;
     min-height: 85vh;
 }
-
 :where(body.page-index) .hero-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 60px 60px 60px 0;
 }
-
 :where(body.page-index) .hero-tag {
     display: inline-block;
     padding: 6px 16px;
@@ -348,7 +293,6 @@ body.page-404 {
     margin-bottom: 20px;
     width: fit-content;
 }
-
 :where(body.page-index) .hero h1 {
     font-size: 2.6rem;
     font-weight: 700;
@@ -356,7 +300,6 @@ body.page-404 {
     letter-spacing: 0.04em;
     margin-bottom: 8px;
 }
-
 :where(body.page-index) .hero-subtitle {
     font-size: 1.1rem;
     color: var(--sable);
@@ -365,7 +308,6 @@ body.page-404 {
     font-style: italic;
     letter-spacing: 0.02em;
 }
-
 :where(body.page-index) .hero-text {
     font-size: 0.98rem;
     color: var(--text-light);
@@ -373,14 +315,12 @@ body.page-404 {
     max-width: 500px;
     font-weight: 400;
 }
-
 :where(body.page-index) .hero-buttons {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
     margin-bottom: 40px;
 }
-
 :where(body.page-index) .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -397,7 +337,6 @@ body.page-404 {
     border: none;
     cursor: pointer;
 }
-
 :where(body.page-pathologies) .btn-primary {
     display: inline-flex;
     align-items: center;
@@ -414,7 +353,6 @@ body.page-404 {
     border: none;
     cursor: pointer;
 }
-
 :where(body.page-index) .btn-primary:hover,
 :where(body.page-pathologies) .btn-primary:hover {
     background: var(--prusse-light);
@@ -422,7 +360,6 @@ body.page-404 {
     box-shadow: var(--shadow-md);
     color: var(--blanc-naturel);
 }
-
 :where(body.page-index) .btn-outline {
     display: inline-flex;
     align-items: center;
@@ -439,129 +376,46 @@ body.page-404 {
     transition: all 0.2s;
     cursor: pointer;
 }
-
 :where(body.page-index) .btn-outline:hover {
     border-color: var(--prusse);
 }
-
-:where(body.page-index) .hero-credentials {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    text-align: left;
-    padding-top: 24px;
-    border-top: 1px solid var(--border);
-}
-
-:where(body.page-index) .hero-picto {
-    width: 48px;
-    height: 60px;
-    flex-shrink: 0;
-    color: var(--bleu-gris);
-}
-
-:where(body.page-index) .hero-credentials-text p {
-    font-size: 0.8rem;
-    color: var(--text-light);
-    font-weight: 400;
-    margin: 3px 0;
-    line-height: 1.5;
-}
-
 :where(body.page-index) .hero-visual {
     position: relative;
     overflow: hidden;
 }
-
 :where(body.page-index) .hero-photo {
     width: 100%;
     height: 100%;
     min-height: 550px;
 }
-
 :where(body.page-index) .hero-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center top;
 }
-
-:where(body.page-index) .hero-photo-overlay {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 180px;
-    background: linear-gradient(to top, var(--blanc-naturel) 0%, transparent 100%);
-    pointer-events: none;
-}
-
-:where(body.page-index) .hero-photo-card {
-    position: absolute;
-    bottom: 32px;
-    left: 24px;
-    right: 24px;
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(12px);
-    border-radius: 16px;
-    padding: 20px 24px;
-    text-align: center;
-    box-shadow: var(--shadow-lg);
-}
-
-:where(body.page-index) .hero-card-logo {
-    height: 50px;
-    width: auto;
-    filter: brightness(0) saturate(100%);
-    margin-bottom: 6px;
-}
-
-:where(body.page-index) .hero-photo-card p {
-    color: var(--text-muted);
-    font-size: 0.82rem;
-    font-weight: 300;
-}
-
 :where(body.page-index) section {
     padding: 90px 0;
 }
-
-:where(body.page-index) .section-label {
-    display: inline-block;
-    padding: 5px 14px;
-    border: 1px solid var(--bleu-gris);
-    color: var(--bleu-gris);
-    border-radius: 50px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-}
-
 :where(body.page-index) .section-header {
     text-align: center;
     max-width: 650px;
     margin: 0 auto 56px;
 }
-
 :where(body.page-index) .section-header p {
     color: var(--text-muted);
     font-size: 0.98rem;
     margin-top: 12px;
     font-weight: 300;
 }
-
 :where(body.page-index) #specialites {
     background: var(--blanc);
 }
-
 :where(body.page-index) .specialties-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
 }
-
 :where(body.page-index) .specialty-card {
     background: var(--blanc-naturel);
     border-radius: var(--radius);
@@ -569,13 +423,11 @@ body.page-404 {
     border: 1px solid var(--border);
     transition: all 0.3s;
 }
-
 :where(body.page-index) .specialty-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
     border-color: var(--bleu-gris);
 }
-
 :where(body.page-index) .specialty-icon {
     width: 64px;
     height: 64px;
@@ -587,62 +439,32 @@ body.page-404 {
     margin-bottom: 20px;
     overflow: hidden;
 }
-
 :where(body.page-index) .specialty-icon img {
     width: 40px;
     height: 40px;
     object-fit: contain;
 }
-
 :where(body.page-index) .specialty-card h3 {
     margin-bottom: 10px;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-
 :where(body.page-index) .specialty-card p {
     color: var(--text-muted);
     font-size: 0.88rem;
     line-height: 1.65;
     font-weight: 400;
 }
-
 :where(body.page-index) #parcours {
     background: var(--blanc-naturel);
 }
-
-:where(body.page-index) .parcours-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 60px;
-    align-items: start;
-}
-
-:where(body.page-index) .parcours-text p {
-    color: var(--text-light);
-    margin-bottom: 16px;
-    font-size: 0.95rem;
-    font-weight: 400;
-}
-
-:where(body.page-index) .parcours-text .parcours-card {
-    margin-top: 28px;
-}
-
-:where(body.page-index) .parcours-highlights {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
 :where(body.page-index) .parcours-card {
     background: var(--blanc);
     padding: 24px 26px;
     border-radius: var(--radius);
     border-left: 3px solid var(--sable);
 }
-
 :where(body.page-index) .parcours-card-header {
     display: flex;
     align-items: center;
@@ -651,7 +473,6 @@ body.page-404 {
     padding-bottom: 12px;
     border-bottom: 1px solid rgba(191, 178, 151, 0.22);
 }
-
 :where(body.page-index) .parcours-card-header h3 {
     font-size: 0.78rem;
     font-weight: 700;
@@ -660,7 +481,6 @@ body.page-404 {
     letter-spacing: 0.08em;
     margin: 0;
 }
-
 :where(body.page-index) .parcours-card-icon {
     width: 22px;
     height: 22px;
@@ -670,7 +490,6 @@ body.page-404 {
     color: var(--sable);
     flex-shrink: 0;
 }
-
 :where(body.page-index) .parcours-card-icon svg {
     width: 18px;
     height: 18px;
@@ -678,86 +497,6 @@ body.page-404 {
     fill: none;
     stroke-width: 1.8;
 }
-
-:where(body.page-index) .parcours-card-list {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
-
-:where(body.page-index) .parcours-card-item {
-    display: flex;
-    gap: 14px;
-    align-items: flex-start;
-}
-
-:where(body.page-index) .parcours-card-year {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: var(--sable);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    white-space: nowrap;
-    min-width: 82px;
-    flex-shrink: 0;
-    padding-top: 2px;
-}
-
-:where(body.page-index) .parcours-card-content h4 {
-    font-size: 0.88rem;
-    font-weight: 600;
-    color: var(--prusse);
-    margin: 0 0 3px 0;
-}
-
-:where(body.page-index) .parcours-card-content p {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-    margin: 0;
-}
-
-:where(body.page-index) #publications {
-    background: var(--blanc);
-}
-
-:where(body.page-index) .publications-list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-:where(body.page-index) .pub-item {
-    background: var(--blanc-naturel);
-    border-radius: var(--radius);
-    padding: 26px 30px;
-    border: 1px solid var(--border);
-    transition: all 0.3s;
-}
-
-:where(body.page-index) .pub-item:hover {
-    box-shadow: var(--shadow-sm);
-    border-color: var(--bleu-gris);
-}
-
-:where(body.page-index) .pub-meta {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    margin-bottom: 10px;
-}
-
-:where(body.page-index) .pub-year {
-    padding: 3px 10px;
-    border-radius: 50px;
-    background: var(--prusse);
-    color: var(--blanc-naturel);
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-}
-
 :where(body.page-publications) .pub-year {
     display: inline-block;
     padding: 3px 10px;
@@ -769,73 +508,21 @@ body.page-404 {
     border-radius: 50px;
     margin-bottom: 10px;
 }
-
-:where(body.page-index) .pub-journal {
-    font-size: 0.78rem;
-    color: var(--text-muted);
-    font-style: italic;
-}
-
 :where(body.page-publications) .pub-journal {
     font-size: 0.85rem;
     color: var(--text-muted);
     margin-bottom: 14px;
 }
-
-:where(body.page-index) .pub-first-author {
-    padding: 3px 10px;
-    border-radius: 50px;
-    background: var(--sable-light);
-    color: var(--brun);
-    font-size: 0.72rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-
-:where(body.page-index) .pub-item h3 {
-    font-size: 0.95rem;
-    font-weight: 600;
-    margin-bottom: 6px;
-    line-height: 1.5;
-    text-transform: none;
-    letter-spacing: 0;
-}
-
-:where(body.page-index) .pub-authors {
-    font-size: 0.82rem;
-    color: var(--text-muted);
-}
-
 :where(body.page-publications) .pub-authors {
     font-size: 0.85rem;
     color: var(--text-light);
     margin-bottom: 6px;
     font-style: italic;
 }
-
-:where(body.page-index) .pub-authors strong {
-    color: var(--prusse);
-    font-weight: 600;
-}
-
 :where(body.page-publications) .pub-authors strong {
     color: var(--prusse);
     font-style: normal;
 }
-
-:where(body.page-index) .pub-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 10px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    color: var(--bleu-gris);
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
-}
-
 :where(body.page-publications) .pub-link {
     display: inline-flex;
     align-items: center;
@@ -850,121 +537,32 @@ body.page-404 {
     border: 1px solid var(--border);
     transition: all 0.2s;
 }
-
-:where(body.page-index) .pub-link:hover {
-    color: var(--prusse);
-}
-
 :where(body.page-publications) .pub-link:hover {
     background: var(--prusse);
     color: var(--blanc-naturel);
     border-color: var(--prusse);
 }
-
-:where(body.page-index) .pub-link svg {
-    width: 14px;
-    height: 14px;
-}
-
-:where(body.page-publications) .pub-link svg {
-    width: 13px;
-    height: 13px;
-}
-
 :where(body.page-index) #contact {
     background: var(--prusse);
     color: var(--blanc-naturel);
 }
-
 :where(body.page-index) #contact h2 {
     color: var(--blanc-naturel);
 }
-
-:where(body.page-index) #contact .section-label {
-    border-color: var(--bleu-gris);
-    color: var(--bleu-gris);
-}
-
 :where(body.page-index) #contact .section-header p {
     color: rgba(249,247,242,0.55);
 }
-
-:where(body.page-index) .contact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-}
-
-:where(body.page-index) .contact-info-card {
-    background: rgba(249,247,242,0.05);
-    border: 1px solid rgba(249,247,242,0.08);
-    border-radius: var(--radius);
-    padding: 36px;
-}
-
-:where(body.page-index) .contact-item {
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-    margin-bottom: 26px;
-}
-
-:where(body.page-index) .contact-item:last-child {
-    margin-bottom: 0;
-}
-
-:where(body.page-index) .contact-item-icon {
-    width: 42px;
-    height: 42px;
-    background: rgba(249,247,242,0.06);
-    border-radius: var(--radius-sm);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
-
-:where(body.page-index) .contact-item-icon svg {
-    width: 18px;
-    height: 18px;
-    stroke: var(--bleu-gris);
-    fill: none;
-    stroke-width: 1.5;
-}
-
-:where(body.page-index) .contact-item h3, :where(body.page-index) .contact-item h4 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: rgba(249,247,242,0.72);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin-bottom: 4px;
-}
-
-:where(body.page-index) .contact-item p {
-    color: rgba(249,247,242,0.8);
-    font-size: 0.92rem;
-    font-weight: 300;
-}
-
 :where(body.page-index) .contact-map {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
-
 :where(body.page-index) .contact-map iframe {
     width: 100%;
     height: 340px;
     border-radius: var(--radius);
     border: 1px solid rgba(249,247,242,0.08);
 }
-
-:where(body.page-index) .contact-cta {
-    text-align: center;
-    margin-top: 48px;
-}
-
 :where(body.page-404) .btn-doctolib {
     display: inline-flex;
     align-items: center;
@@ -980,7 +578,6 @@ body.page-404 {
     margin-left: 12px;
     transition: background 0.2s;
 }
-
 :where(body.page-index) .btn-doctolib {
     display: inline-flex;
     align-items: center;
@@ -997,13 +594,11 @@ body.page-404 {
     border: none;
     cursor: pointer;
 }
-
 :where(body.page-index) .btn-doctolib:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     color: var(--prusse);
 }
-
 :where(body.v20) footer {
     background: var(--vert-fonce);
     color: rgba(249,247,242,0.72);
@@ -1012,7 +607,6 @@ body.page-404 {
     font-size: 0.78rem;
     font-weight: 300;
 }
-
 :where(body.page-index) footer,
 :where(body.page-pathologies) footer {
     background: var(--vert-fonce);
@@ -1023,7 +617,6 @@ body.page-404 {
     font-weight: 300;
     letter-spacing: 0.02em;
 }
-
 :where(body.page-404) footer {
     background: #fff;
     border-top: 1px solid var(--bordure);
@@ -1032,56 +625,46 @@ body.page-404 {
     font-size: 0.85rem;
     color: var(--texte-clair);
 }
-
 :where(body.v19) footer a {
     color: rgba(249,247,242,0.8);
 }
-
 :where(body.page-404) footer a {
     color: var(--prusse);
     text-decoration: none;
 }
-
 :where(body.page-index) .fade-in,
 :where(body.page-pathologies) .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-
 :where(body.page-index) .fade-in.visible,
 :where(body.page-pathologies) .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
-
 :where(body.v2) :focus {
     outline: none;
 }
-
 :where(body.v2) :focus-visible {
     outline: 3px solid var(--bleu-gris);
     outline-offset: 3px;
     border-radius: 4px;
 }
-
 :where(body.page-index) .btn-primary:focus-visible, :where(body.page-index) .btn-doctolib:focus-visible {
     outline-color: var(--sable);
     outline-offset: 4px;
 }
-
 :where(body.v14) .nav-link[aria-current="page"] {
     color: var(--prusse);
     font-weight: 600;
 }
-
 :where(body.v2) .mega-list a[aria-current="page"] {
     background: var(--blanc-naturel);
     color: var(--prusse);
     font-weight: 600;
     padding-left: 12px;
 }
-
 :where(body.v2) .skip-link {
     position: absolute;
     left: -9999px;
@@ -1093,13 +676,11 @@ body.page-404 {
     text-decoration: none;
     z-index: 1000;
 }
-
 :where(body.v2) .skip-link:focus {
     left: 16px;
     top: 16px;
     color: var(--blanc-naturel);
 }
-
 :where(body.v2) header.site-header {
     position: sticky;
     top: 0;
@@ -1108,13 +689,11 @@ body.page-404 {
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
-
 :where(body.page-404) header.site-header {
     background: #fff;
     border-bottom: 1px solid var(--bordure);
     padding: 20px 24px;
 }
-
 :where(body.v2) .header-inner {
     max-width: 1240px;
     margin: 0 auto;
@@ -1125,11 +704,9 @@ body.page-404 {
     height: 76px;
     position: relative;
 }
-
 :where(body.v2) .nav-item[data-megamenu] {
     position: static;
 }
-
 :where(body.v2) .site-logo {
     font-size: 0.92rem;
     font-weight: 600;
@@ -1139,7 +716,6 @@ body.page-404 {
     line-height: 1.2;
     text-decoration: none;
 }
-
 :where(body.page-404) .site-logo {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.15rem;
@@ -1150,16 +726,6 @@ body.page-404 {
     flex-direction: column;
     line-height: 1.15;
 }
-
-:where(body.v3) .site-logo .subtitle {
-    display: block;
-    font-size: 0.7rem;
-    font-weight: 300;
-    color: var(--text-light);
-    letter-spacing: 0.14em;
-    margin-top: 2px;
-}
-
 :where(body.v2) .site-logo .logo-city {
     display: block;
     font-size: 0.7rem;
@@ -1169,13 +735,11 @@ body.page-404 {
     margin-top: 2px;
     text-transform: uppercase;
 }
-
 :where(body.page-404) .site-logo .logo-city {
     font-size: 0.85rem;
     font-weight: 400;
     color: var(--texte-clair);
 }
-
 :where(body.v2) nav.main-nav {
     flex: 1;
     display: flex;
@@ -1183,7 +747,6 @@ body.page-404 {
     gap: 8px;
     padding-right: 18px;
 }
-
 :where(body.v4) nav.main-nav .nav-list {
     list-style: none;
     display: flex;
@@ -1191,12 +754,10 @@ body.page-404 {
     padding-left: 0;
     margin-bottom: 0;
 }
-
 :where(body.v4) nav.main-nav .nav-item {
     position: relative;
     margin-bottom: 0;
 }
-
 :where(body.v18) nav.main-nav .nav-link {
     display: inline-flex;
     align-items: center;
@@ -1216,7 +777,6 @@ body.page-404 {
     text-decoration: none;
     white-space: nowrap;
 }
-
 :where(body.v23) nav.main-nav .nav-link {
     display: inline-flex;
     align-items: center;
@@ -1235,21 +795,17 @@ body.page-404 {
     font-family: inherit;
     text-decoration: none;
 }
-
 :where(body.v4) nav.main-nav .nav-link:hover, :where(body.v4) nav.main-nav .nav-link:focus-visible, :where(body.v4) nav.main-nav .nav-item.is-open .nav-link {
     color: var(--prusse);
 }
-
 :where(body.v4) nav.main-nav .nav-link .caret {
     width: 10px;
     height: 10px;
     transition: transform 0.2s;
 }
-
 :where(body.v4) nav.main-nav .nav-item.is-open .caret {
     transform: rotate(180deg);
 }
-
 :where(body.v4) .mega-panel {
     position: absolute;
     top: 100%;
@@ -1266,7 +822,6 @@ body.page-404 {
     visibility: hidden;
     transition: opacity 0.18s, visibility 0.18s, transform 0.18s;
 }
-
 :where(body.v11) .mega-panel {
     position: absolute;
     top: 100%;
@@ -1283,97 +838,11 @@ body.page-404 {
     visibility: hidden;
     transition: opacity 0.18s, visibility 0.18s, transform 0.18s;
 }
-
 :where(body.v4) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
-
-:where(body.v2) .mega-grid-pathos {
-    display: grid;
-    grid-template-columns: 1.6fr 1fr 1fr 1.1fr 1.2fr;
-    gap: 28px;
-}
-
-:where(body.v3) .mega-grid-chir {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas: "retine cataracte glaucome surface lasers" "associes associes associes associes associes";
-    gap: 24px 24px;
-}
-
-:where(body.v23) .mega-grid-chir {
-    display: grid;
-    grid-template-columns: 1.3fr 1.3fr 1.1fr 1fr 1.2fr;
-    gap: 24px;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-retine {
-    grid-area: retine;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-cataracte {
-    grid-area: cataracte;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-glaucome {
-    grid-area: glaucome;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-surface {
-    grid-area: surface;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-lasers {
-    grid-area: lasers;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-associes {
-    grid-area: associes;
-}
-
-:where(body.v3) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4px 18px;
-}
-
-:where(body.v2) .mega-col h3 {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--prusse);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding-bottom: 10px;
-    margin-bottom: 12px;
-    border-bottom: 2px solid var(--sable);
-    margin-top: 0;
-}
-
-:where(body.v2) .mega-col h3 a {
-    color: var(--prusse);
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    text-decoration: none;
-}
-
-:where(body.v2) .mega-col h3 a:hover {
-    color: var(--prusse-light);
-}
-
-:where(body.v2) .mega-col h3 a::after {
-    content: "→";
-    font-size: 0.8rem;
-    opacity: 0.6;
-    transition: transform 0.2s;
-}
-
-:where(body.v2) .mega-col h3 a:hover::after {
-    transform: translateX(3px);
-}
-
 :where(body.v4) .mega-list {
     list-style: none;
     display: flex;
@@ -1382,7 +851,6 @@ body.page-404 {
     padding-left: 0;
     margin-bottom: 0;
 }
-
 :where(body.v11) .mega-list {
     list-style: none;
     display: flex;
@@ -1390,11 +858,9 @@ body.page-404 {
     gap: 2px;
     padding-left: 0;
 }
-
 :where(body.v2) .mega-list li {
     margin-bottom: 0;
 }
-
 :where(body.v2) .mega-list a {
     display: block;
     padding: 6px 8px;
@@ -1405,13 +871,11 @@ body.page-404 {
     position: relative;
     text-decoration: none;
 }
-
 :where(body.v2) .mega-list a:hover, :where(body.v2) .mega-list a:focus-visible {
     background: var(--blanc-naturel);
     color: var(--prusse);
     padding-left: 12px;
 }
-
 :where(body.v4) .mega-subhead {
     font-size: 0.72rem;
     font-weight: 700;
@@ -1422,7 +886,6 @@ body.page-404 {
     margin-top: 8px;
     border-top: 1px dashed var(--border);
 }
-
 :where(body.v11) .mega-subhead {
     font-size: 0.72rem;
     font-weight: 700;
@@ -1433,62 +896,24 @@ body.page-404 {
     margin-top: 8px;
     border-top: 1px dashed var(--border);
 }
-
-:where(body.v2) .mega-subhead:first-child {
-    border-top: none;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-:where(body.v2) .mega-list a.external::after {
-    content: "↗";
-    margin-left: 6px;
-    font-size: 0.75rem;
-    color: var(--sable);
-    font-weight: 600;
-}
-
 :where(body.v4) .col-associes {
     background: var(--blanc-naturel);
     border-radius: var(--radius-sm, 8px);
     padding: 14px 14px 10px;
     margin-top: -6px;
 }
-
 :where(body.v11) .col-associes {
     background: var(--blanc-naturel);
     border-radius: var(--radius-sm);
     padding: 14px 14px 10px;
     margin-top: -6px;
 }
-
-:where(body.v2) .col-associes h3 {
-    border-bottom-color: var(--bleu-gris);
-}
-
-:where(body.v4) .col-associes .associes-intro {
-    font-size: 0.72rem;
-    color: var(--text-muted, #7a8a92);
-    padding: 2px 4px 8px;
-    line-height: 1.4;
-    font-style: italic;
-}
-
-:where(body.v11) .col-associes .associes-intro {
-    font-size: 0.72rem;
-    color: var(--text-muted);
-    padding: 2px 4px 8px;
-    line-height: 1.4;
-    font-style: italic;
-}
-
 :where(body.v3) .mega-footer {
     margin-top: 20px;
     padding-top: 14px;
     border-top: 1px solid var(--border);
     text-align: right;
 }
-
 :where(body.v3) .mega-footer-link {
     font-size: 0.82rem;
     color: var(--prusse);
@@ -1496,12 +921,10 @@ body.page-404 {
     text-decoration: none;
     letter-spacing: 0.02em;
 }
-
 :where(body.v3) .mega-footer-link:hover, :where(body.v3) .mega-footer-link:focus-visible {
     color: var(--prusse-light);
     text-decoration: underline;
 }
-
 :where(body.v4) header.site-header .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -1517,13 +940,11 @@ body.page-404 {
     text-decoration: none;
     transition: background 0.2s, transform 0.15s;
 }
-
 :where(body.v4) header.site-header .nav-cta:hover {
     background: var(--prusse-light);
     transform: translateY(-1px);
     color: var(--blanc-naturel);
 }
-
 :where(body.v4) header.site-header .mobile-toggle {
     display: none;
     background: none;
@@ -1534,7 +955,6 @@ body.page-404 {
     padding: 0;
     position: relative;
 }
-
 :where(body.v4) header.site-header .mobile-toggle span {
     position: absolute;
     left: 8px;
@@ -1544,33 +964,26 @@ body.page-404 {
     border-radius: 1px;
     transition: all 0.25s;
 }
-
 :where(body.v4) header.site-header .mobile-toggle span:nth-child(1) {
     top: 13px;
 }
-
 :where(body.v4) header.site-header .mobile-toggle span:nth-child(2) {
     top: 19px;
 }
-
 :where(body.v4) header.site-header .mobile-toggle span:nth-child(3) {
     top: 25px;
 }
-
 body.v4.menu-open header.site-header .mobile-toggle span:nth-child(1) {
     top: 19px;
     transform: rotate(45deg);
 }
-
 body.v4.menu-open header.site-header .mobile-toggle span:nth-child(2) {
     opacity: 0;
 }
-
 body.v4.menu-open header.site-header .mobile-toggle span:nth-child(3) {
     top: 19px;
     transform: rotate(-45deg);
 }
-
 :where(body.v3) .menu-overlay {
     position: fixed;
     inset: 0;
@@ -1581,31 +994,26 @@ body.v4.menu-open header.site-header .mobile-toggle span:nth-child(3) {
     transition: opacity 0.25s ease, visibility 0.25s ease;
     pointer-events: none;
 }
-
 body.v3.menu-open .menu-overlay {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
-
 body.v3.menu-open {
     overflow: hidden;
 }
-
 :where(body.v1) h1 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.05em;
     margin-bottom: 10px;
 }
-
 :where(body.v25) h1 {
     font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     margin-bottom: 12px;
 }
-
 :where(body.page-404) h1 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.8rem;
@@ -1613,56 +1021,46 @@ body.v3.menu-open {
     margin: 0 0 16px;
     color: var(--prusse);
 }
-
 :where(body.v1) p {
     color: var(--text-light);
     font-size: 0.96rem;
     margin-bottom: 14px;
 }
-
 :where(body.page-mentions-legales) p {
     color: var(--text-light);
     font-size: 0.95rem;
     margin-bottom: 12px;
 }
-
 :where(body.page-publications) p {
     color: var(--text-light);
     font-size: 0.95rem;
     margin-bottom: 14px;
 }
-
 :where(body.v1) ul, :where(body.v1) ol {
     color: var(--text-light);
     font-size: 0.95rem;
     margin-bottom: 14px;
     padding-left: 24px;
 }
-
 :where(body.page-confidentialite) ul, :where(body.page-confidentialite) ol {
     padding-left: 1.5rem;
     margin-bottom: 12px;
 }
-
 :where(body.v1) ul li, :where(body.v1) ol li {
     margin-bottom: 8px;
 }
-
 :where(body.v1) strong {
     color: var(--prusse);
     font-weight: 600;
 }
-
 :where(body.v5) .nav-list {
     list-style: none;
     display: flex;
     gap: 4px;
 }
-
 :where(body.v5) .nav-item {
     position: relative;
 }
-
 :where(body.v5) .nav-link {
     display: inline-flex;
     align-items: center;
@@ -1681,27 +1079,22 @@ body.v3.menu-open {
     font-family: inherit;
     text-decoration: none;
 }
-
 :where(body.v5) .nav-link:hover, :where(body.v5) .nav-link:focus-visible, :where(body.v5) .nav-item.is-open .nav-link {
     color: var(--prusse);
 }
-
 :where(body.v5) .nav-link .caret {
     width: 10px;
     height: 10px;
     transition: transform 0.2s;
 }
-
 :where(body.v5) .nav-item.is-open .caret {
     transform: rotate(180deg);
 }
-
 :where(body.v5) .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
 }
-
 :where(body.v5) .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -1717,7 +1110,6 @@ body.v3.menu-open {
     text-decoration: none;
     transition: background 0.2s, transform 0.15s;
 }
-
 :where(body.page-confidentialite) .nav-cta,
 :where(body.page-mentions-legales) .nav-cta {
     display: inline-flex;
@@ -1733,7 +1125,6 @@ body.v3.menu-open {
     text-transform: uppercase;
     text-decoration: none;
 }
-
 :where(body.page-pathologies) .nav-cta {
     display: inline-flex;
     align-items: center;
@@ -1748,25 +1139,21 @@ body.v3.menu-open {
     text-transform: uppercase;
     transition: all 0.2s;
 }
-
 :where(body.v5) .nav-cta:hover {
     background: var(--prusse-light);
     transform: translateY(-1px);
     color: var(--blanc-naturel);
 }
-
 :where(body.page-confidentialite) .nav-cta:hover,
 :where(body.page-mentions-legales) .nav-cta:hover {
     background: var(--prusse-light);
     color: var(--blanc-naturel);
 }
-
 :where(body.page-pathologies) .nav-cta:hover {
     background: var(--prusse-light);
     transform: translateY(-1px);
     color: var(--blanc-naturel) !important;
 }
-
 :where(body.v5) .mobile-toggle {
     display: none;
     background: none;
@@ -1777,7 +1164,6 @@ body.v3.menu-open {
     padding: 0;
     position: relative;
 }
-
 :where(body.v5) .mobile-toggle span {
     position: absolute;
     left: 8px;
@@ -1787,70 +1173,57 @@ body.v3.menu-open {
     border-radius: 1px;
     transition: all 0.25s;
 }
-
 :where(body.v5) .mobile-toggle span:nth-child(1) {
     top: 13px;
 }
-
 :where(body.v5) .mobile-toggle span:nth-child(2) {
     top: 19px;
 }
-
 :where(body.v5) .mobile-toggle span:nth-child(3) {
     top: 25px;
 }
-
 body.v5.menu-open .mobile-toggle span:nth-child(1) {
     top: 19px;
     transform: rotate(45deg);
 }
-
 body.v5.menu-open .mobile-toggle span:nth-child(2) {
     opacity: 0;
 }
-
 body.v5.menu-open .mobile-toggle span:nth-child(3) {
     top: 19px;
     transform: rotate(-45deg);
 }
-
 :where(body.v21) .page-header {
     padding: 50px 0 40px;
     background: var(--prusse);
     text-align: center;
 }
-
 :where(body.v22) .page-header {
     padding: 130px 0 40px;
     background: var(--prusse);
     text-align: center;
 }
-
 :where(body.page-confidentialite) .page-header,
 :where(body.page-mentions-legales) .page-header {
     padding: 140px 0 40px;
     background: var(--prusse);
     text-align: center;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .page-header {
     padding: 130px 0 40px;
     background: #8d3a1e;
     text-align: center;
 }
-
 :where(body.page-decollement-retine) .page-header {
     padding: 130px 0 40px;
     background: #9b2e2e;
     text-align: center;
 }
-
 :where(body.page-pathologies) .page-header {
     padding: 140px 0 60px;
     background: var(--prusse);
     text-align: center;
 }
-
 :where(body.v10) .page-header .breadcrumb-mini {
     color: rgba(249,247,242,0.75);
     font-size: 0.75rem;
@@ -1858,7 +1231,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-
 :where(body.page-decollement-retine) .page-header .breadcrumb-mini {
     color: rgba(255,255,255,0.8);
     font-size: 0.75rem;
@@ -1866,29 +1238,23 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-
 :where(body.v10) .page-header .breadcrumb-mini a {
     color: rgba(249,247,242,0.85);
     text-decoration: none;
 }
-
 :where(body.page-decollement-retine) .page-header .breadcrumb-mini a {
     color: rgba(255,255,255,0.85);
     text-decoration: none;
 }
-
 :where(body.v1) .page-header .breadcrumb-mini a:hover {
     color: var(--sable);
 }
-
 :where(body.v15) .page-header h1 {
     color: var(--blanc-naturel);
 }
-
 :where(body.page-decollement-retine) .page-header h1 {
     color: #ffffff;
 }
-
 :where(body.page-pathologies) .page-header h1 {
     color: var(--blanc-naturel);
     font-size: 2.4rem;
@@ -1897,7 +1263,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     letter-spacing: 0.06em;
     margin-bottom: 12px;
 }
-
 :where(body.v7) .page-header .tagline {
     color: var(--sable);
     font-size: 0.92rem;
@@ -1905,7 +1270,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-top: 6px;
     font-weight: 300;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .page-header .tagline {
     color: rgba(249,247,242,0.85);
     font-size: 0.92rem;
@@ -1913,7 +1277,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-top: 6px;
     font-weight: 300;
 }
-
 :where(body.page-decollement-retine) .page-header .tagline {
     color: rgba(255,255,255,0.85);
     font-size: 0.92rem;
@@ -1921,15 +1284,12 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-top: 6px;
     font-weight: 400;
 }
-
 :where(body.v1) main {
     padding: 50px 0 70px;
 }
-
 :where(body.v25) main {
     padding: 50px 0 80px;
 }
-
 :where(body.page-404) main {
     flex: 1;
     max-width: 760px;
@@ -1937,41 +1297,35 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     padding: 48px 24px 64px;
     width: 100%;
 }
-
 :where(body.v1) article.pathology-content {
     background: var(--blanc);
     padding: 40px 44px;
     border-radius: var(--radius);
     box-shadow: 0 4px 20px rgba(40,51,57,0.06);
 }
-
 :where(body.v1) .key-facts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
     margin: 28px 0;
 }
-
 :where(body.v1) .key-fact {
     background: var(--blanc-naturel);
     padding: 16px 18px;
     border-left: 3px solid var(--sable);
     border-radius: var(--radius-sm);
 }
-
 :where(body.v1) .key-fact-number {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--prusse);
     letter-spacing: 0.03em;
 }
-
 :where(body.v1) .key-fact-label {
     font-size: 0.78rem;
     color: var(--text-muted);
     font-weight: 500;
 }
-
 :where(body.v1) .forme-box {
     background: var(--blanc-naturel);
     padding: 22px 26px;
@@ -1979,37 +1333,31 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 16px;
     border-left: 3px solid var(--bleu-gris);
 }
-
 :where(body.v1) .forme-box h3 {
     margin-top: 0;
     color: var(--prusse);
 }
-
 :where(body.v1) .qr-block {
     background: rgba(154,170,178,0.07);
     padding: 18px 22px;
     border-radius: var(--radius-sm);
     margin-bottom: 14px;
 }
-
 :where(body.v1) .qr-block .q {
     font-weight: 600;
     color: var(--prusse);
     margin-bottom: 8px;
     font-size: 0.98rem;
 }
-
 :where(body.v5) .qr-block .r {
     margin-bottom: 0;
     font-size: 0.93rem;
     color: var(--text-light);
 }
-
 :where(body.v12) .qr-block .r {
     margin-bottom: 0;
     font-size: 0.93rem;
 }
-
 :where(body.v7) .alert-urgence {
     background: #fdf3e0;
     border-left: 4px solid #d98c2a;
@@ -2017,7 +1365,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 22px 0;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .alert-urgence {
     background: #fce9e4;
     border-left: 4px solid #c63a1a;
@@ -2025,7 +1372,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 22px 0;
 }
-
 :where(body.page-decollement-retine) .alert-urgence {
     background: #fdecec;
     border-left: 4px solid #9b2e2e;
@@ -2033,19 +1379,15 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 22px 0;
 }
-
 :where(body.v7) .alert-urgence strong {
     color: var(--alerte-texte); /* 20/08/2026 : ex-#b66c12 (3,7:1) */
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .alert-urgence strong {
     color: #9a2712;
 }
-
 :where(body.page-decollement-retine) .alert-urgence strong {
     color: #9b2e2e;
 }
-
 :where(body.v13) .alert-rouge {
     background: #fce9e4;
     border-left: 4px solid #c63a1a;
@@ -2053,11 +1395,9 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 22px 0;
 }
-
 :where(body.v13) .alert-rouge strong {
     color: #9a2712;
 }
-
 :where(body.v5) .info-box {
     background: rgba(154,170,178,0.1);
     border-left: 4px solid var(--bleu-gris);
@@ -2065,18 +1405,15 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 18px 0;
 }
-
 :where(body.v5) .info-box p {
     margin-bottom: 6px;
 }
-
 :where(body.v5) table.clean {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
     font-size: 0.9rem;
 }
-
 :where(body.v5) table.clean th, :where(body.v5) table.clean td {
     padding: 10px 12px;
     border-bottom: 1px solid var(--border);
@@ -2084,7 +1421,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     vertical-align: top;
     color: var(--text-light);
 }
-
 :where(body.v5) table.clean th {
     background: var(--blanc-naturel);
     color: var(--prusse);
@@ -2093,7 +1429,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-
 :where(body.v1) .eeat-block {
     margin-top: 40px;
     padding: 24px 28px;
@@ -2101,7 +1436,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--blanc-naturel);
     border-radius: var(--radius);
 }
-
 :where(body.v5) .eeat-block h3 {
     color: var(--sable);
     font-size: 0.82rem;
@@ -2111,7 +1445,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 10px;
     margin-top: 0;
 }
-
 :where(body.v12) .eeat-block h3 {
     color: var(--sable);
     font-size: 0.82rem;
@@ -2120,20 +1453,17 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     margin-bottom: 10px;
 }
-
 :where(body.v1) .eeat-block p {
     color: rgba(249,247,242,0.85);
     font-size: 0.88rem;
     margin-bottom: 6px;
 }
-
 :where(body.v1) .eeat-block .meta {
     color: rgba(249,247,242,0.55);
     font-size: 0.78rem;
     font-style: italic;
     margin-top: 10px;
 }
-
 :where(body.v1) .cta-block {
     margin-top: 32px;
     padding: 28px;
@@ -2142,16 +1472,13 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius);
     text-align: center;
 }
-
 :where(body.v1) .cta-block h3 {
     margin-top: 0;
     font-size: 1.1rem;
 }
-
 :where(body.v1) .cta-block p {
     margin-bottom: 16px;
 }
-
 :where(body.v17) .btn-rdv {
     display: inline-flex;
     align-items: center;
@@ -2166,7 +1493,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     text-decoration: none;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .btn-rdv {
     display: inline-flex;
     align-items: center;
@@ -2182,19 +1508,16 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     margin: 4px;
 }
-
 :where(body.v1) .btn-rdv:hover {
     background: var(--prusse-light);
     color: var(--blanc-naturel);
 }
-
 :where(body.v1) .related-pathologies {
     margin-top: 40px;
     padding: 24px 28px;
     background: var(--blanc-naturel);
     border-radius: var(--radius);
 }
-
 :where(body.v5) .related-pathologies h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
@@ -2202,20 +1525,17 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 14px;
     margin-top: 0;
 }
-
 :where(body.v12) .related-pathologies h3 {
     font-size: 0.9rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin-bottom: 14px;
 }
-
 :where(body.v1) .related-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 10px;
 }
-
 :where(body.v1) .related-link {
     display: block;
     padding: 10px 14px;
@@ -2227,12 +1547,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     transition: all 0.2s;
 }
-
 :where(body.v1) .related-link:hover {
     border-color: var(--prusse);
     transform: translateY(-1px);
 }
-
 :where(body.v5) footer.site-footer {
     background: var(--vert-fonce);
     color: rgba(249,247,242,0.72);
@@ -2241,31 +1559,25 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     font-size: 0.78rem;
     font-weight: 300;
 }
-
 :where(body.v5) footer.site-footer a {
     color: rgba(249,247,242,0.8);
 }
-
 :where(body.v16) .btn-primary:focus-visible, :where(body.v16) .btn-doctolib:focus-visible, :where(body.v16) .hero-cta:focus-visible, :where(body.v16) .nav-cta:focus-visible {
     outline-color: var(--sable);
     outline-offset: 4px;
 }
-
 :where(body.v6) nav.main-nav .nav-link:focus-visible, :where(body.v6) .mega-list a:focus-visible {
     outline: 2px solid var(--prusse);
     outline-offset: 4px;
     border-radius: 4px;
 }
-
 :where(body.v8) .eeat-block strong {
     color: var(--sable);
     font-weight: 600;
 }
-
 :where(body.v23) .eeat-block strong {
     color: var(--sable);
 }
-
 :where(body.v8) .eeat-block a {
     color: var(--sable);
     text-decoration: underline;
@@ -2273,112 +1585,23 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-underline-offset: 2px;
     transition: color 0.2s, text-decoration-color 0.2s;
 }
-
 :where(body.v23) .eeat-block a {
     color: var(--sable);
     text-decoration: underline;
 }
-
 :where(body.v8) .eeat-block a:hover {
     color: var(--blanc-naturel);
     text-decoration-color: var(--blanc-naturel);
 }
-
 :where(body.v23) .eeat-block a:hover {
     color: var(--blanc-naturel);
 }
-
-:where(body.v24) .nav-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 24px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 72px;
-}
-
-:where(body.page-confidentialite) .nav-logo,
-:where(body.page-mentions-legales) .nav-logo {
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--prusse);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-:where(body.page-pathologies) .nav-logo {
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.82rem;
-    font-weight: 600;
-    color: var(--prusse);
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-}
-
-:where(body.v24) .nav-logo span {
-    font-weight: 300;
-}
-
-:where(body.v24) .nav-links {
-    display: flex;
-    gap: 32px;
-    list-style: none;
-}
-
-:where(body.page-confidentialite) .nav-links a,
-:where(body.page-mentions-legales) .nav-links a {
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--text-light);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-:where(body.page-pathologies) .nav-links a {
-    font-size: 0.82rem;
-    font-weight: 500;
-    color: var(--text-light);
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: color 0.2s;
-}
-
-:where(body.v24) .nav-links a:hover {
-    color: var(--prusse);
-}
-
-:where(body.page-pathologies) .nav-links a.active {
-    color: var(--prusse);
-    font-weight: 600;
-}
-
-:where(body.page-pathologies) .nav-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 8px;
-}
-
-:where(body.page-pathologies) .nav-toggle span {
-    display: block;
-    width: 22px;
-    height: 1.5px;
-    background: var(--prusse);
-    margin: 5px 0;
-    transition: 0.3s;
-}
-
 :where(body.page-confidentialite) .page-header p,
 :where(body.page-mentions-legales) .page-header p {
     color: rgba(249,247,242,0.6);
     font-size: 0.95rem;
     font-weight: 300;
 }
-
 :where(body.page-pathologies) .page-header p {
     color: rgba(249,247,242,0.55);
     font-size: 1rem;
@@ -2386,7 +1609,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     max-width: 600px;
     margin: 0 auto;
 }
-
 :where(body.page-publications) .page-header p {
     color: rgba(249,247,242,0.65);
     font-size: 0.95rem;
@@ -2394,7 +1616,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     max-width: 620px;
     margin: 0 auto;
 }
-
 :where(body.page-pathologies) .page-header .section-label {
     display: inline-block;
     padding: 5px 14px;
@@ -2407,19 +1628,15 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     margin-bottom: 16px;
 }
-
 :where(body.page-pathologies) .pathologies-section {
     padding: 80px 0;
 }
-
 :where(body.page-pathologies) .pathologies-section:nth-child(even) {
     background: var(--blanc);
 }
-
 :where(body.page-pathologies) .pathologies-section:nth-child(odd) {
     background: var(--blanc-naturel);
 }
-
 :where(body.page-pathologies) .pathology-content {
     display: grid;
     grid-template-columns: 80px 1fr;
@@ -2428,7 +1645,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     max-width: 900px;
     margin: 0 auto;
 }
-
 :where(body.page-pathologies) .pathology-icon {
     width: 72px;
     height: 72px;
@@ -2440,18 +1656,15 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     flex-shrink: 0;
     overflow: hidden;
 }
-
 :where(body.page-pathologies) .pathology-icon img {
     width: 44px;
     height: 44px;
     object-fit: contain;
 }
-
 :where(body.page-pathologies) .pathology-body h2 {
     font-size: 1.5rem;
     margin-bottom: 20px;
 }
-
 :where(body.page-pathologies) .pathology-body h3 {
     font-size: 1rem;
     color: var(--sable);
@@ -2459,11 +1672,9 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     letter-spacing: 0.06em;
     margin: 28px 0 12px;
 }
-
 :where(body.page-pathologies) .pathology-body h3:first-of-type {
     margin-top: 0;
 }
-
 :where(body.page-pathologies) .pathology-body p {
     color: var(--text-light);
     font-size: 0.95rem;
@@ -2471,7 +1682,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 12px;
     line-height: 1.8;
 }
-
 :where(body.page-pathologies) .pathology-tag {
     display: inline-block;
     padding: 4px 12px;
@@ -2485,116 +1695,26 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-right: 6px;
     margin-bottom: 6px;
 }
-
 :where(body.page-pathologies) .pathology-cta {
     margin-top: 24px;
     padding-top: 20px;
     border-top: 1px solid var(--border);
 }
-
-:where(body.page-pathologies) .faq-section {
-    padding: 60px 0;
-    background: var(--blanc);
-}
-
-:where(body.page-pathologies) .faq-section.alt {
-    background: var(--blanc-naturel);
-}
-
-:where(body.page-pathologies) .faq-title {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-:where(body.page-pathologies) .faq-title h2 {
-    font-size: 1.5rem;
-}
-
-:where(body.page-pathologies) .faq-list {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-:where(body.page-pathologies) .faq-item {
-    border-bottom: 1px solid var(--border);
-}
-
-:where(body.page-pathologies) .faq-question {
-    width: 100%;
-    background: none;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-    text-align: left;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--prusse);
-}
-
-:where(body.page-pathologies) .faq-question:hover {
-    color: var(--bleu-gris);
-}
-
-:where(body.page-pathologies) .faq-question svg {
-    width: 20px;
-    height: 20px;
-    flex-shrink: 0;
-    stroke: var(--bleu-gris);
-    fill: none;
-    stroke-width: 2;
-    transition: transform 0.3s;
-}
-
-:where(body.page-pathologies) .faq-item.open .faq-question svg {
-    transform: rotate(45deg);
-}
-
-:where(body.page-pathologies) .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease, padding 0.3s ease;
-}
-
-:where(body.page-pathologies) .faq-item.open .faq-answer {
-    max-height: 300px;
-}
-
-:where(body.page-pathologies) .faq-answer p {
-    padding: 0 0 20px;
-    color: var(--text-light);
-    font-size: 0.9rem;
-    font-weight: 400;
-    line-height: 1.8;
-}
-
 :where(body.page-pathologies) .nav-cta:focus-visible, :where(body.page-pathologies) .btn-primary:focus-visible {
     outline-color: var(--sable);
     outline-offset: 4px;
 }
-
-:where(body.page-pathologies) .faq-question:focus-visible {
-    outline-color: var(--bleu-gris);
-    outline-offset: 2px;
-    border-radius: 4px;
-}
-
 :where(body.v9) .pillar-intro {
     font-size: 1.02rem;
     color: var(--text-light);
     margin-bottom: 28px;
 }
-
 :where(body.v9) .pillar-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
     margin: 20px 0 32px;
 }
-
 :where(body.v9) .pillar-card {
     background: var(--blanc);
     border: 1px solid var(--border);
@@ -2604,12 +1724,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     display: flex;
     flex-direction: column;
 }
-
 :where(body.v9) .pillar-card:hover {
     border-color: var(--prusse);
     transform: translateY(-2px);
 }
-
 :where(body.v9) .pillar-card h3 {
     font-size: 1rem;
     margin-top: 0;
@@ -2620,7 +1738,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: none;
     letter-spacing: 0.02em;
 }
-
 :where(body.v9) .pillar-card p {
     font-size: 0.9rem;
     color: var(--text-light);
@@ -2628,7 +1745,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     line-height: 1.55;
     flex: 1;
 }
-
 :where(body.v9) .pillar-card .read-more {
     font-size: 0.78rem;
     font-weight: 600;
@@ -2638,27 +1754,22 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     margin-top: auto;
 }
-
 :where(body.v9) .pillar-card .read-more::after {
     content: " →";
     transition: transform 0.15s;
     display: inline-block;
 }
-
 :where(body.v9) .pillar-card:hover .read-more::after {
     transform: translateX(3px);
 }
-
 :where(body.v9) .pillar-card.soft {
     background: var(--blanc-naturel);
     border-style: dashed;
 }
-
 :where(body.v9) .pillar-card.soft .read-more {
     color: var(--text-muted);
     pointer-events: none;
 }
-
 :where(body.v9) .pillar-card.soft .badge {
     font-size: 0.72rem;
     text-transform: uppercase;
@@ -2666,7 +1777,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--text-muted);
     margin-bottom: 8px;
 }
-
 :where(body.v9) .parcours-list {
     background: var(--blanc-naturel);
     border-left: 3px solid var(--sable);
@@ -2674,17 +1784,14 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 18px 0 28px;
 }
-
 :where(body.v9) .parcours-list h3 {
     margin-top: 0;
 }
-
 :where(body.v9) .parcours-list ol {
     counter-reset: step;
     list-style: none;
     padding-left: 0;
 }
-
 :where(body.v9) .parcours-list ol li {
     counter-increment: step;
     position: relative;
@@ -2693,7 +1800,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--text-light);
     font-size: 0.93rem;
 }
-
 :where(body.v9) .parcours-list ol li::before {
     content: counter(step);
     position: absolute;
@@ -2710,7 +1816,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     align-items: center;
     justify-content: center;
 }
-
 :where(body.v9) .expertise-block {
     background: var(--blanc-naturel);
     border: 1px solid var(--border);
@@ -2718,17 +1823,14 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     padding: 22px 28px;
     margin: 28px 0;
 }
-
 :where(body.v9) .expertise-block h3 {
     margin-top: 0;
 }
-
 :where(body.v9) .expertise-block .meta {
     font-size: 0.82rem;
     color: var(--text-muted);
     margin-top: 10px;
 }
-
 :where(body.page-publications) .header-meta {
     display: flex;
     justify-content: center;
@@ -2736,7 +1838,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     flex-wrap: wrap;
     margin-top: 18px;
 }
-
 :where(body.page-publications) .header-meta a {
     color: var(--sable);
     font-size: 0.82rem;
@@ -2746,12 +1847,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: 50px;
     transition: all 0.2s;
 }
-
 :where(body.page-publications) .header-meta a:hover {
     background: var(--sable);
     color: var(--prusse);
 }
-
 :where(body.page-publications) .intro-block {
     background: var(--blanc);
     padding: 28px 32px;
@@ -2760,7 +1859,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-left: 3px solid var(--sable);
     margin-bottom: 20px;
 }
-
 :where(body.page-publications) .pub-card {
     background: var(--blanc);
     border: 1px solid var(--border);
@@ -2769,12 +1867,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 18px;
     transition: all 0.2s;
 }
-
 :where(body.page-publications) .pub-card:hover {
     box-shadow: 0 6px 24px rgba(40,51,57,0.08);
     transform: translateY(-1px);
 }
-
 :where(body.page-publications) .pub-role {
     display: inline-block;
     padding: 3px 10px;
@@ -2787,7 +1883,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 10px;
     margin-left: 6px;
 }
-
 :where(body.page-publications) .pub-title {
     font-size: 1.05rem;
     font-weight: 600;
@@ -2795,30 +1890,25 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 10px;
     line-height: 1.4;
 }
-
 :where(body.page-publications) .pub-title a {
     text-decoration: none;
     color: var(--prusse);
 }
-
 :where(body.page-publications) .pub-title a:hover {
     color: var(--bleu-gris);
     text-decoration: underline;
 }
-
 :where(body.page-publications) .pub-summary {
     font-size: 0.9rem;
     color: var(--text-light);
     margin-bottom: 14px;
     line-height: 1.65;
 }
-
 :where(body.page-publications) .pub-links {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
 }
-
 :where(body.page-publications) .placeholder-block {
     background: rgba(154,170,178,0.08);
     border: 1px dashed var(--bleu-gris);
@@ -2826,14 +1916,12 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     padding: 22px 26px;
     text-align: center;
 }
-
 :where(body.page-publications) .placeholder-block p {
     color: var(--text-muted);
     font-size: 0.9rem;
     font-style: italic;
     margin: 0;
 }
-
 :where(body.page-publications) .press-card {
     background: var(--blanc);
     border-left: 3px solid var(--bleu-gris);
@@ -2841,7 +1929,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin-bottom: 14px;
 }
-
 :where(body.page-publications) .press-source {
     font-size: 0.75rem;
     font-weight: 600;
@@ -2850,25 +1937,21 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--text-muted); /* 20/08/2026 : ex-bleu-gris (2,4:1) */
     margin-bottom: 6px;
 }
-
 :where(body.page-publications) .press-title {
     font-size: 0.98rem;
     font-weight: 600;
     color: var(--prusse);
     margin-bottom: 6px;
 }
-
 :where(body.page-publications) .press-date {
     font-size: 0.82rem;
     color: var(--text-muted);
     margin-bottom: 10px;
 }
-
 :where(body.page-publications) .press-summary {
     font-size: 0.88rem;
     color: var(--text-light);
 }
-
 :where(body.page-publications) .external-links {
     margin-top: 40px;
     padding: 28px 32px;
@@ -2876,7 +1959,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius);
     text-align: center;
 }
-
 :where(body.page-publications) .external-links h3 {
     color: var(--blanc-naturel);
     font-size: 1.1rem;
@@ -2884,13 +1966,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     letter-spacing: 0.06em;
 }
-
 :where(body.page-publications) .external-links p {
     color: rgba(249,247,242,0.7);
     margin-bottom: 18px;
     font-size: 0.9rem;
 }
-
 :where(body.page-publications) .external-btn {
     display: inline-flex;
     align-items: center;
@@ -2907,12 +1987,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin: 4px 6px;
     transition: all 0.2s;
 }
-
 :where(body.page-publications) .external-btn:hover {
     background: var(--blanc-naturel);
     color: var(--prusse);
 }
-
 :where(body.page-glaucome) .expert-highlight,
 :where(body.page-vitrectomie) .expert-highlight {
     background: linear-gradient(135deg, rgba(191,178,151,0.18), rgba(154,170,178,0.10));
@@ -2921,12 +1999,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius-sm);
     margin: 24px 0;
 }
-
-:where(body.page-glaucome) .expert-highlight h3,
-:where(body.page-vitrectomie) .expert-highlight h3 {
-    margin-top: 0;
-}
-
 :where(body.page-glaucome) .expert-highlight .pub-ref {
     font-size: 0.85rem;
     font-style: italic;
@@ -2934,7 +2006,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-top: 8px;
     display: block;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .page-header .urgence-badge {
     display: inline-block;
     background: rgba(249,247,242,0.15);
@@ -2947,7 +2018,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: 50px;
     margin-bottom: 10px;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .btn-urgence {
     display: inline-flex;
     align-items: center;
@@ -2963,7 +2033,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     margin: 4px;
 }
-
 :where(body.page-decollement-retine) .btn-urgence {
     display: inline-flex;
     align-items: center;
@@ -2978,17 +2047,14 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     text-decoration: none;
 }
-
 :where(body.page-dechirure-retine-corps-flottants) .btn-urgence:hover {
     background: #7a1c0a;
     color: var(--blanc-naturel);
 }
-
 :where(body.page-decollement-retine) .btn-urgence:hover {
     background: #7d2424;
     color: #ffffff;
 }
-
 :where(body.page-decollement-retine) .urgence-badge {
     display: inline-block;
     background: #ffffff;
@@ -3001,13 +2067,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     margin-bottom: 14px;
 }
-
 :where(body.page-confidentialite) p, :where(body.page-confidentialite) li {
     color: var(--text-light);
     font-size: 0.95rem;
     margin-bottom: 12px;
 }
-
 :where(body.page-confidentialite) article,
 :where(body.page-mentions-legales) article {
     background: var(--blanc);
@@ -3015,21 +2079,18 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: var(--radius);
     box-shadow: 0 4px 20px rgba(40,51,57,0.06);
 }
-
 :where(body.page-confidentialite) table {
     width: 100%;
     border-collapse: collapse;
     margin: 12px 0 20px;
     font-size: 0.9rem;
 }
-
 :where(body.page-confidentialite) th, :where(body.page-confidentialite) td {
     text-align: left;
     padding: 10px 12px;
     border-bottom: 1px solid var(--border);
     vertical-align: top;
 }
-
 :where(body.page-confidentialite) th {
     background: var(--blanc-naturel);
     color: var(--prusse);
@@ -3038,20 +2099,17 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     font-size: 0.78rem;
     letter-spacing: 0.06em;
 }
-
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table {
     width: 100%;
     border-collapse: collapse;
     margin: 18px 0 24px;
     font-size: 0.9rem;
 }
-
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table th, :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table td {
     padding: 10px 14px;
     text-align: left;
     border-bottom: 1px solid var(--border);
 }
-
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table th {
     background: var(--blanc-naturel);
     color: var(--prusse);
@@ -3060,24 +2118,19 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     letter-spacing: 0.05em;
 }
-
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table td {
     color: var(--text-light);
 }
-
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table tr:last-child td {
     border-bottom: none;
 }
-
 :where(body.page-404) *, :where(body.page-404) *::before, :where(body.page-404) *::after {
     box-sizing: border-box;
 }
-
 body.page-404, body.page-404 {
     margin: 0;
     padding: 0;
 }
-
 :where(body.page-404) .code-404 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 5.5rem;
@@ -3087,13 +2140,11 @@ body.page-404, body.page-404 {
     margin: 24px 0 8px;
     letter-spacing: -2px;
 }
-
 :where(body.page-404) p.lead {
     font-size: 1.05rem;
     color: var(--texte-clair);
     margin: 0 0 28px;
 }
-
 :where(body.page-404) .btn-accueil {
     display: inline-block;
     background: var(--prusse);
@@ -3106,26 +2157,21 @@ body.page-404, body.page-404 {
     letter-spacing: 0.02em;
     transition: background 0.2s, transform 0.1s;
 }
-
 :where(body.page-404) .btn-accueil:hover, :where(body.page-404) .btn-accueil:focus-visible {
     background: #1a2228;
 }
-
 :where(body.page-404) .btn-accueil:focus-visible {
     outline: 3px solid var(--sable);
     outline-offset: 3px;
 }
-
 :where(body.page-404) .btn-doctolib:hover, :where(body.page-404) .btn-doctolib:focus-visible {
     background: var(--prusse);
     color: #fff;
 }
-
 :where(body.page-404) .btn-doctolib:focus-visible {
     outline: 3px solid var(--sable);
     outline-offset: 3px;
 }
-
 :where(body.page-404) .urgences {
     margin-top: 56px;
     background: var(--alerte-fond);
@@ -3134,7 +2180,6 @@ body.page-404, body.page-404 {
     padding: 24px 28px;
     border-radius: 8px;
 }
-
 :where(body.page-404) .urgences h2 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.25rem;
@@ -3144,60 +2189,49 @@ body.page-404, body.page-404 {
     align-items: center;
     gap: 10px;
 }
-
 :where(body.page-404) .urgences h2::before {
     content: "⚠";
     font-size: 1.4rem;
 }
-
 :where(body.page-404) .urgences p {
     margin: 8px 0;
     color: var(--texte);
     font-size: 0.96rem;
 }
-
 :where(body.page-404) .urgences ul {
     margin: 12px 0 0;
     padding-left: 22px;
     color: var(--texte);
     font-size: 0.96rem;
 }
-
 :where(body.page-404) .urgences ul li {
     margin-bottom: 10px;
 }
-
 :where(body.page-404) .urgences ul li strong {
     color: var(--prusse);
 }
-
 :where(body.page-404) .urgences .en-savoir-plus {
     margin-top: 18px;
     font-size: 0.9rem;
 }
-
 :where(body.page-404) .urgences a {
     color: var(--alerte-texte);
     font-weight: 600;
 }
-
 :where(body.page-404) .liens-rapides {
     margin-top: 48px;
 }
-
 :where(body.page-404) .liens-rapides h2 {
     font-family: Georgia, "Times New Roman", serif;
     font-size: 1.2rem;
     color: var(--prusse);
     margin: 0 0 16px;
 }
-
 :where(body.page-404) .liens-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 12px;
 }
-
 :where(body.page-404) .liens-grid a {
     display: block;
     background: #fff;
@@ -3210,60 +2244,43 @@ body.page-404, body.page-404 {
     font-size: 0.95rem;
     transition: border-color 0.15s, background 0.15s;
 }
-
 :where(body.page-404) .liens-grid a:hover, :where(body.page-404) .liens-grid a:focus-visible {
     border-color: var(--prusse);
     background: var(--blanc-naturel);
 }
-
 :where(body.page-404) .liens-grid a:focus-visible {
     outline: 2px solid var(--prusse);
     outline-offset: 2px;
 }
-
 :where(body.page-404) footer a:hover {
     text-decoration: underline;
 }
-
 /* ---------- Séquences responsive par groupe ---------- */
-
 /* m1 : 19 pages */
-
 @media (max-width: 720px) {
-:where(body.m1) .nav-links {
-    display: none;
-}
-
 :where(body.m1) article.pathology-content {
     padding: 26px 22px;
 }
-
 :where(body.m1) .key-facts {
     grid-template-columns: 1fr;
 }
-
 :where(body.m1) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m1) h2 {
     font-size: 1.1rem;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m1) nav.main-nav {
     display: none;
 }
-
 :where(body.m1) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m1) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m1.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -3277,21 +2294,17 @@ body.m1.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m1) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m1) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m1) .mega-panel {
     position: static;
     transform: none;
@@ -3307,94 +2320,44 @@ body.m1.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m1) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m1) .mega-grid-pathos, :where(body.m1) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m1) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m1) .specialties-grid, :where(body.m1) .pathologies-grid, :where(body.m1) .chirurgies-grid, :where(body.m1) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m1) .hero-content, :where(body.m1) .specialties-grid, :where(body.m1) .parcours-content, :where(body.m1) .contact-grid, :where(body.m1) .pathologies-grid, :where(body.m1) .chirurgies-grid, :where(body.m1) .conditions-grid, :where(body.m1) .author-block, :where(body.m1) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m1) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m1) .hero-content {
-    text-align: center;
-}
-
-:where(body.m1) .hero-visual {
-    order: -1;
-}
-
 :where(body.m1) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m1.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m1) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m1) .hero h1 {
-    font-size: 1.6rem;
-}
-
-:where(body.m1) section {
-    padding: 60px 0;
-}
-
 :where(body.m1) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 /* m2 : 17 pages */
-
 @media (max-width: 1024px) {
 :where(body.m2) nav.main-nav {
     display: none;
 }
-
 :where(body.m2) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m2) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m2.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -3408,21 +2371,17 @@ body.m2.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m2) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m2) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m2) .mega-panel {
     position: static;
     transform: none;
@@ -3438,112 +2397,61 @@ body.m2.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m2) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m2) .mega-grid-pathos, :where(body.m2) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m2) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m2) .specialties-grid, :where(body.m2) .pathologies-grid, :where(body.m2) .chirurgies-grid, :where(body.m2) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m2) .hero-content, :where(body.m2) .specialties-grid, :where(body.m2) .parcours-content, :where(body.m2) .contact-grid, :where(body.m2) .pathologies-grid, :where(body.m2) .chirurgies-grid, :where(body.m2) .conditions-grid, :where(body.m2) .author-block, :where(body.m2) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m2) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m2) .hero-content {
-    text-align: center;
-}
-
-:where(body.m2) .hero-visual {
-    order: -1;
-}
-
 :where(body.m2) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m2.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m2) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m2) .hero h1 {
-    font-size: 1.6rem;
-}
-
 :where(body.m2) section {
     padding: 60px 0;
 }
-
 :where(body.m2) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 @media (max-width: 720px) {
 :where(body.m2) article.pathology-content {
     padding: 26px 22px;
 }
-
 :where(body.m2) .key-facts {
     grid-template-columns: 1fr;
 }
-
 :where(body.m2) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m2) h2 {
     font-size: 1.1rem;
 }
 }
-
 /* m3 : 5 pages */
-
 @media (max-width: 980px) {
 :where(body.m3) nav.main-nav {
     display: none;
 }
-
 :where(body.m3) .mobile-toggle {
     display: block;
 }
-
 :where(body.m3) .nav-cta.desktop {
     display: none;
 }
-
 body.m3.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -3556,19 +2464,16 @@ body.m3.menu-open nav.main-nav {
     z-index: 99;
     padding: 20px 24px 60px;
 }
-
 :where(body.m3) .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m3) .nav-link {
     width: 100%;
     padding: 18px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m3) .mega-panel {
     position: static;
     transform: none;
@@ -3584,51 +2489,37 @@ body.m3.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m3) .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m3) .mega-grid-pathos, :where(body.m3) .mega-grid-chir {
-    grid-template-columns: 1fr;
-    gap: 18px;
 }
-}
-
 @media (max-width: 720px) {
 :where(body.m3) article.pathology-content {
     padding: 26px 22px;
 }
-
 :where(body.m3) .key-facts {
     grid-template-columns: 1fr;
 }
-
 :where(body.m3) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m3) h2 {
     font-size: 1.1rem;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m3) nav.main-nav {
     display: none;
 }
-
 :where(body.m3) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m3) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m3.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -3642,21 +2533,17 @@ body.m3.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m3) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m3) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m3) .mega-panel {
     position: static;
     transform: none;
@@ -3672,143 +2559,82 @@ body.m3.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m3) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m3) .mega-grid-pathos, :where(body.m3) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m3) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m3) .specialties-grid, :where(body.m3) .pathologies-grid, :where(body.m3) .chirurgies-grid, :where(body.m3) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m3) .hero-content, :where(body.m3) .specialties-grid, :where(body.m3) .parcours-content, :where(body.m3) .contact-grid, :where(body.m3) .pathologies-grid, :where(body.m3) .chirurgies-grid, :where(body.m3) .conditions-grid, :where(body.m3) .author-block, :where(body.m3) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m3) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m3) .hero-content {
-    text-align: center;
-}
-
-:where(body.m3) .hero-visual {
-    order: -1;
-}
-
 :where(body.m3) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m3.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m3) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m3) .hero h1 {
-    font-size: 1.6rem;
-}
-
 :where(body.m3) section {
     padding: 60px 0;
 }
-
 :where(body.m3) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 /* m4 : 1 pages */
-
 @media (max-width: 520px) {
 :where(body.m4) .code-404 {
     font-size: 4.5rem;
 }
-
 :where(body.m4) h1 {
     font-size: 1.45rem;
 }
-
 :where(body.m4) .btn-doctolib {
     margin-left: 0;
     margin-top: 12px;
 }
 }
-
 /* m5 : 1 pages */
-
 @media (max-width: 720px) {
-:where(body.m5) .nav-links {
-    display: none;
-}
-
 :where(body.m5) article {
     padding: 28px 22px;
 }
-
 :where(body.m5) h1 {
     font-size: 1.5rem;
 }
-
 :where(body.m5) table, :where(body.m5) thead, :where(body.m5) tbody, :where(body.m5) th, :where(body.m5) td, :where(body.m5) tr {
     display: block;
 }
-
 :where(body.m5) th {
     display: none;
 }
-
 :where(body.m5) td {
     border: none;
     padding: 4px 0;
 }
-
 :where(body.m5) tr {
     border-bottom: 1px solid var(--border);
     padding: 10px 0;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m5) nav.main-nav {
     display: none;
 }
-
 :where(body.m5) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m5) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m5.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -3822,21 +2648,17 @@ body.m5.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m5) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m5) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m5) .mega-panel {
     position: static;
     transform: none;
@@ -3852,112 +2674,58 @@ body.m5.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m5) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m5) .mega-grid-pathos, :where(body.m5) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m5) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m5) .specialties-grid, :where(body.m5) .pathologies-grid, :where(body.m5) .chirurgies-grid, :where(body.m5) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m5) .hero-content, :where(body.m5) .specialties-grid, :where(body.m5) .parcours-content, :where(body.m5) .contact-grid, :where(body.m5) .pathologies-grid, :where(body.m5) .chirurgies-grid, :where(body.m5) .conditions-grid, :where(body.m5) .author-block, :where(body.m5) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m5) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m5) .hero-content {
-    text-align: center;
-}
-
-:where(body.m5) .hero-visual {
-    order: -1;
-}
-
 :where(body.m5) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m5.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m5) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m5) .hero h1 {
-    font-size: 1.6rem;
-}
-
-:where(body.m5) section {
-    padding: 60px 0;
-}
-
 :where(body.m5) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 /* m6 : 1 pages */
-
 @media (max-width: 720px) {
 :where(body.m6) article.pathology-content {
     padding: 26px 22px;
 }
-
 :where(body.m6) .key-facts {
     grid-template-columns: 1fr;
 }
-
 :where(body.m6) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m6) h2 {
     font-size: 1.1rem;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m6) nav.main-nav {
     display: none;
 }
-
 :where(body.m6) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m6) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m6.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -3970,19 +2738,16 @@ body.m6.menu-open nav.main-nav {
     z-index: 99;
     padding: 20px 24px 60px;
 }
-
 :where(body.m6) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m6) nav.main-nav .nav-link {
     width: 100%;
     padding: 18px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m6) .mega-panel {
     position: static;
     transform: none;
@@ -3998,104 +2763,66 @@ body.m6.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m6) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m6) .mega-grid-pathos, :where(body.m6) .mega-grid-chir {
-    grid-template-columns: 1fr;
-    gap: 18px;
 }
-}
-
 /* m7 : 1 pages */
-
 @media (max-width: 1024px) {
 :where(body.m7) .specialties-grid {
     grid-template-columns: repeat(2, 1fr);
 }
 }
-
 @media (max-width: 768px) {
 :where(body.m7) .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
     min-height: auto;
 }
-
 :where(body.m7) .hero-left {
     padding: 40px 0;
 }
-
 :where(body.m7) .hero-tag {
     margin-left: auto;
     margin-right: auto;
 }
-
 :where(body.m7) .hero-text {
     margin: 0 auto 36px;
 }
-
 :where(body.m7) .hero-buttons {
     justify-content: center;
 }
-
-:where(body.m7) .hero-credentials {
-    justify-content: center;
-}
-
 :where(body.m7) .hero-visual {
     order: -1;
 }
-
 :where(body.m7) .hero-photo {
     min-height: 360px;
 }
-
 :where(body.m7) .hero h1 {
     font-size: 2rem;
 }
-
 :where(body.m7) .specialties-grid {
     grid-template-columns: 1fr;
 }
-
-:where(body.m7) .parcours-content {
-    grid-template-columns: 1fr;
 }
-
-:where(body.m7) .contact-grid {
-    grid-template-columns: 1fr;
-}
-}
-
 @media (max-width: 480px) {
 :where(body.m7) h2 {
     font-size: 1.4rem;
 }
-
 :where(body.m7) .hero h1 {
     font-size: 1.6rem;
 }
-
 :where(body.m7) section {
     padding: 60px 0;
 }
-
-:where(body.m7) .pub-item {
-    padding: 20px;
-}
-
 :where(body.m7) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 @media (prefers-reduced-motion: reduce) {
 :where(body.m7) *, :where(body.m7) *::before, :where(body.m7) *::after {
     animation-duration: 0.01ms !important;
@@ -4103,26 +2830,21 @@ body.m6.menu-open nav.main-nav {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
 }
-
 :where(body.m7) .fade-in {
     opacity: 1;
     transform: none;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m7) nav.main-nav {
     display: none;
 }
-
 :where(body.m7) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m7) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m7.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -4136,21 +2858,17 @@ body.m7.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m7) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m7) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m7) .mega-panel {
     position: static;
     transform: none;
@@ -4166,27 +2884,13 @@ body.m7.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m7) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m7) .mega-grid-pathos, :where(body.m7) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m7) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-}
-
 @media (max-width: 480px) {
 body.m7.menu-open nav.main-nav {
     top: 68px;
@@ -4194,36 +2898,25 @@ body.m7.menu-open nav.main-nav {
     padding: 16px 20px 48px;
 }
 }
-
 /* m8 : 1 pages */
-
 @media (max-width: 720px) {
-:where(body.m8) .nav-links {
-    display: none;
-}
-
 :where(body.m8) article {
     padding: 28px 22px;
 }
-
 :where(body.m8) h1 {
     font-size: 1.5rem;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m8) nav.main-nav {
     display: none;
 }
-
 :where(body.m8) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m8) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m8.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -4237,21 +2930,17 @@ body.m8.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m8) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m8) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m8) .mega-panel {
     position: static;
     transform: none;
@@ -4267,120 +2956,64 @@ body.m8.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m8) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m8) .mega-grid-pathos, :where(body.m8) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m8) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m8) .specialties-grid, :where(body.m8) .pathologies-grid, :where(body.m8) .chirurgies-grid, :where(body.m8) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m8) .hero-content, :where(body.m8) .specialties-grid, :where(body.m8) .parcours-content, :where(body.m8) .contact-grid, :where(body.m8) .pathologies-grid, :where(body.m8) .chirurgies-grid, :where(body.m8) .conditions-grid, :where(body.m8) .author-block, :where(body.m8) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m8) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m8) .hero-content {
-    text-align: center;
-}
-
-:where(body.m8) .hero-visual {
-    order: -1;
-}
-
 :where(body.m8) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m8.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m8) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m8) .hero h1 {
-    font-size: 1.6rem;
-}
-
-:where(body.m8) section {
-    padding: 60px 0;
-}
-
 :where(body.m8) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 /* m9 : 1 pages */
-
 @media (max-width: 720px) {
 :where(body.m9) article.pathology-content {
     padding: 26px 22px;
 }
-
 :where(body.m9) .key-facts {
     grid-template-columns: 1fr;
 }
-
 :where(body.m9) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m9) h2 {
     font-size: 1.1rem;
 }
-
 :where(body.m9) .compare-table {
     font-size: 0.82rem;
 }
-
 :where(body.m9) .compare-table th, :where(body.m9) .compare-table td {
     padding: 8px 10px;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m9) nav.main-nav {
     display: none;
 }
-
 :where(body.m9) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m9) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m9.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -4393,19 +3026,16 @@ body.m9.menu-open nav.main-nav {
     z-index: 99;
     padding: 20px 24px 60px;
 }
-
 :where(body.m9) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m9) nav.main-nav .nav-link {
     width: 100%;
     padding: 18px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m9) .mega-panel {
     position: static;
     transform: none;
@@ -4421,57 +3051,38 @@ body.m9.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m9) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m9) .mega-grid-pathos, :where(body.m9) .mega-grid-chir {
-    grid-template-columns: 1fr;
-    gap: 18px;
 }
-}
-
 /* m10 : 1 pages */
-
 @media (max-width: 720px) {
-:where(body.m10) .nav-links {
-    display: none;
-}
-
 :where(body.m10) article.pathology-content {
     padding: 26px 22px;
 }
-
 :where(body.m10) .key-facts {
     grid-template-columns: 1fr;
 }
-
 :where(body.m10) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m10) h2 {
     font-size: 1.1rem;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m10) nav.main-nav {
     display: none;
 }
-
 :where(body.m10) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m10) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m10.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -4484,19 +3095,16 @@ body.m10.menu-open nav.main-nav {
     z-index: 99;
     padding: 20px 24px 60px;
 }
-
 :where(body.m10) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m10) nav.main-nav .nav-link {
     width: 100%;
     padding: 18px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m10) .mega-panel {
     position: static;
     transform: none;
@@ -4512,76 +3120,36 @@ body.m10.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m10) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m10) .mega-grid-pathos, :where(body.m10) .mega-grid-chir {
-    grid-template-columns: 1fr;
-    gap: 18px;
 }
-}
-
 /* m11 : 1 pages */
-
 @media (max-width: 900px) {
 :where(body.m11) .pathology-content {
     grid-template-columns: 1fr;
 }
-
 :where(body.m11) .pathology-icon {
     margin: 0 auto 12px;
 }
-
 :where(body.m11) .pathology-body {
     text-align: left;
 }
-
-:where(body.m11) .nav-links {
-    display: none;
 }
-
-:where(body.m11) .nav-toggle {
-    display: block;
-}
-
-:where(body.m11) nav .nav-cta {
-    display: none;
-}
-
-:where(body.m11) .nav-links.open {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    background: var(--blanc-naturel);
-    padding: 24px;
-    gap: 20px;
-    border-bottom: 1px solid var(--border);
-    box-shadow: var(--shadow-md);
-}
-}
-
 @media (max-width: 600px) {
 :where(body.m11) .page-header h1 {
     font-size: 1.6rem;
 }
-
 :where(body.m11) .pathology-body h2 {
     font-size: 1.25rem;
 }
-
 :where(body.m11) .pathologies-section {
     padding: 50px 0;
 }
 }
-
 @media (prefers-reduced-motion: reduce) {
 :where(body.m11) *, :where(body.m11) *::before, :where(body.m11) *::after {
     animation-duration: 0.01ms !important;
@@ -4589,30 +3157,21 @@ body.m10.menu-open nav.main-nav {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
 }
-
 :where(body.m11) .fade-in {
     opacity: 1;
     transform: none;
 }
-
-:where(body.m11) .faq-answer {
-    transition: none !important;
 }
-}
-
 @media (max-width: 1024px) {
 :where(body.m11) nav.main-nav {
     display: none;
 }
-
 :where(body.m11) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m11) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m11.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -4626,21 +3185,17 @@ body.m11.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m11) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m11) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m11) .mega-panel {
     position: static;
     transform: none;
@@ -4656,112 +3211,58 @@ body.m11.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m11) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m11) .mega-grid-pathos, :where(body.m11) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m11) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m11) .specialties-grid, :where(body.m11) .pathologies-grid, :where(body.m11) .chirurgies-grid, :where(body.m11) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m11) .hero-content, :where(body.m11) .specialties-grid, :where(body.m11) .parcours-content, :where(body.m11) .contact-grid, :where(body.m11) .pathologies-grid, :where(body.m11) .chirurgies-grid, :where(body.m11) .conditions-grid, :where(body.m11) .author-block, :where(body.m11) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m11) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m11) .hero-content {
-    text-align: center;
-}
-
-:where(body.m11) .hero-visual {
-    order: -1;
-}
-
 :where(body.m11) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m11.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m11) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m11) .hero h1 {
-    font-size: 1.6rem;
-}
-
 :where(body.m11) section {
     padding: 60px 0;
 }
-
 :where(body.m11) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 /* m12 : 1 pages */
-
 @media (max-width: 720px) {
-:where(body.m12) .nav-links {
-    display: none;
-}
-
 :where(body.m12) .pub-card, :where(body.m12) .press-card {
     padding: 18px 20px;
 }
-
 :where(body.m12) h1 {
     font-size: 1.55rem;
 }
-
 :where(body.m12) h2 {
     font-size: 1.1rem;
 }
 }
-
 @media (max-width: 1024px) {
 :where(body.m12) nav.main-nav {
     display: none;
 }
-
 :where(body.m12) header.site-header .mobile-toggle {
     display: block;
 }
-
 :where(body.m12) header.site-header .nav-cta.desktop {
     display: none;
 }
-
 body.m12.menu-open nav.main-nav {
     display: block;
     position: fixed;
@@ -4775,21 +3276,17 @@ body.m12.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-
 @keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
-
 :where(body.m12) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
 }
-
 :where(body.m12) nav.main-nav .nav-link {
     width: 100%;
     padding: 16px 0;
     border-bottom: 1px solid var(--border);
     justify-content: space-between;
 }
-
 :where(body.m12) .mega-panel {
     position: static;
     transform: none;
@@ -4805,79 +3302,33 @@ body.m12.menu-open nav.main-nav {
     overflow: hidden;
     transition: max-height 0.3s, opacity 0.3s;
 }
-
 :where(body.m12) nav.main-nav .nav-item.is-open .mega-panel {
     opacity: 1;
     visibility: visible;
     max-height: 4000px;
     transform: none;
 }
-
-:where(body.m12) .mega-grid-pathos, :where(body.m12) .mega-grid-chir {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
 }
-
-:where(body.m12) .mega-grid-chir .mega-col-associes .associes-sub-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-}
-
-:where(body.m12) .specialties-grid, :where(body.m12) .pathologies-grid, :where(body.m12) .chirurgies-grid, :where(body.m12) .conditions-grid {
-    grid-template-columns: repeat(2, 1fr);
-}
-}
-
 @media (max-width: 768px) {
-:where(body.m12) .hero-content, :where(body.m12) .specialties-grid, :where(body.m12) .parcours-content, :where(body.m12) .contact-grid, :where(body.m12) .pathologies-grid, :where(body.m12) .chirurgies-grid, :where(body.m12) .conditions-grid, :where(body.m12) .author-block, :where(body.m12) .author-content {
-    grid-template-columns: 1fr;
-}
-
-:where(body.m12) .hero h1 {
-    font-size: 2rem;
-}
-
-:where(body.m12) .hero-content {
-    text-align: center;
-}
-
-:where(body.m12) .hero-visual {
-    order: -1;
-}
-
 :where(body.m12) footer .container p {
     font-size: 0.76rem;
     line-height: 1.7;
 }
 }
-
 @media (max-width: 480px) {
 body.m12.menu-open nav.main-nav {
     top: 68px;
     height: calc(100vh - 68px);
     padding: 16px 20px 48px;
 }
-
 :where(body.m12) h2 {
     font-size: 1.4rem;
 }
-
-:where(body.m12) .hero h1 {
-    font-size: 1.6rem;
-}
-
-:where(body.m12) section {
-    padding: 60px 0;
-}
-
 :where(body.m12) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
 }
 }
-
 /* ============================================================
    REFONTE CONVERSION — lot home (2026-08-19)
    DESIGN.md « Précision sereine » : accent Cuivre RDV #9C4B2E,
@@ -4887,7 +3338,6 @@ body.m12.menu-open nav.main-nav {
     --cuivre-rdv: #9C4B2E;
     --cuivre-rdv-deep: #82391F;
 }
-
 /* --- CTA header (site-wide) : l'action RDV porte l'accent conversion --- */
 .nav-cta {
     background: var(--cuivre-rdv);
@@ -4900,7 +3350,6 @@ body.m12.menu-open nav.main-nav {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
 }
-
 /* --- CTA principal du hero (home) et de /pathologies --- */
 :where(body.page-index) .btn-primary,
 :where(body.page-pathologies) .btn-primary {
@@ -4915,7 +3364,6 @@ body.m12.menu-open nav.main-nav {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
 }
-
 /* --- Portrait hero : recadrage naturel, colonne non étirée --- */
 :where(body.page-index) .hero-content {
     align-items: center;
@@ -4925,7 +3373,6 @@ body.m12.menu-open nav.main-nav {
     max-height: 700px;
     aspect-ratio: 4 / 5;
 }
-
 /* --- Barre d'action fixe (mobile + tablette ≤ 1024 px) : « Appeler · Prendre rendez-vous »
    Lot Impeccable 20/08/2026 : visible dès que le CTA du header disparaît (≤ 1024 px),
    deux cibles de 48 px, téléphone joignable depuis toutes les fiches.
@@ -4994,35 +3441,35 @@ body.m12.menu-open nav.main-nav {
     outline-offset: 2px;
 }
 @media (max-width: 1024px) {
-    .sticky-rdv {
+.sticky-rdv {
         display: flex;
     }
-    body.has-sticky-rdv {
+body.has-sticky-rdv {
         padding-bottom: 76px;
     }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-    .sticky-rdv {
+.sticky-rdv {
         padding-left: calc(50% - 280px);
         padding-right: calc(50% - 280px);
     }
 }
 /* Téléphone (< 600 px) : Appeler = icône seule, RDV pleine largeur */
 @media (max-width: 599px) {
-    .sticky-rdv .sticky-tel {
+.sticky-rdv .sticky-tel {
         width: 48px;
         height: 48px;
         padding: 0;
         border-radius: 50%;
     }
-    .sticky-rdv .sticky-tel .lbl {
+.sticky-rdv .sticky-tel .lbl {
         display: none;
     }
-    .sticky-rdv .sticky-tel .ico {
+.sticky-rdv .sticky-tel .ico {
         width: 21px;
         height: 21px;
     }
-    .sticky-rdv .sticky-doctolib {
+.sticky-rdv .sticky-doctolib {
         flex: 1 1 auto;
         min-width: 0;
         font-size: 0.85rem;
@@ -5031,14 +3478,13 @@ body.m12.menu-open nav.main-nav {
 }
 /* Très petits écrans (≤ 340 px) : on resserre le libellé RDV plutôt que de le couper */
 @media (max-width: 340px) {
-    .sticky-rdv .sticky-doctolib {
+.sticky-rdv .sticky-doctolib {
         font-size: 0.76rem;
         letter-spacing: 0.03em;
         padding-left: 12px;
         padding-right: 12px;
     }
 }
-
 /* correctif spécificité : le CTA header est défini via header.site-header .nav-cta dans les scopes */
 header.site-header .nav-cta {
     background: var(--cuivre-rdv);
@@ -5047,7 +3493,6 @@ header.site-header .nav-cta:hover {
     background: var(--cuivre-rdv-deep);
     transform: translateY(-1px);
 }
-
 /* --- Lot fiches (2026-08-19) : le CTA « Prendre rendez-vous » des fiches
        (.btn-rdv, 45 pages) porte l'accent conversion --- */
 .btn-rdv {
@@ -5061,23 +3506,6 @@ header.site-header .nav-cta:hover {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
 }
-
-
-/* --- Fix hiérarchie (détecteur Impeccable) : les h4 des infos pratiques
-       deviennent des h3 (h2 > h3) en conservant leur rendu exact --- */
-:where(body.page-index) .contact-item h3 {
-    font-size: 0.75rem;
-    font-weight: 600;
-    line-height: 1.7;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    color: rgba(249, 247, 242, 0.4);
-    margin-top: 0;
-    margin-bottom: 4px;
-    padding: 0;
-    border: none;
-}
-
 /* ============================================================
    CRAFT v3 — élévation du gabarit (2026-08-19)
    « Précision sereine », exécution relevée : échelle typographique,
@@ -5085,7 +3513,6 @@ header.site-header .nav-cta:hover {
    Playbooks Impeccable : bolder + craft-floor (pas de kicker, pas de
    numérotation décorative, pas de liseré épais, un seul motif).
    ============================================================ */
-
 /* --- 1. Échelle typographique : le bandeau de page s'affirme --- */
 header.page-header {
     padding: 72px 0 64px;
@@ -5119,7 +3546,6 @@ header.page-header::after {
     opacity: 0.45;
     pointer-events: none;
 }
-
 /* --- 2. Sections : plus d'air au-dessus, filet court éditorial --- */
 article.pathology-content h2 {
     font-size: 1.42rem;
@@ -5143,7 +3569,6 @@ article.pathology-content > ul,
 article.pathology-content > ol {
     max-width: 68ch;
 }
-
 /* --- 3. Encadré urgence : signal net sans liseré épais --- */
 .alert-urgence {
     border-left: none;
@@ -5164,7 +3589,6 @@ article.pathology-content > ol {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
 /* --- 4. FAQ : questions posées, réponses en retrait fin --- */
 .qr-block .q {
     font-weight: 600;
@@ -5178,7 +3602,6 @@ article.pathology-content > ol {
     padding-left: 18px;
     margin-bottom: 0;
 }
-
 /* --- 5. CTA de fin de fiche : le point d'orgue de la page --- */
 article.pathology-content .cta-block {
     background: var(--prusse);
@@ -5204,7 +3627,6 @@ article.pathology-content .cta-block .btn-rdv {
     margin-top: 8px;
     padding: 15px 36px;
 }
-
 /* --- 6. Liens connexes : pills fines, hover cuivre --- */
 .related-link {
     transition: border-color 0.2s, color 0.2s, transform 0.15s;
@@ -5214,7 +3636,6 @@ article.pathology-content .cta-block .btn-rdv {
     color: var(--cuivre-rdv) !important;
     transform: translateY(-1px);
 }
-
 /* --- 7. Surfaces navigateur : la page est « construite », pas assemblée --- */
 ::selection {
     background: var(--sable-light);
@@ -5239,7 +3660,6 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     border: 2px solid var(--blanc-naturel);
 }
-
 /* --- 8. Bloc auteur : cohérent avec le CTA sombre --- */
 article.pathology-content .eeat-block {
     border-radius: 16px;
@@ -5251,30 +3671,27 @@ article.pathology-content .eeat-block h3 {
     text-transform: uppercase;
     font-size: 0.85rem;
 }
-
 /* --- 9. Home : le hero s'affirme --- */
 :where(body.page-index) .hero h1,
 :where(body.page-index) h1 {
     font-size: clamp(2.05rem, 1.4rem + 1.8vw, 2.75rem);
     line-height: 1.18;
 }
-
 /* --- Responsive du bandeau relevé --- */
 @media (max-width: 768px) {
-    header.page-header {
+header.page-header {
         padding: 52px 0 52px;
     }
-    header.page-header h1 {
+header.page-header h1 {
         font-size: clamp(1.7rem, 1.35rem + 2.4vw, 2.2rem);
     }
-    article.pathology-content h2 {
+article.pathology-content h2 {
         margin-top: 48px;
     }
-    article.pathology-content .cta-block {
+article.pathology-content .cta-block {
         padding: 34px 24px;
     }
 }
-
 /* --- 8b. Bloc auteur en clair : le CTA sombre reste l'unique point d'orgue --- */
 article.pathology-content .eeat-block {
     background: var(--blanc);
@@ -5296,7 +3713,6 @@ article.pathology-content .eeat-block a {
 article.pathology-content .eeat-block .meta {
     color: var(--text-muted);
 }
-
 /* ============================================================
    CRAFT v4 — HERO HOME « bandeau signature » (2026-08-19)
    Le hero devient l'expression la plus profonde du système :
@@ -5306,7 +3722,6 @@ article.pathology-content .eeat-block .meta {
    au chargement (moment focal unique), CTA cuivre.
    Contenu, H1 et liens strictement inchangés (SEO).
    ============================================================ */
-
 /* --- Section : surface ardoise, grain discret --- */
 body.page-index .hero-v3 {
     background: linear-gradient(168deg, #1f282d 0%, #283339 52%, #2c3840 100%);
@@ -5326,7 +3741,6 @@ body.page-index .hero-v3 .container {
     position: relative;
     z-index: 1;
 }
-
 /* --- Grille : le texte respire, le portrait tient la colonne --- */
 body.page-index .hero-v3 .hero-content {
     display: grid;
@@ -5341,7 +3755,6 @@ body.page-index .hero-v3 .hero-left {
     justify-content: center;
     padding: 84px 0 96px;
 }
-
 /* --- Lockup H1 : capitales espacées, trois temps --- */
 body.page-index .hero-v3 h1 {
     margin: 0 0 22px;
@@ -5377,7 +3790,6 @@ body.page-index .hero-v3 .h1-city {
     color: var(--sable);
     margin-top: 16px;
 }
-
 /* --- Texte sur ardoise : hiérarchie teintée, jamais grise --- */
 body.page-index .hero-v3 .hero-subtitle {
     font-size: 1.02rem;
@@ -5396,9 +3808,6 @@ body.page-index .hero-v3 .hero-text {
     max-width: 52ch;
     margin-bottom: 16px;
 }
-body.page-index .hero-v3 .hero-text:last-of-type {
-    margin-bottom: 34px;
-}
 body.page-index .hero-v3 .hero-text strong {
     color: var(--blanc-naturel);
     font-weight: 600;
@@ -5415,7 +3824,6 @@ body.page-index .hero-v3 .hero-text a:hover {
     color: var(--sable-light);
     text-decoration-color: var(--sable);
 }
-
 /* --- Actions : cuivre intact, outline passé en clair --- */
 body.page-index .hero-v3 .hero-buttons {
     margin-bottom: 24px;
@@ -5442,7 +3850,6 @@ body.page-index .hero-v3 .hero-note {
 body.page-index .hero-v3 .hero-note a {
     white-space: nowrap;
 }
-
 /* --- Chips : réassurance en pied de colonne, filet fin --- */
 body.page-index .hero-v3 .hero-chips {
     margin: 0;
@@ -5458,7 +3865,6 @@ body.page-index .hero-v3 .hero-tag {
     letter-spacing: 0.13em;
     padding: 6px 14px;
 }
-
 /* --- Portrait : fondu dans l'ardoise (prise de vue continue) --- */
 body.page-index .hero-v3 .hero-visual {
     position: relative;
@@ -5503,7 +3909,6 @@ body.page-index .hero-v3 .hero-photo::after {
         linear-gradient(to left, rgba(42, 53, 61, 0.95) 0%, rgba(42, 53, 61, 0) 32%),
         linear-gradient(to top, rgba(41, 52, 60, 1) 3%, rgba(41, 52, 60, 0) 36%);
 }
-
 /* --- Coupe OCT : le motif signature, dessiné une seule fois --- */
 body.page-index .hero-v3 .hero-oct {
     position: absolute;
@@ -5528,7 +3933,6 @@ body.page-index .hero-v3 .hero-oct-path {
 @keyframes heroOctDraw {
     to { stroke-dashoffset: 0; }
 }
-
 /* --- Entrée : une seule séquence orchestrée (chargement) --- */
 @keyframes heroRise {
     from { opacity: 0; transform: translateY(16px); }
@@ -5542,9 +3946,8 @@ body.page-index .hero-v3 .hero-text     { animation: heroRise 0.55s cubic-bezier
 body.page-index .hero-v3 .hero-buttons  { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both; }
 body.page-index .hero-v3 .hero-note     { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
 body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.56s both; }
-
 @media (prefers-reduced-motion: reduce) {
-    body.page-index .hero-v3 .h1-name,
+body.page-index .hero-v3 .h1-name,
     body.page-index .hero-v3 .h1-major,
     body.page-index .hero-v3 .h1-city,
     body.page-index .hero-v3 .hero-subtitle,
@@ -5555,102 +3958,95 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     body.page-index .hero-v3 .hero-oct-path {
         animation: none;
     }
-    body.page-index .hero-v3 .hero-oct-path {
+body.page-index .hero-v3 .hero-oct-path {
         stroke-dashoffset: 0;
     }
 }
-
 /* --- Tablette --- */
 @media (max-width: 1024px) {
-    body.page-index .hero-v3 .hero-content {
+body.page-index .hero-v3 .hero-content {
         grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
         gap: 22px;
     }
-    body.page-index .hero-v3 .hero-left {
+body.page-index .hero-v3 .hero-left {
         padding: 64px 0 84px;
     }
-    body.page-index .hero-v3 .hero-visual {
+body.page-index .hero-v3 .hero-visual {
         min-height: 460px;
     }
 }
-
 /* --- Mobile : portrait en ouverture, texte fondu dessous --- */
 @media (max-width: 768px) {
-    body.page-index .hero-v3 .hero-content {
+body.page-index .hero-v3 .hero-content {
         grid-template-columns: 1fr;
         gap: 0;
         text-align: center;
     }
-    body.page-index .hero-v3 .hero-visual {
+body.page-index .hero-v3 .hero-visual {
         order: -1;
         min-height: 0;
         height: min(96vw, 520px);
         margin: 14px -24px 0;
     }
-    body.page-index .hero-v3 .hero-visual::before {
+body.page-index .hero-v3 .hero-visual::before {
         inset: -4% -10% -12%;
         background: radial-gradient(60% 52% at 50% 36%, rgba(66, 80, 90, 0.45) 0%, rgba(66, 80, 90, 0) 72%);
     }
-    body.page-index .hero-v3 .hero-photo img {
+body.page-index .hero-v3 .hero-photo img {
         object-position: center 56%;
     }
-    body.page-index .hero-v3 .hero-photo::after {
+body.page-index .hero-v3 .hero-photo::after {
         background:
             linear-gradient(to bottom, rgba(31, 40, 45, 0.95) 0%, rgba(31, 40, 45, 0) 24%),
             linear-gradient(to right, rgba(36, 45, 51, 0.9) 0%, rgba(36, 45, 51, 0) 22%),
             linear-gradient(to left, rgba(42, 53, 61, 0.9) 0%, rgba(42, 53, 61, 0) 22%),
             linear-gradient(to top, rgba(40, 51, 57, 1) 3%, rgba(40, 51, 57, 0) 18%);
     }
-    body.page-index .hero-v3 .h1-major {
+body.page-index .hero-v3 .h1-major {
         font-size: clamp(1.85rem, 1.15rem + 3vw, 2.35rem);
     }
-    body.page-index .hero-v3 .hero-left {
+body.page-index .hero-v3 .hero-left {
         padding: 0 0 72px;
         margin-top: 18px;
         position: relative;
         z-index: 1;
     }
-    body.page-index .hero-v3 .h1-name {
+body.page-index .hero-v3 .h1-name {
         margin-bottom: 14px;
     }
-    body.page-index .hero-v3 .hero-subtitle {
+body.page-index .hero-v3 .hero-subtitle {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 24px;
     }
-    body.page-index .hero-v3 .hero-text {
+body.page-index .hero-v3 .hero-text {
         max-width: 38ch;
         margin: 0 auto 14px;
     }
-    body.page-index .hero-v3 .hero-text:last-of-type {
-        margin-bottom: 30px;
-    }
-    body.page-index .hero-v3 .hero-buttons {
+body.page-index .hero-v3 .hero-buttons {
         justify-content: center;
         margin-bottom: 22px;
     }
-    body.page-index .hero-v3 .hero-note {
+body.page-index .hero-v3 .hero-note {
         margin-bottom: 30px;
     }
-    body.page-index .hero-v3 .hero-chips {
+body.page-index .hero-v3 .hero-chips {
         justify-content: center;
     }
-    body.page-index .hero-v3 .hero-oct {
+body.page-index .hero-v3 .hero-oct {
         bottom: 8px;
         height: 40px;
         opacity: 0.5;
     }
 }
-
 @media (max-width: 480px) {
-    body.page-index .hero-v3 .hero-visual {
+body.page-index .hero-v3 .hero-visual {
         height: min(98vw, 440px);
     }
-    body.page-index .hero-v3 .hero-left {
+body.page-index .hero-v3 .hero-left {
         margin-top: 16px;
     }
 }
-
 /* --- CRAFT v4b/c — trust-cards : alignement des 3 encadrés (2026-08-19) ---
    1. Les titres passent sur 1 ou 2 lignes selon la carte : zone de titre
       constante pour que les textes partent du même axe.
@@ -5677,19 +4073,17 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
     margin-bottom: 8px;
 }
 @media (max-width: 860px) {
-    .trust-section {
+.trust-section {
         padding: 44px 0 52px;
     }
-    .trust-card .tc-title {
+.trust-card .tc-title {
         min-height: 0;
     }
 }
-
 /* ==============================================================
    ACCESSIBILITÉ — Contrastes WCAG 2.1 AA (lot du 20/08/2026)
    Audit Playwright sur les 51 pages x 2 viewports : 685 échecs -> 0.
    ============================================================== */
-
 /* Pied de page sombre : le <p> global (:where(body.v1) p) imposait --text-light (2,1:1 sur vert foncé). */
 :where(body.v5) footer.site-footer p,
 :where(body.v20) footer p,
@@ -5703,12 +4097,6 @@ body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier
 :where(body.page-pathologies) footer a {
     color: rgba(249, 247, 242, 0.8);
 }
-
-/* Bloc CTA ardoise : <strong> héritait de :where(body.v1) strong (ardoise sur ardoise, invisible). */
-article.pathology-content .cta-block p strong {
-    color: var(--blanc-naturel);
-}
-
 /* ==============================================================
    « NOS TRAVAUX » — publications propres citées dans les fiches (20/08/2026)
    Même surface que .expertise-block ; titre aligné sur le bloc auteur ; liseré 1 px.
@@ -5781,8 +4169,6 @@ article.pathology-content .travaux-note {
     color: var(--prusse);
     overflow-wrap: anywhere;
 }
-
-
 /* ============================================================
    NAV v5 — 3 onglets : DMLA / Chirurgies / Autres pathologies
    (20/08/2026 — simplification du menu, cf. mémoire projet)
@@ -5792,7 +4178,6 @@ article.pathology-content .travaux-note {
    Les anciennes classes .mega-grid-chir / .mega-grid-pathos ne
    sont plus utilisées dans le HTML (règles conservées, inertes).
    ============================================================ */
-
 /* --- Panneau ----------------------------------------------- */
 nav.main-nav .mega-panel {
     position: absolute;
@@ -5834,15 +4219,11 @@ nav.main-nav .nav-item.is-open .mega-panel--compact {
    panneau sous lui. Corrige l'ancien conflit v2 static / v4 relative. */
 nav.main-nav .nav-item[data-megamenu] { position: static; }
 nav.main-nav .nav-item[data-megamenu].nav-item--compact { position: relative; }
-
-
 /* --- Encombrement du header : 5 onglets au lieu de 4 ----------
    Logo + 5 onglets + bouton RDV ne laissent plus de place à la
    pastille téléphone (.nav-tel) dans un header de 1240 px : elle est
    retirée (le numéro reste dans la topbar et dans le tiroir mobile). */
 nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
-header.site-header .nav-tel { display: none; }
-
 /* --- Grilles ------------------------------------------------ */
 .mega-grid-dmla { display: block; }
 .mega-grid-chir3 {
@@ -5856,36 +4237,8 @@ header.site-header .nav-tel { display: none; }
     grid-template-columns: 1.15fr 1fr 1fr;
     gap: 22px 30px;
 }
-
 /* --- Colonnes, titres, listes ------------------------------- */
 .mega-col { min-width: 0; }
-.mega-col h3 {
-    font-size: 0.75rem;
-    font-weight: 700;
-    color: var(--prusse);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    padding-bottom: 10px;
-    margin: 0 0 12px;
-    border-bottom: 2px solid var(--sable);
-}
-.mega-col h3:not(:first-child) { margin-top: 18px; }
-.mega-col h3 a {
-    color: var(--prusse);
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    text-decoration: none;
-}
-.mega-col h3 a:hover { color: var(--prusse-light); }
-.mega-col h3 a::after {
-    content: "→";
-    font-size: 0.8rem;
-    opacity: 0.6;
-    transition: transform 0.2s;
-}
-.mega-col h3 a:hover::after { transform: translateX(3px); }
-
 .mega-list {
     list-style: none;
     display: flex;
@@ -5919,7 +4272,6 @@ header.site-header .nav-tel { display: none; }
     color: var(--sable);
     font-weight: 600;
 }
-
 .mega-subhead {
     font-size: 0.72rem;
     font-weight: 700;
@@ -5930,7 +4282,6 @@ header.site-header .nav-tel { display: none; }
     margin-top: 8px;
     border-top: 1px dashed var(--border);
 }
-
 /* --- Ligne « associés » (compacte) -------------------------- */
 .col-associes {
     background: var(--blanc-naturel);
@@ -5947,7 +4298,6 @@ header.site-header .nav-tel { display: none; }
 .associes-line strong { color: var(--prusse); font-weight: 600; }
 .associes-line a { color: var(--prusse); text-decoration: none; font-weight: 600; }
 .associes-line a:hover { text-decoration: underline; }
-
 /* --- Pied de panneau ---------------------------------------- */
 .mega-footer {
     margin-top: 20px;
@@ -5969,10 +4319,9 @@ header.site-header .nav-tel { display: none; }
     color: var(--prusse-light);
     text-decoration: underline;
 }
-
 /* --- Mobile / tablette : accordéon dans le tiroir ------------ */
 @media (max-width: 1024px) {
-    nav.main-nav .mega-panel,
+nav.main-nav .mega-panel,
     nav.main-nav .mega-panel--compact {
         position: static;
         left: auto;
@@ -5991,7 +4340,7 @@ header.site-header .nav-tel { display: none; }
         overflow: hidden;
         transition: max-height 0.3s, opacity 0.3s;
     }
-    nav.main-nav .nav-item.is-open .mega-panel,
+nav.main-nav .nav-item.is-open .mega-panel,
     nav.main-nav .nav-item.is-open .mega-panel--compact {
         opacity: 1;
         visibility: visible;
@@ -5999,15 +4348,14 @@ header.site-header .nav-tel { display: none; }
         transform: none;
         padding: 12px 0 20px;
     }
-    .mega-grid-dmla, .mega-grid-chir3, .mega-grid-autres {
+.mega-grid-dmla, .mega-grid-chir3, .mega-grid-autres {
         display: flex;
         flex-direction: column;
         gap: 12px;
     }
-    .mega-grid-chir3 .mega-col-associes { grid-column: auto; }
-    .mega-footer { justify-content: flex-start; }
+.mega-grid-chir3 .mega-col-associes { grid-column: auto; }
+.mega-footer { justify-content: flex-start; }
 }
-
 /* ============================================================
    CRAFT v5 — Lot « critique Impeccable » du 20/08/2026
    Sources : .impeccable/critique/2026-08-20T08-10-20Z__*.md
@@ -6020,13 +4368,12 @@ header.site-header .nav-tel { display: none; }
       palette — bandeau ardoise, badge ambre, bouton hospitalier en
       outline ; le cuivre redevient l'unique bouton chaud.
    ============================================================ */
-
 /* --- 1. Tiroir (≤ 1024 px) : actions en tête, masquées sur desktop --- */
 .drawer-actions {
     display: none;
 }
 @media (max-width: 1024px) {
-    nav.main-nav .drawer-actions {
+nav.main-nav .drawer-actions {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -6034,7 +4381,7 @@ header.site-header .nav-tel { display: none; }
         margin-bottom: 6px;
         border-bottom: 1px solid var(--border);
     }
-    nav.main-nav .drawer-actions a {
+nav.main-nav .drawer-actions a {
         display: inline-flex;
         align-items: center;
         justify-content: center;
@@ -6049,50 +4396,35 @@ header.site-header .nav-tel { display: none; }
         text-decoration: none;
         white-space: nowrap;
     }
-    nav.main-nav .drawer-actions .drawer-tel {
+nav.main-nav .drawer-actions .drawer-tel {
         background: var(--blanc);
         color: var(--prusse);
         border: 2px solid var(--prusse);
         padding: 10px 16px;
     }
-    nav.main-nav .drawer-actions .drawer-rdv {
+nav.main-nav .drawer-actions .drawer-rdv {
         background: var(--cuivre-rdv);
         color: #ffffff;
     }
-    nav.main-nav .drawer-actions .drawer-rdv:hover,
+nav.main-nav .drawer-actions .drawer-rdv:hover,
     nav.main-nav .drawer-actions .drawer-rdv:active {
         background: var(--cuivre-rdv-deep);
     }
-    nav.main-nav .drawer-actions .ico {
+nav.main-nav .drawer-actions .ico {
         width: 18px;
         height: 18px;
         flex: none;
     }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-    nav.main-nav .drawer-actions {
+nav.main-nav .drawer-actions {
         flex-direction: row;
     }
-    nav.main-nav .drawer-actions a {
+nav.main-nav .drawer-actions a {
         flex: 1 1 0;
     }
 }
-
 /* --- 2. Contraste AA restant --- */
-/* Labels de section (home) : bleu-gris 2,4:1 → texte doux 5,2:1 (sections .fade-in, invisibles pour un audit au chargement) */
-body.page-index .section-label {
-    color: var(--text-light);
-    border-color: var(--border);
-}
-/* Années du parcours : sable 2,1:1 → sable foncé 4,9:1 */
-body.page-index .parcours-card-year {
-    color: var(--sable-fonce);
-}
-/* Intitulés du bloc contact sombre : 40 % (3,1:1) → 72 % (6,6:1) */
-body.page-index .contact-item h3,
-body.page-index .contact-item h4 {
-    color: rgba(249, 247, 242, 0.72);
-}
 /* Anneau de focus : bleu-gris 2,2:1 sur crème → ardoise (12:1) ; sable clair sur les surfaces sombres */
 :focus-visible {
     outline: 3px solid var(--prusse);
@@ -6106,7 +4438,6 @@ footer :focus-visible,
 body.menu-open .mobile-toggle:focus-visible {
     outline-color: var(--sable-light);
 }
-
 /* --- 3. Fiches urgence dans la palette --- */
 body.page-decollement-retine header.page-header,
 body.page-dechirure-retine-corps-flottants header.page-header {
@@ -6165,7 +4496,6 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     border-color: var(--blanc-naturel);
     color: var(--blanc-naturel);
 }
-
 /* ============================================================
    CRAFT v6 — Lot Impeccable 2 (20/08/2026)
    1. Alerte décollement en deux niveaux + actions (Appeler / créneau
@@ -6179,9 +4509,6 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     font-size: 0.96rem;
     line-height: 1.6;
     margin: 0 0 12px;
-}
-.alert-urgence .alert-niveau:last-of-type {
-    margin-bottom: 0;
 }
 .alert-urgence .alert-actions {
     display: flex;
@@ -6228,7 +4555,7 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     flex: none;
 }
 @media (max-width: 600px) {
-    .alert-urgence .alert-actions a {
+.alert-urgence .alert-actions a {
         flex: 1 1 100%;
     }
 }
@@ -6247,25 +4574,24 @@ h2.h-sub::after {
     display: none;
 }
 @media (max-width: 600px) {
-    .alert-urgence.alert-urgence--niveaux {
+.alert-urgence.alert-urgence--niveaux {
         padding: 54px 18px 18px;
     }
-    .alert-urgence.alert-urgence--niveaux::before {
+.alert-urgence.alert-urgence--niveaux::before {
         left: 18px;
         top: 18px;
     }
-    .alert-urgence .alert-actions a {
+.alert-urgence .alert-actions a {
         font-size: 0.76rem;
         padding: 12px 14px;
     }
-    .alert-urgence .btn-alert-rdv {
+.alert-urgence .btn-alert-rdv {
         padding: 10px 14px;
     }
-    .alert-urgence .btn-alert-tel .num {
+.alert-urgence .btn-alert-tel .num {
         display: none;
     }
 }
-
 /* ============================================================
    CRAFT v7 — Lot Impeccable 3 « distill home » (20/08/2026)
    Craft-floor : plus de kicker au-dessus des titres, icônes dessinées
@@ -6336,14 +4662,13 @@ body.page-index .parcours-card {
 }
 /* Hero mobile : l'action avant la présentation */
 @media (max-width: 768px) {
-    body.page-index .hero-v3 h1 { order: 1; }
-    body.page-index .hero-v3 .hero-subtitle { order: 2; }
-    body.page-index .hero-v3 .hero-buttons { order: 3; margin: 6px 0 26px; }
-    body.page-index .hero-v3 .hero-text { order: 4; }
-    body.page-index .hero-v3 .hero-note { order: 5; }
-    body.page-index .hero-v3 .hero-chips { order: 6; }
+body.page-index .hero-v3 h1 { order: 1; }
+body.page-index .hero-v3 .hero-subtitle { order: 2; }
+body.page-index .hero-v3 .hero-buttons { order: 3; margin: 6px 0 26px; }
+body.page-index .hero-v3 .hero-text { order: 4; }
+body.page-index .hero-v3 .hero-note { order: 5; }
+body.page-index .hero-v3 .hero-chips { order: 6; }
 }
-
 /* ============================================================
    CRAFT v8 — Lot Impeccable 4 (20/08/2026) : cartes cliquables,
    hero distillé, icônes de spécialités en SVG filaire, petites
@@ -6388,11 +4713,6 @@ body.page-index a.specialty-card:focus-visible {
     outline: 3px solid var(--prusse);
     outline-offset: 3px;
 }
-body.page-index .specialty-icon svg {
-    width: 30px;
-    height: 30px;
-    color: var(--blanc-naturel);
-}
 /* Liens discrets (ex sable inline 2,1:1) */
 .link-quiet {
     display: inline-flex;
@@ -6432,50 +4752,32 @@ footer .footer-meta {
    dans le bloc « Téléphone (< 600 px) » (20/08/2026) ; on garde le repli
    sur deux lignes du libellé RDV au cas où la police rendrait plus large. */
 @media (max-width: 360px) {
-    .sticky-rdv .sticky-doctolib {
+.sticky-rdv .sticky-doctolib {
         min-width: 0;
         white-space: normal;
         line-height: 1.2;
     }
-    body.page-index .hero-v3 .hero-visual {
+body.page-index .hero-v3 .hero-visual {
         width: calc(100% + 48px);
         max-width: none;
     }
-    iframe {
+iframe {
         max-width: 100%;
     }
 }
 @media (max-width: 360px) {
-    body.page-index .hero-v3 .hero-content {
+body.page-index .hero-v3 .hero-content {
         grid-template-columns: minmax(0, 1fr);
     }
-    body.page-index .hero-v3 h1 .h1-major {
+body.page-index .hero-v3 h1 .h1-major {
         font-size: 1.55rem;
         letter-spacing: 0.04em;
     }
-    body.page-index .hero-v3 h1 .h1-name,
+body.page-index .hero-v3 h1 .h1-name,
     body.page-index .hero-v3 h1 .h1-city {
         letter-spacing: 0.12em;
     }
 }
-@media (max-width: 480px) {
-    body.page-index .contact-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-    body.page-index .contact-info-card {
-        padding: 24px 20px;
-        min-width: 0;
-    }
-    body.page-index .contact-item {
-        gap: 12px;
-        min-width: 0;
-    }
-    body.page-index .contact-item p,
-    body.page-index .contact-item a {
-        overflow-wrap: anywhere;
-    }
-}
-
 /* ============================================================
    CRAFT v9 — Lot Impeccable 5 « chemin urgent » (20/08/2026)
    Horaires du cabinet (fiche Google, confirmés le 20/08) partout où
@@ -6516,7 +4818,7 @@ nav.main-nav .drawer-horaires {
     display: none;
 }
 @media (max-width: 1024px) {
-    nav.main-nav .drawer-horaires {
+nav.main-nav .drawer-horaires {
         display: block;
         margin: 2px 0 0;
         font-size: 0.76rem;
@@ -6526,7 +4828,7 @@ nav.main-nav .drawer-horaires {
     }
 }
 @media (min-width: 600px) and (max-width: 1024px) {
-    nav.main-nav .drawer-horaires {
+nav.main-nav .drawer-horaires {
         flex: 1 1 100%;
     }
 }
@@ -6541,7 +4843,6 @@ nav.main-nav .drawer-horaires {
 .alert-urgence .alert-hopitaux {
     margin-bottom: 0;
 }
-
 /* ============================================================
    CRAFT v10 — Hero : trois repères sous le paragraphe (20/08/2026)
    Ophtalife (cofondateur) · Quinze-Vingts (ancien assistant et
@@ -6557,69 +4858,26 @@ nav.main-nav .drawer-horaires {
 body.page-index .hero-v3 .hero-text {
     margin-bottom: 14px;
 }
-body.page-index .hero-v3 .hero-facts {
-    list-style: none;
-    margin: 0 0 24px;
-    padding: 0;
-    font-size: 0.86rem;
-    line-height: 1.45;
-    color: var(--bleu-gris-light);
-    animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.37s both;
-}
-body.page-index .hero-v3 .hero-facts li {
-    position: relative;
-    margin: 0 0 6px;
-    padding: 0 0 0 26px;
-}
-body.page-index .hero-v3 .hero-facts li:last-child {
-    margin-bottom: 0;
-}
-body.page-index .hero-v3 .hero-facts li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.72em;
-    width: 14px;
-    height: 1px;
-    background: var(--sable);
-}
-body.page-index .hero-v3 .hero-facts strong {
-    color: var(--blanc-naturel);
-    font-weight: 600;
-}
 @media (min-width: 769px) {
-    body.page-index .hero-v3 h1 {
+body.page-index .hero-v3 h1 {
         margin-bottom: 18px;
     }
-    body.page-index .hero-v3 .h1-city {
+body.page-index .hero-v3 .h1-city {
         margin-top: 12px;
     }
-    body.page-index .hero-v3 .hero-subtitle {
+body.page-index .hero-v3 .hero-subtitle {
         margin-bottom: 22px;
     }
 }
 @media (min-width: 1025px) {
-    body.page-index .hero-v3 .hero-left {
+body.page-index .hero-v3 .hero-left {
         padding: 64px 0 80px;
     }
 }
 @media (max-width: 768px) {
-    body.page-index .hero-v3 .hero-facts {
-        order: 5;
-        width: fit-content;
-        max-width: 100%;
-        margin: 0 auto 28px;
-        text-align: left;
-    }
-    body.page-index .hero-v3 .hero-note { order: 6; }
-    body.page-index .hero-v3 .hero-chips { order: 7; }
+body.page-index .hero-v3 .hero-note { order: 6; }
+body.page-index .hero-v3 .hero-chips { order: 7; }
 }
-@media (prefers-reduced-motion: reduce) {
-    body.page-index .hero-v3 .hero-facts {
-        animation: none;
-    }
-}
-
 /* ============================================================
    CRAFT v11 — Home, section « Formation & expérience » (20/08/2026 soir)
    Retour au récit : le texte du parcours à gauche (l'hôpital d'abord :
@@ -6669,7 +4927,6 @@ body.page-index .parcours-recit .parcours-recherche {
 body.page-index .parcours-recit .parcours-recherche .link-quiet {
     white-space: nowrap;
 }
-
 /* Carte unique « Postes & diplômes » */
 body.page-index .parcours-reperes {
     margin: 0;
@@ -6737,28 +4994,23 @@ body.page-index .pc-where {
 body.page-index .pc-where sup {
     font-size: 0.7em;
 }
-
 /* Hero : les trois paragraphes reviennent ; on reprend un peu de hauteur
    (padding haut, interligne, respirations) pour garder le bouton RDV
    visible à 1366×768 */
 @media (min-width: 769px) {
-    body.page-index .hero-v3 .hero-subtitle {
+body.page-index .hero-v3 .hero-subtitle {
         margin-bottom: 18px;
     }
-    body.page-index .hero-v3 .hero-text {
+body.page-index .hero-v3 .hero-text {
         line-height: 1.65;
         margin-bottom: 12px;
     }
-    body.page-index .hero-v3 .hero-text:last-of-type {
-        margin-bottom: 30px;
-    }
 }
 @media (min-width: 1025px) {
-    body.page-index .hero-v3 .hero-left {
+body.page-index .hero-v3 .hero-left {
         padding: 48px 0 72px;
     }
 }
-
 /* Lien de fin de section (flèche dimensionnée : 16 px, plus jamais 300 px) */
 body.page-index .parcours-more {
     text-align: center;
@@ -6785,32 +5037,30 @@ body.page-index .parcours-more .sc-more:hover,
 body.page-index .parcours-more .sc-more:focus-visible {
     gap: 12px;
 }
-
 @media (max-width: 1024px) {
-    body.page-index .parcours-v11 {
+body.page-index .parcours-v11 {
         gap: 32px;
     }
-    body.page-index .parcours-reperes {
+body.page-index .parcours-reperes {
         padding: 22px 20px 18px;
     }
 }
 @media (max-width: 860px) {
-    body.page-index .parcours-v11 {
+body.page-index .parcours-v11 {
         grid-template-columns: minmax(0, 1fr);
         gap: 28px;
     }
 }
 @media (max-width: 480px) {
-    body.page-index .parcours-list li {
+body.page-index .parcours-list li {
         flex-direction: column;
         gap: 3px;
     }
-    body.page-index .pc-when {
+body.page-index .pc-when {
         min-width: 0;
         padding-top: 0;
     }
 }
-
 /* ============================================================
    CRAFT v12 — Home, section « Informations pratiques » (20/08/2026 soir)
    Fiche pratique en lignes label / valeur (dl), téléphone en grand,
@@ -7060,58 +5310,57 @@ body.page-index .cv12-map-note a:hover .cv12-arrow {
     transform: translateX(3px);
 }
 @media (max-width: 860px) {
-    body.page-index .contact-v12 {
+body.page-index .contact-v12 {
         grid-template-columns: minmax(0, 1fr);
         gap: 24px;
     }
-    body.page-index .contact-v12 .contact-map iframe {
+body.page-index .contact-v12 .contact-map iframe {
         height: 300px;
         min-height: 0;
         flex: 0 0 auto;
     }
 }
 @media (max-width: 640px) {
-    body.page-index .contact-card-v12 {
+body.page-index .contact-card-v12 {
         padding: 6px 24px 24px;
     }
-    body.page-index .cv12-row {
+body.page-index .cv12-row {
         grid-template-columns: minmax(0, 1fr);
         gap: 8px;
         padding: 18px 0;
     }
-    body.page-index .cv12-row dt {
+body.page-index .cv12-row dt {
         padding-top: 0;
     }
-    body.page-index .cv12-hours {
+body.page-index .cv12-hours {
         max-width: none;
     }
-    body.page-index .cv12-action {
+body.page-index .cv12-action {
         flex-direction: column;
         align-items: stretch;
         text-align: center;
         gap: 12px;
     }
-    body.page-index .cv12-action .btn-doctolib {
+body.page-index .cv12-action .btn-doctolib {
         justify-content: center;
         width: 100%;
     }
 }
 @media (max-width: 480px) {
-    body.page-index .contact-card-v12 {
+body.page-index .contact-card-v12 {
         padding: 4px 18px 20px;
     }
-    body.page-index .cv12-btn-more {
+body.page-index .cv12-btn-more {
         display: none;
     }
-    body.page-index .cv12-tel {
+body.page-index .cv12-tel {
         font-size: 1.3rem;
     }
-    body.page-index .cv12-action .btn-doctolib {
+body.page-index .cv12-action .btn-doctolib {
         padding: 14px 18px;
         font-size: 0.8rem;
     }
 }
-
 /* ============================================================
    CTA-2026-08-21 — Lot CTA (21/08/2026) : bloc de fin de fiche
    Un libellé unique « Prendre rendez-vous (sur Doctolib) »,
@@ -7207,10 +5456,10 @@ article.pathology-content .cta-block .cta-alt a:focus-visible {
     text-decoration-color: var(--blanc-naturel);
 }
 @media (max-width: 480px) {
-    article.pathology-content .cta-block .btn-more {
+article.pathology-content .cta-block .btn-more {
         display: none;
     }
-    article.pathology-content .cta-block .cta-actions .btn-rdv,
+article.pathology-content .cta-block .cta-actions .btn-rdv,
     article.pathology-content .cta-block .cta-actions .btn-ghost,
     article.pathology-content .cta-block .cta-actions .btn-urgence {
         width: 100%;
@@ -7219,16 +5468,15 @@ article.pathology-content .cta-block .cta-alt a:focus-visible {
         font-size: 0.82rem;
         letter-spacing: 0.03em;
     }
-    article.pathology-content .cta-block .btn-ghost .num {
+article.pathology-content .cta-block .btn-ghost .num {
         display: none;
     }
 }
 @media (max-width: 380px) {
-    article.pathology-content .cta-block .btn-ghost .lbl-more {
+article.pathology-content .cta-block .btn-ghost .lbl-more {
         display: none;
     }
 }
-
 /* ============================================================
    A11Y-2026-08-21 — Lot a11y structurelle (21/08/2026)
    sr-only · titres du méga-menu en <p.mega-title> (plus de H3
@@ -7238,7 +5486,6 @@ article.pathology-content .cta-block .cta-alt a:focus-visible {
    défilants · contraste /pathologies · bascule menu 1024 px.
    Marqueur d'idempotence : A11Y-2026-08-21 (ne pas réutiliser).
    ============================================================ */
-
 /* --- Texte réservé aux lecteurs d'écran --- */
 .sr-only {
     position: absolute !important;
@@ -7251,7 +5498,6 @@ article.pathology-content .cta-block .cta-alt a:focus-visible {
     white-space: nowrap;
     border: 0;
 }
-
 /* --- Titres de colonnes du méga-menu : <p class="mega-title"> (ex-<h3>) --- */
 .mega-col .mega-title {
     font-size: 0.75rem;
@@ -7282,7 +5528,6 @@ article.pathology-content .cta-block .cta-alt a:focus-visible {
     transition: transform 0.2s;
 }
 .mega-col .mega-title a:hover::after { transform: translateX(3px); }
-
 /* --- Bouton menu : 44 × 44 px (ex-40), barres recentrées --- */
 header.site-header .mobile-toggle {
     width: 44px;
@@ -7298,7 +5543,6 @@ header.site-header .mobile-toggle span:nth-child(3) { top: 27px; }
 /* .menu-open doublé : égale la spécificité de body.v4.menu-open … (règle d'origine), l'ordre fait le reste */
 body.menu-open.menu-open header.site-header .mobile-toggle span:nth-child(1),
 body.menu-open.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 21px; }
-
 /* --- Tiroir mobile : cibles ≥ 44 px --- */
 body.menu-open nav.main-nav .mega-list a,
 body.menu-open nav.main-nav .mega-footer-link {
@@ -7309,7 +5553,6 @@ body.menu-open nav.main-nav .mega-footer-link {
 body.menu-open nav.main-nav .mega-col .mega-title a {
     min-height: 44px;
 }
-
 /* --- Liens dans un bloc de texte : soulignés (fil d'Ariane, pied de page) --- */
 .page-header .breadcrumb-mini a,
 footer p a {
@@ -7322,7 +5565,6 @@ footer p a {
 footer p a:hover {
     text-decoration-color: currentColor;
 }
-
 /* --- Tableaux : défilement horizontal sur petit écran, sans casser la sémantique --- */
 .table-scroll {
     max-width: 100%;
@@ -7334,12 +5576,10 @@ footer p a:hover {
     margin: 0;
     min-width: 100%;
 }
-
 /* --- /pathologies : sous-titres des fiches (ex-sable 1,96:1) --- */
 body.page-pathologies .pathology-body h3 {
     color: var(--sable-fonce);
 }
-
 /* --- <main> englobe l'en-tête de page : le retrait de 50 px passe de <main> au conteneur --- */
 main.main-with-header {
     padding-top: 0;
@@ -7347,7 +5587,6 @@ main.main-with-header {
 main.main-with-header > header.page-header + .container {
     padding-top: 50px;
 }
-
 /* --- Très petits écrans : mots longs dans les titres, cartes piliers --- */
 header.page-header h1,
 article.pathology-content h1,
