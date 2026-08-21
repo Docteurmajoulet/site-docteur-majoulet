@@ -3945,7 +3945,7 @@ body.m5.menu-open nav.main-nav {
 }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
 :where(body.m6) nav.main-nav {
     display: none;
 }
@@ -4368,7 +4368,7 @@ body.m8.menu-open nav.main-nav {
 }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
 :where(body.m9) nav.main-nav {
     display: none;
 }
@@ -4459,7 +4459,7 @@ body.m9.menu-open nav.main-nav {
 }
 }
 
-@media (max-width: 980px) {
+@media (max-width: 1024px) {
 :where(body.m10) nav.main-nav {
     display: none;
 }
@@ -7227,4 +7227,140 @@ article.pathology-content .cta-block .cta-alt a:focus-visible {
     article.pathology-content .cta-block .btn-ghost .lbl-more {
         display: none;
     }
+}
+
+/* ============================================================
+   A11Y-2026-08-21 — Lot a11y structurelle (21/08/2026)
+   sr-only · titres du méga-menu en <p.mega-title> (plus de H3
+   avant le H1) · <main> englobe l'en-tête de page (un seul
+   banner) · cibles tactiles 44 px (toggle, tiroir) · liens
+   soulignés dans le fil d'Ariane et le pied de page · tableaux
+   défilants · contraste /pathologies · bascule menu 1024 px.
+   Marqueur d'idempotence : A11Y-2026-08-21 (ne pas réutiliser).
+   ============================================================ */
+
+/* --- Texte réservé aux lecteurs d'écran --- */
+.sr-only {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* --- Titres de colonnes du méga-menu : <p class="mega-title"> (ex-<h3>) --- */
+.mega-col .mega-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: var(--prusse);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    padding-bottom: 10px;
+    margin: 0 0 12px;
+    border-bottom: 2px solid var(--sable);
+}
+.mega-col .mega-title:not(:first-child) { margin-top: 18px; }
+.mega-col .mega-title a {
+    color: var(--prusse);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 24px;
+    padding: 2px 0;
+    text-decoration: none;
+}
+.mega-col .mega-title a:hover { color: var(--prusse-light); }
+.mega-col .mega-title a::after {
+    content: "→";
+    font-size: 0.8rem;
+    opacity: 0.6;
+    transition: transform 0.2s;
+}
+.mega-col .mega-title a:hover::after { transform: translateX(3px); }
+
+/* --- Bouton menu : 44 × 44 px (ex-40), barres recentrées --- */
+header.site-header .mobile-toggle {
+    width: 44px;
+    height: 44px;
+}
+header.site-header .mobile-toggle span {
+    left: 10px;
+    right: 10px;
+}
+header.site-header .mobile-toggle span:nth-child(1) { top: 15px; }
+header.site-header .mobile-toggle span:nth-child(2) { top: 21px; }
+header.site-header .mobile-toggle span:nth-child(3) { top: 27px; }
+/* .menu-open doublé : égale la spécificité de body.v4.menu-open … (règle d'origine), l'ordre fait le reste */
+body.menu-open.menu-open header.site-header .mobile-toggle span:nth-child(1),
+body.menu-open.menu-open header.site-header .mobile-toggle span:nth-child(3) { top: 21px; }
+
+/* --- Tiroir mobile : cibles ≥ 44 px --- */
+body.menu-open nav.main-nav .mega-list a,
+body.menu-open nav.main-nav .mega-footer-link {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+}
+body.menu-open nav.main-nav .mega-col .mega-title a {
+    min-height: 44px;
+}
+
+/* --- Liens dans un bloc de texte : soulignés (fil d'Ariane, pied de page) --- */
+.page-header .breadcrumb-mini a,
+footer p a {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(249, 247, 242, 0.55);
+}
+.page-header .breadcrumb-mini a:hover,
+footer p a:hover {
+    text-decoration-color: currentColor;
+}
+
+/* --- Tableaux : défilement horizontal sur petit écran, sans casser la sémantique --- */
+.table-scroll {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 24px 0;
+}
+.table-scroll > table {
+    margin: 0;
+    min-width: 100%;
+}
+
+/* --- /pathologies : sous-titres des fiches (ex-sable 1,96:1) --- */
+body.page-pathologies .pathology-body h3 {
+    color: var(--sable-fonce);
+}
+
+/* --- <main> englobe l'en-tête de page : le retrait de 50 px passe de <main> au conteneur --- */
+main.main-with-header {
+    padding-top: 0;
+}
+main.main-with-header > header.page-header + .container {
+    padding-top: 50px;
+}
+
+/* --- Très petits écrans : mots longs dans les titres, cartes piliers --- */
+header.page-header h1,
+article.pathology-content h1,
+article.pathology-content h2,
+article.pathology-content h3,
+article.pathology-content p,
+article.pathology-content li {
+    overflow-wrap: anywhere;
+}
+.pillar-cards {
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+}
+.table-scroll:focus-visible {
+    outline: 2px solid var(--cuivre-rdv-deep);
+    outline-offset: 2px;
 }

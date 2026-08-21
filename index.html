@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260821a">
+    <link rel="stylesheet" href="/main.css?v=20260821b">
     <title>Dr Alexandre Majoulet — Ophtalmologue & Rétinologue Boulogne</title>
     <meta name="description" content="Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt : rétine, DMLA, cataracte, glaucome. Cabinet Ophtalife. Prenez RDV.">
     <meta name="keywords" content="ophtalmologue Boulogne-Billancourt, rétinologue, chirurgie rétine, DMLA, cataracte, décollement de rétine, injection intravitréenne, Dr Majoulet, Ophtalife">
@@ -273,19 +273,19 @@
         <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
             <div class="drawer-actions">
                 <a class="drawer-tel" href="tel:+33184191166"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> 01 84 19 11 66</a>
-                <a class="drawer-rdv" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous</a>
+                <a class="drawer-rdv" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous<span class="sr-only"> (nouvelle fenêtre)</span></a>
                 <p class="drawer-horaires">Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h</p>
             </div>
             <ul class="nav-list" role="list">
                 <li class="nav-item nav-item--compact" data-megamenu>
-                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-dmla">
+                    <button class="nav-link" aria-expanded="false" aria-controls="mega-dmla">
                         DMLA
                         <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
-                    <div class="mega-panel mega-panel--compact" id="mega-dmla" role="menu">
+                    <div class="mega-panel mega-panel--compact" id="mega-dmla">
                         <div class="mega-grid-dmla">
                             <div class="mega-col">
-                                <h3><a href="/dmla">DMLA</a></h3>
+                                <p class="mega-title"><a href="/dmla">DMLA</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/dmla">Comprendre la DMLA : formes, symptômes, traitements</a></li>
                                     <li><a href="/dmla-seche">DMLA sèche (atrophique)</a></li>
@@ -297,14 +297,14 @@
                     </div>
                 </li>
                 <li class="nav-item" data-megamenu>
-                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-chirurgies">
+                    <button class="nav-link" aria-expanded="false" aria-controls="mega-chirurgies">
                         Chirurgies
                         <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
-                    <div class="mega-panel" id="mega-chirurgies" role="menu">
+                    <div class="mega-panel" id="mega-chirurgies">
                         <div class="mega-grid-chir3">
                             <div class="mega-col">
-                                <h3><a href="/chirurgie-retine">Chirurgie de la rétine</a></h3>
+                                <p class="mega-title"><a href="/chirurgie-retine">Chirurgie de la rétine</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/vitrectomie">Vitrectomie 25G / 27G</a></li>
                                     <li><a href="/decollement-retine">Décollement de rétine</a></li>
@@ -322,7 +322,7 @@
                                 </ul>
                             </div>
                             <div class="mega-col">
-                                <h3><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></h3>
+                                <p class="mega-title"><a href="/chirurgie-cataracte">Chirurgie de la cataracte</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/cataracte">La cataracte : quand opérer ?</a></li>
                                     <li><a href="/chirurgie-cataracte">L'opération (phacoémulsification)</a></li>
@@ -333,7 +333,7 @@
                                 </ul>
                             </div>
                             <div class="mega-col">
-                                <h3>Lasers médicaux &amp; injections</h3>
+                                <p class="mega-title">Lasers médicaux &amp; injections</p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
                                     <li><a href="/photocoagulation-laser">Photocoagulation laser (PPR, laser focal)</a></li>
@@ -347,20 +347,20 @@
                                 </ul>
                             </div>
                             <div class="mega-col col-associes mega-col-associes">
-                                <p class="associes-line"><strong>Chez mes associés du Cabinet Ophtalife :</strong> chirurgie des paupières (ptose, ectropion, blépharoplastie, voies lacrymales) — <a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Dr Léo Prudhomme</a> &middot; chirurgie réfractive (LASIK, PKR, SMILE, ICL) — <a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Dr Alexandre Hage</a></p>
+                                <p class="associes-line"><strong>Chez mes associés du Cabinet Ophtalife :</strong> chirurgie des paupières (ptose, ectropion, blépharoplastie, voies lacrymales) — <a href="https://drleoprudhomme.com/" target="_blank" rel="noopener" class="external">Dr Léo Prudhomme<span class="sr-only"> (nouvelle fenêtre)</span></a> &middot; chirurgie réfractive (LASIK, PKR, SMILE, ICL) — <a href="https://www.ophtahage.com/" target="_blank" rel="noopener" class="external">Dr Alexandre Hage<span class="sr-only"> (nouvelle fenêtre)</span></a></p>
                             </div>
                         </div>
                     </div>
                 </li>
                 <li class="nav-item" data-megamenu>
-                    <button class="nav-link" aria-haspopup="true" aria-expanded="false" aria-controls="mega-pathologies">
+                    <button class="nav-link" aria-expanded="false" aria-controls="mega-pathologies">
                         Autres pathologies
                         <svg class="caret" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M2 4 L5 7 L8 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
                     </button>
-                    <div class="mega-panel" id="mega-pathologies" role="menu">
+                    <div class="mega-panel" id="mega-pathologies">
                         <div class="mega-grid-autres">
                             <div class="mega-col">
-                                <h3><a href="/pathologies#retine-medicale">Rétine médicale</a></h3>
+                                <p class="mega-title"><a href="/pathologies#retine-medicale">Rétine médicale</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/retinopathie-diabetique">Rétinopathie diabétique</a></li>
                                     <li><a href="/occlusions-veineuses">Occlusions veineuses rétiniennes</a></li>
@@ -374,13 +374,13 @@
                                 </ul>
                             </div>
                             <div class="mega-col">
-                                <h3><a href="/glaucome">Glaucome</a></h3>
+                                <p class="mega-title"><a href="/glaucome">Glaucome</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/glaucome">Glaucome chronique</a></li>
                                     <li><a href="/glaucome#hto">Hypertension oculaire</a></li>
                                     <li><a href="/glaucome#laser">Traitements : laser et chirurgie</a></li>
                                 </ul>
-                                <h3><a href="/secheresse-oculaire">Surface oculaire</a></h3>
+                                <p class="mega-title"><a href="/secheresse-oculaire">Surface oculaire</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/secheresse-oculaire">Sécheresse oculaire</a></li>
                                     <li><a href="/secheresse-oculaire#blepharite">Blépharite</a></li>
@@ -389,7 +389,7 @@
                                 </ul>
                             </div>
                             <div class="mega-col">
-                                <h3><a href="/suivi-corrections-optiques">Vue &amp; corrections optiques</a></h3>
+                                <p class="mega-title"><a href="/suivi-corrections-optiques">Vue &amp; corrections optiques</a></p>
                                 <ul class="mega-list" role="list">
                                     <li><a href="/suivi-corrections-optiques#bilan">Bilan ophtalmologique</a></li>
                                     <li><a href="/myopie">Myopie</a></li>
@@ -414,7 +414,7 @@
                 <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
-                <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous</a>
+                <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="nav-cta desktop">Prendre rendez-vous<span class="sr-only"> (nouvelle fenêtre)</span></a>
         <button class="mobile-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span></button>
     </div>
 </header>
@@ -441,7 +441,7 @@
                     <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-primary">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                         Prendre rendez-vous
-                    </a>
+                    <span class="sr-only"> (nouvelle fenêtre)</span></a>
                     <a href="#specialites" class="btn-outline">En savoir plus</a>
                 </div>
                 <p class="hero-note">Urgences rétiniennes : créneaux dédiés sous 24-48&nbsp;h via Doctolib ou au <a href="tel:+33184191166" style="color:inherit;">01 84 19 11 66</a>.</p>
@@ -480,7 +480,7 @@
             <a class="trust-card urgence" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">
                 <div class="tc-title">RDV rapide</div>
                 <div class="tc-text">Créneaux d'urgence rétinienne sous 24-48&nbsp;h (voile noir, éclairs, corps flottants)</div>
-            </a>
+            <span class="sr-only"> (nouvelle fenêtre)</span></a>
         </div>
     </div>
 </section>
@@ -683,7 +683,7 @@
                         <dt><svg class="cv12-ico" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Adresse</dt>
                         <dd>
                             <p class="cv12-strong">37 rue d'Aguesseau<br>92100 Boulogne-Billancourt</p>
-                            <a class="cv12-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=37+rue+d'Aguesseau+92100+Boulogne-Billancourt" target="_blank" rel="noopener">Itinéraire <svg class="cv12-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></a>
+                            <a class="cv12-link" href="https://www.google.com/maps/dir/?api=1&amp;destination=37+rue+d'Aguesseau+92100+Boulogne-Billancourt" target="_blank" rel="noopener">Itinéraire <svg class="cv12-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg><span class="sr-only"> (nouvelle fenêtre)</span></a>
                         </dd>
                     </div>
                     <div class="cv12-row">
@@ -723,7 +723,7 @@
                     <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-doctolib">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
                         <span>Prendre rendez-vous<span class="cv12-btn-more">&nbsp;sur Doctolib</span></span>
-                    </a>
+                    <span class="sr-only"> (nouvelle fenêtre)</span></a>
                     <p class="cv12-action-note">En ligne ou par téléphone · <a href="/urgences-ophtalmologiques">Urgence rétinienne : créneau sous 24-48&nbsp;h</a></p>
                 </div>
             </div>
@@ -737,7 +737,7 @@
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <p class="cv12-map-note"><a href="https://www.google.com/maps/place/?q=place_id:ChIJJ2pdc01gamsRjxCY0-gYVWg" target="_blank" rel="noopener">Ouvrir dans Google Maps <svg class="cv12-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></a></p>
+                <p class="cv12-map-note"><a href="https://www.google.com/maps/place/?q=place_id:ChIJJ2pdc01gamsRjxCY0-gYVWg" target="_blank" rel="noopener">Ouvrir dans Google Maps <svg class="cv12-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg><span class="sr-only"> (nouvelle fenêtre)</span></a></p>
             </div>
         </div>
     </div>
@@ -748,7 +748,7 @@
 <!-- ===== FOOTER ===== -->
 <footer role="contentinfo">
     <div class="container">
-        <p>&copy; 2026 Dr Alexandre Majoulet — Chirurgien Ophtalmologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife</a> &middot; 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/urgences-ophtalmologiques">Urgences (créneau sous 24-48&nbsp;h)</a></p>
+        <p>&copy; 2026 Dr Alexandre Majoulet — Chirurgien Ophtalmologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife<span class="sr-only"> (nouvelle fenêtre)</span></a> &middot; 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/urgences-ophtalmologiques">Urgences (créneau sous 24-48&nbsp;h)</a></p>
         <p class="footer-meta" style="margin-top:8px;font-size:0.78rem;">Dernière mise à jour : <time datetime="2026-07-30">30 juillet 2026</time></p>
     </div>
 </footer>
@@ -793,7 +793,7 @@
 
 <div class="sticky-rdv">
     <a class="sticky-tel" href="tel:+33184191166" aria-label="Appeler le cabinet — 01 84 19 11 66"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <span class="lbl">Appeler</span></a>
-    <a class="sticky-doctolib" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous</a>
+    <a class="sticky-doctolib" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous<span class="sr-only"> (nouvelle fenêtre)</span></a>
 </div>
 
 </body>
