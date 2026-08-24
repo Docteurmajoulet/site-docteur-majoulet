@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260824b">
+    <link rel="stylesheet" href="/main.css?v=20260824c">
     <title>Pathologies prises en charge | Dr Majoulet, Boulogne</title>
     <meta name="description" content="Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome, cornée. Fiches détaillées. RDV.">
     <meta name="keywords" content="DMLA, cataracte, décollement de rétine, glaucome, membrane épirétinienne, trou maculaire, occlusion veineuse rétinienne, ophtalmologue Boulogne-Billancourt, Dr Majoulet">
@@ -44,7 +44,7 @@
         "@context": "https://schema.org",
         "@type": "MedicalWebPage",
         "name": "Pathologies ophtalmologiques — Dr Alexandre Majoulet",
-        "description": "Vue d'ensemble des pathologies prises en charge : rétine médicale et chirurgicale, cataracte, glaucome, cornée et surface oculaire.",
+        "description": "Annuaire des pathologies prises en charge : DMLA, chirurgie de la rétine et de la cataracte, rétine médicale, glaucome, surface oculaire, vue de l'enfant — signes d'alerte et accès direct aux fiches.",
         "url": "https://docteurmajoulet.com/pathologies",
         "author": {
             "@type": "Physician",
@@ -65,7 +65,7 @@
             {"@type": "MedicalCondition", "name": "Hémorragie intravitréenne"}
         ],
         "specialty": {"@type": "MedicalSpecialty", "name": "Ophthalmology"},
-        "lastReviewed": "2026-08-20"
+        "lastReviewed": "2026-08-24"
     }
     </script>
 
@@ -263,407 +263,276 @@
 <!-- ===== EN-TÊTE ===== -->
 <header class="page-header">
     <div class="container">
-        <div class="section-label">Ophtalmologie</div>
+        <nav class="breadcrumb-mini" aria-label="Fil d'Ariane">
+            <a href="/">Accueil</a> &nbsp;›&nbsp;
+            Pathologies
+        </nav>
         <h1>Pathologies prises en charge</h1>
-        <p>Le cœur de l'activité du Dr Majoulet : la DMLA, la chirurgie de la rétine et de la cataracte. Retrouvez ici l'ensemble des prises en charge du Cabinet Ophtalife, organisées comme le menu du site, avec un accès direct aux fiches détaillées.</p>
+        <p>Retrouvez votre pathologie, ou commencez par vos symptômes. Le cœur de l'activité du Dr Majoulet : la DMLA, la chirurgie de la rétine et de la cataracte — et l'ensemble des prises en charge du Cabinet Ophtalife, avec un accès direct à chaque fiche.</p>
     </div>
 </header>
 
-<!-- ===== NAVIGATION RAPIDE ===== -->
-<section style="background: var(--blanc); padding: 40px 0;">
-    <div class="container" style="display: flex; gap: 40px; justify-content: center; flex-wrap: wrap;">
-        <a href="#groupe-dmla" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--prusse); border-bottom: 2px solid var(--bleu-gris); padding-bottom: 6px;">DMLA</a>
-        <a href="#retine-chirurgicale" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--prusse); border-bottom: 2px solid var(--sable); padding-bottom: 6px;">Chirurgies</a>
-        <a href="#autres-prises-en-charge" style="font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--prusse); border-bottom: 2px solid var(--vert-gris); padding-bottom: 6px;">Autres pathologies</a>
-    </div>
-</section>
+<div class="container hub">
 
-<!-- ============================================================ -->
-<!-- ===== GROUPE 1 : DMLA ===== -->
-<!-- ============================================================ -->
-<section style="background: var(--blanc); padding: 50px 0 20px;" id="groupe-dmla">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 40px;" class="fade-in">
-            <div class="section-label" style="border-color: var(--bleu-gris); color: var(--text-muted);">Rétine médicale</div>
-            <h2>DMLA</h2>
-            <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; max-width: 650px; margin: 12px auto 0;">Première cause de malvoyance après 50 ans dans les pays industrialisés. Dépistage, suivi OCT le jour même et injections intravitréennes en salle dédiée, au cabinet.</p>
-        </div>
-    </div>
-</section>
+    <!-- ===== SIGNES D'ALERTE ===== -->
+    <section class="alert-urgence alert-urgence--niveaux hub-alert" aria-labelledby="hub-alert-title">
+        <h2 id="hub-alert-title" class="hub-alert-title">Signes d'alerte : quand consulter ?</h2>
+        <p class="alert-niveau">
+            <strong>Voile noir, rideau ou baisse brutale de la vision :</strong>
+            à examiner <strong>le jour même</strong> — aux heures d'ouverture, appelez le cabinet ; en dehors,
+            rendez-vous sans attendre dans un service d'urgences ophtalmologiques hospitalier, ouvert 24h/24.
+        </p>
+        <p class="alert-niveau">
+            <strong>Éclairs lumineux ou corps flottants récents, sans voile :</strong>
+            fond d'œil dilaté <strong>sous 24 à 48 h</strong> — prenez un créneau urgence.
+        </p>
+        <p class="alert-actions">
+            <a class="btn-alert-tel" href="tel:+33184191166"><svg class="ico" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler le cabinet<span class="num"> — 01 84 19 11 66</span></a>
+            <a class="btn-alert-rdv" href="/urgences-ophtalmologiques">Urgences : conduite à tenir</a>
+        </p>
+        <p class="alert-horaires">Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. Fiches : <a href="/baisse-brutale-vision">baisse brutale de la vision</a>, <a href="/flashs-phosphenes-myodesopsies">flashs, phosphènes et corps flottants</a>, <a href="/decollement-retine">décollement de rétine</a>.</p>
+    </section>
 
-<!-- 1. DMLA -->
-<section class="pathologies-section" id="dmla">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Dégénérescence maculaire liée à l'âge (DMLA)</h2>
-                <p>La DMLA est une maladie dégénérative de la rétine qui atteint la macula, zone centrale responsable de la vision fine (lecture, reconnaissance des visages). Elle touche principalement les personnes de plus de 50 ans et constitue la première cause de malvoyance dans les pays industrialisés.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">IVT anti-VEGF</span>
-                    <span class="pathology-tag">OCT</span>
-                    <span class="pathology-tag">Suivi régulier</span>
-                    <a href="/dmla" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    <!-- ===== SOMMAIRE ===== -->
+    <nav class="hub-nav" aria-label="Sommaire de la page">
+        <a href="#groupe-dmla">DMLA</a>
+        <a href="#retine-chirurgicale">Chirurgies</a>
+        <a href="#autres-prises-en-charge">Autres pathologies</a>
+    </nav>
+
+    <!-- ===== GROUPE 1 : DMLA ===== -->
+    <section class="hub-group" id="groupe-dmla" aria-labelledby="hub-h-dmla">
+        <h2 id="hub-h-dmla">DMLA</h2>
+        <p class="hub-intro">Première cause de malvoyance après 50 ans dans les pays industrialisés. Dépistage, suivi OCT le jour même et injections intravitréennes en salle dédiée, au cabinet.</p>
+        <div class="hub-grid hub-grid--4" id="dmla">
+            <a class="hub-card" href="/dmla">
+                <div class="hub-card-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h3>Dégénérescence maculaire liée à l'âge (DMLA)</h3>
+                    <p>Atteinte de la macula (lecture, visages). Formes sèche et humide, injections anti-VEGF, suivi OCT.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
                 </div>
-            </div>
+            </a>
+            <a class="hub-card" href="/dmla-seche">
+                <div class="hub-card-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h3>DMLA sèche (atrophique)</h3>
+                    <p>Forme lente, la plus fréquente : surveillance, grille d'Amsler, compléments selon le stade.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/injection-intravitreenne">
+                <div class="hub-card-icon"><picture><source srcset="Injections.webp" type="image/webp"><img src="Injections.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h3>Injections intravitréennes (IVT)</h3>
+                    <p>Injection d'anti-VEGF ou de corticoïdes, en salle dédiée au cabinet : déroulement, suites, précautions.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/grille-amsler">
+                <div class="hub-card-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h3>Grille d'Amsler</h3>
+                    <p>Test d'autosurveillance à imprimer : lignes qui ondulent, tache centrale, quand consulter.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
         </div>
-    </div>
-</section>
+        <div class="hub-cta">
+            <h3>Suivi DMLA au cabinet</h3>
+            <p>OCT le jour même, injections en salle dédiée, consultation spécialisée rétine à Boulogne-Billancourt.</p>
+            <a class="btn-rdv" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous<span class="btn-more">sur Doctolib</span><span class="sr-only"> (nouvelle fenêtre)</span></a>
+            <p class="cta-alt">Ou par téléphone, aux horaires du cabinet : <a href="tel:+33184191166">01 84 19 11 66</a></p>
+        </div>
+    </section>
 
-<!-- DMLA : fiches satellites -->
-<section style="background: var(--blanc); padding: 0 0 50px;">
-    <div class="container">
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:32px;" class="fade-in">
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Le cluster DMLA</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/dmla">DMLA : formes, symptômes, traitements</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/dmla-seche">DMLA sèche (atrophique)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/injection-intravitreenne">Injections intravitréennes (anti-VEGF)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/grille-amsler">Grille d'Amsler (autosurveillance)</a></li>
+    <!-- ===== GROUPE 2 : CHIRURGIES ===== -->
+    <section class="hub-group" id="retine-chirurgicale" aria-labelledby="hub-h-chir">
+        <h2 id="hub-h-chir">Chirurgies</h2>
+        <p class="hub-intro">Chirurgie vitréo-rétinienne (vitrectomie, indentation, pelage de membrane) et chirurgie de la cataracte avec implants personnalisés, à la Clinique Jouvenet (Paris 16<sup>e</sup>) ; lasers médicaux et injections au cabinet.</p>
+
+        <h3 class="hub-sub">Chirurgie de la rétine</h3>
+        <div class="hub-grid">
+            <a class="hub-card" href="/decollement-retine" id="decollement-retine">
+                <div class="hub-card-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h4>Décollement de rétine</h4>
+                    <p>Urgence chirurgicale (voile noir, rideau). Vitrectomie ou indentation sclérale, tamponnement par gaz.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/membrane-epiretinienne" id="membrane-epiretinienne">
+                <div class="hub-card-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h4>Membrane épirétinienne</h4>
+                    <p>« Cellophane maculaire » qui déforme la vision centrale. Vitrectomie avec pelage de membrane, en ambulatoire.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/trou-maculaire" id="trou-maculaire">
+                <div class="hub-card-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h4>Trou maculaire</h4>
+                    <p>Ouverture au centre de la macula par traction du vitré. Vitrectomie, gaz et positionnement.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/hemorragie-intravitreenne" id="hemorragie-intravitreenne">
+                <div class="hub-card-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h4>Hémorragie intravitréenne</h4>
+                    <p>Saignement dans le vitré (diabète, déchirure, occlusion veineuse). Échographie, surveillance ou vitrectomie.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/luxation-cristallin-implant" id="luxation-cristallin">
+                <div class="hub-card-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h4>Luxation du cristallin ou de l'implant</h4>
+                    <p>Cristallin ou implant déplacé : vitrectomie puis implant fixé à l'iris (Artisan) ou à la sclère (Carlevale).</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+            <a class="hub-card" href="/vitrectomie">
+                <div class="hub-card-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                <div class="hub-card-body">
+                    <h4>Vitrectomie 25G / 27G</h4>
+                    <p>L'intervention commune à ces chirurgies : micro-incisions sans suture, anesthésie, suites, reprise des activités.</p>
+                    <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                </div>
+            </a>
+        </div>
+
+        <div class="hub-lists">
+            <div class="hub-list">
+                <h3 class="hub-sub">Rétine : autour de la chirurgie</h3>
+                <ul>
+                    <li><a href="/chirurgie-retine">Chirurgie de la rétine : vue d'ensemble</a></li>
+                    <li><a href="/dechirure-retine-corps-flottants">Déchirure de rétine et corps flottants</a></li>
+                    <li><a href="/decollement-posterieur-vitre">Décollement postérieur du vitré</a></li>
+                    <li><a href="/decollement-retine#traitement-chirurgical">Chirurgie du décollement de rétine</a></li>
                 </ul>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- ===== GROUPE 2 : CHIRURGIES ===== -->
-<!-- ============================================================ -->
-<section style="background: var(--prusse); padding: 50px 0 20px;" id="retine-chirurgicale">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 40px;" class="fade-in">
-            <div class="section-label" style="border-color: var(--sable); color: var(--sable);">Rétine, cataracte, lasers</div>
-            <h2 style="color: var(--blanc-naturel);">Chirurgies</h2>
-            <p style="color: rgba(249,247,242,0.55); font-size: 0.95rem; font-weight: 300; max-width: 650px; margin: 12px auto 0;">Les interventions pratiquées par le Dr Majoulet : chirurgie vitréo-rétinienne (vitrectomie, indentation, pelage de membrane), chirurgie de la cataracte avec implants personnalisés, lasers médicaux et injections.</p>
-        </div>
-    </div>
-</section>
-
-<!-- 1. Décollement de rétine -->
-<section class="pathologies-section" id="decollement-retine">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Décollement de rétine</h2>
-                <p>Le décollement de rétine est une urgence ophtalmologique. Il se produit lorsque la rétine neurosensorielle se sépare de l'épithélium pigmentaire sous-jacent, le plus souvent suite à une déchirure rétinienne à travers laquelle le liquide vitréen s'infiltre sous la rétine (décollement rhegmatogène). Sans traitement, il conduit à une perte de vision définitive.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">Urgence</span>
-                    <span class="pathology-tag">Vitrectomie</span>
-                    <span class="pathology-tag">Indentation sclérale</span>
-                    <span class="pathology-tag">Tamponnement</span>
-                    <a href="/decollement-retine" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
+            <div class="hub-list">
+                <h3 class="hub-sub">Chirurgie de la cataracte</h3>
+                <ul>
+                    <li><a href="/cataracte">Cataracte : quand opérer ?</a></li>
+                    <li><a href="/chirurgie-cataracte">L'opération (phacoémulsification)</a></li>
+                    <li><a href="/implants-monofocaux">Implants monofocaux</a></li>
+                    <li><a href="/implants-toriques">Implants toriques (astigmatisme)</a></li>
+                    <li><a href="/implants-multifocaux">Implants multifocaux et EDOF</a></li>
+                    <li><a href="/cataracte-secondaire-laser-yag">Cataracte secondaire (laser YAG)</a></li>
+                </ul>
             </div>
-        </div>
-    </div>
-</section>
-
-<!-- 2. Membrane épirétinienne -->
-<section class="pathologies-section" id="membrane-epiretinienne">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Membrane épirétinienne</h2>
-                <p>La membrane épirétinienne (MER), aussi appelée « cellophane maculaire » ou « pucker maculaire », est une fine membrane fibreuse qui se développe à la surface de la rétine au niveau de la macula. En se contractant, elle déforme la rétine sous-jacente et altère la vision centrale.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">Vitrectomie</span>
-                    <span class="pathology-tag">Pelage de membrane</span>
-                    <span class="pathology-tag">Ambulatoire</span>
-                    <a href="/membrane-epiretinienne" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 3. Trou maculaire -->
-<section class="pathologies-section" id="trou-maculaire">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Trou maculaire</h2>
-                <p>Le trou maculaire est une ouverture de pleine épaisseur au centre de la macula (fovéa). Il résulte le plus souvent de tractions vitréo-maculaires qui finissent par rompre le tissu rétinien. Il touche principalement les femmes après 60 ans.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">Vitrectomie</span>
-                    <span class="pathology-tag">Tamponnement gaz</span>
-                    <span class="pathology-tag">Positionnement</span>
-                    <a href="/trou-maculaire" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 4. Hémorragie intravitréenne -->
-<section class="pathologies-section" id="hemorragie-intravitreenne">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Chirurgie-Retine.webp" type="image/webp"><img src="Chirurgie-Retine.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Hémorragie intravitréenne</h2>
-                <p>L'hémorragie intravitréenne (HIV) correspond à un saignement dans la cavité vitréenne. Les causes principales sont la rétinopathie diabétique proliférante, les déchirures rétiniennes, les occlusions veineuses rétiniennes, le décollement postérieur du vitré compliqué, et plus rarement la DMLA exsudative ou un traumatisme.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">Échographie B</span>
-                    <span class="pathology-tag">Vitrectomie</span>
-                    <span class="pathology-tag">Laser endoculaire</span>
-                    <a href="/hemorragie-intravitreenne" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 5. Luxation de cristallin / implant -->
-<section class="pathologies-section" id="luxation-cristallin">
-        <div class="container">
-            <div class="pathology-content fade-in">
-                <div class="pathology-icon"><picture><source srcset="Cataracte.webp" type="image/webp"><img src="Cataracte.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-                <div class="pathology-body">
-                    <h2>Luxation de cristallin et d'implant intraoculaire</h2>
-                    <p>La luxation correspond au déplacement du cristallin — ou de l'implant qui l'a remplacé après une chirurgie de la cataracte — par rupture partielle (subluxation) ou totale de son support. Traumatisme, syndrome pseudoexfoliatif, myopie forte ou luxation tardive du complexe sac-implant en sont les causes principales. La prise en charge est chirurgicale, par vitrectomie avec extraction puis fixation d'un implant à l'iris (type Artisan) ou à la sclère sans suture (type Carlevale).</p>
-                    <div class="pathology-cta">
-                        <span class="pathology-tag">Vitrectomie</span>
-                        <span class="pathology-tag">Implant Artisan</span>
-                        <span class="pathology-tag">Implant Carlevale</span>
-                        <a href="/luxation-cristallin-implant" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                    </div>
-                </div>
+            <div class="hub-list">
+                <h3 class="hub-sub">Lasers médicaux et injections</h3>
+                <ul>
+                    <li><a href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
+                    <li><a href="/photocoagulation-laser">Photocoagulation laser (PPR, focal)</a></li>
+                    <li><a href="/cataracte-secondaire-laser-yag">Capsulotomie au laser YAG</a></li>
+                    <li><a href="/glaucome#slt">Trabéculoplastie SLT</a></li>
+                    <li><a href="/glaucome#iridotomie">Iridotomie périphérique (YAG)</a></li>
+                    <li><a href="/glaucome#chirurgie">Chirurgie du glaucome</a></li>
+                </ul>
             </div>
         </div>
     </section>
 
-<!-- Chirurgies : cataracte, lasers & gestes -->
-<section style="background: var(--blanc); padding: 20px 0 60px;">
-    <div class="container">
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:32px;" class="fade-in">
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Chirurgie de la rétine</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/chirurgie-retine">Chirurgie de la rétine (vue d'ensemble)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/vitrectomie">Vitrectomie 25G / 27G</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/decollement-retine#traitement-chirurgical">Chirurgie du décollement de rétine</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/dechirure-retine-corps-flottants">Déchirure de rétine &amp; corps flottants</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/decollement-posterieur-vitre">Décollement postérieur du vitré</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Chirurgie de la cataracte</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/cataracte">Cataracte : quand opérer ?</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/chirurgie-cataracte">L'opération (phacoémulsification)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/implants-monofocaux">Implants monofocaux</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/implants-toriques">Implants toriques</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/implants-multifocaux">Implants multifocaux &amp; EDOF</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/cataracte-secondaire-laser-yag">Cataracte secondaire (laser YAG)</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Lasers médicaux &amp; injections</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/injection-intravitreenne">Injection intravitréenne (IVT)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/photocoagulation-laser">Photocoagulation laser (PPR, focal)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/cataracte-secondaire-laser-yag">Capsulotomie au laser YAG</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/glaucome#slt">Trabéculoplastie SLT</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/glaucome#iridotomie">Iridotomie périphérique (YAG)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/glaucome#chirurgie">Chirurgie du glaucome</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- ===== GROUPE 3 : AUTRES PATHOLOGIES ===== -->
+    <section class="hub-group" id="autres-prises-en-charge" aria-labelledby="hub-h-autres">
+        <h2 id="hub-h-autres">Autres pathologies</h2>
+        <p class="hub-intro">Rétine médicale, glaucome, surface oculaire, vue et suivi de l'enfant : les autres prises en charge du Dr Majoulet au Cabinet Ophtalife.</p>
 
-<!-- ============================================================ -->
-<!-- ===== GROUPE 3 : AUTRES PATHOLOGIES ===== -->
-<!-- ============================================================ -->
-<section style="background: var(--blanc); padding: 60px 0 10px;" id="autres-prises-en-charge">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 10px;" class="fade-in">
-            <div class="section-label" style="border-color: var(--vert-gris); color: var(--text-muted);">Vue d'ensemble</div>
-            <h2>Autres pathologies</h2>
-            <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; max-width: 650px; margin: 12px auto 0;">Rétine médicale, glaucome, surface oculaire, vue et suivi de l'enfant : les autres prises en charge du Dr Majoulet au Cabinet Ophtalife.</p>
-        </div>
-    </div>
-</section>
-
-<!-- ============================================================ -->
-<!-- ===== Sous-groupe : RÉTINE MÉDICALE ===== -->
-<!-- ============================================================ -->
-<section style="background: var(--blanc); padding: 30px 0 20px;" id="retine-medicale">
-    <div class="container">
-        <div style="text-align: center; margin-bottom: 40px;" class="fade-in">
-            <div class="section-label" style="border-color: var(--bleu-gris); color: var(--text-muted);">Prise en charge médicale</div>
-            <h2>Rétine médicale</h2>
-            <p style="color: var(--text-muted); font-size: 0.95rem; font-weight: 300; max-width: 650px; margin: 12px auto 0;">Pathologies rétiniennes prises en charge par traitements médicaux — injections intravitréennes, laser, surveillance au long cours — en dehors de la DMLA.</p>
-        </div>
-    </div>
-</section>
-
-<!-- 2. Rétinopathie diabétique -->
-<section class="pathologies-section" id="retinopathie-diabetique">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Diabete.webp" type="image/webp"><img src="Diabete.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Rétinopathie diabétique</h2>
-                <p>La rétinopathie diabétique est une complication microvasculaire du diabète (type 1 et type 2) qui atteint les vaisseaux de la rétine. C'est la première cause de cécité avant 50 ans dans les pays industrialisés. Sa survenue et sa sévérité sont directement liées à la durée du diabète et à l'équilibre glycémique.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">Dépistage annuel</span>
-                    <span class="pathology-tag">IVT anti-VEGF</span>
-                    <span class="pathology-tag">Laser PPR</span>
-                    <a href="/retinopathie-diabetique" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="hub-sub-group" id="retine-medicale">
+            <h3 class="hub-sub">Rétine médicale</h3>
+            <p class="hub-intro hub-intro--sub">Pathologies rétiniennes traitées par injections intravitréennes, laser ou surveillance au long cours, en dehors de la DMLA.</p>
+            <div class="hub-grid">
+                <a class="hub-card" href="/retinopathie-diabetique" id="retinopathie-diabetique">
+                    <div class="hub-card-icon"><picture><source srcset="Diabete.webp" type="image/webp"><img src="Diabete.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                    <div class="hub-card-body">
+                        <h4>Rétinopathie diabétique</h4>
+                        <p>Atteinte des vaisseaux de la rétine par le diabète. Dépistage annuel, injections anti-VEGF, laser.</p>
+                        <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <a class="hub-card" href="/occlusions-veineuses" id="occlusion-veineuse">
+                    <div class="hub-card-icon"><picture><source srcset="Diabete.webp" type="image/webp"><img src="Diabete.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                    <div class="hub-card-body">
+                        <h4>Occlusions veineuses rétiniennes</h4>
+                        <p>Veine de la rétine obstruée (OVCR, OBVR) : hémorragies, œdème. Injections, laser, bilan cardiovasculaire.</p>
+                        <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <a class="hub-card" href="/chorioretinopathie-sereuse-centrale" id="crsc">
+                    <div class="hub-card-icon"><picture><source srcset="Echographie-Oculaire.webp" type="image/webp"><img src="Echographie-Oculaire.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                    <div class="hub-card-body">
+                        <h4>Choriorétinopathie séreuse centrale (CRSC)</h4>
+                        <p>Décollement séreux de la macula (homme jeune, stress, corticoïdes). OCT, angiographie, laser ou PDT.</p>
+                        <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <a class="hub-card" href="/myopie-forte" id="myopie-forte">
+                    <div class="hub-card-icon"><picture><source srcset="Lentilles.webp" type="image/webp"><img src="Lentilles.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                    <div class="hub-card-body">
+                        <h4>Myopie forte et complications rétiniennes</h4>
+                        <p>Au-delà de −6 dioptries, une rétine étirée à surveiller chaque année ; laser préventif, injections si besoin.</p>
+                        <span class="hub-more">Lire la fiche<svg class="ico" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                    </div>
+                </a>
+                <div class="hub-card hub-card--static" id="uveites">
+                    <div class="hub-card-icon"><picture><source srcset="Surface-Oculaire.webp" type="image/webp"><img src="Surface-Oculaire.webp" alt="" width="30" height="30" loading="lazy" decoding="async"></picture></div>
+                    <div class="hub-card-body">
+                        <h4>Uvéites postérieures</h4>
+                        <p>Inflammations de la choroïde et de la rétine, infectieuses (toxoplasmose, herpès, tuberculose, syphilis) ou inflammatoires (sarcoïdose, Behçet). Baisse de vision, corps flottants, brouillard : bilan étiologique, traitement selon la cause, injections si œdème maculaire chronique.</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
 
-<!-- 3. Occlusions veineuses rétiniennes -->
-<section class="pathologies-section" id="occlusion-veineuse">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Diabete.webp" type="image/webp"><img src="Diabete.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Occlusions veineuses rétiniennes</h2>
-                <p>L'occlusion veineuse rétinienne (OVR) est une obstruction d'une veine de la rétine, provoquant un ralentissement du retour sanguin avec hémorragies rétiniennes et œdème. On distingue l'occlusion de la veine centrale de la rétine (OVCR) et l'occlusion de branche veineuse rétinienne (OBVR), cette dernière étant plus fréquente et de meilleur pronostic.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">IVT</span>
-                    <span class="pathology-tag">OCT</span>
-                    <span class="pathology-tag">Laser</span>
-                    <span class="pathology-tag">Bilan cardiovasculaire</span>
-                    <a href="/occlusions-veineuses" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 4. Choriorétinopathie séreuse centrale -->
-<section class="pathologies-section" id="crsc">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Choriorétinopathie séreuse centrale (CRSC)</h2>
-                <p>La CRSC est caractérisée par un décollement séreux localisé de la rétine neurosensorielle au niveau maculaire, lié à une hyperperméabilité de la choroïde. Elle touche typiquement l'homme jeune (30-50 ans) et est favorisée par le stress et la prise de corticoïdes.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">OCT</span>
-                    <span class="pathology-tag">Angiographie ICG</span>
-                    <span class="pathology-tag">PDT</span>
-                    <span class="pathology-tag">Laser micropulsé</span>
-                    <a href="/chorioretinopathie-sereuse-centrale" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 5. Myopie forte et complications rétiniennes -->
-<section class="pathologies-section" id="myopie-forte">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="DMLA.webp" type="image/webp"><img src="DMLA.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Myopie forte et complications rétiniennes</h2>
-                <p>La myopie forte (ou myopie pathologique) se définit par une longueur axiale supérieure à 26 mm ou une myopie dépassant -6 dioptries. L'allongement excessif du globe oculaire entraîne un étirement de la rétine et de la choroïde, favorisant de nombreuses complications rétiniennes au cours de la vie.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">IVT anti-VEGF</span>
-                    <span class="pathology-tag">OCT</span>
-                    <span class="pathology-tag">Laser préventif</span>
-                    <span class="pathology-tag">Surveillance annuelle</span>
-                    <a href="/myopie-forte" style="display:inline-block; font-weight:600; font-size:0.9rem; color: var(--prusse); text-decoration:none; border-bottom:2px solid var(--sable); padding-bottom:2px;">Lire la fiche complète<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- 6. Uvéites postérieures -->
-<section class="pathologies-section" id="uveites">
-    <div class="container">
-        <div class="pathology-content fade-in">
-            <div class="pathology-icon"><picture><source srcset="Surface-Oculaire.webp" type="image/webp"><img src="Surface-Oculaire.webp" alt="" width="44" height="44" loading="lazy" decoding="async"></picture></div>
-            <div class="pathology-body">
-                <h2>Uvéites postérieures</h2>
-                <h3>Définition</h3>
-                <p>Les uvéites postérieures sont des inflammations intraoculaires touchant la choroïde et/ou la rétine. Elles peuvent être d'origine infectieuse (toxoplasmose, herpès, tuberculose, syphilis) ou inflammatoire (sarcoïdose, maladie de Behçet, maladie de Vogt-Koyanagi-Harada). Elles nécessitent un bilan étiologique rigoureux.</p>
-                <h3>Symptômes</h3>
-                <p>Baisse de vision, myodésopsies (corps flottants), brouillard visuel. L'atteinte peut être unilatérale ou bilatérale. Les récidives sont fréquentes et les complications (œdème maculaire, cataracte, glaucome secondaire) peuvent compromettre le pronostic visuel.</p>
-                <h3>Prise en charge</h3>
-                <p>Le bilan étiologique associe examens ophtalmologiques (fond d'œil, OCT, angiographie) et bilan systémique. Le traitement dépend de la cause : anti-infectieux en cas d'origine microbienne, corticothérapie et/ou immunosuppresseurs pour les formes inflammatoires. L'œdème maculaire chronique peut nécessiter des injections intravitréennes.</p>
-                <div class="pathology-cta">
-                    <span class="pathology-tag">Bilan étiologique</span>
-                    <span class="pathology-tag">Corticothérapie</span>
-                    <span class="pathology-tag">IVT</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Répertoire : autres fiches -->
-<section style="background: var(--blanc); padding: 30px 0 70px;">
-    <div class="container">
-        <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:32px;" class="fade-in">
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Rétine — autres fiches</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/occlusion-artere-centrale-retine">Occlusion de l'artère centrale (OACR)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/oedeme-maculaire-cystoide">Œdème maculaire cystoïde</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/neovaisseaux-choroidiens-myope-fort">Néovaisseaux du myope fort</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/retinite-pigmentaire">Rétinite pigmentaire</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/suivi-diabete-hta">Suivi diabète &amp; HTA</a></li>
+        <div class="hub-lists">
+            <div class="hub-list">
+                <h3 class="hub-sub">Rétine : autres fiches</h3>
+                <ul>
+                    <li><a href="/occlusion-artere-centrale-retine">Occlusion de l'artère centrale (OACR)</a></li>
+                    <li><a href="/oedeme-maculaire-cystoide">Œdème maculaire cystoïde</a></li>
+                    <li><a href="/neovaisseaux-choroidiens-myope-fort">Néovaisseaux du myope fort</a></li>
+                    <li><a href="/retinite-pigmentaire">Rétinite pigmentaire</a></li>
+                    <li><a href="/suivi-diabete-hta">Suivi diabète et hypertension</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Glaucome</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/glaucome">Glaucome chronique</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/glaucome#hto">Hypertension oculaire</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/glaucome#laser">Traitements : laser et chirurgie</a></li>
+            <div class="hub-list">
+                <h3 class="hub-sub">Glaucome</h3>
+                <ul>
+                    <li><a href="/glaucome">Glaucome chronique</a></li>
+                    <li><a href="/glaucome#hto">Hypertension oculaire</a></li>
+                    <li><a href="/glaucome#laser">Traitements : laser et chirurgie</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Surface oculaire</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/secheresse-oculaire">Sécheresse oculaire</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/secheresse-oculaire#blepharite">Blépharite</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/secheresse-oculaire#ipl">IPL (lumière pulsée)</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/secheresse-oculaire#bouchons-meatiques">Bouchons méatiques</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/secheresse-oculaire#chalazion">Chalazion</a></li>
+            <div class="hub-list">
+                <h3 class="hub-sub">Surface oculaire</h3>
+                <ul>
+                    <li><a href="/secheresse-oculaire">Sécheresse oculaire</a></li>
+                    <li><a href="/secheresse-oculaire#blepharite">Blépharite</a></li>
+                    <li><a href="/secheresse-oculaire#ipl">IPL (lumière pulsée)</a></li>
+                    <li><a href="/secheresse-oculaire#bouchons-meatiques">Bouchons méatiques</a></li>
+                    <li><a href="/secheresse-oculaire#chalazion">Chalazion</a></li>
                 </ul>
             </div>
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Vue &amp; enfant</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/suivi-corrections-optiques">Suivi &amp; corrections optiques</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/myopie">Myopie</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/hypermetropie">Hypermétropie</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/depistage-visuel-enfant">Dépistage visuel de l'enfant</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/amblyopie">Amblyopie</a></li>
-                </ul>
-            </div>
-            <div>
-                <h3 style="font-size:0.95rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:12px; color: var(--prusse);">Urgences</h3>
-                <ul style="list-style:none; margin:0; padding:0; font-size:0.95rem; font-weight:300;">
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/urgences-ophtalmologiques">Urgences ophtalmologiques</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/baisse-brutale-vision">Baisse brutale de la vision</a></li>
-                    <li style="line-height:2;"><a style="color: var(--text); text-decoration:none; border-bottom:1px solid var(--bordure);" href="/flashs-phosphenes-myodesopsies">Flashs, phosphènes &amp; corps flottants</a></li>
+            <div class="hub-list">
+                <h3 class="hub-sub">Vue et enfant</h3>
+                <ul>
+                    <li><a href="/suivi-corrections-optiques">Suivi et corrections optiques</a></li>
+                    <li><a href="/myopie">Myopie</a></li>
+                    <li><a href="/hypermetropie">Hypermétropie</a></li>
+                    <li><a href="/depistage-visuel-enfant">Dépistage visuel de l'enfant</a></li>
+                    <li><a href="/amblyopie">Amblyopie</a></li>
                 </ul>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ===== FAQ RÉTINE CHIRURGICALE ===== -->
-
-
-<!-- E-E-A-T block -->
-<section class="container" style="padding: 32px 0;">
-    <div class="eeat-block">
+    <!-- ===== AUTEUR ===== -->
+    <div class="eeat-block hub-eeat">
         <h3>Auteur et révision médicale</h3>
         <p>
             <strong>Dr Alexandre Majoulet</strong> — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt).<br>
@@ -671,23 +540,20 @@
             Titulaire du DES d'Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). <strong>FEBO</strong> (Fellow of the European Board of Ophthalmology) depuis 2022.
         </p>
         <p class="meta">
-            Page hub révisée selon les recommandations de la <a href="https://www.sfo-online.fr/" target="_blank" rel="noopener">Société Française d'Ophtalmologie (SFO)<span class="sr-only"> (nouvelle fenêtre)</span></a>.<br>
-            Dernière révision : <time datetime="2026-08-20">20 août 2026</time>.
+            Page révisée selon les recommandations de la <a href="https://www.sfo-online.fr/" target="_blank" rel="noopener">Société Française d'Ophtalmologie (SFO)<span class="sr-only"> (nouvelle fenêtre)</span></a>.<br>
+            Dernière révision : <time datetime="2026-08-24">24 août 2026</time>.
         </p>
     </div>
-</section>
 
-<!-- ===== CTA FINAL ===== -->
-<section style="background: var(--prusse); padding: 60px 0; text-align: center;">
-    <div class="container">
-        <h2 style="color: var(--blanc-naturel); margin-bottom: 16px; font-size: 1.5rem;">Une question sur votre vision ?</h2>
-        <p style="color: rgba(249,247,242,0.55); font-weight: 300; margin-bottom: 28px;">Prenez rendez-vous pour une consultation spécialisée au Cabinet Ophtalife.</p>
-        <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener" class="btn-primary" style="background: var(--blanc-naturel); color: var(--prusse);">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            Prendre rendez-vous sur Doctolib
-        <span class="sr-only"> (nouvelle fenêtre)</span></a>
+    <!-- ===== CTA FINAL ===== -->
+    <div class="hub-cta hub-cta--final">
+        <h2>Une question sur votre vision ?</h2>
+        <p>Consultation spécialisée rétine et cataracte au Cabinet Ophtalife, 37 rue d'Aguesseau, Boulogne-Billancourt.</p>
+        <a class="btn-rdv" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous<span class="btn-more">sur Doctolib</span><span class="sr-only"> (nouvelle fenêtre)</span></a>
+        <p class="cta-alt">Ou par téléphone, aux horaires du cabinet : <a href="tel:+33184191166">01 84 19 11 66</a></p>
     </div>
-</section>
+
+</div>
 
 </main>
 
@@ -697,32 +563,6 @@
         <p>&copy; 2026 Dr Alexandre Majoulet — Chirurgien Ophtalmologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife<span class="sr-only"> (nouvelle fenêtre)</span></a> &middot; 37 Rue d'Aguesseau, 92100 Boulogne-Billancourt &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/urgences-ophtalmologiques">Urgences (créneau sous 24-48&nbsp;h)</a></p>
     </div>
 </footer>
-
-<script>
-    // Fade-in
-    const observer = new IntersectionObserver(entries => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-    }, { threshold: 0.15 });
-    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-    // FAQ accordéon — WCAG : gestion aria-expanded
-    document.querySelectorAll('.faq-question').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const item = btn.parentElement;
-            const list = item.closest('.faq-list');
-            const wasOpen = item.classList.contains('open');
-            // Ferme tous les items du groupe + reset aria-expanded
-            list.querySelectorAll('.faq-item').forEach(i => {
-                i.classList.remove('open');
-                const q = i.querySelector('.faq-question');
-                if (q) q.setAttribute('aria-expanded', 'false');
-            });
-            if (!wasOpen) {
-                item.classList.add('open');
-                btn.setAttribute('aria-expanded', 'true');
-            }
-        });
-    });
-</script>
 
 <script src="/nav.js?v=20260824b" defer></script>
 <nav class="sticky-rdv" aria-label="Appeler ou prendre rendez-vous">

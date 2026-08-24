@@ -5678,3 +5678,366 @@ header.site-header .mobile-toggle { flex: 0 0 auto; }
 .js :where(body.page-index) .specialty-card.fade-in.visible:hover {
     transform: translateY(-4px);
 }
+
+/* ============================================================
+   HUB-2026-08-24 — /pathologies reconstruit en annuaire (24/08/2026)
+   Zéro style inline, zéro kicker, un seul geste cuivre par écran,
+   pictogrammes du graphiste, cartes-liens entières cliquables
+   (≥ 44 px), listes en lignes de 44 px, signes d'alerte en tête
+   de page (même composant .alert-urgence que les fiches).
+   Marqueur d'idempotence : HUB-2026-08-24 (ne pas réutiliser).
+   ============================================================ */
+/* --- En-tête : fil d'Ariane (le hub n'a pas la variante v10) --- */
+body.page-pathologies .page-header .breadcrumb-mini {
+    color: rgba(249, 247, 242, 0.75);
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+body.page-pathologies .page-header .breadcrumb-mini a {
+    color: rgba(249, 247, 242, 0.85);
+}
+body.page-pathologies .page-header .breadcrumb-mini a:hover {
+    color: var(--sable);
+}
+body.page-pathologies .page-header p {
+    font-weight: 400;
+    max-width: 62ch;
+}
+/* --- Conteneur --- */
+body.page-pathologies .hub {
+    padding-top: 44px;
+    padding-bottom: 72px;
+}
+/* --- Signes d'alerte : composant .alert-urgence des fiches, titre en tête --- */
+body.page-pathologies .hub-alert {
+    margin: 0 0 28px;
+}
+body.page-pathologies .hub-alert-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--alerte-texte, #8a4510);
+    margin: 0 0 12px;
+    padding: 0;
+    line-height: 1.35;
+}
+body.page-pathologies .hub-alert .alert-niveau:last-of-type {
+    margin-bottom: 0;
+}
+/* --- Sommaire : trois pilules identiques, cibles 44 px --- */
+body.page-pathologies .hub-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 0 8px;
+}
+body.page-pathologies .hub-nav a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 10px 20px;
+    border: 1px solid var(--border);
+    border-radius: 50px;
+    background: var(--blanc);
+    color: var(--prusse);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s, border-color 0.2s;
+}
+body.page-pathologies .hub-nav a:hover,
+body.page-pathologies .hub-nav a:focus-visible {
+    background: var(--blanc-naturel);
+    border-color: var(--bleu-gris);
+}
+/* --- Groupes : H2 avec le filet sable des fiches --- */
+body.page-pathologies .hub-group {
+    margin-top: 56px;
+}
+body.page-pathologies .hub-group > h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--prusse);
+    margin: 0 0 16px;
+    padding-bottom: 14px;
+    position: relative;
+    letter-spacing: 0.01em;
+}
+body.page-pathologies .hub-group > h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 52px;
+    height: 2px;
+    background: var(--sable);
+}
+body.page-pathologies .hub-intro {
+    max-width: 68ch;
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0 0 24px;
+}
+body.page-pathologies .hub-intro--sub {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+}
+body.page-pathologies .hub-sub {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--prusse);
+    margin: 30px 0 14px;
+}
+body.page-pathologies .hub-sub-group {
+    margin-top: 8px;
+}
+/* --- Cartes-liens --- */
+body.page-pathologies .hub-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+    gap: 18px;
+}
+body.page-pathologies .hub-grid--4 {
+    grid-template-columns: repeat(auto-fill, minmax(min(240px, 100%), 1fr));
+}
+body.page-pathologies .hub-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 22px;
+    background: var(--blanc-naturel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: inherit;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+body.page-pathologies a.hub-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--bleu-gris);
+}
+body.page-pathologies a.hub-card:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+}
+body.page-pathologies .hub-card-icon {
+    flex: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--prusse);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body.page-pathologies .hub-card-icon img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+body.page-pathologies .hub-card-body {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+}
+body.page-pathologies .hub-card h3,
+body.page-pathologies .hub-card h4 {
+    font-size: 0.98rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--prusse);
+    margin: 4px 0 6px;
+    text-transform: none;
+    letter-spacing: 0;
+}
+body.page-pathologies .hub-card p {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    color: var(--text-light);
+    margin: 0 0 12px;
+    flex: 1 1 auto;
+}
+body.page-pathologies .hub-card--static p {
+    margin-bottom: 0;
+}
+body.page-pathologies .hub-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--prusse);
+    transition: gap 0.2s;
+}
+body.page-pathologies .hub-more .ico {
+    width: 14px;
+    height: 14px;
+    flex: none;
+}
+body.page-pathologies a.hub-card:hover .hub-more,
+body.page-pathologies a.hub-card:focus-visible .hub-more {
+    gap: 10px;
+}
+/* --- Listes de fiches : lignes de 44 px --- */
+body.page-pathologies .hub-lists {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+    gap: 8px 32px;
+    margin-top: 8px;
+}
+body.page-pathologies .hub-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+body.page-pathologies .hub-list li a {
+    display: flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.92rem;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+body.page-pathologies .hub-list li a:hover,
+body.page-pathologies .hub-list li a:focus-visible {
+    color: var(--prusse);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/* --- CTA : ardoise, geste cuivre unique --- */
+body.page-pathologies .hub-cta {
+    margin-top: 28px;
+    padding: 30px 28px;
+    background: var(--prusse);
+    color: var(--blanc-naturel);
+    border-radius: var(--radius);
+    text-align: center;
+}
+body.page-pathologies .hub-cta--final {
+    margin-top: 40px;
+    padding: 48px 28px;
+}
+body.page-pathologies .hub-cta h2,
+body.page-pathologies .hub-cta h3 {
+    color: var(--blanc-naturel);
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+    padding: 0;
+}
+body.page-pathologies .hub-cta--final h2 {
+    font-size: 1.45rem;
+}
+body.page-pathologies .hub-cta h2::after,
+body.page-pathologies .hub-cta h3::after {
+    content: none;
+}
+body.page-pathologies .hub-cta p {
+    color: rgba(249, 247, 242, 0.85);
+    font-size: 0.95rem;
+    max-width: 60ch;
+    margin: 0 auto 20px;
+}
+body.page-pathologies .hub-cta .btn-rdv {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 48px;
+    padding: 13px 30px;
+    border-radius: 50px;
+    background: var(--cuivre-rdv, #9C4B2E);
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+body.page-pathologies .hub-cta .btn-rdv:hover {
+    background: var(--cuivre-rdv-deep, #82391F);
+    color: #ffffff;
+}
+body.page-pathologies .hub-cta .btn-rdv:focus-visible {
+    outline: 3px solid var(--sable-light);
+    outline-offset: 3px;
+}
+body.page-pathologies .hub-cta .cta-alt {
+    font-size: 0.85rem;
+    color: rgba(249, 247, 242, 0.75);
+    margin: 16px 0 0;
+}
+body.page-pathologies .hub-cta .cta-alt a {
+    color: var(--sable-light);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+}
+/* --- Auteur : même carte claire que les fiches --- */
+body.page-pathologies .hub-eeat {
+    margin-top: 48px;
+    padding: 30px 32px;
+    background: var(--blanc);
+    color: var(--text-light);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+body.page-pathologies .hub-eeat h3 {
+    color: var(--prusse);
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+body.page-pathologies .hub-eeat p {
+    color: var(--text-light);
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 6px;
+}
+body.page-pathologies .hub-eeat strong { color: var(--prusse); }
+body.page-pathologies .hub-eeat a { color: var(--prusse); }
+body.page-pathologies .hub-eeat .meta {
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+/* --- Petits écrans --- */
+@media (max-width: 600px) {
+    body.page-pathologies .hub { padding-top: 32px; }
+    body.page-pathologies .hub-group { margin-top: 44px; }
+    body.page-pathologies .hub-card { padding: 14px 14px; gap: 12px; }
+    body.page-pathologies .hub-card p { font-size: 0.86rem; margin-bottom: 8px; }
+    body.page-pathologies .hub-grid { gap: 12px; }
+    body.page-pathologies .hub-list li a { min-height: 44px; padding: 6px 0; }
+    body.page-pathologies .hub-lists { gap: 4px 24px; }
+    body.page-pathologies .hub-card-icon { width: 40px; height: 40px; }
+    body.page-pathologies .hub-card-icon img { width: 24px; height: 24px; }
+    body.page-pathologies .hub-cta { padding: 26px 18px; }
+    body.page-pathologies .hub-cta--final { padding: 36px 18px; }
+    body.page-pathologies .hub-eeat { padding: 22px 18px; }
+    body.page-pathologies .hub-nav a { flex: 1 1 auto; justify-content: center; }
+}
+@media (max-width: 380px) {
+    body.page-pathologies .hub-cta .btn-rdv .btn-more { display: none; }
+}
