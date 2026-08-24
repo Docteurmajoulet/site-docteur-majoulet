@@ -1,0 +1,14 @@
+# docteurmajoulet.com — fichiers de travail à ne jamais commiter (24/08/2026)
+# Le dépôt est public et Netlify sert tout ce qui est commité : seuls les
+# fichiers du site (HTML, CSS, JS, images, fonts, _headers, _redirects,
+# sitemap, robots, llms, manifest) doivent être suivis.
+*.sh
+*.bak
+*.new
+*.orig
+*.tmp
+*.log
+README_UPLOAD.md
+.DS_Store
+Thumbs.db
+__pycache__/
