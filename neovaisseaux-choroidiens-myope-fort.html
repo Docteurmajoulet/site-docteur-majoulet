@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260821c">
+    <link rel="stylesheet" href="/main.css?v=20260824b">
     <title>Néovaisseaux du myope fort | Dr Majoulet, rétinologue</title>
     <meta name="description" content="Néovaisseaux du myope fort : vision déformée, diagnostic OCT-angiographie, injections anti-VEGF. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.">
     <meta name="keywords" content="néovaisseaux choroïdiens, NVC myope fort, mCNV, myopic CNV, tache de Fuchs, Forster-Fuchs, myopie forte, anti-VEGF, ranibizumab, aflibercept, Boulogne-Billancourt, Dr Majoulet">
@@ -153,7 +153,7 @@
 <a href="#main-content" class="skip-link">Aller au contenu principal</a>
 
 <!-- Topbar urgence -->
-<div class="topbar"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg> Urgence r&eacute;tinienne : le jour m&ecirc;me ou sous 24-48&nbsp;h<span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><a href="tel:+33184191166">01 84 19 11 66</a> &middot; 37 rue d'Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
+<div class="topbar" role="region" aria-label="Urgences et coordonnées du cabinet"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg> Urgence r&eacute;tinienne : le jour m&ecirc;me ou sous 24-48&nbsp;h<span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><a href="tel:+33184191166">01 84 19 11 66</a> &middot; 37 rue d'Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
 <header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue, Boulogne-Billancourt — Accueil">
@@ -296,7 +296,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="mega-footer"><a href="/urgences-ophtalmologiques" class="mega-footer-link">Urgences ophtalmologiques</a><a href="/pathologies" class="mega-footer-link">Toutes les pathologies →</a></div>
+                        <div class="mega-footer"><a href="/urgences-ophtalmologiques" class="mega-footer-link">Urgences ophtalmologiques</a><a href="/pathologies" class="mega-footer-link">Toutes les pathologies<svg class="ico ico-arrow" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
                     </div>
                 </li>
                 <li class="nav-item"><a href="/le-dr-majoulet" class="nav-link">À propos</a></li>
@@ -615,27 +615,11 @@
     </div>
 </footer>
 
-<script>
-(function () {
-    const items = document.querySelectorAll('.nav-item[data-megamenu]');
-    function closeAll(except) { items.forEach(it => { if (it !== except) { it.classList.remove('is-open'); const t = it.querySelector('.nav-link'); if (t) t.setAttribute('aria-expanded','false'); } }); }
-    items.forEach(item => {
-        const trigger = item.querySelector('.nav-link');
-        let tid = null;
-        item.addEventListener('mouseenter', () => { clearTimeout(tid); if (window.innerWidth > 980) { closeAll(item); item.classList.add('is-open'); trigger.setAttribute('aria-expanded','true'); } });
-        item.addEventListener('mouseleave', () => { if (window.innerWidth > 980) { tid = setTimeout(() => { item.classList.remove('is-open'); trigger.setAttribute('aria-expanded','false'); }, 150); } });
-        trigger.addEventListener('click', (e) => { e.preventDefault(); const willOpen = !item.classList.contains('is-open'); closeAll(item); if (willOpen) { item.classList.add('is-open'); trigger.setAttribute('aria-expanded','true'); } else { item.classList.remove('is-open'); trigger.setAttribute('aria-expanded','false'); } });
-        item.addEventListener('keydown', (e) => { if (e.key === 'Escape') { item.classList.remove('is-open'); trigger.setAttribute('aria-expanded','false'); trigger.focus(); } });
-    });
-    document.addEventListener('click', (e) => { items.forEach(item => { if (!item.contains(e.target)) { item.classList.remove('is-open'); const t = item.querySelector('.nav-link'); if (t) t.setAttribute('aria-expanded','false'); } }); });
-    const toggle = document.querySelector('.mobile-toggle'); const body = document.body;
-    if (toggle) { toggle.addEventListener('click', () => { const o = body.classList.toggle('menu-open'); toggle.setAttribute('aria-expanded', o ? 'true' : 'false'); toggle.setAttribute('aria-label', o ? 'Fermer le menu' : 'Ouvrir le menu'); }); }
-})();
-</script>
-<div class="sticky-rdv">
+<script src="/nav.js?v=20260824b" defer></script>
+<nav class="sticky-rdv" aria-label="Appeler ou prendre rendez-vous">
     <a class="sticky-tel" href="tel:+33184191166" aria-label="Appeler le cabinet — 01 84 19 11 66"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <span class="lbl">Appeler</span></a>
     <a class="sticky-doctolib" href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris" target="_blank" rel="noopener">Prendre rendez-vous<span class="sr-only"> (nouvelle fenêtre)</span></a>
-</div>
+</nav>
 
 </body>
 </html>

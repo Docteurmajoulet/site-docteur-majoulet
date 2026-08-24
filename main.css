@@ -632,14 +632,14 @@ body.page-404 {
     color: var(--prusse);
     text-decoration: none;
 }
-:where(body.page-index) .fade-in,
-:where(body.page-pathologies) .fade-in {
+.js :where(body.page-index) .fade-in,
+.js :where(body.page-pathologies) .fade-in {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
-:where(body.page-index) .fade-in.visible,
-:where(body.page-pathologies) .fade-in.visible {
+.js :where(body.page-index) .fade-in.visible,
+.js :where(body.page-pathologies) .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
 }
@@ -1755,7 +1755,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-top: auto;
 }
 :where(body.v9) .pillar-card .read-more::after {
-    content: " →";
+    content: "";
     transition: transform 0.15s;
     display: inline-block;
 }
@@ -2371,7 +2371,6 @@ body.m2.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m2) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -2533,7 +2532,6 @@ body.m3.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m3) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -2648,7 +2646,6 @@ body.m5.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m5) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -2830,7 +2827,7 @@ body.m6.menu-open nav.main-nav {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
 }
-:where(body.m7) .fade-in {
+.js :where(body.m7) .fade-in {
     opacity: 1;
     transform: none;
 }
@@ -2858,7 +2855,6 @@ body.m7.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m7) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -2930,7 +2926,6 @@ body.m8.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m8) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -3157,7 +3152,7 @@ body.m10.menu-open nav.main-nav {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
 }
-:where(body.m11) .fade-in {
+.js :where(body.m11) .fade-in {
     opacity: 1;
     transform: none;
 }
@@ -3185,7 +3180,6 @@ body.m11.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m11) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -3276,7 +3270,6 @@ body.m12.menu-open nav.main-nav {
     padding: 20px 24px 60px;
     animation: navFadeIn 0.22s ease;
 }
-@keyframes navFadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
 :where(body.m12) nav.main-nav .nav-list {
     flex-direction: column;
     gap: 0;
@@ -4266,7 +4259,7 @@ nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
 .mega-list a[aria-current="page"] { color: var(--prusse); font-weight: 600; }
 .mega-list a.external::after,
 .associes-line a.external::after {
-    content: "↗";
+    content: "";
     margin-left: 5px;
     font-size: 0.75rem;
     color: var(--sable);
@@ -5522,7 +5515,7 @@ article.pathology-content .cta-block .btn-ghost .lbl-more {
 }
 .mega-col .mega-title a:hover { color: var(--prusse-light); }
 .mega-col .mega-title a::after {
-    content: "→";
+    content: "";
     font-size: 0.8rem;
     opacity: 0.6;
     transition: transform 0.2s;
@@ -5602,4 +5595,86 @@ article.pathology-content li {
 .table-scroll:focus-visible {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
+}
+
+/* ============================================================
+   HARDEN-2026-08-24 — Lot robustesse (24/08/2026)
+   nav.js externalisé (48 pages) · ancres sous l'en-tête sticky ·
+   contenu visible sans JS (html.js) · flèches SVG (les glyphes
+   → ↗ ne sont pas dans le sous-ensemble Montserrat) · anneaux de
+   focus · lien tél de la note hero · toggle non compressible ·
+   topbar à la ligne < 380 px · survol des cartes de spécialités.
+   Marqueur d'idempotence : HARDEN-2026-08-24 (ne pas réutiliser).
+   ============================================================ */
+/* --- Ancres : atterrir sous l'en-tête sticky (77 px) --- */
+:where([id]) { scroll-margin-top: 96px; }
+/* --- Flèches SVG inline dans les liens (« Toutes les pathologies », boutons) --- */
+.ico-arrow {
+    width: 0.85em;
+    height: 0.85em;
+    flex: none;
+    vertical-align: -0.08em;
+    margin-left: 0.3em;
+    transition: transform 0.2s;
+}
+a:hover .ico-arrow, a:focus-visible .ico-arrow { transform: translateX(3px); }
+/* --- Flèches générées en CSS : masque SVG coloré par currentColor --- */
+.mega-col .mega-title a::after,
+.mega-list a.external::after,
+.associes-line a.external::after,
+:where(body.v9) .pillar-card .read-more::after {
+    content: "";
+    display: inline-block;
+    width: 0.85em;
+    height: 0.85em;
+    flex: none;
+    vertical-align: -0.08em;
+    background-color: currentColor;
+    -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+    mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12h14M13 6l6 6-6 6'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+.mega-list a.external::after,
+.associes-line a.external::after {
+    width: 0.75em;
+    height: 0.75em;
+    margin-left: 5px;
+    -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M9 7h8v8'/%3E%3C/svg%3E");
+    mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M7 17 17 7M9 7h8v8'/%3E%3C/svg%3E");
+}
+:where(body.v9) .pillar-card .read-more::after { margin-left: 0.3em; }
+/* --- Anneaux de focus : CTA du hero 3 px (= reste du site), nav-link rentré dans sa boîte --- */
+body.page-index .hero-v3 .btn-primary:focus-visible,
+body.page-index .hero-v3 .btn-outline:focus-visible {
+    outline-width: 3px;
+}
+nav.main-nav .nav-link:focus-visible {
+    outline-offset: -3px;
+}
+/* --- Note du hero : le lien téléphone se voit comme un lien --- */
+body.page-index .hero-v3 .hero-note a {
+    color: var(--sable-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+body.page-index .hero-v3 .hero-note a:hover,
+body.page-index .hero-v3 .hero-note a:focus-visible {
+    color: var(--blanc-naturel);
+}
+/* --- Bouton menu : jamais compressé par le flex (36,8 px à 320) --- */
+header.site-header .mobile-toggle { flex: 0 0 auto; }
+/* --- Topbar : sous 380 px, le texte passe à la ligne au lieu d'être tronqué --- */
+@media (max-width: 380px) {
+    .topbar-urgence {
+        white-space: normal;
+        text-overflow: clip;
+        text-align: left;
+    }
+}
+/* --- Cartes de spécialités : le survol (lift) était annulé par .fade-in.visible --- */
+.js :where(body.page-index) .specialty-card.fade-in.visible {
+    transition: opacity 0.6s ease, transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.js :where(body.page-index) .specialty-card.fade-in.visible:hover {
+    transform: translateY(-4px);
 }
