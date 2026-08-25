@@ -6090,3 +6090,239 @@ article.pathology-content .toc + h2 { margin-top: 40px; }
 @media (max-width: 600px) {
 .toc { padding: 14px 16px 10px; }
 }
+
+/* ============================================================
+   DISTILL-2026-08-24 — Lot contenu (24/08/2026 soir, critique n°4)
+   Sécheresse : « En bref », tableau des paliers, ligne d'appel ·
+   Hub : entrée par symptômes · Décollement : hôpitaux en bloc
+   clair, bandeau resserré · boutons d'urgence en appel direct.
+   Marqueur d'idempotence : DISTILL-2026-08-24 (ne pas réutiliser).
+   ============================================================ */
+/* --- « En bref » (fiches) --- */
+article.pathology-content .enbref {
+    margin: 28px 0 8px;
+    padding: 20px 24px 16px;
+    background: var(--blanc-naturel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+article.pathology-content .enbref h2.h-sub {
+    margin: 0 0 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--prusse);
+}
+article.pathology-content .enbref ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+article.pathology-content .enbref li {
+    position: relative;
+    padding: 6px 0 6px 20px;
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: var(--text);
+}
+article.pathology-content .enbref li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--sable);
+}
+article.pathology-content .enbref a { color: var(--prusse); }
+/* --- Tableau des paliers (la fiche n'a pas la variante v5 de table.clean) --- */
+article.pathology-content table.paliers {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    font-size: 0.9rem;
+    min-width: 640px;
+}
+article.pathology-content table.paliers th,
+article.pathology-content table.paliers td {
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+    vertical-align: top;
+    color: var(--text-light);
+    line-height: 1.5;
+}
+article.pathology-content table.paliers thead th {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+article.pathology-content table.paliers tbody th {
+    color: var(--prusse);
+    font-weight: 700;
+}
+article.pathology-content table.paliers col.c-palier { width: 16%; }
+article.pathology-content table.paliers col.c-quoi { width: 52%; }
+article.pathology-content table.paliers col.c-ou { width: 14%; }
+article.pathology-content table.paliers col.c-pec { width: 18%; }
+@media (max-width: 700px) {
+    /* Empilé : chaque palier devient une carte, plus de défilement horizontal */
+    article.pathology-content table.paliers { min-width: 0; }
+    article.pathology-content table.paliers thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+    article.pathology-content table.paliers,
+    article.pathology-content table.paliers tbody,
+    article.pathology-content table.paliers tr,
+    article.pathology-content table.paliers th,
+    article.pathology-content table.paliers td { display: block; }
+    article.pathology-content table.paliers tr { padding: 4px 0 10px; border-bottom: 1px solid var(--border); }
+    article.pathology-content table.paliers th,
+    article.pathology-content table.paliers td { border-bottom: none; padding: 6px 0; }
+    article.pathology-content table.paliers tbody th { font-size: 1rem; padding-top: 10px; }
+    article.pathology-content table.paliers td[data-label]::before {
+        content: attr(data-label) " : ";
+        font-weight: 700;
+        color: var(--prusse);
+    }
+    article.pathology-content table.paliers td[data-label="Ce que c'est"]::before { content: none; }
+}
+article.pathology-content table.paliers td strong { color: var(--prusse); }
+article.pathology-content table.paliers a { color: var(--prusse); }
+/* --- Ligne d'appel discrète : un cuivre, en texte --- */
+article.pathology-content .cta-line {
+    margin: 18px 0 8px;
+    padding: 14px 18px;
+    background: var(--blanc-naturel);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    color: var(--text-light);
+    max-width: none;
+}
+article.pathology-content .cta-line-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 6px;
+    min-height: 44px;
+    color: var(--cuivre-rdv, #9C4B2E);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+}
+article.pathology-content .cta-line-link:hover { color: var(--cuivre-rdv-deep, #82391F); }
+/* --- Hub : entrée par symptômes --- */
+body.page-pathologies .hub-symptoms {
+    margin: 0 0 26px;
+}
+body.page-pathologies .hub-sym-title {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--prusse);
+    margin: 0 0 8px;
+    padding: 0;
+}
+body.page-pathologies .hub-sym-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(420px, 100%), 1fr));
+    gap: 0 32px;
+}
+body.page-pathologies .hub-sym-list a {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-height: 44px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    text-decoration: none;
+}
+body.page-pathologies .hub-sym-list .sym {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--prusse);
+    line-height: 1.4;
+}
+body.page-pathologies .hub-sym-list .dest {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+body.page-pathologies .hub-sym-list .dest .ico { width: 13px; height: 13px; flex: none; }
+body.page-pathologies .hub-sym-list a:hover .sym,
+body.page-pathologies .hub-sym-list a:focus-visible .sym {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+/* --- Décollement : hôpitaux hors de l'ambre, bandeau resserré --- */
+article.pathology-content .hors-horaires {
+    margin: 14px 0 24px;
+    padding: 18px 22px 12px;
+    background: var(--blanc-naturel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+article.pathology-content .hh-title {
+    margin: 0 0 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--prusse);
+}
+article.pathology-content .hh-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-width: none;
+}
+article.pathology-content .hh-list li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 2px 12px;
+    padding: 8px 0;
+    margin: 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 0.95rem;
+    line-height: 1.45;
+}
+article.pathology-content .hh-list li:last-child { border-bottom: none; }
+article.pathology-content .hh-list strong { color: var(--prusse); }
+article.pathology-content .hh-tel {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    margin: -10px 0;
+    color: var(--prusse);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    white-space: nowrap;
+}
+article.pathology-content .hh-addr {
+    flex: 1 1 100%;
+    font-size: 0.88rem;
+    color: var(--text-light);
+}
+body.page-decollement-retine header.page-header {
+    padding: 56px 0 48px;
+}
+@media (max-width: 600px) {
+    article.pathology-content .enbref { padding: 16px 16px 12px; }
+    article.pathology-content .cta-line { padding: 12px 14px; }
+    article.pathology-content .cta-line-link { margin-left: 0; }
+}
