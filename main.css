@@ -337,22 +337,6 @@ body.page-404 {
     border: none;
     cursor: pointer;
 }
-:where(body.page-pathologies) .btn-primary {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    padding: 12px 28px;
-    border-radius: 50px;
-    background: var(--prusse);
-    color: var(--blanc-naturel);
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    transition: all 0.2s;
-    border: none;
-    cursor: pointer;
-}
 :where(body.page-index) .btn-primary:hover,
 :where(body.page-pathologies) .btn-primary:hover {
     background: var(--prusse-light);
@@ -1615,90 +1599,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     font-weight: 300;
     max-width: 620px;
     margin: 0 auto;
-}
-:where(body.page-pathologies) .page-header .section-label {
-    display: inline-block;
-    padding: 5px 14px;
-    border: 1px solid var(--bleu-gris);
-    color: var(--bleu-gris);
-    border-radius: 50px;
-    font-size: 0.7rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-:where(body.page-pathologies) .pathologies-section {
-    padding: 80px 0;
-}
-:where(body.page-pathologies) .pathologies-section:nth-child(even) {
-    background: var(--blanc);
-}
-:where(body.page-pathologies) .pathologies-section:nth-child(odd) {
-    background: var(--blanc-naturel);
-}
-:where(body.page-pathologies) .pathology-content {
-    display: grid;
-    grid-template-columns: 80px 1fr;
-    gap: 32px;
-    align-items: start;
-    max-width: 900px;
-    margin: 0 auto;
-}
-:where(body.page-pathologies) .pathology-icon {
-    width: 72px;
-    height: 72px;
-    background: var(--prusse);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    overflow: hidden;
-}
-:where(body.page-pathologies) .pathology-icon img {
-    width: 44px;
-    height: 44px;
-    object-fit: contain;
-}
-:where(body.page-pathologies) .pathology-body h2 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-}
-:where(body.page-pathologies) .pathology-body h3 {
-    font-size: 1rem;
-    color: var(--sable);
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-    margin: 28px 0 12px;
-}
-:where(body.page-pathologies) .pathology-body h3:first-of-type {
-    margin-top: 0;
-}
-:where(body.page-pathologies) .pathology-body p {
-    color: var(--text-light);
-    font-size: 0.95rem;
-    font-weight: 400;
-    margin-bottom: 12px;
-    line-height: 1.8;
-}
-:where(body.page-pathologies) .pathology-tag {
-    display: inline-block;
-    padding: 4px 12px;
-    background: var(--sable-light);
-    color: var(--brun);
-    border-radius: 50px;
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    margin-right: 6px;
-    margin-bottom: 6px;
-}
-:where(body.page-pathologies) .pathology-cta {
-    margin-top: 24px;
-    padding-top: 20px;
-    border-top: 1px solid var(--border);
 }
 :where(body.page-pathologies) .nav-cta:focus-visible, :where(body.page-pathologies) .btn-primary:focus-visible {
     outline-color: var(--sable);
@@ -3122,27 +3022,9 @@ body.m10.menu-open nav.main-nav {
     transform: none;
 }
 }
-/* m11 : 1 pages */
-@media (max-width: 900px) {
-:where(body.m11) .pathology-content {
-    grid-template-columns: 1fr;
-}
-:where(body.m11) .pathology-icon {
-    margin: 0 auto 12px;
-}
-:where(body.m11) .pathology-body {
-    text-align: left;
-}
-}
 @media (max-width: 600px) {
 :where(body.m11) .page-header h1 {
     font-size: 1.6rem;
-}
-:where(body.m11) .pathology-body h2 {
-    font-size: 1.25rem;
-}
-:where(body.m11) .pathologies-section {
-    padding: 50px 0;
 }
 }
 @media (prefers-reduced-motion: reduce) {
@@ -3151,10 +3033,6 @@ body.m10.menu-open nav.main-nav {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-}
-.js :where(body.m11) .fade-in {
-    opacity: 1;
-    transform: none;
 }
 }
 @media (max-width: 1024px) {
@@ -5569,10 +5447,6 @@ footer p a:hover {
     margin: 0;
     min-width: 100%;
 }
-/* --- /pathologies : sous-titres des fiches (ex-sable 1,96:1) --- */
-body.page-pathologies .pathology-body h3 {
-    color: var(--sable-fonce);
-}
 /* --- <main> englobe l'en-tête de page : le retrait de 50 px passe de <main> au conteneur --- */
 main.main-with-header {
     padding-top: 0;
@@ -5596,7 +5470,6 @@ article.pathology-content li {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
 }
-
 /* ============================================================
    HARDEN-2026-08-24 — Lot robustesse (24/08/2026)
    nav.js externalisé (48 pages) · ancres sous l'en-tête sticky ·
@@ -5665,7 +5538,7 @@ body.page-index .hero-v3 .hero-note a:focus-visible {
 header.site-header .mobile-toggle { flex: 0 0 auto; }
 /* --- Topbar : sous 380 px, le texte passe à la ligne au lieu d'être tronqué --- */
 @media (max-width: 380px) {
-    .topbar-urgence {
+.topbar-urgence {
         white-space: normal;
         text-overflow: clip;
         text-align: left;
@@ -5678,7 +5551,6 @@ header.site-header .mobile-toggle { flex: 0 0 auto; }
 .js :where(body.page-index) .specialty-card.fade-in.visible:hover {
     transform: translateY(-4px);
 }
-
 /* ============================================================
    HUB-2026-08-24 — /pathologies reconstruit en annuaire (24/08/2026)
    Zéro style inline, zéro kicker, un seul geste cuivre par écran,
@@ -5721,9 +5593,6 @@ body.page-pathologies .hub-alert-title {
     margin: 0 0 12px;
     padding: 0;
     line-height: 1.35;
-}
-body.page-pathologies .hub-alert .alert-niveau:last-of-type {
-    margin-bottom: 0;
 }
 /* --- Sommaire : trois pilules identiques, cibles 44 px --- */
 body.page-pathologies .hub-nav {
@@ -6024,24 +5893,23 @@ body.page-pathologies .hub-eeat .meta {
 }
 /* --- Petits écrans --- */
 @media (max-width: 600px) {
-    body.page-pathologies .hub { padding-top: 32px; }
-    body.page-pathologies .hub-group { margin-top: 44px; }
-    body.page-pathologies .hub-card { padding: 14px 14px; gap: 12px; }
-    body.page-pathologies .hub-card p { font-size: 0.86rem; margin-bottom: 8px; }
-    body.page-pathologies .hub-grid { gap: 12px; }
-    body.page-pathologies .hub-list li a { min-height: 44px; padding: 6px 0; }
-    body.page-pathologies .hub-lists { gap: 4px 24px; }
-    body.page-pathologies .hub-card-icon { width: 40px; height: 40px; }
-    body.page-pathologies .hub-card-icon img { width: 24px; height: 24px; }
-    body.page-pathologies .hub-cta { padding: 26px 18px; }
-    body.page-pathologies .hub-cta--final { padding: 36px 18px; }
-    body.page-pathologies .hub-eeat { padding: 22px 18px; }
-    body.page-pathologies .hub-nav a { flex: 1 1 auto; justify-content: center; }
+body.page-pathologies .hub { padding-top: 32px; }
+body.page-pathologies .hub-group { margin-top: 44px; }
+body.page-pathologies .hub-card { padding: 14px 14px; gap: 12px; }
+body.page-pathologies .hub-card p { font-size: 0.86rem; margin-bottom: 8px; }
+body.page-pathologies .hub-grid { gap: 12px; }
+body.page-pathologies .hub-list li a { min-height: 44px; padding: 6px 0; }
+body.page-pathologies .hub-lists { gap: 4px 24px; }
+body.page-pathologies .hub-card-icon { width: 40px; height: 40px; }
+body.page-pathologies .hub-card-icon img { width: 24px; height: 24px; }
+body.page-pathologies .hub-cta { padding: 26px 18px; }
+body.page-pathologies .hub-cta--final { padding: 36px 18px; }
+body.page-pathologies .hub-eeat { padding: 22px 18px; }
+body.page-pathologies .hub-nav a { flex: 1 1 auto; justify-content: center; }
 }
 @media (max-width: 380px) {
-    body.page-pathologies .hub-cta .btn-rdv .btn-more { display: none; }
+body.page-pathologies .hub-cta .btn-rdv .btn-more { display: none; }
 }
-
 /* ============================================================
    HARDEN2-2026-08-24 — Lot robustesse 2 (24/08/2026, critique n°4)
    Tiroir mobile au clavier (nav.js v2 : focus, boucle Tab, inert,
@@ -6059,7 +5927,7 @@ body.hero-cta-visible .sticky-rdv {
     transform: translateY(110%);
 }
 @media (prefers-reduced-motion: reduce) {
-    .sticky-rdv { transition: none; }
+.sticky-rdv { transition: none; }
 }
 /* --- Sans JS : panneaux au survol / focus clavier, menu déplié sous l'en-tête sur mobile --- */
 html:not(.js) .nav-item[data-megamenu]:hover .mega-panel,
@@ -6069,9 +5937,9 @@ html:not(.js) .nav-item[data-megamenu]:focus-within .mega-panel {
     transform: translateX(-50%) translateY(0);
 }
 @media (max-width: 1024px) {
-    html:not(.js) header.site-header { position: static; }
-    html:not(.js) .header-inner { flex-wrap: wrap; height: auto !important; min-height: 0; }
-    html:not(.js) nav.main-nav {
+html:not(.js) header.site-header { position: static; }
+html:not(.js) .header-inner { flex-wrap: wrap; height: auto !important; min-height: 0; }
+html:not(.js) nav.main-nav {
         display: block !important;
         position: static !important;
         flex: 1 1 100%;
@@ -6083,16 +5951,16 @@ html:not(.js) .nav-item[data-megamenu]:focus-within .mega-panel {
         padding: 8px 0 20px;
         background: transparent;
     }
-    html:not(.js) nav.main-nav .mega-panel { min-width: 0 !important; width: auto !important; }
-    html:not(.js) nav.main-nav .mega-panel {
+html:not(.js) nav.main-nav .mega-panel { min-width: 0 !important; width: auto !important; }
+html:not(.js) nav.main-nav .mega-panel {
         max-height: none !important;
         opacity: 1 !important;
         visibility: visible !important;
         transform: none !important;
         position: static !important;
     }
-    html:not(.js) nav.main-nav .nav-link .caret { display: none; }
-    html:not(.js) .mobile-toggle,
+html:not(.js) nav.main-nav .nav-link .caret { display: none; }
+html:not(.js) .mobile-toggle,
     html:not(.js) .menu-overlay { display: none !important; }
 }
 /* --- Plancher typographique pour 55-85 ans (charte : label 0,8 rem) --- */
@@ -6116,8 +5984,8 @@ body.page-index .hero-v3 .btn-outline {
 }
 /* --- Alertes : le numéro reste lisible sur mobile, hôpitaux en cibles de 44 px --- */
 @media (max-width: 600px) {
-    .alert-urgence .btn-alert-tel { flex-wrap: wrap; line-height: 1.3; }
-    .alert-urgence .btn-alert-tel .num { display: inline; }
+.alert-urgence .btn-alert-tel { flex-wrap: wrap; line-height: 1.3; }
+.alert-urgence .btn-alert-tel .num { display: inline; }
 }
 .alert-urgence .alert-hopitaux a {
     display: inline-flex;
@@ -6160,7 +6028,6 @@ body.page-pathologies .hub-nav a:focus-visible { border-color: var(--sable); }
 body.page-pathologies .hub { padding-top: 36px; }
 body.page-pathologies .hub-group { margin-top: 44px; }
 body.page-pathologies .hub-alert { margin-bottom: 22px; }
-
 /* ============================================================
    TOC-2026-08-24 — Sommaire des fiches (24/08/2026)
    Carte claire avant la première section : les H2 de la fiche en
@@ -6221,5 +6088,5 @@ body.page-pathologies .hub-alert { margin-bottom: 22px; }
 }
 article.pathology-content .toc + h2 { margin-top: 40px; }
 @media (max-width: 600px) {
-    .toc { padding: 14px 16px 10px; }
+.toc { padding: 14px 16px 10px; }
 }
