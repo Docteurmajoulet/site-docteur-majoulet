@@ -28,15 +28,12 @@
     --vert-fonce: #2c3a37;
     --brun: #60544d;
     --accent-chir: #6b5d3f;
-    /* Texte (conservation des deux familles de noms existantes : --text et --texte) */
+    /* Texte */
     --text: #283339;
     --text-light: #5a6a72;
     --text-muted: #5d6d75;   /* 20/08/2026 : ex-#7a8a92 (3,6:1) -> 5,0:1 sur blanc naturel, WCAG AA */
-    --texte: #2b2b2b;
-    --texte-clair: #5a5a5a;
     /* Bordures / radius */
     --border: #e2ddd4;
-    --bordure: #e5e2dc;
     --radius: 12px;
     --radius-sm: 8px;
     /* Ombres */
@@ -155,15 +152,6 @@ body.v26 {
     line-height: 1.7;
     background: var(--blanc-naturel);
     -webkit-font-smoothing: antialiased;
-}
-body.page-404 {
-    font-family: "Helvetica Neue", Arial, sans-serif;
-    background: var(--blanc-naturel);
-    color: var(--texte);
-    line-height: 1.6;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 :where(body.v6) h1, :where(body.v6) h2, :where(body.v6) h3 {
     color: var(--prusse);
@@ -547,21 +535,6 @@ body.page-404 {
     border-radius: var(--radius);
     border: 1px solid rgba(249,247,242,0.08);
 }
-:where(body.page-404) .btn-doctolib {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: #fff;
-    color: var(--prusse);
-    border: 2px solid var(--prusse);
-    padding: 12px 24px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.95rem;
-    margin-left: 12px;
-    transition: background 0.2s;
-}
 :where(body.page-index) .btn-doctolib {
     display: inline-flex;
     align-items: center;
@@ -601,20 +574,8 @@ body.page-404 {
     font-weight: 300;
     letter-spacing: 0.02em;
 }
-:where(body.page-404) footer {
-    background: #fff;
-    border-top: 1px solid var(--bordure);
-    padding: 20px 24px;
-    text-align: center;
-    font-size: 0.85rem;
-    color: var(--texte-clair);
-}
 :where(body.v19) footer a {
     color: rgba(249,247,242,0.8);
-}
-:where(body.page-404) footer a {
-    color: var(--prusse);
-    text-decoration: none;
 }
 .js :where(body.page-index) .fade-in,
 .js :where(body.page-pathologies) .fade-in {
@@ -673,11 +634,6 @@ body.page-404 {
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
-:where(body.page-404) header.site-header {
-    background: #fff;
-    border-bottom: 1px solid var(--bordure);
-    padding: 20px 24px;
-}
 :where(body.v2) .header-inner {
     max-width: 1240px;
     margin: 0 auto;
@@ -700,16 +656,6 @@ body.page-404 {
     line-height: 1.2;
     text-decoration: none;
 }
-:where(body.page-404) .site-logo {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.15rem;
-    font-weight: 600;
-    color: var(--prusse);
-    text-decoration: none;
-    display: inline-flex;
-    flex-direction: column;
-    line-height: 1.15;
-}
 :where(body.v2) .site-logo .logo-city {
     display: block;
     font-size: 0.7rem;
@@ -718,11 +664,6 @@ body.page-404 {
     letter-spacing: 0.14em;
     margin-top: 2px;
     text-transform: uppercase;
-}
-:where(body.page-404) .site-logo .logo-city {
-    font-size: 0.85rem;
-    font-weight: 400;
-    color: var(--texte-clair);
 }
 :where(body.v2) nav.main-nav {
     flex: 1;
@@ -998,13 +939,6 @@ body.v3.menu-open {
     letter-spacing: 0.06em;
     margin-bottom: 12px;
 }
-:where(body.page-404) h1 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.8rem;
-    font-weight: 600;
-    margin: 0 0 16px;
-    color: var(--prusse);
-}
 :where(body.v1) p {
     color: var(--text-light);
     font-size: 0.96rem;
@@ -1273,13 +1207,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 :where(body.v25) main {
     padding: 50px 0 80px;
-}
-:where(body.page-404) main {
-    flex: 1;
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 48px 24px 64px;
-    width: 100%;
 }
 :where(body.v1) article.pathology-content {
     background: var(--blanc);
@@ -2024,137 +1951,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table tr:last-child td {
     border-bottom: none;
 }
-:where(body.page-404) *, :where(body.page-404) *::before, :where(body.page-404) *::after {
-    box-sizing: border-box;
-}
-body.page-404, body.page-404 {
-    margin: 0;
-    padding: 0;
-}
-:where(body.page-404) .code-404 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 5.5rem;
-    font-weight: 700;
-    color: var(--prusse);
-    line-height: 1;
-    margin: 24px 0 8px;
-    letter-spacing: -2px;
-}
-:where(body.page-404) p.lead {
-    font-size: 1.05rem;
-    color: var(--texte-clair);
-    margin: 0 0 28px;
-}
-:where(body.page-404) .btn-accueil {
-    display: inline-block;
-    background: var(--prusse);
-    color: #fff;
-    padding: 14px 28px;
-    border-radius: 999px;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 0.98rem;
-    letter-spacing: 0.02em;
-    transition: background 0.2s, transform 0.1s;
-}
-:where(body.page-404) .btn-accueil:hover, :where(body.page-404) .btn-accueil:focus-visible {
-    background: #1a2228;
-}
-:where(body.page-404) .btn-accueil:focus-visible {
-    outline: 3px solid var(--sable);
-    outline-offset: 3px;
-}
-:where(body.page-404) .btn-doctolib:hover, :where(body.page-404) .btn-doctolib:focus-visible {
-    background: var(--prusse);
-    color: #fff;
-}
-:where(body.page-404) .btn-doctolib:focus-visible {
-    outline: 3px solid var(--sable);
-    outline-offset: 3px;
-}
-:where(body.page-404) .urgences {
-    margin-top: 56px;
-    background: var(--alerte-fond);
-    border: 1px solid var(--alerte-bordure);
-    border-left: 4px solid var(--alerte-bordure);
-    padding: 24px 28px;
-    border-radius: 8px;
-}
-:where(body.page-404) .urgences h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.25rem;
-    color: var(--alerte-texte);
-    margin: 0 0 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-:where(body.page-404) .urgences h2::before {
-    content: "⚠";
-    font-size: 1.4rem;
-}
-:where(body.page-404) .urgences p {
-    margin: 8px 0;
-    color: var(--texte);
-    font-size: 0.96rem;
-}
-:where(body.page-404) .urgences ul {
-    margin: 12px 0 0;
-    padding-left: 22px;
-    color: var(--texte);
-    font-size: 0.96rem;
-}
-:where(body.page-404) .urgences ul li {
-    margin-bottom: 10px;
-}
-:where(body.page-404) .urgences ul li strong {
-    color: var(--prusse);
-}
-:where(body.page-404) .urgences .en-savoir-plus {
-    margin-top: 18px;
-    font-size: 0.9rem;
-}
-:where(body.page-404) .urgences a {
-    color: var(--alerte-texte);
-    font-weight: 600;
-}
-:where(body.page-404) .liens-rapides {
-    margin-top: 48px;
-}
-:where(body.page-404) .liens-rapides h2 {
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.2rem;
-    color: var(--prusse);
-    margin: 0 0 16px;
-}
-:where(body.page-404) .liens-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 12px;
-}
-:where(body.page-404) .liens-grid a {
-    display: block;
-    background: #fff;
-    border: 1px solid var(--bordure);
-    padding: 14px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    color: var(--prusse);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: border-color 0.15s, background 0.15s;
-}
-:where(body.page-404) .liens-grid a:hover, :where(body.page-404) .liens-grid a:focus-visible {
-    border-color: var(--prusse);
-    background: var(--blanc-naturel);
-}
-:where(body.page-404) .liens-grid a:focus-visible {
-    outline: 2px solid var(--prusse);
-    outline-offset: 2px;
-}
-:where(body.page-404) footer a:hover {
-    text-decoration: underline;
-}
 /* ---------- Séquences responsive par groupe ---------- */
 /* m1 : 19 pages */
 @media (max-width: 720px) {
@@ -2485,19 +2281,6 @@ body.m3.menu-open nav.main-nav {
 :where(body.m3) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
-}
-}
-/* m4 : 1 pages */
-@media (max-width: 520px) {
-:where(body.m4) .code-404 {
-    font-size: 4.5rem;
-}
-:where(body.m4) h1 {
-    font-size: 1.45rem;
-}
-:where(body.m4) .btn-doctolib {
-    margin-left: 0;
-    margin-top: 12px;
 }
 }
 /* m5 : 1 pages */
@@ -3846,8 +3629,8 @@ body.page-index .hero-v3 .hero-visual {
         min-height: 460px;
     }
 }
-/* --- Mobile : portrait en ouverture, texte fondu dessous --- */
-@media (max-width: 768px) {
+/* --- Mobile et tablette portrait : portrait en ouverture, texte fondu dessous (768 → 900 px, POLISH-2026-08-25) --- */
+@media (max-width: 900px) {
 body.page-index .hero-v3 .hero-content {
         grid-template-columns: 1fr;
         gap: 0;
@@ -4531,8 +4314,8 @@ body.page-index .parcours-card {
     border-left: none;
     border: 1px solid var(--border);
 }
-/* Hero mobile : l'action avant la présentation */
-@media (max-width: 768px) {
+/* Hero mobile et tablette portrait (≤ 900 px) : l'action avant la présentation */
+@media (max-width: 900px) {
 body.page-index .hero-v3 h1 { order: 1; }
 body.page-index .hero-v3 .hero-subtitle { order: 2; }
 body.page-index .hero-v3 .hero-buttons { order: 3; margin: 6px 0 26px; }
@@ -4729,7 +4512,7 @@ nav.main-nav .drawer-horaires {
 body.page-index .hero-v3 .hero-text {
     margin-bottom: 14px;
 }
-@media (min-width: 769px) {
+@media (min-width: 901px) {
 body.page-index .hero-v3 h1 {
         margin-bottom: 18px;
     }
@@ -4745,7 +4528,7 @@ body.page-index .hero-v3 .hero-left {
         padding: 64px 0 80px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 body.page-index .hero-v3 .hero-note { order: 6; }
 body.page-index .hero-v3 .hero-chips { order: 7; }
 }
@@ -4868,7 +4651,7 @@ body.page-index .pc-where sup {
 /* Hero : les trois paragraphes reviennent ; on reprend un peu de hauteur
    (padding haut, interligne, respirations) pour garder le bouton RDV
    visible à 1366×768 */
-@media (min-width: 769px) {
+@media (min-width: 901px) {
 body.page-index .hero-v3 .hero-subtitle {
         margin-bottom: 18px;
     }
@@ -6325,4 +6108,156 @@ body.page-decollement-retine header.page-header {
     article.pathology-content .enbref { padding: 16px 16px 12px; }
     article.pathology-content .cta-line { padding: 12px 14px; }
     article.pathology-content .cta-line-link { margin-left: 0; }
+}
+
+/* ============================================================
+   POLISH-2026-08-25 — Finitions techniques (25/08/2026)
+   1. Cibles tactiles ≥ 44 px sans déplacer la mise en page :
+      zone de toucher par pseudo-élément centré (::after) ; la topbar
+      (overflow hidden) passe par padding + marge négative.
+   2. Méga-menu sur écran tactile ≥ 1025 px : lignes de 36 px ;
+      panneau défilant s'il dépasse la fenêtre (portables 1366×768).
+   3. Page 404 dans la charte : compteur, titres des blocs réutilisés.
+   Marqueur d'idempotence : POLISH-2026-08-25 (ne pas réutiliser).
+   ============================================================ */
+/* --- 1. Zone de toucher : 44 px centrés sur le lien --- */
+.site-logo,
+header.site-header .nav-cta,
+.topbar-info a,
+.trust-card.urgence .tc-title,
+.link-quiet,
+.parcours-more .sc-more,
+.cv12-link,
+.cv12-tel,
+.cv12-mail,
+.cv12-map-note a,
+.hero-note a,
+.cta-block .cta-alt a,
+footer p a,
+.page-header .breadcrumb-mini a {
+    position: relative;
+}
+.site-logo::after,
+header.site-header .nav-cta::after,
+.topbar-info a::after,
+.trust-card.urgence .tc-title::after,
+.link-quiet::after,
+.parcours-more .sc-more::after,
+.cv12-link::after,
+.cv12-tel::after,
+.cv12-mail::after,
+.cv12-map-note a::after,
+.hero-note a::after,
+.cta-block .cta-alt a::after,
+footer p a::after,
+.page-header .breadcrumb-mini a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 44px;
+    transform: translateY(-50%);
+}
+/* liens « en ligne » (phrase du pied de page, fil d'Ariane) : 28 px, sans chevauchement des lignes voisines */
+footer p a::after,
+.page-header .breadcrumb-mini a::after {
+    height: 28px;
+}
+/* coordonnées de la home : le téléphone étend sa zone vers le haut, le courriel vers le bas
+   (les deux se suivent : leurs zones ne se recouvrent pas) */
+.cv12-tel::after {
+    top: auto;
+    bottom: 0;
+    transform: none;
+}
+.cv12-mail::after {
+    top: 0;
+    transform: none;
+}
+/* topbar : barre de 44 px (ex-38), lien urgence sur toute la hauteur (overflow hidden → padding + marge négative) */
+.topbar-inner {
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+.topbar-urgence {
+    box-sizing: border-box;
+    min-height: 44px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    margin-top: -11px;
+    margin-bottom: -11px;
+}
+/* --- Hero 901-1024 px (deux colonnes étroites) : visage centré dans la colonne --- */
+@media (min-width: 901px) and (max-width: 1024px) {
+    body.page-index .hero-v3 .hero-photo img {
+        object-position: 50% 18%;
+    }
+}
+/* --- 2. Méga-menu : tactile ≥ 1025 px et panneau défilant --- */
+@media (min-width: 1025px) {
+    nav.main-nav .mega-panel {
+        max-height: calc(100vh - 124px);
+        overflow-y: auto;
+    }
+}
+@media (min-width: 1025px) and (hover: none) and (pointer: coarse) {
+    .mega-list a {
+        display: flex;
+        align-items: center;
+        min-height: 36px;
+    }
+    .mega-footer-link {
+        display: inline-flex;
+        align-items: center;
+        min-height: 36px;
+    }
+}
+/* --- 3. Page 404 --- */
+body.page-404 .page-header .code-404 {
+    margin: 0 0 6px;
+    font-size: clamp(2.6rem, 2rem + 3vw, 4.2rem);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: var(--sable);
+    font-variant-numeric: tabular-nums;
+}
+body.page-404 .p404 .related-pathologies h2,
+body.page-404 .p404 .cta-block h2 {
+    margin-top: 0;
+    padding-bottom: 0;
+    border-bottom: 0;
+}
+body.page-404 .p404 .related-pathologies h2::after,
+body.page-404 .p404 .cta-block h2::after {
+    display: none;
+}
+body.page-404 .p404 .related-pathologies h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 14px;
+}
+body.page-404 .p404 .cta-block h2 {
+    color: var(--blanc-naturel);
+    font-size: 1.25rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+body.page-404 .p404 .alert-urgence .alert-title {
+    margin: 0 0 12px;
+    padding: 0;
+    border: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--alerte-texte, #8a4510);
+}
+body.page-404 .p404 .alert-urgence .alert-title::after {
+    display: none;
+}
+body.page-404 .p404 .related-pathologies {
+    margin-top: 8px;
 }
