@@ -6261,3 +6261,18 @@ body.page-404 .p404 .alert-urgence .alert-title::after {
 body.page-404 .p404 .related-pathologies {
     margin-top: 8px;
 }
+
+/* ============================================================
+   CSP-2026-08-25 — Filet de sécurité des sections révélées (25/08/2026)
+   La révélation .fade-in vit désormais dans /nav.js (CSP sans
+   'unsafe-inline'). Si ce script ne s'exécute pas (bloqué, réseau,
+   erreur), les sections apparaissent d'elles-mêmes après 2,5 s ;
+   mouvement réduit : l'animation est instantanée (règle globale).
+   Marqueur d'idempotence : CSP-2026-08-25 (ne pas réutiliser).
+   ============================================================ */
+.js :where(body.page-index) .fade-in:not(.visible) {
+    animation: fadeInFallback 0.6s ease 2.5s forwards;
+}
+@keyframes fadeInFallback {
+    to { opacity: 1; transform: none; }
+}
