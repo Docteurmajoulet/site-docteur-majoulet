@@ -6160,3 +6160,66 @@ body.page-pathologies .hub-nav a:focus-visible { border-color: var(--sable); }
 body.page-pathologies .hub { padding-top: 36px; }
 body.page-pathologies .hub-group { margin-top: 44px; }
 body.page-pathologies .hub-alert { margin-bottom: 22px; }
+
+/* ============================================================
+   TOC-2026-08-24 — Sommaire des fiches (24/08/2026)
+   Carte claire avant la première section : les H2 de la fiche en
+   lignes de 44 px, deux colonnes dès 600 px. Les ancres atterrissent
+   sous l'en-tête sticky (scroll-margin-top du lot Harden).
+   Marqueur d'idempotence : TOC-2026-08-24 (ne pas réutiliser).
+   ============================================================ */
+.toc {
+    margin: 32px 0 8px;
+    padding: 18px 22px 14px;
+    background: var(--blanc-naturel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+}
+.toc-title {
+    margin: 0 0 6px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--prusse);
+}
+.toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
+    gap: 0 28px;
+}
+.toc-list li { margin: 0; padding: 0; }
+.toc-list a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 44px;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.92rem;
+    line-height: 1.4;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+.toc-list a::before {
+    content: "";
+    flex: none;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--sable);
+}
+.toc-list a:hover,
+.toc-list a:focus-visible {
+    color: var(--prusse);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+article.pathology-content .toc + h2 { margin-top: 40px; }
+@media (max-width: 600px) {
+    .toc { padding: 14px 16px 10px; }
+}
