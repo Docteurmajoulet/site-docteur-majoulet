@@ -1,40 +1,21 @@
-/* nav.js — docteurmajoulet.com — HARDEN3-2026-08-25 (v4)
+/* nav.js — docteurmajoulet.com — TECH3-2026-08-25 (v5)
+   v5 : plus de révélation des sections .fade-in (animation retirée : le filet
+   CSS du lot CSP-2026-08-25 rendait tout visible à 2,5 s de toute façon, et
+   moins de mouvement pour une audience de 55-85 ans) ; le reste est la v4
+   (HARDEN3-2026-08-25).
    v4 : survol du méga-menu par événements pointer (souris/stylet seulement) et
    le clic qui suit une ouverture par survol ne referme plus le panneau
    (souris : survoler puis cliquer le libellé refermait le menu ; tactile
    ≥ 1025 px : un tap émettait mouseenter puis click puis mouseleave → panneau
    ouvert, refermé, jamais visible — critique n°5). Au toucher, seul le clic
    agit (bascule) ; à la souris, drapeau hoverOpened consommé par le 1er clic.
-   Révélation des sections .fade-in (home) — ex-script inline, déplacé ici pour
-   une Content-Security-Policy sans 'unsafe-inline' (script-src 'self' + hash
-   du seul script inline restant : html.js). Bloc autonome, en tête et protégé
-   par try/catch : une erreur ailleurs ne peut pas laisser les sections masquées
-   (le CSS garde en outre un filet : apparition après 2,5 s sans ce script).
+   CSP-2026-08-25 : Content-Security-Policy sans 'unsafe-inline' — ce fichier
+   est le seul JavaScript du site avec le script inline html.js (haché).
    Méga-menu desktop (disclosure : bouton + aria-expanded + aria-controls),
    tiroir mobile (toggle + overlay + Échap + clic lien + resize),
    gestion du focus du tiroir (focus initial, boucle Tab, page inerte),
    dimensionnement du tiroir d'après l'en-tête réel (topbar sur 2 lignes),
    barre RDV fixe masquée tant que le bouton RDV du hero est visible. */
-(function () {
-    'use strict';
-    try {
-        var fades = document.querySelectorAll('.fade-in');
-        if (fades.length) {
-            if ('IntersectionObserver' in window) {
-                var revealer = new IntersectionObserver(function (entries) {
-                    entries.forEach(function (entry) {
-                        if (entry.isIntersecting) { entry.target.classList.add('visible'); revealer.unobserve(entry.target); }
-                    });
-                }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-                Array.prototype.forEach.call(fades, function (el) { revealer.observe(el); });
-            } else {
-                Array.prototype.forEach.call(fades, function (el) { el.classList.add('visible'); });
-            }
-        }
-    } catch (e) {
-        Array.prototype.forEach.call(document.querySelectorAll('.fade-in'), function (el) { el.classList.add('visible'); });
-    }
-})();
 (function () {
     'use strict';
     var MOBILE_BP = 1024;

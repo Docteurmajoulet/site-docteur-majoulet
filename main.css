@@ -573,17 +573,6 @@ body.v26 {
 :where(body.v19) footer a {
     color: rgba(249,247,242,0.8);
 }
-.js :where(body.page-index) .fade-in,
-.js :where(body.page-pathologies) .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
-}
-.js :where(body.page-index) .fade-in.visible,
-.js :where(body.page-pathologies) .fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
 :where(body.v2) :focus {
     outline: none;
 }
@@ -1190,13 +1179,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     font-style: italic;
     margin-top: 6px;
     font-weight: 300;
-}
-:where(body.page-decollement-retine) .page-header .tagline {
-    color: rgba(255,255,255,0.85);
-    font-size: 0.92rem;
-    font-style: italic;
-    margin-top: 6px;
-    font-weight: 400;
 }
 :where(body.v1) main {
     padding: 50px 0 70px;
@@ -2505,10 +2487,6 @@ body.m6.menu-open nav.main-nav {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
-}
-.js :where(body.m7) .fade-in {
-    opacity: 1;
-    transform: none;
 }
 }
 @media (max-width: 1024px) {
@@ -4428,36 +4406,6 @@ body.page-index .hero-v3 h1 .h1-name,
         letter-spacing: 0.12em;
     }
 }
-/* ============================================================
-   CRAFT v9 — Lot Impeccable 5 « chemin urgent » (20/08/2026)
-   Horaires du cabinet (fiche Google, confirmés le 20/08) partout où
-   le patient doit décider : alerte, tiroir, contact ; hôpitaux
-   d'urgence avec adresse et téléphone cliquable.
-   ============================================================ */
-.alert-urgence .alert-hopitaux {
-    list-style: none;
-    margin: 0 0 14px;
-    padding: 0;
-    font-size: 0.9rem;
-    line-height: 1.55;
-    color: var(--text);
-}
-.alert-urgence .alert-hopitaux li {
-    padding: 6px 0;
-    border-top: 1px solid rgba(217, 140, 42, 0.25);
-}
-.alert-urgence .alert-hopitaux li:first-child {
-    border-top: none;
-}
-.alert-urgence .alert-hopitaux a,
-.alert-urgence .alert-horaires a {
-    color: var(--prusse);
-    font-weight: 600;
-    white-space: nowrap;
-    text-decoration: underline;
-    text-underline-offset: 3px;
-    text-decoration-color: rgba(40, 51, 57, 0.35);
-}
 .alert-urgence .alert-horaires {
     margin: 12px 0 0;
     font-size: 0.88rem;
@@ -4481,17 +4429,6 @@ nav.main-nav .drawer-horaires {
 nav.main-nav .drawer-horaires {
         flex: 1 1 100%;
     }
-}
-.alert-urgence .alert-sous-titre {
-    margin: 18px 0 4px;
-    font-size: 0.82rem;
-    font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    color: #8a4510;
-}
-.alert-urgence .alert-hopitaux {
-    margin-bottom: 0;
 }
 /* ============================================================
    CRAFT v10 — Hero : trois repères sous le paragraphe (20/08/2026)
@@ -5323,13 +5260,6 @@ header.site-header .mobile-toggle { flex: 0 0 auto; }
         text-align: left;
     }
 }
-/* --- Cartes de spécialités : le survol (lift) était annulé par .fade-in.visible --- */
-.js :where(body.page-index) .specialty-card.fade-in.visible {
-    transition: opacity 0.6s ease, transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-.js :where(body.page-index) .specialty-card.fade-in.visible:hover {
-    transform: translateY(-4px);
-}
 /* ============================================================
    HUB-2026-08-24 — /pathologies reconstruit en annuaire (24/08/2026)
    Zéro style inline, zéro kicker, un seul geste cuivre par écran,
@@ -5766,11 +5696,6 @@ body.page-index .hero-v3 .btn-outline {
 .alert-urgence .btn-alert-tel { flex-wrap: wrap; line-height: 1.3; }
 .alert-urgence .btn-alert-tel .num { display: inline; }
 }
-.alert-urgence .alert-hopitaux a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 44px;
-}
 /* --- Home : carte « Urgence rétinienne » (div + titre-lien + pill d'appel) --- */
 body.page-index .trust-card.urgence a.tc-title {
     text-decoration: none;
@@ -5869,7 +5794,6 @@ article.pathology-content .toc + h2 { margin-top: 40px; }
 @media (max-width: 600px) {
 .toc { padding: 14px 16px 10px; }
 }
-
 /* ============================================================
    DISTILL-2026-08-24 — Lot contenu (24/08/2026 soir, critique n°4)
    Sécheresse : « En bref », tableau des paliers, ligne d'appel ·
@@ -5952,24 +5876,24 @@ article.pathology-content table.paliers col.c-quoi { width: 52%; }
 article.pathology-content table.paliers col.c-ou { width: 14%; }
 article.pathology-content table.paliers col.c-pec { width: 18%; }
 @media (max-width: 700px) {
-    /* Empilé : chaque palier devient une carte, plus de défilement horizontal */
-    article.pathology-content table.paliers { min-width: 0; }
-    article.pathology-content table.paliers thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
-    article.pathology-content table.paliers,
+/* Empilé : chaque palier devient une carte, plus de défilement horizontal */
+article.pathology-content table.paliers { min-width: 0; }
+article.pathology-content table.paliers thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+article.pathology-content table.paliers,
     article.pathology-content table.paliers tbody,
     article.pathology-content table.paliers tr,
     article.pathology-content table.paliers th,
     article.pathology-content table.paliers td { display: block; }
-    article.pathology-content table.paliers tr { padding: 4px 0 10px; border-bottom: 1px solid var(--border); }
-    article.pathology-content table.paliers th,
+article.pathology-content table.paliers tr { padding: 4px 0 10px; border-bottom: 1px solid var(--border); }
+article.pathology-content table.paliers th,
     article.pathology-content table.paliers td { border-bottom: none; padding: 6px 0; }
-    article.pathology-content table.paliers tbody th { font-size: 1rem; padding-top: 10px; }
-    article.pathology-content table.paliers td[data-label]::before {
+article.pathology-content table.paliers tbody th { font-size: 1rem; padding-top: 10px; }
+article.pathology-content table.paliers td[data-label]::before {
         content: attr(data-label) " : ";
         font-weight: 700;
         color: var(--prusse);
     }
-    article.pathology-content table.paliers td[data-label="Ce que c'est"]::before { content: none; }
+article.pathology-content table.paliers td[data-label="Ce que c'est"]::before { content: none; }
 }
 article.pathology-content table.paliers td strong { color: var(--prusse); }
 article.pathology-content table.paliers a { color: var(--prusse); }
@@ -6100,11 +6024,10 @@ body.page-decollement-retine header.page-header {
     padding: 40px 0 36px; /* POLISH2-2026-08-25 : 56/48 → 40/36 */
 }
 @media (max-width: 600px) {
-    article.pathology-content .enbref { padding: 16px 16px 12px; }
-    article.pathology-content .cta-line { padding: 12px 14px; }
-    article.pathology-content .cta-line-link { margin-left: 0; }
+article.pathology-content .enbref { padding: 16px 16px 12px; }
+article.pathology-content .cta-line { padding: 12px 14px; }
+article.pathology-content .cta-line-link { margin-left: 0; }
 }
-
 /* ============================================================
    POLISH-2026-08-25 — Finitions techniques (25/08/2026)
    1. Cibles tactiles ≥ 44 px sans déplacer la mise en page :
@@ -6185,24 +6108,24 @@ footer p a::after,
 }
 /* --- Hero 901-1024 px (deux colonnes étroites) : visage centré dans la colonne --- */
 @media (min-width: 901px) and (max-width: 1024px) {
-    body.page-index .hero-v3 .hero-photo img {
+body.page-index .hero-v3 .hero-photo img {
         object-position: 50% 18%;
     }
 }
 /* --- 2. Méga-menu : tactile ≥ 1025 px et panneau défilant --- */
 @media (min-width: 1025px) {
-    nav.main-nav .mega-panel {
+nav.main-nav .mega-panel {
         max-height: calc(100vh - 124px);
         overflow-y: auto;
     }
 }
 @media (min-width: 1025px) and (hover: none) and (pointer: coarse) {
-    .mega-list a {
+.mega-list a {
         display: flex;
         align-items: center;
         min-height: 36px;
     }
-    .mega-footer-link {
+.mega-footer-link {
         display: inline-flex;
         align-items: center;
         min-height: 36px;
@@ -6256,22 +6179,7 @@ body.page-404 .p404 .alert-urgence .alert-title::after {
 body.page-404 .p404 .related-pathologies {
     margin-top: 8px;
 }
-
-/* ============================================================
-   CSP-2026-08-25 — Filet de sécurité des sections révélées (25/08/2026)
-   La révélation .fade-in vit désormais dans /nav.js (CSP sans
-   'unsafe-inline'). Si ce script ne s'exécute pas (bloqué, réseau,
-   erreur), les sections apparaissent d'elles-mêmes après 2,5 s ;
-   mouvement réduit : l'animation est instantanée (règle globale).
-   Marqueur d'idempotence : CSP-2026-08-25 (ne pas réutiliser).
-   ============================================================ */
-.js :where(body.page-index) .fade-in:not(.visible) {
-    animation: fadeInFallback 0.6s ease 2.5s forwards;
-}
-@keyframes fadeInFallback {
-    to { opacity: 1; transform: none; }
-}
-
+/* CSP-2026-08-25 : le filet de révélation des sections .fade-in a été retiré avec l'animation (TECH3-2026-08-25) — marqueur conservé pour l'idempotence du lot CSP. */
 /* ============================================================
    POLISH2-2026-08-25 — P2 techniques de la critique n°5 (25/08/2026)
    1. Topbar à la ligne ≤ 430 px ; « conduite à tenir » masqué 901-1199.
@@ -6285,37 +6193,38 @@ body.page-404 .p404 .related-pathologies {
    ============================================================ */
 /* --- 1. Topbar --- */
 @media (max-width: 430px) {
-    .topbar-urgence {
+.topbar-urgence {
         white-space: normal;
         text-overflow: clip;
         text-align: left;
     }
 }
 @media (min-width: 901px) and (max-width: 1199px) {
-    .tb-plus { display: none; }
+.tb-plus { display: none; }
 }
 /* --- 2. En-tête compact 1025-1248 px --- */
 @media (min-width: 1025px) and (max-width: 1248px) {
-    .site-logo { white-space: nowrap; }
-    header.site-header .nav-cta { white-space: nowrap; }
+.site-logo { white-space: nowrap; }
+header.site-header .nav-cta { white-space: nowrap; }
 }
 @media (min-width: 1025px) and (max-width: 1119px) {
-    .site-logo { font-size: 0.76rem; }
-    nav.main-nav .nav-link { padding: 26px 5px; font-size: 0.76rem; letter-spacing: 0.01em; }
-    header.site-header .nav-cta { padding: 11px 12px; font-size: 0.76rem; letter-spacing: 0.02em; }
+.site-logo { font-size: 0.76rem; }
+nav.main-nav .nav-link { padding: 26px 5px; font-size: 0.76rem; letter-spacing: 0.01em; }
+header.site-header .nav-cta { padding: 11px 12px; font-size: 0.76rem; letter-spacing: 0.02em; }
 }
 @media (min-width: 1120px) and (max-width: 1248px) {
-    .site-logo { font-size: 0.8rem; }
-    nav.main-nav .nav-link { padding: 26px 7px; font-size: 0.8rem; letter-spacing: 0.02em; }
-    header.site-header .nav-cta { padding: 11px 14px; font-size: 0.8rem; letter-spacing: 0.02em; }
+.site-logo { font-size: 0.8rem; }
+nav.main-nav .nav-link { padding: 26px 7px; font-size: 0.8rem; letter-spacing: 0.02em; }
+header.site-header .nav-cta { padding: 11px 14px; font-size: 0.8rem; letter-spacing: 0.02em; }
 }
 /* --- 3. Plancher typographique 0,8 rem / 400 --- */
 .page-header .breadcrumb-mini { font-size: 0.8rem; }
 footer { font-size: 0.8rem; font-weight: 400; }
 footer p,
-footer .container p { font-size: 0.8rem; font-weight: 400; line-height: 2.2; } /* interligne 28 px = zone de toucher des liens (::after 28 px, lot Polish) sans chevauchement d'une ligne sur l'autre */
+footer .container p { font-size: 0.8rem; font-weight: 400; line-height: 2.2; }
+/* interligne 28 px = zone de toucher des liens (::after 28 px, lot Polish) sans chevauchement d'une ligne sur l'autre */
 @media (max-width: 600px) {
-    .alert-urgence .alert-actions a { font-size: 0.8rem; }
+.alert-urgence .alert-actions a { font-size: 0.8rem; }
 }
 /* --- 4. Zones de toucher --- */
 article.pathology-content .hh-tel::after,
@@ -6333,10 +6242,33 @@ footer p a,
 .page-header .breadcrumb-mini a { display: inline-block; }
 /* --- 5. « Créneau urgence sur Doctolib » entier à ≤ 480 px --- */
 @media (max-width: 480px) {
-    body.page-decollement-retine article.pathology-content .cta-block .btn-more,
+body.page-decollement-retine article.pathology-content .cta-block .btn-more,
     body.page-dechirure-retine-corps-flottants article.pathology-content .cta-block .btn-more,
     body.page-decollement-posterieur-vitre article.pathology-content .cta-block .btn-more,
     body.page-flashs-phosphenes-myodesopsies article.pathology-content .cta-block .btn-more,
     body.page-baisse-brutale-vision article.pathology-content .cta-block .btn-more,
     body.page-urgences-ophtalmologiques article.pathology-content .cta-block .btn-more { display: inline; }
 }
+/* ============================================================
+   TECH3-2026-08-25 — Dernier tour technique (25/08/2026)
+   1. En-tête : liste de navigation alignée sur le logo et le CTA sur
+      les 16 pages de la famille v5 (marges basses héritées : liste 14 px,
+      entrées 8 px).
+   2. Pied de page canon (site-footer) sur les 48 pages.
+   3. Déchirure de rétine : bandeau 40/36 px comme le décollement.
+   Marqueur d'idempotence : TECH3-2026-08-25 (ne pas réutiliser).
+   ============================================================ */
+nav.main-nav .nav-list { margin: 0; }
+nav.main-nav .nav-item { margin: 0; }
+footer.site-footer {
+    background: var(--vert-fonce);
+    color: rgba(249, 247, 242, 0.72);
+    padding: 28px 0;
+    text-align: center;
+}
+footer.site-footer p { margin: 0; color: rgba(249, 247, 242, 0.72); }
+footer.site-footer p + p { margin-top: 6px; }
+footer.site-footer a { color: rgba(249, 247, 242, 0.8); }
+footer.site-footer a[aria-current="page"] { text-decoration: none; color: rgba(249, 247, 242, 0.6); }
+footer.site-footer .footer-meta { font-size: 0.8rem; }
+body.page-dechirure-retine-corps-flottants header.page-header { padding: 40px 0 36px; }
