@@ -19,14 +19,11 @@
     --bleu-gris-light: #b8c5cb;
     --sable: #BFB297;
     --sable-light: #d4cbb5;
-    --sable-clair: #d4c9b2;
     --sable-fonce: #7d6f52; /* sable pour texte : 4,9:1 sur blanc (20/08/2026) */
     --blanc-naturel: #F9F7F2;
     --blanc: #ffffff;
     /* Couleurs secondaires */
-    --vert-gris: #94a8a2;
     --vert-fonce: #2c3a37;
-    --brun: #60544d;
     --accent-chir: #6b5d3f;
     /* Texte */
     --text: #283339;
@@ -37,13 +34,12 @@
     --radius: 12px;
     --radius-sm: 8px;
     /* Ombres */
-    --shadow-sm: 0 1px 3px rgba(40,51,57,0.06);
     --shadow-md: 0 4px 20px rgba(40,51,57,0.08);
-    --shadow-lg: 0 8px 40px rgba(40,51,57,0.1);
     /* Alertes (encadrés urgence / attention) */
     --alerte-bordure: #e07b1a;
     --alerte-fond: #fff4e6;
     --alerte-texte: #8a4510;
+    --ambre-urgence: #d98c2a; /* pictogrammes d'alerte (POLISH2-2026-08-25 : était utilisée avec repli, jamais déclarée) */
 }
 /* Reset universel */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -6088,8 +6084,7 @@ article.pathology-content .hh-list strong { color: var(--prusse); }
 article.pathology-content .hh-tel {
     display: inline-flex;
     align-items: center;
-    min-height: 44px;
-    margin: -10px 0;
+    position: relative; /* POLISH2-2026-08-25 : zone de 44 px par ::after (la marge négative laissait 36 px) */
     color: var(--prusse);
     font-weight: 700;
     text-decoration: underline;
@@ -6102,7 +6097,7 @@ article.pathology-content .hh-addr {
     color: var(--text-light);
 }
 body.page-decollement-retine header.page-header {
-    padding: 56px 0 48px;
+    padding: 40px 0 36px; /* POLISH2-2026-08-25 : 56/48 → 40/36 */
 }
 @media (max-width: 600px) {
     article.pathology-content .enbref { padding: 16px 16px 12px; }
@@ -6275,4 +6270,73 @@ body.page-404 .p404 .related-pathologies {
 }
 @keyframes fadeInFallback {
     to { opacity: 1; transform: none; }
+}
+
+/* ============================================================
+   POLISH2-2026-08-25 — P2 techniques de la critique n°5 (25/08/2026)
+   1. Topbar à la ligne ≤ 430 px ; « conduite à tenir » masqué 901-1199.
+   2. En-tête compact 1025-1248 px (logo, menu, CTA sur une ligne).
+   3. Plancher typographique : fil d'Ariane, pied de page, boutons d'alerte.
+   4. Zones de toucher : .hh-tel, .hub-cta .cta-alt a ; liens en ligne
+      du pied de page et du fil d'Ariane sur une seule ligne.
+   5. « sur Doctolib » conservé ≤ 480 px quand le bouton dit
+      « Créneau urgence » (6 pages d'urgence).
+   Marqueur d'idempotence : POLISH2-2026-08-25 (ne pas réutiliser).
+   ============================================================ */
+/* --- 1. Topbar --- */
+@media (max-width: 430px) {
+    .topbar-urgence {
+        white-space: normal;
+        text-overflow: clip;
+        text-align: left;
+    }
+}
+@media (min-width: 901px) and (max-width: 1199px) {
+    .tb-plus { display: none; }
+}
+/* --- 2. En-tête compact 1025-1248 px --- */
+@media (min-width: 1025px) and (max-width: 1248px) {
+    .site-logo { white-space: nowrap; }
+    header.site-header .nav-cta { white-space: nowrap; }
+}
+@media (min-width: 1025px) and (max-width: 1119px) {
+    .site-logo { font-size: 0.76rem; }
+    nav.main-nav .nav-link { padding: 26px 5px; font-size: 0.76rem; letter-spacing: 0.01em; }
+    header.site-header .nav-cta { padding: 11px 12px; font-size: 0.76rem; letter-spacing: 0.02em; }
+}
+@media (min-width: 1120px) and (max-width: 1248px) {
+    .site-logo { font-size: 0.8rem; }
+    nav.main-nav .nav-link { padding: 26px 7px; font-size: 0.8rem; letter-spacing: 0.02em; }
+    header.site-header .nav-cta { padding: 11px 14px; font-size: 0.8rem; letter-spacing: 0.02em; }
+}
+/* --- 3. Plancher typographique 0,8 rem / 400 --- */
+.page-header .breadcrumb-mini { font-size: 0.8rem; }
+footer { font-size: 0.8rem; font-weight: 400; }
+footer p,
+footer .container p { font-size: 0.8rem; font-weight: 400; line-height: 2.2; } /* interligne 28 px = zone de toucher des liens (::after 28 px, lot Polish) sans chevauchement d'une ligne sur l'autre */
+@media (max-width: 600px) {
+    .alert-urgence .alert-actions a { font-size: 0.8rem; }
+}
+/* --- 4. Zones de toucher --- */
+article.pathology-content .hh-tel::after,
+.hub-cta .cta-alt a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 44px;
+    transform: translateY(-50%);
+}
+.hub-cta .cta-alt a { position: relative; }
+footer p a,
+.page-header .breadcrumb-mini a { display: inline-block; }
+/* --- 5. « Créneau urgence sur Doctolib » entier à ≤ 480 px --- */
+@media (max-width: 480px) {
+    body.page-decollement-retine article.pathology-content .cta-block .btn-more,
+    body.page-dechirure-retine-corps-flottants article.pathology-content .cta-block .btn-more,
+    body.page-decollement-posterieur-vitre article.pathology-content .cta-block .btn-more,
+    body.page-flashs-phosphenes-myodesopsies article.pathology-content .cta-block .btn-more,
+    body.page-baisse-brutale-vision article.pathology-content .cta-block .btn-more,
+    body.page-urgences-ophtalmologiques article.pathology-content .cta-block .btn-more { display: inline; }
 }
