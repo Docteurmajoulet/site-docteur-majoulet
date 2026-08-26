@@ -1,4 +1,10 @@
-/* nav.js — docteurmajoulet.com — CSP-2026-08-25 (v3)
+/* nav.js — docteurmajoulet.com — HARDEN3-2026-08-25 (v4)
+   v4 : survol du méga-menu par événements pointer (souris/stylet seulement) et
+   le clic qui suit une ouverture par survol ne referme plus le panneau
+   (souris : survoler puis cliquer le libellé refermait le menu ; tactile
+   ≥ 1025 px : un tap émettait mouseenter puis click puis mouseleave → panneau
+   ouvert, refermé, jamais visible — critique n°5). Au toucher, seul le clic
+   agit (bascule) ; à la souris, drapeau hoverOpened consommé par le 1er clic.
    Révélation des sections .fade-in (home) — ex-script inline, déplacé ici pour
    une Content-Security-Policy sans 'unsafe-inline' (script-src 'self' + hash
    du seul script inline restant : html.js). Bloc autonome, en tête et protégé
@@ -56,16 +62,32 @@
         var trigger = item.querySelector('.nav-link');
         if (!trigger) { return; }
         var tid = null;
-        item.addEventListener('mouseenter', function () {
+        var hoverOpened = false;
+        function hoverPointer(e) { return e.pointerType === 'mouse' || e.pointerType === 'pen'; }
+        /* Survol : événements pointer, souris/stylet seulement — un tap émet aussi mouseenter puis mouseleave
+           (synthétiques), ce qui ouvrait puis refermait le panneau dans la même frame. Au toucher, seul le clic agit. */
+        item.addEventListener('pointerenter', function (e) {
+            if (!hoverPointer(e)) { return; }
             clearTimeout(tid);
-            if (isDesktop()) { closeAll(item); setOpen(item, true); }
+            if (isDesktop() && !item.classList.contains('is-open')) {
+                closeAll(item); setOpen(item, true); hoverOpened = true;
+            }
         });
-        item.addEventListener('mouseleave', function () {
+        item.addEventListener('pointerleave', function (e) {
+            if (!hoverPointer(e)) { return; }
+            hoverOpened = false;
             if (isDesktop()) { tid = setTimeout(function () { setOpen(item, false); }, 150); }
         });
         trigger.addEventListener('click', function (e) {
             e.preventDefault();
             clearTimeout(tid);
+            if (item.classList.contains('is-open') && hoverOpened) {
+                /* Le panneau vient d'être ouvert par le survol : ce clic le confirme au lieu de le refermer ;
+                   le clic suivant le ferme. */
+                hoverOpened = false;
+                return;
+            }
+            hoverOpened = false;
             var willOpen = !item.classList.contains('is-open');
             closeAll(item);
             setOpen(item, willOpen);
