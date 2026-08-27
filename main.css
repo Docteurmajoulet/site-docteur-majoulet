@@ -6272,3 +6272,43 @@ footer.site-footer a { color: rgba(249, 247, 242, 0.8); }
 footer.site-footer a[aria-current="page"] { text-decoration: none; color: rgba(249, 247, 242, 0.6); }
 footer.site-footer .footer-meta { font-size: 0.8rem; }
 body.page-dechirure-retine-corps-flottants header.page-header { padding: 40px 0 36px; }
+/* ============================================================
+   CONTENU1-2026-08-27 — Tour contenu, 1re livraison (27/08/2026)
+   Hub : sommaire (pilules) dans le bandeau ardoise, symptômes en
+   2 colonnes dès 480 px et 3 dès 1024 px · Sécheresse : tableau
+   des paliers à 3 colonnes (colonne « Où » retirée).
+   Marqueur d'idempotence : CONTENU1-2026-08-27 (ne pas réutiliser).
+   ============================================================ */
+/* --- Hub : sommaire dans le bandeau --- */
+body.page-pathologies .page-header .hub-nav {
+    justify-content: center;
+    margin: 22px 0 0;
+}
+body.page-pathologies .page-header .hub-nav a {
+    background: transparent;
+    border-color: rgba(249, 247, 242, 0.45);
+    color: var(--blanc-naturel);
+}
+body.page-pathologies .page-header .hub-nav a:hover,
+body.page-pathologies .page-header .hub-nav a:focus-visible {
+    background: rgba(249, 247, 242, 0.12);
+    border-color: var(--blanc-naturel);
+}
+body.page-pathologies .page-header .hub-nav a:focus-visible {
+    outline: 2px solid var(--blanc-naturel);
+    outline-offset: 3px;
+}
+@media (max-width: 600px) {
+    body.page-pathologies .page-header .hub-nav { margin-top: 18px; gap: 8px; }
+    body.page-pathologies .page-header .hub-nav a { flex: 0 1 auto; padding: 10px 16px; }
+}
+/* --- Hub : symptômes en colonnes --- */
+@media (min-width: 480px) {
+    body.page-pathologies .hub-sym-list { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1024px) {
+    body.page-pathologies .hub-sym-list { grid-template-columns: 1fr 1fr 1fr; }
+}
+/* --- Sécheresse : tableau des paliers sans la colonne « Où » --- */
+article.pathology-content table.paliers col.c-quoi { width: 56%; }
+article.pathology-content table.paliers col.c-pec { width: 28%; }
