@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260827a">
+    <link rel="stylesheet" href="/main.css?v=20260829a">
+    <!-- Preload LCP hero portrait — AVIF seul (Chromium/Safari 16.4+ chargeaient les deux formats ; le WebP reste le repli du <picture>) -->
+    <link rel="preload" as="image" type="image/avif"
+          href="/img/dr-majoulet-hero3-800.avif"
+          imagesrcset="/img/dr-majoulet-hero3-400.avif 400w, /img/dr-majoulet-hero3-800.avif 800w, /img/dr-majoulet-hero3-1080.avif 1080w"
+          imagesizes="(max-width: 860px) 100vw, 560px"
+          fetchpriority="high">
+    <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-600.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-700.woff2">
     <title>Dr Alexandre Majoulet — Ophtalmologue & Rétinologue Boulogne</title>
     <meta name="description" content="Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt : rétine, DMLA, cataracte, glaucome. Cabinet Ophtalife. Prenez RDV.">
     <meta name="keywords" content="ophtalmologue Boulogne-Billancourt, rétinologue, chirurgie rétine, DMLA, cataracte, décollement de rétine, injection intravitréenne, Dr Majoulet, Ophtalife">
@@ -240,21 +251,10 @@
     <meta name="theme-color" content="#283339">
     <meta name="color-scheme" content="light">
 
-    <!-- Preload LCP hero portrait — AVIF seul (Chromium/Safari 16.4+ chargeaient les deux formats ; le WebP reste le repli du <picture>) -->
-    <link rel="preload" as="image" type="image/avif"
-          href="/img/dr-majoulet-hero3-800.avif"
-          imagesrcset="/img/dr-majoulet-hero3-400.avif 400w, /img/dr-majoulet-hero3-800.avif 800w, /img/dr-majoulet-hero3-1080.avif 1080w"
-          imagesizes="(max-width: 860px) 100vw, 560px"
-          fetchpriority="high">
 
     <!-- DNS-prefetch : tiers non critiques (RDV Doctolib, Maps) -->
-    <link rel="preconnect" href="https://www.doctolib.fr">
     <link rel="dns-prefetch" href="https://www.doctolib.fr">
     <link rel="dns-prefetch" href="https://www.google.com">
-    <!-- Montserrat self-hosted (RGPD — plus de transfert IP vers Google, Phase 4.2) -->
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-700.woff2">
-    <link rel="stylesheet" href="/fonts/fonts.css">
 </head>
 <body class="page-index v2 v3 v4 v14 v18 v19 v26 m7 has-sticky-rdv">
 
