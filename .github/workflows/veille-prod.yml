@@ -1,0 +1,22 @@
+# Veille hebdomadaire du site en production (docteurmajoulet.com tel que servi par Netlify) :
+# pages du sitemap, en-têtes de sécurité, redirections, certificat TLS, fraîcheur du déploiement,
+# liens externes. En cas d'échec, GitHub envoie un mail au propriétaire du dépôt.
+# Détail : _tests/prod_check.py — lancement manuel possible (onglet Actions → « Run workflow »).
+name: Veille production
+
+on:
+  schedule:
+    - cron: '0 6 * * 1'   # chaque lundi 06:00 UTC (08:00 Paris)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  veille:
+    name: Site en production
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 _tests/prod_check.py

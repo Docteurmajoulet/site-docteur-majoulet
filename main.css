@@ -6335,3 +6335,49 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
 .mt-0 { margin-top: 0; }
 .mt-40 { margin-top: 40px; }
 /* ==================== fin CSS-2026-08-29 ==================== */
+
+/* ==================== PRINT-2026-08-29 : impression des pages ==================== */
+/* Une fiche imprimée (patient, proche, médecin traitant) : texte noir sur blanc, sans navigation,
+   sans boutons de rendez-vous, sans sommaire ni pages liées ; les encadrés (urgence, « En bref »,
+   questions/réponses, hôpitaux) gardent un cadre ; auteur, date de révision et coordonnées du
+   cabinet (pied de page) restent. Aucun effet à l'écran. */
+@media print {
+  @page { margin: 16mm 14mm; }
+  *, *::before, *::after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  html { font-size: 11pt; }
+  body { background: #fff !important; line-height: 1.45; }
+  /* Masqué à l'impression : barres, menus, boutons, sommaire, pages liées, portrait de la home */
+  .topbar, .menu-overlay, .skip-link, .sticky-rdv, .drawer-actions, .mega-panel, .mobile-toggle,
+  nav.main-nav, .nav-cta, .breadcrumb-mini, .toc, .cta-block, .related-pathologies, .footer-links,
+  .hero-buttons, .hero-photo, .hero-oct, .btn-doctolib, .btn-primary, .btn-outline, .btn-more,
+  .alert-actions .btn-alert-rdv, .specialty-icon, img[alt=""] { display: none !important; }
+  /* En-tête : seul le nom du site reste, comme un en-tête de lettre */
+  .site-header { position: static !important; border-bottom: 1px solid #000; padding: 0 0 6pt; margin-bottom: 10pt; }
+  .header-inner { height: auto !important; min-height: 0 !important; }
+  .page-header { padding: 0 0 8pt !important; margin: 0 0 12pt !important; border-bottom: 2px solid #000; }
+  .page-header h1 { font-size: 20pt !important; }
+  main, .main-with-header, .pathology-content, main > .container { padding-top: 0 !important; margin-top: 0 !important; }
+  .alert-urgence, .pathology-content > :first-child { margin-top: 0 !important; }
+  /* Encadrés : un cadre à la place des aplats de couleur */
+  .alert-urgence { border: 2px solid #000 !important; padding: 8pt 10pt !important; }
+  .forme-box, .qr-block, .key-fact, .hors-horaires, .enbref, .eeat-block, .travaux-block, table {
+    border: 1px solid #666 !important; padding: 6pt 8pt !important;
+  }
+  .forme-box, .qr-block, .key-facts, .hors-horaires, .alert-urgence, .enbref, table, figure, .eeat-block {
+    break-inside: avoid; page-break-inside: avoid;
+  }
+  h1, h2, h3, h4 { break-after: avoid; page-break-after: avoid; }
+  /* Le bouton « Appeler » devient une simple ligne avec le numéro */
+  .alert-actions .btn-alert-tel { display: inline !important; padding: 0 !important; border: 0 !important; font-weight: 700; }
+  .alert-actions .btn-alert-tel .ico { display: none !important; }
+  a { color: #000 !important; text-decoration: underline; }
+  a[href^="tel:"] { text-decoration: none; }
+  img, svg { max-width: 100% !important; }
+  .site-footer { border-top: 1px solid #000; margin-top: 14pt; padding-top: 6pt; font-size: 9pt; }
+}
+/* ==================== fin PRINT-2026-08-29 ==================== */
