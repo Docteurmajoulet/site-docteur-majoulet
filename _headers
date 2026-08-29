@@ -32,8 +32,8 @@
   #   ⚠️ Ne pas modifier ce script inline (ni ajouter d'autre script inline) sans recalculer le hash ici,
   #   sinon le script est bloqué (le contenu reste visible : filet CSS pour les sections .fade-in de la home).
   #   Les blocs <script type="application/ld+json"> ne sont pas exécutés : hors champ de script-src.
-  # style-src garde 'unsafe-inline' (attributs style= dans les pages).
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data: https:; frame-src https://www.google.com https://www.doctolib.fr; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+  # CSS-2026-08-29 : style-src 'self' — plus aucun attribut style= ni <style> dans les pages (classes utilitaires en fin de main.css).
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; font-src 'self'; img-src 'self' data: https:; frame-src https://www.google.com https://www.doctolib.fr; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
 
 # ---------- Cache : assets versionnables (images, fonts) ----------
 /*.png

@@ -6,9 +6,9 @@
  *   - Reset universel
  *   - Skip link accessibilité (WCAG 2.1 SC 2.4.1)
  *
- * Les règles spécifiques à chaque fiche restent en <style> inline
- * dans la page correspondante. Ce découpage maximise le cache navigateur
- * (main.css téléchargé une seule fois) sans fragiliser les maquettes.
+ * Toutes les règles du site sont ici (aucun <style> ni attribut style dans les
+ * pages : la CSP est en style-src 'self'). Chaque lot ajoute son bloc daté en fin
+ * de fichier ; toute modification exige un nouveau ?v= sur les 48 pages.
  */
 
 /* ==================== FONTS-2026-08-29 : polices ==================== */
@@ -116,7 +116,7 @@
 }
 /* --- Chips hero --- */
 .hero-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
-.hero-chips .hero-tag, .hero-chips .chip { margin-bottom: 0; }
+.hero-chips .hero-tag { margin-bottom: 0; }
 /* --- Note sous les boutons hero --- */
 .hero-note { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; margin: -22px 0 34px; }
 /* --- Trust cards (home) --- */
@@ -345,8 +345,7 @@ body.v26 {
     border: none;
     cursor: pointer;
 }
-:where(body.page-index) .btn-primary:hover,
-:where(body.page-pathologies) .btn-primary:hover {
+:where(body.page-index) .btn-primary:hover {
     background: var(--prusse-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -969,7 +968,7 @@ body.v3.menu-open {
     margin-bottom: 14px;
     padding-left: 24px;
 }
-:where(body.page-confidentialite) ul, :where(body.page-confidentialite) ol {
+:where(body.page-confidentialite) ul {
     padding-left: 1.5rem;
     margin-bottom: 12px;
 }
@@ -1192,13 +1191,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 :where(body.v7) .page-header .tagline {
     color: var(--sable);
-    font-size: 0.92rem;
-    font-style: italic;
-    margin-top: 6px;
-    font-weight: 300;
-}
-:where(body.page-dechirure-retine-corps-flottants) .page-header .tagline {
-    color: rgba(249,247,242,0.85);
     font-size: 0.92rem;
     font-style: italic;
     margin-top: 6px;
@@ -1529,7 +1521,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     max-width: 620px;
     margin: 0 auto;
 }
-:where(body.page-pathologies) .nav-cta:focus-visible, :where(body.page-pathologies) .btn-primary:focus-visible {
+:where(body.page-pathologies) .nav-cta:focus-visible {
     outline-color: var(--sable);
     outline-offset: 4px;
 }
@@ -2505,8 +2497,9 @@ body.m6.menu-open nav.main-nav {
     line-height: 1.6;
 }
 }
+/* CSS-2026-08-29 : préférence « réduire les animations » respectée sur les 48 pages (auparavant home et hub seulement) */
 @media (prefers-reduced-motion: reduce) {
-:where(body.m7) *, :where(body.m7) *::before, :where(body.m7) *::after {
+*, *::before, *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
@@ -2808,14 +2801,6 @@ body.m10.menu-open nav.main-nav {
     font-size: 1.6rem;
 }
 }
-@media (prefers-reduced-motion: reduce) {
-:where(body.m11) *, :where(body.m11) *::before, :where(body.m11) *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-}
-}
 @media (max-width: 1024px) {
 :where(body.m11) nav.main-nav {
     display: none;
@@ -3002,17 +2987,14 @@ body.m12.menu-open nav.main-nav {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
 }
-/* --- CTA principal du hero (home) et de /pathologies --- */
-:where(body.page-index) .btn-primary,
-:where(body.page-pathologies) .btn-primary {
+/* --- CTA principal du hero (home) --- */
+:where(body.page-index) .btn-primary {
     background: var(--cuivre-rdv);
 }
-:where(body.page-index) .btn-primary:hover,
-:where(body.page-pathologies) .btn-primary:hover {
+:where(body.page-index) .btn-primary:hover {
     background: var(--cuivre-rdv-deep);
 }
-:where(body.page-index) .btn-primary:focus-visible,
-:where(body.page-pathologies) .btn-primary:focus-visible {
+:where(body.page-index) .btn-primary:focus-visible {
     outline: 2px solid var(--cuivre-rdv-deep);
     outline-offset: 2px;
 }
@@ -4737,7 +4719,6 @@ body.page-index .cv12-row dd p {
     line-height: 1.6;
 }
 body.page-index .cv12-row dd p + p,
-body.page-index .cv12-row dd .cv12-hours + p,
 body.page-index .cv12-row dd .cv12-mail + p {
     margin-top: 4px;
 }
@@ -5196,7 +5177,6 @@ main.main-with-header > header.page-header + .container {
 }
 /* --- Très petits écrans : mots longs dans les titres, cartes piliers --- */
 header.page-header h1,
-article.pathology-content h1,
 article.pathology-content h2,
 article.pathology-content h3,
 article.pathology-content p,
@@ -5897,7 +5877,6 @@ article.pathology-content table.paliers tbody th {
 }
 article.pathology-content table.paliers col.c-palier { width: 16%; }
 article.pathology-content table.paliers col.c-quoi { width: 52%; }
-article.pathology-content table.paliers col.c-ou { width: 14%; }
 article.pathology-content table.paliers col.c-pec { width: 18%; }
 @media (max-width: 700px) {
 /* Empilé : chaque palier devient une carte, plus de défilement horizontal */
@@ -6336,3 +6315,23 @@ body.page-pathologies .page-header .hub-nav a:focus-visible {
 /* --- Sécheresse : tableau des paliers sans la colonne « Où » --- */
 article.pathology-content table.paliers col.c-quoi { width: 56%; }
 article.pathology-content table.paliers col.c-pec { width: 28%; }
+
+/* ==================== CSS-2026-08-29 : classes utilitaires (ex-attributs style inline) ==================== */
+/* Mêmes déclarations que les 50 attributs style="…" qu'elles remplacent (15 motifs). Placées en fin de
+   feuille pour garder la priorité qu'avaient les styles inline ; la CSP peut donc passer à style-src 'self'.
+   Ordre important : .mt-40 après .p-note-fin (une note de fin à 40 px), .mt-0 après les règles de titres. */
+.p-note-fin { margin-top: 32px; font-size: 0.82rem; color: var(--text-muted); text-align: center; }
+.note-maj { margin-top: 36px; font-size: 0.85rem; color: var(--text-muted); }
+.note-italique { font-size: 0.85rem; font-style: italic; }
+.note-muted { font-size: 0.82rem; color: var(--text-muted); }
+.texte-centre { text-align: center; }
+.bloc-centre { text-align: center; margin: 24px 0; }
+.liste-serree { margin-top: 8px; margin-bottom: 0; }
+.section-espace { padding: 3rem 0; }
+.forme-box--chir { border-left-color: var(--accent-chir, #6b5d3f); }
+.amsler-svg { max-width: 100%; height: auto; background: #fff; border: 1px solid var(--border); }
+.img-bloc { width: 100%; max-width: 700px; height: auto; border-radius: 12px; display: block; margin: 0 auto; }
+.lien-herite { color: inherit; }
+.mt-0 { margin-top: 0; }
+.mt-40 { margin-top: 40px; }
+/* ==================== fin CSS-2026-08-29 ==================== */

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260829a">
+    <link rel="stylesheet" href="/main.css?v=20260829b">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -312,8 +312,8 @@
             </nav>
 
             <h2 id="la-grille-a-imprimer">La grille à imprimer</h2>
-            <div style="text-align:center; margin: 24px 0;">
-                <svg viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Grille d'Amsler : quadrillage régulier de 20 cases sur 20 avec un point de fixation central" style="max-width:100%; height:auto; background:#fff; border:1px solid var(--border);">
+            <div class="bloc-centre">
+                <svg viewBox="0 0 320 320" width="320" height="320" role="img" aria-label="Grille d'Amsler : quadrillage régulier de 20 cases sur 20 avec un point de fixation central" class="amsler-svg">
                     <g stroke="#283339" stroke-width="1">
                         <line x1="10" y1="10" x2="10" y2="310"/><line x1="10" y1="10" x2="310" y2="10"/>
                         <line x1="25" y1="10" x2="25" y2="310"/><line x1="10" y1="25" x2="310" y2="25"/>
@@ -340,7 +340,7 @@
                     <circle cx="160" cy="160" r="5" fill="#283339"/>
                 </svg>
             </div>
-            <p style="text-align:center;">
+            <p class="texte-centre">
                 <a class="btn-rdv" href="/grille-amsler.pdf" download>Télécharger la grille d'Amsler (PDF à imprimer)</a>
             </p>
             <p>
@@ -452,7 +452,7 @@
                 </div>
             </div>
 
-            <p style="margin-top: 32px; font-size: 0.82rem; color: var(--text-muted); text-align: center;">
+            <p class="p-note-fin">
                 <em>Cette page a un but d'information et ne se substitue pas à une consultation médicale.</em>
             </p>
         </article>

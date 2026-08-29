@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260829a">
+    <link rel="stylesheet" href="/main.css?v=20260829b">
     <!-- Preload LCP hero portrait — AVIF seul (Chromium/Safari 16.4+ chargeaient les deux formats ; le WebP reste le repli du <picture>) -->
     <link rel="preload" as="image" type="image/avif"
           href="/img/dr-majoulet-hero3-800.avif"
@@ -554,13 +554,13 @@
 </section>
 
 <!-- ===== PHOTO CHIRURGIE ===== -->
-<section style="padding: 3rem 0;">
+<section class="section-espace">
     <div class="container">
         <div>
             <picture>
                 <source type="image/avif" srcset="/img/chirurgie-800.avif 800w, /img/chirurgie-1200.avif 1200w" sizes="(max-width: 740px) 100vw, 700px">
                 <source type="image/webp" srcset="/img/chirurgie-800.webp 800w, /img/chirurgie-1200.webp 1200w" sizes="(max-width: 740px) 100vw, 700px">
-                <img src="/img/chirurgie-800.jpg" srcset="/img/chirurgie-800.jpg 800w, /img/chirurgie-1200.jpg 1200w" sizes="(max-width: 740px) 100vw, 700px" alt="Dr Alexandre Majoulet au microscope opératoire lors d'une chirurgie vitréo-rétinienne" width="1200" height="800" loading="lazy" decoding="async" style="width: 100%; max-width: 700px; height: auto; border-radius: 12px; display: block; margin: 0 auto;">
+                <img src="/img/chirurgie-800.jpg" srcset="/img/chirurgie-800.jpg 800w, /img/chirurgie-1200.jpg 1200w" sizes="(max-width: 740px) 100vw, 700px" alt="Dr Alexandre Majoulet au microscope opératoire lors d'une chirurgie vitréo-rétinienne" width="1200" height="800" loading="lazy" decoding="async" class="img-bloc">
             </picture>
         </div>
     </div>
