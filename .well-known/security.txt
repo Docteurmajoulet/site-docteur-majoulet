@@ -1,0 +1,7 @@
+# Politique de signalement de vulnérabilité — docteurmajoulet.com (RFC 9116)
+# Site vitrine statique (Netlify) du Dr Alexandre Majoulet, chirurgien ophtalmologue — Cabinet Ophtalife, Boulogne-Billancourt.
+# Merci de signaler tout problème de sécurité au secrétariat, qui transmettra.
+Contact: mailto:secretariat@ophtalife.com
+Expires: 2027-08-29T00:00:00.000Z
+Preferred-Languages: fr, en
+Canonical: https://docteurmajoulet.com/.well-known/security.txt

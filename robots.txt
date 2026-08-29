@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
-Disallow:
+# Fichiers techniques (déjà servis en 404) — SEO-2026-08-29
+Disallow: /_tests/
+Disallow: /.github/
 
 Sitemap: https://docteurmajoulet.com/sitemap.xml
