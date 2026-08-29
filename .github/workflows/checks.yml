@@ -1,0 +1,51 @@
+# Contrôles automatiques du site docteurmajoulet.com — lancés à chaque push sur main (et sur les PR).
+# Le déploiement Netlify n'attend pas ces contrôles : ils signalent (mail GitHub + coche rouge) mais ne bloquent pas.
+# Détail des contrôles : _tests/README.md
+name: Contrôles du site
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  statique:
+    name: Contrôles statiques (HTML, liens, CSP, sitemap, règles éditoriales)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 _tests/check_static.py
+
+  navigateur:
+    name: Navigateur (axe, CSP, débordements) + Lighthouse
+    runs-on: ubuntu-latest
+    needs: statique
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: _tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: _tests/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Tests navigateur (48 pages × 4 largeurs)
+        run: node browser.mjs
+      - name: Lighthouse mobile (4 pages clés)
+        if: always()
+        run: node lighthouse.mjs
+      - name: Rapports Lighthouse
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapports-lighthouse
+          path: _tests/reports/
+          retention-days: 30

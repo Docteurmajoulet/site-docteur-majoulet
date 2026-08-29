@@ -167,3 +167,8 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 # ---------- 5. 404 personnalisée ----------
 # Netlify sert automatiquement /404.html si présent.
 # Pas de règle explicite nécessaire.
+
+# ---------- 6. Fichiers techniques non publiés (TESTS-2026-08-29) ----------
+# Le harnais de tests et le workflow GitHub sont dans le dépôt mais ne font pas partie du site.
+/_tests/*          /404.html   404
+/.github/*         /404.html   404

@@ -12,3 +12,8 @@ README_UPLOAD.md
 .DS_Store
 Thumbs.db
 __pycache__/
+
+# Harnais de tests (TESTS-2026-08-29) : dépendances npm, captures et rapports Lighthouse
+node_modules/
+_tests/shots/
+_tests/reports/

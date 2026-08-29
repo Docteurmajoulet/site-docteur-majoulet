@@ -1,0 +1,23 @@
+{
+  "name": "docteurmajoulet-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Contrôles automatiques du site docteurmajoulet.com (statiques, navigateur, Lighthouse, captures).",
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:static && npm run test:browser && npm run test:lh",
+    "test:static": "python3 check_static.py",
+    "test:browser": "node browser.mjs",
+    "test:lh": "node lighthouse.mjs",
+    "serve": "python3 serve.py 8765",
+    "shots": "node shots.mjs"
+  },
+  "devDependencies": {
+    "axe-core": "4.13.0",
+    "chrome-launcher": "1.2.1",
+    "lighthouse": "13.4.1",
+    "pixelmatch": "7.2.0",
+    "playwright": "1.56.1",
+    "pngjs": "7.0.0"
+  }
+}
