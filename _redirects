@@ -170,5 +170,6 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 
 # ---------- 6. Fichiers techniques non publiés (TESTS-2026-08-29) ----------
 # Le harnais de tests et le workflow GitHub sont dans le dépôt mais ne font pas partie du site.
-/_tests/*          /404.html   404
-/.github/*         /404.html   404
+# « ! » obligatoire : sans lui Netlify sert le fichier existant et ignore la règle (constaté le 30/08/2026).
+/_tests/*          /404.html   404!
+/.github/*         /404.html   404!

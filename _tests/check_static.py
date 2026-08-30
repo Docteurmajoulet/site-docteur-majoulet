@@ -13,7 +13,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
   - sécurité : un seul script inline (celui autorisé par la CSP), dont le hash sha256 est bien celui
     déclaré dans _headers ; aucun autre <script> inline ; nav.js et main.css référencés avec le même
     ?v= sur toutes les pages, fichiers présents ;
-  - _redirects : cibles internes existantes ; sitemap : lastmod valides ; security.txt non expiré ;
+  - _redirects : cibles internes existantes, règles forcées (« ! ») quand le chemin existe ; sitemap : lastmod valides ; security.txt non expiré ;
   - règles éditoriales du Dr Majoulet : « baisse brutale » jamais seul (toujours « … de la vision »),
     jamais « OPTAM », jamais « 24/7 ».
 Sortie : liste des erreurs (code 1) et des avertissements (code 0).
@@ -129,6 +129,13 @@ def check(root):
                 target = parts[1].split('#')[0].split('?')[0]
                 if target != '/' and not (exists(target) or exists(target + '.html') or exists(target.rstrip('/') + '/index.html')):
                     E(f'_redirects : cible inexistante {parts[1]}')
+            if len(parts) >= 2 and parts[0].startswith('/'):
+                # Netlify sert un fichier existant AVANT d'appliquer une règle non forcée : une règle qui vise un
+                # chemin présent dans le dépôt (/_tests/*, /x.html → /x) doit porter un « ! » sur le statut.
+                status = parts[2] if len(parts) > 2 else '301'
+                base = parts[0].split('*')[0].rstrip('/')
+                if base and (exists(base) or exists(base + '/index.html')) and not status.endswith('!'):
+                    E(f'_redirects : « {parts[0]} » vise un chemin présent dans le dépôt — Netlify servira le fichier et ignorera la règle (mettre {status}!)')
 
     css_versions, js_versions, inline_hashes = {}, {}, {}
     slugs = {p.slug for p in pages.values()}
