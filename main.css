@@ -13,7 +13,7 @@
 
 /* ==================== FONTS-2026-08-29 : polices ==================== */
 /* Montserrat auto-hébergé (RGPD : aucun transfert vers Google), sous-ensemble latin.
-   Déclaré ici plutôt que dans /fonts/fonts.css : une feuille bloquante de moins par page.
+   Déclaré ici plutôt que dans une feuille séparée : une feuille bloquante de moins par page (l'ancienne /fonts/fonts.css a été retirée — FORCED-2026-08-31).
    Les faces « Montserrat Fallback » (Arial) et « Montserrat Fallback Android » (Roboto)
    rendent le texte de repli à la même chasse et à la même hauteur de ligne que Montserrat
    (size-adjust / ascent-override / descent-override) : plus de décalage de mise en page
@@ -6381,3 +6381,17 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
   .site-footer { border-top: 1px solid #000; margin-top: 14pt; padding-top: 6pt; font-size: 9pt; }
 }
 /* ==================== fin PRINT-2026-08-29 ==================== */
+
+/* ============================================================
+   FORCED-2026-08-31 — Contraste élevé (Windows, forced-colors)
+   Dans ce mode le système supprime les fonds : les boutons pleins,
+   sans bordure, perdent tout contour (constaté sur « Prendre
+   rendez-vous » et « Appeler le cabinet »). Bordure en currentColor,
+   active uniquement en forced-colors — aucun effet en rendu normal.
+   ============================================================ */
+@media (forced-colors: active) {
+    .btn-primary, .btn-doctolib, .nav-cta, .hero-cta,
+    .btn-alert-tel, .sticky-rdv a {
+        border: 2px solid currentColor;
+    }
+}
