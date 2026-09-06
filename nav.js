@@ -1,4 +1,6 @@
-/* nav.js — docteurmajoulet.com — TECH3-2026-08-25 (v5)
+/* nav.js — docteurmajoulet.com — TECH4D-2026-09-06 (v6)
+   v6 : façade Google Maps de la home — l'iframe (adresse IP transmise à Google) n'est
+   créée qu'au clic sur « Afficher la carte » (RGPD : consentement par l'action).
    v5 : plus de révélation des sections .fade-in (animation retirée : le filet
    CSS du lot CSP-2026-08-25 rendait tout visible à 2,5 s de toute façon, et
    moins de mouvement pour une audience de 55-85 ans) ; le reste est la v4
@@ -168,6 +170,24 @@
         if (isDesktop() && body.classList.contains('menu-open')) { closeMenu(false); }
         else { sizeDrawer(); }
     });
+
+    /* ---------- TECH4D-2026-09-06 : façade Google Maps (home) — l'iframe n'existe qu'après le clic ---------- */
+    var mapFacade = document.getElementById('map-facade');
+    var mapBtn = mapFacade ? mapFacade.querySelector('.map-facade-btn') : null;
+    if (mapBtn) {
+        mapBtn.addEventListener('click', function () {
+            var f = document.createElement('iframe');
+            f.src = mapBtn.getAttribute('data-map-src');
+            f.title = mapBtn.getAttribute('data-map-title') || 'Carte Google Maps';
+            f.setAttribute('allowfullscreen', '');
+            f.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+            f.setAttribute('tabindex', '-1');
+            /* même hauteur que la façade (CSSOM, autorisé par la CSP) : aucun décalage au remplacement */
+            f.style.minHeight = mapFacade.getBoundingClientRect().height + 'px';
+            mapFacade.parentNode.replaceChild(f, mapFacade);
+            f.focus();
+        });
+    }
 
     /* ---------- Barre RDV fixe : masquée tant que le bouton RDV du hero est à l'écran ---------- */
     var heroCta = document.querySelector('.hero-buttons .btn-primary');

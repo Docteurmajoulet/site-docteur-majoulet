@@ -6412,3 +6412,74 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
     .topbar-info { display: none; }
     .topbar-inner { justify-content: center; }
 }
+
+/* ============================================================
+   TECH4D-2026-09-06 — Façade Google Maps (home, bloc contact)
+   Même boîte que l'iframe qu'elle remplace (flex 1 / min-height 340,
+   300 px sous 860 px, même bordure et même fond) : aucun décalage
+   quand l'iframe prend sa place au clic. Bouton « outline » sable
+   sur fond ardoise (action secondaire, pas un geste de RDV : pas de
+   cuivre). Sans JavaScript, le bouton est masqué.
+   ============================================================ */
+body.page-index .contact-v12 .contact-map .map-facade {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 340px;
+    padding: 28px 24px;
+    gap: 10px;
+    text-align: center;
+    border: 1px solid rgba(249, 247, 242, 0.1);
+    border-radius: var(--radius);
+    background: rgba(249, 247, 242, 0.05);
+    color: rgba(249, 247, 242, 0.8);
+}
+.map-facade-ico { width: 34px; height: 34px; color: var(--sable-light); }
+.map-facade-title {
+    margin: 0;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--blanc-naturel);
+}
+.map-facade-note {
+    margin: 0;
+    max-width: 38ch;
+    font-size: 0.82rem;
+    line-height: 1.6;
+    color: rgba(249, 247, 242, 0.72);
+}
+.map-facade-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.map-facade-note a:hover, .map-facade-note a:focus-visible { color: var(--blanc-naturel); }
+.map-facade-btn {
+    margin-top: 6px;
+    min-height: 44px;
+    padding: 11px 24px;
+    border: 2px solid var(--sable-light);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--blanc-naturel);
+    font: inherit;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.15s;
+}
+.map-facade-btn:hover, .map-facade-btn:focus-visible {
+    background: var(--sable-light);
+    color: var(--prusse-dark);
+    transform: translateY(-1px);
+}
+html:not(.js) .map-facade-btn { display: none; }
+@media (max-width: 860px) {
+    body.page-index .contact-v12 .contact-map .map-facade { min-height: 300px; flex: 0 0 auto; }
+}
+@media (forced-colors: active) { .map-facade-btn { border: 2px solid currentColor; } }
+@media print { .map-facade { display: none !important; } }

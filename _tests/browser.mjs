@@ -42,6 +42,16 @@ try {
         loads++;
         const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
         if (over > 0) problems.push(`débordement horizontal de ${over}px`);
+        if (slug === 'index') {   // TECH4D-2026-09-06 : la façade Google Maps crée l'iframe au clic (et pas avant)
+          if (await page.locator('iframe[src*="google.com/maps"]').count()) problems.push('carte : iframe Google Maps présente avant tout clic');
+          const btn = page.locator('.map-facade-btn');
+          if (await btn.count() !== 1) problems.push('carte : bouton « Afficher la carte » absent');
+          else {
+            await btn.click();
+            if (await page.locator('iframe[src*="google.com/maps/embed"]').count() !== 1) problems.push('carte : iframe non créée après le clic');
+            if (await page.locator('#map-facade').count()) problems.push('carte : façade toujours présente après le clic');
+          }
+        }
         const cspv = await page.evaluate(() => window.__cspv);
         for (const v of cspv) problems.push('CSP : ' + v);
         if (AXE_WIDTHS.includes(w)) {
