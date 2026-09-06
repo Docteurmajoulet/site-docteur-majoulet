@@ -6395,3 +6395,20 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
         border: 2px solid currentColor;
     }
 }
+
+/* ============================================================
+   TECH4A-2026-09-06 — Bandeau urgence jamais tronqué (tour technique 4)
+   .topbar-urgence était en nowrap + text-overflow: ellipsis : le message
+   « Urgence rétinienne : le jour même ou sous 24-48 h » était coupé entre
+   901 et ~975 px de large (« …ou sous 24-4… ») et, sous le test
+   d'espacement du texte WCAG 1.4.12 (interlignage 1,5, lettres 0,12 em,
+   mots 0,16 em), dès 431 px. Le texte passe désormais à la ligne au lieu
+   d'être coupé ; entre 901 et 999 px l'information de droite (.topbar-info)
+   est masquée comme sous 900 px, pour garder le message sur une ligne.
+   Rendu inchangé ailleurs (captures identiques à 320/390/768/1366).
+   ============================================================ */
+.topbar-urgence { white-space: normal; text-overflow: clip; }
+@media (min-width: 901px) and (max-width: 999px) {
+    .topbar-info { display: none; }
+    .topbar-inner { justify-content: center; }
+}

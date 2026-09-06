@@ -24,6 +24,8 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 # Netlify sert automatiquement /page quand page.html existe (option "Pretty URLs" activée par défaut).
 # Les règles suivantes ajoutent une redirection 301 depuis l'URL .html vers l'URL propre,
 # pour consolider le signal canonique SEO.
+# TECH4A-2026-09-06 : /index.html était la seule URL .html encore servie en 200 (doublon de la racine).
+/index.html                      /                           301!
 /pathologies.html                /pathologies                301!
 /mentions-legales.html           /mentions-legales           301!
 /confidentialite.html            /confidentialite            301!

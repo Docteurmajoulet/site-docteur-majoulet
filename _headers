@@ -21,11 +21,13 @@
   Cross-Origin-Resource-Policy: same-site
 
   # --- Permissions-Policy : coupe capteurs sensibles non utilisés ---
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), interest-cohort=()
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
 
   # --- Content-Security-Policy ---
   # Phase 4.2 : Montserrat self-hosted → plus besoin d'autoriser fonts.googleapis.com / fonts.gstatic.com.
-  # Autorise : doctolib.fr (CTA sortant), google.com/maps (iframe contact), images HTTPS (schémas JSON-LD).
+  # Autorise : doctolib.fr (CTA sortant), google.com/maps (iframe contact).
+  # TECH4A-2026-09-06 : img-src 'self' data: — aucune image externe n'est chargée (les URL d'images des
+  #   JSON-LD sont des données, pas des chargements) ; interest-cohort (FLoC, obsolète) retiré de Permissions-Policy.
   # CSP-2026-08-25 : plus de 'unsafe-inline' pour les scripts. JS externe (/nav.js) + un seul script inline,
   #   identique sur toutes les pages et autorisé par son hash :
   #   <script>document.documentElement.classList.add('js');</script>  → sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=
@@ -33,7 +35,7 @@
   #   sinon le script est bloqué (le contenu reste visible : filet CSS pour les sections .fade-in de la home).
   #   Les blocs <script type="application/ld+json"> ne sont pas exécutés : hors champ de script-src.
   # CSS-2026-08-29 : style-src 'self' — plus aucun attribut style= ni <style> dans les pages (classes utilitaires en fin de main.css).
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; font-src 'self'; img-src 'self' data: https:; frame-src https://www.google.com https://www.doctolib.fr; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src https://www.google.com https://www.doctolib.fr; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
 
 # ---------- Cache : assets versionnables (images, fonts) ----------
 /*.png
