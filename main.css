@@ -6510,3 +6510,56 @@ body.page-pathologies .hub-cta .btn-rdv .btn-more { margin-left: 8px; } /* l'anc
     .sticky-rdv .sticky-tel .ico { width: 18px; height: 18px; }
     .sticky-rdv .sticky-doctolib { padding-left: 14px; padding-right: 14px; }
 }
+
+/* ============================================================
+   TECH5F-2026-09-06 — Palette & règles maison (critique n°6, tour technique 5)
+   1. .alert-rouge : liseré rouge #c63a1a hors palette (7 pages) → boîte de
+      l'encadré d'urgence (fond #fdf3e0, bordure ambre 45 %, gras #8a4510).
+   2. .related-link:hover : plus de cuivre (le cuivre est réservé au RDV).
+   3. Anneaux de focus des boutons cuivre : 3 px ardoise, décalage 3 px.
+   4. Carte de la home : « Chargement de la carte… » tant que l'iframe n'a
+      pas chargé (classe .map-loading posée par nav.js).
+   5. Hub : la carte non cliquable (Uvéites) se distingue (tireté, transparent).
+   6. Méga-menu : en-tête de colonne sans lien aligné sur les en-têtes-liens.
+   ============================================================ */
+.alert-rouge {
+    background: #fdf3e0;
+    border: 1px solid rgba(217, 140, 42, 0.45);
+    border-left-width: 1px;
+    border-radius: var(--radius);
+}
+.alert-rouge strong { color: var(--alerte-texte, #8a4510); }
+.related-link:hover {
+    border-color: var(--prusse-light) !important;
+    color: var(--prusse) !important;
+}
+.nav-cta:focus-visible,
+.btn-rdv:focus-visible,
+.table-scroll:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+}
+body.page-index .contact-v12 .contact-map { position: relative; }
+body.page-index .contact-v12 .contact-map.map-loading::before {
+    content: "Chargement de la carte\2026";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 45%;
+    text-align: center;
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: rgba(249, 247, 242, 0.6);
+    pointer-events: none;
+}
+body.page-pathologies .hub-card--static {
+    background: transparent;
+    border-style: dashed;
+}
+.mega-col .mega-title {
+    display: flex;
+    align-items: center;
+}
+.mega-col .mega-title:not(:has(a)) { min-height: 36px; } /* même boîte que les en-têtes-liens (a : 24 px + 2×2 de padding, p : 10 px + 2 px de filet) */

@@ -1,4 +1,6 @@
-/* nav.js — docteurmajoulet.com — TECH4D-2026-09-06 (v6)
+/* nav.js — docteurmajoulet.com — TECH5F-2026-09-06 (v7)
+   v7 : état « Chargement de la carte… » pendant le chargement de l'iframe Google ;
+   .table-scroll focalisable seulement quand le tableau déborde réellement.
    v6 : façade Google Maps de la home — l'iframe (adresse IP transmise à Google) n'est
    créée qu'au clic sur « Afficher la carte » (RGPD : consentement par l'action).
    v5 : plus de révélation des sections .fade-in (animation retirée : le filet
@@ -184,10 +186,29 @@
             f.setAttribute('tabindex', '-1');
             /* même hauteur que la façade (CSSOM, autorisé par la CSP) : aucun décalage au remplacement */
             f.style.minHeight = mapFacade.getBoundingClientRect().height + 'px';
-            mapFacade.parentNode.replaceChild(f, mapFacade);
+            /* TECH5F-2026-09-06 : « Chargement de la carte… » tant que Google n'a pas répondu */
+            var mapWrap = mapFacade.parentNode;
+            mapWrap.classList.add('map-loading');
+            f.addEventListener('load', function () { mapWrap.classList.remove('map-loading'); });
+            mapWrap.replaceChild(f, mapFacade);
             f.focus();
         });
     }
+
+    /* ---------- TECH5F-2026-09-06 : .table-scroll — focalisable et « défilement horizontal possible » seulement si le tableau déborde ---------- */
+    var scrollers = Array.prototype.slice.call(document.querySelectorAll('.table-scroll'));
+    function fitTables() {
+        scrollers.forEach(function (ts) {
+            if (ts.scrollWidth > ts.clientWidth + 1) {
+                ts.setAttribute('tabindex', '0');
+                ts.setAttribute('aria-label', 'Tableau (défilement horizontal possible)');
+            } else {
+                ts.removeAttribute('tabindex');
+                ts.setAttribute('aria-label', 'Tableau');
+            }
+        });
+    }
+    if (scrollers.length) { fitTables(); window.addEventListener('resize', fitTables); }
 
     /* ---------- Barre RDV fixe : masquée tant que le bouton RDV du hero est à l'écran ---------- */
     var heroCta = document.querySelector('.hero-buttons .btn-primary');
