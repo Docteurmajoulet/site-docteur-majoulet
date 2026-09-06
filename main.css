@@ -6483,3 +6483,30 @@ html:not(.js) .map-facade-btn { display: none; }
 }
 @media (forced-colors: active) { .map-facade-btn { border: 2px solid currentColor; } }
 @media print { .map-facade { display: none !important; } }
+
+/* ============================================================
+   TECH5E-2026-09-06 — CTA lisibles & barre fixe (critique n°6, tour technique 5)
+   1. .btn-rdv : le texte et « sur Doctolib » (.btn-more) étaient deux items
+      flex ; quand la largeur manquait (360-414 px, 7 pages) chacun se repliait
+      sur lui-même : « PRENDRE  SUR / RENDEZ-VOUS  DOCTOLIB ». Le libellé est
+      désormais un seul item (.btn-label) : il passe à la ligne comme un texte.
+   2. Barre fixe : « Appeler » garde son libellé de 375 à 599 px (ex-disque
+      icône seule sous 600 px) ; sous 375 px le disque reste, sinon le libellé
+      « Prendre rendez-vous » ne tiendrait plus sur une ligne.
+   ============================================================ */
+.btn-rdv .btn-label { display: inline; text-align: center; }
+body.page-pathologies .hub-cta .btn-rdv .btn-more { margin-left: 8px; } /* l'ancien gap flex entre les deux items */
+@media (min-width: 375px) and (max-width: 599px) {
+    .sticky-rdv .sticky-tel {
+        width: auto;
+        height: 48px;
+        padding: 0 14px 0 12px;
+        border-radius: 50px;
+        gap: 6px;
+        font-size: 0.78rem;
+        letter-spacing: 0.04em;
+    }
+    .sticky-rdv .sticky-tel .lbl { display: inline; }
+    .sticky-rdv .sticky-tel .ico { width: 18px; height: 18px; }
+    .sticky-rdv .sticky-doctolib { padding-left: 14px; padding-right: 14px; }
+}

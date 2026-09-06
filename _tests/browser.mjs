@@ -52,6 +52,38 @@ try {
             if (await page.locator('#map-facade').count()) problems.push('carte : façade toujours présente après le clic');
           }
         }
+        // TECH5E-2026-09-06 : (a) aucun bouton dont le texte direct (item flex anonyme) se replie sur ≥ 2 lignes
+        // — c'est ce qui donnait « PRENDRE  SUR / RENDEZ-VOUS  DOCTOLIB » ; (b) barre fixe : ses deux boutons sur une ligne.
+        const grid = await page.evaluate(() => {
+          const out = [];
+          const linesOf = node => { const r = document.createRange(); r.selectNodeContents(node); return new Set(Array.from(r.getClientRects()).filter(x => x.width > 2 && x.height > 4).map(x => Math.round(x.top / 4))).size; };
+          for (const el of document.querySelectorAll('a, button')) {
+            const cs = getComputedStyle(el);
+            if (!cs.display.includes('flex') || cs.display === 'none' || el.getClientRects().length === 0) continue;
+            // boutons et pills seulement (rangée flex, coins ≥ 20 px ou classe btn-*) — pas les cartes-liens en colonne
+            if (cs.flexDirection !== 'row' || !(parseFloat(cs.borderTopLeftRadius) >= 20 || /(^|\s)btn-/.test(el.className))) continue;
+            let multi = 0;   // items flex (texte direct ou enfant visible) qui occupent chacun ≥ 2 lignes : ≥ 2 = grille
+            for (const node of el.childNodes) {
+              if (node.nodeType === 3) { if (node.textContent.trim() && linesOf(node) >= 2) multi++; continue; }
+              if (node.nodeType !== 1 || node.tagName === 'svg' || node.classList.contains('sr-only') || node.getAttribute('aria-hidden') === 'true') continue;
+              if (getComputedStyle(node).display === 'none') continue;
+              if (node.textContent.trim() && linesOf(node) >= 2) multi++;
+            }
+            if (multi >= 2) out.push(`${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]} « ${el.textContent.trim().replace(/\s+/g, ' ').slice(0, 40)} » : libellé en colonnes`);
+          }
+          const bar = document.querySelector('.sticky-rdv');
+          if (bar && getComputedStyle(bar).display !== 'none') {
+            for (const a of bar.querySelectorAll('a')) {   // lignes du texte visible (les spans .sr-only sont hors écran : ignorés)
+              const tops = new Set();
+              const walker = document.createTreeWalker(a, NodeFilter.SHOW_TEXT, { acceptNode: t => (t.textContent.trim() && !t.parentElement.closest('.sr-only')) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT });
+              let t; while ((t = walker.nextNode())) { const r = document.createRange(); r.selectNodeContents(t); for (const x of r.getClientRects()) if (x.width > 2) tops.add(Math.round(x.top / 6)); }
+              if (tops.size >= 2 || a.scrollWidth > a.clientWidth + 1) out.push(`barre fixe : « ${a.textContent.trim().slice(0, 30)} » sur ${tops.size} lignes ou tronqué`);
+            }
+            if (bar.scrollWidth > bar.clientWidth + 1) out.push('barre fixe : débordement horizontal');
+          }
+          return out;
+        });
+        for (const g of grid) problems.push('bouton : ' + g);
         const cspv = await page.evaluate(() => window.__cspv);
         for (const v of cspv) problems.push('CSP : ' + v);
         if (AXE_WIDTHS.includes(w)) {
