@@ -84,6 +84,20 @@ try {
           return out;
         });
         for (const g of grid) problems.push('bouton : ' + g);
+        // TECH5G-2026-09-06 : corps de fiche — la colonne de texte ne doit pas redevenir trop large pour son corps
+        // (largeur / taille de police > 42 em ≈ plus de 90 caractères par ligne ; 680/15,36 = 44,3 avant le lot, 660/16,8 = 39,3 après).
+        if (w >= 1024) {
+          const wide = await page.evaluate(() => {
+            const out = [];
+            for (const p of document.querySelectorAll('article.pathology-content > p:not([class]), article.pathology-content > .page-section > p:not([class])')) {
+              const r = p.getBoundingClientRect(); if (r.width < 200 || r.height === 0) continue;
+              const em = r.width / parseFloat(getComputedStyle(p).fontSize);
+              if (em > 42) { out.push(`${Math.round(r.width)} px pour ${getComputedStyle(p).fontSize} (${em.toFixed(1)} em)`); break; }
+            }
+            return out;
+          });
+          for (const x of wide) problems.push('corps de fiche : colonne trop large — ' + x);
+        }
         const cspv = await page.evaluate(() => window.__cspv);
         for (const v of cspv) problems.push('CSP : ' + v);
         if (AXE_WIDTHS.includes(w)) {

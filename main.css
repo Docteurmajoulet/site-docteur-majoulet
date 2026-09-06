@@ -51,7 +51,7 @@
     --accent-chir: #6b5d3f;
     /* Texte */
     --text: #283339;
-    --text-light: #5a6a72;
+    --text-light: #4f5f67; /* TECH5G-2026-09-06 : ex-#5a6a72 (5,2:1) -> 6,2:1 sur blanc naturel, 6,6:1 sur blanc */
     --text-muted: #5d6d75;   /* 20/08/2026 : ex-#7a8a92 (3,6:1) -> 5,0:1 sur blanc naturel, WCAG AA */
     /* Bordures / radius */
     --border: #e2ddd4;
@@ -6563,3 +6563,42 @@ body.page-pathologies .hub-card--static {
     align-items: center;
 }
 .mega-col .mega-title:not(:has(a)) { min-height: 36px; } /* même boîte que les en-têtes-liens (a : 24 px + 2×2 de padding, p : 10 px + 2 px de filet) */
+
+/* ============================================================
+   TECH5G-2026-09-06 — Lisibilité des fiches (critique n°6, tour technique 5)
+   93-98 caractères par ligne en 15,4 px sur la colonne de 680 px :
+   corps de fiche à 1,05 rem (16,8 px) et colonne 68ch → 60ch (660 px)
+   → 71-77 caractères en moyenne sur la ligne la plus longue de chaque
+   bloc, 81-87 au maximum (mesuré à 1366 sur 3 fiches). Réponses de FAQ
+   et niveaux d'alerte à 1 rem. --text-light un cran plus sombre (:root).
+   Les paragraphes et listes à classe (.p-note-fin, .cta-line, .meta,
+   .note-italique, .travaux-list…) gardent leur corps propre.
+   ============================================================ */
+article.pathology-content > p,
+article.pathology-content > ul,
+article.pathology-content > ol,
+article.pathology-content > .page-section > p,
+article.pathology-content > .page-section > ul,
+article.pathology-content > .page-section > ol,
+article.pathology-content > .forme-box p,
+article.pathology-content > .forme-box ul,
+article.pathology-content > .forme-box ol,
+article.pathology-content .qr-block .r {
+    max-width: 60ch;
+}
+article.pathology-content > p:not([class]),
+article.pathology-content > p.texte-centre,
+article.pathology-content > .page-section > p:not([class]),
+article.pathology-content > ul:not([class]) > li,
+article.pathology-content > ol:not([class]) > li,
+article.pathology-content > .page-section > ul:not([class]) > li,
+article.pathology-content > .page-section > ol:not([class]) > li,
+article.pathology-content > .forme-box p,
+article.pathology-content > .forme-box li,
+article.pathology-content > .enbref li {
+    font-size: 1.05rem;
+}
+article.pathology-content .qr-block .r,
+.alert-urgence .alert-niveau {
+    font-size: 1rem;
+}
