@@ -61,10 +61,7 @@
         "honorificPrefix": "Dr",
         "description": "Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt.",
         "image": "https://docteurmajoulet.com/photo.jpg",
-        "medicalSpecialty": [
-            {"@type": "MedicalSpecialty", "name": "Ophthalmology"},
-            {"@type": "MedicalSpecialty", "name": "Retina Surgery"}
-        ],
+        "medicalSpecialty": "https://schema.org/Ophthalmologic",
         "jobTitle": "Chirurgien Ophtalmologue — Rétinologue",
         "telephone": "+33184191166",
         "email": "secretariat@ophtalife.com",
@@ -75,6 +72,7 @@
         "knowsLanguage": ["fr", "en"],
         "worksFor": {
             "@type": "MedicalClinic",
+            "@id": "https://docteurmajoulet.com/#cabinet",
             "name": "Cabinet Ophtalife",
             "address": {"@type": "PostalAddress", "streetAddress": "37 Rue d'Aguesseau", "addressLocality": "Boulogne-Billancourt", "postalCode": "92100", "addressCountry": "FR"},
             "url": "https://www.ophtalife.fr"
@@ -89,7 +87,7 @@
             {
                 "@type": "Occupation",
                 "name": "Co-fondateur — Cabinet Ophtalife",
-                "occupationLocation": {"@type": "MedicalClinic", "name": "Cabinet Ophtalife", "url": "https://www.ophtalife.fr"}
+                "occupationLocation": {"@type": "MedicalClinic", "@id": "https://docteurmajoulet.com/#cabinet", "name": "Cabinet Ophtalife", "url": "https://www.ophtalife.fr"}
             }
         ],
         "address": {"@type": "PostalAddress", "streetAddress": "37 Rue d'Aguesseau", "addressLocality": "Boulogne-Billancourt", "postalCode": "92100", "addressRegion": "Île-de-France", "addressCountry": "FR"},
@@ -188,6 +186,7 @@
     {
         "@context": "https://schema.org",
         "@type": "MedicalClinic",
+        "@id": "https://docteurmajoulet.com/#cabinet",
         "name": "Cabinet Ophtalife — Dr Alexandre Majoulet",
         "description": "Cabinet d'ophtalmologie spécialisé en chirurgie de la rétine et de la cataracte à Boulogne-Billancourt. Consultations, chirurgie et injections intravitréennes.",
         "image": "https://docteurmajoulet.com/Ophtalife-logo-fond-bleu.jpg",
@@ -196,7 +195,7 @@
         "url": "https://docteurmajoulet.com",
         "telephone": "+33184191166",
         "email": "secretariat@ophtalife.com",
-        "medicalSpecialty": "Ophthalmology",
+        "medicalSpecialty": "https://schema.org/Ophthalmologic",
         "priceRange": "Secteur 2",
         "openingHoursSpecification": [
             {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday"], "opens": "09:00", "closes": "20:00"},
@@ -208,18 +207,6 @@
             "https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris",
             "https://www.ophtalife.fr",
             "https://www.google.com/maps/place/?q=place_id:ChIJJ2pdc01gamsRjxCY0-gYVWg"
-        ]
-    }
-    </script>
-
-    <!-- BreadcrumbList Schema -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {"@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://docteurmajoulet.com/"},
-            {"@type": "ListItem", "position": 2, "name": "Pathologies", "item": "https://docteurmajoulet.com/pathologies"}
         ]
     }
     </script>
