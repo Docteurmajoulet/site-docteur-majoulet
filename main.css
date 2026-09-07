@@ -596,7 +596,7 @@ body.v26 {
 :where(body.v19) footer a {
     color: rgba(249,247,242,0.8);
 }
-:where(body.v2) :focus {
+:where(body.v2) :focus:not(:focus-visible) {   /* TECH8N-2026-09-07 : sans :focus-visible (Safari/iOS 15.0-15.3), ce sélecteur est ignoré et l'anneau natif reste */
     outline: none;
 }
 :where(body.v2) :focus-visible {
@@ -639,6 +639,7 @@ body.v26 {
     top: 0;
     z-index: 100;
     background: rgba(249,247,242,0.97);
+    -webkit-backdrop-filter: blur(12px);   /* TECH8N-2026-09-07 : Safari et iOS < 18 */
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
 }
@@ -6752,3 +6753,4 @@ article.pathology-content .cta-line-link {
     vertical-align: -3px;
     margin-right: 8px;
 }
+/* TECH8N-2026-09-07 — navigateurs anciens : anneau de focus progressif (:focus:not(:focus-visible)), -webkit-backdrop-filter sur l'en-tête. Aucune autre règle. */

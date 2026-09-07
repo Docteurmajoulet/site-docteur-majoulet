@@ -332,6 +332,21 @@ def check(root):
             major = max(variants.values(), key=len)
             for v, names in variants.items():
                 if names is not major: E(f'{key} différent du reste du site sur : ' + ', '.join(names))
+    # ---- TECH8N-2026-09-07 : hygiène du <head>, énumérations schema.org, CSS compatible des anciens navigateurs
+    for name, pg in pages.items():
+        t = pg.txt
+        k = t.count('name="theme-color"')
+        if k != 1: E(f'{name} : {k} meta theme-color (attendu : 1)')
+        for m in re.finditer(r'"(procedureType|specialty|medicalSpecialty)":\s*("[^"]*"|\{)', t):
+            if not m.group(2).startswith('"https://schema.org/'): E(f'{name} : {m.group(1)} doit être une URL d\'énumération schema.org (https://schema.org/SurgicalProcedure, …), pas {m.group(2)[:40]}')
+    css_txt = open(os.path.join(root, 'main.css'), encoding='utf-8').read()
+    for m in re.finditer(r'([^{}]*:focus(?::not\(:focus-visible\))?)\s*\{([^}]*)\}', css_txt):
+        sel, body = m.group(1).strip(), m.group(2)
+        if re.search(r'outline:\s*(none|0)\b', body) and ':not(:focus-visible)' not in sel and 'main[tabindex="-1"]' not in sel:
+            E(f'main.css : « {sel[-60:]} » supprime l\'anneau de focus sans :not(:focus-visible) — sans anneau sur les navigateurs sans :focus-visible')
+    for m in re.finditer(r'\n\s*backdrop-filter:', css_txt):
+        before = css_txt[max(0, m.start() - 200):m.start()]
+        if '-webkit-backdrop-filter' not in before: E('main.css : backdrop-filter sans -webkit-backdrop-filter juste avant (Safari/iOS < 18)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

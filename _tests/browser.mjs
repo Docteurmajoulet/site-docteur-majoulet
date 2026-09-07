@@ -7,6 +7,7 @@
 // Puis, aux largeurs axe, la même page avec l'espacement du texte WCAG 1.4.12 : aucun texte tronqué (TECH4A-2026-09-06).
 // À 390 px : zone de toucher des numéros de téléphone ≥ 44 px, lien d'évitement → focus sur <main> (TECH6I-2026-09-07).
 // Puis police du navigateur à 32 px : aucun débordement, chrome (bandeau, en-tête, menu, barre fixe) jamais tronqué (TECH7K-2026-09-07).
+// Puis sans JavaScript à 390 px : menu complet visible, aucun débordement, rien d'invisible dans <main> (TECH8N-2026-09-07).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -202,6 +203,37 @@ try {
         for (const r of res) failures.push(`${slug} @${w} police 32 px — ${r}`);
         loads++;
       } catch (e) { failures.push(`${slug} @${w} police 32 px — chargement : ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
+  // TECH8N-2026-09-07 — sans JavaScript (script bloqué, lecteur, navigateur restreint) : à 390 px, le menu et tous ses liens
+  // restent visibles, aucun débordement horizontal, le H1 est visible, aucun élément de <main> ne reste invisible (opacité 0)
+  // une fois l'entrée du hero jouée.
+  {
+    const ctx = await browser.newContext({ javaScriptEnabled: false, viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of slugs) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'load', timeout: 30000 });
+        await page.waitForTimeout(1500);
+        const res = await page.evaluate(() => {
+          const out = [];
+          const vis = el => { if (!el) return false; const cs = getComputedStyle(el); const b = el.getBoundingClientRect(); return cs.display !== 'none' && cs.visibility !== 'hidden' && b.width > 0 && b.height > 0; };
+          const links = [...document.querySelectorAll('nav.main-nav a')];
+          const shown = links.filter(a => vis(a) && a.getBoundingClientRect().right <= innerWidth + 1 && a.getBoundingClientRect().left >= -1);
+          if (!links.length || shown.length < links.length) out.push(`menu sans JS : ${shown.length}/${links.length} liens visibles`);
+          const over = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+          if (over > 0) out.push(`débordement horizontal de ${over}px sans JS`);
+          if (!vis(document.querySelector('h1'))) out.push('H1 invisible sans JS');
+          const ghosts = [...document.querySelectorAll('main *')].filter(el => getComputedStyle(el).opacity === '0' && el.getBoundingClientRect().height > 0 && !el.closest('.sr-only'));
+          if (ghosts.length) out.push(`${ghosts.length} élément(s) de <main> à opacité 0 sans JS : ${ghosts.slice(0, 3).map(e => e.tagName.toLowerCase() + '.' + (e.className || '').toString().split(' ')[0]).join(', ')}`);
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @390 sans JS — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @390 sans JS — chargement : ${String(e).slice(0, 160)}`); }
       await page.close();
     }
     await ctx.close();
