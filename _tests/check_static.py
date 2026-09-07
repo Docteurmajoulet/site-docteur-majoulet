@@ -347,6 +347,20 @@ def check(root):
     for m in re.finditer(r'\n\s*backdrop-filter:', css_txt):
         before = css_txt[max(0, m.start() - 200):m.start()]
         if '-webkit-backdrop-filter' not in before: E('main.css : backdrop-filter sans -webkit-backdrop-filter juste avant (Safari/iOS < 18)')
+    # ---- TECH8P-2026-09-07 : toute règle :hover est dans un @media (hover: …) — sinon le survol colle au toucher
+    css_p = re.sub(r'/\*.*?\*/', lambda m: ' ' * len(m.group(0)), css_txt, flags=re.S)
+    depth_stack = []; pos = 0
+    for m in re.finditer(r'([^{};]*)([{};])', css_p, re.S):
+        chunk, tok = m.group(1), m.group(2)
+        if tok == '{':
+            head = chunk.strip()
+            if head.startswith('@'): depth_stack.append(head)
+            else:
+                depth_stack.append('')
+                if ':hover' in head and 'html:not(.js)' not in head and not any('hover' in a for a in depth_stack):
+                    E(f'main.css : règle :hover hors @media (hover: hover) — « {head[-70:]} » (le survol collerait au toucher)')
+        elif tok == '}':
+            if depth_stack: depth_stack.pop()
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

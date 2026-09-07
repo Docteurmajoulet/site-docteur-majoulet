@@ -103,10 +103,14 @@
 .topbar { background: var(--prusse-dark); font-family: 'Montserrat', 'Montserrat Fallback', 'Montserrat Fallback Android', -apple-system, BlinkMacSystemFont, sans-serif; }
 .topbar-inner { max-width: 1240px; margin: 0 auto; padding: 8px 24px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
 .topbar-urgence { color: var(--sable-light); font-size: 0.75rem; font-weight: 600; text-decoration: none; letter-spacing: 0.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+@media (hover: hover) {
 .topbar-urgence:hover { color: var(--blanc-naturel); }
+}
 .topbar-info { color: rgba(249,247,242,0.55); font-size: 0.75rem; font-weight: 400; white-space: nowrap; }
 .topbar-info a { color: inherit; text-decoration: none; }
+@media (hover: hover) {
 .topbar-info a:hover { color: var(--blanc-naturel); }
+}
 @media (max-width: 56.25em) {
 .topbar-info { display: none; }
 .topbar-inner { justify-content: center; }
@@ -123,7 +127,9 @@
 .trust-section { background: var(--blanc-naturel); padding: 0 0 56px; }
 .trust-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
 .trust-card { display: block; background: var(--blanc); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; text-decoration: none; transition: all 0.25s; }
+@media (hover: hover) {
 .trust-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
+}
 .trust-card .tc-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
 .trust-card .tc-text { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; line-height: 1.5; }
 .trust-card.urgence { background: var(--alerte-fond); border-color: var(--alerte-bordure); }
@@ -143,7 +149,9 @@
 /* --- Cartes implants (fiche cataracte) --- */
 .implant-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 26px 0 34px; }
 .implant-card { display: block; background: var(--blanc-naturel); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 22px 18px; text-decoration: none; transition: all 0.25s; }
+@media (hover: hover) {
 .implant-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--sable); }
+}
 .implant-card .ic-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
 .implant-card .ic-text { font-size: 0.83rem; color: var(--text-muted); font-weight: 400; line-height: 1.55; margin-bottom: 10px; }
 .implant-card .ic-more { font-size: 0.78rem; font-weight: 600; color: var(--prusse); border-bottom: 2px solid var(--sable); padding-bottom: 2px; }
@@ -245,8 +253,10 @@ body.v26 {
     text-decoration: none;
     transition: color 0.2s;
 }
+@media (hover: hover) {
 :where(body.v2) a:hover {
     color: var(--bleu-gris);
+}
 }
 :where(body.v1) .container {
     max-width: 860px;
@@ -345,11 +355,13 @@ body.v26 {
     border: none;
     cursor: pointer;
 }
+@media (hover: hover) {
 :where(body.page-index) .btn-primary:hover {
     background: var(--prusse-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
     color: var(--blanc-naturel);
+}
 }
 :where(body.page-index) .btn-outline {
     display: inline-flex;
@@ -367,8 +379,10 @@ body.v26 {
     transition: all 0.2s;
     cursor: pointer;
 }
+@media (hover: hover) {
 :where(body.page-index) .btn-outline:hover {
     border-color: var(--prusse);
+}
 }
 :where(body.page-index) .hero-visual {
     position: relative;
@@ -414,10 +428,12 @@ body.v26 {
     border: 1px solid var(--border);
     transition: all 0.3s;
 }
+@media (hover: hover) {
 :where(body.page-index) .specialty-card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-md);
     border-color: var(--bleu-gris);
+}
 }
 :where(body.page-index) .specialty-icon {
     width: 64px;
@@ -528,10 +544,12 @@ body.v26 {
     border: 1px solid var(--border);
     transition: all 0.2s;
 }
+@media (hover: hover) {
 :where(body.page-publications) .pub-link:hover {
     background: var(--prusse);
     color: var(--blanc-naturel);
     border-color: var(--prusse);
+}
 }
 :where(body.page-index) #contact {
     background: var(--prusse);
@@ -570,10 +588,12 @@ body.v26 {
     border: none;
     cursor: pointer;
 }
+@media (hover: hover) {
 :where(body.page-index) .btn-doctolib:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
     color: var(--prusse);
+}
 }
 :where(body.v20) footer {
     background: var(--vert-fonce);
@@ -729,8 +749,14 @@ body.v26 {
     font-family: inherit;
     text-decoration: none;
 }
-:where(body.v4) nav.main-nav .nav-link:hover, :where(body.v4) nav.main-nav .nav-link:focus-visible, :where(body.v4) nav.main-nav .nav-item.is-open .nav-link {
+:where(body.v4) nav.main-nav .nav-link:focus-visible,
+:where(body.v4) nav.main-nav .nav-item.is-open .nav-link {
     color: var(--prusse);
+}
+@media (hover: hover) {
+:where(body.v4) nav.main-nav .nav-link:hover {
+    color: var(--prusse);
+}
 }
 :where(body.v4) nav.main-nav .nav-link .caret {
     width: 10px;
@@ -805,10 +831,17 @@ body.v26 {
     position: relative;
     text-decoration: none;
 }
-:where(body.v2) .mega-list a:hover, :where(body.v2) .mega-list a:focus-visible {
+:where(body.v2) .mega-list a:focus-visible {
     background: var(--blanc-naturel);
     color: var(--prusse);
     padding-left: 12px;
+}
+@media (hover: hover) {
+:where(body.v2) .mega-list a:hover {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+    padding-left: 12px;
+}
 }
 :where(body.v4) .mega-subhead {
     font-size: 0.72rem;
@@ -855,9 +888,15 @@ body.v26 {
     text-decoration: none;
     letter-spacing: 0.02em;
 }
-:where(body.v3) .mega-footer-link:hover, :where(body.v3) .mega-footer-link:focus-visible {
+:where(body.v3) .mega-footer-link:focus-visible {
     color: var(--prusse-light);
     text-decoration: underline;
+}
+@media (hover: hover) {
+:where(body.v3) .mega-footer-link:hover {
+    color: var(--prusse-light);
+    text-decoration: underline;
+}
 }
 :where(body.v4) header.site-header .nav-cta {
     display: inline-flex;
@@ -874,10 +913,12 @@ body.v26 {
     text-decoration: none;
     transition: background 0.2s, transform 0.15s;
 }
+@media (hover: hover) {
 :where(body.v4) header.site-header .nav-cta:hover {
     background: var(--prusse-light);
     transform: translateY(-1px);
     color: var(--blanc-naturel);
+}
 }
 :where(body.v4) header.site-header .mobile-toggle {
     display: none;
@@ -1006,8 +1047,14 @@ body.v3.menu-open {
     font-family: inherit;
     text-decoration: none;
 }
-:where(body.v5) .nav-link:hover, :where(body.v5) .nav-link:focus-visible, :where(body.v5) .nav-item.is-open .nav-link {
+:where(body.v5) .nav-link:focus-visible,
+:where(body.v5) .nav-item.is-open .nav-link {
     color: var(--prusse);
+}
+@media (hover: hover) {
+:where(body.v5) .nav-link:hover {
+    color: var(--prusse);
+}
 }
 :where(body.v5) .nav-link .caret {
     width: 10px;
@@ -1066,20 +1113,26 @@ body.v3.menu-open {
     text-transform: uppercase;
     transition: all 0.2s;
 }
+@media (hover: hover) {
 :where(body.v5) .nav-cta:hover {
     background: var(--prusse-light);
     transform: translateY(-1px);
     color: var(--blanc-naturel);
 }
+}
+@media (hover: hover) {
 :where(body.page-confidentialite) .nav-cta:hover,
 :where(body.page-mentions-legales) .nav-cta:hover {
     background: var(--prusse-light);
     color: var(--blanc-naturel);
 }
+}
+@media (hover: hover) {
 :where(body.page-pathologies) .nav-cta:hover {
     background: var(--prusse-light);
     transform: translateY(-1px);
     color: var(--blanc-naturel) !important;
+}
 }
 :where(body.v5) .mobile-toggle {
     display: none;
@@ -1173,8 +1226,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: rgba(255,255,255,0.85);
     text-decoration: none;
 }
+@media (hover: hover) {
 :where(body.v1) .page-header .breadcrumb-mini a:hover {
     color: var(--sable);
+}
 }
 :where(body.v15) .page-header h1 {
     color: var(--blanc-naturel);
@@ -1414,9 +1469,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     margin: 4px;
 }
+@media (hover: hover) {
 :where(body.v1) .btn-rdv:hover {
     background: var(--prusse-light);
     color: var(--blanc-naturel);
+}
 }
 :where(body.v1) .related-pathologies {
     margin-top: 40px;
@@ -1453,9 +1510,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     transition: all 0.2s;
 }
+@media (hover: hover) {
 :where(body.v1) .related-link:hover {
     border-color: var(--prusse);
     transform: translateY(-1px);
+}
 }
 :where(body.v5) footer.site-footer {
     background: var(--vert-fonce);
@@ -1495,12 +1554,16 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--sable);
     text-decoration: underline;
 }
+@media (hover: hover) {
 :where(body.v8) .eeat-block a:hover {
     color: var(--blanc-naturel);
     text-decoration-color: var(--blanc-naturel);
 }
+}
+@media (hover: hover) {
 :where(body.v23) .eeat-block a:hover {
     color: var(--blanc-naturel);
+}
 }
 :where(body.page-confidentialite) .page-header p,
 :where(body.page-mentions-legales) .page-header p {
@@ -1546,9 +1609,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     display: flex;
     flex-direction: column;
 }
+@media (hover: hover) {
 :where(body.v9) .pillar-card:hover {
     border-color: var(--prusse);
     transform: translateY(-2px);
+}
 }
 :where(body.v9) .pillar-card h3 {
     font-size: 1rem;
@@ -1581,8 +1646,10 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     transition: transform 0.15s;
     display: inline-block;
 }
+@media (hover: hover) {
 :where(body.v9) .pillar-card:hover .read-more::after {
     transform: translateX(3px);
+}
 }
 :where(body.v9) .pillar-card.soft {
     background: var(--blanc-naturel);
@@ -1669,9 +1736,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: 50px;
     transition: all 0.2s;
 }
+@media (hover: hover) {
 :where(body.page-publications) .header-meta a:hover {
     background: var(--sable);
     color: var(--prusse);
+}
 }
 :where(body.page-publications) .intro-block {
     background: var(--blanc);
@@ -1689,9 +1758,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin-bottom: 18px;
     transition: all 0.2s;
 }
+@media (hover: hover) {
 :where(body.page-publications) .pub-card:hover {
     box-shadow: 0 6px 24px rgba(40,51,57,0.08);
     transform: translateY(-1px);
+}
 }
 :where(body.page-publications) .pub-role {
     display: inline-block;
@@ -1716,9 +1787,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-decoration: none;
     color: var(--prusse);
 }
+@media (hover: hover) {
 :where(body.page-publications) .pub-title a:hover {
     color: var(--bleu-gris);
     text-decoration: underline;
+}
 }
 :where(body.page-publications) .pub-summary {
     font-size: 0.9rem;
@@ -1809,9 +1882,11 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     margin: 4px 6px;
     transition: all 0.2s;
 }
+@media (hover: hover) {
 :where(body.page-publications) .external-btn:hover {
     background: var(--blanc-naturel);
     color: var(--prusse);
+}
 }
 :where(body.page-glaucome) .expert-highlight,
 :where(body.page-vitrectomie) .expert-highlight {
@@ -1869,13 +1944,17 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     text-transform: uppercase;
     text-decoration: none;
 }
+@media (hover: hover) {
 :where(body.page-dechirure-retine-corps-flottants) .btn-urgence:hover {
     background: #7a1c0a;
     color: var(--blanc-naturel);
 }
+}
+@media (hover: hover) {
 :where(body.page-decollement-retine) .btn-urgence:hover {
     background: #7d2424;
     color: #ffffff;
+}
 }
 :where(body.page-decollement-retine) .urgence-badge {
     display: inline-block;
@@ -2980,9 +3059,11 @@ body.m12.menu-open nav.main-nav {
 .nav-cta {
     background: var(--cuivre-rdv);
 }
+@media (hover: hover) {
 .nav-cta:hover {
     background: var(--cuivre-rdv-deep);
     transform: translateY(-1px);
+}
 }
 .nav-cta:focus-visible {
     outline: 2px solid var(--cuivre-rdv-deep);
@@ -2992,8 +3073,10 @@ body.m12.menu-open nav.main-nav {
 :where(body.page-index) .btn-primary {
     background: var(--cuivre-rdv);
 }
+@media (hover: hover) {
 :where(body.page-index) .btn-primary:hover {
     background: var(--cuivre-rdv-deep);
+}
 }
 :where(body.page-index) .btn-primary:focus-visible {
     outline: 2px solid var(--cuivre-rdv-deep);
@@ -3049,10 +3132,15 @@ body.m12.menu-open nav.main-nav {
     background: var(--cuivre-rdv);
     color: #ffffff;
 }
-.sticky-rdv .sticky-doctolib:hover,
 .sticky-rdv .sticky-doctolib:active {
     background: var(--cuivre-rdv-deep);
     color: #ffffff;
+}
+@media (hover: hover) {
+.sticky-rdv .sticky-doctolib:hover {
+    background: var(--cuivre-rdv-deep);
+    color: #ffffff;
+}
 }
 .sticky-rdv .sticky-tel {
     flex: 0 0 auto;
@@ -3061,10 +3149,15 @@ body.m12.menu-open nav.main-nav {
     border: 2px solid var(--prusse);
     padding: 10px 18px;
 }
-.sticky-rdv .sticky-tel:hover,
 .sticky-rdv .sticky-tel:active {
     background: var(--blanc-naturel);
     color: var(--prusse);
+}
+@media (hover: hover) {
+.sticky-rdv .sticky-tel:hover {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+}
 }
 .sticky-rdv .ico {
     width: 18px;
@@ -3124,18 +3217,22 @@ body.has-sticky-rdv {
 header.site-header .nav-cta {
     background: var(--cuivre-rdv);
 }
+@media (hover: hover) {
 header.site-header .nav-cta:hover {
     background: var(--cuivre-rdv-deep);
     transform: translateY(-1px);
+}
 }
 /* --- Lot fiches (2026-08-19) : le CTA « Prendre rendez-vous » des fiches
        (.btn-rdv, 45 pages) porte l'accent conversion --- */
 .btn-rdv {
     background: var(--cuivre-rdv);
 }
+@media (hover: hover) {
 .btn-rdv:hover {
     background: var(--cuivre-rdv-deep);
     color: var(--blanc-naturel);
+}
 }
 .btn-rdv:focus-visible {
     outline: 2px solid var(--cuivre-rdv-deep);
@@ -3266,10 +3363,12 @@ article.pathology-content .cta-block .btn-rdv {
 .related-link {
     transition: border-color 0.2s, color 0.2s, transform 0.15s;
 }
+@media (hover: hover) {
 .related-link:hover {
     border-color: var(--cuivre-rdv) !important;
     color: var(--cuivre-rdv) !important;
     transform: translateY(-1px);
+}
 }
 /* --- 7. Surfaces navigateur : la page est « construite », pas assemblée --- */
 ::selection {
@@ -3455,9 +3554,11 @@ body.page-index .hero-v3 .hero-text a {
     text-underline-offset: 3px;
     transition: color 0.2s, text-decoration-color 0.2s;
 }
+@media (hover: hover) {
 body.page-index .hero-v3 .hero-text a:hover {
     color: var(--sable-light);
     text-decoration-color: var(--sable);
+}
 }
 /* --- Actions : cuivre intact, outline passé en clair --- */
 body.page-index .hero-v3 .hero-buttons {
@@ -3468,9 +3569,11 @@ body.page-index .hero-v3 .btn-outline {
     border: 1.5px solid rgba(249, 247, 242, 0.32);
     background: transparent;
 }
+@media (hover: hover) {
 body.page-index .hero-v3 .btn-outline:hover {
     border-color: var(--sable);
     color: var(--sable-light);
+}
 }
 body.page-index .hero-v3 .btn-primary:focus-visible,
 body.page-index .hero-v3 .btn-outline:focus-visible {
@@ -3893,10 +3996,17 @@ nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
     transition: background 0.15s, color 0.15s, padding-left 0.15s;
     text-decoration: none;
 }
-.mega-list a:hover, .mega-list a:focus-visible {
+.mega-list a:focus-visible {
     background: var(--blanc-naturel);
     color: var(--prusse);
     padding-left: 12px;
+}
+@media (hover: hover) {
+.mega-list a:hover {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+    padding-left: 12px;
+}
 }
 .mega-list a[aria-current="page"] { color: var(--prusse); font-weight: 600; }
 .mega-list a.external::after,
@@ -3932,7 +4042,9 @@ nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
 }
 .associes-line strong { color: var(--prusse); font-weight: 600; }
 .associes-line a { color: var(--prusse); text-decoration: none; font-weight: 600; }
+@media (hover: hover) {
 .associes-line a:hover { text-decoration: underline; }
+}
 /* --- Pied de panneau ---------------------------------------- */
 .mega-footer {
     margin-top: 20px;
@@ -3950,9 +4062,15 @@ nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
     text-decoration: none;
     letter-spacing: 0.02em;
 }
-.mega-footer-link:hover, .mega-footer-link:focus-visible {
+.mega-footer-link:focus-visible {
     color: var(--prusse-light);
     text-decoration: underline;
+}
+@media (hover: hover) {
+.mega-footer-link:hover {
+    color: var(--prusse-light);
+    text-decoration: underline;
+}
 }
 /* --- Mobile / tablette : accordéon dans le tiroir ------------ */
 @media (max-width: 64em) {
@@ -4041,10 +4159,14 @@ nav.main-nav .drawer-actions .drawer-rdv {
         background: var(--cuivre-rdv);
         color: #ffffff;
     }
-nav.main-nav .drawer-actions .drawer-rdv:hover,
-    nav.main-nav .drawer-actions .drawer-rdv:active {
+nav.main-nav .drawer-actions .drawer-rdv:active {
         background: var(--cuivre-rdv-deep);
     }
+@media (hover: hover) {
+nav.main-nav .drawer-actions .drawer-rdv:hover {
+        background: var(--cuivre-rdv-deep);
+    }
+}
 nav.main-nav .drawer-actions .ico {
         width: 18px;
         height: 18px;
@@ -4123,13 +4245,19 @@ body.page-dechirure-retine-corps-flottants .btn-urgence {
     color: var(--blanc-naturel);
     border: 2px solid rgba(249, 247, 242, 0.55);
 }
-body.page-decollement-retine .btn-urgence:hover,
-body.page-dechirure-retine-corps-flottants .btn-urgence:hover,
 body.page-decollement-retine .btn-urgence:focus-visible,
 body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     background: rgba(249, 247, 242, 0.12);
     border-color: var(--blanc-naturel);
     color: var(--blanc-naturel);
+}
+@media (hover: hover) {
+body.page-decollement-retine .btn-urgence:hover,
+body.page-dechirure-retine-corps-flottants .btn-urgence:hover {
+    background: rgba(249, 247, 242, 0.12);
+    border-color: var(--blanc-naturel);
+    color: var(--blanc-naturel);
+}
 }
 /* ============================================================
    CRAFT v6 — Lot Impeccable 2 (20/08/2026)
@@ -4170,9 +4298,11 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     background: var(--prusse);
     color: var(--blanc-naturel);
 }
+@media (hover: hover) {
 .alert-urgence .btn-alert-tel:hover {
     background: var(--prusse-light);
     color: var(--blanc-naturel);
+}
 }
 .alert-urgence .btn-alert-rdv {
     background: var(--blanc);
@@ -4180,9 +4310,11 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:focus-visible {
     border: 2px solid var(--prusse);
     padding: 10px 18px;
 }
+@media (hover: hover) {
 .alert-urgence .btn-alert-rdv:hover {
     background: var(--blanc-naturel);
     color: var(--prusse);
+}
 }
 .alert-urgence .alert-actions .ico {
     width: 18px;
@@ -4281,10 +4413,15 @@ body.page-index .btn-doctolib {
     background: var(--cuivre-rdv);
     color: #ffffff;
 }
-body.page-index .btn-doctolib:hover,
 body.page-index .btn-doctolib:focus-visible {
     background: var(--cuivre-rdv-deep);
     color: #ffffff;
+}
+@media (hover: hover) {
+body.page-index .btn-doctolib:hover {
+    background: var(--cuivre-rdv-deep);
+    color: #ffffff;
+}
 }
 /* Liserés : cartes du parcours et chiffres clés passent en filet 1 px */
 body.page-index .parcours-card {
@@ -4340,9 +4477,13 @@ body.page-index .specialty-card .sc-more .ico {
     height: 16px;
     flex: none;
 }
-body.page-index a.specialty-card:hover .sc-more,
 body.page-index a.specialty-card:focus-visible .sc-more {
     gap: 10px;
+}
+@media (hover: hover) {
+body.page-index a.specialty-card:hover .sc-more {
+    gap: 10px;
+}
 }
 body.page-index a.specialty-card:focus-visible {
     outline: 3px solid var(--prusse);
@@ -4362,8 +4503,10 @@ body.page-index a.specialty-card:focus-visible {
     height: 15px;
     flex: none;
 }
+@media (hover: hover) {
 .link-quiet:hover {
     color: var(--prusse);
+}
 }
 /* Fiches : plus de liseré 3 px, plus de gris froid */
 .forme-box {
@@ -4627,9 +4770,13 @@ body.page-index .parcours-more .sc-more .ico {
     height: 16px;
     flex: none;
 }
-body.page-index .parcours-more .sc-more:hover,
 body.page-index .parcours-more .sc-more:focus-visible {
     gap: 12px;
+}
+@media (hover: hover) {
+body.page-index .parcours-more .sc-more:hover {
+    gap: 12px;
+}
 }
 @media (max-width: 64em) {
 body.page-index .parcours-v11 {
@@ -4760,13 +4907,20 @@ body.page-index .cv12-link {
     padding-bottom: 2px;
     transition: color 0.2s, border-color 0.2s;
 }
-body.page-index .cv12-link:hover,
 body.page-index .cv12-link:focus-visible {
     color: var(--blanc-naturel);
     border-color: rgba(249, 247, 242, 0.7);
 }
+@media (hover: hover) {
+body.page-index .cv12-link:hover {
+    color: var(--blanc-naturel);
+    border-color: rgba(249, 247, 242, 0.7);
+}
+}
+@media (hover: hover) {
 body.page-index .cv12-link:hover .cv12-arrow {
     transform: translateX(3px);
+}
 }
 /* Horaires : jours à gauche, plages à droite (chiffres tabulaires) */
 body.page-index .cv12-hours {
@@ -4808,9 +4962,13 @@ body.page-index .cv12-tel {
     font-variant-numeric: tabular-nums;
     transition: color 0.2s;
 }
-body.page-index .cv12-tel:hover,
 body.page-index .cv12-tel:focus-visible {
     color: var(--sable-light);
+}
+@media (hover: hover) {
+body.page-index .cv12-tel:hover {
+    color: var(--sable-light);
+}
 }
 body.page-index .cv12-mail {
     display: block;
@@ -4824,10 +4982,15 @@ body.page-index .cv12-mail {
     overflow-wrap: anywhere;
     transition: color 0.2s;
 }
-body.page-index .cv12-mail:hover,
 body.page-index .cv12-mail:focus-visible {
     color: var(--blanc-naturel);
     text-decoration-color: rgba(249, 247, 242, 0.7);
+}
+@media (hover: hover) {
+body.page-index .cv12-mail:hover {
+    color: var(--blanc-naturel);
+    text-decoration-color: rgba(249, 247, 242, 0.7);
+}
 }
 /* Action : bouton Doctolib intégré (geste unique cuivre) + note */
 body.page-index .cv12-action {
@@ -4860,10 +5023,15 @@ body.page-index .cv12-action-note a {
     text-underline-offset: 3px;
     text-decoration-color: rgba(249, 247, 242, 0.35);
 }
-body.page-index .cv12-action-note a:hover,
 body.page-index .cv12-action-note a:focus-visible {
     color: var(--blanc-naturel);
     text-decoration-color: rgba(249, 247, 242, 0.8);
+}
+@media (hover: hover) {
+body.page-index .cv12-action-note a:hover {
+    color: var(--blanc-naturel);
+    text-decoration-color: rgba(249, 247, 242, 0.8);
+}
 }
 /* Carte : même hauteur que la fiche, lien d'ouverture sous la carte */
 body.page-index .contact-v12 .contact-map {
@@ -4895,12 +5063,18 @@ body.page-index .cv12-map-note a {
     text-decoration: none;
     transition: color 0.2s;
 }
-body.page-index .cv12-map-note a:hover,
 body.page-index .cv12-map-note a:focus-visible {
     color: var(--blanc-naturel);
 }
+@media (hover: hover) {
+body.page-index .cv12-map-note a:hover {
+    color: var(--blanc-naturel);
+}
+}
+@media (hover: hover) {
 body.page-index .cv12-map-note a:hover .cv12-arrow {
     transform: translateX(3px);
+}
 }
 @media (max-width: 53.75em) {
 body.page-index .contact-v12 {
@@ -5006,11 +5180,17 @@ article.pathology-content .cta-block .btn-ghost {
     text-decoration: none;
     transition: background 0.2s, border-color 0.2s;
 }
-article.pathology-content .cta-block .btn-ghost:hover,
 article.pathology-content .cta-block .btn-ghost:focus-visible {
     background: rgba(249, 247, 242, 0.12);
     border-color: var(--blanc-naturel);
     color: var(--blanc-naturel);
+}
+@media (hover: hover) {
+article.pathology-content .cta-block .btn-ghost:hover {
+    background: rgba(249, 247, 242, 0.12);
+    border-color: var(--blanc-naturel);
+    color: var(--blanc-naturel);
+}
 }
 article.pathology-content .cta-block .cta-actions .btn-rdv,
 article.pathology-content .cta-block .btn-ghost {
@@ -5044,9 +5224,13 @@ article.pathology-content .cta-block .cta-alt a {
     text-underline-offset: 3px;
     text-decoration-color: rgba(249, 247, 242, 0.45);
 }
-article.pathology-content .cta-block .cta-alt a:hover,
 article.pathology-content .cta-block .cta-alt a:focus-visible {
     text-decoration-color: var(--blanc-naturel);
+}
+@media (hover: hover) {
+article.pathology-content .cta-block .cta-alt a:hover {
+    text-decoration-color: var(--blanc-naturel);
+}
 }
 @media (max-width: 30em) {
 article.pathology-content .cta-block .btn-more {
@@ -5113,14 +5297,18 @@ article.pathology-content .cta-block .btn-ghost .lbl-more {
     padding: 2px 0;
     text-decoration: none;
 }
+@media (hover: hover) {
 .mega-col .mega-title a:hover { color: var(--prusse-light); }
+}
 .mega-col .mega-title a::after {
     content: "";
     font-size: 0.8rem;
     opacity: 0.6;
     transition: transform 0.2s;
 }
+@media (hover: hover) {
 .mega-col .mega-title a:hover::after { transform: translateX(3px); }
+}
 /* --- Bouton menu : 44 × 44 px (ex-40), barres recentrées --- */
 header.site-header .mobile-toggle {
     width: 44px;
@@ -5154,9 +5342,11 @@ footer p a {
     text-decoration-thickness: 1px;
     text-decoration-color: rgba(249, 247, 242, 0.55);
 }
+@media (hover: hover) {
 .page-header .breadcrumb-mini a:hover,
 footer p a:hover {
     text-decoration-color: currentColor;
+}
 }
 /* --- Tableaux : défilement horizontal sur petit écran, sans casser la sémantique --- */
 .table-scroll {
@@ -5211,7 +5401,10 @@ article.pathology-content li {
     margin-left: 0.3em;
     transition: transform 0.2s;
 }
-a:hover .ico-arrow, a:focus-visible .ico-arrow { transform: translateX(3px); }
+a:focus-visible .ico-arrow { transform: translateX(3px); }
+@media (hover: hover) {
+a:hover .ico-arrow { transform: translateX(3px); }
+}
 /* --- Flèches générées en CSS : masque SVG coloré par currentColor --- */
 .mega-col .mega-title a::after,
 .mega-list a.external::after,
@@ -5251,9 +5444,13 @@ body.page-index .hero-v3 .hero-note a {
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
 }
-body.page-index .hero-v3 .hero-note a:hover,
 body.page-index .hero-v3 .hero-note a:focus-visible {
     color: var(--blanc-naturel);
+}
+@media (hover: hover) {
+body.page-index .hero-v3 .hero-note a:hover {
+    color: var(--blanc-naturel);
+}
 }
 /* --- Bouton menu : jamais compressé par le flex (36,8 px à 320) --- */
 header.site-header .mobile-toggle { flex: 0 0 auto; }
@@ -5284,8 +5481,10 @@ body.page-pathologies .page-header .breadcrumb-mini {
 body.page-pathologies .page-header .breadcrumb-mini a {
     color: rgba(249, 247, 242, 0.85);
 }
+@media (hover: hover) {
 body.page-pathologies .page-header .breadcrumb-mini a:hover {
     color: var(--sable);
+}
 }
 body.page-pathologies .page-header p {
     font-weight: 400;
@@ -5331,10 +5530,15 @@ body.page-pathologies .hub-nav a {
     text-decoration: none;
     transition: background 0.2s, border-color 0.2s;
 }
-body.page-pathologies .hub-nav a:hover,
 body.page-pathologies .hub-nav a:focus-visible {
     background: var(--blanc-naturel);
     border-color: var(--bleu-gris);
+}
+@media (hover: hover) {
+body.page-pathologies .hub-nav a:hover {
+    background: var(--blanc-naturel);
+    border-color: var(--bleu-gris);
+}
 }
 /* --- Groupes : H2 avec le filet sable des fiches --- */
 body.page-pathologies .hub-group {
@@ -5401,10 +5605,12 @@ body.page-pathologies .hub-card {
     text-decoration: none;
     transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
+@media (hover: hover) {
 body.page-pathologies a.hub-card:hover {
     transform: translateY(-3px);
     box-shadow: var(--shadow-md);
     border-color: var(--bleu-gris);
+}
 }
 body.page-pathologies a.hub-card:focus-visible {
     outline: 3px solid var(--prusse);
@@ -5467,9 +5673,13 @@ body.page-pathologies .hub-more .ico {
     height: 14px;
     flex: none;
 }
-body.page-pathologies a.hub-card:hover .hub-more,
 body.page-pathologies a.hub-card:focus-visible .hub-more {
     gap: 10px;
+}
+@media (hover: hover) {
+body.page-pathologies a.hub-card:hover .hub-more {
+    gap: 10px;
+}
 }
 /* --- Listes de fiches : lignes de 44 px --- */
 body.page-pathologies .hub-lists {
@@ -5495,11 +5705,17 @@ body.page-pathologies .hub-list li a {
     text-decoration: none;
     transition: color 0.15s;
 }
-body.page-pathologies .hub-list li a:hover,
 body.page-pathologies .hub-list li a:focus-visible {
     color: var(--prusse);
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+@media (hover: hover) {
+body.page-pathologies .hub-list li a:hover {
+    color: var(--prusse);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 }
 /* --- CTA : ardoise, geste cuivre unique --- */
 body.page-pathologies .hub-cta {
@@ -5554,9 +5770,11 @@ body.page-pathologies .hub-cta .btn-rdv {
     text-decoration: none;
     transition: background 0.2s;
 }
+@media (hover: hover) {
 body.page-pathologies .hub-cta .btn-rdv:hover {
     background: var(--cuivre-rdv-deep, #82391F);
     color: #ffffff;
+}
 }
 body.page-pathologies .hub-cta .btn-rdv:focus-visible {
     outline: 3px solid var(--sable-light);
@@ -5706,7 +5924,9 @@ body.page-index .trust-card.urgence a.tc-title {
     text-decoration: none;
     color: var(--prusse);
 }
+@media (hover: hover) {
 body.page-index .trust-card.urgence a.tc-title:hover { color: var(--prusse-light); }
+}
 body.page-index .trust-card.urgence .tc-call {
     display: inline-flex;
     align-items: center;
@@ -5726,14 +5946,21 @@ body.page-index .trust-card.urgence .tc-call {
     white-space: nowrap;
     transition: background 0.2s, border-color 0.2s;
 }
-body.page-index .trust-card.urgence .tc-call:hover,
 body.page-index .trust-card.urgence .tc-call:focus-visible {
     background: var(--blanc-naturel);
     border-color: var(--sable);
 }
+@media (hover: hover) {
+body.page-index .trust-card.urgence .tc-call:hover {
+    background: var(--blanc-naturel);
+    border-color: var(--sable);
+}
+}
 /* --- Hub : survol du sommaire en sable, respirations resserrées --- */
-body.page-pathologies .hub-nav a:hover,
 body.page-pathologies .hub-nav a:focus-visible { border-color: var(--sable); }
+@media (hover: hover) {
+body.page-pathologies .hub-nav a:hover { border-color: var(--sable); }
+}
 body.page-pathologies .hub { padding-top: 36px; }
 body.page-pathologies .hub-group { margin-top: 44px; }
 body.page-pathologies .hub-alert { margin-bottom: 22px; }
@@ -5789,11 +6016,17 @@ body.page-pathologies .hub-alert { margin-bottom: 22px; }
     border-radius: 50%;
     background: var(--sable);
 }
-.toc-list a:hover,
 .toc-list a:focus-visible {
     color: var(--prusse);
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+@media (hover: hover) {
+.toc-list a:hover {
+    color: var(--prusse);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 }
 article.pathology-content .toc + h2 { margin-top: 40px; }
 @media (max-width: 37.5em) {
@@ -5923,7 +6156,9 @@ article.pathology-content .cta-line-link {
     text-underline-offset: 3px;
     white-space: nowrap;
 }
+@media (hover: hover) {
 article.pathology-content .cta-line-link:hover { color: var(--cuivre-rdv-deep, #82391F); }
+}
 /* --- Hub : entrée par symptômes --- */
 body.page-pathologies .hub-symptoms {
     margin: 0 0 26px;
@@ -5969,10 +6204,15 @@ body.page-pathologies .hub-sym-list .dest {
     color: var(--text-light);
 }
 body.page-pathologies .hub-sym-list .dest .ico { width: 13px; height: 13px; flex: none; }
-body.page-pathologies .hub-sym-list a:hover .sym,
 body.page-pathologies .hub-sym-list a:focus-visible .sym {
     text-decoration: underline;
     text-underline-offset: 3px;
+}
+@media (hover: hover) {
+body.page-pathologies .hub-sym-list a:hover .sym {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
 }
 /* --- Décollement : hôpitaux hors de l'ambre, bandeau resserré --- */
 article.pathology-content .hors-horaires {
@@ -6293,10 +6533,15 @@ body.page-pathologies .page-header .hub-nav a {
     border-color: rgba(249, 247, 242, 0.45);
     color: var(--blanc-naturel);
 }
-body.page-pathologies .page-header .hub-nav a:hover,
 body.page-pathologies .page-header .hub-nav a:focus-visible {
     background: rgba(249, 247, 242, 0.12);
     border-color: var(--blanc-naturel);
+}
+@media (hover: hover) {
+body.page-pathologies .page-header .hub-nav a:hover {
+    background: rgba(249, 247, 242, 0.12);
+    border-color: var(--blanc-naturel);
+}
 }
 body.page-pathologies .page-header .hub-nav a:focus-visible {
     outline: 2px solid var(--blanc-naturel);
@@ -6456,7 +6701,10 @@ body.page-index .contact-v12 .contact-map .map-facade {
     color: rgba(249, 247, 242, 0.72);
 }
 .map-facade-note a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
-.map-facade-note a:hover, .map-facade-note a:focus-visible { color: var(--blanc-naturel); }
+.map-facade-note a:focus-visible { color: var(--blanc-naturel); }
+@media (hover: hover) {
+.map-facade-note a:hover { color: var(--blanc-naturel); }
+}
 .map-facade-btn {
     margin-top: 6px;
     min-height: 44px;
@@ -6473,10 +6721,17 @@ body.page-index .contact-v12 .contact-map .map-facade {
     cursor: pointer;
     transition: background 0.2s, color 0.2s, transform 0.15s;
 }
-.map-facade-btn:hover, .map-facade-btn:focus-visible {
+.map-facade-btn:focus-visible {
     background: var(--sable-light);
     color: var(--prusse-dark);
     transform: translateY(-1px);
+}
+@media (hover: hover) {
+.map-facade-btn:hover {
+    background: var(--sable-light);
+    color: var(--prusse-dark);
+    transform: translateY(-1px);
+}
 }
 html:not(.js) .map-facade-btn { display: none; }
 @media (max-width: 53.75em) {
@@ -6530,9 +6785,11 @@ body.page-pathologies .hub-cta .btn-rdv .btn-more { margin-left: 8px; } /* l'anc
     border-radius: var(--radius);
 }
 .alert-rouge strong { color: var(--alerte-texte, #80400e); }
+@media (hover: hover) {
 .related-link:hover {
     border-color: var(--prusse-light) !important;
     color: var(--prusse) !important;
+}
 }
 .nav-cta:focus-visible,
 .btn-rdv:focus-visible,
@@ -6660,10 +6917,15 @@ a.button {
     text-align: center;
     transition: background 0.2s;
 }
-a.button:hover,
 a.button:active {
     background: var(--blanc-naturel);
     color: var(--prusse);
+}
+@media (hover: hover) {
+a.button:hover {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+}
 }
 a.button:focus-visible {
     outline: 3px solid var(--prusse);
@@ -6788,8 +7050,10 @@ body.page-publications .external-links p {
 article.pathology-content .cta-line-link {
     color: var(--cuivre-rdv-deep, #82391F);
 }
+@media (hover: hover) {
 article.pathology-content .cta-line-link:hover {
     color: var(--prusse);
+}
 }
 /* Encadré d'information (myopie) : texte plein sur le fond teinté ; blocs « en cours » des publications : fond neutre, contour tireté conservé */
 .info-box, article.pathology-content .info-box p {
@@ -6807,3 +7071,4 @@ body.page-index .cv12-map-note a {
 body.page-publications .placeholder-block {
     background: transparent;
 }
+/* TECH8P-2026-09-07 — survol collant au toucher : chaque règle :hover est dans un @media (hover: hover), à sa place. Aucune autre règle. */

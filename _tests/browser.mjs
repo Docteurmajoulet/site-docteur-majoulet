@@ -9,6 +9,7 @@
 // Puis police du navigateur à 32 px : aucun débordement, chrome (bandeau, en-tête, menu, barre fixe) jamais tronqué (TECH7K-2026-09-07).
 // Puis sans JavaScript à 390 px : menu complet visible, aucun débordement, rien d'invisible dans <main> (TECH8N-2026-09-07).
 // Puis lisibilité à 390 et 1366 px : aucun texte sous 12,8 px hors exposants, texte de lecture ≥ 7:1 (TECH8O-2026-09-07).
+// Puis survol : aucun état :hover après un tap (tactile), survol intact à la souris (TECH8P-2026-09-07).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -282,6 +283,34 @@ try {
       await page.close();
     }
     await ctx.close();
+  }
+  // TECH8P-2026-09-07 — survol collant au toucher : en contexte tactile (hover: none), un tap sur une entrée du sommaire ne la
+  // souligne pas ; en contexte souris, le survol la souligne toujours (les règles :hover sont sous @media (hover: hover)).
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, hasTouch: true, isMobile: true, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const page = await ctx.newPage();
+    try {
+      await page.goto(urlFor('decollement-retine', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+      const hoverMedia = await page.evaluate(() => matchMedia('(hover: hover)').matches);
+      if (hoverMedia) failures.push('decollement-retine @390 tactile — le contexte tactile annonce (hover: hover)');
+      await page.tap('.toc-list a'); await page.waitForTimeout(500);
+      const td = await page.$eval('.toc-list a', a => getComputedStyle(a).textDecorationLine);
+      if (td.includes('underline')) failures.push('decollement-retine @390 tactile — après un tap, le lien du sommaire reste en état :hover (souligné)');
+      loads++;
+    } catch (e) { failures.push(`decollement-retine @390 tactile — ${String(e).slice(0, 160)}`); }
+    await page.close(); await ctx.close();
+    const ctx2 = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'fr-FR' });
+    await ctx2.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const page2 = await ctx2.newPage();
+    try {
+      await page2.goto(urlFor('decollement-retine', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+      await page2.hover('.toc-list a'); await page2.waitForTimeout(300);
+      const td = await page2.$eval('.toc-list a', a => getComputedStyle(a).textDecorationLine);
+      if (!td.includes('underline')) failures.push('decollement-retine @1366 souris — le survol du sommaire ne souligne plus le lien');
+      loads++;
+    } catch (e) { failures.push(`decollement-retine @1366 souris — ${String(e).slice(0, 160)}`); }
+    await page2.close(); await ctx2.close();
   }
 } finally { await browser.close(); stop(); }
 
