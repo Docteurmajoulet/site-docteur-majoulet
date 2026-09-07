@@ -6615,3 +6615,78 @@ article.pathology-content .qr-block .r,
     font-family: inherit;
     text-transform: inherit;
 }
+
+/* ============================================================
+   TECH6I-2026-09-07 — Ergonomie tactile (tour technique 6)
+   1. Tout lien tel: offre 44 px de hauteur tactile (::after centré,
+      invisible, sans effet sur la mise en page) ; 28 px au pied de page
+      (lignes empilées, cf. POLISH2). 2. Classe .button (jamais définie
+      jusqu'ici) : bouton secondaire, contour ardoise, même langage que
+      « Appeler » de la barre fixe. 3. Paysage bas (≤ 480 px de haut) :
+      barre fixe masquée. 4. <main tabindex="-1"> sans anneau de focus.
+   ============================================================ */
+a[href^="tel:"] {
+    position: relative;
+}
+a[href^="tel:"]:not(.cv12-tel)::after {   /* .cv12-tel garde sa zone décalée vers le haut (le courriel étend la sienne vers le bas) */
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 44px;
+    transform: translateY(-50%);
+}
+footer a[href^="tel:"]::after {
+    height: 28px;
+}
+a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 10px 18px;
+    border: 2px solid var(--prusse);
+    border-radius: 50px;
+    background: var(--blanc);
+    color: var(--prusse);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: background 0.2s;
+}
+a.button:hover,
+a.button:active {
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+}
+a.button:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+}
+a.button .ico-arrow {
+    width: 14px;
+    height: 14px;
+    flex: none;
+}
+p:has(> a.button) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+}
+@media (max-width: 1024px) and (max-height: 480px) and (orientation: landscape) {
+.sticky-rdv {
+        display: none;
+    }
+body.has-sticky-rdv {
+        padding-bottom: 0;
+    }
+}
+main[tabindex="-1"]:focus {
+    outline: none;
+}

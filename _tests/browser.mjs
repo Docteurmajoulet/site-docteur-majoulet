@@ -5,6 +5,7 @@
 // interne en échec, aucun débordement horizontal ; axe-core (WCAG 2.x A/AA + bonnes pratiques) : 0 violation.
 // Les requêtes externes (Doctolib, Google Maps…) sont bloquées pour rester hermétique. Code de sortie 1 si échec.
 // Puis, aux largeurs axe, la même page avec l'espacement du texte WCAG 1.4.12 : aucun texte tronqué (TECH4A-2026-09-06).
+// À 390 px : zone de toucher des numéros de téléphone ≥ 44 px, lien d'évitement → focus sur <main> (TECH6I-2026-09-07).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -97,6 +98,30 @@ try {
             return out;
           });
           for (const x of wide) problems.push('corps de fiche : colonne trop large — ' + x);
+        }
+        // TECH6I-2026-09-07 : (a) à 390 px, chaque numéro de téléphone visible offre ≥ 44 px de hauteur tactile (28 px au pied de
+        // page), mesurée par elementFromPoint (les pseudo-éléments comptent) ; (b) le lien d'évitement donne le focus à <main>.
+        if (w === 390) {
+          const tel = await page.evaluate(async () => {
+            const out = [];
+            const links = Array.from(document.querySelectorAll('a[href^="tel:"]')).filter(a => a.getClientRects().length && getComputedStyle(a).visibility !== 'hidden' && !a.closest('.sticky-rdv'));   // la barre fixe (48 px, animée) a son propre contrôle
+            for (const a of links) {
+              a.scrollIntoView({ block: 'center' }); await new Promise(r => setTimeout(r, 20));
+              const r = a.getBoundingClientRect(); const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+              const hit = (x, y) => { const e = document.elementFromPoint(x, y); return !!e && (e === a || a.contains(e)); };
+              let top = cy, bot = cy;
+              while (top > cy - 40 && hit(cx, top - 1)) top--;
+              while (bot < cy + 40 && hit(cx, bot + 1)) bot++;
+              const h = bot - top + 1, min = a.closest('footer') ? 28 : 44;
+              if (h < min - 2) out.push(`« ${a.textContent.trim().replace(/\s+/g, ' ').slice(0, 22)} » (${(a.className || '').toString().split(' ')[0] || a.parentElement.tagName.toLowerCase()}) : ${h} px < ${min}`);
+            }
+            window.scrollTo(0, 0);
+            return out;
+          });
+          for (const x of tel) problems.push('téléphone : zone de toucher ' + x);
+          await page.focus('.skip-link'); await page.keyboard.press('Enter'); await page.waitForTimeout(50);
+          const act = await page.evaluate(() => document.activeElement && document.activeElement.tagName);
+          if (act !== 'MAIN') problems.push(`lien d'évitement : le focus est sur ${act} au lieu de MAIN`);
         }
         const cspv = await page.evaluate(() => window.__cspv);
         for (const v of cspv) problems.push('CSP : ' + v);
