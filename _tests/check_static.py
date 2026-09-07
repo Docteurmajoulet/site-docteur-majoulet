@@ -284,6 +284,12 @@ def check(root):
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
         for m in re.finditer(r'"(preparation|howPerformed|followup)":', t):
             E(f'{name} : JSON-LD MedicalProcedure.{m.group(1)} — texte médical invisible et non relu (à retirer)'); break
+        # TECH6J-2026-09-07 : micro-typographie — ordinaux en exposant (1<sup>er</sup>, 2<sup>e</sup>), micro « µ » (U+00B5), « ISO 7 »
+        texts = ' '.join(x for x in re.split(r'(<script.*?</script>|<[^>]+>)', body, flags=re.S) if not x.startswith('<'))
+        mo = re.search(r'\b\d+(?:er|ère|ème|eme|nde?|re)\b|\bParis(?:\u00a0| )\(?\d{1,2}e\b', texts)
+        if mo: E(f'{name} : ordinal sans exposant « {mo.group(0)} » (écrire 1<sup>er</sup>, 2<sup>e</sup>)')
+        if '\u03bc' in texts: E(f'{name} : « μ » grec (U+03BC) au lieu du micro « µ » (U+00B5)')
+        if re.search(r'\bISO\d', texts): E(f'{name} : « ISO » collé à son chiffre (écrire ISO\u00a07)')
         # TECH5G-2026-09-06 : un texte français marqué lang="en" (ponctuation française « \u00a0: », mots « de la », « des »…)
         for m in re.finditer(r'<(\w+)[^>]*\slang="en"[^>]*>(.*?)</\1>', t, re.S):
             frag = re.sub(r'<[^>]+>', '', html.unescape(m.group(2)))

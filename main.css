@@ -6690,3 +6690,16 @@ body.has-sticky-rdv {
 main[tabindex="-1"]:focus {
     outline: none;
 }
+
+/* ============================================================
+   TECH6J-2026-09-07 — Exposants (1er, 2e, 16e, ®) : ne modifient
+   plus la hauteur de la ligne qui les porte (line-height 0 et
+   décalage relatif au lieu de vertical-align: super).
+   ============================================================ */
+sup {
+    font-size: 0.72em;
+    line-height: 0;
+    position: relative;
+    top: -0.45em;
+    vertical-align: baseline;
+}
