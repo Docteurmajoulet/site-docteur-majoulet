@@ -1,4 +1,5 @@
-/* nav.js — docteurmajoulet.com — TECH5F-2026-09-06 (v7)
+/* nav.js — docteurmajoulet.com — TECH7K-2026-09-07 (v8)
+   v8 : bascule bureau/mobile par matchMedia en em (suit la police système agrandie).
    v7 : état « Chargement de la carte… » pendant le chargement de l'iframe Google ;
    .table-scroll focalisable seulement quand le tableau déborde réellement.
    v6 : façade Google Maps de la home — l'iframe (adresse IP transmise à Google) n'est
@@ -32,7 +33,7 @@
     var header = document.querySelector('header.site-header');
     var FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-    function isDesktop() { return window.innerWidth > MOBILE_BP; }
+    function isDesktop() { return window.matchMedia('(min-width: 64.0625em)').matches; }   /* TECH7K-2026-09-07 : = 1025 px à la police par défaut ; suit la police système comme main.css (ex-innerWidth > MOBILE_BP) */
     function setOpen(item, open) {
         var t = item.querySelector('.nav-link');
         if (open) { item.classList.add('is-open'); } else { item.classList.remove('is-open'); }

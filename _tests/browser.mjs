@@ -6,6 +6,7 @@
 // Les requêtes externes (Doctolib, Google Maps…) sont bloquées pour rester hermétique. Code de sortie 1 si échec.
 // Puis, aux largeurs axe, la même page avec l'espacement du texte WCAG 1.4.12 : aucun texte tronqué (TECH4A-2026-09-06).
 // À 390 px : zone de toucher des numéros de téléphone ≥ 44 px, lien d'évitement → focus sur <main> (TECH6I-2026-09-07).
+// Puis police du navigateur à 32 px : aucun débordement, chrome (bandeau, en-tête, menu, barre fixe) jamais tronqué (TECH7K-2026-09-07).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -169,6 +170,38 @@ try {
         for (const r of res) failures.push(`${slug} @${w} espacé — ${r}`);
         loads++;
       } catch (e) { failures.push(`${slug} @${w} espacé — chargement : ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
+  // TECH7K-2026-09-07 — police système agrandie : taille par défaut du navigateur à 32 px (CDP Page.setFontSizes, comme le
+  // réglage d'accessibilité d'un malvoyant). Aucun débordement horizontal ; bandeau, en-tête, menu, barre fixe et fil d'Ariane
+  // jamais tronqués. Trouvé le 07/09/2026 : les 48 pages cassaient à 1366 px (points de rupture en px).
+  for (const w of AXE_WIDTHS) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of slugs) {
+      const page = await ctx.newPage();
+      try {
+        const cdp = await ctx.newCDPSession(page);
+        await cdp.send('Page.enable');
+        await cdp.send('Page.setFontSizes', { fontSizes: { standard: 32, fixed: 26 } });
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = [];
+          const over = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+          if (over > 0) out.push(`débordement horizontal de ${over}px`);
+          for (const el of document.querySelectorAll('.topbar *, header.site-header *, nav.main-nav *, .sticky-rdv *, .breadcrumb-mini *')) {
+            const cs = getComputedStyle(el);
+            if (cs.display === 'none' || cs.visibility === 'hidden' || el.closest('.sr-only') || el.classList.contains('sr-only') || el.getClientRects().length === 0) continue;
+            if ((cs.overflowX === 'hidden' || cs.overflowX === 'clip' || cs.textOverflow === 'ellipsis') && el.scrollWidth > el.clientWidth + 1 && el.textContent.trim())
+              out.push(`texte tronqué : ${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]} « ${el.textContent.trim().replace(/\s+/g, ' ').slice(0, 40)} »`);
+          }
+          return out.slice(0, 5);
+        });
+        for (const r of res) failures.push(`${slug} @${w} police 32 px — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} police 32 px — chargement : ${String(e).slice(0, 160)}`); }
       await page.close();
     }
     await ctx.close();
