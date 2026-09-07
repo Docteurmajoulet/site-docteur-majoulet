@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260906e">
+    <link rel="stylesheet" href="/main.css?v=20260907a">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -61,10 +61,7 @@
             "name": "Vitrectomie par voie de la pars plana",
             "alternateName": ["PPV", "Vitrectomie 25G", "Vitrectomie 27G", "Pars plana vitrectomy"],
             "procedureType": {"@type": "MedicalProcedureType", "name": "Chirurgie intraoculaire mini-invasive"},
-            "bodyLocation": "Cavité vitréenne, rétine, macula",
-            "howPerformed": "Chirurgie ambulatoire sous anesthésie locorégionale péribulbaire ou sous-ténonienne. Mise en place de 3 trocarts transconjonctivaux calibrés 25G (0,5 mm) ou 27G (0,4 mm) au niveau de la pars plana, à 4 mm du limbe. Un trocart sert à l'infusion, un à l'endo-illumination, un au vitréotome (instrument rotatif aspirant le vitré). Le chirurgien procède à une vitrectomie centrale et périphérique, associée selon l'indication à un pelage de la membrane limitante interne (MLI), à un pelage d'une membrane épirétinienne, à une endolaser, à une cryoapplication, puis à un tamponnement par gaz (SF6, C2F6) ou par huile de silicone.",
-            "preparation": "Bilan pré-opératoire complet (biométrie, OCT maculaire, rétinographie, consultation d'anesthésie), arrêt éventuel des anticoagulants selon le protocole, jeûne pré-opératoire.",
-            "followup": "Positionnement post-opératoire (face down si gaz et pathologie maculaire), collyres antibio-corticoïdes 1 mois, contrôles à J7, M1 et M3, restriction du vol en avion et altitude tant que le gaz n'est pas résorbé."
+            "bodyLocation": "Cavité vitréenne, rétine, macula"
         },
         "breadcrumb": {
             "@type": "BreadcrumbList",
@@ -84,50 +81,74 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Qu'est-ce qu'une vitrectomie ?",
+                "name": "La vitrectomie est-elle douloureuse ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La vitrectomie est une intervention chirurgicale consistant à retirer le vitré (gel transparent qui remplit la cavité postérieure de l'œil) afin de traiter une pathologie rétinienne. Elle est réalisée par voie mini-invasive, via 3 micro-orifices de 0,4 à 0,5 mm au niveau de la pars plana. Selon l'indication, elle peut être associée à un pelage de membrane (MLI, membrane épirétinienne), un laser, une cryoapplication et un tamponnement par gaz ou huile de silicone."
+                    "text": "Non. Elle est réalisée sous anesthésie locorégionale péribulbaire ou sous-ténonienne, qui rend l'œil complètement insensible pendant l'intervention. Un confort anesthésique léger (midazolam) peut être associé. L'anesthésie générale est réservée aux cas complexes ou aux enfants."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quelles sont les indications d'une vitrectomie ?",
+                "name": "Combien de temps dois-je rester face vers le bas ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Les indications principales sont : décollement de rétine rhegmatogène, trou maculaire, membrane épirétinienne, rétinopathie diabétique proliférante avec hémorragie intra-vitréenne ou décollement tractionnel, dislocation de cristallin ou d'implant, fovéoschisis myopique, certains œdèmes maculaires réfractaires, certaines uvéites chroniques, endophtalmies, corps étrangers intraoculaires."
+                    "text": "Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, 3 à 7 jours classiquement (études plus récentes suggérant qu'un positionnement plus court de 24-72h suffit dans les petits trous). Pour un décollement de rétine maculaire, 5 à 10 jours. Le positionnement précis vous sera indiqué avant la sortie, avec un support écrit."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Est-ce douloureux ? Me faut-il une anesthésie générale ?",
+                "name": "Vais-je retrouver toute ma vision ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La vitrectomie est réalisée dans la majorité des cas sous anesthésie locorégionale (péribulbaire ou sous-ténonienne) avec une sédation légère. L'intervention est indolore. L'anesthésie générale est réservée aux cas complexes, aux interventions longues, aux enfants ou à certains patients anxieux. La chirurgie se fait en ambulatoire : entrée le matin, sortie le même jour."
+                    "text": "La récupération visuelle dépend essentiellement de l'état de la macula avant l'intervention. Elle est généralement excellente dans les trous maculaires pris en charge précocement, satisfaisante dans les membranes épirétiniennes, variable dans les décollements de rétine (dépend de si la macula était soulevée ou non), souvent partielle dans les rétinopathies diabétiques proliférantes compliquées."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Qu'est-ce que le positionnement post-opératoire ?",
+                "name": "Pourquoi la cataracte apparaît-elle si souvent après une vitrectomie ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Lorsqu'un tamponnement par gaz est utilisé (SF6, C2F6), la bulle de gaz flotte à la partie supérieure de l'œil. Pour qu'elle appuie sur la zone à traiter (macula en cas de trou maculaire, déchirure en cas de décollement), un positionnement spécifique est demandé pendant plusieurs jours : face vers le bas (face down) en cas de pathologie maculaire, tête sur le côté en cas de déchirure latérale. La durée est adaptée à la pathologie, généralement 3 à 10 jours."
+                    "text": "Le retrait du vitré modifie l'environnement métabolique et oxydant du cristallin. Chez le patient phaque de plus de 50 ans, une cataracte nucléaire apparaît dans 60-90 % des cas dans les 12 à 24 mois. C'est pour cela qu'une chirurgie combinée phaco-vitrectomie est souvent proposée lorsque la cataracte est déjà débutante."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quels sont les risques de la vitrectomie ?",
+                "name": "Peut-on reprendre l'avion après une vitrectomie ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Comme toute chirurgie intraoculaire, la vitrectomie comporte des risques. Les principaux sont la cataracte post-opératoire (quasi-constante dans les 12 à 24 mois chez un patient phaque après 50 ans), l'hypertonie oculaire transitoire, l'endophtalmie (infection intraoculaire, rare : environ 0,02-0,05 %), le nouveau décollement de rétine (1-5 %), l'hémorragie intra-vitréenne et les défauts pupillaires. La récupération visuelle dépend essentiellement de l'état de la macula avant la chirurgie."
+                    "text": "Non, tant qu'une bulle de gaz persiste. L'altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. Délai : 2 semaines (SF6) ou 4 à 5 semaines (C2F6). Si l'intervention a été faite sous huile de silicone, le vol est possible sans délai."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Peut-on prendre l'avion après une vitrectomie ?",
+                "name": "Combien de temps d'arrêt de travail prévoir ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non, tant que la bulle de gaz n'est pas résorbée. La baisse de pression atmosphérique en altitude fait augmenter le volume de gaz et peut entraîner une hypertonie oculaire majeure et une souffrance du nerf optique. L'interdiction de vol concerne aussi les voyages en montagne au-dessus de 1000-1500 m. La résorption du SF6 prend environ 2 semaines, celle du C2F6 environ 4 à 5 semaines. Un signalement au personnel médical est indispensable en cas d'anesthésie générale pendant cette période."
+                    "text": "Variable selon la profession et l'indication : 1 à 2 semaines après une vitrectomie simple sans tamponnement gazeux (membrane épirétinienne, corps flottants), 2 à 4 semaines en cas de posture post-opératoire (trou maculaire, décollement avec gaz), jusqu'à 4 à 6 semaines pour les cas complexes (rétinopathie diabétique, décollement avec silicone). Un arrêt de travail adapté est systématiquement remis le jour de l'intervention."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Faut-il arrêter les anticoagulants avant l'intervention ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La décision est prise en concertation avec le cardiologue ou le médecin prescripteur. La vitrectomie 25G ou 27G par micro-incisions est peu hémorragique : l'aspirine à faible dose est généralement poursuivie. Les anticoagulants oraux directs (AOD) sont souvent arrêtés 24 à 48 h avant, les antivitamine K relayés selon le protocole habituel. Aucune décision d'arrêt n'est prise sans avis médical préalable."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "L'intervention est-elle prise en charge par la Sécurité sociale ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l'indication) est un acte intégralement pris en charge par l'Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement et dépassements d'honoraires éventuels) est remis avant l'intervention conformément à la réglementation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Peut-on opérer les deux yeux en même temps ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. La vitrectomie est pratiquée un œil à la fois, et les deux yeux ne sont jamais opérés au cours du même temps opératoire. Un délai d'au moins quelques semaines est respecté entre les deux yeux lorsqu'une bilatéralisation est nécessaire, afin de limiter les conséquences fonctionnelles (vision transitoirement basse avec la bulle de gaz) et de sécuriser la prise en charge en cas de complication."
                 }
             }
         ]
@@ -585,7 +606,7 @@
             <h2 id="questions-frequentes">Questions fréquentes</h2>
 
             <div class="qr-block">
-                <p class="q">La vitrectomie est-elle douloureuse&nbsp;?</p>
+                <h3 class="q">La vitrectomie est-elle douloureuse&nbsp;?</h3>
                 <p class="r"><strong>Non.</strong> Elle est réalisée sous anesthésie locorégionale
                 péribulbaire ou sous-ténonienne, qui rend l'œil complètement insensible pendant
                 l'intervention. Un <strong>confort anesthésique léger</strong> (midazolam)
@@ -593,7 +614,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Combien de temps dois-je rester face vers le bas&nbsp;?</p>
+                <h3 class="q">Combien de temps dois-je rester face vers le bas&nbsp;?</h3>
                 <p class="r">Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire,
                 <strong>3 à 7&nbsp;jours</strong> classiquement (études plus récentes suggérant
                 qu'un positionnement plus court de 24-72h suffit dans les petits trous).
@@ -602,7 +623,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Vais-je retrouver toute ma vision&nbsp;?</p>
+                <h3 class="q">Vais-je retrouver toute ma vision&nbsp;?</h3>
                 <p class="r">La <strong>récupération visuelle dépend essentiellement de l'état de la macula</strong>
                 avant l'intervention. Elle est généralement <strong>excellente dans les trous maculaires pris en charge précocement</strong>,
                 <strong>satisfaisante dans les membranes épirétiniennes</strong>,
@@ -611,7 +632,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Pourquoi la cataracte apparaît-elle si souvent après une vitrectomie&nbsp;?</p>
+                <h3 class="q">Pourquoi la cataracte apparaît-elle si souvent après une vitrectomie&nbsp;?</h3>
                 <p class="r">Le retrait du vitré modifie l'environnement métabolique et oxydant du cristallin.
                 Chez le patient phaque de plus de 50&nbsp;ans, une <strong>cataracte nucléaire apparaît
                 dans 60-90&nbsp;% des cas</strong> dans les 12 à 24&nbsp;mois. C'est pour cela qu'une
@@ -620,7 +641,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Peut-on reprendre l'avion après une vitrectomie&nbsp;?</p>
+                <h3 class="q">Peut-on reprendre l'avion après une vitrectomie&nbsp;?</h3>
                 <p class="r"><strong>Non, tant qu'une bulle de gaz persiste.</strong>
                 L'altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure.
                 Délai&nbsp;: <strong>2&nbsp;semaines</strong> (SF6) ou <strong>4 à 5&nbsp;semaines</strong> (C2F6).
@@ -628,7 +649,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Combien de temps d'arrêt de travail prévoir&nbsp;?</p>
+                <h3 class="q">Combien de temps d'arrêt de travail prévoir&nbsp;?</h3>
                 <p class="r">Variable selon la profession et l'indication&nbsp;:
                 <strong>1 à 2&nbsp;semaines</strong> après une vitrectomie simple sans tamponnement gazeux (membrane épirétinienne, corps flottants),
                 <strong>2 à 4&nbsp;semaines</strong> en cas de posture post-opératoire (trou maculaire, décollement avec gaz),
@@ -637,7 +658,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Faut-il arrêter les anticoagulants avant l'intervention&nbsp;?</p>
+                <h3 class="q">Faut-il arrêter les anticoagulants avant l'intervention&nbsp;?</h3>
                 <p class="r">La décision est prise en concertation avec le cardiologue ou le médecin prescripteur.
                 La vitrectomie 25G ou 27G par micro-incisions est <strong>peu hémorragique</strong>&nbsp;:
                 l'<strong>aspirine à faible dose est généralement poursuivie</strong>.
@@ -646,14 +667,14 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">L'intervention est-elle prise en charge par la Sécurité sociale&nbsp;?</p>
+                <h3 class="q">L'intervention est-elle prise en charge par la Sécurité sociale&nbsp;?</h3>
                 <p class="r">Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l'indication) est un acte
                 <strong>intégralement pris en charge par l'Assurance Maladie</strong> sur la base des tarifs conventionnels.
                 Un devis détaillé (base de remboursement et dépassements d'honoraires éventuels) est remis avant l'intervention conformément à la réglementation.</p>
             </div>
 
             <div class="qr-block">
-                <p class="q">Peut-on opérer les deux yeux en même temps&nbsp;?</p>
+                <h3 class="q">Peut-on opérer les deux yeux en même temps&nbsp;?</h3>
                 <p class="r"><strong>Non.</strong> La vitrectomie est pratiquée un œil à la fois,
                 et les deux yeux ne sont jamais opérés au cours du même temps opératoire. Un délai d'au moins
                 quelques semaines est respecté entre les deux yeux lorsqu'une bilatéralisation est nécessaire,

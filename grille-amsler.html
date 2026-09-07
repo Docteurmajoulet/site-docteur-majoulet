@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260906e">
+    <link rel="stylesheet" href="/main.css?v=20260907a">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -82,14 +82,38 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            {"@type": "Question", "name": "À quelle fréquence faire le test de la grille d'Amsler ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Une fois par jour, chaque œil séparément, avec ses lunettes de lecture, à 30-40 cm. La comparaison jour après jour permet de repérer un changement précoce."}},
-            {"@type": "Question", "name": "Les lignes paraissent légèrement floues sur les bords : est-ce anormal ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Un léger flou périphérique est fréquent et souvent lié à la correction optique. Ce qui doit alerter : des lignes ondulées ou tordues, une tache persistante, ou un changement par rapport aux tests précédents. Consultez au moindre doute."}},
-            {"@type": "Question", "name": "Le test de la grille d'Amsler remplace-t-il la consultation ophtalmologique ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Non. C'est un outil de dépistage qui complète le suivi ophtalmologique sans le remplacer : certaines lésions évoluent sans anomalie perceptible sur la grille."}},
-            {"@type": "Question", "name": "J'ai une DMLA humide traitée par injections : dois-je faire le test ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Oui. Entre deux injections, la grille permet de détecter une réactivation (nouvelles déformations) et de rapprocher la consultation sans attendre le rendez-vous prévu."}}
+            {
+                "@type": "Question",
+                "name": "À quelle fréquence faire le test ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Une fois par jour, chaque œil séparément. La comparaison jour après jour est ce qui permet de repérer un changement précoce — c'est un réflexe à intégrer à la routine, comme se brosser les dents."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Les lignes me paraissent légèrement floues sur les bords : est-ce anormal ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Un léger flou périphérique est fréquent et souvent lié à la correction optique ou à la fixation. Ce qui doit alerter : des lignes ondulées ou tordues, une tache qui persiste, ou un changement par rapport à vos tests précédents. Au moindre doute, faites contrôler."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Le test remplace-t-il la consultation ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. Il complète le suivi ophtalmologique mais ne le remplace pas : certaines lésions évoluent sans anomalie perceptible sur la grille. Le rythme de consultation est fixé par votre ophtalmologue selon votre situation (par exemple, OCT tous les 6 mois en cas de DMLA sèche connue)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "J'ai une DMLA humide traitée par injections : dois-je faire le test ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Oui. Entre deux injections, la grille permet de détecter une réactivation (nouvelles déformations) et de rapprocher la consultation. Signalez tout changement au cabinet sans attendre le rendez-vous prévu."
+                }
+            }
         ]
     }
     </script>
@@ -394,26 +418,26 @@
 
             <h2 id="questions-frequentes">Questions fréquentes</h2>
             <div class="qr-block">
-                <p class="q">À quelle fréquence faire le test&nbsp;?</p>
+                <h3 class="q">À quelle fréquence faire le test&nbsp;?</h3>
                 <p class="r"><strong>Une fois par jour</strong>, chaque œil séparément. La comparaison jour après jour
                 est ce qui permet de repérer un changement précoce — c'est un réflexe à intégrer à la routine,
                 comme se brosser les dents.</p>
             </div>
             <div class="qr-block">
-                <p class="q">Les lignes me paraissent légèrement floues sur les bords&nbsp;: est-ce anormal&nbsp;?</p>
+                <h3 class="q">Les lignes me paraissent légèrement floues sur les bords&nbsp;: est-ce anormal&nbsp;?</h3>
                 <p class="r">Un léger flou périphérique est fréquent et souvent lié à la correction optique ou à la
                 fixation. Ce qui doit alerter&nbsp;: des lignes <strong>ondulées ou tordues</strong>, une <strong>tache</strong>
                 qui persiste, ou un <strong>changement</strong> par rapport à vos tests précédents. Au moindre doute,
                 faites contrôler.</p>
             </div>
             <div class="qr-block">
-                <p class="q">Le test remplace-t-il la consultation&nbsp;?</p>
+                <h3 class="q">Le test remplace-t-il la consultation&nbsp;?</h3>
                 <p class="r">Non. Il complète le suivi ophtalmologique mais ne le remplace pas&nbsp;: certaines lésions
                 évoluent sans anomalie perceptible sur la grille. Le rythme de consultation est fixé par votre
                 ophtalmologue selon votre situation (par exemple, OCT tous les 6&nbsp;mois en cas de DMLA sèche connue).</p>
             </div>
             <div class="qr-block">
-                <p class="q">J'ai une DMLA humide traitée par injections&nbsp;: dois-je faire le test&nbsp;?</p>
+                <h3 class="q">J'ai une DMLA humide traitée par injections&nbsp;: dois-je faire le test&nbsp;?</h3>
                 <p class="r">Oui. Entre deux injections, la grille permet de détecter une <strong>réactivation</strong>
                 (nouvelles déformations) et de rapprocher la consultation. Signalez tout changement au cabinet
                 sans attendre le rendez-vous prévu.</p>

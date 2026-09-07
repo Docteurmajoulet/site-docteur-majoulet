@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260906e">
+    <link rel="stylesheet" href="/main.css?v=20260907a">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -83,14 +83,38 @@
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            {"@type": "Question", "name": "La DMLA sèche devient-elle toujours humide ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Non, la majorité des DMLA sèches restent atrophiques. La conversion néovasculaire est cependant possible, d'où l'autosurveillance quotidienne par grille d'Amsler et la surveillance OCT semestrielle."}},
-            {"@type": "Question", "name": "Les compléments alimentaires sont-ils utiles dans la DMLA sèche ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "La formule AREDS2 a un bénéfice démontré uniquement dans les formes intermédiaires (réduction d'environ 25 % du risque de progression). Les autres compléments n'ont pas fait cette preuve."}},
-            {"@type": "Question", "name": "Un traitement de la DMLA sèche existe aux États-Unis : puis-je en bénéficier en France ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "Les inhibiteurs du complément approuvés aux États-Unis n'ont pas d'autorisation européenne : l'EMA a jugé leur rapport bénéfice/risque insuffisant. Ils ne sont pas accessibles en France hors essai clinique."}},
-            {"@type": "Question", "name": "À quel rythme faut-il être suivi pour une DMLA sèche ?",
-             "acceptedAnswer": {"@type": "Answer", "text": "OCT maculaire tous les 6 mois au cabinet, rythme adapté au stade, et grille d'Amsler une fois par jour chez soi, chaque œil séparément, avec consultation sous 48 h en cas de changement."}}
+            {
+                "@type": "Question",
+                "name": "La DMLA sèche devient-elle toujours humide ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Non. La majorité des DMLA sèches restent atrophiques. La conversion néovasculaire est cependant possible à tout moment, d'où l'autosurveillance quotidienne par la grille d'Amsler et la surveillance OCT semestrielle : traitée tôt, la forme humide se contrôle d'autant mieux."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Les compléments alimentaires sont-ils utiles ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "La formule AREDS2 a un bénéfice démontré uniquement dans les formes intermédiaires (réduction d'environ 25 % du risque de progression). Les autres compléments « pour la vue » n'ont pas fait cette preuve. Parlez-en en consultation plutôt que d'acheter au hasard."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Un traitement existe aux États-Unis : puis-je en bénéficier ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Les inhibiteurs du complément approuvés aux États-Unis n'ont pas d'autorisation européenne : l'EMA a jugé leur rapport bénéfice/risque insuffisant (ralentissement anatomique des lésions sans gain visuel démontré, et risque accru de forme humide). Ils ne sont donc pas accessibles en France hors essai clinique."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "À quel rythme dois-je être suivi ?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Au cabinet : OCT maculaire tous les 6 mois, rythme adapté au stade. Chez vous : grille d'Amsler une fois par jour, chaque œil séparément, avec consultation sous 48 h en cas de changement."
+                }
+            }
         ]
     }
     </script>
@@ -392,27 +416,27 @@
 
             <h2 id="questions-frequentes">Questions fréquentes</h2>
             <div class="qr-block">
-                <p class="q">La DMLA sèche devient-elle toujours humide&nbsp;?</p>
+                <h3 class="q">La DMLA sèche devient-elle toujours humide&nbsp;?</h3>
                 <p class="r">Non. La majorité des DMLA sèches restent atrophiques. La conversion néovasculaire est
                 cependant possible à tout moment, d'où l'autosurveillance quotidienne par la grille d'Amsler et
                 la surveillance OCT semestrielle&nbsp;: traitée tôt, la forme humide se contrôle d'autant mieux.</p>
             </div>
             <div class="qr-block">
-                <p class="q">Les compléments alimentaires sont-ils utiles&nbsp;?</p>
+                <h3 class="q">Les compléments alimentaires sont-ils utiles&nbsp;?</h3>
                 <p class="r">La formule <strong>AREDS2</strong> a un bénéfice démontré uniquement dans les
                 <strong>formes intermédiaires</strong> (réduction d'environ 25&nbsp;% du risque de progression).
                 Les autres compléments «&nbsp;pour la vue&nbsp;» n'ont pas fait cette preuve. Parlez-en en consultation
                 plutôt que d'acheter au hasard.</p>
             </div>
             <div class="qr-block">
-                <p class="q">Un traitement existe aux États-Unis&nbsp;: puis-je en bénéficier&nbsp;?</p>
+                <h3 class="q">Un traitement existe aux États-Unis&nbsp;: puis-je en bénéficier&nbsp;?</h3>
                 <p class="r">Les inhibiteurs du complément approuvés aux États-Unis n'ont <strong>pas d'autorisation
                 européenne</strong>&nbsp;: l'EMA a jugé leur rapport bénéfice/risque insuffisant (ralentissement anatomique
                 des lésions sans gain visuel démontré, et risque accru de forme humide). Ils ne sont donc pas
                 accessibles en France hors essai clinique.</p>
             </div>
             <div class="qr-block">
-                <p class="q">À quel rythme dois-je être suivi&nbsp;?</p>
+                <h3 class="q">À quel rythme dois-je être suivi&nbsp;?</h3>
                 <p class="r">Au cabinet&nbsp;: <strong>OCT maculaire tous les 6&nbsp;mois</strong>, rythme adapté au stade.
                 Chez vous&nbsp;: <strong>grille d'Amsler une fois par jour</strong>, chaque œil séparément, avec consultation
                 sous 48&nbsp;h en cas de changement.</p>

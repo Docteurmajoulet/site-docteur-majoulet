@@ -6602,3 +6602,16 @@ article.pathology-content .qr-block .r,
 .alert-urgence .alert-niveau {
     font-size: 1rem;
 }
+
+/* ============================================================
+   TECH6H-2026-09-07 — Questions de FAQ en <h3 class="q"> (ex-<p>)
+   Les règles génériques des h3 (interlignage 1,3, approche 0,02 em)
+   sont neutralisées par héritage : rendu identique à l'ancien
+   paragraphe (interlignage 1,75 des fiches, 1,7 ailleurs).
+   ============================================================ */
+.qr-block h3.q {
+    line-height: inherit;
+    letter-spacing: inherit;
+    font-family: inherit;
+    text-transform: inherit;
+}

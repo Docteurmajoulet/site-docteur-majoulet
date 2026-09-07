@@ -38,6 +38,15 @@ externes (Doctolib, Google Maps…) sont bloquées.
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
 
+## FAQ structurée
+
+Le bloc JSON-LD `FAQPage` de chaque page est généré à partir des questions-réponses visibles (`.qr-block`) :
+
+    python3 _tests/faq_jsonld.py            # contrôle (aussi fait par check_static)
+    python3 _tests/faq_jsonld.py --write    # régénère les blocs après avoir modifié une FAQ visible
+
+Une page sans FAQ visible n'a pas de `FAQPage` ; les questions sont des `<h3 class="q">`.
+
 ## Régression visuelle d'un lot
 
     node shots.mjs avant            # captures pleine page de toutes les pages (390 et 1366) → _tests/shots/avant/

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260906e">
+    <link rel="stylesheet" href="/main.css?v=20260907a">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -216,10 +216,7 @@
         "name": "Chirurgie du glaucome par PreserFlo MicroShunt",
         "alternateName": ["PreserFlo", "MicroShunt SIBS", "Chirurgie filtrante micro-invasive"],
         "procedureType": {"@type": "MedicalProcedureType", "name": "Chirurgie filtrante ab-externo"},
-        "bodyLocation": "Angle irido-cornéen, espace sous-conjonctival",
-        "howPerformed": "Sous anesthésie locorégionale, abord conjonctival, dissection d'un volet conjonctival, application de mitomycine C, création d'un tunnel scléral, insertion du microtube en SIBS (poly-styrène-isobutylène-styrène) de 8,5 mm reliant la chambre antérieure à l'espace sous-conjonctival pour créer une bulle de filtration contrôlée. Durée 30-45 minutes.",
-        "preparation": "Bilan complet : PIO, pachymétrie, OCT RNFL, champ visuel, gonioscopie, biomicroscopie du segment antérieur. Arrêt des collyres hypotonisants selon protocole.",
-        "followup": "Collyres antibio-corticoïdes plusieurs semaines. Contrôles rapprochés à J1, J7, M1, M3 pour surveillance de la PIO et de la bulle de filtration. Needling éventuel en cas d'encapsulation."
+        "bodyLocation": "Angle irido-cornéen, espace sous-conjonctival"
     }
     </script>
 
@@ -230,50 +227,50 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Le glaucome fait-il perdre la vue ?",
+                "name": "Le glaucome fait-il perdre la vue ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Non, s'il est dépisté tôt et traité correctement. Le glaucome entraîne une atteinte progressive et irréversible du nerf optique, mais la baisse visuelle est très lente sur des années ou décennies. Lorsque le traitement (collyres, laser ou chirurgie) permet d'abaisser la pression intraoculaire en-dessous de la cible individuelle, la progression est le plus souvent ralentie ou stabilisée. En revanche, le glaucome non dépisté peut conduire à la cécité : il reste la deuxième cause mondiale de cécité irréversible."
+                    "text": "Non, s'il est dépisté tôt et traité correctement. Le glaucome entraîne une atteinte progressive et irréversible du nerf optique, mais la baisse visuelle est très lente (années ou décennies). Un traitement bien conduit — collyres, laser SLT, chirurgie — peut stabiliser la maladie. Non dépisté, il reste néanmoins la deuxième cause mondiale de cécité irréversible."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Pourquoi faut-il mettre des gouttes tous les jours ?",
+                "name": "Pourquoi faut-il mettre des gouttes tous les jours ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Parce que le glaucome est une maladie chronique, souvent silencieuse, qui ne se guérit pas. Les collyres hypotonisants (analogues des prostaglandines en 1ère intention, puis bêta-bloquants, alpha-agonistes, inhibiteurs de l'anhydrase carbonique) diminuent la pression intraoculaire et préviennent la progression. L'arrêt du traitement fait remonter la pression et reprend la destruction des fibres du nerf optique. L'observance est donc essentielle : elle est parfois difficile et justifie à elle seule des solutions alternatives comme la trabéculoplastie sélective au laser (SLT) ou la chirurgie."
+                    "text": "Parce que le glaucome est une maladie chronique et silencieuse qui ne se guérit pas. Les collyres diminuent la PIO et préviennent la progression. L'arrêt fait remonter la pression et reprend la destruction des fibres nerveuses. Quand l'observance est difficile, des alternatives existent : trabéculoplastie SLT ou chirurgie."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Qu'est-ce que la trabéculoplastie sélective au laser (SLT) ?",
+                "name": "Qu'est-ce que la SLT et pourquoi l'utiliser en 1ère ligne ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "C'est un laser ciblant sélectivement les cellules pigmentées du trabéculum, le filtre naturel par lequel l'humeur aqueuse s'évacue. La SLT améliore cette évacuation et abaisse la pression intraoculaire de 20-30 % environ. Depuis l'étude LiGHT (Lancet 2019), elle est désormais proposée en 1ère ligne du glaucome primitif à angle ouvert avant les collyres : indolore, ambulatoire, répétable, elle évite les contraintes et effets indésirables du traitement chronique par collyres. Son effet dure en moyenne 3 à 5 ans."
+                    "text": "La SLT (Trabéculoplastie Sélective au Laser) cible les cellules pigmentées du trabéculum. Elle abaisse la PIO de 20-30 % pendant 3 à 5 ans, est indolore, répétable, et évite la contrainte quotidienne des collyres. Depuis l'étude LiGHT (Lancet 2019), elle est recommandée en 1ère ligne du GPAO."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quand faut-il opérer un glaucome ?",
+                "name": "Quand faut-il opérer un glaucome ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La chirurgie est indiquée quand la pression intraoculaire reste au-dessus de la cible malgré un traitement médical maximal bien suivi et/ou un laser SLT, ou lorsque le champ visuel continue de se dégrader. Elle est également indiquée en cas d'intolérance aux collyres, de mauvaise observance ou de glaucomes sévères d'emblée. Les techniques actuelles incluent les chirurgies filtrantes classiques (trabéculectomie, sclérectomie profonde non perforante), les chirurgies micro-invasives MIGS (iStent inject W, Hydrus, Kahook), et les chirurgies sous-conjonctivales (XEN 45, PreserFlo MicroShunt)."
+                    "text": "Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal et/ou une SLT, ou en cas de progression du champ visuel / OCT, d'intolérance ou de mauvaise observance. Le choix de la technique dépend du stade et des antécédents : MIGS (iStent, Hydrus) en glaucome léger ; PreserFlo, XEN, trabéculectomie, sclérectomie en modéré-sévère ; implants tubulaires en réfractaire."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Qu'est-ce que le PreserFlo MicroShunt ?",
+                "name": "Qu'est-ce que le PreserFlo MicroShunt ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le PreserFlo MicroShunt est un dispositif implantable de 8,5 mm en SIBS (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte. Il crée, par voie ab-externo, un drainage contrôlé entre la chambre antérieure et l'espace sous-conjonctival. Il appartient à la catégorie des chirurgies filtrantes micro-invasives : il combine une efficacité hypotonisante proche de celle de la trabéculectomie avec un profil de sécurité amélioré. Il est souvent associé à l'application intra-opératoire de mitomycine C pour limiter la fibrose. J'ai publié sur ce dispositif une étude en premier auteur dans le Journal of Clinical Medicine en 2022 (Majoulet et al., JCM 2022)."
+                    "text": "Le PreserFlo est un dispositif implantable de 8,5 mm en SIBS (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte. Il draine l'humeur aqueuse de la chambre antérieure vers l'espace sous-conjonctival. Efficacité hypotonisante proche de la trabéculectomie avec un profil de sécurité amélioré. J'ai publié un article de synthèse en premier auteur sur ce dispositif dans le Journal of Clinical Medicine en 2022."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quelle est la fréquence de surveillance recommandée ?",
+                "name": "Qui doit se faire dépister ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Après diagnostic, la surveillance est adaptée au stade et à la stabilité : en pratique courante, mesure de la pression intraoculaire et examen clinique tous les 3 à 6 mois ; OCT RNFL et complexe ganglionnaire maculaire (GCC) 1 à 2 fois par an ; champ visuel au minimum annuel, plus fréquent si glaucome évolué ou progression suspectée. Chez les apparentés de patients glaucomateux, un dépistage est recommandé dès 40 ans (ou plus tôt en cas de myopie forte, d'origine africaine ou de facteurs de risque multiples)."
+                    "text": "Un fond d'œil avec mesure de la PIO est recommandé à partir de 40 ans pour tout le monde, et plus tôt en cas de facteurs de risque : antécédents familiaux, myopie forte, origine africaine, corticothérapie prolongée, SAOS sévère, diabète. Les apparentés du 1er degré d'un patient glaucomateux doivent être dépistés systématiquement."
                 }
             }
         ]
@@ -889,7 +886,7 @@
             <h2 id="questions-frequentes-des-patients">Questions fréquentes des patients</h2>
 
             <div class="qr-block">
-                <p class="q">Le glaucome fait-il perdre la vue&nbsp;?</p>
+                <h3 class="q">Le glaucome fait-il perdre la vue&nbsp;?</h3>
                 <p class="r"><strong>Non, s'il est dépisté tôt et traité correctement.</strong>
                 Le glaucome entraîne une atteinte progressive et <strong>irréversible</strong> du nerf optique,
                 mais la baisse visuelle est très lente (années ou décennies).
@@ -898,7 +895,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Pourquoi faut-il mettre des gouttes tous les jours&nbsp;?</p>
+                <h3 class="q">Pourquoi faut-il mettre des gouttes tous les jours&nbsp;?</h3>
                 <p class="r">Parce que le glaucome est une maladie <strong>chronique</strong> et silencieuse
                 qui ne se guérit pas. Les collyres diminuent la PIO et préviennent la progression.
                 L'arrêt fait <strong>remonter la pression</strong> et reprend la destruction des fibres nerveuses.
@@ -907,7 +904,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Qu'est-ce que la SLT et pourquoi l'utiliser en 1ère ligne&nbsp;?</p>
+                <h3 class="q">Qu'est-ce que la SLT et pourquoi l'utiliser en 1ère ligne&nbsp;?</h3>
                 <p class="r">La SLT (Trabéculoplastie Sélective au Laser) cible les cellules pigmentées
                 du trabéculum. Elle abaisse la PIO de <strong>20-30&nbsp;%</strong> pendant
                 <strong>3 à 5&nbsp;ans</strong>, est indolore, répétable, et évite la contrainte quotidienne des collyres.
@@ -916,7 +913,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Quand faut-il opérer un glaucome&nbsp;?</p>
+                <h3 class="q">Quand faut-il opérer un glaucome&nbsp;?</h3>
                 <p class="r">Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal
                 et/ou une SLT, ou en cas de <strong>progression du champ visuel / OCT</strong>,
                 d'<strong>intolérance</strong> ou de <strong>mauvaise observance</strong>.
@@ -927,7 +924,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Qu'est-ce que le PreserFlo MicroShunt&nbsp;?</p>
+                <h3 class="q">Qu'est-ce que le PreserFlo MicroShunt&nbsp;?</h3>
                 <p class="r">Le PreserFlo est un <strong>dispositif implantable de 8,5&nbsp;mm</strong>
                 en <strong>SIBS</strong> (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte.
                 Il draine l'humeur aqueuse de la chambre antérieure vers l'espace sous-conjonctival.
@@ -938,7 +935,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Qui doit se faire dépister&nbsp;?</p>
+                <h3 class="q">Qui doit se faire dépister&nbsp;?</h3>
                 <p class="r">Un fond d'œil avec mesure de la PIO est recommandé
                 <strong>à partir de 40&nbsp;ans</strong> pour tout le monde, et plus tôt en cas de
                 facteurs de risque&nbsp;: <strong>antécédents familiaux</strong>,

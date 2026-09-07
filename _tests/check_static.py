@@ -21,6 +21,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
 Sortie : liste des erreurs (code 1) et des avertissements (code 0).
 """
 import argparse, base64, datetime, glob, hashlib, html, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld   # TECH6H-2026-09-07
 from html.parser import HTMLParser
 
 DOMAIN = 'https://docteurmajoulet.com'
@@ -279,6 +280,10 @@ def check(root):
                 E(f'{name} : « baisse brutale » sans « … de la vision » dans la phrase → …{ctx}…')
         if re.search(r'\bOPTAM\b', body): E(f'{name} : mention de l’OPTAM (interdite sur le site)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
+        # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
+        for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
+        for m in re.finditer(r'"(preparation|howPerformed|followup)":', t):
+            E(f'{name} : JSON-LD MedicalProcedure.{m.group(1)} — texte médical invisible et non relu (à retirer)'); break
         # TECH5G-2026-09-06 : un texte français marqué lang="en" (ponctuation française « \u00a0: », mots « de la », « des »…)
         for m in re.finditer(r'<(\w+)[^>]*\slang="en"[^>]*>(.*?)</\1>', t, re.S):
             frag = re.sub(r'<[^>]+>', '', html.unescape(m.group(2)))

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260906e">
+    <link rel="stylesheet" href="/main.css?v=20260907a">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -61,10 +61,7 @@
             "name": "Injection intravitréenne (IVT)",
             "alternateName": ["Intravitreal injection", "IVT", "Injection IVT"],
             "procedureType": {"@type": "MedicalProcedureType", "name": "Geste thérapeutique intraoculaire mini-invasif"},
-            "bodyLocation": "Cavité vitréenne",
-            "howPerformed": "Geste ambulatoire réalisé en salle dédiée aux normes ISO7, sous anesthésie topique (collyre), après désinfection cutanée et conjonctivale à la Povidone iodée 5 %. Mise en place d'un champ stérile et d'un écarteur palpébral. L'aiguille (30G) est insérée en pars plana à 3,5-4 mm du limbe (4 mm chez le phaque, 3,5 mm chez le pseudophaque) et la molécule (anti-VEGF ou corticoïde) est injectée en 1 à 2 minutes. Le geste dure environ 5 minutes au total.",
-            "preparation": "Examen ophtalmologique complet avec OCT maculaire, prescription d'un collyre antibiotique parfois en pré-opératoire (controversé), arrêt d'un éventuel traitement par hyaluronidase topique.",
-            "followup": "Surveillance immédiate (perception lumineuse, PIO si nécessaire), collyre antibiotique 3-5 jours (optionnel selon les équipes), consigne de reconsulter en urgence en cas de douleur intense, baisse visuelle majeure, œil rouge : signes possibles d'endophtalmie."
+            "bodyLocation": "Cavité vitréenne"
         },
         "breadcrumb": {
             "@type": "BreadcrumbList",
@@ -84,50 +81,42 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Qu'est-ce qu'une injection intravitréenne ?",
+                "name": "Vais-je voir l'aiguille venir ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "C'est l'administration directe d'un médicament (anti-VEGF ou corticoïde) dans le vitré de l'œil, via une aiguille très fine (30G) insérée en pars plana. Cette voie permet d'obtenir une concentration élevée du médicament directement au contact de la rétine, tout en limitant les effets systémiques. Elle a révolutionné la prise en charge de la DMLA exsudative, de l'œdème maculaire diabétique et des occlusions veineuses depuis les années 2006-2010."
+                    "text": "Non. L'aiguille est très fine (30G) et insérée latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre passagère, mais pas l'aiguille elle-même. De nombreux patients sont agréablement surpris par le côté très atténué du geste."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quelles sont les indications des injections intravitréennes ?",
+                "name": "Combien de temps dure l'effet d'une injection d'anti-VEGF ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Les principales indications sont : DMLA exsudative (néovaisseaux choroïdiens), œdème maculaire diabétique (OMD), œdèmes maculaires post-occlusion veineuse rétinienne (OVCR, OBVR), néovaisseaux choroïdiens myopiques, rétinopathie prématurité (chez le nouveau-né), certaines choroïdites inflammatoires, œdème maculaire post-chirurgie ou post-uvéite (corticoïdes)."
+                    "text": "En général 4 à 12 semaines selon la molécule et le patient. Avec les nouvelles molécules (aflibercept 8 mg, faricimab), des intervalles de 12 à 16 semaines sont atteignables chez une partie des patients."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Est-ce douloureux ?",
+                "name": "Puis-je conduire après l'injection ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "L'injection elle-même est généralement peu douloureuse grâce à l'anesthésie topique (collyres) et à la finesse de l'aiguille. Certains patients ressentent une pression ou un picotement passager. Une gêne (sensation de sable, démangeaison) est fréquente dans les heures qui suivent, liée à la Povidone iodée utilisée pour la désinfection. Les larmes artificielles sans conservateur apportent un soulagement rapide."
+                    "text": "Non. La dilatation et la gêne post-injection rendent la conduite déconseillée pendant les heures qui suivent. Il est recommandé de venir accompagné ou d'utiliser un transport adapté."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Combien d'injections vais-je avoir besoin ?",
+                "name": "Que se passe-t-il si j'arrête les injections ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le nombre et la fréquence dépendent de la pathologie et de la réponse au traitement. Dans la DMLA exsudative et l'OMD, les protocoles modernes (Treat & Extend) permettent d'espacer progressivement les injections si l'œil est sec. L'induction comporte habituellement 3 injections mensuelles, puis la fréquence est adaptée : 4 à 12 semaines. Certaines molécules de nouvelle génération (aflibercept 8 mg, faricimab) permettent d'atteindre des intervalles de 12 à 16 semaines chez une partie des patients."
+                    "text": "Le risque est une récidive de la maladie : reprise de la croissance néovasculaire dans la DMLA, nouvel œdème maculaire dans l'OMD ou l'OVR, avec baisse visuelle parfois irrécupérable. L'observance du suivi est donc essentielle."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quels sont les risques ?",
+                "name": "Les injections se font-elles en hôpital ou en cabinet ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le risque principal est l'endophtalmie (infection intraoculaire), évaluée à 1 cas pour 3000 à 5000 injections avec les protocoles modernes d'asepsie (Povidone iodée). Ce risque justifie l'alerte immédiate en cas de baisse visuelle, œil rouge ou douleur intense dans les jours qui suivent. Les autres risques sont une élévation transitoire de la pression intraoculaire, des hémorragies sous-conjonctivales, une déchirure rétinienne, une uvéite inflammatoire stérile. Les risques systémiques sont exceptionnels avec les anti-VEGF actuels."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Dois-je arrêter mon traitement anticoagulant ?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Non, il n'est pas recommandé d'arrêter un traitement anticoagulant ou antiagrégant pour une injection intravitréenne. Le risque hémorragique local est minime et largement inférieur au risque thromboembolique lié à un arrêt temporaire."
+                    "text": "Les deux. En France, elles peuvent être réalisées au cabinet (en salle dédiée aux normes) ou en hôpital / clinique. Au Cabinet Ophtalife, les injections sont réalisées dans une salle dédiée, dans les mêmes conditions d'asepsie qu'au bloc, ce qui évite les déplacements et raccourcit les délais."
                 }
             }
         ]
@@ -567,7 +556,7 @@
             <h2 id="questions-frequentes">Questions fréquentes</h2>
 
             <div class="qr-block">
-                <p class="q">Vais-je voir l'aiguille venir&nbsp;?</p>
+                <h3 class="q">Vais-je voir l'aiguille venir&nbsp;?</h3>
                 <p class="r">Non. L'aiguille est <strong>très fine (30G)</strong> et insérée
                 latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre
                 passagère, mais pas l'aiguille elle-même. De nombreux patients sont agréablement surpris
@@ -575,21 +564,21 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Combien de temps dure l'effet d'une injection d'anti-VEGF&nbsp;?</p>
+                <h3 class="q">Combien de temps dure l'effet d'une injection d'anti-VEGF&nbsp;?</h3>
                 <p class="r">En général <strong>4 à 12&nbsp;semaines</strong> selon la molécule
                 et le patient. Avec les nouvelles molécules (aflibercept 8 mg, faricimab),
                 des intervalles de 12 à 16&nbsp;semaines sont atteignables chez une partie des patients.</p>
             </div>
 
             <div class="qr-block">
-                <p class="q">Puis-je conduire après l'injection&nbsp;?</p>
+                <h3 class="q">Puis-je conduire après l'injection&nbsp;?</h3>
                 <p class="r"><strong>Non.</strong> La dilatation et la gêne post-injection
                 rendent la conduite déconseillée pendant les heures qui suivent.
                 Il est recommandé de venir accompagné ou d'utiliser un transport adapté.</p>
             </div>
 
             <div class="qr-block">
-                <p class="q">Que se passe-t-il si j'arrête les injections&nbsp;?</p>
+                <h3 class="q">Que se passe-t-il si j'arrête les injections&nbsp;?</h3>
                 <p class="r">Le risque est une <strong>récidive de la maladie</strong>&nbsp;:
                 reprise de la croissance néovasculaire dans la DMLA, nouvel œdème maculaire
                 dans l'OMD ou l'OVR, avec <strong>baisse visuelle parfois irrécupérable</strong>.
@@ -597,7 +586,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Les injections se font-elles en hôpital ou en cabinet&nbsp;?</p>
+                <h3 class="q">Les injections se font-elles en hôpital ou en cabinet&nbsp;?</h3>
                 <p class="r">Les deux. En France, elles peuvent être réalisées au <strong>cabinet</strong>
                 (en salle dédiée aux normes) ou en <strong>hôpital / clinique</strong>.
                 Au Cabinet Ophtalife, les injections sont réalisées dans une <strong>salle dédiée</strong>,

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260906e">
+    <link rel="stylesheet" href="/main.css?v=20260907a">
     <!-- FONTS-2026-08-29 : Montserrat auto-hébergé — 4 graisses du premier écran préchargées (corps 400, navigation 500, titres et boutons 600, 700) -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-400.woff2">
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-500.woff2">
@@ -102,10 +102,7 @@
         "name": "Vitrectomie avec pelage de la membrane limitante interne",
         "alternateName": ["Chirurgie du trou maculaire", "PPV + ILM peeling + gas tamponade"],
         "procedureType": {"@type": "MedicalProcedureType", "name": "Chirurgie rétinienne"},
-        "bodyLocation": "Vitré et rétine (macula)",
-        "howPerformed": "Sous anesthésie locorégionale ou générale, chirurgie ambulatoire par trois trocarts 25 ou 27 gauge. Vitrectomie postérieure, coloration de la membrane limitante interne (bleu brillant ou ICG), pelage de la MLI autour du trou maculaire, échange fluide-gaz avec tamponnement par SF6 ou C2F6, suivi d'un positionnement postural face vers le bas.",
-        "preparation": "Bilan pré-opératoire avec OCT maculaire, biométrie si cataracte associée, consultation d'anesthésie.",
-        "followup": "Positionnement face vers le bas 3 à 7 jours selon la taille du trou, suivi OCT à J7, M1 puis M3. Éviction stricte du voyage aérien tant que la bulle de gaz n'est pas résorbée."
+        "bodyLocation": "Vitré et rétine (macula)"
     }
     </script>
 
@@ -116,42 +113,42 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Combien de temps faut-il rester face vers le bas après l'opération ?",
+                "name": "Combien de temps faut-il rester face vers le bas après l'opération ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La durée dépend de la taille du trou et du gaz utilisé. Pour les trous de petite et moyenne taille (< 400 µm), les études récentes montrent qu'un positionnement de 3 à 5 jours est suffisant. Pour les grands trous (> 400 µm) ou chroniques, un positionnement de 7 jours ou plus peut être recommandé. Les consignes précises vous seront remises en fonction de votre cas."
+                    "text": "La durée dépend de la taille du trou et du gaz utilisé. Pour les trous < 400 µm, un positionnement court de 3 à 5 jours est suffisant : l'essai randomisé de Guillaubey et coll. (Am J Ophthalmol, 2008) montre que la position n'y change pas la fermeture. Pour les grands trous (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., JAMA Ophthalmol, 2020) — 7 jours ou plus peuvent être conseillés. Les consignes précises vous seront remises en fonction de votre cas."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quel est le taux de succès de la chirurgie du trou maculaire ?",
+                "name": "Quel est le taux de succès de la chirurgie du trou maculaire ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Le taux de fermeture anatomique est de 90 à 95 % pour les trous de petite et moyenne taille opérés dans l'année. Il reste élevé (≈ 90 %) jusqu'à 650 µm environ et diminue au-delà (≈ 75-80 % avec un pelage simple), d'où le recours au lambeau inversé de MLI pour les très grands trous et les trous chroniques. La récupération visuelle est généralement progressive sur 3 à 6 mois, avec en moyenne un gain de 2 à 4 lignes d'acuité visuelle."
+                    "text": "Le taux de fermeture anatomique est de 90 à 95 % pour les trous de petite et moyenne taille opérés dans l'année. Il reste élevé (≈ 90 %) jusqu'à 650 µm environ et diminue au-delà (≈ 75-80 % avec un pelage simple), d'où le recours au lambeau inversé de MLI pour les très grands trous et les trous chroniques. La récupération visuelle est progressive sur 3 à 6 mois, avec un gain moyen de 2 à 4 lignes d'acuité visuelle."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Quand vais-je pouvoir reprendre une vie normale ?",
+                "name": "Quand vais-je pouvoir reprendre une vie normale ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La reprise d'activité est progressive. Une éviction des efforts violents et de la natation est recommandée 2 à 4 semaines. La conduite automobile reprend quand la vision permet les exigences légales (en général 2 à 4 semaines). Le voyage aérien est strictement contre-indiqué tant que la bulle de gaz est présente — environ 2 à 3 semaines pour le SF6, 4 à 5 semaines pour le C2F6."
+                    "text": "La reprise d'activité est progressive. Éviction des efforts violents et de la natation 2 à 4 semaines. Conduite automobile reprise quand la vision permet les exigences légales (en général 2 à 4 semaines). Le voyage aérien est strictement contre-indiqué tant que la bulle de gaz est présente — environ 2 à 3 semaines pour le SF6, 4 à 5 semaines pour le C2F6."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Vais-je avoir une cataracte après l'opération ?",
+                "name": "Vais-je avoir une cataracte après l'opération ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Chez les patients de plus de 50 ans ayant encore leur cristallin, une cataracte survient dans 70 à 90 % des cas dans les 12 à 24 mois suivant la vitrectomie. Il est fréquent de proposer une chirurgie combinée (vitrectomie + chirurgie de la cataracte) dans le même temps opératoire pour éviter une seconde intervention."
+                    "text": "Chez les patients de plus de 50 ans encore phaques, une cataracte survient dans 70 à 90 % des cas dans les 12 à 24 mois suivant la vitrectomie. Il est fréquent de proposer une chirurgie combinée (vitrectomie + phacoémulsification + implant) dans le même temps opératoire pour éviter une seconde intervention."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Un trou maculaire peut-il se refermer seul ?",
+                "name": "Un trou maculaire peut-il se refermer tout seul ?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "La fermeture spontanée est possible mais rare, essentiellement dans les très petits trous ou après un décollement postérieur du vitré libérant la traction. Elle ne doit pas être attendue dans les trous constitués de pleine épaisseur : plus la chirurgie est précoce (moins de 6 à 12 mois d'évolution), meilleur est le résultat visuel final."
+                    "text": "La fermeture spontanée est possible mais rare, essentiellement dans les très petits trous ou après un décollement postérieur du vitré qui libère la traction. Elle ne doit pas être attendue dans les trous constitués de pleine épaisseur : plus la chirurgie est précoce (moins de 6 à 12 mois d'évolution), meilleur est le résultat visuel final."
                 }
             }
         ]
@@ -553,21 +550,21 @@
             <h2 id="questions-frequentes-des-patients">Questions fréquentes des patients</h2>
 
             <div class="qr-block">
-                <p class="q">Combien de temps faut-il rester face vers le bas après l'opération&nbsp;?</p>
+                <h3 class="q">Combien de temps faut-il rester face vers le bas après l'opération&nbsp;?</h3>
                 <p class="r">La durée dépend de la taille du trou et du gaz utilisé.
                 Pour les trous <strong>&lt; 400&nbsp;µm</strong>, un positionnement court de <strong>3 à 5&nbsp;jours</strong> est suffisant&nbsp;: l'essai randomisé de Guillaubey et coll. (<em>Am J Ophthalmol</em>, 2008) montre que la position n'y change pas la fermeture. Pour les <strong>grands trous</strong> (≥ 400&nbsp;µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008&nbsp;; essai PIMS, Pasu et coll., <em>JAMA Ophthalmol</em>, 2020) — 7&nbsp;jours ou plus peuvent être conseillés.
                 Les consignes précises vous seront remises en fonction de votre cas.</p>
             </div>
 
             <div class="qr-block">
-                <p class="q">Quel est le taux de succès de la chirurgie du trou maculaire&nbsp;?</p>
+                <h3 class="q">Quel est le taux de succès de la chirurgie du trou maculaire&nbsp;?</h3>
                 <p class="r">Le taux de fermeture anatomique est de <strong>90 à 95&nbsp;%</strong> pour les trous
                 de petite et moyenne taille opérés dans l'année. Il reste élevé (≈ 90&nbsp;%) jusqu'à 650&nbsp;µm environ et diminue au-delà (≈ 75-80&nbsp;% avec un pelage simple), d'où le recours au lambeau inversé de MLI pour les très grands trous et les trous chroniques. La récupération visuelle est progressive sur 3 à 6&nbsp;mois,
                 avec un gain moyen de <strong>2 à 4 lignes</strong> d'acuité visuelle.</p>
             </div>
 
             <div class="qr-block">
-                <p class="q">Quand vais-je pouvoir reprendre une vie normale&nbsp;?</p>
+                <h3 class="q">Quand vais-je pouvoir reprendre une vie normale&nbsp;?</h3>
                 <p class="r">La reprise d'activité est progressive.
                 Éviction des efforts violents et de la natation <strong>2 à 4&nbsp;semaines</strong>.
                 Conduite automobile reprise quand la vision permet les exigences légales (en général 2 à 4&nbsp;semaines).
@@ -576,7 +573,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Vais-je avoir une cataracte après l'opération&nbsp;?</p>
+                <h3 class="q">Vais-je avoir une cataracte après l'opération&nbsp;?</h3>
                 <p class="r">Chez les patients de plus de 50&nbsp;ans encore phaques, une cataracte survient dans <strong>70 à 90&nbsp;% des cas</strong> dans les 12 à 24&nbsp;mois suivant la vitrectomie.
                 Il est fréquent de proposer une <strong>chirurgie combinée</strong>
                 (vitrectomie + phacoémulsification + implant) dans le même temps opératoire
@@ -584,7 +581,7 @@
             </div>
 
             <div class="qr-block">
-                <p class="q">Un trou maculaire peut-il se refermer tout seul&nbsp;?</p>
+                <h3 class="q">Un trou maculaire peut-il se refermer tout seul&nbsp;?</h3>
                 <p class="r">La fermeture spontanée est <strong>possible mais rare</strong>,
                 essentiellement dans les très petits trous ou après un décollement postérieur du vitré
                 qui libère la traction.
