@@ -27,6 +27,7 @@ from html.parser import HTMLParser
 DOMAIN = 'https://docteurmajoulet.com'
 NOINDEX_OK_OUTSIDE_SITEMAP = True
 DESC_MAX = 165
+FONT_RANGES = [tuple(int(x, 16) for x in r.split('-')) * (2 if '-' not in r else 1) for r in '0000,000D,0020-007E,00A0-00AC,00AE-00FF,0102,0131,0152-0153,02BB-02BC,02C6,02DA,02DC,0300-0301,0303-0304,0308-0309,0323,0329,2009,200B,2013-2014,2018-201A,201C-201E,2022,2026,2030,2032-2033,2039-203A,2044,2082,20AC,2122,2191-2193,2212,2215,2248,2264-2265'.split(',')]   # TECH7L-2026-09-07 : points de code du sous-ensemble Montserrat (238 glyphes)
 
 
 class Page:
@@ -290,6 +291,11 @@ def check(root):
         if mo: E(f'{name} : ordinal sans exposant « {mo.group(0)} » (écrire 1<sup>er</sup>, 2<sup>e</sup>)')
         if '\u03bc' in texts: E(f'{name} : « μ » grec (U+03BC) au lieu du micro « µ » (U+00B5)')
         if re.search(r'\bISO\d', texts): E(f'{name} : « ISO » collé à son chiffre (écrire ISO\u00a07)')
+        # TECH7L-2026-09-07 : tout caractère visible existe dans le sous-ensemble Montserrat (sinon police de secours du système)
+        for ch in set(texts):
+            cp = ord(ch)
+            if cp > 32 and not any(lo <= cp <= hi for lo, hi in FONT_RANGES):
+                E(f'{name} : caractère « {ch} » (U+{cp:04X}) absent de la police du site — texte, pictogramme SVG ou glyphe à ajouter au sous-ensemble'); break
         # TECH5G-2026-09-06 : un texte français marqué lang="en" (ponctuation française « \u00a0: », mots « de la », « des »…)
         for m in re.finditer(r'<(\w+)[^>]*\slang="en"[^>]*>(.*?)</\1>', t, re.S):
             frag = re.sub(r'<[^>]+>', '', html.unescape(m.group(2)))
