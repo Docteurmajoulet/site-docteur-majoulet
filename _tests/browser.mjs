@@ -8,6 +8,7 @@
 // À 390 px : zone de toucher des numéros de téléphone ≥ 44 px, lien d'évitement → focus sur <main> (TECH6I-2026-09-07).
 // Puis police du navigateur à 32 px : aucun débordement, chrome (bandeau, en-tête, menu, barre fixe) jamais tronqué (TECH7K-2026-09-07).
 // Puis sans JavaScript à 390 px : menu complet visible, aucun débordement, rien d'invisible dans <main> (TECH8N-2026-09-07).
+// Puis lisibilité à 390 et 1366 px : aucun texte sous 12,8 px hors exposants, texte de lecture ≥ 7:1 (TECH8O-2026-09-07).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -234,6 +235,50 @@ try {
         for (const r of res) failures.push(`${slug} @390 sans JS — ${r}`);
         loads++;
       } catch (e) { failures.push(`${slug} @390 sans JS — chargement : ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
+  // TECH8O-2026-09-07 — plancher typographique et contraste AAA : à 390 et 1366 px, aucun texte visible sous 12,8 px (hors
+  // exposants), et le texte de lecture (paragraphes, listes, tableaux, définitions, réponses de FAQ, libellés, méta) à 7:1 au
+  // moins (4,5:1 pour les grands corps), arrière-plans semi-transparents composés. Hors hero (fond en dégradé) et boutons,
+  // pastilles et accents de marque (cuivre, sable), qui restent au niveau AA contrôlé par axe.
+  for (const w of AXE_WIDTHS) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of slugs) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        await page.evaluate(() => document.fonts.ready);
+        const res = await page.evaluate(() => {
+          const out = [];
+          const parse = c => { const m = c.match(/[\d.]+/g).map(Number); return { r: m[0], g: m[1], b: m[2], a: m.length > 3 ? m[3] : 1 }; };
+          const over = (fg, bg) => ({ r: fg.r * fg.a + bg.r * (1 - fg.a), g: fg.g * fg.a + bg.g * (1 - fg.a), b: fg.b * fg.a + bg.b * (1 - fg.a), a: 1 });
+          const lum = c => { const f = v => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(c.r) + 0.7152 * f(c.g) + 0.0722 * f(c.b); };
+          const bgOf = el => { let acc = null; for (let e = el; e; e = e.parentElement) { const c = parse(getComputedStyle(e).backgroundColor); if (c.a === 0) continue; acc = acc ? over(acc, c) : c; if (acc.a >= 1 && c.a >= 1) return acc; } return acc ? over(acc, { r: 255, g: 255, b: 255, a: 1 }) : { r: 255, g: 255, b: 255, a: 1 }; };
+          const SKIP = '.hero-v3, [class*="btn"], .button, .badge, .chip, .hero-tag, .tagline, .h1-city, .sticky-rdv, .topbar, header.site-header, nav.main-nav, footer, .map-facade, .pub-year, .pub-role, .urgence-badge, .table-scroll caption';
+          const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT); let node; const seen = new Set();
+          while ((node = walker.nextNode())) {
+            if (!node.textContent.trim()) continue; const el = node.parentElement; if (!el || seen.has(el)) continue; seen.add(el);
+            if (el.closest('script, style, .sr-only, [hidden], sup, sub')) continue;
+            const cs = getComputedStyle(el); if (cs.display === 'none' || cs.visibility === 'hidden') continue;
+            const box = el.getBoundingClientRect(); if (!box.width || !box.height) continue;
+            const key = el.tagName.toLowerCase() + '.' + (el.className || '').toString().split(' ')[0];
+            const fs = parseFloat(cs.fontSize);
+            if (fs < 12.8) out.push(`texte de ${fs.toFixed(1)} px : ${key} « ${node.textContent.trim().slice(0, 30)} »`);
+            if (el.closest(SKIP) || !el.closest('main')) continue;
+            if (!el.closest('p, li, dd, dt, td, th, figcaption, blockquote, .r, .key-fact-label, .meta, .tc-text, .tc-title, .read-more, .ic-more, .breadcrumb-mini, h1, h2, h3, h4')) continue;
+            const fg0 = parse(cs.color); const bg = bgOf(el); const fg = fg0.a < 1 ? over(fg0, bg) : fg0;
+            const L1 = lum(fg), L2 = lum(bg); const ratio = (Math.max(L1, L2) + 0.05) / (Math.min(L1, L2) + 0.05);
+            const large = fs >= 24 || (fs >= 18.66 && parseInt(cs.fontWeight) >= 700);
+            if (ratio < (large ? 4.5 : 7) - 0.005) out.push(`contraste ${ratio.toFixed(2)}:1 (${cs.color} sur rgb(${Math.round(bg.r)}, ${Math.round(bg.g)}, ${Math.round(bg.b)}), ${fs.toFixed(0)} px) : ${key} « ${node.textContent.trim().slice(0, 30)} »`);
+          }
+          return [...new Set(out)].slice(0, 6);
+        });
+        for (const r of res) failures.push(`${slug} @${w} lisibilité — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} lisibilité — chargement : ${String(e).slice(0, 160)}`); }
       await page.close();
     }
     await ctx.close();

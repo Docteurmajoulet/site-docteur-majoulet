@@ -42,8 +42,8 @@
     --bleu-gris: #9AAAB2;
     --bleu-gris-light: #b8c5cb;
     --sable: #BFB297;
-    --sable-light: #d4cbb5;
-    --sable-fonce: #7d6f52; /* sable pour texte : 4,9:1 sur blanc (20/08/2026) */
+    --sable-light: #dbd3bf; /* TECH8O-2026-09-07 : ex-#d4cbb5 — 7,5:1 sur la carte de contact (ex-6,9:1), textes sur fonds sombres */
+    --sable-fonce: #5c5039; /* TECH8O-2026-09-07 : ex-#7d6f52 (4,9:1) -> AAA : 7,4:1 sur blanc naturel, 7,9:1 sur blanc */
     --blanc-naturel: #F9F7F2;
     --blanc: #ffffff;
     /* Couleurs secondaires */
@@ -51,8 +51,8 @@
     --accent-chir: #6b5d3f;
     /* Texte */
     --text: #283339;
-    --text-light: #4f5f67; /* TECH5G-2026-09-06 : ex-#5a6a72 (5,2:1) -> 6,2:1 sur blanc naturel, 6,6:1 sur blanc */
-    --text-muted: #5d6d75;   /* 20/08/2026 : ex-#7a8a92 (3,6:1) -> 5,0:1 sur blanc naturel, WCAG AA */
+    --text-light: #46555d; /* TECH8O-2026-09-07 : ex-#4f5f67 (6,2:1) -> AAA : 7,2:1 sur blanc naturel, 7,7:1 sur blanc, 7,0:1 sur l'ambre #fdf3e0 */
+    --text-muted: #47565e;   /* TECH8O-2026-09-07 : ex-#5d6d75 (5,0:1) -> AAA : 7,1:1 sur blanc naturel, 7,6:1 sur blanc */
     /* Bordures / radius */
     --border: #e2ddd4;
     --radius: 12px;
@@ -62,7 +62,7 @@
     /* Alertes (encadrés urgence / attention) */
     --alerte-bordure: #e07b1a;
     --alerte-fond: #fff4e6;
-    --alerte-texte: #8a4510;
+    --alerte-texte: #80400e; /* TECH8O-2026-09-07 : ex-#8a4510 (6,5:1) -> 7,2:1 sur l'ambre #fdf3e0 */
     --ambre-urgence: #d98c2a; /* pictogrammes d'alerte (POLISH2-2026-08-25 : était utilisée avec repli, jamais déclarée) */
 }
 /* Reset universel */
@@ -3253,7 +3253,7 @@ article.pathology-content .cta-block h3 {
     margin-top: 0;
 }
 article.pathology-content .cta-block p {
-    color: var(--bleu-gris);
+    color: var(--bleu-gris-light);   /* TECH8O-2026-09-07 : 7,3:1 sur l'ardoise (ex-bleu-gris 5,4:1) */
     max-width: 58ch;
     margin-left: auto;
     margin-right: auto;
@@ -3437,7 +3437,7 @@ body.page-index .hero-v3 .hero-subtitle {
     text-wrap: balance;
 }
 body.page-index .hero-v3 .hero-text {
-    color: var(--bleu-gris);
+    color: var(--bleu-gris-light);   /* TECH8O-2026-09-07 : 7,3:1 sur l'ardoise (ex-bleu-gris 5,4:1) */
     font-size: 0.95rem;
     line-height: 1.75;
     max-width: 52ch;
@@ -3480,7 +3480,7 @@ body.page-index .hero-v3 .btn-outline:focus-visible {
 body.page-index .hero-v3 .hero-note {
     margin: 0 0 34px;
     font-size: 0.8rem;
-    color: var(--bleu-gris);
+    color: var(--bleu-gris-light);   /* TECH8O-2026-09-07 */
 }
 body.page-index .hero-v3 .hero-note a {
     white-space: nowrap;
@@ -4084,7 +4084,7 @@ body.page-dechirure-retine-corps-flottants .page-header .urgence-badge {
     align-items: center;
     gap: 8px;
     background: #fdf3e0;
-    color: #8a4510;
+    color: var(--alerte-texte, #80400e);
     border: 1px solid rgba(217, 140, 42, 0.55);
     padding: 6px 14px;
     border-radius: 50px;
@@ -4102,7 +4102,7 @@ body.page-dechirure-retine-corps-flottants .urgence-badge .ico {
 }
 body.page-decollement-retine .alert-urgence strong,
 body.page-dechirure-retine-corps-flottants .alert-urgence strong {
-    color: #8a4510;
+    color: var(--alerte-texte, #80400e);
 }
 /* Bouton hospitalier : outline clair dans le bloc CTA sombre, même hauteur que le cuivre */
 article.pathology-content .cta-block .btn-rdv,
@@ -5303,7 +5303,7 @@ body.page-pathologies .hub-alert {
 body.page-pathologies .hub-alert-title {
     font-size: 1.05rem;
     font-weight: 700;
-    color: var(--alerte-texte, #8a4510);
+    color: var(--alerte-texte, #80400e);
     margin: 0 0 12px;
     padding: 0;
     line-height: 1.35;
@@ -6175,7 +6175,7 @@ body.page-404 .p404 .alert-urgence .alert-title {
     font-size: 1.05rem;
     font-weight: 700;
     line-height: 1.35;
-    color: var(--alerte-texte, #8a4510);
+    color: var(--alerte-texte, #80400e);
 }
 body.page-404 .p404 .alert-urgence .alert-title::after {
     display: none;
@@ -6529,7 +6529,7 @@ body.page-pathologies .hub-cta .btn-rdv .btn-more { margin-left: 8px; } /* l'anc
     border-left-width: 1px;
     border-radius: var(--radius);
 }
-.alert-rouge strong { color: var(--alerte-texte, #8a4510); }
+.alert-rouge strong { color: var(--alerte-texte, #80400e); }
 .related-link:hover {
     border-color: var(--prusse-light) !important;
     color: var(--prusse) !important;
@@ -6754,3 +6754,56 @@ article.pathology-content .cta-line-link {
     margin-right: 8px;
 }
 /* TECH8N-2026-09-07 — navigateurs anciens : anneau de focus progressif (:focus:not(:focus-visible)), -webkit-backdrop-filter sur l'en-tête. Aucune autre règle. */
+
+/* ============================================================
+   TECH8O-2026-09-07 — Plancher typographique (suite) et contraste AAA (tour technique 8)
+   Plus aucun texte visible sous 0,8 rem (12,8 px) hors exposants ; texte de lecture ≥ 7:1.
+   Contrôlé par _tests/browser.mjs à 390 et 1366 px.
+   ============================================================ */
+.implant-card .ic-more,
+.parcours-card-header h3,
+.pub-year, .pub-link, .pub-role, .press-source,
+.eeat-block .meta, body.page-pathologies .hub-eeat .meta,
+.pillar-card .read-more, .pillar-card.soft .badge,
+body.page-decollement-retine .urgence-badge, body.page-dechirure-retine-corps-flottants .page-header .urgence-badge,
+body.page-pathologies .page-header .breadcrumb-mini,
+body.page-confidentialite th {
+    font-size: 0.8rem;
+}
+@media (min-width: 23.4375em) and (max-width: 37.4375em) {
+    .sticky-rdv .sticky-tel { font-size: 0.8rem; }   /* « Appeler », 375-599 px (ex-0,78 rem) */
+}
+.key-fact-label {
+    color: var(--text-light);   /* 7,2:1 sur blanc naturel (ex-text-muted 5,0:1) */
+}
+/* Accroches des en-têtes sombres : 0,55-0,7 d'opacité (4,8-6,8:1) → 0,78 (7,5:1 sur l'ardoise) */
+body.page-confidentialite .page-header p,
+body.page-mentions-legales .page-header p,
+body.page-pathologies .page-header p,
+body.page-publications .page-header p,
+body.page-publications .external-links p {
+    color: rgba(249, 247, 242, 0.78);
+}
+/* Lien « Prendre rendez-vous » de fin de fiche : cuivre profond (7,7:1 sur blanc naturel ; le cuivre 5,7:1 reste réservé aux boutons) */
+article.pathology-content .cta-line-link {
+    color: var(--cuivre-rdv-deep, #82391F);
+}
+article.pathology-content .cta-line-link:hover {
+    color: var(--prusse);
+}
+/* Encadré d'information (myopie) : texte plein sur le fond teinté ; blocs « en cours » des publications : fond neutre, contour tireté conservé */
+.info-box, article.pathology-content .info-box p {
+    color: var(--text);
+}
+/* Coordonnées de la home (carte sombre) : libellés et mentions à 0,8 d'opacité (7,4:1 ; ex-0,66-0,72 : 6,2-6,3:1) */
+body.page-index .cv12-row dt,
+body.page-index #contact .section-header p,
+body.page-index .cv12-muted,
+body.page-index .cv12-hours .cv12-closed,
+body.page-index .cv12-action-note,
+body.page-index .cv12-map-note a {
+    color: rgba(249, 247, 242, 0.8);
+}
+body.page-publications .placeholder-block {
+    background: transparent;
+}
