@@ -301,6 +301,37 @@ def check(root):
             frag = re.sub(r'<[^>]+>', '', html.unescape(m.group(2)))
             if re.search(r'\u00a0[:;?!]|\b(de la|des|les|une|revue|étude)\b', frag):
                 E(f'{name} : texte français marqué lang="en" → {frag.strip()[:70]}')
+    # ---- TECH7M-2026-09-07 : chrome commun identique sur toutes les pages (bandeau, en-tête, lien d'évitement ; barre fixe
+    # présente sauf pages légales) et fil d'Ariane visible = BreadcrumbList
+    def _block(t, start, end):
+        m = re.search(start, t)
+        if not m: return None
+        e = re.search(end, t[m.start():])
+        return re.sub(r'\s+', ' ', t[m.start():m.start() + e.end()]).replace(' aria-current="page"', '') if e else None
+    chrome = {}
+    for name, pg in pages.items():
+        t = pg.txt
+        for key, start, end in (('lien d’évitement', r'<a[^>]*class="skip-link"', r'</a>'), ('bandeau', r'<div class="topbar[^"]*"', r'</div>\s*</div>'),
+                                ('en-tête', r'<header class="site-header"', r'</header>'), ('barre fixe', r'<nav class="sticky-rdv"', r'</nav>')):
+            b = _block(t, start, end)
+            if b is None:
+                if key == 'barre fixe' and name in ('confidentialite.html', 'mentions-legales.html'): continue
+                E(f'{name} : {key} absent'); continue
+            chrome.setdefault(key, {}).setdefault(b, []).append(name)
+        bc = re.search(r'<nav class="breadcrumb-mini"[^>]*>(.*?)</nav>', t, re.S)
+        if bc:
+            vis = [re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', x))).strip() for x in re.split(r'&nbsp;›&nbsp;|›', bc.group(1))]
+            vis = [v for v in vis if v]
+            names = None
+            for s in re.findall(r'<script type="application/ld\+json">(.*?)</script>', t, re.S):
+                for m in re.finditer(r'"@type":\s*"BreadcrumbList".*?"itemListElement":\s*\[(.*?)\]', s, re.S):
+                    names = [re.sub(r'\s+', ' ', html.unescape(x)).strip() for x in re.findall(r'"name":\s*"([^"]*)"', m.group(1))]
+            if names is not None and names != vis: E(f'{name} : fil d’Ariane visible {vis} ≠ BreadcrumbList {names}')
+    for key, variants in chrome.items():
+        if len(variants) > 1:
+            major = max(variants.values(), key=len)
+            for v, names in variants.items():
+                if names is not major: E(f'{key} différent du reste du site sur : ' + ', '.join(names))
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
