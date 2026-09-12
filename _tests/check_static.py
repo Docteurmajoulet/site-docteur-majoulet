@@ -361,6 +361,31 @@ def check(root):
                     E(f'main.css : règle :hover hors @media (hover: hover) — « {head[-70:]} » (le survol collerait au toucher)')
         elif tok == '}':
             if depth_stack: depth_stack.pop()
+    # ---- TECH9R-2026-09-12 : mode sombre forcé refusé (color-scheme « only light »), aperçus de partage complets, focus jamais masqué
+    def _jpeg_size(path):
+        with open(path, 'rb') as f: data = f.read()
+        i = 2
+        while i < len(data) - 9:
+            if data[i] != 0xFF: return None
+            marker = data[i + 1]; ln = int.from_bytes(data[i + 2:i + 4], 'big')
+            if marker in (0xC0, 0xC1, 0xC2): return int.from_bytes(data[i + 7:i + 9], 'big'), int.from_bytes(data[i + 5:i + 7], 'big')
+            i += 2 + ln
+        return None
+    og_real = _jpeg_size(os.path.join(root, 'og-image.jpg')) if exists('og-image.jpg') else None
+    for name, pg in pages.items():
+        t = pg.txt
+        k = t.count('<meta name="color-scheme" content="only light">')
+        if k != 1: E(f'{name} : {k} meta color-scheme « only light » (attendu : 1 — sinon Android Chrome assombrit le site de force)')
+        if 'noindex' in (pg.meta('name', 'robots') or ''): continue
+        if 'max-image-preview:large' not in (pg.meta('name', 'robots') or ''): E(f'{name} : meta robots sans max-image-preview:large')
+        for prop in ('og:site_name', 'og:image:alt', 'og:image:width', 'og:image:height'):
+            if pg.meta('property', prop) is None: E(f'{name} : {prop} absent')
+        w, h = pg.meta('property', 'og:image:width'), pg.meta('property', 'og:image:height')
+        if og_real and w and h and (w, h) != tuple(str(x) for x in og_real): E(f'{name} : og:image:width/height {w}×{h} ≠ dimensions réelles de og-image.jpg {og_real[0]}×{og_real[1]}')
+    if not re.search(r'\bhtml\s*\{[^}]*scroll-padding-top:\s*[\d.]+(?:px|r?em)', css_txt): E('main.css : pas de règle html { scroll-padding-top: … } (focus et ancres masqués par l\'en-tête sticky)')
+    if re.search(r'\[id\]\)?\s*\{[^}]*scroll-margin-top', css_txt): E('main.css : scroll-margin-top sur [id] — doublonne scroll-padding-top (ancres 192 px trop bas)')
+    for m in re.finditer(r'@media[^{]*', css_txt):
+        if re.search(r'\((?:min|max)-(?:width|height):\s*[\d.]+px', m.group(0)): E(f'main.css : point de rupture en px « {m.group(0).strip()[:70]} » (écrire en em : suit la taille de police du navigateur)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

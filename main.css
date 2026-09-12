@@ -5390,8 +5390,7 @@ article.pathology-content li {
    topbar à la ligne < 380 px · survol des cartes de spécialités.
    Marqueur d'idempotence : HARDEN-2026-08-24 (ne pas réutiliser).
    ============================================================ */
-/* --- Ancres : atterrir sous l'en-tête sticky (77 px) --- */
-:where([id]) { scroll-margin-top: 96px; }
+/* --- Ancres : l'atterrissage sous l'en-tête sticky est assuré par scroll-padding-top sur html (TECH9R-2026-09-12, fin de fichier) --- */
 /* --- Flèches SVG inline dans les liens (« Toutes les pathologies », boutons) --- */
 .ico-arrow {
     width: 0.85em;
@@ -5968,7 +5967,7 @@ body.page-pathologies .hub-alert { margin-bottom: 22px; }
    TOC-2026-08-24 — Sommaire des fiches (24/08/2026)
    Carte claire avant la première section : les H2 de la fiche en
    lignes de 44 px, deux colonnes dès 600 px. Les ancres atterrissent
-   sous l'en-tête sticky (scroll-margin-top du lot Harden).
+   sous l'en-tête sticky (scroll-padding-top sur html, TECH9R-2026-09-12).
    Marqueur d'idempotence : TOC-2026-08-24 (ne pas réutiliser).
    ============================================================ */
 .toc {
@@ -6942,7 +6941,7 @@ p:has(> a.button) {
     align-items: center;
     gap: 12px;
 }
-@media (max-width: 64em) and (max-height: 480px) and (orientation: landscape) {
+@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) {
 .sticky-rdv {
         display: none;
     }
@@ -7117,5 +7116,29 @@ body.page-index .hero-v3 .hero-photo::after {
             linear-gradient(to right, rgba(36, 45, 51, 0.96) 0%, rgba(36, 45, 51, 0) 26%),
             linear-gradient(to left, rgba(42, 53, 61, 0.95) 0%, rgba(42, 53, 61, 0) 24%),
             linear-gradient(to top, rgba(41, 52, 60, 1) 3%, rgba(41, 52, 60, 0) 34%);
+    }
+}
+
+/* ============================================================
+   TECH9R-2026-09-12 — Focus et ancres jamais masqués par le chrome
+   fixe (WCAG 2.2, 2.4.11). En tabulant, le navigateur amène l'élément
+   focalisé au bord de la fenêtre : sous l'en-tête sticky (77 px) en
+   remontant, sous la barre fixe « Appeler / Prendre rendez-vous »
+   (69 px, ≤ 64em) en descendant. scroll-padding définit la zone
+   utile de la fenêtre pour tout défilement automatique (focus,
+   ancres, scrollIntoView) : il remplace le scroll-margin-top que le
+   lot Harden posait sur [id] (même atterrissage des ancres).
+   ============================================================ */
+html {
+    scroll-padding-top: 96px;
+}
+@media (max-width: 64em) {
+html {
+        scroll-padding-bottom: 96px;
+    }
+}
+@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) {
+html {
+        scroll-padding-bottom: 0;
     }
 }

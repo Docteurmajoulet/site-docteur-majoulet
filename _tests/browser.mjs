@@ -11,6 +11,7 @@
 // Puis lisibilité à 390 et 1366 px : aucun texte sous 12,8 px hors exposants, texte de lecture ≥ 7:1 (TECH8O-2026-09-07).
 // Puis survol : aucun état :hover après un tap (tactile), survol intact à la souris (TECH8P-2026-09-07).
 // Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12).
+// Puis focus jamais masqué : Tab et Maj+Tab sur 3 pages à 390 et 1 366 px, rien sous l'en-tête ni la barre fixe (TECH9R-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -340,6 +341,46 @@ try {
       } catch (e) { failures.push(`index @${w} portrait — chargement : ${String(e).slice(0, 160)}`); }
       await page.close(); await ctx.close();
     }
+  }
+  // TECH9R-2026-09-12 — focus jamais masqué (WCAG 2.2, 2.4.11) : en tabulant (Tab, puis Maj+Tab depuis le bas) sur trois pages
+  // à 390 et 1 366 px, aucun élément focalisé n'est recouvert à plus de 25 % par le chrome fixe (en-tête sticky, barre fixe)
+  // ni hors de l'écran. Trouvé le 12/09/2026 : 6-7 éléments par page sous la barre fixe à 390 px, liens sous l'en-tête en remontant.
+  for (const w of [390, 1366]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: w === 390 ? 700 : 800 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['index', 'decollement-retine', 'pathologies'].filter(s => slugs.includes(s))) {
+      for (const dir of ['Tab', 'Shift+Tab']) {
+        const page = await ctx.newPage();
+        try {
+          await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+          if (dir === 'Shift+Tab') { await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await page.waitForTimeout(100); }
+          const hidden = []; let prev = null, steps = 0;
+          while (steps < 200) {
+            await page.keyboard.press(dir); steps++;
+            const info = await page.evaluate(() => {
+              const a = document.activeElement; if (!a || a === document.body) return null;
+              const b = a.getBoundingClientRect(); if (!b.width) return { key: 'zero' + Math.random() };
+              const key = a.tagName + '|' + (a.getAttribute('href') || '') + '|' + a.textContent.trim().slice(0, 30);
+              if (a.classList.contains('skip-link')) return { key, covered: 0, outside: 0 };   // lien d'évitement : glisse depuis le haut (transition)
+              const pts = []; for (let i = 0; i <= 4; i++) for (let j = 0; j <= 4; j++) pts.push([b.left + b.width * (i / 4 + 0.01) - (i === 4 ? 2 : 0), b.top + b.height * (j / 4 + 0.01) - (j === 4 ? 2 : 0)]);
+              let covered = 0, outside = 0;
+              for (const [x, y] of pts) {
+                if (y < 0 || y > innerHeight || x < 0 || x > innerWidth) { outside++; continue; }
+                const e = document.elementFromPoint(x, y);
+                if (e && e !== a && !a.contains(e) && !e.contains(a)) { let p = e, fixed = false; while (p && p !== document.body) { const cs = getComputedStyle(p); if (cs.position === 'fixed' || cs.position === 'sticky') { fixed = true; break; } p = p.parentElement; } if (fixed) covered++; }
+              }
+              return { key, covered: covered / pts.length, outside: outside / pts.length, txt: a.textContent.trim().replace(/\s+/g, ' ').slice(0, 28), tag: a.tagName.toLowerCase(), cls: (a.className || '').toString().split(' ')[0] };
+            });
+            if (!info) break; if (info.key === prev) break; prev = info.key;
+            if (info.covered > 0.25 || info.outside > 0.5) hidden.push(`${info.tag}.${info.cls} « ${info.txt} » recouvert ${Math.round(info.covered * 100)} %, hors écran ${Math.round(info.outside * 100)} %`);
+          }
+          for (const h of hidden.slice(0, 4)) failures.push(`${slug} @${w} focus ${dir} — ${h}`);
+          loads++;
+        } catch (e) { failures.push(`${slug} @${w} focus ${dir} — ${String(e).slice(0, 160)}`); }
+        await page.close();
+      }
+    }
+    await ctx.close();
   }
 } finally { await browser.close(); stop(); }
 
