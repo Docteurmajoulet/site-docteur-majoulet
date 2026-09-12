@@ -23,7 +23,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
 Sortie : liste des erreurs (code 1) et des avertissements (code 0).
 """
 import argparse, base64, datetime, glob, hashlib, html, json, os, re, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab   # TECH6H-2026-09-07, TECH9S-2026-09-12
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab, llms_pages   # TECH6H-2026-09-07, TECH9S-2026-09-12, TECH12AA-2026-09-12
 from html.parser import HTMLParser
 
 DOMAIN = 'https://docteurmajoulet.com'
@@ -454,6 +454,17 @@ def check(root):
     if not re.search(r'^/speculationrules\.json\n(?:[ \t]+.*\n)*?[ \t]+Content-Type: application/speculationrules\+json[ \t]*$', headers, re.M): E('_headers : Content-Type application/speculationrules+json manquant pour /speculationrules.json')
     for name, pg in pages.items():
         if 'speculationrules' in pg.txt: E(f'{name} : « speculationrules » dans la page (les règles passent par l\'en-tête HTTP, jamais par un script inline)')
+    # ---- TECH12AA-2026-09-12 : llms.txt au format llmstxt.org — H1 en première ligne, résumé en citation, liens Markdown (aucune
+    # URL nue du site ni de Doctolib), carte des pages générée par _tests/llms_pages.py (toutes les pages, aucune en trop), date
+    if not exists('llms.txt'): E('llms.txt absent')
+    else:
+        _lt = open(os.path.join(root, 'llms.txt'), encoding='utf-8').read()
+        if not _lt.startswith('# '): E('llms.txt : la première ligne doit être le titre H1 (« # … »)')
+        if not re.search(r'^> \S', _lt, re.M): E('llms.txt : résumé en citation (« > … ») absent')
+        if not re.search(r'\[[^\]]+\]\(https://[^)]+\)', _lt): E('llms.txt : aucun lien Markdown [texte](url) — Lighthouse « navigation agentique » échoue')
+        for _u in re.findall(r'(?<![(<])https?://(?:www\.)?(?:docteurmajoulet\.com|doctolib\.fr)[^\s)>]*', _lt): E(f'llms.txt : URL nue « {_u} » (écrire un lien Markdown [texte](url))'); break
+        for _e in llms_pages.diverges(_lt, root): E(_e + ' (python3 _tests/llms_pages.py --write)')
+        if not re.search(r'^Dernière mise à jour : \d{4}-\d{2}-\d{2}$', _lt, re.M): E('llms.txt : ligne « Dernière mise à jour : AAAA-MM-JJ » absente')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

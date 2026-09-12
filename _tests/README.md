@@ -47,6 +47,11 @@ prefetch « moderate », Chrome/Edge) : `check_static.py` vérifie le JSON, l'en
 inline ; `browser.mjs` vérifie à 1 366 px que les règles se chargent, qu'un survol déclenche une requête `Sec-Purpose: prefetch` et que le
 clic est servi par ce préchargement ; `prod_check.py` contrôle l'en-tête sur la home et le fichier en production.
 
+Depuis le tour 12 (TECH12AA-2026-09-12), la carte du site dans `llms.txt` est générée par `_tests/llms_pages.py` (un lien Markdown
+par page : H1, URL canonique, meta description, groupés comme le menu ; `--write` pour régénérer, à lancer par tout lot qui ajoute,
+retire ou renomme une page) ; `check_static.py` vérifie le format llmstxt.org (H1, citation, liens Markdown, aucune URL nue) et que
+le bloc correspond aux pages du dépôt.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

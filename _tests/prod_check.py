@@ -92,14 +92,14 @@ def main():
         if lv and lv.group(1) != prod_v: W(f'fraîcheur : main.css ?v={prod_v} en prod, ?v={lv.group(1)} dans le dépôt (déploiement en retard ou travail non poussé)')
     print(f'  home : 200, {len(body) // 1024} Ko, main.css ?v={prod_v}, en-têtes de sécurité vérifiés')
 
-    # ---- fichiers de service
+    # ---- fichiers de service (TECH12AA-2026-09-12 : llms.txt contrôlé aussi)
     # TECH11X-2026-09-12 : les polices contrôlées sont celles que main.css déclare (leurs noms changent à chaque régénération —
     # « -2.woff2 » depuis le tour 7 ; le nom codé en dur « montserrat-400.woff2 » aurait fait échouer la veille du 14/09).
     _css = os.path.join(ROOT, 'main.css')
     fonts = sorted(set(re.findall(r"url\('(/fonts/[^']+\.woff2)'\)", open(_css, encoding='utf-8').read()))) if os.path.exists(_css) else []
     if not fonts: W('main.css : aucune police @font-face trouvée dans le dépôt — polices non contrôlées')
     for path, ctype in (('/robots.txt', 'text/plain'), ('/sitemap.xml', 'xml'), ('/.well-known/security.txt', 'text/plain'),
-                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/speculationrules.json', 'speculationrules+json')):
+                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/llms.txt', 'text/plain'), ('/speculationrules.json', 'speculationrules+json')):
         st, hh, _ = fetch(bust(site + path))
         if st != 200: E(f'{path} : statut {st}')
         elif ctype not in hh.get('content-type', ''): W(f'{path} : content-type {hh.get("content-type")}')
