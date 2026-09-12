@@ -7233,3 +7233,34 @@ header.site-header,
         backdrop-filter: none;
     }
 }
+
+/* ============================================================
+   TECH11W-2026-09-12 — Visage du portrait à hauteur du titre
+   (retours d'Alexandre après le tour 10 : « trop bas », puis « trop
+   haut, un entre-deux »). Le portrait n'est plus centré dans sa
+   colonne : son haut est calé pour que la ligne des cheveux (16,9 %
+   de la hauteur de l'image, mesuré) tombe 82 px sous le haut du bloc
+   titre — au niveau du grand titre —, le haut du bloc titre étant le
+   padding haut de la colonne de texte (48 px ; 64 px entre 901 et
+   1 024 px). Hauteur inchangée.
+   ============================================================ */
+@media (min-width: 56.3125em) {
+body.page-index .hero-v3 .hero-photo {
+        --portrait-h: min(100% - 96px, 46rem, 55vw);
+        height: var(--portrait-h);
+        top: calc(130px - 0.169 * var(--portrait-h));
+        transform: none;
+    }
+}
+@media (min-width: 56.3125em) and (max-width: 64em) {
+body.page-index .hero-v3 .hero-photo {
+        top: calc(146px - 0.169 * var(--portrait-h));
+    }
+}
+@supports not (aspect-ratio: 1) {
+@media (min-width: 56.3125em) {
+body.page-index .hero-v3 .hero-photo {
+            top: auto;
+        }
+}
+}

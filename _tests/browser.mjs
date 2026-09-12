@@ -10,7 +10,7 @@
 // Puis sans JavaScript à 390 px : menu complet visible, aucun débordement, rien d'invisible dans <main> (TECH8N-2026-09-07).
 // Puis lisibilité à 390 et 1366 px : aucun texte sous 12,8 px hors exposants, texte de lecture ≥ 7:1 (TECH8O-2026-09-07).
 // Puis survol : aucun état :hover après un tap (tactile), survol intact à la souris (TECH8P-2026-09-07).
-// Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12) ; à la mesure du texte (TECH10U-2026-09-12).
+// Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12) ; à la mesure du texte (TECH10U-2026-09-12) ; visage à hauteur du titre (TECH11W-2026-09-12).
 // Puis focus jamais masqué : Tab et Maj+Tab sur 3 pages à 390 et 1 366 px, rien sous l'en-tête ni la barre fixe (TECH9R-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
@@ -336,7 +336,11 @@ try {
           // TECH10U-2026-09-12 : le portrait déborde de sa colonne vers la droite (au plus 12 % hors écran), jamais vers le haut,
           // le bas ni la gauche ; au moins aussi large que sa colonne ; dès 1 366 px, au moins 60 % de la hauteur de la colonne ;
           // masque elliptique présent (fondu dans l'ardoise).
-          if (r.left < c.left - 1 || r.top < c.top - 1 || r.bottom > c.bottom + 1) out.push('portrait hors de sa colonne (haut, bas ou gauche)');
+          // TECH11W-2026-09-12 : le haut de l'image (fond masqué) peut dépasser la colonne de 25 % de sa hauteur au plus ; la ligne
+          // des cheveux (haut + 16,9 %) est 82 px sous le haut du titre (± 16 px) — l'entre-deux demandé par Alexandre.
+          if (r.left < c.left - 1 || r.top < c.top - 0.25 * r.height || r.bottom > c.bottom + 1) out.push('portrait hors de sa colonne (haut, bas ou gauche)');
+          const h1 = document.querySelector('.hero-v3 h1').getBoundingClientRect();
+          if (Math.abs((r.top + 0.169 * r.height) - (h1.top + 82)) > 16) out.push(`visage mal placé par rapport au titre (cheveux à ${Math.round(r.top + 0.169 * r.height - h1.top)} px du haut du h1, attendu 82 ± 16)`);
           if (r.right - innerWidth > 0.12 * r.width) out.push(`portrait trop hors écran à droite (${Math.round(r.right - innerWidth)} px sur ${Math.round(r.width)})`);
           if (r.width < 0.95 * c.width) out.push(`portrait plus étroit que sa colonne (${Math.round(r.width)} px pour ${Math.round(c.width)})`);
           if (innerWidth >= 1366 && r.height < 0.6 * c.height) out.push(`portrait trop petit pour le texte (${Math.round(r.height)} px pour une colonne de ${Math.round(c.height)})`);
