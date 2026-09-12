@@ -418,6 +418,24 @@ def check(root):
     _rt = re.search(r'@media \(prefers-reduced-transparency: reduce\)\s*\{(.*?)\n\}', css_txt, re.S)
     if not _rt or 'header.site-header' not in _rt.group(1) or '.sticky-rdv' not in _rt.group(1) or 'backdrop-filter: none' not in _rt.group(1):
         E('main.css : bloc prefers-reduced-transparency incomplet (en-tête et barre fixe opaques, sans backdrop-filter)')
+    # ---- TECH12Y-2026-09-12 : une seule police Montserrat, variable (300-700), présente, préchargée une fois par page ; aucune
+    # référence aux anciens fichiers statiques ; aucun fichier orphelin dans fonts/ (prod_check.py contrôle les polices de main.css)
+    _faces = re.findall(r"@font-face \{ font-family: 'Montserrat'; [^}]*\}", css_txt)
+    _urls = [m.group(1) for f in _faces for m in [re.search(r"url\('(/fonts/[^']+)'\)", f)] if m]
+    if len(_faces) != 1 or 'font-weight: 300 700;' not in _faces[0] or len(_urls) != 1 or not re.fullmatch(r'/fonts/montserrat-wght-\d+\.woff2', _urls[0]):
+        E(f'main.css : attendu une seule @font-face Montserrat variable (font-weight: 300 700, /fonts/montserrat-wght-N.woff2) — trouvé {len(_faces)} face(s) : {_urls}')
+    else:
+        _f = os.path.join(root, _urls[0].lstrip('/'))
+        if not os.path.exists(_f): E(f'main.css : police déclarée absente du dépôt : {_urls[0]}')
+        elif not (30000 <= os.path.getsize(_f) <= 60000) or open(_f, 'rb').read(4) != b'wOF2': E(f'{_urls[0]} : fichier inattendu (attendu : WOFF2 de 30 à 60 Ko)')
+        for name, pg in pages.items():
+            _pre = re.findall(r'<link rel="preload" as="font"[^>]*href="([^"]+)"', pg.txt)
+            if _pre != _urls: E(f'{name} : préchargement de police attendu une seule fois ({_urls[0]}), trouvé {_pre}')
+    for name, pg in pages.items():
+        if re.search(r'montserrat-\d{3}(?:-\d)?\.woff2', pg.txt): E(f'{name} : référence à une ancienne police statique montserrat-NNN.woff2')
+    if re.search(r'montserrat-\d{3}(?:-\d)?\.woff2', css_txt): E('main.css : référence à une ancienne police statique montserrat-NNN.woff2')
+    _orph = sorted(f for f in os.listdir(os.path.join(root, 'fonts')) if '/fonts/' + f not in _urls) if os.path.isdir(os.path.join(root, 'fonts')) else []
+    if _orph: E('fonts/ : fichier(s) non déclaré(s) dans main.css, à retirer : ' + ', '.join(_orph))
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

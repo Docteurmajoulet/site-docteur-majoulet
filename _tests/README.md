@@ -37,6 +37,11 @@ externes (Doctolib, Google Maps…) sont bloquées.
 Depuis le tour 11 (TECH11X-2026-09-12), `browser.mjs` passe aussi toutes les pages sur deux profils tactiles réels — iPhone SE
 (375 × 667, 2×) et iPhone en paysage (844 × 390, 3×) — : débordement, chrome tronqué, barre fixe (masquée en paysage bas), console.
 
+Depuis le tour 12 (TECH12Y-2026-09-12), Montserrat est une seule police variable (`fonts/montserrat-wght-N.woff2`, axe wght 300-700) :
+`check_static.py` exige une seule `@font-face` Montserrat (variable, fichier présent), un préchargement par page vers ce fichier, aucune
+référence aux anciens fichiers statiques ni fichier orphelin dans `fonts/` ; `browser.mjs` vérifie à l'usage une seule requête de police,
+une FontFace « 300 700 » chargée et l'axe wght effectif (largeurs croissantes de 300 à 700).
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

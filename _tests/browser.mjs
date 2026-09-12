@@ -13,6 +13,7 @@
 // Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12) ; à la mesure du texte (TECH10U-2026-09-12) ; visage à hauteur du titre (TECH11W-2026-09-12).
 // Puis focus jamais masqué : Tab et Maj+Tab sur 3 pages à 390 et 1 366 px, rien sous l'en-tête ni la barre fixe (TECH9R-2026-09-12).
 // Puis matrice tactile : iPhone SE 375 × 667 et iPhone en paysage 844 × 390, toutes les pages (TECH11X-2026-09-12).
+// Puis police variable : une requête, une FontFace 300-700, axe wght effectif, 3 pages à 1 366 px (TECH12Y-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -428,6 +429,39 @@ try {
         loads++;
       } catch (e) { problems.push('chargement : ' + String(e).slice(0, 160)); }
       for (const p of problems) failures.push(`${slug} @${pr.name} — ${p}`);
+      await page.close();
+    }
+    await ctx.close();
+  }
+  // TECH12Y-2026-09-12 — police variable : sur 3 pages à 1 366 px, une seule requête /fonts/ (la police variable déclarée),
+  // une seule FontFace Montserrat (« 300 700 ») chargée, graisses 300 à 700 disponibles, et l'axe wght effectif : le même
+  // texte est plus large en 700 qu'en 400 qu'en 300 (sinon graisse synthétisée ou police de secours).
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['index', 'dmla', 'contact']) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(async () => {
+          await document.fonts.ready;
+          const out = [];
+          const reqs = performance.getEntriesByType('resource').map(e => new URL(e.name).pathname).filter(p => p.startsWith('/fonts/'));
+          if (reqs.length !== 1 || !/^\/fonts\/montserrat-wght-\d+\.woff2$/.test(reqs[0])) out.push(`requêtes de police ${JSON.stringify(reqs)} (attendu : la seule police variable)`);
+          const faces = [...document.fonts].filter(f => f.family.replace(/"/g, '') === 'Montserrat');
+          if (faces.length !== 1 || faces[0].status !== 'loaded' || faces[0].weight !== '300 700') out.push(`document.fonts : ${faces.length} face(s) Montserrat (${faces.map(f => f.weight + ' ' + f.status).join(', ')}), attendu une seule « 300 700 » chargée`);
+          for (const w of [300, 400, 500, 600, 700]) if (!document.fonts.check(`${w} 16px Montserrat`)) out.push(`graisse ${w} indisponible (document.fonts.check)`);
+          const probe = document.createElement('span'); probe.textContent = 'Ophtalmologue et rétinologue à Boulogne-Billancourt';
+          Object.assign(probe.style, { fontFamily: 'Montserrat', fontSize: '32px', position: 'absolute', whiteSpace: 'nowrap', visibility: 'hidden' });
+          document.body.appendChild(probe);
+          const w = {}; for (const k of [300, 400, 700]) { probe.style.fontWeight = String(k); w[k] = probe.getBoundingClientRect().width; }
+          probe.remove();
+          if (!(w[300] < w[400] && w[400] < w[700])) out.push(`axe wght inopérant : largeurs 300 / 400 / 700 = ${w[300].toFixed(1)} / ${w[400].toFixed(1)} / ${w[700].toFixed(1)} px`);
+          return out;
+        });
+        for (const p of res) failures.push(`${slug} @1366 — police : ${p}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @1366 — police : chargement ${String(e).slice(0, 160)}`); }
       await page.close();
     }
     await ctx.close();
