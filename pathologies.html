@@ -53,7 +53,7 @@
         "description": "Annuaire des pathologies prises en charge : DMLA, chirurgie de la rétine et de la cataracte, rétine médicale, glaucome, surface oculaire, vue de l'enfant — signes d'alerte et accès direct aux fiches.",
         "url": "https://docteurmajoulet.com/pathologies",
         "author": {
-            "@type": "Physician",
+            "@type": ["Physician", "Person"],
             "@id": "https://docteurmajoulet.com/#physician",
             "name": "Dr Alexandre Majoulet",
             "jobTitle": "Chirurgien Ophtalmologue — Rétinologue",
@@ -71,7 +71,7 @@
             {"@type": "MedicalCondition", "name": "Trou maculaire"},
             {"@type": "MedicalCondition", "name": "Hémorragie intravitréenne"}
         ],
-        "specialty": "https://schema.org/Ophthalmologic",
+        "specialty": {"@type": "MedicalSpecialty", "name": "Ophtalmologie", "sameAs": ["https://fr.wikipedia.org/wiki/Ophtalmologie", "https://www.wikidata.org/wiki/Q161437"]},
         "dateModified": "2026-08-27",
         "lastReviewed": "2026-08-24"
     }

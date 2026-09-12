@@ -38,6 +38,13 @@ externes (Doctolib, Google Maps…) sont bloquées.
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
 
+## Vocabulaire schema.org
+
+`check_static.py` confronte chaque bloc JSON-LD au vocabulaire schema.org (`_tests/schemaorg_vocab.json` : types, propriétés
+avec héritage, membres des énumérations) : `@type` inconnu, propriété hors du domaine de son type, énumération inexistante
+(ex. `https://schema.org/Ophthalmologic`, qui n'existe pas) sont des erreurs (TECH9S-2026-09-12). Le fichier est généré par
+`_tests/schemaorg_vocab.py` depuis le paquet npm `schema-dts` (voir son en-tête pour le régénérer).
+
 ## FAQ structurée
 
 Le bloc JSON-LD `FAQPage` de chaque page est généré à partir des questions-réponses visibles (`.qr-block`) :

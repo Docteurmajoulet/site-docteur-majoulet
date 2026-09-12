@@ -54,7 +54,7 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "Physician",
+        "@type": ["Physician", "Person"],
         "@id": "https://docteurmajoulet.com/#physician",
         "name": "Dr Alexandre Majoulet",
         "givenName": "Alexandre",
@@ -62,7 +62,11 @@
         "honorificPrefix": "Dr",
         "description": "Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt.",
         "image": "https://docteurmajoulet.com/photo.jpg",
-        "medicalSpecialty": "https://schema.org/Ophthalmologic",
+        "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Ophtalmologie", "sameAs": ["https://fr.wikipedia.org/wiki/Ophtalmologie", "https://www.wikidata.org/wiki/Q161437"]},
+        "hospitalAffiliation": [
+            {"@type": "Hospital", "name": "CHNO des Quinze-Vingts", "url": "https://www.15-20.fr"},
+            {"@type": "Hospital", "name": "Clinique Jouvenet", "address": {"@type": "PostalAddress", "addressLocality": "Paris", "postalCode": "75016", "addressCountry": "FR"}}
+        ],
         "jobTitle": "Chirurgien Ophtalmologue — Rétinologue",
         "telephone": "+33184191166",
         "email": "secretariat@ophtalife.com",
@@ -81,9 +85,8 @@
         "hasOccupation": [
             {
                 "@type": "Occupation",
-                "name": "Praticien Contractuel — Service d'ophtalmologie du Pr Baudouin",
-                "occupationLocation": {"@type": "Hospital", "name": "CHNO des Quinze-Vingts", "url": "https://www.15-20.fr"},
-                "startDate": "2024"
+                "name": "Praticien Contractuel (depuis 2024) — Service d'ophtalmologie du Pr Baudouin",
+                "occupationLocation": {"@type": "Hospital", "name": "CHNO des Quinze-Vingts", "url": "https://www.15-20.fr"}
             },
             {
                 "@type": "Occupation",
@@ -196,7 +199,7 @@
         "url": "https://docteurmajoulet.com",
         "telephone": "+33184191166",
         "email": "secretariat@ophtalife.com",
-        "medicalSpecialty": "https://schema.org/Ophthalmologic",
+        "medicalSpecialty": {"@type": "MedicalSpecialty", "name": "Ophtalmologie", "sameAs": ["https://fr.wikipedia.org/wiki/Ophtalmologie", "https://www.wikidata.org/wiki/Q161437"]},
         "priceRange": "Secteur 2",
         "openingHoursSpecification": [
             {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Wednesday","Thursday"], "opens": "09:00", "closes": "20:00"},
@@ -209,6 +212,20 @@
             "https://www.ophtalife.fr",
             "https://www.google.com/maps/place/?q=place_id:ChIJJ2pdc01gamsRjxCY0-gYVWg"
         ]
+    }
+    </script>
+
+    <!-- WebSite Schema — nom du site pour Google (TECH9S-2026-09-12) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "@id": "https://docteurmajoulet.com/#website",
+        "url": "https://docteurmajoulet.com/",
+        "name": "Dr Alexandre Majoulet",
+        "alternateName": ["Dr Majoulet — Rétinologue", "docteurmajoulet.com"],
+        "inLanguage": "fr-FR",
+        "publisher": {"@id": "https://docteurmajoulet.com/#physician"}
     }
     </script>
 

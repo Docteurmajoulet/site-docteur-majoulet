@@ -14,6 +14,8 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
     déclaré dans _headers ; aucun autre <script> inline ; nav.js et main.css référencés avec le même
     ?v= sur toutes les pages, fichiers présents ;
   - _redirects : cibles internes existantes, règles forcées (« ! ») quand le chemin existe ; sitemap : lastmod valides ; security.txt non expiré ;
+  - JSON-LD conforme au vocabulaire schema.org (_tests/schemaorg_vocab.json : @type connus, propriétés dans leur domaine,
+    énumérations existantes) ;
   - dates : la date de révision affichée (en <time datetime>) = lastReviewed du JSON-LD, dateModified présent et
     postérieur ou égal, lastmod du sitemap postérieur ou égal ; nœuds Physician et MedicalClinic avec leur @id ;
   - règles éditoriales du Dr Majoulet : « baisse brutale » jamais seul (toujours « … de la vision »),
@@ -21,7 +23,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
 Sortie : liste des erreurs (code 1) et des avertissements (code 0).
 """
 import argparse, base64, datetime, glob, hashlib, html, json, os, re, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld   # TECH6H-2026-09-07
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab   # TECH6H-2026-09-07, TECH9S-2026-09-12
 from html.parser import HTMLParser
 
 DOMAIN = 'https://docteurmajoulet.com'
@@ -253,8 +255,10 @@ def check(root):
                 for v in d: _walk(v, out)
         nodes = []
         for d in lds: _walk(d, nodes)
+        for err in schemaorg_vocab.check(nodes): E(f'{name} : JSON-LD — {err}')   # TECH9S-2026-09-12 : vocabulaire schema.org (types, propriétés, énumérations)
         for nd in nodes:
-            if nd.get('@type') == 'Physician' and nd.get('@id') != DOMAIN + '/#physician': E(f'{name} : nœud Physician sans @id {DOMAIN}/#physician')
+            _ty = nd.get('@type'); _ty = _ty if isinstance(_ty, list) else [_ty]
+            if 'Physician' in _ty and nd.get('@id') != DOMAIN + '/#physician': E(f'{name} : nœud Physician sans @id {DOMAIN}/#physician')
             if nd.get('@type') == 'MedicalClinic' and nd.get('@id') != DOMAIN + '/#cabinet': E(f'{name} : nœud MedicalClinic sans @id {DOMAIN}/#cabinet')
         pages_nodes = [nd for nd in nodes if isinstance(nd.get('@type'), str) and nd['@type'].endswith('Page') and ('lastReviewed' in nd or 'dateModified' in nd)]
         MOIS_FR = {'janvier': 1, 'février': 2, 'mars': 3, 'avril': 4, 'mai': 5, 'juin': 6, 'juillet': 7, 'août': 8, 'septembre': 9, 'octobre': 10, 'novembre': 11, 'décembre': 12}
@@ -337,8 +341,7 @@ def check(root):
         t = pg.txt
         k = t.count('name="theme-color"')
         if k != 1: E(f'{name} : {k} meta theme-color (attendu : 1)')
-        for m in re.finditer(r'"(procedureType|specialty|medicalSpecialty)":\s*("[^"]*"|\{)', t):
-            if not m.group(2).startswith('"https://schema.org/'): E(f'{name} : {m.group(1)} doit être une URL d\'énumération schema.org (https://schema.org/SurgicalProcedure, …), pas {m.group(2)[:40]}')
+        # (TECH9S-2026-09-12 : la garde « URL schema.org » du tour 8 est remplacée par le contrôle du vocabulaire, plus haut)
     css_txt = open(os.path.join(root, 'main.css'), encoding='utf-8').read()
     for m in re.finditer(r'([^{}]*:focus(?::not\(:focus-visible\))?)\s*\{([^}]*)\}', css_txt):
         sel, body = m.group(1).strip(), m.group(2)
