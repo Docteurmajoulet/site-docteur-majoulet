@@ -410,6 +410,14 @@ def check(root):
                 if m: found.append('« % » collé à son chiffre « ' + v[max(0, m.start() - 12):m.end() + 6].strip() + ' »')
             if len(found) >= 3: break
         for f_ in found[:3]: E(f'{name} : {f_} (écrire ’ U+2019 et une insécable U+00A0 avant % — TECH9T)')
+    # ---- TECH10V-2026-09-12 : iOS (détection des numéros coupée, text-size-adjust) et préférence « réduire la transparence »
+    for name, pg in pages.items():
+        k = pg.txt.count('<meta name="format-detection" content="telephone=no">')
+        if k != 1: E(f'{name} : {k} meta format-detection telephone=no (attendu : 1 — sinon iOS transforme RPPS, ORCID et dates en liens téléphone)')
+    if not re.search(r'-webkit-text-size-adjust:\s*100%;\s*text-size-adjust:\s*100%', css_txt): E('main.css : text-size-adjust: 100% (préfixé -webkit-) absent (gonflement du texte en paysage sur iOS)')
+    _rt = re.search(r'@media \(prefers-reduced-transparency: reduce\)\s*\{(.*?)\n\}', css_txt, re.S)
+    if not _rt or 'header.site-header' not in _rt.group(1) or '.sticky-rdv' not in _rt.group(1) or 'backdrop-filter: none' not in _rt.group(1):
+        E('main.css : bloc prefers-reduced-transparency incomplet (en-tête et barre fixe opaques, sans backdrop-filter)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
