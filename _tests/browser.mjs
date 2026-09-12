@@ -12,6 +12,7 @@
 // Puis survol : aucun état :hover après un tap (tactile), survol intact à la souris (TECH8P-2026-09-07).
 // Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12) ; à la mesure du texte (TECH10U-2026-09-12) ; visage à hauteur du titre (TECH11W-2026-09-12).
 // Puis focus jamais masqué : Tab et Maj+Tab sur 3 pages à 390 et 1 366 px, rien sous l'en-tête ni la barre fixe (TECH9R-2026-09-12).
+// Puis matrice tactile : iPhone SE 375 × 667 et iPhone en paysage 844 × 390, toutes les pages (TECH11X-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -391,6 +392,43 @@ try {
         } catch (e) { failures.push(`${slug} @${w} focus ${dir} — ${String(e).slice(0, 160)}`); }
         await page.close();
       }
+    }
+    await ctx.close();
+  }
+  // TECH11X-2026-09-12 — matrice tactile : iPhone SE (375 × 667, 2×) et iPhone en paysage (844 × 390, 3×), tactiles, sur toutes
+  // les pages : aucun débordement, chrome (bandeau, en-tête, barre fixe, fil d'Ariane) jamais tronqué, barre fixe masquée en
+  // paysage bas, aucune erreur console. Diagnostic du 12/09/2026 sur 9 profils réels × 45 pages : 0 problème — garde-fou.
+  for (const pr of [{ name: 'iPhone SE 375', viewport: { width: 375, height: 667 }, deviceScaleFactor: 2 }, { name: 'iPhone paysage 844x390', viewport: { width: 844, height: 390 }, deviceScaleFactor: 3 }]) {
+    const ctx = await browser.newContext({ viewport: pr.viewport, deviceScaleFactor: pr.deviceScaleFactor, isMobile: true, hasTouch: true, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of slugs) {
+      const page = await ctx.newPage();
+      const problems = [];
+      page.on('console', m => { if (m.type() === 'error') problems.push('console : ' + m.text().slice(0, 160)); });
+      page.on('pageerror', e => problems.push('exception : ' + String(e).slice(0, 160)));
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = [];
+          const over = document.documentElement.scrollWidth - document.documentElement.clientWidth;
+          if (over > 0) out.push(`débordement horizontal de ${over}px`);
+          for (const el of document.querySelectorAll('.topbar *, header.site-header *, .sticky-rdv *, .breadcrumb-mini *')) {
+            const cs = getComputedStyle(el); if (cs.display === 'none' || el.closest('.sr-only') || el.getClientRects().length === 0) continue;
+            if ((cs.overflowX === 'hidden' || cs.overflowX === 'clip' || cs.textOverflow === 'ellipsis') && el.scrollWidth > el.clientWidth + 1 && el.textContent.trim()) { out.push(`texte tronqué : ${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ')[0]} « ${el.textContent.trim().slice(0, 30)} »`); break; }
+          }
+          const bar = document.querySelector('.sticky-rdv');
+          if (bar) {
+            const cs = getComputedStyle(bar);
+            if (innerHeight <= 480 && innerWidth > innerHeight && cs.display !== 'none') out.push('barre fixe visible en paysage bas');
+            else if (cs.display !== 'none' && !document.body.classList.contains('hero-cta-visible')) { const r = bar.getBoundingClientRect(); if (r.bottom > innerHeight + 1) out.push(`barre fixe sous le bas de l'écran (${Math.round(r.bottom - innerHeight)} px)`); }
+          }
+          return out;
+        });
+        problems.push(...res);
+        loads++;
+      } catch (e) { problems.push('chargement : ' + String(e).slice(0, 160)); }
+      for (const p of problems) failures.push(`${slug} @${pr.name} — ${p}`);
+      await page.close();
     }
     await ctx.close();
   }

@@ -34,6 +34,9 @@ console, aucune exception, aucune violation CSP, aucune requête interne en éch
 horizontal ; axe-core (WCAG 2.x A/AA + bonnes pratiques) à 390 et 1366 : 0 violation. Les requêtes
 externes (Doctolib, Google Maps…) sont bloquées.
 
+Depuis le tour 11 (TECH11X-2026-09-12), `browser.mjs` passe aussi toutes les pages sur deux profils tactiles réels — iPhone SE
+(375 × 667, 2×) et iPhone en paysage (844 × 390, 3×) — : débordement, chrome tronqué, barre fixe (masquée en paysage bas), console.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
