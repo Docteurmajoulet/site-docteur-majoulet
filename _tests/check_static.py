@@ -350,6 +350,9 @@ def check(root):
     for m in re.finditer(r'\n\s*backdrop-filter:', css_txt):
         before = css_txt[max(0, m.start() - 200):m.start()]
         if '-webkit-backdrop-filter' not in before: E('main.css : backdrop-filter sans -webkit-backdrop-filter juste avant (Safari/iOS < 18)')
+    for m in re.finditer(r'\n\s*mask-image:', css_txt):   # TECH10U-2026-09-12
+        before = css_txt[max(0, m.start() - 300):m.start()]
+        if '-webkit-mask-image' not in before: E('main.css : mask-image sans -webkit-mask-image juste avant (Safari/iOS < 15.4)')
     # ---- TECH8P-2026-09-07 : toute règle :hover est dans un @media (hover: …) — sinon le survol colle au toucher
     css_p = re.sub(r'/\*.*?\*/', lambda m: ' ' * len(m.group(0)), css_txt, flags=re.S)
     depth_stack = []; pos = 0

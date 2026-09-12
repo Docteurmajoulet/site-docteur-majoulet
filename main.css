@@ -7142,3 +7142,74 @@ html {
         scroll-padding-bottom: 0;
     }
 }
+
+/* ============================================================
+   TECH10U-2026-09-12 — Portrait du hero plus grand, à la mesure
+   du texte (retour d'Alexandre après le tour 9). Le portrait n'est
+   plus borné par la largeur de sa colonne (481 px) : sa hauteur est
+   la mesure — colonne moins 96 px, au plus 46 rem et 55 % de la
+   largeur de fenêtre —, la largeur en découle (ratio naturel
+   1080 × 1240, jamais de recadrage), et il déborde de sa colonne
+   vers la droite (section en overflow: hidden ; à 1 366 px : 641 px
+   de large, 3 px hors écran). Centré dans la colonne, biais de 40 px
+   vers le haut (visage entier dès 800 px de hauteur de fenêtre).
+   Fondu dans l'ardoise par un masque elliptique (le vrai fond de la
+   section apparaît sur les bords) ; le voile ::after du tour 9
+   dessinait un cadre sombre autour du portrait agrandi : retiré.
+   Sans aspect-ratio (Safari < 15) : disposition du tour 9.
+   ============================================================ */
+@media (min-width: 56.3125em) {
+body.page-index .hero-v3 .hero-visual {
+        display: block;
+        padding: 0;
+        min-height: 0;
+    }
+body.page-index .hero-v3 .hero-visual::before {
+        display: none;
+    }
+body.page-index .hero-v3 .hero-photo {
+        position: absolute;
+        top: calc(50% - 40px);
+        left: 0;
+        width: auto;
+        height: min(100% - 96px, 46rem, 55vw);
+        aspect-ratio: 1080 / 1240;
+        transform: translateY(-50%);
+    }
+body.page-index .hero-v3 .hero-photo::before {
+        content: "";
+        position: absolute;
+        inset: -12% -16%;
+        background: radial-gradient(52% 46% at 50% 42%, rgba(66, 80, 90, 0.55) 0%, rgba(66, 80, 90, 0) 72%);
+        pointer-events: none;
+    }
+body.page-index .hero-v3 .hero-photo picture,
+    body.page-index .hero-v3 .hero-photo img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+body.page-index .hero-v3 .hero-photo picture {
+        -webkit-mask-image: radial-gradient(ellipse 60% 62% at 50% 46%, #000 46%, rgba(0, 0, 0, 0) 100%);
+        mask-image: radial-gradient(ellipse 60% 62% at 50% 46%, #000 46%, rgba(0, 0, 0, 0) 100%);
+    }
+body.page-index .hero-v3 .hero-photo::after {
+        display: none;
+    }
+}
+@supports not (aspect-ratio: 1) {
+@media (min-width: 56.3125em) {
+body.page-index .hero-v3 .hero-visual {
+            display: grid;
+            align-content: center;
+            padding: 0 0 200px;
+        }
+body.page-index .hero-v3 .hero-photo {
+            position: relative;
+            top: auto;
+            width: 100%;
+            height: auto;
+            transform: none;
+        }
+}
+}

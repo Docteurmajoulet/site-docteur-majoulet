@@ -10,7 +10,7 @@
 // Puis sans JavaScript à 390 px : menu complet visible, aucun débordement, rien d'invisible dans <main> (TECH8N-2026-09-07).
 // Puis lisibilité à 390 et 1366 px : aucun texte sous 12,8 px hors exposants, texte de lecture ≥ 7:1 (TECH8O-2026-09-07).
 // Puis survol : aucun état :hover après un tap (tactile), survol intact à la souris (TECH8P-2026-09-07).
-// Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12).
+// Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12) ; à la mesure du texte (TECH10U-2026-09-12).
 // Puis focus jamais masqué : Tab et Maj+Tab sur 3 pages à 390 et 1 366 px, rien sous l'en-tête ni la barre fixe (TECH9R-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
@@ -315,7 +315,8 @@ try {
     await page2.close(); await ctx2.close();
   }
   // TECH9Q-2026-09-12 — portrait du hero (home) entier sur écran large : à 1 024, 1 366 et 1 920 px, l'image est rendue à son
-  // ratio naturel (± 1 %, donc sans recadrage), entièrement dans sa colonne ; à 390 px rien ne change (recadrage autorisé).
+  // ratio naturel (± 1 %, donc sans recadrage) ; à 390 px rien ne change (recadrage autorisé). TECH10U-2026-09-12 : il déborde
+  // de sa colonne vers la droite (≤ 12 % hors écran), aussi large qu'elle au moins, ≥ 60 % de sa hauteur dès 1 366 px, masqué en fondu.
   // Trouvé le 12/09/2026 : la colonne de 993 px de haut étirait le portrait, 44 % de sa largeur (et la moitié du visage) perdus.
   if (slugs.includes('index')) {
     for (const w of [1024, 1366, 1920]) {
@@ -332,8 +333,15 @@ try {
           const natural = parseInt(img.getAttribute('width'), 10) / parseInt(img.getAttribute('height'), 10);
           const shown = r.width / r.height;
           if (Math.abs(shown / natural - 1) > 0.01) out.push(`portrait recadré : boîte ${Math.round(r.width)}×${Math.round(r.height)} (ratio ${shown.toFixed(3)}) pour une image de ratio ${natural.toFixed(3)}`);
-          if (r.left < c.left - 1 || r.right > c.right + 1 || r.top < c.top - 1 || r.bottom > c.bottom + 1) out.push('portrait hors de sa colonne');
-          if (r.width < 300) out.push(`portrait trop petit (${Math.round(r.width)} px de large)`);
+          // TECH10U-2026-09-12 : le portrait déborde de sa colonne vers la droite (au plus 12 % hors écran), jamais vers le haut,
+          // le bas ni la gauche ; au moins aussi large que sa colonne ; dès 1 366 px, au moins 60 % de la hauteur de la colonne ;
+          // masque elliptique présent (fondu dans l'ardoise).
+          if (r.left < c.left - 1 || r.top < c.top - 1 || r.bottom > c.bottom + 1) out.push('portrait hors de sa colonne (haut, bas ou gauche)');
+          if (r.right - innerWidth > 0.12 * r.width) out.push(`portrait trop hors écran à droite (${Math.round(r.right - innerWidth)} px sur ${Math.round(r.width)})`);
+          if (r.width < 0.95 * c.width) out.push(`portrait plus étroit que sa colonne (${Math.round(r.width)} px pour ${Math.round(c.width)})`);
+          if (innerWidth >= 1366 && r.height < 0.6 * c.height) out.push(`portrait trop petit pour le texte (${Math.round(r.height)} px pour une colonne de ${Math.round(c.height)})`);
+          const pic = img.closest('picture'); const pcs = pic && getComputedStyle(pic);
+          if (!pcs || ((pcs.maskImage === 'none' || !pcs.maskImage) && (pcs.webkitMaskImage === 'none' || !pcs.webkitMaskImage))) out.push('portrait sans masque de fondu');
           return out;
         });
         for (const r of res) failures.push(`index @${w} portrait — ${r}`);
