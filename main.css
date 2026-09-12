@@ -7072,3 +7072,50 @@ body.page-publications .placeholder-block {
     background: transparent;
 }
 /* TECH8P-2026-09-07 — survol collant au toucher : chaque règle :hover est dans un @media (hover: hover), à sa place. Aucune autre règle. */
+
+/* ============================================================
+   TECH9Q-2026-09-12 — Portrait du hero entier sur écran large
+   (tour technique 9, lot Q). Depuis que le texte du hero s'est
+   allongé (août 2026), la colonne fait ~1 000 px de haut à 1 366 px
+   pour 481 px de large : le portrait (1080 × 1240, ratio 0,87) était
+   étiré sur toute la hauteur par object-fit: cover et perdait 44 %
+   de sa largeur — oreille et joue gauches coupées, le reste voilé
+   par le fondu de gauche. À partir de 901 px (deux colonnes), la
+   photo garde son ratio (largeur de la colonne, hauteur automatique
+   donnée par width/height de l'image), centrée dans la colonne avec
+   un léger biais vers le haut (visage entier dès 700 px de hauteur
+   de fenêtre), halo recentré, fondus latéraux adoucis. Rien ne
+   change sous 901 px (portrait en ouverture, tour 5).
+   ============================================================ */
+@media (min-width: 56.3125em) {
+body.page-index .hero-v3 .hero-visual {
+        display: grid;
+        align-content: center;
+        min-height: 0;
+        padding: 0 0 200px;
+    }
+body.page-index .hero-v3 .hero-visual::before {
+        background: radial-gradient(56% 46% at 50% 44%, rgba(66, 80, 90, 0.5) 0%, rgba(66, 80, 90, 0) 72%);
+    }
+body.page-index .hero-v3 .hero-photo {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        height: auto;
+    }
+body.page-index .hero-v3 .hero-photo picture {
+        height: auto;
+    }
+body.page-index .hero-v3 .hero-photo img {
+        display: block;
+        height: auto;
+        object-position: 50% 50%;
+    }
+body.page-index .hero-v3 .hero-photo::after {
+        background:
+            linear-gradient(to bottom, rgba(31, 40, 45, 0.96) 0%, rgba(31, 40, 45, 0) 26%),
+            linear-gradient(to right, rgba(36, 45, 51, 0.96) 0%, rgba(36, 45, 51, 0) 26%),
+            linear-gradient(to left, rgba(42, 53, 61, 0.95) 0%, rgba(42, 53, 61, 0) 24%),
+            linear-gradient(to top, rgba(41, 52, 60, 1) 3%, rgba(41, 52, 60, 0) 34%);
+    }
+}

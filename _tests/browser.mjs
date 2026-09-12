@@ -10,6 +10,7 @@
 // Puis sans JavaScript à 390 px : menu complet visible, aucun débordement, rien d'invisible dans <main> (TECH8N-2026-09-07).
 // Puis lisibilité à 390 et 1366 px : aucun texte sous 12,8 px hors exposants, texte de lecture ≥ 7:1 (TECH8O-2026-09-07).
 // Puis survol : aucun état :hover après un tap (tactile), survol intact à la souris (TECH8P-2026-09-07).
+// Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -311,6 +312,34 @@ try {
       loads++;
     } catch (e) { failures.push(`decollement-retine @1366 souris — ${String(e).slice(0, 160)}`); }
     await page2.close(); await ctx2.close();
+  }
+  // TECH9Q-2026-09-12 — portrait du hero (home) entier sur écran large : à 1 024, 1 366 et 1 920 px, l'image est rendue à son
+  // ratio naturel (± 1 %, donc sans recadrage), entièrement dans sa colonne ; à 390 px rien ne change (recadrage autorisé).
+  // Trouvé le 12/09/2026 : la colonne de 993 px de haut étirait le portrait, 44 % de sa largeur (et la moitié du visage) perdus.
+  if (slugs.includes('index')) {
+    for (const w of [1024, 1366, 1920]) {
+      const ctx = await browser.newContext({ viewport: { width: w, height: 800 }, deviceScaleFactor: 1, locale: 'fr-FR', reducedMotion: 'reduce' });
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = [];
+          const img = document.querySelector('.hero-v3 .hero-photo img'); const col = document.querySelector('.hero-v3 .hero-visual');
+          if (!img || !col) return ['portrait du hero introuvable'];
+          const r = img.getBoundingClientRect(), c = col.getBoundingClientRect();
+          const natural = parseInt(img.getAttribute('width'), 10) / parseInt(img.getAttribute('height'), 10);
+          const shown = r.width / r.height;
+          if (Math.abs(shown / natural - 1) > 0.01) out.push(`portrait recadré : boîte ${Math.round(r.width)}×${Math.round(r.height)} (ratio ${shown.toFixed(3)}) pour une image de ratio ${natural.toFixed(3)}`);
+          if (r.left < c.left - 1 || r.right > c.right + 1 || r.top < c.top - 1 || r.bottom > c.bottom + 1) out.push('portrait hors de sa colonne');
+          if (r.width < 300) out.push(`portrait trop petit (${Math.round(r.width)} px de large)`);
+          return out;
+        });
+        for (const r of res) failures.push(`index @${w} portrait — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`index @${w} portrait — chargement : ${String(e).slice(0, 160)}`); }
+      await page.close(); await ctx.close();
+    }
   }
 } finally { await browser.close(); stop(); }
 
