@@ -389,6 +389,24 @@ def check(root):
     if re.search(r'\[id\]\)?\s*\{[^}]*scroll-margin-top', css_txt): E('main.css : scroll-margin-top sur [id] — doublonne scroll-padding-top (ancres 192 px trop bas)')
     for m in re.finditer(r'@media[^{]*', css_txt):
         if re.search(r'\((?:min|max)-(?:width|height):\s*[\d.]+px', m.group(0)): E(f'main.css : point de rupture en px « {m.group(0).strip()[:70]} » (écrire en em : suit la taille de police du navigateur)')
+    # ---- TECH9T-2026-09-12 : apostrophe typographique (’, U+2019) et pourcentage insécable (« 80 % », U+00A0) dans tout texte lisible :
+    #      texte visible, attributs alt/title/content/aria-label/data-label/data-map-title, chaînes JSON-LD — jamais les URL
+    _ATTRS = ('alt', 'title', 'content', 'aria-label', 'aria-description', 'data-label', 'data-map-title', 'placeholder')
+    for name, pg in pages.items():
+        found = []
+        for i, seg in enumerate(re.split(r'(<script\b[^>]*>.*?</script>|<!--.*?-->|<[^>]+>)', pg.txt, flags=re.S)):
+            if i % 2 == 0: cands = [seg] if '://' not in seg else []
+            elif seg.startswith('<script'):
+                if 'application/ld+json' not in seg.split('>', 1)[0]: continue
+                cands = [v for v in re.findall(r'"((?:[^"\\]|\\.)*)"', seg) if '://' not in v]
+            elif seg.startswith('<!--'): continue
+            else: cands = [v for a, v in re.findall(r'([\w:-]+)="([^"]*)"', seg) if a.lower() in _ATTRS and '://' not in v]
+            for v in cands:
+                if "'" in v or '&#39;' in v or '&apos;' in v: found.append('apostrophe droite « ' + v.strip()[:50] + ' »')
+                m = re.search(r'\d%', v)
+                if m: found.append('« % » collé à son chiffre « ' + v[max(0, m.start() - 12):m.end() + 6].strip() + ' »')
+            if len(found) >= 3: break
+        for f_ in found[:3]: E(f'{name} : {f_} (écrire ’ U+2019 et une insécable U+00A0 avant % — TECH9T)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
