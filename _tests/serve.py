@@ -60,7 +60,9 @@ class H(http.server.BaseHTTPRequestHandler):
             fp, code = os.path.join(ROOT, '404.html'), 404
         data = open(fp, 'rb').read()
         ct = mimetypes.guess_type(fp)[0] or 'application/octet-stream'
-        if ct.startswith('text/') or ct in ('application/javascript', 'application/json', 'image/svg+xml', 'application/xml', 'application/manifest+json'):
+        _hs = headers_for(p if code == 200 else '/404.html')   # TECH12Z-2026-09-12 : un Content-Type déclaré dans _headers l'emporte, comme sur Netlify
+        if 'Content-Type' in _hs: ct = _hs['Content-Type']
+        if 'charset' not in ct and (ct.startswith('text/') or ct in ('application/javascript', 'application/json', 'image/svg+xml', 'application/xml', 'application/manifest+json')):
             ct += '; charset=utf-8'
         enc = None
         if 'gzip' in self.headers.get('Accept-Encoding', '') and (ct.startswith('text/') or 'javascript' in ct or 'svg' in ct or 'json' in ct or 'xml' in ct):
@@ -68,7 +70,7 @@ class H(http.server.BaseHTTPRequestHandler):
         self.send_response(code)
         self.send_header('Content-Type', ct); self.send_header('Content-Length', str(len(data)))
         if enc: self.send_header('Content-Encoding', enc); self.send_header('Vary', 'Accept-Encoding')
-        for k, v in headers_for(p if code == 200 else '/404.html').items():
+        for k, v in _hs.items():
             if k.lower() != 'content-type': self.send_header(k, v)
         self.end_headers(); self.wfile.write(data)
 

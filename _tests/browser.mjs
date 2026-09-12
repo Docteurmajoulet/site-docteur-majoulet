@@ -13,6 +13,7 @@
 // Puis portrait du hero (home) rendu entier, à son ratio, à 1 024, 1 366 et 1 920 px (TECH9Q-2026-09-12) ; à la mesure du texte (TECH10U-2026-09-12) ; visage à hauteur du titre (TECH11W-2026-09-12).
 // Puis focus jamais masqué : Tab et Maj+Tab sur 3 pages à 390 et 1 366 px, rien sous l'en-tête ni la barre fixe (TECH9R-2026-09-12).
 // Puis matrice tactile : iPhone SE 375 × 667 et iPhone en paysage 844 × 390, toutes les pages (TECH11X-2026-09-12).
+// Puis anticipation du clic : règles chargées, survol → prefetch, clic servi par le préchargement (TECH12Z-2026-09-12).
 // Puis police variable : une requête, une FontFace 300-700, axe wght effectif, 3 pages à 1 366 px (TECH12Y-2026-09-12).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
@@ -465,6 +466,34 @@ try {
       await page.close();
     }
     await ctx.close();
+  }
+  // TECH12Z-2026-09-12 — anticipation du clic : à 1 366 px sur la home, les règles (/speculationrules.json) sont chargées ;
+  // le survol du premier lien interne visible déclenche une requête « Sec-Purpose: prefetch » vers lui ; le clic est servi par
+  // ce préchargement (Navigation Timing deliveryType « navigational-prefetch »).
+  {
+    // Pas de ctx.route ici : l'interception des requêtes par Playwright annule les préchargements spéculatifs de Chromium.
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'fr-FR' });
+    const page = await ctx.newPage();
+    const prefetched = [];
+    page.on('request', r => { if ((r.headers()['sec-purpose'] || '').includes('prefetch')) prefetched.push(new URL(r.url()).pathname); });
+    try {
+      await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+      const rulesLoaded = await page.evaluate(() => performance.getEntriesByType('resource').some(e => new URL(e.name).pathname === '/speculationrules.json'));
+      if (!rulesLoaded) failures.push('index @1366 — anticipation : /speculationrules.json non chargé (en-tête Speculation-Rules absent ou type incorrect)');
+      const link = page.locator('main a[href^="/"]:not([href$=".pdf"]):visible').first();
+      const href = new URL(await link.getAttribute('href'), 'http://127.0.0.1/').pathname;
+      await link.hover();
+      const t0 = Date.now(); while (!prefetched.includes(href) && Date.now() - t0 < 3000) await page.waitForTimeout(100);
+      if (!prefetched.includes(href)) failures.push(`index @1366 — anticipation : aucune requête Sec-Purpose: prefetch vers ${href} après survol (reçues : ${JSON.stringify(prefetched)})`);
+      else {
+        await link.click();
+        await page.waitForLoadState('load');
+        const nav = await page.evaluate(() => { const e = performance.getEntriesByType('navigation')[0]; return { path: location.pathname, delivery: e && e.deliveryType }; });
+        if (nav.path !== href || nav.delivery !== 'navigational-prefetch') failures.push(`index @1366 — anticipation : navigation vers ${nav.path} servie « ${nav.delivery} » (attendu navigational-prefetch vers ${href})`);
+      }
+      loads += 2;
+    } catch (e) { failures.push('index @1366 — anticipation : ' + String(e).slice(0, 160)); }
+    await page.close(); await ctx.close();
   }
 } finally { await browser.close(); stop(); }
 

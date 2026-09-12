@@ -8,7 +8,8 @@ Lancé chaque lundi matin par GitHub Actions (.github/workflows/veille-prod.yml)
   - en-têtes de sécurité de la home (HSTS, CSP identique à _headers, nosniff, X-Frame-Options,
     Referrer-Policy, Permissions-Policy, COOP, CORP) ;
   - redirections : http → https, www → domaine nu, docteur-majoulet.com (avec tiret) → docteurmajoulet.com ;
-  - une URL inexistante répond 404 ; robots.txt, sitemap.xml, security.txt, main.css, nav.js, les polices déclarées dans main.css ;
+  - une URL inexistante répond 404 ; robots.txt, sitemap.xml, security.txt, main.css, nav.js, les polices déclarées dans main.css,
+    speculationrules.json (type application/speculationrules+json ; en-tête Speculation-Rules sur la home) ;
   - certificat TLS valide encore ≥ 14 jours ;
   - fraîcheur : le ?v= de main.css servi en prod = celui du dépôt (sinon : déploiement en retard ou travail non poussé) ;
   - liens externes des 48 pages (DOI, PubMed, hôpitaux, sociétés savantes…) : 404/410 = erreur,
@@ -72,6 +73,7 @@ def main():
         ('permissions-policy', lambda v: bool(v)),
         ('cross-origin-opener-policy', lambda v: bool(v)),
         ('cross-origin-resource-policy', lambda v: bool(v)),
+        ('speculation-rules', lambda v: v.strip() == '"/speculationrules.json"'),   # TECH12Z-2026-09-12
     ]:
         v = h.get(name)
         if v is None: E(f'home : en-tête {name} absent')
@@ -97,7 +99,7 @@ def main():
     fonts = sorted(set(re.findall(r"url\('(/fonts/[^']+\.woff2)'\)", open(_css, encoding='utf-8').read()))) if os.path.exists(_css) else []
     if not fonts: W('main.css : aucune police @font-face trouvée dans le dépôt — polices non contrôlées')
     for path, ctype in (('/robots.txt', 'text/plain'), ('/sitemap.xml', 'xml'), ('/.well-known/security.txt', 'text/plain'),
-                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest')):
+                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/speculationrules.json', 'speculationrules+json')):
         st, hh, _ = fetch(bust(site + path))
         if st != 200: E(f'{path} : statut {st}')
         elif ctype not in hh.get('content-type', ''): W(f'{path} : content-type {hh.get("content-type")}')

@@ -37,6 +37,8 @@
   #   Les blocs <script type="application/ld+json"> ne sont pas exécutés : hors champ de script-src.
   # CSS-2026-08-29 : style-src 'self' — plus aucun attribut style= ni <style> dans les pages (classes utilitaires en fin de main.css).
   Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+  # TECH12Z-2026-09-12 : anticipation du clic — règles de préchargement des pages internes (Chrome/Edge ; ignoré ailleurs)
+  Speculation-Rules: "/speculationrules.json"
 
 # ---------- Cache : assets versionnables (images, fonts) ----------
 /*.png
@@ -94,4 +96,9 @@
 # ---------- Manifeste PWA (IMPRESSION-VEILLE-2026-08-29 : Netlify le servait en application/octet-stream) ----------
 /site.webmanifest
   Content-Type: application/manifest+json; charset=utf-8
+  Cache-Control: public, max-age=3600
+
+# ---------- Speculation Rules (TECH12Z-2026-09-12) : type exigé par Chrome ----------
+/speculationrules.json
+  Content-Type: application/speculationrules+json
   Cache-Control: public, max-age=3600

@@ -436,6 +436,24 @@ def check(root):
     if re.search(r'montserrat-\d{3}(?:-\d)?\.woff2', css_txt): E('main.css : référence à une ancienne police statique montserrat-NNN.woff2')
     _orph = sorted(f for f in os.listdir(os.path.join(root, 'fonts')) if '/fonts/' + f not in _urls) if os.path.isdir(os.path.join(root, 'fonts')) else []
     if _orph: E('fonts/ : fichier(s) non déclaré(s) dans main.css, à retirer : ' + ', '.join(_orph))
+    # ---- TECH12Z-2026-09-12 : anticipation du clic — speculationrules.json (une règle prefetch « moderate » sur les liens du
+    # document, jamais de prerender), en-tête Speculation-Rules dans le bloc /* de _headers, Content-Type du fichier, et aucun
+    # <script type="speculationrules"> inline (il changerait le hash CSP)
+    _sr = os.path.join(root, 'speculationrules.json')
+    if not os.path.exists(_sr): E('speculationrules.json absent (anticipation du clic)')
+    else:
+        try:
+            _r = json.load(open(_sr, encoding='utf-8'))
+            if set(_r) != {'prefetch'} or len(_r['prefetch']) != 1: E('speculationrules.json : attendu une seule clé « prefetch » avec une seule règle (jamais de prerender)')
+            else:
+                _p = _r['prefetch'][0]
+                if _p.get('source') != 'document' or _p.get('eagerness') != 'moderate' or 'where' not in _p: E('speculationrules.json : la règle doit être source « document », eagerness « moderate », avec une clause « where »')
+        except ValueError as ex: E(f'speculationrules.json : JSON invalide ({ex})')
+    _blk = re.search(r'^/\*\n((?:(?:[ \t]+[^\n]*)?\n)+)', headers, re.M)   # le bloc /* : lignes indentées ou vides, jusqu'à la prochaine ligne non indentée
+    if not _blk or not re.search(r'^[ \t]+Speculation-Rules: "/speculationrules\.json"[ \t]*$', _blk.group(1), re.M): E('_headers : en-tête Speculation-Rules: "/speculationrules.json" absent du bloc /*')
+    if not re.search(r'^/speculationrules\.json\n(?:[ \t]+.*\n)*?[ \t]+Content-Type: application/speculationrules\+json[ \t]*$', headers, re.M): E('_headers : Content-Type application/speculationrules+json manquant pour /speculationrules.json')
+    for name, pg in pages.items():
+        if 'speculationrules' in pg.txt: E(f'{name} : « speculationrules » dans la page (les règles passent par l\'en-tête HTTP, jamais par un script inline)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

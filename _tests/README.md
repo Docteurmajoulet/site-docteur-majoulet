@@ -42,6 +42,11 @@ Depuis le tour 12 (TECH12Y-2026-09-12), Montserrat est une seule police variable
 référence aux anciens fichiers statiques ni fichier orphelin dans `fonts/` ; `browser.mjs` vérifie à l'usage une seule requête de police,
 une FontFace « 300 700 » chargée et l'axe wght effectif (largeurs croissantes de 300 à 700).
 
+Depuis le tour 12 (TECH12Z-2026-09-12), les pages internes sont préchargées au survol (en-tête `Speculation-Rules` → `/speculationrules.json`,
+prefetch « moderate », Chrome/Edge) : `check_static.py` vérifie le JSON, l'en-tête et le Content-Type dans `_headers`, l'absence de script
+inline ; `browser.mjs` vérifie à 1 366 px que les règles se chargent, qu'un survol déclenche une requête `Sec-Purpose: prefetch` et que le
+clic est servi par ce préchargement ; `prod_check.py` contrôle l'en-tête sur la home et le fichier en production.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
