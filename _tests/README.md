@@ -78,6 +78,9 @@ Depuis le tour 15 (TECH15AH-2026-09-14), le nœud Physician porte les horaires d
 ici si la fiche change), hasMap et l'identifiant GooglePlaceID de sa fiche, identiques sur toutes les pages ; le MedicalClinic garde les horaires
 d'ouverture du cabinet, sans le place_id du praticien : `check_static.py` vérifie les deux.
 
+Depuis le tour 15 (TECH15AI-2026-09-14), tout nœud JSON-LD portant l'@id du cabinet (worksFor, about, occupationLocation…) doit reprendre
+les name / url / telephone / address du nœud MedicalClinic de la home : `check_static.py` le vérifie sur toutes les pages.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

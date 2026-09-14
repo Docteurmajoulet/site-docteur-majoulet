@@ -589,6 +589,29 @@ def check(root):
                     elif isinstance(x, list):
                         for _v in x: _w(_v)
                 _w(_d)
+    # ---- TECH15AI-2026-09-14 : tout nœud portant l'@id …/#cabinet (worksFor, about, occupationLocation…) dit la même chose que le
+    # nœud MedicalClinic complet de la home pour name / url / telephone / address quand il les déclare (sinon Google : « champ en double »)
+    _cab = None
+    for _s in pages['index.html'].scripts:
+        if _s['attrs'].get('type') == 'application/ld+json':
+            try: _d = json.loads(_s['text'])
+            except Exception: continue
+            if isinstance(_d, dict) and _d.get('@type') == 'MedicalClinic' and _d.get('@id') == DOMAIN + '/#cabinet' and 'openingHoursSpecification' in _d: _cab = _d
+    if _cab:
+        for name, pg in pages.items():
+            for _s in pg.scripts:
+                if _s['attrs'].get('type') != 'application/ld+json': continue
+                try: _d = json.loads(_s['text'])
+                except Exception: continue
+                def _w(x):
+                    if isinstance(x, dict):
+                        if x.get('@id') == DOMAIN + '/#cabinet':
+                            for _k in ('name', 'url', 'telephone', 'address'):
+                                if _k in x and x[_k] != _cab.get(_k): E(f'{name} : nœud …/#cabinet — « {_k} » différent du nœud MedicalClinic de la home (Google : champ en double)'); break
+                        for _v in x.values(): _w(_v)
+                    elif isinstance(x, list):
+                        for _v in x: _w(_v)
+                _w(_d)
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
