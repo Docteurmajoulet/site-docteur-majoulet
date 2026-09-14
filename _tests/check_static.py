@@ -418,6 +418,11 @@ def check(root):
     _rt = re.search(r'@media \(prefers-reduced-transparency: reduce\)\s*\{(.*?)\n\}', css_txt, re.S)
     if not _rt or 'header.site-header' not in _rt.group(1) or '.sticky-rdv' not in _rt.group(1) or 'backdrop-filter: none' not in _rt.group(1):
         E('main.css : bloc prefers-reduced-transparency incomplet (en-tête et barre fixe opaques, sans backdrop-filter)')
+    # ---- TECH15AF-2026-09-14 : sous 48 em, le titre des fiches suit l'écran (24 px à 320, 35 px dès 768) ; paragraphes de l'alerte du hub ≤ 62ch
+    if 'header.page-header h1 {\n        font-size: clamp(1.5rem, 1rem + 2.5vw, 2.2rem);\n    }' not in css_txt:
+        E('main.css : règle mobile « header.page-header h1 { font-size: clamp(1.5rem, 1rem + 2.5vw, 2.2rem) } » absente (titres de 29 px sur 6 lignes à 320 px)')
+    if 'body.page-pathologies .hub-alert p {\n    max-width: 62ch;\n}' not in css_txt:
+        E('main.css : règle « body.page-pathologies .hub-alert p { max-width: 62ch } » absente (139 caractères par ligne à 1 366 px)')
     # ---- TECH12Y-2026-09-12 : une seule police Montserrat, variable (300-700), présente, préchargée une fois par page ; aucune
     # référence aux anciens fichiers statiques ; aucun fichier orphelin dans fonts/ (prod_check.py contrôle les polices de main.css)
     _faces = re.findall(r"@font-face \{ font-family: 'Montserrat'; [^}]*\}", css_txt)

@@ -132,6 +132,21 @@ try {
           const act = await page.evaluate(() => document.activeElement && document.activeElement.tagName);
           if (act !== 'MAIN') problems.push(`lien d'évitement : le focus est sur ${act} au lieu de MAIN`);
         }
+        // TECH15AF-2026-09-14 : le titre des fiches (header.page-header h1) reste à l'échelle du téléphone — au plus 25 px à 320 px
+        // et 27 px à 390 px (clamp(1.5rem, 1rem + 2.5vw, 2.2rem) = 24 / 25,75 px), au plus 5 lignes (/grille-amsler faisait 6 lignes
+        // de 29 px à 320 px) ; à 1 366 px, aucun paragraphe de l'alerte du hub /pathologies au-delà de 44 em (62ch = 42,6 em à 16 px, ≈ 80 caractères).
+        if (w === 320 || w === 390) {
+          const h1 = await page.evaluate(() => { const h = document.querySelector('header.page-header h1'); if (!h) return null; const cs = getComputedStyle(h); const r = h.getBoundingClientRect(); return { fs: parseFloat(cs.fontSize), lines: Math.round(r.height / parseFloat(cs.lineHeight)) }; });
+          if (h1) {
+            const max = w === 320 ? 25 : 27;
+            if (h1.fs > max) problems.push(`titre de page : ${h1.fs} px à ${w} px (attendu ≤ ${max})`);
+            if (h1.lines > 5) problems.push(`titre de page : ${h1.lines} lignes à ${w} px (attendu ≤ 5)`);
+          }
+        }
+        if (w >= 1024 && slug === 'pathologies') {
+          const wide = await page.evaluate(() => Array.from(document.querySelectorAll('.hub-alert p')).map(p => p.getBoundingClientRect().width / parseFloat(getComputedStyle(p).fontSize)).filter(em => em > 44).map(em => em.toFixed(1) + ' em'));
+          for (const x of wide) problems.push('alerte du hub : paragraphe trop large — ' + x);
+        }
         const cspv = await page.evaluate(() => window.__cspv);
         for (const v of cspv) problems.push('CSP : ' + v);
         if (AXE_WIDTHS.includes(w)) {

@@ -3417,7 +3417,7 @@ header.page-header {
         padding: 52px 0 52px;
     }
 header.page-header h1 {
-        font-size: clamp(1.7rem, 1.35rem + 2.4vw, 2.2rem);
+        font-size: clamp(1.5rem, 1rem + 2.5vw, 2.2rem);
     }
 article.pathology-content h2 {
         margin-top: 48px;
@@ -5505,6 +5505,9 @@ body.page-pathologies .hub-alert-title {
     margin: 0 0 12px;
     padding: 0;
     line-height: 1.35;
+}
+body.page-pathologies .hub-alert p {
+    max-width: 62ch;
 }
 /* --- Sommaire : trois pilules identiques, cibles 44 px --- */
 body.page-pathologies .hub-nav {

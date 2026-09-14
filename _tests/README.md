@@ -66,6 +66,10 @@ H1, URL canonique, description, date de relecture, puis le contenu de `<main>` e
 refuse un fichier qui ne correspond plus aux pages ; tout lot qui modifie le texte d'une page relance `python3 _tests/llms_full.py --write`
 (comme `faq_jsonld.py` et `llms_pages.py`) ; `prod_check.py` contrôle `/llms-full.txt` en production.
 
+Depuis le tour 15 (TECH15AF-2026-09-14), le titre des fiches suit la largeur du téléphone (24 px à 320 px, 35 px dès 768 px) et les
+paragraphes de l'alerte du hub sont limités à 62ch : `check_static.py` exige les deux règles dans `main.css`, `browser.mjs` mesure le titre
+(≤ 25 px et ≤ 5 lignes à 320 px, ≤ 27 px à 390 px) et l'alerte (≤ 44 em à 1 366 px).
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
