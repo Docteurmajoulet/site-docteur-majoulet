@@ -465,6 +465,39 @@ def check(root):
         for _u in re.findall(r'(?<![(<])https?://(?:www\.)?(?:docteurmajoulet\.com|doctolib\.fr)[^\s)>]*', _lt): E(f'llms.txt : URL nue « {_u} » (écrire un lien Markdown [texte](url))'); break
         for _e in llms_pages.diverges(_lt, root): E(_e + ' (python3 _tests/llms_pages.py --write)')
         if not re.search(r'^Dernière mise à jour : \d{4}-\d{2}-\d{2}$', _lt, re.M): E('llms.txt : ligne « Dernière mise à jour : AAAA-MM-JJ » absente')
+    # ---- TECH13AB-2026-09-12 : nœud Physician complet et identique sur chaque page (Google lit chaque page seule : sans
+    # telephone / address / image, la fiche n'est pas éligible au résultat enrichi « établissement ») ; aucun « about » en chaîne JSON
+    _ref = None
+    for _s in pages['index.html'].scripts:
+        if _s['attrs'].get('type') == 'application/ld+json':
+            try: _d = json.loads(_s['text'])
+            except Exception: continue
+            if isinstance(_d, dict) and _d.get('@id') == DOMAIN + '/#physician' and 'telephone' in _d: _ref = _d
+    if not _ref: E('index.html : nœud Physician complet (telephone) introuvable')
+    else:
+        if _ref.get('priceRange') != 'Secteur 2': E('index.html : nœud Physician sans priceRange « Secteur 2 »')
+        for name, pg in pages.items():
+            if name in ('404.html', 'mentions-legales.html', 'confidentialite.html'): continue
+            _nodes, _found = [], 0
+            for _s in pg.scripts:
+                if _s['attrs'].get('type') != 'application/ld+json': continue
+                try: _d = json.loads(_s['text'])
+                except Exception: continue
+                def _w(x):
+                    if isinstance(x, dict):
+                        if x.get('@id') == DOMAIN + '/#physician' and '@type' in x: _nodes.append(x)
+                        for _k, _v in x.items():
+                            if _k == 'about' and isinstance(_v, str) and _v.lstrip().startswith('{'): E(f'{name} : JSON-LD « about » est une chaîne contenant du JSON (écrire un objet)')
+                            _w(_v)
+                    elif isinstance(x, list):
+                        for _v in x: _w(_v)
+                _w(_d)
+            if name != 'index.html' and not _nodes: E(f'{name} : aucun nœud Physician {DOMAIN}/#physician')
+            for _nd in _nodes:
+                if name == 'index.html' and 'telephone' not in _nd: continue
+                for _k in ('telephone', 'address', 'image', 'url', 'jobTitle', 'honorificPrefix', 'medicalSpecialty'):
+                    if _nd.get(_k) != _ref.get(_k): E(f'{name} : nœud Physician — « {_k} » absent ou différent du nœud de la home'); break
+                if _nd.get('priceRange') != 'Secteur 2' or _nd.get('@type') != ['Physician', 'Person']: E(f'{name} : nœud Physician — priceRange « Secteur 2 » et @type ["Physician", "Person"] attendus')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

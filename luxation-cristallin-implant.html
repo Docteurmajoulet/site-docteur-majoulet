@@ -51,14 +51,52 @@
  "dateModified": "2026-08-19",
  "lastReviewed": "2026-08-19",
  "reviewedBy": {
-  "@type": "Physician",
-  "@id": "https://docteurmajoulet.com/#physician",
-  "name": "Dr Alexandre Majoulet",
-  "identifier": {
-   "@type": "PropertyValue",
-   "propertyID": "RPPS",
-   "value": "10101500121"
-  }
+     "@type": [
+         "Physician",
+         "Person"
+     ],
+     "@id": "https://docteurmajoulet.com/#physician",
+     "name": "Dr Alexandre Majoulet",
+     "honorificPrefix": "Dr",
+     "jobTitle": "Chirurgien Ophtalmologue — Rétinologue",
+     "image": "https://docteurmajoulet.com/photo.jpg",
+     "url": "https://docteurmajoulet.com",
+     "telephone": "+33184191166",
+     "address": {
+         "@type": "PostalAddress",
+         "streetAddress": "37 Rue d’Aguesseau",
+         "addressLocality": "Boulogne-Billancourt",
+         "postalCode": "92100",
+         "addressRegion": "Île-de-France",
+         "addressCountry": "FR"
+     },
+     "priceRange": "Secteur 2",
+     "medicalSpecialty": {
+         "@type": "MedicalSpecialty",
+         "name": "Ophtalmologie",
+         "sameAs": [
+             "https://fr.wikipedia.org/wiki/Ophtalmologie",
+             "https://www.wikidata.org/wiki/Q161437"
+         ]
+     },
+     "identifier": {
+         "@type": "PropertyValue",
+         "propertyID": "RPPS",
+         "value": "10101500121"
+     },
+     "worksFor": {
+         "@type": "MedicalClinic",
+         "@id": "https://docteurmajoulet.com/#cabinet",
+         "name": "Cabinet Ophtalife",
+         "address": {
+             "@type": "PostalAddress",
+             "streetAddress": "37 Rue d’Aguesseau",
+             "addressLocality": "Boulogne-Billancourt",
+             "postalCode": "92100",
+             "addressCountry": "FR"
+         },
+         "url": "https://www.ophtalife.fr"
+     }
  },
  "audience": {
   "@type": "PeopleAudience",

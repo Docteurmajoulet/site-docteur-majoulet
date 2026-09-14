@@ -58,6 +58,9 @@ par page : H1, URL canonique, meta description, groupés comme le menu ; `--writ
 retire ou renomme une page) ; `check_static.py` vérifie le format llmstxt.org (H1, citation, liens Markdown, aucune URL nue) et que
 le bloc correspond aux pages du dépôt.
 
+Depuis le tour 13 (TECH13AB-2026-09-12), chaque page porte un nœud Physician complet (telephone, address, image, url, priceRange…)
+identique à celui de la home : `check_static.py` compare les deux et refuse un « about » écrit en chaîne JSON.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
