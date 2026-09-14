@@ -5,7 +5,7 @@ Le fichier est GÉNÉRÉ depuis les pages HTML du dépôt : rien n'y est écrit 
 publiée (validée), dans l'ordre de la carte du site (GROUPES de _tests/llms_pages.py). Par page : titre (H1), URL
 canonique, description (meta), date de relecture (JSON-LD lastReviewed / dateModified), puis le contenu de <main> converti
 en Markdown — titres, paragraphes, listes, tableaux, questions-réponses, liens en absolu — sans le chrome (fil d'Ariane,
-sommaire, boutons de rendez-vous, pages liées, carte). L'en-tête (identité, coordonnées, horaires) vient du JSON-LD de la home.
+sommaire, boutons de rendez-vous, pages liées, carte). L'en-tête (identité, coordonnées, horaires) vient du JSON-LD de la home (llms_pages.identity, partagé avec llms.txt).
 
     python3 _tests/llms_full.py            # contrôle : llms-full.txt correspond-il aux pages ? (code 1 sinon)
     python3 _tests/llms_full.py --write    # régénère llms-full.txt et sa date — à lancer par tout lot qui modifie le texte d'une page
@@ -13,7 +13,7 @@ sommaire, boutons de rendez-vous, pages liées, carte). L'en-tête (identité, c
 Utilisable comme module (check_static.py s'en sert) : generated(root), diverges(txt, root).
 Format de référence : https://llmstxt.org/ (« llms-full.txt » = version longue de llms.txt).
 """
-import datetime, json, os, re, sys
+import datetime, os, re, sys
 from html.parser import HTMLParser
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -28,6 +28,19 @@ SKIP_CLASSES = {'breadcrumb-mini', 'toc', 'cta-block', 'cta-actions', 'cta-alt',
                 'drawer-actions', 'placeholder-block', 'hero-chips', 'pub-links', 'external-links', 'specialty-icon', 'usp-check'}
 BLOCK = {'p', 'div', 'section', 'article', 'header', 'footer', 'aside', 'main', 'nav', 'ul', 'ol', 'li', 'table', 'thead', 'tbody', 'tr',
          'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'blockquote', 'dl', 'dt', 'dd', 'figure', 'figcaption', 'details', 'summary', 'address', 'hr'}
+
+
+def fix_strong(line):
+    """Les espaces au bord d'un passage en gras sortent des marqueurs (« ** texte**  » → « **texte** »), sinon le Markdown ne le lit pas."""
+    parts = line.split('**')
+    if len(parts) % 2 == 0: return line                    # marqueurs dépareillés : on ne touche pas
+    for i in range(1, len(parts), 2):
+        seg = parts[i]
+        if seg != seg.strip():
+            parts[i - 1] += seg[:len(seg) - len(seg.lstrip())]
+            parts[i + 1] = seg[len(seg.rstrip()):] + parts[i + 1]
+            parts[i] = seg.strip()
+    return re.sub(r'  +', ' ', '**'.join(parts)).lstrip()
 
 
 class ToMarkdown(HTMLParser):
@@ -141,6 +154,7 @@ class ToMarkdown(HTMLParser):
             l = l.replace('\x00LI', '').replace('\x00BQ', '> ')
             if l.startswith('\x00DT'): l = '**' + l[3:] + ' :**'
             l = re.sub(r'\*\*\s*\*\*', '', l)          # gras vide
+            l = fix_strong(l)                            # TECH16AK-2026-09-14 : « ** texte**  » → « **texte** »
             l = re.sub(r' +([,.)])', r'\1', l) if not l.startswith('|') else l
             l = l.replace('( ', '(').replace(' )', ')')
             l = re.sub(r'\s+$', '', l)
@@ -171,43 +185,7 @@ def page_meta(root, slug):
     return max(dates) if dates else ''
 
 
-def identity(root):
-    """Bloc identité/coordonnées depuis le JSON-LD de la home (nœud MedicalClinic complet + nœud Physician)."""
-    s = open(os.path.join(root, 'index.html'), encoding='utf-8').read()
-    clinic = phys = None
-    for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', s, re.S):
-        d = json.loads(m.group(1))
-        items = d.get('@graph', [d]) if isinstance(d, dict) else d
-        for it in items:
-            t = it.get('@type'); t = t if isinstance(t, list) else [t]
-            if 'MedicalClinic' in t and 'openingHoursSpecification' in it: clinic = it
-            if 'Physician' in t and 'telephone' in it: phys = it
-    if not (clinic and phys): raise ValueError('index.html : nœuds MedicalClinic (horaires) ou Physician (telephone) introuvables')
-    jours = {'Monday': 'lundi', 'Tuesday': 'mardi', 'Wednesday': 'mercredi', 'Thursday': 'jeudi', 'Friday': 'vendredi', 'Saturday': 'samedi', 'Sunday': 'dimanche'}
-    def horaires(spec):
-        return ' ; '.join(', '.join(jours[j] for j in o['dayOfWeek']) + ' ' + o['opens'].replace(':', ' h ').rstrip(' 0').rstrip(' h') + ' h – ' + o['closes'].replace(':', ' h ').rstrip(' 0').rstrip(' h') + ' h'
-                          for o in spec)
-    hor = horaires(clinic['openingHoursSpecification'])
-    # les horaires propres du praticien (ceux de sa fiche Google) sont sur le nœud Physician quand le site les déclare (TECH15AH)
-    hor_phys = horaires(phys['openingHoursSpecification']) if phys.get('openingHoursSpecification') else ''
-    ad = clinic['address']
-    rpps = ''
-    idf = phys.get('identifier'); idf = idf if isinstance(idf, list) else [idf]
-    for i in idf:
-        if isinstance(i, dict) and i.get('propertyID') == 'RPPS': rpps = i.get('value', '')
-    tel = phys['telephone']
-    tel_fr = '0' + tel[3:] if tel.startswith('+33') else tel
-    tel_fr = ' '.join([tel_fr[:2]] + [tel_fr[i:i + 2] for i in range(2, len(tel_fr), 2)])
-    nom = phys['name'] if phys['name'].startswith(phys.get('honorificPrefix', '\x00')) else (phys.get('honorificPrefix', '') + ' ' + phys['name']).strip()
-    return (f"- **Praticien** : {nom} — {phys.get('jobTitle', '')}\n"
-            f"- **RPPS** : {rpps}\n"
-            f"- **Cabinet** : {clinic['name']} — {ad['streetAddress']}, {ad['postalCode']} {ad['addressLocality']}\n"
-            f"- **Téléphone** : {tel_fr}\n"
-            f"- **Conventionnement** : {clinic.get('priceRange', '')}\n"
-            f"- **Horaires du cabinet** : {hor}\n"
-            + (f"- **Jours de consultation — {nom}** (fiche Google) : {hor_phys}\n" if hor_phys else '') +
-            f"- **Prise de rendez-vous** : [Doctolib]({next(u for u in clinic.get('sameAs', []) if 'doctolib' in u)})\n"
-            f"- **Site officiel** : [docteurmajoulet.com]({SITE}/)\n")
+identity = llms_pages.identity   # TECH16AK-2026-09-14 : bloc identité/coordonnées partagé avec llms.txt (déplacé dans llms_pages.py)
 
 
 def generated(root=ROOT, date=None):

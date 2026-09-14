@@ -54,9 +54,12 @@ inline ; `browser.mjs` vérifie à 1 366 px que les règles se chargent, qu'un s
 clic est servi par ce préchargement ; `prod_check.py` contrôle l'en-tête sur la home et le fichier en production.
 
 Depuis le tour 12 (TECH12AA-2026-09-12), la carte du site dans `llms.txt` est générée par `_tests/llms_pages.py` (un lien Markdown
-par page : H1, URL canonique, meta description, groupés comme le menu ; `--write` pour régénérer, à lancer par tout lot qui ajoute,
-retire ou renomme une page) ; `check_static.py` vérifie le format llmstxt.org (H1, citation, liens Markdown, aucune URL nue) et que
-le bloc correspond aux pages du dépôt.
+par page : H1, URL canonique, meta description, groupés comme le menu) ; `check_static.py` vérifie le format llmstxt.org (H1, citation,
+liens Markdown, aucune URL nue). Depuis le tour 16 (TECH16AK-2026-09-14), `llms.txt` est généré EN ENTIER : identité, coordonnées,
+horaires, fonctions et lieux, formation, sociétés, domaines d'expertise, actes et fiches officielles viennent du JSON-LD de la home
+(nœuds Physician et MedicalClinic), les publications de la page /publications, la carte des pages du dépôt — plus aucune phrase rédigée
+à part. `python3 _tests/llms_pages.py --write` est à relancer par tout lot qui ajoute, retire ou renomme une page, change un H1 ou une
+description, le JSON-LD de la home ou la page /publications ; `check_static.py` refuse un fichier qui ne correspond plus au dépôt.
 
 Depuis le tour 13 (TECH13AB-2026-09-12), chaque page porte un nœud Physician complet (telephone, address, image, url, priceRange…)
 identique à celui de la home : `check_static.py` compare les deux et refuse un « about » écrit en chaîne JSON.

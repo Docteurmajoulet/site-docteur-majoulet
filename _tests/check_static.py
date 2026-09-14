@@ -460,7 +460,9 @@ def check(root):
     for name, pg in pages.items():
         if 'speculationrules' in pg.txt: E(f'{name} : « speculationrules » dans la page (les règles passent par l\'en-tête HTTP, jamais par un script inline)')
     # ---- TECH12AA-2026-09-12 : llms.txt au format llmstxt.org — H1 en première ligne, résumé en citation, liens Markdown (aucune
-    # URL nue du site ni de Doctolib), carte des pages générée par _tests/llms_pages.py (toutes les pages, aucune en trop), date
+    # URL nue du site ni de Doctolib), carte des pages générée par _tests/llms_pages.py (toutes les pages, aucune en trop), date.
+    # TECH16AK-2026-09-14 : le fichier ENTIER est généré (JSON-LD de la home, page /publications, pages) — tout lot qui change le
+    # JSON-LD de la home, /publications, un H1, une description ou la liste des pages relance llms_pages.py --write
     if not exists('llms.txt'): E('llms.txt absent')
     else:
         _lt = open(os.path.join(root, 'llms.txt'), encoding='utf-8').read()

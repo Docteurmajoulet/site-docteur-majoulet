@@ -10,9 +10,11 @@ Dernière mise à jour : 2026-09-14
 - **RPPS** : 10101500121
 - **Cabinet** : Cabinet Ophtalife — Dr Alexandre Majoulet — 37 Rue d’Aguesseau, 92100 Boulogne-Billancourt
 - **Téléphone** : 01 84 19 11 66
+- **Email** : secretariat@ophtalife.com
 - **Conventionnement** : Secteur 2
 - **Horaires du cabinet** : lundi, mercredi, jeudi 09 h – 20 h ; mardi, vendredi, samedi 09 h – 18 h
 - **Jours de consultation — Dr Alexandre Majoulet** (fiche Google) : mardi, jeudi, vendredi, samedi 09 h – 18 h ; mercredi 09 h – 20 h
+- **Langues** : français, anglais
 - **Prise de rendez-vous** : [Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
 - **Site officiel** : [docteurmajoulet.com](https://docteurmajoulet.com/)
 
@@ -1182,7 +1184,7 @@ En cas de **forme humide de DMLA nouvellement diagnostiquée** ou de récidive a
 - Pas de piscine pendant 48 h, éviter le frottement.
 - La vision peut rester floue quelques heures.
 
-** Signes d’alerte après une IVT — consultation en urgence :** douleur oculaire **intense et croissante**, **baisse visuelle significative** (au-delà du flou des premières heures), **œil très rouge**, photophobie marquée. Ces signes peuvent évoquer une **endophtalmie**, rare mais grave, qui nécessite une prise en charge immédiate. Consultez au cabinet ; le dimanche, rendez-vous aux urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou [Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/), [01 40 02 15 20](tel:+33140021520)).
+**Signes d’alerte après une IVT — consultation en urgence :** douleur oculaire **intense et croissante**, **baisse visuelle significative** (au-delà du flou des premières heures), **œil très rouge**, photophobie marquée. Ces signes peuvent évoquer une **endophtalmie**, rare mais grave, qui nécessite une prise en charge immédiate. Consultez au cabinet ; le dimanche, rendez-vous aux urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou [Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/), [01 40 02 15 20](tel:+33140021520)).
 
 #### Les protocoles de suivi
 
@@ -4615,7 +4617,7 @@ Neuropathie glaucomateuse caractéristique avec pression intraoculaire mesurée 
 
 L’angle irido-cornéen est trop étroit ou obstrué : l’humeur aqueuse ne peut plus s’évacuer. Terrain fréquent : **hypermétrope, femme, âge > 50 ans, asiatique**. Peut être chronique, subaigu, ou se manifester par une **crise aiguë de fermeture de l’angle — urgence ophtalmologique absolue**.
 
-** Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 15 20](tel:+33140021520)).
+**Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 15 20](tel:+33140021520)).
 
 ##### Glaucomes secondaires
 
