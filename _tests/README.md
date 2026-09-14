@@ -15,10 +15,16 @@ Pour tout le reste (navigateur, Lighthouse, captures), une fois : `cd _tests && 
     cd _tests
     npm test                 # statique + navigateur + Lighthouse (≈ 6 min)
     npm run test:browser     # 48 pages × 320/390/768/1366 : console, CSP, débordements, axe (≈ 4 min)
+    npm run test:navigation  # interactions du menu : souris, clavier, tiroir et changement de format
     npm run test:lh          # Lighthouse mobile sur 4 pages clés, rapports dans _tests/reports/
     npm run serve            # le site sur http://127.0.0.1:8765/ avec les en-têtes de production (CSP incluse)
 
 ## Ce qui est vérifié
+
+**navigation.mjs** — scénarios d’interaction sous la CSP du site : survol puis clic, fermeture au départ de la souris,
+maintien du panneau tant qu’un lien garde le focus clavier, Échap et boucle Tab du tiroir, passage ordinateur/mobile,
+changement de police système sans redimensionnement, retour de Doctolib avec un focus visible. Les services externes
+sont bloqués. Ces contrôles font partie de `npm test` et du workflow GitHub.
 
 **check_static.py** (quelques secondes, aucune dépendance) — pages ↔ sitemap (noindex exclus), robots,
 manifest et favicons ; par page : lang, charset, viewport, title unique, meta description, canonical = URL

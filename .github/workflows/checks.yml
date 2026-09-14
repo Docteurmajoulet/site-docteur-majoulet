@@ -37,6 +37,8 @@ jobs:
           cache-dependency-path: _tests/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      - name: Navigation (clavier, souris, tiroir et changement de format)
+        run: node navigation.mjs
       - name: Tests navigateur (48 pages × 4 largeurs)
         run: node browser.mjs
       - name: Lighthouse mobile (4 pages clés)

@@ -5,8 +5,9 @@
   "description": "Contrôles automatiques du site docteurmajoulet.com (statiques, navigateur, Lighthouse, captures).",
   "type": "module",
   "scripts": {
-    "test": "npm run test:static && npm run test:browser && npm run test:lh",
+    "test": "npm run test:static && npm run test:navigation && npm run test:browser && npm run test:lh",
     "test:static": "python3 check_static.py",
+    "test:navigation": "node navigation.mjs",
     "test:browser": "node browser.mjs",
     "test:lh": "node lighthouse.mjs",
     "serve": "python3 serve.py 8765",

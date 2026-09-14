@@ -1,4 +1,12 @@
-/* nav.js — docteurmajoulet.com — TECH7K-2026-09-07 (v8)
+/* nav.js — docteurmajoulet.com — TECH14AD-2026-09-14 (v9)
+   v9 : état des sous-menus centralisé (délais de fermeture annulés à chaque bascule),
+   focus clavier préservé au survol, au changement de format et au retour de Doctolib.
+   Relecture du 14/09 (tour 14, lot AD) : (1) à la souris, quitter le panneau le referme
+   même après un clic sur le bouton (un clic focalise le bouton dans Chrome et Firefox :
+   le panneau restait ouvert jusqu'au clic suivant) — seul un focus clavier (:focus-visible)
+   le garde ouvert ; (2) au changement de format, le focus à replacer est mémorisé au fil des
+   focusin : le navigateur peut avoir déjà retiré le focus du menu masqué quand la bascule
+   est détectée (activeElement = body → le focus était perdu une fois sur quatre).
    v8 : bascule bureau/mobile par matchMedia en em (suit la police système agrandie).
    v7 : état « Chargement de la carte… » pendant le chargement de l'iframe Google ;
    .table-scroll focalisable seulement quand le tableau déborde réellement.
@@ -23,67 +31,86 @@
    barre RDV fixe masquée tant que le bouton RDV du hero est visible. */
 (function () {
     'use strict';
-    var MOBILE_BP = 1024;
     var body = document.body;
-    var html = document.documentElement;
-    var items = Array.prototype.slice.call(document.querySelectorAll('.nav-item[data-megamenu]'));
+    var desktopMedia = window.matchMedia('(min-width: 64.0625em)');
+    var wasDesktop = desktopMedia.matches;
+    var menus = Array.prototype.map.call(document.querySelectorAll('.nav-item[data-megamenu]'), function (item) {
+        return { item: item, trigger: item.querySelector('.nav-link'), closeTimer: null, hoverOpened: false };
+    });
     var toggle = document.querySelector('.mobile-toggle');
     var overlay = document.querySelector('.menu-overlay');
     var nav = document.querySelector('nav.main-nav');
     var header = document.querySelector('header.site-header');
     var FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
-    function isDesktop() { return window.matchMedia('(min-width: 64.0625em)').matches; }   /* TECH7K-2026-09-07 : = 1025 px à la police par défaut ; suit la police système comme main.css (ex-innerWidth > MOBILE_BP) */
-    function setOpen(item, open) {
-        var t = item.querySelector('.nav-link');
-        if (open) { item.classList.add('is-open'); } else { item.classList.remove('is-open'); }
-        if (t) { t.setAttribute('aria-expanded', open ? 'true' : 'false'); }
+    function isDesktop() { return desktopMedia.matches; } // Même seuil en em que main.css.
+    /* TECH14AD-2026-09-14 : focus clavier dans l'entrée (Tab, Entrée) — un clic de souris focalise aussi le bouton
+       (Chrome, Firefox) mais sans :focus-visible ; navigateur sans :focus-visible → on garde le panneau (prudence). */
+    function keyboardFocusInside(item) {
+        var a = document.activeElement;
+        if (!a || !item.contains(a)) { return false; }
+        try { return a.matches(':focus-visible'); } catch (err) { return true; }
+    }
+    function cancelClose(menu) {
+        clearTimeout(menu.closeTimer);
+        menu.closeTimer = null;
+    }
+    function setOpen(menu, open) {
+        cancelClose(menu);
+        menu.hoverOpened = false;
+        menu.item.classList.toggle('is-open', open);
+        if (menu.trigger) { menu.trigger.setAttribute('aria-expanded', open ? 'true' : 'false'); }
     }
     function closeAll(except) {
-        items.forEach(function (it) { if (it !== except) { setOpen(it, false); } });
+        menus.forEach(function (menu) { if (menu !== except) { setOpen(menu, false); } });
     }
-    function anyOpen() { return items.some(function (it) { return it.classList.contains('is-open'); }); }
+    function anyOpen() { return menus.some(function (menu) { return menu.item.classList.contains('is-open'); }); }
 
-    items.forEach(function (item) {
-        var trigger = item.querySelector('.nav-link');
+    menus.forEach(function (menu) {
+        var item = menu.item;
+        var trigger = menu.trigger;
         if (!trigger) { return; }
-        var tid = null;
-        var hoverOpened = false;
         function hoverPointer(e) { return e.pointerType === 'mouse' || e.pointerType === 'pen'; }
         /* Survol : événements pointer, souris/stylet seulement — un tap émet aussi mouseenter puis mouseleave
            (synthétiques), ce qui ouvrait puis refermait le panneau dans la même frame. Au toucher, seul le clic agit. */
         item.addEventListener('pointerenter', function (e) {
             if (!hoverPointer(e)) { return; }
-            clearTimeout(tid);
+            cancelClose(menu);
             if (isDesktop() && !item.classList.contains('is-open')) {
-                closeAll(item); setOpen(item, true); hoverOpened = true;
+                closeAll(menu); setOpen(menu, true); menu.hoverOpened = true;
             }
         });
         item.addEventListener('pointerleave', function (e) {
             if (!hoverPointer(e)) { return; }
-            hoverOpened = false;
-            if (isDesktop()) { tid = setTimeout(function () { setOpen(item, false); }, 150); }
+            menu.hoverOpened = false;
+            cancelClose(menu);
+            if (isDesktop()) {
+                menu.closeTimer = setTimeout(function () {
+                    // Le pointeur peut sortir alors que le patient parcourt encore les liens au clavier.
+                    if (isDesktop() && !keyboardFocusInside(item)) { setOpen(menu, false); }
+                }, 150);
+            }
         });
+        item.addEventListener('focusin', function () { cancelClose(menu); });
         trigger.addEventListener('click', function (e) {
             e.preventDefault();
-            clearTimeout(tid);
-            if (item.classList.contains('is-open') && hoverOpened) {
+            cancelClose(menu);
+            if (item.classList.contains('is-open') && menu.hoverOpened) {
                 /* Le panneau vient d'être ouvert par le survol : ce clic le confirme au lieu de le refermer ;
                    le clic suivant le ferme. */
-                hoverOpened = false;
+                menu.hoverOpened = false;
                 return;
             }
-            hoverOpened = false;
             var willOpen = !item.classList.contains('is-open');
-            closeAll(item);
-            setOpen(item, willOpen);
+            closeAll(menu);
+            setOpen(menu, willOpen);
         });
         /* Échap sur un panneau desktop : ferme le panneau et rend le focus au bouton.
            Dans le tiroir mobile, Échap ferme tout le tiroir (gestionnaire global). */
         item.addEventListener('keydown', function (e) {
             if (e.key === 'Escape' && isDesktop() && item.classList.contains('is-open')) {
                 e.stopPropagation();
-                setOpen(item, false);
+                setOpen(menu, false);
                 trigger.focus();
             }
         });
@@ -92,14 +119,14 @@
             if (!isDesktop()) { return; }
             var next = e.relatedTarget;
             if (next && item.contains(next)) { return; }
-            setOpen(item, false);
+            setOpen(menu, false);
         });
     });
 
     /* Clic hors du menu (desktop) */
     document.addEventListener('click', function (e) {
         if (!isDesktop()) { return; }
-        items.forEach(function (item) { if (!item.contains(e.target)) { setOpen(item, false); } });
+        menus.forEach(function (menu) { if (!menu.item.contains(e.target)) { setOpen(menu, false); } });
     });
 
     /* ---------- Tiroir mobile ---------- */
@@ -116,16 +143,19 @@
     }
     function drawerFocusables() {
         var list = nav ? Array.prototype.slice.call(nav.querySelectorAll(FOCUSABLE)) : [];
-        list = list.filter(function (el) { return el.offsetParent !== null || el === document.activeElement; });
+        list = list.filter(function (el) {
+            return el.getClientRects().length > 0 && window.getComputedStyle(el).visibility === 'visible';
+        });
         if (toggle) { list.push(toggle); }
         return list;
     }
     function openMenu() {
+        if (isDesktop()) { return; }
         body.classList.add('menu-open');
         if (toggle) { toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Fermer le menu'); }
         inertTargets().forEach(function (el) { el.setAttribute('inert', ''); });
         sizeDrawer();
-        var first = nav ? nav.querySelector(FOCUSABLE) : null;
+        var first = drawerFocusables()[0];
         if (first) { first.focus(); }
     }
     function closeMenu(restoreFocus) {
@@ -167,12 +197,46 @@
     });
 
     Array.prototype.forEach.call(document.querySelectorAll('nav.main-nav a'), function (link) {
-        link.addEventListener('click', function () { if (!isDesktop()) { closeMenu(false); } });
+        link.addEventListener('click', function () {
+            // Un lien vers un nouvel onglet doit laisser le focus sur un contrôle encore visible au retour.
+            if (body.classList.contains('menu-open')) { closeMenu(true); }
+        });
     });
-    window.addEventListener('resize', function () {
-        if (isDesktop() && body.classList.contains('menu-open')) { closeMenu(false); }
-        else { sizeDrawer(); }
+    /* TECH14AD-2026-09-14 : dernier élément du menu focalisé — au changement de format, le navigateur peut avoir déjà
+       retiré le focus du menu devenu masqué avant que la bascule ne soit détectée (activeElement = body). Oublié dès
+       qu'un élément hors du menu reçoit le focus ou que le focus quitte un élément encore affiché (clic ailleurs). */
+    var navFocus = null;
+    function inMenu(el) { return !!el && (el === toggle || (nav && nav.contains(el))); }
+    document.addEventListener('focusin', function (e) { navFocus = inMenu(e.target) ? e.target : null; });
+    document.addEventListener('focusout', function (e) {
+        if (e.relatedTarget) { return; }                                   // focusin qui suit décidera
+        if (e.target === navFocus && e.target.getClientRects().length > 0) { navFocus = null; }   // vrai retrait du focus
     });
+    function updateLayout() {
+        var desktop = isDesktop();
+        if (desktop !== wasDesktop) {
+            var active = document.activeElement;
+            var moveFocus = body.classList.contains('menu-open') || inMenu(active) || navFocus !== null;
+            wasDesktop = desktop;
+            navFocus = null;
+            closeMenu(false);
+            if (moveFocus) {
+                var target = desktop && nav ? nav.querySelector('.nav-list .nav-link') : toggle;
+                if (target) { target.focus(); }
+            }
+        } else { sizeDrawer(); }
+    }
+    // La police système peut franchir le seuil CSS sans événement resize.
+    if (desktopMedia.addEventListener) { desktopMedia.addEventListener('change', updateLayout); }
+    else { desktopMedia.addListener(updateLayout); }
+    window.addEventListener('resize', updateLayout);
+    // Suit aussi l’en-tête et l’apparition du bouton mobile : certains changements de police
+    // modifient le format CSS sans émettre change ni resize, et sans changer la hauteur de l’en-tête.
+    if (header && 'ResizeObserver' in window) {
+        var layoutObserver = new ResizeObserver(updateLayout);
+        layoutObserver.observe(header);
+        if (toggle) { layoutObserver.observe(toggle); }
+    }
 
     /* ---------- TECH4D-2026-09-06 : façade Google Maps (home) — l'iframe n'existe qu'après le clic ---------- */
     var mapFacade = document.getElementById('map-facade');
