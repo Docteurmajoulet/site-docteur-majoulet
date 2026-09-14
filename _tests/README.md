@@ -70,6 +70,10 @@ Depuis le tour 15 (TECH15AF-2026-09-14), le titre des fiches suit la largeur du 
 paragraphes de l'alerte du hub sont limités à 62ch : `check_static.py` exige les deux règles dans `main.css`, `browser.mjs` mesure le titre
 (≤ 25 px et ≤ 5 lignes à 320 px, ≤ 27 px à 390 px) et l'alerte (≤ 44 em à 1 366 px).
 
+Depuis le tour 15 (TECH15AG-2026-09-14), le worksFor du nœud Physician (le cabinet, sur chaque page) est un extrait exact du nœud
+MedicalClinic complet de la home (name, image, url, telephone, priceRange, address) : `check_static.py` compare les deux, clé par clé, et
+exige l'adresse de la Clinique Jouvenet.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

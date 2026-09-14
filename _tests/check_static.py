@@ -524,6 +524,37 @@ def check(root):
         elif _cur:
             _h = re.search(r'href="([^"]*)"', _cur[0])
             if not _h or _h.group(1) != _slug: E(f'{name} : aria-current="page" sur un lien vers « {_h.group(1) if _h else "?"} » (attendu {_slug}, sans ancre)')
+    # ---- TECH15AG-2026-09-14 : le cabinet est une seule fiche pour Google — le worksFor du Physician (seul nœud du cabinet sur les
+    # fiches) porte name, image, url, telephone, priceRange et address identiques au nœud MedicalClinic complet de la home (même @id :
+    # deux valeurs = « champ en double », champ absent = « manquant » au test des résultats enrichis) ; la Clinique Jouvenet est adressée
+    _clinic = None
+    for _s in pages['index.html'].scripts:
+        if _s['attrs'].get('type') == 'application/ld+json':
+            try: _d = json.loads(_s['text'])
+            except Exception: continue
+            if isinstance(_d, dict) and _d.get('@type') == 'MedicalClinic' and _d.get('@id') == DOMAIN + '/#cabinet' and 'openingHoursSpecification' in _d: _clinic = _d
+    if not _clinic: E('index.html : nœud MedicalClinic complet (@id …/#cabinet, horaires) introuvable')
+    else:
+        for name, pg in pages.items():
+            if name in ('404.html', 'mentions-legales.html', 'confidentialite.html'): continue
+            for _s in pg.scripts:
+                if _s['attrs'].get('type') != 'application/ld+json': continue
+                try: _d = json.loads(_s['text'])
+                except Exception: continue
+                def _w(x):
+                    if isinstance(x, dict):
+                        if x.get('@id') == DOMAIN + '/#physician' and 'telephone' in x:
+                            _wf = x.get('worksFor')
+                            if not isinstance(_wf, dict) or _wf.get('@id') != DOMAIN + '/#cabinet': E(f'{name} : nœud Physician — worksFor absent ou sans @id …/#cabinet')
+                            else:
+                                for _k in ('name', 'image', 'url', 'telephone', 'priceRange', 'address'):
+                                    if _wf.get(_k) != _clinic.get(_k): E(f'{name} : worksFor du Physician — « {_k} » absent ou différent du nœud MedicalClinic de la home (une seule fiche cabinet pour Google)'); break
+                        if x.get('@type') == 'Hospital' and x.get('name') == 'Clinique Jouvenet' and not (isinstance(x.get('address'), dict) and x['address'].get('streetAddress')):
+                            E(f'{name} : Hospital « Clinique Jouvenet » sans streetAddress')
+                        for _v in x.values(): _w(_v)
+                    elif isinstance(x, list):
+                        for _v in x: _w(_v)
+                _w(_d)
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
