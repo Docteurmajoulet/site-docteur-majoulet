@@ -74,6 +74,10 @@ Depuis le tour 15 (TECH15AG-2026-09-14), le worksFor du nœud Physician (le cabi
 MedicalClinic complet de la home (name, image, url, telephone, priceRange, address) : `check_static.py` compare les deux, clé par clé, et
 exige l'adresse de la Clinique Jouvenet.
 
+Depuis le tour 15 (TECH15AH-2026-09-14), le nœud Physician porte les horaires du praticien (ceux de sa fiche Google Business, à mettre à jour
+ici si la fiche change), hasMap et l'identifiant GooglePlaceID de sa fiche, identiques sur toutes les pages ; le MedicalClinic garde les horaires
+d'ouverture du cabinet, sans le place_id du praticien : `check_static.py` vérifie les deux.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

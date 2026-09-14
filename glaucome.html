@@ -186,11 +186,18 @@
                     "https://www.wikidata.org/wiki/Q161437"
                 ]
             },
-            "identifier": {
-                "@type": "PropertyValue",
-                "propertyID": "RPPS",
-                "value": "10101500121"
-            },
+            "identifier": [
+                {
+                    "@type": "PropertyValue",
+                    "propertyID": "RPPS",
+                    "value": "10101500121"
+                },
+                {
+                    "@type": "PropertyValue",
+                    "propertyID": "GooglePlaceID",
+                    "value": "ChIJJ2pdc01gamsRjxCY0-gYVWg"
+                }
+            ],
             "worksFor": {
                 "@type": "MedicalClinic",
                 "@id": "https://docteurmajoulet.com/#cabinet",
@@ -207,7 +214,29 @@
                     "addressRegion": "Île-de-France",
                     "addressCountry": "FR"
                 }
-            }
+            },
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Tuesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "18:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Wednesday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "20:00"
+                }
+            ],
+            "hasMap": "https://www.google.com/maps/place/?q=place_id:ChIJJ2pdc01gamsRjxCY0-gYVWg"
         },
         "audience": {"@type": "PeopleAudience", "suggestedMinAge": 40},
         "about": {

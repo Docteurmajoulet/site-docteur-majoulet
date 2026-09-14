@@ -184,8 +184,12 @@ def identity(root):
             if 'Physician' in t and 'telephone' in it: phys = it
     if not (clinic and phys): raise ValueError('index.html : nœuds MedicalClinic (horaires) ou Physician (telephone) introuvables')
     jours = {'Monday': 'lundi', 'Tuesday': 'mardi', 'Wednesday': 'mercredi', 'Thursday': 'jeudi', 'Friday': 'vendredi', 'Saturday': 'samedi', 'Sunday': 'dimanche'}
-    hor = ' ; '.join(', '.join(jours[j] for j in o['dayOfWeek']) + ' ' + o['opens'].replace(':', ' h ').rstrip(' 0').rstrip(' h') + ' h – ' + o['closes'].replace(':', ' h ').rstrip(' 0').rstrip(' h') + ' h'
-                     for o in clinic['openingHoursSpecification'])
+    def horaires(spec):
+        return ' ; '.join(', '.join(jours[j] for j in o['dayOfWeek']) + ' ' + o['opens'].replace(':', ' h ').rstrip(' 0').rstrip(' h') + ' h – ' + o['closes'].replace(':', ' h ').rstrip(' 0').rstrip(' h') + ' h'
+                          for o in spec)
+    hor = horaires(clinic['openingHoursSpecification'])
+    # les horaires propres du praticien (ceux de sa fiche Google) sont sur le nœud Physician quand le site les déclare (TECH15AH)
+    hor_phys = horaires(phys['openingHoursSpecification']) if phys.get('openingHoursSpecification') else ''
     ad = clinic['address']
     rpps = ''
     idf = phys.get('identifier'); idf = idf if isinstance(idf, list) else [idf]
@@ -201,6 +205,7 @@ def identity(root):
             f"- **Téléphone** : {tel_fr}\n"
             f"- **Conventionnement** : {clinic.get('priceRange', '')}\n"
             f"- **Horaires du cabinet** : {hor}\n"
+            + (f"- **Jours de consultation — {nom}** (fiche Google) : {hor_phys}\n" if hor_phys else '') +
             f"- **Prise de rendez-vous** : [Doctolib]({next(u for u in clinic.get('sameAs', []) if 'doctolib' in u)})\n"
             f"- **Site officiel** : [docteurmajoulet.com]({SITE}/)\n")
 

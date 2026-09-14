@@ -555,6 +555,40 @@ def check(root):
                     elif isinstance(x, list):
                         for _v in x: _w(_v)
                 _w(_d)
+    # ---- TECH15AH-2026-09-14 : les horaires du praticien (ceux de sa fiche Google, place_id ChIJJ2pdc01gamsRjxCY0-gYVWg) sont sur le
+    # nœud Physician de chaque page, identiques à la home, avec hasMap et l'identifiant GooglePlaceID de SA fiche ; le MedicalClinic
+    # garde les horaires du cabinet (distincts par nature) et ne porte pas le place_id du praticien
+    _refp = None
+    for _s in pages['index.html'].scripts:
+        if _s['attrs'].get('type') == 'application/ld+json':
+            try: _d = json.loads(_s['text'])
+            except Exception: continue
+            if isinstance(_d, dict) and _d.get('@id') == DOMAIN + '/#physician' and 'telephone' in _d: _refp = _d
+            if isinstance(_d, dict) and _d.get('@type') == 'MedicalClinic' and 'openingHoursSpecification' in _d:
+                if 'place_id:' in json.dumps(_d) or any(isinstance(_i, dict) and _i.get('propertyID') == 'GooglePlaceID' for _i in (_d.get('identifier') if isinstance(_d.get('identifier'), list) else [_d.get('identifier')])):
+                    E('index.html : le MedicalClinic (cabinet) porte le place_id du praticien — la fiche Google est celle du Dr Majoulet, pas du cabinet')
+                if not _d.get('openingHoursSpecification'): E('index.html : MedicalClinic sans horaires du cabinet')
+    if not _refp or not _refp.get('openingHoursSpecification') or 'place_id:' not in str(_refp.get('hasMap', '')):
+        E('index.html : nœud Physician sans openingHoursSpecification (horaires du praticien = fiche Google) ou sans hasMap vers sa fiche')
+    else:
+        _gp = [_i for _i in (_refp.get('identifier') if isinstance(_refp.get('identifier'), list) else [_refp.get('identifier')]) if isinstance(_i, dict) and _i.get('propertyID') == 'GooglePlaceID']
+        if not _gp: E('index.html : nœud Physician sans identifiant GooglePlaceID')
+        for name, pg in pages.items():
+            if name in ('404.html', 'mentions-legales.html', 'confidentialite.html'): continue
+            for _s in pg.scripts:
+                if _s['attrs'].get('type') != 'application/ld+json': continue
+                try: _d = json.loads(_s['text'])
+                except Exception: continue
+                def _w(x):
+                    if isinstance(x, dict):
+                        if x.get('@id') == DOMAIN + '/#physician' and 'telephone' in x:
+                            _idf = x.get('identifier') if isinstance(x.get('identifier'), list) else [x.get('identifier')]
+                            if x.get('openingHoursSpecification') != _refp['openingHoursSpecification'] or x.get('hasMap') != _refp['hasMap'] or not any(_i in _idf for _i in _gp):
+                                E(f'{name} : nœud Physician — horaires du praticien, hasMap ou GooglePlaceID absents ou différents de la home')
+                        for _v in x.values(): _w(_v)
+                    elif isinstance(x, list):
+                        for _v in x: _w(_v)
+                _w(_d)
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
