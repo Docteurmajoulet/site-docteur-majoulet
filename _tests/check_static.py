@@ -17,7 +17,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
   - JSON-LD conforme au vocabulaire schema.org (_tests/schemaorg_vocab.json : @type connus, propriétés dans leur domaine,
     énumérations existantes) ;
   - dates : la date de révision affichée (en <time datetime>) = lastReviewed du JSON-LD, dateModified présent et
-    postérieur ou égal, lastmod du sitemap postérieur ou égal ; nœuds Physician et MedicalClinic avec leur @id ;
+    postérieur ou égal, lastmod du sitemap = dateModified (TECH16AL) ; nœuds Physician et MedicalClinic avec leur @id ;
   - règles éditoriales du Dr Majoulet : « baisse brutale » jamais seul (toujours « … de la vision »),
     jamais « OPTAM », jamais « 24/7 ».
 Sortie : liste des erreurs (code 1) et des avertissements (code 0).
@@ -274,7 +274,9 @@ def check(root):
             if lr and dm and dm < lr: E(f'{name} : dateModified {dm} antérieur à lastReviewed {lr}')
             if lr and vis and vis != lr: E(f'{name} : date affichée {vis} ≠ lastReviewed {lr} (JSON-LD)')
             lm = re.search(r'<loc>\s*' + re.escape(pg.pretty_url()) + r'\s*</loc>\s*<lastmod>([^<]+)</lastmod>', sitemap)
-            if dm and lm and lm.group(1).strip() < dm: E(f'{name} : lastmod du sitemap {lm.group(1).strip()} antérieur à dateModified {dm}')
+            # TECH16AL-2026-09-14 : lastmod = dateModified (une seule date par page ; « postérieur ou égal » depuis le tour 4 laissait
+            # 31 pages avec une date de sitemap sans rapport avec la date affichée)
+            if dm and lm and lm.group(1).strip() != dm: E(f'{name} : lastmod du sitemap {lm.group(1).strip()} ≠ dateModified {dm} (python3 _tests/sitemap_dates.py --write)')
         # --- règles éditoriales
         body = text_only(t)
         for m in re.finditer(r'baisse brutale', body, re.I):

@@ -84,6 +84,10 @@ d'ouverture du cabinet, sans le place_id du praticien : `check_static.py` vérif
 Depuis le tour 15 (TECH15AI-2026-09-14), tout nœud JSON-LD portant l'@id du cabinet (worksFor, about, occupationLocation…) doit reprendre
 les name / url / telephone / address du nœud MedicalClinic de la home : `check_static.py` le vérifie sur toutes les pages.
 
+Depuis le tour 16 (TECH16AL-2026-09-14), le `lastmod` du sitemap est la date de mise à jour de la page (dateModified du JSON-LD, celle
+affichée aux patients) — plus une troisième date tenue à la main : `python3 _tests/sitemap_dates.py --write` réécrit les lastmod, à lancer par
+tout lot qui change la date d'une page ; `check_static.py` exige l'égalité.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
