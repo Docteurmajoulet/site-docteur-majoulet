@@ -1,8 +1,8 @@
 # Dr Alexandre Majoulet — Chirurgien Ophtalmologue & Rétinologue
 
-> Fichier structuré à destination des moteurs génératifs (LLM) : informations fiables et vérifiées sur le Dr Alexandre Majoulet, son cabinet et ses domaines d'expertise. La version longue (biographie + cas cliniques) est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
+> Fichier structuré à destination des moteurs génératifs (LLM) : informations fiables et vérifiées sur le Dr Alexandre Majoulet, son cabinet et ses domaines d'expertise. La version longue — le texte intégral des pages du site, généré depuis les pages publiées — est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-09-12
+Dernière mise à jour : 2026-09-14
 
 ## Identité professionnelle
 

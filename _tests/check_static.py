@@ -23,7 +23,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
 Sortie : liste des erreurs (code 1) et des avertissements (code 0).
 """
 import argparse, base64, datetime, glob, hashlib, html, json, os, re, sys
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab, llms_pages   # TECH6H-2026-09-07, TECH9S-2026-09-12, TECH12AA-2026-09-12
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab, llms_pages, llms_full   # TECH6H-2026-09-07, TECH9S-2026-09-12, TECH12AA-2026-09-12, TECH15AE-2026-09-14
 from html.parser import HTMLParser
 
 DOMAIN = 'https://docteurmajoulet.com'
@@ -465,6 +465,13 @@ def check(root):
         for _u in re.findall(r'(?<![(<])https?://(?:www\.)?(?:docteurmajoulet\.com|doctolib\.fr)[^\s)>]*', _lt): E(f'llms.txt : URL nue « {_u} » (écrire un lien Markdown [texte](url))'); break
         for _e in llms_pages.diverges(_lt, root): E(_e + ' (python3 _tests/llms_pages.py --write)')
         if not re.search(r'^Dernière mise à jour : \d{4}-\d{2}-\d{2}$', _lt, re.M): E('llms.txt : ligne « Dernière mise à jour : AAAA-MM-JJ » absente')
+    # ---- TECH15AE-2026-09-14 : llms-full.txt = texte intégral des pages, généré par _tests/llms_full.py (aucune phrase rédigée à
+    # part) ; il doit correspondre aux pages du dépôt — tout lot qui modifie le texte d'une page relance llms_full.py --write
+    if not exists('llms-full.txt'): E('llms-full.txt absent')
+    else:
+        _lf = open(os.path.join(root, 'llms-full.txt'), encoding='utf-8').read()
+        if not _lf.startswith('# '): E('llms-full.txt : la première ligne doit être le titre H1 (« # … »)')
+        for _e in llms_full.diverges(_lf, root): E(_e + ' (python3 _tests/llms_full.py --write)')
     # ---- TECH13AB-2026-09-12 : nœud Physician complet et identique sur chaque page (Google lit chaque page seule : sans
     # telephone / address / image, la fiche n'est pas éligible au résultat enrichi « établissement ») ; aucun « about » en chaîne JSON
     _ref = None

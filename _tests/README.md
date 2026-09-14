@@ -61,6 +61,11 @@ le bloc correspond aux pages du dépôt.
 Depuis le tour 13 (TECH13AB-2026-09-12), chaque page porte un nœud Physician complet (telephone, address, image, url, priceRange…)
 identique à celui de la home : `check_static.py` compare les deux et refuse un « about » écrit en chaîne JSON.
 
+Depuis le tour 15 (TECH15AE-2026-09-14), `llms-full.txt` est le texte intégral des pages, généré par `_tests/llms_full.py` (par page :
+H1, URL canonique, description, date de relecture, puis le contenu de `<main>` en Markdown — rien n'est rédigé à part) : `check_static.py`
+refuse un fichier qui ne correspond plus aux pages ; tout lot qui modifie le texte d'une page relance `python3 _tests/llms_full.py --write`
+(comme `faq_jsonld.py` et `llms_pages.py`) ; `prod_check.py` contrôle `/llms-full.txt` en production.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

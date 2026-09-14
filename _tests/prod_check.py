@@ -99,7 +99,7 @@ def main():
     fonts = sorted(set(re.findall(r"url\('(/fonts/[^']+\.woff2)'\)", open(_css, encoding='utf-8').read()))) if os.path.exists(_css) else []
     if not fonts: W('main.css : aucune police @font-face trouvée dans le dépôt — polices non contrôlées')
     for path, ctype in (('/robots.txt', 'text/plain'), ('/sitemap.xml', 'xml'), ('/.well-known/security.txt', 'text/plain'),
-                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/llms.txt', 'text/plain'), ('/speculationrules.json', 'speculationrules+json')):
+                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/llms.txt', 'text/plain'), ('/llms-full.txt', 'text/plain'), ('/speculationrules.json', 'speculationrules+json')):   # TECH15AE-2026-09-14 : llms-full.txt contrôlé aussi
         st, hh, _ = fetch(bust(site + path))
         if st != 200: E(f'{path} : statut {st}')
         elif ctype not in hh.get('content-type', ''): W(f'{path} : content-type {hh.get("content-type")}')
