@@ -498,6 +498,20 @@ def check(root):
                 for _k in ('telephone', 'address', 'image', 'url', 'jobTitle', 'honorificPrefix', 'medicalSpecialty'):
                     if _nd.get(_k) != _ref.get(_k): E(f'{name} : nœud Physician — « {_k} » absent ou différent du nœud de la home'); break
                 if _nd.get('priceRange') != 'Secteur 2' or _nd.get('@type') != ['Physician', 'Person']: E(f'{name} : nœud Physician — priceRange « Secteur 2 » et @type ["Physician", "Person"] attendus')
+    # ---- TECH13AC-2026-09-12 : page courante annoncée dans le menu principal — exactement un aria-current="page" dès que le
+    # menu contient un lien vers la page, sur ce lien (sans ancre) ; jamais deux
+    for name, pg in pages.items():
+        if name == '404.html': continue
+        _nav = re.search(r'<nav\b[^>]*class="[^"]*\bmain-nav\b[^"]*"[^>]*>.*?</nav>', pg.txt, re.S)
+        if not _nav: E(f'{name} : menu principal (nav.main-nav) introuvable'); continue
+        _slug = '/' if name == 'index.html' else '/' + name[:-5]
+        _self = re.findall(r'<a\b[^>]*\bhref="' + re.escape(_slug) + r'(?:#[^"]*)?"[^>]*>', _nav.group(0))
+        _cur = re.findall(r'<a\b[^>]*\baria-current="page"[^>]*>', _nav.group(0))
+        if len(_cur) > 1: E(f'{name} : {len(_cur)} liens aria-current="page" dans le menu (un seul attendu)')
+        elif _self and not _cur: E(f'{name} : le menu mène à la page ({len(_self)} lien(s)) sans aria-current="page"')
+        elif _cur:
+            _h = re.search(r'href="([^"]*)"', _cur[0])
+            if not _h or _h.group(1) != _slug: E(f'{name} : aria-current="page" sur un lien vers « {_h.group(1) if _h else "?"} » (attendu {_slug}, sans ancre)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
