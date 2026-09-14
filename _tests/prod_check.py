@@ -16,7 +16,7 @@ Lancé chaque lundi matin par GitHub Actions (.github/workflows/veille-prod.yml)
     délai dépassé ou 403 (anti-robot) = avertissement.
 Sortie : erreurs (code 1) et avertissements (code 0).
 """
-import argparse, concurrent.futures, datetime, glob, html, os, random, re, socket, ssl, sys, urllib.error, urllib.request
+import argparse, concurrent.futures, datetime, glob, html, os, random, re, socket, ssl, sys, time, urllib.error, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = 'Mozilla/5.0 (compatible; veille-docteurmajoulet/1.0; +https://docteurmajoulet.com/.well-known/security.txt)'
@@ -122,7 +122,9 @@ def main():
     ok = 0
     def check_page(u):
         st, hh, body = fetch(bust(u)); out = []
-        if st != 200: out.append(f'{u} : statut {st}'); return out
+        if st == 0:                                                   # TECH15AJ-2026-09-14 : un échec réseau isolé (veille #3 du 14/09 : deux pages
+            time.sleep(3); st, hh, body = fetch(bust(u))              # « statut 0 » sur 45, en 200 une minute après) mérite un second essai avant d'alerter
+        if st != 200: out.append(f'{u} : statut {st}' + (f' ({body.decode("utf-8", "replace")[:80]})' if st == 0 else '')); return out
         if 'text/html' not in hh.get('content-type', ''): out.append(f'{u} : content-type {hh.get("content-type")}')
         t = body.decode('utf-8', 'replace')
         if f'<link rel="canonical" href="{u}"' not in t: out.append(f'{u} : canonical absent ou différent')
