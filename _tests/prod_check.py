@@ -70,7 +70,7 @@ def main():
         ('x-content-type-options', lambda v: v.lower() == 'nosniff'),
         ('x-frame-options', lambda v: v.upper() in ('SAMEORIGIN', 'DENY')),
         ('referrer-policy', lambda v: bool(v)),
-        ('permissions-policy', lambda v: bool(v)),
+        ('permissions-policy', lambda v: 'browsing-topics=()' in v),   # TECH17AN-2026-09-15
         ('cross-origin-opener-policy', lambda v: bool(v)),
         ('cross-origin-resource-policy', lambda v: bool(v)),
         ('speculation-rules', lambda v: v.strip() == '"/speculationrules.json"'),   # TECH12Z-2026-09-12
@@ -99,11 +99,15 @@ def main():
     fonts = sorted(set(re.findall(r"url\('(/fonts/[^']+\.woff2)'\)", open(_css, encoding='utf-8').read()))) if os.path.exists(_css) else []
     if not fonts: W('main.css : aucune police @font-face trouvée dans le dépôt — polices non contrôlées')
     for path, ctype in (('/robots.txt', 'text/plain'), ('/sitemap.xml', 'xml'), ('/.well-known/security.txt', 'text/plain'),
-                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/llms.txt', 'text/plain'), ('/llms-full.txt', 'text/plain'), ('/speculationrules.json', 'speculationrules+json')):   # TECH15AE-2026-09-14 : llms-full.txt contrôlé aussi
+                        (f'/main.css?v={prod_v}', 'text/css'), ('/nav.js', 'javascript'), *[(f, 'font/woff2') for f in fonts], ('/site.webmanifest', 'manifest'), ('/llms.txt', 'text/plain'), ('/llms-full.txt', 'text/plain'), ('/speculationrules.json', 'speculationrules+json'), ('/favicon.ico', 'image/')):   # TECH15AE-2026-09-14 : llms-full.txt contrôlé aussi ; TECH17AN-2026-09-15 : favicon.ico
         st, hh, _ = fetch(bust(site + path))
         if st != 200: E(f'{path} : statut {st}')
         elif ctype not in hh.get('content-type', ''): W(f'{path} : content-type {hh.get("content-type")}')
         if path.startswith(('/main.css', '/nav.js', '/fonts/')) and st == 200 and 'immutable' not in hh.get('cache-control', ''): W(f'{path} : cache-control sans immutable ({hh.get("cache-control")})')
+    # TECH17AN-2026-09-15 : le PDF de la grille d'Amsler renvoie vers sa page (en-tête Link rel=canonical, déclaré dans _headers)
+    st, hh, _ = fetch(bust(site + '/grille-amsler.pdf'), method='HEAD')
+    if st != 200: E(f'/grille-amsler.pdf : statut {st}')
+    elif not re.search(r'<https://docteurmajoulet\.com/grille-amsler>; rel="canonical"', hh.get('link', '')): E(f'/grille-amsler.pdf : en-tête Link canonical absent ou inattendu → {hh.get("link")}')
     st, _, _ = fetch(bust(site + f'/page-inexistante-{random.randrange(10**6)}'))
     if st != 404: E(f'page inexistante : statut {st} (attendu 404)')
 

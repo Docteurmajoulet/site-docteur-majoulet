@@ -143,3 +143,8 @@ et liens externes (404/410 = erreur ; délai ou anti-robot = avertissement). Git
 
     python3 _tests/prod_check.py                # depuis le dépôt (compare aussi ?v= et lit les liens externes des pages)
     python3 _tests/prod_check.py --no-external  # sans les liens externes (≈ 20 s)
+
+Depuis le tour 17 (TECH17AN-2026-09-15), le dépôt porte un `favicon.ico` (16, 32 et 48 px, mêmes dessins que les PNG ; il répondait 404
+aux outils qui le demandent à l'aveugle), `Permissions-Policy` refuse `browsing-topics` (API Topics de Chrome) et le PDF de la grille
+d'Amsler déclare sa page `/grille-amsler` comme canonique (en-tête `Link`) : `check_static.py` vérifie le fichier ICO, la politique et
+les deux blocs de `_headers` ; `prod_check.py` contrôle `/favicon.ico`, la politique servie et l'en-tête `Link` du PDF en production.

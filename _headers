@@ -21,7 +21,9 @@
   Cross-Origin-Resource-Policy: same-site
 
   # --- Permissions-Policy : coupe capteurs sensibles non utilisés ---
-  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=()
+  # TECH17AN-2026-09-15 : browsing-topics=() — le site refuse de nourrir l'API Topics de Chrome (profil publicitaire par centres
+  #   d'intérêt déduits des sites visités) : un site médical n'a pas à contribuer à un profil « santé ». Ignoré par les autres navigateurs.
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=(), magnetometer=(), gyroscope=(), accelerometer=(), browsing-topics=()
 
   # --- Content-Security-Policy ---
   # Phase 4.2 : Montserrat self-hosted → plus besoin d'autoriser fonts.googleapis.com / fonts.gstatic.com.
@@ -92,6 +94,18 @@
 /llms-full.txt
   Cache-Control: public, max-age=3600
   Content-Type: text/plain; charset=utf-8
+
+# ---------- Icône historique /favicon.ico (TECH17AN-2026-09-15) ----------
+# Demandée à l'aveugle par des outils (lecteurs de flux, aperçus de liens, favoris d'anciens navigateurs) sans lire les
+# <link rel="icon"> : elle répondait 404 (page d'erreur de 24 Ko). Fichier ICO (16, 32 et 48 px, mêmes dessins que les PNG).
+/favicon.ico
+  Cache-Control: public, max-age=604800
+
+# ---------- PDF de la grille d'Amsler (TECH17AN-2026-09-15) ----------
+# Version imprimable de la page /grille-amsler : la page reste l'adresse canonique pour Google (Link rel=canonical, seule
+# forme possible pour un document non HTML), plutôt qu'un résultat de recherche menant au PDF nu, sans le mode d'emploi ni le site.
+/grille-amsler.pdf
+  Link: <https://docteurmajoulet.com/grille-amsler>; rel="canonical"
 
 # ---------- Manifeste PWA (IMPRESSION-VEILLE-2026-08-29 : Netlify le servait en application/octet-stream) ----------
 /site.webmanifest

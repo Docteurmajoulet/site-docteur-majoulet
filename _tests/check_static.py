@@ -125,6 +125,21 @@ def check(root):
     csp_hashes = set(re.findall(r"'(sha256-[A-Za-z0-9+/=]+)'", csp.group(1))) if csp else set()
     if not csp: E('_headers : Content-Security-Policy absente')
 
+    # ---- TECH17AN-2026-09-15 : /favicon.ico présent (ICO, au moins 16 et 32 px) ; Permissions-Policy refuse browsing-topics ;
+    # le PDF de la grille d'Amsler déclare sa page canonique (Link) et cette page existe ; cache de l'icône déclaré
+    if not exists('favicon.ico'): E("favicon.ico absent (répondait 404 : demandé à l'aveugle par des outils et vieux navigateurs)")
+    else:
+        _ico = open(os.path.join(root, 'favicon.ico'), 'rb').read()
+        _n = int.from_bytes(_ico[4:6], 'little') if _ico[:4] == b'\x00\x00\x01\x00' else 0
+        _sizes = {(_ico[6 + 16 * i] or 256, _ico[7 + 16 * i] or 256) for i in range(_n)} if len(_ico) >= 6 + 16 * _n else set()
+        if not {(16, 16), (32, 32)} <= _sizes: E(f'favicon.ico : attendu un ICO contenant 16 et 32 px, trouvé {sorted(_sizes)}')
+    _pp = re.search(r'^\s*Permissions-Policy:\s*(.+)$', headers, re.M)
+    if not _pp or 'browsing-topics=()' not in _pp.group(1): E('_headers : Permissions-Policy sans browsing-topics=() (API Topics de Chrome non refusée)')
+    if not re.search(r'^/favicon\.ico\n  Cache-Control: public, max-age=\d+\n', headers, re.M): E('_headers : bloc /favicon.ico (Cache-Control) absent')
+    _lk = re.search(r'^/grille-amsler\.pdf\n  Link: <https://docteurmajoulet\.com/([a-z0-9-]+)>; rel="canonical"\n', headers, re.M)
+    if not _lk: E('_headers : bloc /grille-amsler.pdf (Link rel=canonical vers sa page) absent')
+    elif not exists(_lk.group(1) + '.html'): E(f'_headers : /grille-amsler.pdf canonique vers une page inexistante /{_lk.group(1)}')
+
     # ---- redirections
     if exists('_redirects'):
         for line in open(os.path.join(root, '_redirects'), encoding='utf-8'):
