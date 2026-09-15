@@ -95,6 +95,12 @@ Le bloc `@media (forced-colors: active)` de `main.css` (FORCED-2026-08-31, éten
 règles, `browser.mjs` charge quatre pages à 390 px et la home à 1 366 px dans les deux palettes (sombre et claire) et vérifie que ces
 éléments restent peints.
 
+Depuis le tour 19 (TECH19AR-2026-09-15), la CSP impose les Trusted Types (`require-trusted-types-for 'script'`, `trusted-types 'none'`) : le
+navigateur refuse toute chaîne brute confiée à un puits d'exécution (innerHTML, insertAdjacentHTML, eval, document.write, script.src…) —
+défense en profondeur contre les XSS par le DOM, sans effet sur le site (nav.js n'écrit jamais de HTML). `check_static.py` exige les deux
+directives et refuse tout puits dans `nav.js` ; `browser.mjs` vérifie sur la home que l'interdiction s'applique (innerHTML → TypeError) ;
+`prod_check.py` compare déjà la CSP servie à `_headers`. Tout futur script qui devrait écrire du HTML passera par `textContent`/`createElement`.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

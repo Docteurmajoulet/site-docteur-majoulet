@@ -15,6 +15,7 @@
 // Puis matrice tactile : iPhone SE 375 × 667 et iPhone en paysage 844 × 390, toutes les pages (TECH11X-2026-09-12).
 // Puis anticipation du clic : règles chargées, survol → prefetch, clic servi par le préchargement (TECH12Z-2026-09-12).
 // Puis police variable : une requête, une FontFace 300-700, axe wght effectif, 3 pages à 1 366 px (TECH12Y-2026-09-12).
+// Puis Trusted Types : sur la home à 1 366 px, une chaîne confiée à innerHTML est refusée (TypeError + violation require-trusted-types-for) (TECH19AR-2026-09-15).
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
@@ -508,6 +509,28 @@ try {
       }
       loads += 2;
     } catch (e) { failures.push('index @1366 — anticipation : ' + String(e).slice(0, 160)); }
+    await page.close(); await ctx.close();
+  }
+  // TECH19AR-2026-09-15 — Trusted Types : la CSP servie (require-trusted-types-for 'script') doit être appliquée par le navigateur :
+  // une chaîne brute confiée à innerHTML lève TypeError et déclenche une violation « require-trusted-types-for » ; la page elle-même
+  // (nav.js, script inline) n'en déclenche aucune — c'est le contrôle CSP de chaque chargement ci-dessus qui le garantit.
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const page = await ctx.newPage();
+    try {
+      await page.goto(urlFor('index', PORT), { waitUntil: 'load', timeout: 30000 });
+      const res = await page.evaluate(() => new Promise(resolve => {
+        const violations = [];
+        document.addEventListener('securitypolicyviolation', e => violations.push(e.violatedDirective));
+        let threw = 'aucune';
+        try { document.createElement('div').innerHTML = '<b>x</b>'; } catch (e) { threw = e.name; }
+        setTimeout(() => resolve({ threw, violations, api: typeof window.trustedTypes }), 100);
+      }));
+      if (res.api !== 'object') failures.push(`index @1366 — Trusted Types : API absente du navigateur de test (${res.api})`);
+      else if (res.threw !== 'TypeError' || !res.violations.includes('require-trusted-types-for')) failures.push(`index @1366 — Trusted Types non appliqués : innerHTML → ${res.threw}, violations ${JSON.stringify(res.violations)} (attendu TypeError + require-trusted-types-for)`);
+      loads++;
+    } catch (e) { failures.push('index @1366 — Trusted Types : ' + String(e).slice(0, 160)); }
     await page.close(); await ctx.close();
   }
   // TECH17AM-2026-09-15 — mode « contraste élevé » (forced-colors, palettes sombre et claire) : ce que le navigateur efface

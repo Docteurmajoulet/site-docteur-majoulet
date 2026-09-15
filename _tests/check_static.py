@@ -124,6 +124,16 @@ def check(root):
     csp = re.search(r'^\s*Content-Security-Policy:\s*(.+)$', headers, re.M)
     csp_hashes = set(re.findall(r"'(sha256-[A-Za-z0-9+/=]+)'", csp.group(1))) if csp else set()
     if not csp: E('_headers : Content-Security-Policy absente')
+    # ---- TECH19AR-2026-09-15 : Trusted Types imposés par la CSP (require-trusted-types-for 'script' + trusted-types 'none') ;
+    # nav.js ne doit confier aucune chaîne à un puits d'exécution (sinon TypeError en production sous cette directive)
+    if csp:
+        for _d in ("require-trusted-types-for 'script'", "trusted-types 'none'"):
+            if _d not in csp.group(1): E(f'_headers : directive CSP « {_d} » absente (Trusted Types non imposés)')
+    if exists('nav.js'):
+        _js = re.sub(r'/\*.*?\*/|(?<![:\w])//[^\n]*', '', open(os.path.join(root, 'nav.js'), encoding='utf-8').read(), flags=re.S)
+        for _sink in (r'\.innerHTML\s*[+]?=', r'\.outerHTML\s*[+]?=', r'\.insertAdjacentHTML\s*\(', r'\.srcdoc\s*=', r'\beval\s*\(', r'\bnew\s+Function\s*\(',
+                      r'document\.write(ln)?\s*\(', r'\.setAttribute\s*\(\s*[\'"](srcdoc|onclick|onload)', r'setTimeout\s*\(\s*[\'"]', r'setInterval\s*\(\s*[\'"]'):
+            if re.search(_sink, _js): E(f'nav.js : puits d\'exécution « {_sink} » incompatible avec require-trusted-types-for (TypeError en production)')
 
     # ---- TECH17AN-2026-09-15 : /favicon.ico présent (ICO, au moins 16 et 32 px) ; Permissions-Policy refuse browsing-topics ;
     # le PDF de la grille d'Amsler déclare sa page canonique (Link) et cette page existe ; cache de l'icône déclaré
