@@ -641,6 +641,15 @@ def check(root):
                     elif isinstance(x, list):
                         for _v in x: _w(_v)
                 _w(_d)
+    # ---- TECH18AO-2026-09-15 : anneau de focus sur les fonds sombres — le bloc existe une fois, en fin de feuille, et aucune règle
+    # postérieure ne redonne au CTA .btn-rdv un contour d'une autre couleur (c'est ce que faisait la règle TECH5F avant ce lot)
+    _ao = [m.start() for m in re.finditer(r'\.cta-block \.btn-rdv:focus-visible,\n\.hub-cta :focus-visible,\n:where\(body\.page-publications\) \.external-links :focus-visible,\n:where\(body\.page-index\) #contact :focus-visible:not\(\.btn-doctolib\) \{\n    outline-color: var\(--sable-light\);\n\}', css_txt)]
+    if len(_ao) != 1: E(f'main.css : bloc TECH18AO (contour de focus sable clair sur .cta-block .btn-rdv, .hub-cta, .external-links, #contact) attendu une fois, trouvé {len(_ao)}')
+    else:
+        _after = re.sub(r'/\*.*?\*/', '', css_txt[_ao[0] + 40:], flags=re.S)
+        for _m in re.finditer(r'([^{}]*\.btn-rdv:focus-visible[^{}]*)\{([^}]*)\}', _after):
+            if 'outline' in _m.group(2) and '.cta-block .btn-rdv' not in _m.group(1): E('main.css : règle « ' + ' '.join(_m.group(1).split())[:70] + ' » après le bloc TECH18AO — elle repasserait le contour du CTA en ardoise sur fond ardoise')
+
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

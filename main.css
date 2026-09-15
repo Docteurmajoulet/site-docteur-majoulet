@@ -7304,3 +7304,27 @@ body.page-index .hero-v3 .hero-photo {
         }
 }
 }
+
+/* ============================================================
+   TECH18AO-2026-09-15 — Anneau de focus visible sur les fonds sombres
+   (tour 18, règle « focus-states / focus-appearance » : le contour de
+   focus doit contraster à 3:1 avec ce qui l'entoure, WCAG 2.2 1.4.11).
+   Le bloc « fonds sombres » (.topbar, .hero, header.page-header, footer,
+   .cta-block…) donne au contour la couleur sable clair, mais la règle
+   TECH5F « .nav-cta, .btn-rdv, .table-scroll:focus-visible » (plus bas,
+   même spécificité) le repasse en ardoise, et trois zones sombres n'y
+   figuraient pas. Mesuré le 15/09/2026 (contour forcé, pixels adjacents,
+   48 pages × 1 366 et 390 px) : CTA « Prendre rendez-vous » des 44 fiches
+   et de la 404 sans aucun changement visible au focus (ardoise sur
+   ardoise) ; numéros de téléphone des blocs .hub-cta du hub ; bouton
+   « Profil PubMed » ; section Contact de la home (liens, numéro, e-mail,
+   façade de la carte, « Ouvrir dans Google Maps ») à 1,2:1.
+   Le bouton Doctolib de la section Contact garde son contour sable
+   (règle propre, 3,9:1 mesuré).
+   ============================================================ */
+.cta-block .btn-rdv:focus-visible,
+.hub-cta :focus-visible,
+:where(body.page-publications) .external-links :focus-visible,
+:where(body.page-index) #contact :focus-visible:not(.btn-doctolib) {
+    outline-color: var(--sable-light);
+}

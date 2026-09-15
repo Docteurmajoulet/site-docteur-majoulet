@@ -563,6 +563,72 @@ try {
     await page.close();
     await ctx.close();
   }
+  // TECH18AO-2026-09-15 — anneau de focus visible (WCAG 2.2, 1.4.11 : indicateur de focus à 3:1 avec ce qui l'entoure) : pour chaque
+  // élément focalisable visible (une fois par signature tag.classes@ancêtre-coloré), :focus-visible forcé par CDP, capture de la zone :
+  // quelque chose doit changer, et si un contour (outline) est déclaré, il contraste à 3:1 au moins avec les pixels juste au-delà sur
+  // un côté au moins. Toutes les pages à 1 366 px ; home, fiche, hub et publications à 390 px. Hors lien d'évitement (c'est son
+  // apparition qui signale le focus), menu principal (panneaux masqués) et liens sur plusieurs lignes (pixels voisins = texte).
+  // Trouvé le 15/09/2026 : CTA « Prendre rendez-vous » des fiches invisible au focus (ardoise sur ardoise), section Contact à 1,2:1.
+  {
+    const { PNG } = await import('pngjs');
+    const lum = rgb => { const f = c => { c /= 255; return c <= 0.03928 ? c / 12.92 : Math.pow((c + 0.055) / 1.055, 2.4); }; return 0.2126 * f(rgb[0]) + 0.7152 * f(rgb[1]) + 0.0722 * f(rgb[2]); };
+    const contrast = (a, b) => { const l1 = lum(a), l2 = lum(b); return (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05); };
+    const px = (png, x, y) => { x = Math.max(0, Math.min(png.width - 1, Math.round(x))); y = Math.max(0, Math.min(png.height - 1, Math.round(y))); const i = (png.width * y + x) << 2; return [png.data[i], png.data[i + 1], png.data[i + 2]]; };
+    const seen = new Set();
+    for (const [w, list] of [[1366, slugs], [390, slugs.filter(s => ['index', 'dmla', 'pathologies', 'publications'].includes(s))]]) {
+      const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR', bypassCSP: true, ...(w === 390 ? { isMobile: true, hasTouch: true } : {}) });
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      for (const slug of list) {
+        const page = await ctx.newPage();
+        try {
+          await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+          await page.addStyleTag({ content: '*, *::before, *::after { transition: none !important; animation: none !important; caret-color: transparent !important; }' });
+          const cdp = await ctx.newCDPSession(page);
+          await cdp.send('DOM.enable'); await cdp.send('CSS.enable');
+          const docRoot = (await cdp.send('DOM.getDocument', { depth: -1 })).root.nodeId;
+          const els = await page.$$('a[href], button, summary, [role="button"], [tabindex]:not([tabindex="-1"])');
+          for (const el of els) {
+            const info = await el.evaluate(e => {
+              const r = e.getBoundingClientRect(); const cs = getComputedStyle(e);
+              const vis = r.width > 0 && r.height > 0 && cs.visibility !== 'hidden' && cs.display !== 'none' && cs.opacity !== '0';
+              let p = e.parentElement, bgSel = '';
+              while (p) { const c = getComputedStyle(p).backgroundColor; if (c && !c.startsWith('rgba(0, 0, 0, 0)') && c !== 'transparent') { bgSel = p.tagName.toLowerCase() + (p.className ? '.' + String(p.className).trim().split(/\s+/).slice(0, 2).join('.') : ''); break; } p = p.parentElement; }
+              const sig = e.tagName.toLowerCase() + (e.className ? '.' + String(e.className).trim().split(/\s+/).slice(0, 3).join('.') : '') + '@' + bgSel;
+              return { vis, sig, text: (e.textContent || '').trim().replace(/\s+/g, ' ').slice(0, 36), skip: !!e.closest('nav.main-nav') || e.classList.contains('skip-link') || e.getClientRects().length > 1 };
+            });
+            if (!info.vis || info.skip) continue;
+            const key = w + '|' + info.sig; if (seen.has(key)) continue; seen.add(key);
+            await el.evaluate(e => e.scrollIntoView({ block: 'center', inline: 'nearest' })); await page.waitForTimeout(60);
+            const box = await el.boundingBox(); if (!box) continue;
+            await el.evaluate(e => e.setAttribute('data-focus-test', '1'));
+            const nid = (await cdp.send('DOM.querySelector', { nodeId: docRoot, selector: '[data-focus-test="1"]' })).nodeId;
+            await el.evaluate(e => e.removeAttribute('data-focus-test'));
+            if (!nid) continue;
+            const m = 14;
+            const clip = { x: Math.max(0, box.x - m), y: Math.max(0, box.y - m), width: Math.min(w - Math.max(0, box.x - m), box.width + 2 * m), height: Math.min(900 - Math.max(0, box.y - m), box.height + 2 * m) };
+            if (clip.width < 4 || clip.height < 4) continue;
+            let rest, foc, style;
+            try {
+              rest = PNG.sync.read(await page.screenshot({ clip, scale: 'css' }));
+              await cdp.send('CSS.forcePseudoState', { nodeId: nid, forcedPseudoClasses: ['focus', 'focus-visible'] });
+              style = await el.evaluate(e => { const cs = getComputedStyle(e); return { ow: parseFloat(cs.outlineWidth), os: cs.outlineStyle, oo: parseFloat(cs.outlineOffset) }; });
+              foc = PNG.sync.read(await page.screenshot({ clip, scale: 'css' }));
+            } finally { await cdp.send('CSS.forcePseudoState', { nodeId: nid, forcedPseudoClasses: [] }); }
+            let diff = 0; for (let i = 0; i < foc.data.length; i += 4) if (Math.abs(foc.data[i] - rest.data[i]) + Math.abs(foc.data[i + 1] - rest.data[i + 1]) + Math.abs(foc.data[i + 2] - rest.data[i + 2]) > 30) diff++;
+            if (diff < 20) { failures.push(`${slug} @${w} focus visible — ${info.sig} « ${info.text} » : aucun changement visible au focus`); continue; }
+            if (!(style.os !== 'none' && style.ow > 0)) continue;   // pas de contour : l'indicateur est ailleurs (fond, soulignement), déjà jugé visible
+            const ox = box.x - clip.x, oy = box.y - clip.y, ring = style.oo + style.ow / 2, beyond = style.oo + style.ow + 2;
+            let best = 0;
+            for (const [rx, ry, bx, by] of [[ox + box.width / 2, oy - ring, ox + box.width / 2, oy - beyond], [ox + box.width / 2, oy + box.height + ring, ox + box.width / 2, oy + box.height + beyond], [ox - ring, oy + box.height / 2, ox - beyond, oy + box.height / 2], [ox + box.width + ring, oy + box.height / 2, ox + box.width + beyond, oy + box.height / 2]]) best = Math.max(best, contrast(px(foc, rx, ry), px(foc, bx, by)));
+            if (best < 3) failures.push(`${slug} @${w} focus visible — ${info.sig} « ${info.text} » : contour à ${best.toFixed(1)}:1 au mieux avec ce qui l'entoure (attendu ≥ 3:1)`);
+          }
+          loads++;
+        } catch (e) { failures.push(`${slug} @${w} focus visible — ${String(e).slice(0, 160)}`); }
+        await page.close();
+      }
+      await ctx.close();
+    }
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

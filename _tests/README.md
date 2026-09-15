@@ -148,3 +148,9 @@ Depuis le tour 17 (TECH17AN-2026-09-15), le dépôt porte un `favicon.ico` (16, 
 aux outils qui le demandent à l'aveugle), `Permissions-Policy` refuse `browsing-topics` (API Topics de Chrome) et le PDF de la grille
 d'Amsler déclare sa page `/grille-amsler` comme canonique (en-tête `Link`) : `check_static.py` vérifie le fichier ICO, la politique et
 les deux blocs de `_headers` ; `prod_check.py` contrôle `/favicon.ico`, la politique servie et l'en-tête `Link` du PDF en production.
+
+Depuis le tour 18 (TECH18AO-2026-09-15), `browser.mjs` force `:focus-visible` (CDP) sur chaque élément focalisable visible — toutes les
+pages à 1 366 px, quatre pages à 390 px — et compare deux captures de la zone : quelque chose doit changer, et un contour déclaré doit
+contraster à 3:1 au moins avec les pixels qui l'entourent (WCAG 2.2, 1.4.11). Le CTA « Prendre rendez-vous » des fiches était
+invisible au focus (contour ardoise sur bloc ardoise) ; `check_static.py` exige le bloc TECH18AO de `main.css` et qu'aucune règle
+postérieure ne redonne au CTA un contour d'une autre couleur.
