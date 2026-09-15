@@ -5,8 +5,9 @@
   "description": "Contrôles automatiques du site docteurmajoulet.com (statiques, navigateur, Lighthouse, captures).",
   "type": "module",
   "scripts": {
-    "test": "npm run test:static && npm run test:navigation && npm run test:browser && npm run test:lh",
+    "test": "npm run test:static && npm run test:html && npm run test:navigation && npm run test:browser && npm run test:lh",
     "test:static": "python3 check_static.py",
+    "test:html": "node html_validate.mjs",
     "test:navigation": "node navigation.mjs",
     "test:browser": "node browser.mjs",
     "test:lh": "node lighthouse.mjs",
@@ -19,6 +20,7 @@
     "lighthouse": "13.4.1",
     "pixelmatch": "7.2.0",
     "playwright": "1.56.1",
-    "pngjs": "7.0.0"
+    "pngjs": "7.0.0",
+    "vnu-jar": "26.9.7"
   }
 }

@@ -17,6 +17,7 @@ Pour tout le reste (navigateur, Lighthouse, captures), une fois : `cd _tests && 
     npm run test:browser     # 48 pages × 320/390/768/1366 : console, CSP, débordements, axe (≈ 4 min)
     npm run test:navigation  # interactions du menu : souris, clavier, tiroir et changement de format
     npm run test:lh          # Lighthouse mobile sur 4 pages clés, rapports dans _tests/reports/
+    npm run test:html        # validation HTML W3C de toutes les pages (Java ≥ 11 requis ; sinon sautée — GitHub la fait)
     npm run serve            # le site sur http://127.0.0.1:8765/ avec les en-têtes de production (CSP incluse)
 
 ## Ce qui est vérifié
@@ -117,6 +118,15 @@ Les chapôs en `<div>` des familles m2/m3 gardent le `padding: 60px 0` sous 30 e
 avec héritage, membres des énumérations) : `@type` inconnu, propriété hors du domaine de son type, énumération inexistante
 (ex. `https://schema.org/Ophthalmologic`, qui n'existe pas) sont des erreurs (TECH9S-2026-09-12). Le fichier est généré par
 `_tests/schemaorg_vocab.py` depuis le paquet npm `schema-dts` (voir son en-tête pour le régénérer).
+
+## Validation HTML W3C
+
+Depuis le tour 19 (TECH19AT-2026-09-15), `html_validate.mjs` passe toutes les pages au Nu Html Checker (le validateur de validator.w3.org,
+`vnu.jar` fourni par le paquet npm `vnu-jar`, version figée et empreinte dans `package-lock.json`) : toute erreur ET tout avertissement
+est un échec, sauf deux avertissements assumés — `role="list"` sur `<ul>` (Safari/VoiceOver retire la sémantique de liste quand
+`list-style: none`) et `role="contentinfo"` sur `<footer>` (redondant, sans effet). Java ≥ 11 est requis ; absent, le contrôle est sauté
+avec un message — GitHub le fait à chaque push (job « Validation HTML W3C »). `_tests/.npmrc` (`ignore-scripts`) empêche `vnu-jar` de
+télécharger un Java à l'installation.
 
 ## FAQ structurée
 
