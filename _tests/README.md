@@ -88,6 +88,13 @@ Depuis le tour 16 (TECH16AL-2026-09-14), le `lastmod` du sitemap est la date de 
 affichée aux patients) — plus une troisième date tenue à la main : `python3 _tests/sitemap_dates.py --write` réécrit les lastmod, à lancer par
 tout lot qui change la date d'une page ; `check_static.py` exige l'égalité.
 
+Depuis le tour 17 (TECH17AM-2026-09-15), le site reste utilisable en mode « contraste élevé » (thèmes de contraste de Windows,
+`forced-colors: active`) : le navigateur y efface les fonds, et tout ce qui était dessiné par un fond disparaissait — barres du bouton
+de menu (plus aucun accès au menu sous 64 em ni au zoom 400 %), bordure du CTA « Prendre rendez-vous », puces, flèches en masque SVG.
+Le bloc `@media (forced-colors: active)` de `main.css` (FORCED-2026-08-31, étendu) les repeint en couleurs système ; `check_static.py` exige ce bloc et ses
+règles, `browser.mjs` charge quatre pages à 390 px et la home à 1 366 px dans les deux palettes (sombre et claire) et vérifie que ces
+éléments restent peints.
+
 **lighthouse.mjs** — mobile, réseau 4G lent simulé, sur `/`, `/decollement-retine`, `/pathologies`,
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.

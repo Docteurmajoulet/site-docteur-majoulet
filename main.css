@@ -6636,11 +6636,48 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
    sans bordure, perdent tout contour (constaté sur « Prendre
    rendez-vous » et « Appeler le cabinet »). Bordure en currentColor,
    active uniquement en forced-colors — aucun effet en rendu normal.
+   ------------------------------------------------------------
+   TECH17AM-2026-09-15 — le même mode, passé au crible (Playwright,
+   palettes sombre et claire) : tout ce qui est DESSINÉ par un fond
+   disparaît aussi. Constaté : les trois barres du bouton de menu —
+   invisibles, plus aucun accès au menu sous 64 em ni au zoom 400 % —,
+   le CTA .btn-rdv des fiches (fond cuivre sans bordure → simple
+   texte, oublié de la liste ci-dessus), les puces du sommaire et des
+   listes « en bref » et « travaux », les flèches en masque SVG
+   (méga-menu, liens externes, cartes des piliers). Les couleurs
+   système (ButtonText, CanvasText, LinkText) suivent le thème
+   choisi ; forced-color-adjust: none rend au fond son rôle de
+   pinceau (currentColor y rendrait la couleur d'origine, non
+   forcée). Toujours aucun effet hors de ce mode.
    ============================================================ */
 @media (forced-colors: active) {
     .btn-primary, .btn-doctolib, .nav-cta, .hero-cta,
-    .btn-alert-tel, .sticky-rdv a {
+    .btn-alert-tel, .sticky-rdv a, .btn-rdv {
         border: 2px solid currentColor;
+    }
+    /* barres du bouton de menu (une spécificité au-dessus des règles v4/v5) */
+    header.site-header button.mobile-toggle span {
+        forced-color-adjust: none;
+        background-color: ButtonText;
+    }
+    /* puces dessinées par le fond : couleur système du texte */
+    .toc-list a::before,
+    article.pathology-content .enbref li::before,
+    article.pathology-content .travaux-list li::before {
+        forced-color-adjust: none;
+        background-color: CanvasText;
+    }
+    /* flèches en masque SVG : le fond redevient le pinceau, dans la couleur forcée du lien */
+    .mega-col .mega-title a::after,
+    .mega-list a.external::after,
+    .associes-line a.external::after,
+    :where(body.v9) a.pillar-card .read-more::after {
+        forced-color-adjust: none;
+        background-color: LinkText;
+    }
+    :where(body.v9) .pillar-card.soft .read-more::after {
+        forced-color-adjust: none;
+        background-color: CanvasText;
     }
 }
 

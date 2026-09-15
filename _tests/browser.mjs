@@ -510,6 +510,59 @@ try {
     } catch (e) { failures.push('index @1366 — anticipation : ' + String(e).slice(0, 160)); }
     await page.close(); await ctx.close();
   }
+  // TECH17AM-2026-09-15 — mode « contraste élevé » (forced-colors, palettes sombre et claire) : ce que le navigateur efface
+  // (fonds) doit rester dessiné — à 390 px, les barres du bouton de menu, la bordure du CTA « Prendre rendez-vous », les puces du
+  // sommaire et des listes « en bref » / « travaux » ; à 1 366 px, la flèche des titres du méga-menu. Une couleur « peinte » est
+  // une couleur opaque différente du fond de la page (Canvas).
+  for (const scheme of ['dark', 'light']) {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR', forcedColors: 'active', colorScheme: scheme });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const label = `contraste élevé (${scheme === 'dark' ? 'sombre' : 'clair'})`;
+    for (const slug of ['index', 'dmla', 'glaucome', 'secheresse-oculaire']) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'load', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = [];
+          if (!matchMedia('(forced-colors: active)').matches) { out.push('émulation forced-colors inactive'); return out; }
+          const canvas = getComputedStyle(document.body).backgroundColor;
+          const painted = c => c && c !== canvas && !/rgba\(\d+, \d+, \d+, 0\)|transparent/.test(c);
+          const bar = document.querySelector('header.site-header .mobile-toggle span');
+          if (!bar) out.push('bouton de menu introuvable');
+          else if (!painted(getComputedStyle(bar).backgroundColor)) out.push(`barres du bouton de menu effacées (fond ${getComputedStyle(bar).backgroundColor} sur ${canvas})`);
+          const rdv = document.querySelector('a.btn-rdv');
+          if (rdv) { const cs = getComputedStyle(rdv); if (!(parseFloat(cs.borderTopWidth) >= 2 && cs.borderTopStyle === 'solid' && painted(cs.borderTopColor))) out.push(`CTA .btn-rdv sans bordure visible (${cs.borderTopWidth} ${cs.borderTopStyle} ${cs.borderTopColor})`); }
+          for (const [sel, what] of [['.toc-list a', 'puce du sommaire'], ['article.pathology-content .enbref li', 'puce « en bref »'], ['article.pathology-content .travaux-list li', 'tiret « travaux »']]) {
+            const el = document.querySelector(sel); if (!el) continue;
+            const bg = getComputedStyle(el, '::before').backgroundColor;
+            if (!painted(bg)) out.push(`${what} effacée (fond ${bg})`);
+          }
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @390 ${label} — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @390 ${label} — chargement : ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    const page = await ctx.newPage();
+    try {
+      await page.setViewportSize({ width: 1366, height: 900 });
+      await page.goto(urlFor('index', PORT), { waitUntil: 'load', timeout: 30000 });
+      await page.hover('nav.main-nav button'); await page.waitForTimeout(600);
+      const res = await page.evaluate(() => {
+        const out = [];
+        const canvas = getComputedStyle(document.body).backgroundColor;
+        const a = document.querySelector('.mega-col .mega-title a');
+        if (!a) out.push('titre de colonne du méga-menu introuvable');
+        else { const bg = getComputedStyle(a, '::after').backgroundColor; if (!bg || bg === canvas || /rgba\(\d+, \d+, \d+, 0\)/.test(bg)) out.push(`flèche du titre du méga-menu effacée (fond ${bg})`); }
+        return out;
+      });
+      for (const r of res) failures.push(`index @1366 ${label} — ${r}`);
+      loads++;
+    } catch (e) { failures.push(`index @1366 ${label} — chargement : ${String(e).slice(0, 160)}`); }
+    await page.close();
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

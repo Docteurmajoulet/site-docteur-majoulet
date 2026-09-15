@@ -420,6 +420,16 @@ def check(root):
     _rt = re.search(r'@media \(prefers-reduced-transparency: reduce\)\s*\{(.*?)\n\}', css_txt, re.S)
     if not _rt or 'header.site-header' not in _rt.group(1) or '.sticky-rdv' not in _rt.group(1) or 'backdrop-filter: none' not in _rt.group(1):
         E('main.css : bloc prefers-reduced-transparency incomplet (en-tête et barre fixe opaques, sans backdrop-filter)')
+    # ---- TECH17AM-2026-09-15 : mode « contraste élevé » (forced-colors) — le bloc @media existe une fois et repeint ce que le
+    # navigateur efface : barres du bouton de menu (ButtonText), bordure du CTA .btn-rdv, puces (CanvasText), flèches en masque (LinkText)
+    _fc = re.findall(r'@media \(forced-colors: active\) \{\n(.*?)\n\}\n', css_txt, re.S)   # le bloc multi-lignes (celui de .map-facade-btn tient sur une ligne)
+    if len(_fc) != 1: E(f'main.css : bloc multi-lignes « @media (forced-colors: active) » attendu une fois, trouvé {len(_fc)} (bouton de menu invisible en contraste élevé)')
+    else:
+        for _rule in ('.btn-alert-tel, .sticky-rdv a, .btn-rdv {\n        border: 2px solid currentColor;\n    }',
+                      'header.site-header button.mobile-toggle span {\n        forced-color-adjust: none;\n        background-color: ButtonText;\n    }',
+                      '.toc-list a::before,\n    article.pathology-content .enbref li::before,\n    article.pathology-content .travaux-list li::before {\n        forced-color-adjust: none;\n        background-color: CanvasText;\n    }',
+                      '.mega-col .mega-title a::after,\n    .mega-list a.external::after,\n    .associes-line a.external::after,\n    :where(body.v9) a.pillar-card .read-more::after {\n        forced-color-adjust: none;\n        background-color: LinkText;\n    }'):
+            if _rule not in _fc[0]: E('main.css : règle du bloc forced-colors absente ou modifiée : ' + _rule.split('{')[0].replace('\n', ' ').strip())
     # ---- TECH15AF-2026-09-14 : sous 48 em, le titre des fiches suit l'écran (24 px à 320, 35 px dès 768) ; paragraphes de l'alerte du hub ≤ 62ch
     if 'header.page-header h1 {\n        font-size: clamp(1.5rem, 1rem + 2.5vw, 2.2rem);\n    }' not in css_txt:
         E('main.css : règle mobile « header.page-header h1 { font-size: clamp(1.5rem, 1rem + 2.5vw, 2.2rem) } » absente (titres de 29 px sur 6 lignes à 320 px)')
