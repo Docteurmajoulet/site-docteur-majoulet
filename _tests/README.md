@@ -154,3 +154,9 @@ pages à 1 366 px, quatre pages à 390 px — et compare deux captures de la zon
 contraster à 3:1 au moins avec les pixels qui l'entourent (WCAG 2.2, 1.4.11). Le CTA « Prendre rendez-vous » des fiches était
 invisible au focus (contour ardoise sur bloc ardoise) ; `check_static.py` exige le bloc TECH18AO de `main.css` et qu'aucune règle
 postérieure ne redonne au CTA un contour d'une autre couleur.
+
+Depuis le tour 18 (TECH18AP-2026-09-15), le bouton de la rubrique courante du menu (DMLA, Chirurgies, Autres pathologies) porte
+`aria-current="true"` et l'apparence des onglets « À propos » / « Contact » sur leur page : `check_static.py` vérifie qu'il y en a un
+seul, sur le bouton du panneau qui contient le lien `aria-current="page"` (aucun quand la page n'est dans aucun panneau), et que
+l'icône du CTA du hero est `aria-hidden` ; `browser.mjs` contrôle l'apparence (ardoise, graisse 600) sur /dmla, /vitrectomie et
+/le-dr-majoulet à 1 366 et 390 px (tiroir ouvert).

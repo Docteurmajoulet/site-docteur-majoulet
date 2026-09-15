@@ -328,7 +328,7 @@ def check(root):
         m = re.search(start, t)
         if not m: return None
         e = re.search(end, t[m.start():])
-        return re.sub(r'\s+', ' ', t[m.start():m.start() + e.end()]).replace(' aria-current="page"', '') if e else None
+        return re.sub(r'\s+', ' ', t[m.start():m.start() + e.end()]).replace(' aria-current="page"', '').replace(' aria-current="true"', '') if e else None   # TECH18AP-2026-09-15 : le bouton de la rubrique courante porte aria-current="true"
     chrome = {}
     for name, pg in pages.items():
         t = pg.txt
@@ -649,6 +649,27 @@ def check(root):
         _after = re.sub(r'/\*.*?\*/', '', css_txt[_ao[0] + 40:], flags=re.S)
         for _m in re.finditer(r'([^{}]*\.btn-rdv:focus-visible[^{}]*)\{([^}]*)\}', _after):
             if 'outline' in _m.group(2) and '.cta-block .btn-rdv' not in _m.group(1): E('main.css : règle « ' + ' '.join(_m.group(1).split())[:70] + ' » après le bloc TECH18AO — elle repasserait le contour du CTA en ardoise sur fond ardoise')
+
+    # ---- TECH18AP-2026-09-15 : rubrique courante — quand le lien aria-current="page" du menu est dans un panneau (id mega-X), le bouton
+    # qui commande ce panneau (aria-controls="mega-X") porte aria-current="true", et lui seul ; sinon aucun aria-current="true"
+    for name, pg in pages.items():
+        if name == '404.html': continue
+        _nav = re.search(r'<nav\b[^>]*class="[^"]*\bmain-nav\b[^"]*"[^>]*>.*?</nav>', pg.txt, re.S)
+        if not _nav: continue
+        _t = _nav.group(0)
+        _cur = re.search(r'<a\b[^>]*\baria-current="page"[^>]*>', _t)
+        _panel = None
+        if _cur:
+            _items = [m.start() for m in re.finditer(r'<li class="nav-item', _t) if m.start() < _cur.start()]
+            _pm = re.search(r'<div class="mega-panel[^"]*" id="(mega-[a-z-]+)">', _t[_items[-1]:_cur.start()]) if _items else None
+            if _pm: _panel = _pm.group(1)
+        _true = re.findall(r'<button\b[^>]*\baria-current="true"[^>]*>', _t)
+        _any = re.findall(r'aria-current="true"', _t)
+        if _panel:
+            if len(_true) != 1 or len(_any) != 1: E(f'{name} : {len(_any)} aria-current="true" dans le menu (attendu un seul, sur le bouton de la rubrique {_panel})')
+            elif f'aria-controls="{_panel}"' not in _true[0]: E(f'{name} : aria-current="true" sur un bouton qui ne commande pas le panneau {_panel} de la page courante')
+        elif _any: E(f'{name} : aria-current="true" dans le menu alors que la page n\'est dans aucun panneau')
+    if 'aria-hidden="true"' not in re.search(r'class="btn-primary">\s*(<svg[^>]*>)', pages['index.html'].txt).group(1): E('index.html : icône du CTA « Prendre rendez-vous » du hero sans aria-hidden="true" (décorative, lue « image » par VoiceOver)')
 
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))

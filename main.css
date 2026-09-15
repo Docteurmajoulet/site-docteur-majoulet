@@ -7328,3 +7328,18 @@ body.page-index .hero-v3 .hero-photo {
 :where(body.page-index) #contact :focus-visible:not(.btn-doctolib) {
     outline-color: var(--sable-light);
 }
+
+/* ============================================================
+   TECH18AP-2026-09-15 — Rubrique courante dans le menu principal
+   (tour 18, règle « nav-state-active » : la position courante est
+   toujours marquée dans la navigation). Depuis TECH13AC, le lien de
+   la page porte aria-current="page" dans le méga-menu — visible
+   seulement panneau ouvert. Le bouton de sa rubrique (DMLA, Chirurgies,
+   Autres pathologies) porte désormais aria-current="true" et prend
+   l'apparence déjà donnée aux onglets « À propos » et « Contact »
+   sur leur page (ardoise, graisse 600) ; même chose dans le tiroir.
+   ============================================================ */
+nav.main-nav .nav-link[aria-current="true"] {
+    color: var(--prusse);
+    font-weight: 600;
+}

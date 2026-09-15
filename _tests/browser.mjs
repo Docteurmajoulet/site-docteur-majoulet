@@ -629,6 +629,42 @@ try {
       await ctx.close();
     }
   }
+  // TECH18AP-2026-09-15 — rubrique courante dans le menu : sur /dmla (rubrique DMLA) et /vitrectomie (Chirurgies) à 1 366 px, le bouton
+  // aria-current="true" est celui de la rubrique, en ardoise et graisse 600 comme l'onglet « À propos » sur /le-dr-majoulet ; les autres
+  // boutons restent en graisse 500. À 390 px (tiroir ouvert), le même bouton garde cette apparence.
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const expect = { dmla: 'mega-dmla', vitrectomie: 'mega-chirurgies', 'le-dr-majoulet': null };
+    for (const slug of Object.keys(expect).filter(s => slugs.includes(s))) {
+      for (const w of [1366, 390]) {
+        const page = await ctx.newPage();
+        try {
+          await page.setViewportSize({ width: w, height: 900 });
+          await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+          if (w === 390) { await page.click('.mobile-toggle'); await page.waitForTimeout(400); }
+          const res = await page.evaluate((panel) => {
+            const out = [];
+            const links = [...document.querySelectorAll('nav.main-nav .nav-link')];
+            const cur = links.filter(l => l.getAttribute('aria-current'));
+            if (cur.length !== 1) { out.push(`${cur.length} onglet(s) marqués aria-current (attendu 1)`); return out; }
+            const c = cur[0], cs = getComputedStyle(c);
+            if (panel && (c.tagName !== 'BUTTON' || c.getAttribute('aria-controls') !== panel || c.getAttribute('aria-current') !== 'true')) out.push(`onglet marqué « ${c.textContent.trim().slice(0, 20)} » (attendu le bouton de ${panel} avec aria-current="true")`);
+            if (!panel && c.getAttribute('aria-current') !== 'page') out.push(`onglet marqué avec aria-current="${c.getAttribute('aria-current')}" (attendu "page")`);
+            if (parseInt(cs.fontWeight, 10) < 600) out.push(`onglet courant en graisse ${cs.fontWeight} (attendu 600)`);
+            const other = links.find(l => l !== c);
+            if (other && getComputedStyle(other).color === cs.color) out.push('onglet courant de la même couleur que les autres');
+            if (other && parseInt(getComputedStyle(other).fontWeight, 10) >= 600) out.push(`onglet non courant en graisse ${getComputedStyle(other).fontWeight}`);
+            return out;
+          }, expect[slug]);
+          for (const r of res) failures.push(`${slug} @${w} rubrique courante — ${r}`);
+          loads++;
+        } catch (e) { failures.push(`${slug} @${w} rubrique courante — ${String(e).slice(0, 160)}`); }
+        await page.close();
+      }
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
