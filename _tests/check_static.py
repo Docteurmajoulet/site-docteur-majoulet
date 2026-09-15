@@ -243,6 +243,18 @@ def check(root):
                 if not exists(src if src.startswith('/') else '/' + src): E(f'{name} : image introuvable {src}')
         # --- ids
         for i in sorted(pg.dup_ids): E(f'{name} : id dupliqué « {i} »')
+        # --- TECH19AS-2026-09-15 : (a) toute <section> porte un titre (h1-h6) ou un nom (aria-label / aria-labelledby) — sinon c'est
+        #     un <div> (validateur W3C « Section lacks heading ») ; (b) tout <svg> en ligne est décoratif (aria-hidden="true") ou nommé (role)
+        _stack = []
+        for _m in re.finditer(r'<(/?)section\b([^>]*)>', t):
+            if not _m.group(1): _stack.append((_m.group(2), _m.end()))
+            elif _stack:
+                _attrs, _start = _stack.pop()
+                if not re.search(r'<h[1-6]\b', t[_start:_m.start()]) and not re.search(r'aria-label(ledby)?=', _attrs):
+                    E(f'{name} : <section{_attrs[:40]}> sans titre ni aria-label (utiliser un <div>)')
+        for _m in re.finditer(r'<svg\b[^>]*>', t):
+            if 'aria-hidden="true"' not in _m.group(0) and 'role="' not in _m.group(0):
+                E(f'{name} : <svg> sans aria-hidden="true" ni role ({_m.group(0)[:60]}…)')
         # --- liens
         for a in pg.links:
             href = a['href'].strip()
@@ -445,6 +457,9 @@ def check(root):
     _rt = re.search(r'@media \(prefers-reduced-transparency: reduce\)\s*\{(.*?)\n\}', css_txt, re.S)
     if not _rt or 'header.site-header' not in _rt.group(1) or '.sticky-rdv' not in _rt.group(1) or 'backdrop-filter: none' not in _rt.group(1):
         E('main.css : bloc prefers-reduced-transparency incomplet (en-tête et barre fixe opaques, sans backdrop-filter)')
+    # ---- TECH19AS-2026-09-15 : les chapôs en <div class="page-section"> des familles m2/m3 gardent le padding des <section>
+    if '@media (max-width: 30em) {\n:where(body.m2, body.m3) article.pathology-content > div.page-section {\n    padding: 60px 0;\n}\n}' not in css_txt:
+        E('main.css : règle « @media (max-width: 30em) { :where(body.m2, body.m3) article.pathology-content > div.page-section { padding: 60px 0 } } » absente (chapôs collés au titre sur téléphone)')
     # ---- TECH17AM-2026-09-15 : mode « contraste élevé » (forced-colors) — le bloc @media existe une fois et repeint ce que le
     # navigateur efface : barres du bouton de menu (ButtonText), bordure du CTA .btn-rdv, puces (CanvasText), flèches en masque (LinkText)
     _fc = re.findall(r'@media \(forced-colors: active\) \{\n(.*?)\n\}\n', css_txt, re.S)   # le bloc multi-lignes (celui de .map-facade-btn tient sur une ligne)

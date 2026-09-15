@@ -105,6 +105,12 @@ directives et refuse tout puits dans `nav.js` ; `browser.mjs` vérifie sur la ho
 `/secheresse-oculaire`. Échec si performance < 90, accessibilité / bonnes pratiques / SEO < 100,
 CLS > 0,05 ou LCP > 2,5 s ; avertissement si performance < 95. Les seuils sont en tête du fichier.
 
+Depuis le tour 19 (TECH19AS-2026-09-15), toute `<section>` porte un titre ou un nom (`aria-label`) — les chapôs sans titre sont des
+`<div>` — et tout `<svg>` en ligne est décoratif (`aria-hidden="true"`) ou nommé (`role="img"`) : `check_static.py` le vérifie. Les titres de
+références en anglais sont balisés `<em lang="en">` (WCAG 3.1.2).
+Les chapôs en `<div>` des familles m2/m3 gardent le `padding: 60px 0` sous 30 em de leurs anciennes `<section>` (règle en fin de `main.css`, exigée par
+`check_static.py`) : rendu identique au pixel (captures 390/1366 comparées).
+
 ## Vocabulaire schema.org
 
 `check_static.py` confronte chaque bloc JSON-LD au vocabulaire schema.org (`_tests/schemaorg_vocab.json` : types, propriétés

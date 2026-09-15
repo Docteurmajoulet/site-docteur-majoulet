@@ -7343,3 +7343,18 @@ nav.main-nav .nav-link[aria-current="true"] {
     color: var(--prusse);
     font-weight: 600;
 }
+
+/* ============================================================
+   TECH19AS-2026-09-15 — Chapôs sans titre en <div class="page-section">
+   (validateur W3C « Section lacks heading » : fiches implants ×3,
+   photocoagulation-laser, ophtalmologue-boulogne-billancourt). Ces
+   familles (m2, m3) donnent aux <section> un padding de 60px 0 sous
+   30 em (règles « :where(body.mN) section » de leurs blocs
+   @media (max-width: 30em)) : le <div> le reprend pour un rendu
+   identique au pixel (captures 390/1366 comparées).
+   ============================================================ */
+@media (max-width: 30em) {
+:where(body.m2, body.m3) article.pathology-content > div.page-section {
+    padding: 60px 0;
+}
+}

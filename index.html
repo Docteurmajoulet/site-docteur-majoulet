@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20260915c">
+    <link rel="stylesheet" href="/main.css?v=20260915d">
     <!-- Preload LCP hero portrait — AVIF seul (Chromium/Safari 16.4+ chargeaient les deux formats ; le WebP reste le repli du <picture>) -->
     <link rel="preload" as="image" type="image/avif"
           href="/img/dr-majoulet-hero3-800.avif"
@@ -480,7 +480,7 @@
         </div>
     </div>
     <div class="hero-oct" aria-hidden="true">
-        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" focusable="false">
+        <svg viewBox="0 0 1200 60" preserveAspectRatio="none" focusable="false" aria-hidden="true">
             <path class="hero-oct-path" pathLength="1" d="M0,30 C150,25 300,23 400,25 C480,27 520,29 565,38 C588,43 612,43 635,38 C680,29 720,27 800,25 C900,23 1050,25 1200,30" fill="none" stroke="#BFB297" stroke-width="1.6"/>
         </svg>
     </div>
@@ -574,7 +574,7 @@
 </section>
 
 <!-- ===== PHOTO CHIRURGIE ===== -->
-<section class="section-espace">
+<div class="section-espace">
     <div class="container">
         <div>
             <picture>
@@ -584,7 +584,7 @@
             </picture>
         </div>
     </div>
-</section>
+</div>
 
 <!-- ===== PARCOURS ===== -->
 <!-- ===== POINTS CLÉS ===== -->
@@ -640,7 +640,7 @@
             <aside class="parcours-card parcours-reperes" aria-labelledby="parcours-reperes-title">
                 <div class="parcours-card-header">
                     <span class="parcours-card-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m-11 0h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/></svg>
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m-11 0h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/></svg>
                     </span>
                     <h3 id="parcours-reperes-title">Postes &amp; diplômes</h3>
                 </div>
