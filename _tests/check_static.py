@@ -725,6 +725,20 @@ def check(root):
         if _i >= 0 and _i > pg.txt.find('<main id="main-content"'): E(f'{name} : la barre fixe (nav.sticky-rdv) est après <main> — la remettre avant (ordre de tabulation)')
     if 'body.hero-cta-visible .sticky-rdv {\n    visibility: hidden;\n    transition: transform 0.25s ease, visibility 0s linear 0.25s;\n}' not in css_txt:
         E('main.css : règle TECH20AZ « body.hero-cta-visible .sticky-rdv { visibility: hidden … } » absente (barre hors écran mais focalisable sur la home)')
+    # ---- TECH20BC-2026-09-16 : IndexNow — un seul fichier de clé <32 hex>.txt à la racine, contenu = la clé, hors sitemap et hors
+    # robots ; script _tests/indexnow_submit.py et workflow .github/workflows/indexnow.yml présents et cohérents
+    _keys = [os.path.basename(f) for f in glob.glob(os.path.join(root, '*.txt')) if re.fullmatch(r'[0-9a-f]{32}\.txt', os.path.basename(f))]
+    if len(_keys) != 1: E(f'IndexNow : {len(_keys)} fichier(s) de clé <32 hex>.txt à la racine (un seul attendu)')
+    else:
+        with open(os.path.join(root, _keys[0]), encoding='utf-8') as _f: _kc = _f.read()
+        if _kc.strip() != _keys[0][:-4] or _kc != _keys[0][:-4] + '\n': E(f'{_keys[0]} : le contenu doit être la clé suivie d’un saut de ligne')
+        if _keys[0] in sitemap: E(f'sitemap.xml : le fichier de clé IndexNow {_keys[0]} n’a rien à faire dans le sitemap')
+        for _p in ('_tests/indexnow_submit.py', '.github/workflows/indexnow.yml'):
+            if not exists(_p): E(f'IndexNow : {_p} absent')
+        if exists('.github/workflows/indexnow.yml'):
+            with open(os.path.join(root, '.github/workflows/indexnow.yml'), encoding='utf-8') as _f: _wf = _f.read()
+            for _s in ('_tests/indexnow_submit.py --before', '_tests/indexnow_submit.py --all', "paths: ['*.html']"):
+                if _s not in _wf: E(f'.github/workflows/indexnow.yml : « {_s} » absent')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

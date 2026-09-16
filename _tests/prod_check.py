@@ -108,6 +108,14 @@ def main():
     st, hh, _ = fetch(bust(site + '/grille-amsler.pdf'), method='HEAD')
     if st != 200: E(f'/grille-amsler.pdf : statut {st}')
     elif not re.search(r'<https://docteurmajoulet\.com/grille-amsler>; rel="canonical"', hh.get('link', '')): E(f'/grille-amsler.pdf : en-tête Link canonical absent ou inattendu → {hh.get("link")}')
+    # TECH20BC-2026-09-16 : le fichier de clé IndexNow est servi et son contenu est la clé (sinon api.indexnow.org répond 403)
+    _keys = [os.path.basename(f) for f in glob.glob(os.path.join(ROOT, '*.txt')) if re.fullmatch(r'[0-9a-f]{32}\.txt', os.path.basename(f))]
+    if len(_keys) != 1: E(f'IndexNow : {len(_keys)} fichier(s) de clé dans le dépôt (un seul attendu)')
+    else:
+        st, hh, body = fetch(bust(site + '/' + _keys[0]))
+        if st != 200: E(f'/{_keys[0]} : statut {st} (clé IndexNow)')
+        elif body.decode('utf-8', 'replace').strip() != _keys[0][:-4]: E(f'/{_keys[0]} : contenu différent de la clé IndexNow')
+        elif 'text/plain' not in hh.get('content-type', ''): W(f'/{_keys[0]} : content-type {hh.get("content-type")}')
     st, _, _ = fetch(bust(site + f'/page-inexistante-{random.randrange(10**6)}'))
     if st != 404: E(f'page inexistante : statut {st} (attendu 404)')
 

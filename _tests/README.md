@@ -214,3 +214,13 @@ et, sur la home, elle devient `visibility: hidden` quand elle glisse hors écran
 `check_static.py` vérifie la position sur toute page qui a une barre et la règle CSS ; `browser.mjs` tabule depuis le bouton de menu
 à 390 px sur /dmla (« Appeler » → « Prendre rendez-vous » → contenu) et sur la home (barre non focalisable en haut de page, visible
 en bas).
+
+Depuis le tour 20 (TECH20BC-2026-09-16), le site signale ses pages modifiées par **IndexNow** (protocole ouvert de Bing, Yandex,
+Naver, Seznam ; Bing alimente aussi Copilot, ChatGPT Search, DuckDuckGo, Ecosia et Qwant ; Google ne l'utilise pas) : un fichier
+de clé public `/<clé>.txt` (32 caractères hexadécimaux, contenu = la clé) et le workflow `.github/workflows/indexnow.yml`, qui lance
+`_tests/indexnow_submit.py` à chaque push sur `main` touchant une page — pages HTML modifiées entre les deux commits (un simple
+changement du jeton `?v=` ne compte pas), filtrées par `sitemap.xml` (donc jamais une page noindex), attente ≤ 6 min que Netlify
+serve la nouvelle version, puis POST vers `api.indexnow.org` (200 ou 202 attendu). À la main : `python3 _tests/indexnow_submit.py
+--all --dry-run` (affiche la requête sans l'envoyer) ; le lancement manuel du workflow (onglet Actions → IndexNow → Run workflow)
+soumet toutes les URL du sitemap, utile après un changement de clé. `check_static.py` vérifie le fichier de clé (unique, contenu =
+nom, hors sitemap), le script et le workflow ; `prod_check.py` vérifie que la clé est servie en production.

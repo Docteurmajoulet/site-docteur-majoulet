@@ -1,0 +1,30 @@
+# IndexNow — TECH20BC-2026-09-16 : à chaque push sur main qui modifie une page, les URL modifiées (présentes dans sitemap.xml)
+# sont signalées à api.indexnow.org (Bing — et donc Copilot, ChatGPT Search, DuckDuckGo, Ecosia, Qwant —, Yandex, Naver, Seznam ;
+# Google n'utilise pas IndexNow) une fois que Netlify sert la nouvelle version. Lancement manuel = toutes les URL du sitemap.
+# Détail : _tests/README.md, _tests/indexnow_submit.py
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths: ['*.html']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  indexnow:
+    name: Signalement IndexNow des pages modifiées
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Pages modifiées → api.indexnow.org (après le déploiement Netlify)
+        if: github.event_name == 'push'
+        run: python3 _tests/indexnow_submit.py --before "${{ github.event.before }}" --after "${{ github.sha }}"
+      - name: Toutes les URL du sitemap (lancement manuel)
+        if: github.event_name == 'workflow_dispatch'
+        run: python3 _tests/indexnow_submit.py --all
