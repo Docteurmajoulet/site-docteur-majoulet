@@ -939,6 +939,39 @@ try {
       await page.close(); await ctx.close();
     }
   }
+  // TECH21BF-2026-09-16 — text-wrap : sur /, /dmla et /pathologies à 390 et 1 366 px, les titres h1-h4 calculent balance et les p/li/dd de
+  // <main> calculent pretty (ou balance : sous-titres d'en-tête du tour 20) ; et aucun de ces blocs n'est plus haut qu'avec text-wrap: wrap forcé (balance et pretty n'ajoutent pas de ligne).
+  for (const w of [390, 1366]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR', bypassCSP: true, ...(w === 390 ? { isMobile: true, hasTouch: true } : {}) });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['index', 'dmla', 'pathologies']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const measure = () => page.evaluate(async () => {
+          await document.fonts.ready;
+          const style = el => { const cs = getComputedStyle(el); return cs.textWrapStyle || cs.textWrap || ''; };
+          const out = { h: [], p: [] };
+          for (const el of document.querySelectorAll('h1, h2, h3, h4')) { const r = el.getBoundingClientRect(); if (r.width && r.height) out.h.push([style(el), Math.round(r.height), el.textContent.trim().slice(0, 30)]); }
+          for (const el of document.querySelectorAll('main p, main li, main dd')) { const r = el.getBoundingClientRect(); if (r.width && r.height) out.p.push([style(el), Math.round(r.height), el.textContent.trim().slice(0, 30)]); }
+          return out;
+        });
+        const after = await measure();
+        const badH = after.h.filter(x => !/balance/.test(x[0])).length, badP = after.p.filter(x => !/pretty|balance/.test(x[0])).length;
+        if (badH) failures.push(`${slug} @${w} text-wrap — ${badH} titre(s) sans balance (ex. « ${after.h.find(x => !/balance/.test(x[0]))[2]} »)`);
+        if (badP) failures.push(`${slug} @${w} text-wrap — ${badP} bloc(s) de <main> sans pretty ni balance (ex. « ${after.p.find(x => !/pretty|balance/.test(x[0]))[2]} »)`);
+        await page.addStyleTag({ content: 'h1, h2, h3, h4, main p, main li, main dd { text-wrap: wrap !important; }' });
+        const before = await measure();
+        const taller = [];
+        for (const k of ['h', 'p']) for (let i = 0; i < Math.min(after[k].length, before[k].length); i++) if (after[k][i][1] > before[k][i][1]) taller.push(`« ${after[k][i][2]} » ${before[k][i][1]} → ${after[k][i][1]} px`);
+        for (const t of taller.slice(0, 3)) failures.push(`${slug} @${w} text-wrap — bloc plus haut qu'en wrap : ${t}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} text-wrap — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

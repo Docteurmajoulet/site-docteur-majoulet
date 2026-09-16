@@ -7574,3 +7574,21 @@ body.page-pathologies .hub-sym-title::after {
 body.page-pathologies .hub-grid--4 {
     grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
 }
+
+/* ============================================================
+   TECH21BF-2026-09-16 — text-wrap (lot AQ du tour 18, rebasé)
+   Titres : balance — les mots d'un titre de 2-4 lignes sont
+   répartis sur ses lignes (plus de dernier mot seul). Texte de
+   lecture de <main> : pretty — le navigateur évite le mot orphelin
+   en fin de paragraphe. Ni l'un ni l'autre n'ajoute de ligne
+   (mesuré tour 18 : 0 hauteur changée sur 48 pages × 390/1 366).
+   Amélioration progressive (Chrome/Edge, Safari 17.5+ ; ignoré
+   ailleurs). Contrôlé par check_static (règles présentes) et
+   browser.mjs (styles calculés, aucun bloc plus haut qu'en wrap).
+   ============================================================ */
+h1, h2, h3, h4 {
+    text-wrap: balance;
+}
+main p, main li, main dd {
+    text-wrap: pretty;
+}

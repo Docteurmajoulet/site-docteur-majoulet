@@ -790,6 +790,13 @@ def check(root):
             _avif = re.search(r'<source type="image/avif" srcset="([^"]+)"', _ix.txt)
             if not _m2 or not _avif or _m2.group(1) != _avif.group(1) or 'imagesizes="560px"' not in _pm['(min-width: 860.02px)']:
                 E('index.html : préchargement large du portrait ≠ source AVIF large (mêmes candidats, 560px)')
+    # ---- TECH21BF-2026-09-16 : text-wrap — le bloc existe une fois, en fin de feuille, avec ses deux règles
+    _bf = css_txt.count('TECH21BF-2026-09-16')
+    if _bf != 1: E(f'main.css : bloc TECH21BF (text-wrap) attendu une fois, trouvé {_bf}')
+    else:
+        _bft = css_txt[css_txt.index('TECH21BF-2026-09-16'):]
+        if 'h1, h2, h3, h4 {\n    text-wrap: balance;\n}' not in _bft: E('main.css : règle « h1, h2, h3, h4 { text-wrap: balance } » du bloc TECH21BF absente ou modifiée')
+        if 'main p, main li, main dd {\n    text-wrap: pretty;\n}' not in _bft: E('main.css : règle « main p, main li, main dd { text-wrap: pretty } » du bloc TECH21BF absente ou modifiée')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

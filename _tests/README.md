@@ -241,3 +241,8 @@ Depuis le tour 21 (TECH21BE-2026-09-16), le portrait du hero de la home est serv
 l'image LCP), et les écrans plus larges gardent 400/800/1 080 px ; le préchargement `<link rel="preload" as="image">` est scindé de la même façon
 (`media`). `check_static.py` vérifie les trois sources, les fichiers et l'égalité préchargement ↔ sources ; `browser.mjs` vérifie le `currentSrc`
 sur quatre profils (390×3, 412×2,625, 375×2 → 800 ; 1 366×2 → 1 080) et qu'un seul fichier du portrait est demandé par chargement.
+
+Depuis le tour 21 (TECH21BF-2026-09-16, lot AQ du tour 18 rebasé), les titres `h1`-`h4` sont composés en `text-wrap: balance` (mots répartis sur
+les lignes du titre, plus de dernier mot seul) et les `p`, `li`, `dd` de `<main>` en `text-wrap: pretty` (pas de mot orphelin en fin de paragraphe) —
+amélioration progressive, sans ligne ajoutée (mesuré au tour 18 : 0 hauteur changée sur 48 pages × 390/1 366 px). `check_static.py` exige les deux
+règles ; `browser.mjs` vérifie les styles calculés sur 3 pages × 2 largeurs et qu'aucun bloc n'est plus haut qu'avec `text-wrap: wrap` forcé.
