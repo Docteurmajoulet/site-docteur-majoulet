@@ -739,6 +739,11 @@ def check(root):
             with open(os.path.join(root, '.github/workflows/indexnow.yml'), encoding='utf-8') as _f: _wf = _f.read()
             for _s in ('_tests/indexnow_submit.py --before', '_tests/indexnow_submit.py --all', "paths: ['*.html']"):
                 if _s not in _wf: E(f'.github/workflows/indexnow.yml : « {_s} » absent')
+    # ---- TECH20BA-2026-09-16 : hub — titre « Commencer par vos symptômes » au rang des rubriques, grille DMLA en deux colonnes
+    _ba = css_txt.count('TECH20BA-2026-09-16')
+    if _ba != 1: E(f'main.css : bloc TECH20BA (hub : entrée par symptômes) attendu une fois, trouvé {_ba}')
+    elif 'body.page-pathologies .hub-grid--4 {\n    grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));\n}' not in css_txt[css_txt.index('TECH20BA-2026-09-16'):]:
+        E('main.css : règle « .hub-grid--4 … minmax(min(400px, 100%), 1fr) » du bloc TECH20BA absente ou modifiée')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

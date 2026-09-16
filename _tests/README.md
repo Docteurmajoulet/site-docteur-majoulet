@@ -224,3 +224,7 @@ serve la nouvelle version, puis POST vers `api.indexnow.org` (200 ou 202 attendu
 --all --dry-run` (affiche la requête sans l'envoyer) ; le lancement manuel du workflow (onglet Actions → IndexNow → Run workflow)
 soumet toutes les URL du sitemap, utile après un changement de clé. `check_static.py` vérifie le fichier de clé (unique, contenu =
 nom, hors sitemap), le script et le workflow ; `prod_check.py` vérifie que la clé est servie en production.
+
+Depuis le tour 20 (TECH20BA-2026-09-16), sur le hub /pathologies le titre « Commencer par vos symptômes » a le style des autres
+rubriques (1,6 rem, filet sable — il était en libellé de 0,8 rem) et les quatre cartes DMLA sont en deux colonnes (≥ 400 px) :
+`browser.mjs` le vérifie à 1 366 px ; `check_static.py` exige le bloc TECH20BA de `main.css`.

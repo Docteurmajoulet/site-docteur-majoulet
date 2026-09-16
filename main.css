@@ -7541,3 +7541,36 @@ body.hero-cta-visible .sticky-rdv {
     transition: none;
 }
 }
+
+/* ============================================================
+   TECH20BA-2026-09-16 — Hub /pathologies : l'entrée par symptômes au
+   rang des rubriques (critique Impeccable n°7, P2). Le sous-titre de
+   la page promet « ou commencez par vos symptômes », mais le titre
+   « Commencer par vos symptômes » — un H2 — était composé en libellé
+   de 0,8 rem sous l'alerte, quand « DMLA », « Chirurgies » et « Autres
+   prises en charge » sont à 1,6 rem avec leur filet sable : le bloc le
+   plus utile au patient ressemblait à une note. Il prend le style des
+   autres rubriques. Les quatre cartes DMLA passent de 240 à 400 px de
+   large minimum (18 caractères par ligne à 1 366 px dans une grille de
+   quatre) : deux colonnes de deux cartes dès 860 px, une en dessous.
+   ============================================================ */
+body.page-pathologies .hub-sym-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 0 0 16px;
+    padding: 0 0 14px;
+    position: relative;
+}
+body.page-pathologies .hub-sym-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 52px;
+    height: 2px;
+    background: var(--sable);
+}
+body.page-pathologies .hub-grid--4 {
+    grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+}

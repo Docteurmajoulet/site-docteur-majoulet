@@ -857,6 +857,32 @@ try {
     }
     await ctx.close();
   }
+  // TECH20BA-2026-09-16 — hub : à 1 366 px, le titre « Commencer par vos symptômes » a le corps des autres H2 du hub (1,6 rem) et
+  // son filet sable ; les cartes DMLA font au moins 400 px de large (deux colonnes).
+  if (slugs.includes('pathologies')) {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const page = await ctx.newPage();
+    try {
+      await page.goto(urlFor('pathologies', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+      const res = await page.evaluate(() => {
+        const out = [];
+        const t = document.querySelector('.hub-sym-title'), g = document.querySelector('.hub-group > h2');
+        if (!t || !g) return ['titre des symptômes ou titre de groupe introuvable'];
+        const ct = getComputedStyle(t), cg = getComputedStyle(g), after = getComputedStyle(t, '::after');
+        if (ct.fontSize !== cg.fontSize || ct.textTransform !== cg.textTransform) out.push(`titre des symptômes ${ct.fontSize} ${ct.textTransform} ≠ titres de groupe ${cg.fontSize} ${cg.textTransform}`);
+        if (parseFloat(after.height) < 2 || after.backgroundColor === 'rgba(0, 0, 0, 0)') out.push('filet sable du titre des symptômes absent');
+        const cards = [...document.querySelectorAll('.hub-grid--4 .hub-card')];
+        const narrow = cards.filter(c => c.getBoundingClientRect().width < 400);
+        if (!cards.length || narrow.length) out.push(`cartes DMLA : ${narrow.length}/${cards.length} de moins de 400 px`);
+        return out;
+      });
+      for (const r of res) failures.push(`pathologies @1366 entrée par symptômes — ${r}`);
+      loads++;
+    } catch (e) { failures.push(`pathologies @1366 entrée par symptômes — ${String(e).slice(0, 160)}`); }
+    await page.close();
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
