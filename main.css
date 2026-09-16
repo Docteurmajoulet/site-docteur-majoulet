@@ -7474,3 +7474,46 @@ body.page-index .parcours-more .sc-more:hover .ico { transform: translateX(4px);
 body.page-pathologies a.hub-card:hover .hub-more { gap: 6px; }
 body.page-pathologies a.hub-card:hover .hub-more .ico { transform: translateX(4px); }
 }
+
+/* ============================================================
+   TECH20AX-2026-09-16 — Téléphone : colonne de lecture des fiches
+   (critique Impeccable n°7, P1). À 390 px, le texte des encadrés des
+   fiches tenait sur 26-29 caractères par ligne (alerte d'urgence :
+   214 px de texte utile derrière 58 px de pictogramme, carte blanche à
+   22 px, conteneur à 24 px, encadrés à 22-32 px) — 13 lignes pour
+   l'alerte de /dmla, illisible d'un coup d'œil pour un lecteur de
+   55-85 ans. Sous 37,5 em : le pictogramme d'alerte passe au-dessus
+   du texte (comme l'alerte du hub depuis le tour 15) et les encadrés
+   prennent 18 px de marge intérieure ; sous 30 em : gouttières de 16 px
+   (conteneur et carte blanche des fiches). Rien ne change à partir de
+   601 px. Le hub /pathologies perd le vide de 164 px entre ses sections
+   sous 30 em (padding 60 px hérité de la règle « section » de la
+   famille m11). Contrôlé par browser.mjs : ≥ 32 caractères par ligne
+   dans l'alerte, les .forme-box et les réponses de FAQ à 390 px.
+   ============================================================ */
+@media (max-width: 37.5em) {
+article.pathology-content .alert-urgence:not(.alert-urgence--niveaux) {
+    padding: 54px 18px 18px;
+}
+article.pathology-content .alert-urgence:not(.alert-urgence--niveaux)::before {
+    left: 18px;
+    top: 18px;
+}
+article.pathology-content :is(.forme-box, .qr-block, .enbref, .eeat-block, .travaux-block, .expertise-block, .related-pathologies, .cta-block, .key-fact) {
+    padding-inline: 18px;
+}
+article.pathology-content .qr-block .r {
+    padding-left: 12px;
+}
+}
+@media (max-width: 30em) {
+:where(body.v1) .container {
+    padding-inline: 16px;
+}
+article.pathology-content {
+    padding-inline: 16px;
+}
+body.page-pathologies :is(section.hub-symptoms, section.hub-group) {
+    padding-block: 20px;
+}
+}

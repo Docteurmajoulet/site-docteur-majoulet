@@ -200,3 +200,10 @@ Depuis le tour 20 (TECH20AW-2026-09-16), aucune transition n'anime une propriét
 méga-menu et de la flèche des liens « En savoir plus » / « Lire la fiche » se fait par `transform`, composé sans reflow) :
 `browser.mjs` lit le `transition-property` calculé de tous les éléments de 4 pages à 1 366 et 390 px (seule exception : `max-height`
 des panneaux d'accordéon du tiroir mobile) ; `check_static.py` refuse `transition: gap` et `padding-left 0.15s` dans `main.css`.
+
+Depuis le tour 20 (TECH20AX-2026-09-16), la colonne de lecture des fiches sur téléphone s'élargit : sous 37,5 em le pictogramme
+d'alerte passe au-dessus du texte et les encadrés prennent 18 px de marge intérieure, sous 30 em les gouttières (conteneur, carte
+blanche) passent à 16 px et les sections du hub à 20 px (au lieu de 60) — l'alerte de /dmla passe de 26 à 36 caractères par ligne
+à 390 px : `browser.mjs` exige, à 390 et 320 px sur 4 fiches, une largeur utile ≥ largeur d'écran − 120 px pour l'alerte, les
+`.forme-box`, les réponses de FAQ et le bloc « À propos », et ≤ 100 px entre le dernier symptôme et « DMLA » sur le hub ;
+`check_static.py` exige le bloc TECH20AX de `main.css` et ses trois règles clés.

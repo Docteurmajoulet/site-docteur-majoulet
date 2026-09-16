@@ -789,6 +789,38 @@ try {
       await ctx.close();
     }
   }
+  // TECH20AX-2026-09-16 — colonne de lecture des fiches sur téléphone : à 390 et 320 px, sur 4 fiches, la largeur utile (contenu) de
+  // l'alerte d'urgence, des .forme-box, des réponses de FAQ et du bloc « À propos » vaut au moins largeur d'écran − 120 px (390 : 270 ;
+  // avant le lot : 214-244) ; sur le hub à 390 px, au plus 100 px entre le dernier symptôme et le titre « DMLA » (avant : 164).
+  for (const w of [390, 320]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['dmla', 'secheresse-oculaire', 'chirurgie-retine', 'decollement-retine', 'pathologies'].filter(s => slugs.includes(s))) {
+      if (slug === 'pathologies' && w !== 390) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate((min) => {
+          const out = [];
+          if (document.body.classList.contains('page-pathologies')) {
+            const li = [...document.querySelectorAll('.hub-symptoms li')].pop(); const h2 = document.querySelector('.hub-group h2');
+            if (li && h2) { const gap = h2.getBoundingClientRect().top - li.getBoundingClientRect().bottom; if (gap > 100) out.push(`hub : ${Math.round(gap)} px entre le dernier symptôme et le titre « ${h2.textContent.trim()} » (attendu ≤ 100)`); }
+            return out;
+          }
+          for (const s of ['article.pathology-content .alert-urgence', 'article.pathology-content .forme-box', 'article.pathology-content .qr-block .r', 'article.pathology-content .eeat-block']) {
+            const el = document.querySelector(s); if (!el) continue;
+            const cs = getComputedStyle(el); const cw = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
+            if (cw < min) out.push(`${s} : ${Math.round(cw)} px de texte utile (attendu ≥ ${min})`);
+          }
+          return out;
+        }, w - 120);
+        for (const x of res) failures.push(`${slug} @${w} colonne mobile — ${x}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} colonne mobile — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

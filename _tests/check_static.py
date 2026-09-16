@@ -712,6 +712,13 @@ def check(root):
     if _aw < 5: E(f'main.css : marqueur TECH20AW attendu 5 fois (bloc + 4 déclarations réécrites), trouvé {_aw}')
     for _bad in ('transition: gap', 'padding-left 0.15s', 'transition: padding', 'transition: margin', 'transition: width', 'transition: height'):
         if _bad in css_txt: E(f'main.css : « {_bad} » — transition d’une propriété de mise en page (reflow à chaque survol)')
+    # ---- TECH20AX-2026-09-16 : colonne de lecture des fiches sur téléphone — le bloc existe une fois avec ses trois règles clés
+    _ax = css_txt.count('TECH20AX-2026-09-16')
+    if _ax != 1: E(f'main.css : bloc TECH20AX (colonne de lecture mobile) attendu une fois, trouvé {_ax}')
+    else:
+        _axt = css_txt[css_txt.index('TECH20AX-2026-09-16'):]
+        for _rule in ('article.pathology-content .alert-urgence:not(.alert-urgence--niveaux) {\n    padding: 54px 18px 18px;\n}', ':where(body.v1) .container {\n    padding-inline: 16px;\n}', 'body.page-pathologies :is(section.hub-symptoms, section.hub-group) {\n    padding-block: 20px;\n}'):
+            if _rule not in _axt: E('main.css : règle du bloc TECH20AX absente ou modifiée : ' + _rule.split('{')[0].strip())
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
