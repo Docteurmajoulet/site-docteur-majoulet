@@ -696,6 +696,11 @@ def check(root):
         elif _any: E(f'{name} : aria-current="true" dans le menu alors que la page n\'est dans aucun panneau')
     if 'aria-hidden="true"' not in re.search(r'class="btn-primary">\s*(<svg[^>]*>)', pages['index.html'].txt).group(1): E('index.html : icône du CTA « Prendre rendez-vous » du hero sans aria-hidden="true" (décorative, lue « image » par VoiceOver)')
 
+    # ---- TECH20AU-2026-09-16 : lignes de lecture ≤ 42 em hors corps de fiche — le bloc existe une fois, en fin de feuille, avec sa règle
+    _au = css_txt.count('TECH20AU-2026-09-16')
+    if _au != 1: E(f'main.css : bloc TECH20AU (lignes de lecture ≤ 42 em) attendu une fois, trouvé {_au}')
+    elif not re.search(r'body\.page-publications \.pub-summary,\n(?:[^{]*\n)*?\.associes-line \{\n    max-width: 42em;\n\}', css_txt[css_txt.index('TECH20AU-2026-09-16'):]):
+        E('main.css : règle « max-width: 42em » du bloc TECH20AU absente ou modifiée (lignes de 100 à 137 caractères sur /publications, le hub et les blocs « À propos »)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

@@ -7358,3 +7358,55 @@ nav.main-nav .nav-link[aria-current="true"] {
     padding: 60px 0;
 }
 }
+
+/* ============================================================
+   TECH20AU-2026-09-16 — Lignes de lecture ≤ 42 em hors corps de fiche
+   (Impeccable « line-length », WCAG 1.4.8 : au plus ~80-90 caractères
+   par ligne). Le corps des fiches est à 60ch depuis le tour 5 ; ces
+   blocs restaient à la largeur de leur conteneur — jusqu'à 137
+   caractères par ligne à 1 366 px : sous-titre des en-têtes de page,
+   « À propos de cette fiche » et « Auteur et révision médicale », intros
+   du hub, chapôs des pages piliers, résumés et auteurs de /publications,
+   travaux du service, pages légales, ligne des associés du menu. La
+   règle des 60 caractères de DESIGN.md (largeur ≤ 42 em) vaut désormais
+   pour tout texte de lecture ; les blocs centrés restent centrés
+   (margin-inline: auto). Pied de page (lignes de signature et de liens)
+   hors champ. Contrôlé par browser.mjs : aucune ligne rendue de plus de
+   90 caractères (espaces compris) à 1 366 et 1 920 px.
+   ============================================================ */
+header.page-header .tagline,
+p.hero-note,
+article.pathology-content .eeat-block p,
+body.page-pathologies .hub-eeat p,
+body.page-publications .eeat-block p,
+body.page-pathologies .hub-intro,
+body.page-pathologies .hub-intro--sub,
+body.page-publications .intro-block p,
+body.page-publications .pub-summary,
+body.page-publications .pub-authors,
+body.page-publications .pub-journal,
+body.page-publications .press-summary,
+body.page-publications .placeholder-block p,
+body.page-publications .external-links p,
+article.pathology-content .cta-line,
+.alert-rouge :is(p, li),
+article.pathology-content .expertise-block p,
+article.pathology-content .expert-highlight p,
+article.pathology-content .travaux-block p,
+article.pathology-content .travaux-list li,
+article.pathology-content .travaux-ref,
+:where(body.page-mentions-legales, body.page-confidentialite) article :is(p, li),
+.associes-line {
+    max-width: 42em;
+}
+header.page-header .tagline,
+body.page-publications .placeholder-block p,
+body.page-publications .external-links p {
+    margin-inline: auto;
+}
+header.page-header .tagline {
+    text-wrap: balance;   /* sous-titre centré sur deux lignes : pas de mot orphelin (ignoré par les anciens navigateurs) */
+}
+article.pathology-content .pillar-intro p {
+    max-width: 40em;   /* chapô des pages piliers (15,4 px) : 91 caractères à 42 em */
+}

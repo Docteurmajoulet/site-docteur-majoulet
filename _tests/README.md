@@ -182,3 +182,10 @@ Depuis le tour 18 (TECH18AP-2026-09-15), le bouton de la rubrique courante du me
 seul, sur le bouton du panneau qui contient le lien `aria-current="page"` (aucun quand la page n'est dans aucun panneau), et que
 l'icône du CTA du hero est `aria-hidden` ; `browser.mjs` contrôle l'apparence (ardoise, graisse 600) sur /dmla, /vitrectomie et
 /le-dr-majoulet à 1 366 et 390 px (tiroir ouvert).
+
+Depuis le tour 20 (TECH20AU-2026-09-16), tout texte de lecture est limité à 42 em de large — la « règle des 60 caractères » de
+DESIGN.md, jusque-là appliquée au seul corps des fiches — y compris sous-titres d'en-tête, blocs « À propos de cette fiche », intros
+du hub, chapôs des pages piliers, résumés de /publications, travaux du service, pages légales et ligne des associés du menu :
+`browser.mjs` compte les caractères de chaque ligne rendue (Range, texte sr-only exclu) sur toutes les pages à 1 366 et 1 920 px et
+refuse toute ligne de plus de 90 caractères, espaces compris (pied de page et menus hors champ) ; `check_static.py` exige le bloc
+TECH20AU de `main.css` et sa règle `max-width: 42em`.
