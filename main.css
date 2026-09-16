@@ -7611,3 +7611,27 @@ article.pathology-content .cta-block .btn-more {
 body.page-pathologies .hub-cta .btn-rdv .btn-more {
     margin-left: 4px;
 }
+
+/* ============================================================
+   TECH21BH-2026-09-16 — Blocs de texte hors de la grille des
+   chiffres clés. Dix-sept blocs de sept pages (Spécialités de
+   /le-dr-majoulet, coordonnées de /contact et de
+   /ophtalmologue-boulogne-billancourt, « L'essentiel en 30 secondes »
+   des fiches implants et de /photocoagulation-laser) sont écrits dans
+   un .key-facts sans tuile .key-fact : la grille à trois colonnes
+   plaçait le titre en colonne 1, le texte sur 231 px en colonne 2 et
+   laissait la 3e vide. Un .key-facts sans .key-fact redevient un bloc
+   en flux normal ; ses p et li suivent la règle des 60 caractères
+   (42 em) ; les icônes des titres gardent leur règle .key-facts h3
+   .ico. Navigateurs sans :has() : affichage inchangé. Contrôlé par
+   check_static (règles) et browser.mjs (4 pages, 1 366 px).
+   ============================================================ */
+.key-facts:not(:has(.key-fact)) {
+    display: block;
+}
+div.key-facts:not(:has(.key-fact)) {
+    margin: 0;
+}
+.key-facts:not(:has(.key-fact)) :is(p, li) {
+    max-width: 42em;
+}

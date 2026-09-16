@@ -807,6 +807,20 @@ def check(root):
         _bgt = css_txt[css_txt.index('TECH21BG-2026-09-16'):]
         if 'article.pathology-content .cta-block .btn-more {\n    margin-left: 0;\n}' not in _bgt: E('main.css : règle « .cta-block .btn-more { margin-left: 0 } » du bloc TECH21BG absente ou modifiée')
         if 'body.page-pathologies .hub-cta .btn-rdv .btn-more {\n    margin-left: 4px;\n}' not in _bgt: E('main.css : règle « .hub-cta .btn-rdv .btn-more { margin-left: 4px } » du bloc TECH21BG absente ou modifiée')
+    # ---- TECH21BH-2026-09-16 : les .key-facts sans .key-fact sont en flux normal (règle en fin de feuille) ; aucun lien de sommaire (.toc-list)
+    # ne contient d'élément en ligne hors d'un <span> englobant (le lien est un conteneur flex : l'élément se détacherait)
+    _bh = css_txt.count('TECH21BH-2026-09-16')
+    if _bh != 1: E(f'main.css : bloc TECH21BH (blocs h3 + p hors de la grille des chiffres clés) attendu une fois, trouvé {_bh}')
+    else:
+        _bht = css_txt[css_txt.index('TECH21BH-2026-09-16'):]
+        for _r, _l in (('.key-facts:not(:has(.key-fact)) {\n    display: block;\n}', 'display: block'), ('div.key-facts:not(:has(.key-fact)) {\n    margin: 0;\n}', 'margin: 0'), ('.key-facts:not(:has(.key-fact)) :is(p, li) {\n    max-width: 42em;\n}', 'max-width: 42em')):
+            if _r not in _bht: E(f'main.css : règle « .key-facts:not(:has(.key-fact)) … {_l} » du bloc TECH21BH absente ou modifiée')
+    for name, pg in pages.items():
+        _toc = re.search(r'<ol class="toc-list">(.*?)</ol>', pg.txt, re.S)
+        if _toc:
+            for _a in re.findall(r'<a href="#[^"]*">(.*?)</a>', _toc.group(1), re.S):
+                if '<' in _a and not (_a.startswith('<span>') and _a.endswith('</span>') and _a.count('<span>') == 1):
+                    E(f'{name} : entrée de sommaire avec un élément en ligne hors <span> englobant (le lien est flex : l’élément se détache) « {_a[:60]} » — TECH21BH')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

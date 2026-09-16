@@ -251,3 +251,11 @@ Depuis le tour 21 (TECH21BG-2026-09-16), le complément « sur Doctolib » des b
 (46 occurrences) et sa marge CSS est annulée : l'arbre d'accessibilité lisait « PRENDRE RENDEZ-VOUSSUR DOCTOLIB » / « CRÉNEAU URGENCESUR DOCTOLIB »
 (l'espace n'était qu'une marge). `check_static.py` refuse tout `span.btn-more` sans espace en tête et exige la règle ; `browser.mjs` lit les noms
 accessibles des liens Doctolib dans l'arbre CDP sur /dmla, /decollement-retine et /pathologies à 1 366 px (aucun « …VOUSSUR… », « … SUR DOCTOLIB » présent).
+
+Depuis le tour 21 (TECH21BH-2026-09-16), un `.key-facts` sans tuile `.key-fact` (dix-sept blocs de sept pages : « titre + paragraphe » de
+/le-dr-majoulet, /contact et /ophtalmologue-boulogne-billancourt, « L'essentiel en 30 secondes » des fiches implants et de /photocoagulation-laser, écrits
+dans la grille des chiffres clés) est rendu en flux normal (`:not(:has(.key-fact))`, `display: block`, p et li limités à 42 em) : la grille à trois colonnes
+plaçait le titre en colonne 1 et le texte sur 231 px en colonne 2. Sur /le-dr-majoulet, l'entrée de sommaire « … Paris 16e »
+enveloppe son libellé dans un `<span>` (le lien est un conteneur flex : un `<sup>` nu devenait un item isolé à droite). `check_static.py` exige les trois règles et
+refuse tout lien de sommaire contenant un élément en ligne hors `<span>` englobant ; `browser.mjs` mesure à 1 366 px, sur quatre pages, le flux
+normal des blocs (paragraphes ≥ 600 px, icônes 18 px) et l'écart sup ↔ texte (≤ 3 px).

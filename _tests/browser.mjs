@@ -996,6 +996,40 @@ try {
     }
     await ctx.close();
   }
+  // TECH21BH-2026-09-16 — blocs h3 + p hors de la grille : sur /le-dr-majoulet, /contact, /ophtalmologue-boulogne-billancourt et /implants-toriques à 1 366 px,
+  // tout .key-facts sans .key-fact est en flux normal (display block), ses paragraphes font ≥ 600 px, ses icônes de titre 18 px ; et le <sup> du sommaire
+  // de /le-dr-majoulet suit son texte (≤ 3 px d'écart).
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['le-dr-majoulet', 'contact', 'ophtalmologue-boulogne-billancourt', 'implants-toriques']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(async () => {
+          await document.fonts.ready; const out = []; let n = 0;
+          for (const kf of document.querySelectorAll('.key-facts')) {
+            if (kf.querySelector('.key-fact')) continue; n++;
+            if (getComputedStyle(kf).display !== 'block') out.push(`.key-facts sans tuile en ${getComputedStyle(kf).display} (« ${kf.textContent.trim().slice(0, 25)} »)`);
+            for (const p of kf.querySelectorAll('p')) { const w = p.getBoundingClientRect().width; if (w < 600) out.push(`paragraphe de ${Math.round(w)} px (« ${p.textContent.trim().slice(0, 25)} »)`); }
+            for (const ico of kf.querySelectorAll('h3 .ico')) { const r = ico.getBoundingClientRect(); if (Math.round(r.width) !== 18 || Math.round(r.height) !== 18) out.push(`icône de titre ${Math.round(r.width)}×${Math.round(r.height)} px`); }
+          }
+          if (!n) out.push('aucun .key-facts sans tuile trouvé (page changée ?)');
+          for (const sup of document.querySelectorAll('.toc-list a sup')) {
+            const prev = sup.previousSibling; if (!prev || prev.nodeType !== 3) { out.push('sup du sommaire sans texte devant'); continue; }
+            const rg = document.createRange(); rg.selectNodeContents(prev); const gap = sup.getBoundingClientRect().left - rg.getBoundingClientRect().right;
+            if (gap > 3) out.push(`sup du sommaire détaché de son texte (${Math.round(gap)} px)`);
+          }
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @1366 blocs hors grille — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @1366 blocs hors grille — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
