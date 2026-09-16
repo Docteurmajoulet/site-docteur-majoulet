@@ -821,6 +821,42 @@ try {
     }
     await ctx.close();
   }
+  // TECH20AZ-2026-09-16 — barre fixe avant le contenu : à 390 px, sur /dmla, Tab depuis le bouton de menu donne « Appeler » puis
+  // « Prendre rendez-vous » puis un élément de <main> ; sur la home en haut de page (CTA du hero visible), la barre est visibility:
+  // hidden et n'est pas focalisable, puis redevient visible en bas de page.
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['dmla', 'index'].filter(s => slugs.includes(s))) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        await page.waitForTimeout(900);   // l'IntersectionObserver du hero pose body.hero-cta-visible et la barre finit de glisser
+        const order = await page.evaluate(() => { const bar = document.querySelector('.sticky-rdv'), main = document.querySelector('main'); return bar && main && !!(bar.compareDocumentPosition(main) & Node.DOCUMENT_POSITION_FOLLOWING); });
+        if (!order) failures.push(`${slug} @390 barre fixe — nav.sticky-rdv n'est pas avant <main> dans le DOM`);
+        await page.focus('.mobile-toggle');
+        const seq = [];
+        for (let i = 0; i < 3; i++) { await page.keyboard.press('Tab'); seq.push(await page.evaluate(() => { const a = document.activeElement; return (a.className || '').toString().split(' ')[0] || a.tagName + (a.closest('main') ? ' (main)' : ''); })); }
+        const inBar = await page.evaluate(() => { const a = document.activeElement; return !!a.closest('.sticky-rdv'); });
+        if (slug === 'dmla') {
+          if (seq[0] !== 'sticky-tel' || seq[1] !== 'sticky-doctolib') failures.push(`${slug} @390 barre fixe — après le bouton de menu, Tab donne ${seq.slice(0, 2).join(' → ')} (attendu sticky-tel → sticky-doctolib)`);
+          const third = await page.evaluate(() => !!document.activeElement.closest('main'));
+          if (!third) failures.push(`${slug} @390 barre fixe — le 3e Tab après le menu n'est pas dans <main> (${seq[2]})`);
+        } else {
+          const st = await page.evaluate(() => ({ cls: document.body.classList.contains('hero-cta-visible'), vis: getComputedStyle(document.querySelector('.sticky-rdv')).visibility }));
+          if (!st.cls) failures.push(`${slug} @390 barre fixe — body.hero-cta-visible absent en haut de page (CTA du hero à l'écran)`);
+          else if (st.vis !== 'hidden') failures.push(`${slug} @390 barre fixe — barre hors écran mais visibility ${st.vis} (focalisable à l'aveugle)`);
+          if (seq.some(s => s.startsWith('sticky-'))) failures.push(`${slug} @390 barre fixe — la barre hors écran reçoit le focus (${seq.join(' → ')})`);
+          await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await page.waitForTimeout(700);
+          const vis = await page.evaluate(() => getComputedStyle(document.querySelector('.sticky-rdv')).visibility);
+          if (vis !== 'visible') failures.push(`${slug} @390 barre fixe — barre toujours ${vis} en bas de page`);
+        }
+        loads++;
+      } catch (e) { failures.push(`${slug} @390 barre fixe — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

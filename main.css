@@ -7517,3 +7517,27 @@ body.page-pathologies :is(section.hub-symptoms, section.hub-group) {
     padding-block: 20px;
 }
 }
+
+/* ============================================================
+   TECH20AZ-2026-09-16 — Barre fixe avant le contenu dans le DOM
+   (critique Impeccable n°7, ordre de tabulation) : le <nav class=
+   "sticky-rdv"> des 46 pages est désormais placé juste avant <main>
+   (rendu identique : position fixed). Sur la home, la barre glissait
+   hors écran tant que le CTA du hero est visible tout en restant
+   focalisable (focus invisible) : elle est visibility: hidden à la fin
+   du glissement — retard de 0,25 s à l'aller, immédiat au retour ;
+   aucune transition en mouvement réduit.
+   ============================================================ */
+.sticky-rdv {
+    transition: transform 0.25s ease, visibility 0s linear;
+}
+body.hero-cta-visible .sticky-rdv {
+    visibility: hidden;
+    transition: transform 0.25s ease, visibility 0s linear 0.25s;
+}
+@media (prefers-reduced-motion: reduce) {
+.sticky-rdv,
+body.hero-cta-visible .sticky-rdv {
+    transition: none;
+}
+}

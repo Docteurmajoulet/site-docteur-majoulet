@@ -207,3 +207,10 @@ blanche) passent à 16 px et les sections du hub à 20 px (au lieu de 60) — l'
 à 390 px : `browser.mjs` exige, à 390 et 320 px sur 4 fiches, une largeur utile ≥ largeur d'écran − 120 px pour l'alerte, les
 `.forme-box`, les réponses de FAQ et le bloc « À propos », et ≤ 100 px entre le dernier symptôme et « DMLA » sur le hub ;
 `check_static.py` exige le bloc TECH20AX de `main.css` et ses trois règles clés.
+
+Depuis le tour 20 (TECH20AZ-2026-09-16), la barre fixe « Appeler / Prendre rendez-vous » précède `<main>` dans le DOM (elle était
+après le pied de page : au clavier ou au lecteur d'écran sur téléphone, le premier lien Doctolib d'une fiche venait après 1 700 mots)
+et, sur la home, elle devient `visibility: hidden` quand elle glisse hors écran (elle restait focalisable à l'aveugle) :
+`check_static.py` vérifie la position sur toute page qui a une barre et la règle CSS ; `browser.mjs` tabule depuis le bouton de menu
+à 390 px sur /dmla (« Appeler » → « Prendre rendez-vous » → contenu) et sur la home (barre non focalisable en haut de page, visible
+en bas).

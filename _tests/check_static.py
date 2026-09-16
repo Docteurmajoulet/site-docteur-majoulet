@@ -719,6 +719,12 @@ def check(root):
         _axt = css_txt[css_txt.index('TECH20AX-2026-09-16'):]
         for _rule in ('article.pathology-content .alert-urgence:not(.alert-urgence--niveaux) {\n    padding: 54px 18px 18px;\n}', ':where(body.v1) .container {\n    padding-inline: 16px;\n}', 'body.page-pathologies :is(section.hub-symptoms, section.hub-group) {\n    padding-block: 20px;\n}'):
             if _rule not in _axt: E('main.css : règle du bloc TECH20AX absente ou modifiée : ' + _rule.split('{')[0].strip())
+    # ---- TECH20AZ-2026-09-16 : la barre fixe (nav.sticky-rdv) précède <main> dans le DOM sur toute page qui en a une ; bloc CSS présent
+    for name, pg in pages.items():
+        _i = pg.txt.find('<nav class="sticky-rdv"')
+        if _i >= 0 and _i > pg.txt.find('<main id="main-content"'): E(f'{name} : la barre fixe (nav.sticky-rdv) est après <main> — la remettre avant (ordre de tabulation)')
+    if 'body.hero-cta-visible .sticky-rdv {\n    visibility: hidden;\n    transition: transform 0.25s ease, visibility 0s linear 0.25s;\n}' not in css_txt:
+        E('main.css : règle TECH20AZ « body.hero-cta-visible .sticky-rdv { visibility: hidden … } » absente (barre hors écran mais focalisable sur la home)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
