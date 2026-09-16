@@ -797,6 +797,16 @@ def check(root):
         _bft = css_txt[css_txt.index('TECH21BF-2026-09-16'):]
         if 'h1, h2, h3, h4 {\n    text-wrap: balance;\n}' not in _bft: E('main.css : règle « h1, h2, h3, h4 { text-wrap: balance } » du bloc TECH21BF absente ou modifiée')
         if 'main p, main li, main dd {\n    text-wrap: pretty;\n}' not in _bft: E('main.css : règle « main p, main li, main dd { text-wrap: pretty } » du bloc TECH21BF absente ou modifiée')
+    # ---- TECH21BG-2026-09-16 : nom accessible des boutons Doctolib — tout span.btn-more commence par un espace ; la marge est annulée
+    for name, pg in pages.items():
+        _bad = len(re.findall(r'<span class="btn-more">[^\s<]', pg.txt))
+        if _bad: E(f'{name} : {_bad} <span class="btn-more"> sans espace en tête (nom accessible « rendez-voussur Doctolib ») — TECH21BG')
+    _bg = css_txt.count('TECH21BG-2026-09-16')
+    if _bg != 1: E(f'main.css : bloc TECH21BG (nom accessible des boutons Doctolib) attendu une fois, trouvé {_bg}')
+    else:
+        _bgt = css_txt[css_txt.index('TECH21BG-2026-09-16'):]
+        if 'article.pathology-content .cta-block .btn-more {\n    margin-left: 0;\n}' not in _bgt: E('main.css : règle « .cta-block .btn-more { margin-left: 0 } » du bloc TECH21BG absente ou modifiée')
+        if 'body.page-pathologies .hub-cta .btn-rdv .btn-more {\n    margin-left: 4px;\n}' not in _bgt: E('main.css : règle « .hub-cta .btn-rdv .btn-more { margin-left: 4px } » du bloc TECH21BG absente ou modifiée')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

@@ -246,3 +246,8 @@ Depuis le tour 21 (TECH21BF-2026-09-16, lot AQ du tour 18 rebasé), les titres `
 les lignes du titre, plus de dernier mot seul) et les `p`, `li`, `dd` de `<main>` en `text-wrap: pretty` (pas de mot orphelin en fin de paragraphe) —
 amélioration progressive, sans ligne ajoutée (mesuré au tour 18 : 0 hauteur changée sur 48 pages × 390/1 366 px). `check_static.py` exige les deux
 règles ; `browser.mjs` vérifie les styles calculés sur 3 pages × 2 largeurs et qu'aucun bloc n'est plus haut qu'avec `text-wrap: wrap` forcé.
+
+Depuis le tour 21 (TECH21BG-2026-09-16), le complément « sur Doctolib » des boutons de fin de fiche (`span.btn-more`) commence par un vrai espace
+(46 occurrences) et sa marge CSS est annulée : l'arbre d'accessibilité lisait « PRENDRE RENDEZ-VOUSSUR DOCTOLIB » / « CRÉNEAU URGENCESUR DOCTOLIB »
+(l'espace n'était qu'une marge). `check_static.py` refuse tout `span.btn-more` sans espace en tête et exige la règle ; `browser.mjs` lit les noms
+accessibles des liens Doctolib dans l'arbre CDP sur /dmla, /decollement-retine et /pathologies à 1 366 px (aucun « …VOUSSUR… », « … SUR DOCTOLIB » présent).

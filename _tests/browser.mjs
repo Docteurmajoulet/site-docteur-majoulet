@@ -972,6 +972,30 @@ try {
     }
     await ctx.close();
   }
+  // TECH21BG-2026-09-16 — nom accessible des boutons Doctolib : sur /dmla, /decollement-retine et /pathologies à 1 366 px (span « sur Doctolib » affiché),
+  // l'arbre d'accessibilité (CDP) ne contient aucun lien nommé « …VOUSSUR… » ou « …URGENCESUR… », et contient « RENDEZ-VOUS SUR DOCTOLIB » /
+  // « URGENCE SUR DOCTOLIB ».
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['dmla', 'decollement-retine', 'pathologies']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const cdp = await ctx.newCDPSession(page);
+        const { nodes } = await cdp.send('Accessibility.getFullAXTree');
+        await cdp.detach();
+        const names = nodes.filter(n => n.role && n.role.value === 'link' && n.name && /doctolib/i.test(n.name.value)).map(n => n.name.value.replace(/\s+/g, ' ').toUpperCase());
+        const glued = names.filter(x => /VOUSSUR|URGENCESUR/.test(x));
+        for (const g of [...new Set(glued)]) failures.push(`${slug} @1366 nom accessible — « ${g} » (mots collés)`);
+        if (!names.some(x => /RENDEZ-VOUS SUR DOCTOLIB|URGENCE SUR DOCTOLIB/.test(x))) failures.push(`${slug} @1366 nom accessible — aucun lien « … sur Doctolib » lu dans l'arbre (${names.length} liens Doctolib)`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @1366 nom accessible — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

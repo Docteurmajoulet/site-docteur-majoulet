@@ -7592,3 +7592,22 @@ h1, h2, h3, h4 {
 main p, main li, main dd {
     text-wrap: pretty;
 }
+
+/* ============================================================
+   TECH21BG-2026-09-16 — Nom accessible des boutons Doctolib
+   « Prendre rendez-vous sur Doctolib » : l'espace entre le libellé
+   et « sur Doctolib » était une marge (margin-left .32em sur
+   .btn-more) — invisible pour l'arbre d'accessibilité, qui lisait
+   « rendez-voussur Doctolib ». L'espace est désormais un vrai
+   caractère dans le HTML (46 occurrences) ; la marge est annulée
+   (largeur ≈ inchangée : un espace fait ≈ 0,3 em). Contrôlé par
+   check_static (span avec espace, règle présente) et browser.mjs
+   (noms accessibles lus dans l'arbre CDP). Le hub /pathologies,
+   dont la marge était de 8 px, garde 4 px + l'espace (≈ 8 px).
+   ============================================================ */
+article.pathology-content .cta-block .btn-more {
+    margin-left: 0;
+}
+body.page-pathologies .hub-cta .btn-rdv .btn-more {
+    margin-left: 4px;
+}
