@@ -235,3 +235,9 @@ Depuis le tour 21 (TECH21BD-2026-09-16), tout encadré d'alerte qui prescrit une
 myopie-forte, neovaisseaux-choroidiens-myope-fort, secheresse-oculaire). `check_static.py` le vérifie sur toutes les pages (heuristique : le texte de
 l'encadré contient « consult » et un mot d'urgence) ; `browser.mjs` contrôle sur trois fiches × 390/1 366 px que les deux boutons sont visibles,
 hauts d'au moins 44 px et contenus dans l'encadré. Les encadrés d'information (positionnement, gaz, dépistage annuel…) ne sont pas concernés.
+
+Depuis le tour 21 (TECH21BE-2026-09-16), le portrait du hero de la home est servi par plage d'écran : trois `<source media="(max-width: 860px)">`
+(AVIF, WebP, JPEG ; candidats 400 et 800 px) réservent le 800 px aux téléphones, même 3× (46 Ko AVIF au lieu de 93 Ko pour une fenêtre de 390 px —
+l'image LCP), et les écrans plus larges gardent 400/800/1 080 px ; le préchargement `<link rel="preload" as="image">` est scindé de la même façon
+(`media`). `check_static.py` vérifie les trois sources, les fichiers et l'égalité préchargement ↔ sources ; `browser.mjs` vérifie le `currentSrc`
+sur quatre profils (390×3, 412×2,625, 375×2 → 800 ; 1 366×2 → 1 080) et qu'un seul fichier du portrait est demandé par chargement.

@@ -919,6 +919,26 @@ try {
     }
     await ctx.close();
   }
+  // TECH21BE-2026-09-16 — portrait du hero par plage d'écran : sur la home, le candidat affiché (currentSrc) est le 800 px à 390×3, 412×2,625 et
+  // 375×2 (téléphones), le 1 080 px à 1 366×2 (écran large dense) ; et une seule requête du portrait par chargement (préchargement = image).
+  if (slugs.includes('index')) {
+    for (const pr of [{ w: 390, h: 844, d: 3, mob: true, want: '-800.' }, { w: 412, h: 915, d: 2.625, mob: true, want: '-800.' }, { w: 375, h: 667, d: 2, mob: true, want: '-800.' }, { w: 1366, h: 900, d: 2, mob: false, want: '-1080.' }]) {
+      const ctx = await browser.newContext({ viewport: { width: pr.w, height: pr.h }, deviceScaleFactor: pr.d, locale: 'fr-FR', ...(pr.mob ? { isMobile: true, hasTouch: true } : {}) });
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      const page = await ctx.newPage(); const hero = [];
+      page.on('request', r => { if (/\/img\/dr-majoulet-hero3-/.test(r.url())) hero.push(r.url()); });
+      try {
+        await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const cur = await page.evaluate(async () => { const img = document.querySelector('.hero-photo img'); if (img && !img.complete) await new Promise(r => img.addEventListener('load', r, { once: true })); return img ? img.currentSrc : ''; });
+        if (!cur.includes(pr.want)) failures.push(`index @${pr.w}×${pr.d} portrait — currentSrc ${cur.split('/').pop()} (attendu …${pr.want}…)`);
+        if (!cur.endsWith('.avif')) failures.push(`index @${pr.w}×${pr.d} portrait — format ${cur.split('.').pop()} (AVIF attendu)`);
+        const uniq = [...new Set(hero)];
+        if (uniq.length !== 1) failures.push(`index @${pr.w}×${pr.d} portrait — ${uniq.length} fichiers demandés (${uniq.map(u => u.split('/').pop()).join(', ')}) : le préchargement ne correspond pas à l'image`);
+        loads++;
+      } catch (e) { failures.push(`index @${pr.w}×${pr.d} portrait — ${String(e).slice(0, 160)}`); }
+      await page.close(); await ctx.close();
+    }
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

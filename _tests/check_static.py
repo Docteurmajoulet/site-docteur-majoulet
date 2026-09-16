@@ -768,6 +768,28 @@ def check(root):
             if _s < 0: E(f'{name} : encadré <div class="alert-urgence"> attendu (lot BD)')
             elif not ('class="alert-actions"' in _t[_s:] and 'href="tel:+33184191166"' in _t[_s:] and 'href="/urgences-ophtalmologiques">Urgences' in _t[_s:]):
                 E(f'{name} : bloc p.alert-actions du lot BD incomplet (téléphone du cabinet + « Urgences : conduite à tenir »)')
+    # ---- TECH21BE-2026-09-16 : portrait du hero — trois sources réservées aux écrans ≤ 860 px (AVIF, WebP, JPEG ; 400 et 800 px), fichiers présents,
+    # deux préchargements complémentaires (≤ 860 px : 400/800 ; ≥ 860,02 px : 400/800/1080) dont les candidats égalent ceux des sources
+    _ix = pages.get('index.html')
+    if _ix:
+        _srcs = re.findall(r'<source media="\(max-width: 860px\)"([^>]*)>', _ix.txt)
+        if len(_srcs) != 3: E(f'index.html : {len(_srcs)} <source media="(max-width: 860px)"> dans le <picture> du portrait (3 attendues : AVIF, WebP, JPEG)')
+        for _a in _srcs:
+            _set = re.search(r'srcset="([^"]+)"', _a).group(1) if re.search(r'srcset="([^"]+)"', _a) else ''
+            if [c.split()[1] for c in _set.split(',')] != ['400w', '800w']: E(f'index.html : source mobile du portrait avec des candidats inattendus « {_set} » (400w et 800w attendus)')
+            if 'sizes="100vw"' not in _a: E('index.html : source mobile du portrait sans sizes="100vw"')
+            for _c in _set.split(','):
+                if not exists(_c.split()[0].lstrip('/')): E(f'index.html : candidat du portrait introuvable {_c.split()[0]}')
+        _pre = re.findall(r'<link rel="preload" as="image"[^>]*>', _ix.txt)
+        _pm = {re.search(r'media="([^"]+)"', p).group(1) if re.search(r'media="([^"]+)"', p) else None: p for p in _pre}
+        if set(_pm) != {'(max-width: 860px)', '(min-width: 860.02px)'}: E(f'index.html : préchargements du portrait attendus avec media ≤ 860 px et ≥ 860,02 px, trouvés {sorted(map(str, _pm))}')
+        else:
+            _m1 = re.search(r'imagesrcset="([^"]+)"', _pm['(max-width: 860px)']); _m2 = re.search(r'imagesrcset="([^"]+)"', _pm['(min-width: 860.02px)'])
+            if not _m1 or [c.split()[1] for c in _m1.group(1).split(',')] != ['400w', '800w'] or 'imagesizes="100vw"' not in _pm['(max-width: 860px)']:
+                E('index.html : préchargement mobile du portrait ≠ source mobile (400w, 800w, 100vw)')
+            _avif = re.search(r'<source type="image/avif" srcset="([^"]+)"', _ix.txt)
+            if not _m2 or not _avif or _m2.group(1) != _avif.group(1) or 'imagesizes="560px"' not in _pm['(min-width: 860.02px)']:
+                E('index.html : préchargement large du portrait ≠ source AVIF large (mêmes candidats, 560px)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
