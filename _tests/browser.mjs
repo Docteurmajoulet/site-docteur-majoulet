@@ -883,6 +883,42 @@ try {
     await page.close();
     await ctx.close();
   }
+  // TECH21BD-2026-09-16 — actions dans les encadrés d'alerte des fiches : sur /dmla, /cataracte et /grille-amsler à 390 (tactile) et 1 366 px,
+  // l'encadré .alert-urgence contient deux boutons (tel: du cabinet, /urgences-ophtalmologiques), visibles, hauts d'au moins 44 px et
+  // contenus dans l'encadré ; le libellé du téléphone porte le numéro.
+  for (const w of [390, 1366]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: w === 390 ? 3 : 1, locale: 'fr-FR', ...(w === 390 ? { isMobile: true, hasTouch: true } : {}) });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['dmla', 'cataracte', 'grille-amsler']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = []; const box = document.querySelector('article .alert-urgence');
+          if (!box) return ['aucun .alert-urgence'];
+          const b = box.getBoundingClientRect(); const links = [...box.querySelectorAll('.alert-actions a')];
+          if (links.length !== 2) out.push(`${links.length} bouton(s) dans .alert-actions (2 attendus)`);
+          for (const a of links) {
+            const r = a.getBoundingClientRect(); const cs = getComputedStyle(a);
+            if (cs.display === 'none' || cs.visibility === 'hidden' || r.width === 0) out.push(`${a.className} invisible`);
+            if (r.height < 44) out.push(`${a.className} : ${Math.round(r.height)} px de haut (< 44)`);
+            if (r.left < b.left - 1 || r.right > b.right + 1 || r.top < b.top - 1 || r.bottom > b.bottom + 1) out.push(`${a.className} déborde de l'encadré`);
+          }
+          const tel = box.querySelector('.btn-alert-tel');
+          if (tel && !/tel:\+33184191166$/.test(tel.href)) out.push(`téléphone inattendu ${tel.href}`);
+          if (tel && !/01.84.19.11.66/.test(tel.textContent.replace(/ /g, ' '))) out.push('numéro absent du libellé « Appeler le cabinet »');
+          const rdv = box.querySelector('.btn-alert-rdv');
+          if (rdv && !/\/urgences-ophtalmologiques$/.test(rdv.getAttribute('href'))) out.push(`cible inattendue ${rdv.getAttribute('href')}`);
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @${w} actions d'alerte — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} actions d'alerte — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

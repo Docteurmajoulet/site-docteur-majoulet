@@ -228,3 +228,10 @@ nom, hors sitemap), le script et le workflow ; `prod_check.py` vérifie que la c
 Depuis le tour 20 (TECH20BA-2026-09-16), sur le hub /pathologies le titre « Commencer par vos symptômes » a le style des autres
 rubriques (1,6 rem, filet sable — il était en libellé de 0,8 rem) et les quatre cartes DMLA sont en deux colonnes (≥ 400 px) :
 `browser.mjs` le vérifie à 1 366 px ; `check_static.py` exige le bloc TECH20BA de `main.css`.
+
+Depuis le tour 21 (TECH21BD-2026-09-16), tout encadré d'alerte qui prescrit une consultation rapide (« en urgence », « sous 24-48 h »,
+« sans délai »…) offre un moyen d'agir : un lien `tel:` dans le texte ou le bloc `p.alert-actions` du hub (« Appeler le cabinet — 01 84 19 11 66 » +
+« Urgences : conduite à tenir »), ajouté sur neuf fiches (cataracte, chirurgie-retine, dmla, dmla-seche, grille-amsler, hemorragie-intravitreenne,
+myopie-forte, neovaisseaux-choroidiens-myope-fort, secheresse-oculaire). `check_static.py` le vérifie sur toutes les pages (heuristique : le texte de
+l'encadré contient « consult » et un mot d'urgence) ; `browser.mjs` contrôle sur trois fiches × 390/1 366 px que les deux boutons sont visibles,
+hauts d'au moins 44 px et contenus dans l'encadré. Les encadrés d'information (positionnement, gaz, dépistage annuel…) ne sont pas concernés.

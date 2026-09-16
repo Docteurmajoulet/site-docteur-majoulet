@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-09-14
+Dernière mise à jour : 2026-09-16
 
 ## Identité et coordonnées
 
@@ -928,6 +928,8 @@ Un **test simple d’autosurveillance** existe : la [**grille d’Amsler**](http
 
 **Signes d’alerte imposant une consultation rapide :** baisse visuelle centrale **rapide** d’un œil, **déformation des lignes droites** (métamorphopsies — tester avec la [grille d’Amsler](https://docteurmajoulet.com/grille-amsler)), **tache centrale** (scotome) gênant la lecture, sensation de voile. Ces signes imposent une consultation **dans les 24 à 48 heures**.
 
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
+
 #### Facteurs de risque et prévention
 
 - **Âge** : principal facteur, risque croissant après 50 ans.
@@ -1056,6 +1058,8 @@ Un **OCT maculaire semestriel**, réalisé sur place au cabinet, permet de suivr
 Le test de la [**grille d’Amsler**](https://docteurmajoulet.com/grille-amsler), une fois par jour, chaque œil séparément, est le meilleur moyen de détecter entre deux consultations une déformation nouvelle des lignes — premier signe d’une éventuelle complication néovasculaire.
 
 **Le risque à connaître : la conversion en forme humide.** Une DMLA sèche peut se compliquer de néovaisseaux (forme humide), en particulier quand l’autre œil en est déjà atteint. Déformation nouvelle des lignes, tache centrale, baisse rapide de la vision : consultation **sous 48 h** — créneaux d’urgence au cabinet, OCT sur place, [injection sans délai](https://docteurmajoulet.com/injection-intravitreenne) si l’indication est confirmée.
+
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 #### Basse vision : garder l’autonomie
 
@@ -1285,6 +1289,8 @@ En fixant le point central : des lignes paraissent **ondulées, déformées ou i
 
 **Test anormal ou modifié :** consultez un ophtalmologue **sous 48 heures**. Une déformation nouvelle des lignes peut révéler une forme humide de DMLA, dont le pronostic dépend de la rapidité du traitement. Le cabinet prévoit des **créneaux d’urgence** pour ces situations : OCT réalisé sur place le jour même et, si l’indication est confirmée, [injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) sans délai.
 
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
+
 #### Les limites du test
 
 La grille d’Amsler est un outil de **dépistage**, pas de diagnostic : elle ne remplace ni le fond d’œil ni l’OCT. Certaines lésions débutantes ne donnent **aucune anomalie perceptible** (le cerveau « comble » les petites zones manquantes), et un œil dominant peut masquer l’atteinte de l’autre — d’où l’importance de tester **chaque œil séparément** et de maintenir le **suivi ophtalmologique régulier** même quand le test est normal.
@@ -1424,6 +1430,8 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 - **Vitrectomie postérieure 25G** indiquée en cas d’hémorragie abondante empêchant la visualisation du fond d’œil et le traitement étiologique, d’hémorragie persistante (typiquement au-delà de 4 à 8 semaines), d’association à une déchirure rétinienne ou à un décollement de rétine. La vitrectomie permet d’évacuer le sang, d’identifier et de traiter la cause (laser, photocoagulation), et de prévenir les complications (prolifération vitréo-rétinienne, hémorragies à répétition).
 
 **Urgence relative.** Une baisse de vision brutale avec corps flottants nombreux ou voile doit faire consulter rapidement pour écarter une déchirure rétinienne ou un décollement de rétine sous-jacent.
+
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 ##### Parcours patient
 
@@ -2102,6 +2110,8 @@ Les symptômes dépendent du volume et de la localisation du sang dans le vitré
 - Une **amputation périphérique du champ visuel** doit faire suspecter un décollement de rétine associé.
 
 **Consultation ophtalmologique sans délai.** Une hémorragie intra-vitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
+
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 #### Les principales étiologies
 
@@ -2922,6 +2932,8 @@ Les étapes sont :
 #### Suites opératoires et récupération
 
 **Signes devant faire reconsulter en urgence :** douleur oculaire intense, **baisse brutale de la vision**, rougeur importante avec photophobie marquée, apparition de mouches volantes, voile noir ou éclairs lumineux. Ces signes peuvent évoquer une **endophtalmie** (infection intraoculaire, rare mais grave) ou un **décollement de rétine**.
+
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 - **Récupération visuelle rapide** : 24 à 72 heures dans la majorité des cas.
 - **Collyres antibio-corticoïdes** pendant 3 à 4 semaines.
@@ -4142,6 +4154,8 @@ La myopie forte multiplie par **5 à 10** le risque de décollement de rétine. 
 
 **Signes devant faire consulter en urgence :** multiplication soudaine des **corps flottants (myodésopsies)**, **éclairs lumineux (phosphènes)**, apparition d’un **voile noir** ou d’une **amputation du champ visuel**. Ces signes évoquent une déchirure rétinienne ou un décollement de rétine débutant. Voir la page [Déchirure de rétine et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
+
 ##### Atrophie choriorétinienne et zones pauci-pigmentées
 
 Amincissement progressif de la choroïde et de l’épithélium pigmentaire dans les zones étirées, notamment en regard d’un staphylome. Responsable d’une baisse de vision progressive lorsque l’atrophie envahit la région fovéolaire.
@@ -4236,6 +4250,8 @@ Les néovaisseaux maculaires du myope fort se révèlent typiquement par :
 - L’atteinte est presque toujours **unilatérale** au début, mais une surveillance de l’œil controlatéral est indispensable.
 
 **Urgence semi-différée.** Toute métamorphopsie ou baisse visuelle centrale brutale chez un patient myope fort impose une consultation ophtalmologique dans les **1 à 2 semaines**. Plus le traitement est précoce, meilleur est le pronostic.
+
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 #### Diagnostic
 
@@ -4834,6 +4850,8 @@ Blépharite et sécheresse forment un cercle : l’inflammation des paupières a
 Brûlures, picotements, sensation de corps étranger ou de sable, larmoiement paradoxal (l’œil irrité produit des larmes réflexes de mauvaise qualité), yeux rouges le soir, vision fluctuante qui s’éclaircit au clignement, intolérance aux lentilles, gêne à la lumière, paupières lourdes ou collées au réveil. Les symptômes sont typiquement aggravés par l’écran, le vent, la climatisation et la fin de journée.
 
 **Ce n’est pas une sécheresse banale si :** l’œil est rouge *et* douloureux, la lumière est insupportable, la vision baisse, ou vous portez des lentilles de contact. Ces signes évoquent une **kératite** ou une inflammation intraoculaire et imposent un examen rapide — consultez la page [urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques) (créneau sous 24-48 h ; **le jour même si vous portez des lentilles**).
+
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 #### Le bilan au cabinet
 

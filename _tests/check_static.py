@@ -744,6 +744,30 @@ def check(root):
     if _ba != 1: E(f'main.css : bloc TECH20BA (hub : entrée par symptômes) attendu une fois, trouvé {_ba}')
     elif 'body.page-pathologies .hub-grid--4 {\n    grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));\n}' not in css_txt[css_txt.index('TECH20BA-2026-09-16'):]:
         E('main.css : règle « .hub-grid--4 … minmax(min(400px, 100%), 1fr) » du bloc TECH20BA absente ou modifiée')
+    # ---- TECH21BD-2026-09-16 : toute alerte qui prescrit une consultation rapide offre un moyen d'agir (lien tel: ou bloc p.alert-actions) ;
+    # les neuf fiches du lot portent le bloc complet (téléphone + « Urgences : conduite à tenir »)
+    _BD_PAGES = ['cataracte', 'chirurgie-retine', 'dmla-seche', 'dmla', 'grille-amsler', 'hemorragie-intravitreenne', 'myopie-forte', 'neovaisseaux-choroidiens-myope-fort', 'secheresse-oculaire']
+    _bd_urg = ('urgence', 'rapide', 'sans délai', '24', '48', 'jour même')
+    for name, pg in pages.items():
+        _t = pg.txt; _pos = 0
+        while True:
+            _m = re.search(r'<div class="alert-urgence[^"]*"[^>]*>', _t[_pos:])
+            if not _m: break
+            _i = _pos + _m.end(); _d = 1
+            while _d:
+                _j = _t.find('<div', _i); _k = _t.find('</div>', _i)
+                if _k == -1: _i = len(_t); break
+                if _j != -1 and _j < _k: _d += 1; _i = _j + 4
+                else: _d -= 1; _i = _k + 6
+            _blk = _t[_pos + _m.start():_i]; _pos = _i
+            _txt = re.sub(r'\s+', ' ', re.sub(r'<[^>]+>', ' ', _blk)).replace('&nbsp;', ' ').lower()
+            if 'consult' in _txt and any(w in _txt for w in _bd_urg) and 'tel:' not in _blk and 'class="alert-actions"' not in _blk:
+                E(f'{name} : encadré d’alerte qui prescrit une consultation rapide sans moyen d’agir (ni lien tel:, ni p.alert-actions) — TECH21BD')
+        if pg.slug in _BD_PAGES:
+            _s, _e = _t.find('<div class="alert-urgence">'), 0
+            if _s < 0: E(f'{name} : encadré <div class="alert-urgence"> attendu (lot BD)')
+            elif not ('class="alert-actions"' in _t[_s:] and 'href="tel:+33184191166"' in _t[_s:] and 'href="/urgences-ophtalmologiques">Urgences' in _t[_s:]):
+                E(f'{name} : bloc p.alert-actions du lot BD incomplet (téléphone du cabinet + « Urgences : conduite à tenir »)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
