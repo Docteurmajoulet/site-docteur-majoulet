@@ -195,3 +195,8 @@ Depuis le tour 20 (TECH20AV-2026-09-16), plus aucun encadré ne porte de liseré
 d'information de /myopie, introduction et cartes presse de /publications) sont passés à `border: 1px solid var(--border)` :
 `browser.mjs` refuse toute bordure gauche pleine ≥ 3 px sur les 48 pages à 1 366 px (tableaux exclus) ; `check_static.py` exige le
 bloc TECH20AV de `main.css`.
+
+Depuis le tour 20 (TECH20AW-2026-09-16), aucune transition n'anime une propriété de mise en page (le glissement des liens du
+méga-menu et de la flèche des liens « En savoir plus » / « Lire la fiche » se fait par `transform`, composé sans reflow) :
+`browser.mjs` lit le `transition-property` calculé de tous les éléments de 4 pages à 1 366 et 390 px (seule exception : `max-height`
+des panneaux d'accordéon du tiroir mobile) ; `check_static.py` refuse `transition: gap` et `padding-left 0.15s` dans `main.css`.

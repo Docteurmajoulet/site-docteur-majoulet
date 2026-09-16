@@ -3993,7 +3993,7 @@ nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
     line-height: 1.35;
     color: var(--text-light);
     border-radius: 6px;
-    transition: background 0.15s, color 0.15s, padding-left 0.15s;
+    transition: background 0.15s, color 0.15s, transform 0.15s;   /* TECH20AW-2026-09-16 : glissement par transform (ex-padding-left) */
     text-decoration: none;
 }
 .mega-list a:focus-visible {
@@ -4470,7 +4470,7 @@ body.page-index .specialty-card .sc-more {
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: var(--prusse);
-    transition: gap 0.2s;
+    transition: none;   /* TECH20AW-2026-09-16 : la flèche glisse par transform (ex-gap) */
 }
 body.page-index .specialty-card .sc-more .ico {
     width: 16px;
@@ -4763,7 +4763,7 @@ body.page-index .parcours-more .sc-more {
     text-transform: uppercase;
     color: var(--prusse);
     text-decoration: none;
-    transition: gap 0.2s;
+    transition: none;   /* TECH20AW-2026-09-16 : la flèche glisse par transform (ex-gap) */
 }
 body.page-index .parcours-more .sc-more .ico {
     width: 16px;
@@ -5668,7 +5668,7 @@ body.page-pathologies .hub-more {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--prusse);
-    transition: gap 0.2s;
+    transition: none;   /* TECH20AW-2026-09-16 : la flèche glisse par transform (ex-gap) */
 }
 body.page-pathologies .hub-more .ico {
     width: 14px;
@@ -7429,4 +7429,48 @@ article.pathology-content .info-box,
 body.page-publications .intro-block,
 body.page-publications .press-card {
     border: 1px solid var(--border);
+}
+
+/* ============================================================
+   TECH20AW-2026-09-16 — Transitions sans propriété de mise en page
+   (Impeccable « layout-transition », skill performance : n'animer que
+   transform et opacity). Le glissement des liens du méga-menu animait
+   padding-left (8 → 12 px : reflow de la colonne à chaque survol) et
+   les liens « En savoir plus » / « Lire la fiche » animaient gap
+   (6 → 10 px) ; le même mouvement se fait par transform, composé sans
+   reflow. Le lien de la page courante (indenté à 12 px en permanence)
+   n'est pas concerné. Les panneaux du tiroir mobile gardent leur
+   accordéon max-height (seule exception, documentée dans browser.mjs).
+   Les déclarations d'origine sont réécrites sur place (« padding-left
+   0.15s » → « transform 0.15s » sur .mega-list a ; « gap 0.2s » → none
+   sur les trois liens fléchés) ; ce bloc porte les états.
+   ============================================================ */
+.mega-list a:not([aria-current="page"]):focus-visible {
+    padding-left: 8px;
+    transform: translateX(4px);
+}
+@media (hover: hover) {
+.mega-list a:not([aria-current="page"]):hover {
+    padding-left: 8px;
+    transform: translateX(4px);
+}
+}
+body.page-index .specialty-card .sc-more .ico,
+body.page-index .parcours-more .sc-more .ico,
+body.page-pathologies .hub-more .ico {
+    transition: transform 0.2s;
+}
+body.page-index a.specialty-card:focus-visible .sc-more { gap: 6px; }
+body.page-index a.specialty-card:focus-visible .sc-more .ico { transform: translateX(4px); }
+body.page-index .parcours-more .sc-more:focus-visible { gap: 8px; }
+body.page-index .parcours-more .sc-more:focus-visible .ico { transform: translateX(4px); }
+body.page-pathologies a.hub-card:focus-visible .hub-more { gap: 6px; }
+body.page-pathologies a.hub-card:focus-visible .hub-more .ico { transform: translateX(4px); }
+@media (hover: hover) {
+body.page-index a.specialty-card:hover .sc-more { gap: 6px; }
+body.page-index a.specialty-card:hover .sc-more .ico { transform: translateX(4px); }
+body.page-index .parcours-more .sc-more:hover { gap: 8px; }
+body.page-index .parcours-more .sc-more:hover .ico { transform: translateX(4px); }
+body.page-pathologies a.hub-card:hover .hub-more { gap: 6px; }
+body.page-pathologies a.hub-card:hover .hub-more .ico { transform: translateX(4px); }
 }

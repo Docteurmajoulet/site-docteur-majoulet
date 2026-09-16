@@ -706,6 +706,12 @@ def check(root):
     if _av != 1: E(f'main.css : bloc TECH20AV (encadrés sans liseré épais) attendu une fois, trouvé {_av}')
     elif 'body.page-publications .press-card {\n    border: 1px solid var(--border);\n}' not in css_txt[css_txt.index('TECH20AV-2026-09-16'):]:
         E('main.css : règle « border: 1px solid var(--border) » du bloc TECH20AV absente ou modifiée (liserés de 3-4 px sur .parcours-list, .expert-highlight, .info-box, .intro-block, .press-card)')
+    # ---- TECH20AW-2026-09-16 : transitions sans propriété de mise en page — bloc présent une fois ; plus aucune transition de gap ni
+    # de padding-left dans la feuille (le glissement des liens du méga-menu et des liens fléchés se fait par transform)
+    _aw = css_txt.count('TECH20AW-2026-09-16')
+    if _aw < 5: E(f'main.css : marqueur TECH20AW attendu 5 fois (bloc + 4 déclarations réécrites), trouvé {_aw}')
+    for _bad in ('transition: gap', 'padding-left 0.15s', 'transition: padding', 'transition: margin', 'transition: width', 'transition: height'):
+        if _bad in css_txt: E(f'main.css : « {_bad} » — transition d’une propriété de mise en page (reflow à chaque survol)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

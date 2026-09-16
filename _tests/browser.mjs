@@ -755,6 +755,40 @@ try {
     }
     await ctx.close();
   }
+  // TECH20AW-2026-09-16 — transitions sans propriété de mise en page : sur /, /dmla, /pathologies et /publications à 1 366 et 390 px,
+  // aucun élément n'a de propriété de mise en page (width, height, min/max-*, padding*, margin*, gap, top/left/right/bottom, inset,
+  // flex-basis, font-size, letter-spacing, line-height, border-*-width) dans son transition-property calculé — sauf les panneaux
+  // d'accordéon du tiroir mobile (.mega-panel : max-height, exception assumée). Avant le lot : padding-left sur 52 liens du méga-menu
+  // par page, gap sur les liens fléchés de la home et du hub.
+  {
+    const LAYOUT = /^(width|height|min-width|min-height|max-width|max-height|padding(-[a-z]+)?|margin(-[a-z]+)?|gap|row-gap|column-gap|top|left|right|bottom|inset(-[a-z-]+)?|flex-basis|font-size|letter-spacing|line-height|border(-[a-z]+)?-width)$/;
+    for (const w of [1366, 390]) {
+      const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      for (const slug of ['index', 'dmla', 'pathologies', 'publications'].filter(s => slugs.includes(s))) {
+        const page = await ctx.newPage();
+        try {
+          await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+          const bad = await page.evaluate((src) => {
+            const LAYOUT = new RegExp(src);
+            const out = new Map();
+            for (const el of document.querySelectorAll('body *')) {
+              const props = getComputedStyle(el).transitionProperty.split(',').map(s => s.trim()).filter(p => LAYOUT.test(p));
+              if (!props.length) continue;
+              if (el.matches('.mega-panel, .mega-panel--compact') && props.every(p => p === 'max-height')) continue;   // accordéon du tiroir mobile (exception assumée)
+              const key = `${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ').slice(0, 2).join('.')} : ${props.join(', ')}`;
+              out.set(key, (out.get(key) || 0) + 1);
+            }
+            return [...out].map(([k, n]) => `${k} (×${n})`);
+          }, LAYOUT.source);
+          for (const x of bad.slice(0, 5)) failures.push(`${slug} @${w} transition de mise en page — ${x}`);
+          loads++;
+        } catch (e) { failures.push(`${slug} @${w} transition de mise en page — ${String(e).slice(0, 160)}`); }
+        await page.close();
+      }
+      await ctx.close();
+    }
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
