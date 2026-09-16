@@ -728,6 +728,33 @@ try {
     }
     await ctx.close();
   }
+  // TECH20AV-2026-09-16 — encadrés sans liseré gauche épais (DESIGN.md « Shapes », Impeccable « side-tab ») : sur toutes les pages à
+  // 1 366 px, aucun élément visible n'a de bordure gauche pleine de 3 px ou plus (tableaux exclus). Avant le lot : .parcours-list ×3,
+  // .expert-highlight ×2, .info-box, .intro-block et .press-card ×3.
+  {
+    const ctx = await browser.newContext({ viewport: { width: 1366, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of slugs) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const thick = await page.evaluate(() => {
+          const out = [];
+          for (const el of document.querySelectorAll('body *')) {
+            if (el.closest('table')) continue;
+            const cs = getComputedStyle(el);
+            if (parseFloat(cs.borderLeftWidth) >= 3 && cs.borderLeftStyle !== 'none' && cs.borderLeftStyle !== 'hidden' && el.getBoundingClientRect().width > 0 && cs.visibility !== 'hidden')
+              out.push(`${el.tagName.toLowerCase()}.${(el.className || '').toString().split(' ').slice(0, 2).join('.')} : bordure gauche ${cs.borderLeftWidth} ${cs.borderLeftColor}`);
+          }
+          return out;
+        });
+        for (const x of thick.slice(0, 5)) failures.push(`${slug} @1366 liseré gauche — ${x}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @1366 liseré gauche — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

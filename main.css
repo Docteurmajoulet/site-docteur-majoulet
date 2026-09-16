@@ -7410,3 +7410,23 @@ header.page-header .tagline {
 article.pathology-content .pillar-intro p {
     max-width: 40em;   /* chapô des pages piliers (15,4 px) : 91 caractères à 42 em */
 }
+
+/* ============================================================
+   TECH20AV-2026-09-16 — Encadrés sans liseré gauche épais
+   (DESIGN.md « Shapes » : bordures fines 1 px partout, le signal vient
+   du fond ; Impeccable « side-tab »). Le tour 5 avait harmonisé les
+   encadrés d'urgence, .alert-rouge et .forme-box ; restaient cinq
+   composants à barre de 3-4 px : la liste « parcours » des pages
+   piliers (3 pages), l'encadré « expertise » (glaucome, vitrectomie),
+   l'encadré d'information (myopie), l'introduction et les cartes
+   presse de /publications. Fond, rayon et espacement inchangés ;
+   contrôlé par browser.mjs (aucune bordure gauche ≥ 3 px hors
+   contours de focus et tableaux) et check_static (bloc présent).
+   ============================================================ */
+article.pathology-content .parcours-list,
+article.pathology-content .expert-highlight,
+article.pathology-content .info-box,
+body.page-publications .intro-block,
+body.page-publications .press-card {
+    border: 1px solid var(--border);
+}

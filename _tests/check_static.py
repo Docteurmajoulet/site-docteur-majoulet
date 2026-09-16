@@ -701,6 +701,11 @@ def check(root):
     if _au != 1: E(f'main.css : bloc TECH20AU (lignes de lecture ≤ 42 em) attendu une fois, trouvé {_au}')
     elif not re.search(r'body\.page-publications \.pub-summary,\n(?:[^{]*\n)*?\.associes-line \{\n    max-width: 42em;\n\}', css_txt[css_txt.index('TECH20AU-2026-09-16'):]):
         E('main.css : règle « max-width: 42em » du bloc TECH20AU absente ou modifiée (lignes de 100 à 137 caractères sur /publications, le hub et les blocs « À propos »)')
+    # ---- TECH20AV-2026-09-16 : encadrés sans liseré gauche épais — le bloc existe une fois, en fin de feuille, avec sa règle
+    _av = css_txt.count('TECH20AV-2026-09-16')
+    if _av != 1: E(f'main.css : bloc TECH20AV (encadrés sans liseré épais) attendu une fois, trouvé {_av}')
+    elif 'body.page-publications .press-card {\n    border: 1px solid var(--border);\n}' not in css_txt[css_txt.index('TECH20AV-2026-09-16'):]:
+        E('main.css : règle « border: 1px solid var(--border) » du bloc TECH20AV absente ou modifiée (liserés de 3-4 px sur .parcours-list, .expert-highlight, .info-box, .intro-block, .press-card)')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

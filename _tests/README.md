@@ -189,3 +189,9 @@ du hub, chapôs des pages piliers, résumés de /publications, travaux du servic
 `browser.mjs` compte les caractères de chaque ligne rendue (Range, texte sr-only exclu) sur toutes les pages à 1 366 et 1 920 px et
 refuse toute ligne de plus de 90 caractères, espaces compris (pied de page et menus hors champ) ; `check_static.py` exige le bloc
 TECH20AU de `main.css` et sa règle `max-width: 42em`.
+
+Depuis le tour 20 (TECH20AV-2026-09-16), plus aucun encadré ne porte de liseré gauche épais (DESIGN.md « Shapes » : bordures fines
+1 px, le signal vient du fond) — les cinq derniers (liste « Parcours patient » des pages piliers, encadré « Expertise », encadré
+d'information de /myopie, introduction et cartes presse de /publications) sont passés à `border: 1px solid var(--border)` :
+`browser.mjs` refuse toute bordure gauche pleine ≥ 3 px sur les 48 pages à 1 366 px (tableaux exclus) ; `check_static.py` exige le
+bloc TECH20AV de `main.css`.
