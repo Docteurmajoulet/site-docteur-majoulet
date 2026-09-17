@@ -266,3 +266,11 @@ origin/main:<page>`), et n'attend pas si un push suivant a retiré la page : qua
 secondes le 16/09), Netlify ne déploie que le dernier et ne sert jamais un commit intermédiaire — les runs IndexNow #2 (lot BD) et #5
 (lot BG) avaient échoué après 6 min, 43 URL non signalées. Les URL soumises restent celles du diff `before..after`. `check_static.py`
 exige la fonction `latest_blob` et l'acceptation des deux empreintes. Rattrapage fait le jour du lot : `indexnow_submit.py --all`.
+
+Depuis le tour 22 (TECH22BJ-2026-09-17), les sections de contenu des familles m2/m3 (dix pages : /le-dr-majoulet, /contact,
+/ophtalmologue-boulogne-billancourt, /chirurgie-cataracte, /chirurgie-retine, /suivi-corrections-optiques, les trois fiches implants,
+/photocoagulation-laser) n'ont plus de padding de 60px 0 sur téléphone (≤ 480 px) : les règles « :where(body.m2) section » et
+« :where(body.m3) section » — et leur reprise TECH19AS pour les chapôs en `<div class="page-section">` — donnaient 182 px entre deux
+sections et jusqu'à 184 px sous l'en-tête, contre 48 et 76 px sur tablette et sur les fiches m1 ; une règle explicite en fin de feuille
+fixe ce padding à 0. `check_static.py` refuse le retour des anciennes règles et exige la nouvelle (elle remplace la garde TECH19AS) ;
+`browser.mjs` mesure à 390 px, sur quatre pages, le padding nul des blocs, ≤ 100 px avant chaque h2 de l'article et ≥ 40 px sous l'en-tête.

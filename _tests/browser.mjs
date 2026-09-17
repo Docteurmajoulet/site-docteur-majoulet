@@ -1030,6 +1030,45 @@ try {
     }
     await ctx.close();
   }
+  // TECH22BJ-2026-09-17 — rythme vertical mobile des familles m2/m3 : à 390 px sur /le-dr-majoulet, /implants-toriques, /chirurgie-cataracte
+  // et /contact, les blocs de contenu de l'article (section.page-section, section sans classe, div.page-section) ont un padding vertical nul,
+  // chaque h2 de l'article est à 100 px au plus du texte qui le précède (182 px avant le lot), et le premier texte est à 40 px au moins
+  // sous l'en-tête de page (jamais collé).
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, isMobile: true, hasTouch: true, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['le-dr-majoulet', 'implants-toriques', 'chirurgie-cataracte', 'contact']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(async () => {
+          await document.fonts.ready; const out = [];
+          const art = document.querySelector('article.pathology-content'); if (!art) return ['article.pathology-content absent'];
+          const blocks = [...art.querySelectorAll(':scope > section.page-section, :scope > section:not([class]), :scope > div.page-section')];
+          if (!blocks.length) out.push('aucun bloc de contenu (section.page-section / div.page-section) trouvé — page changée ?');
+          for (const b of blocks) { const cs = getComputedStyle(b); if (cs.paddingTop !== '0px' || cs.paddingBottom !== '0px') out.push(`${b.tagName.toLowerCase()}.${b.className || '(sans classe)'} : padding ${cs.paddingTop} / ${cs.paddingBottom} (attendu 0)`); }
+          const visible = e => { const cs = getComputedStyle(e); return cs.display !== 'none' && cs.visibility !== 'hidden' && !e.closest('.sr-only'); };
+          // rectangles des nœuds texte visibles de l'article (le texte réellement dessiné, quel que soit le balisage)
+          const rects = []; const tw = document.createTreeWalker(art, NodeFilter.SHOW_TEXT);
+          for (let tn = tw.nextNode(); tn; tn = tw.nextNode()) { if (!tn.textContent.trim() || !visible(tn.parentElement)) continue; const rg = document.createRange(); rg.selectNodeContents(tn); const r = rg.getBoundingClientRect(); if (r.height > 0) rects.push({ node: tn, top: r.top, bottom: r.bottom }); }
+          for (const h of art.querySelectorAll('h2')) {
+            if (!visible(h)) continue;
+            const top = h.getBoundingClientRect().top;
+            let prev = -Infinity; for (const r of rects) { if (!h.contains(r.node) && r.bottom <= top + 0.5 && r.bottom > prev) prev = r.bottom; }
+            if (prev > -Infinity && top - prev > 100) out.push(`${Math.round(top - prev)} px de vide avant le h2 « ${h.textContent.trim().slice(0, 30)} » (attendu ≤ 100)`);
+          }
+          const hdr = document.querySelector('header.page-header'); const first = rects.length ? Math.min(...rects.map(r => r.top)) : null;
+          if (hdr && first !== null) { const gap = first - hdr.getBoundingClientRect().bottom; if (gap < 40) out.push(`premier texte à ${Math.round(gap)} px sous l'en-tête (attendu ≥ 40)`); }
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @390 rythme vertical — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @390 rythme vertical — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

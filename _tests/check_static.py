@@ -457,9 +457,12 @@ def check(root):
     _rt = re.search(r'@media \(prefers-reduced-transparency: reduce\)\s*\{(.*?)\n\}', css_txt, re.S)
     if not _rt or 'header.site-header' not in _rt.group(1) or '.sticky-rdv' not in _rt.group(1) or 'backdrop-filter: none' not in _rt.group(1):
         E('main.css : bloc prefers-reduced-transparency incomplet (en-tête et barre fixe opaques, sans backdrop-filter)')
-    # ---- TECH19AS-2026-09-15 : les chapôs en <div class="page-section"> des familles m2/m3 gardent le padding des <section>
-    if '@media (max-width: 30em) {\n:where(body.m2, body.m3) article.pathology-content > div.page-section {\n    padding: 60px 0;\n}\n}' not in css_txt:
-        E('main.css : règle « @media (max-width: 30em) { :where(body.m2, body.m3) article.pathology-content > div.page-section { padding: 60px 0 } } » absente (chapôs collés au titre sur téléphone)')
+    # ---- TECH22BJ-2026-09-17 (remplace la garde TECH19AS) : plus de padding mobile de 60px 0 sur les sections de contenu des familles
+    # m2/m3 (182 px entre sections sur téléphone) — anciennes règles absentes, règle explicite « padding: 0 » en fin de feuille
+    for _old in (':where(body.m2) section {\n    padding: 60px 0;', ':where(body.m3) section {\n    padding: 60px 0;', 'article.pathology-content > div.page-section {\n    padding: 60px 0;'):
+        if _old in css_txt: E(f'main.css : règle mobile « {_old.splitlines()[0]} padding: 60px 0 » de retour (182 px entre sections sur téléphone) — TECH22BJ')
+    if '@media (max-width: 30em) {\n:where(body.m2, body.m3) article.pathology-content > :is(section.page-section, section:not([class]), div.page-section) {\n    padding: 0;\n}\n}' not in css_txt:
+        E('main.css : règle TECH22BJ (padding 0 des sections de contenu m2/m3 sous 30 em) absente ou modifiée')
     # ---- TECH17AM-2026-09-15 : mode « contraste élevé » (forced-colors) — le bloc @media existe une fois et repeint ce que le
     # navigateur efface : barres du bouton de menu (ButtonText), bordure du CTA .btn-rdv, puces (CanvasText), flèches en masque (LinkText)
     _fc = re.findall(r'@media \(forced-colors: active\) \{\n(.*?)\n\}\n', css_txt, re.S)   # le bloc multi-lignes (celui de .map-facade-btn tient sur une ligne)

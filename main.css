@@ -2188,9 +2188,6 @@ body.m2.menu-open nav.main-nav {
 :where(body.m2) h2 {
     font-size: 1.4rem;
 }
-:where(body.m2) section {
-    padding: 60px 0;
-}
 :where(body.m2) footer .container p {
     font-size: 0.72rem;
     line-height: 1.6;
@@ -2348,9 +2345,6 @@ body.m3.menu-open nav.main-nav {
 }
 :where(body.m3) h2 {
     font-size: 1.4rem;
-}
-:where(body.m3) section {
-    padding: 60px 0;
 }
 :where(body.m3) footer .container p {
     font-size: 0.72rem;
@@ -7347,17 +7341,12 @@ nav.main-nav .nav-link[aria-current="true"] {
 /* ============================================================
    TECH19AS-2026-09-15 — Chapôs sans titre en <div class="page-section">
    (validateur W3C « Section lacks heading » : fiches implants ×3,
-   photocoagulation-laser, ophtalmologue-boulogne-billancourt). Ces
-   familles (m2, m3) donnent aux <section> un padding de 60px 0 sous
-   30 em (règles « :where(body.mN) section » de leurs blocs
-   @media (max-width: 30em)) : le <div> le reprend pour un rendu
-   identique au pixel (captures 390/1366 comparées).
+   photocoagulation-laser, ophtalmologue-boulogne-billancourt). Le
+   padding mobile de 60px 0 que ce bloc reprenait des <section> des
+   familles m2/m3 a été retiré avec elles par TECH22BJ-2026-09-17
+   (rythme vertical mobile aligné sur la tablette et les fiches m1) :
+   plus aucune règle ici.
    ============================================================ */
-@media (max-width: 30em) {
-:where(body.m2, body.m3) article.pathology-content > div.page-section {
-    padding: 60px 0;
-}
-}
 
 /* ============================================================
    TECH20AU-2026-09-16 — Lignes de lecture ≤ 42 em hors corps de fiche
@@ -7634,4 +7623,23 @@ div.key-facts:not(:has(.key-fact)) {
 }
 .key-facts:not(:has(.key-fact)) :is(p, li) {
     max-width: 42em;
+}
+
+/* ============================================================
+   TECH22BJ-2026-09-17 — Rythme vertical mobile des familles m2/m3.
+   Sous 30 em, « :where(body.m2) section » et « :where(body.m3)
+   section » donnaient 60px 0 de padding à chaque section de contenu
+   (héritage des sections pleine largeur de la home) : 182 px entre
+   deux sections et jusqu'à 184 px sous l'en-tête sur téléphone, contre
+   48 et 76 px sur tablette et sur les fiches m1. Les deux règles (et
+   leur reprise TECH19AS pour les chapôs en <div>) sont retirées ; la
+   règle ci-dessous fixe explicitement le padding de ces blocs à 0 sur
+   téléphone. Les sections à fond propre (.parcours-list,
+   .related-pathologies) gardent leurs règles de classe. Contrôlé par
+   check_static (règles) et browser.mjs (4 pages à 390 px).
+   ============================================================ */
+@media (max-width: 30em) {
+:where(body.m2, body.m3) article.pathology-content > :is(section.page-section, section:not([class]), div.page-section) {
+    padding: 0;
+}
 }
