@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-09-16
+Dernière mise à jour : 2026-09-17
 
 ## Identité et coordonnées
 
@@ -2738,29 +2738,23 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 [En savoir plus](https://docteurmajoulet.com/cataracte-secondaire-laser-yag)
 
-fiche à venir
+##### [Implant monofocal](https://docteurmajoulet.com/implants-monofocaux)
 
-##### Implant monofocal
+[Gold standard — vise une vision de loin nette. Lunettes nécessaires pour la lecture.](https://docteurmajoulet.com/implants-monofocaux)
 
-Gold standard — vise une vision de loin nette. Lunettes nécessaires pour la lecture.
+[En savoir plus](https://docteurmajoulet.com/implants-monofocaux)
 
-Bientôt en ligne
+##### [Implant torique](https://docteurmajoulet.com/implants-toriques)
 
-fiche à venir
+[Corrige l’astigmatisme cornéen ≥ 1 dioptrie. Calcul et positionnement précis requis.](https://docteurmajoulet.com/implants-toriques)
 
-##### Implant torique
+[En savoir plus](https://docteurmajoulet.com/implants-toriques)
 
-Corrige l’astigmatisme cornéen ≥ 1 dioptrie. Calcul et positionnement précis requis.
+##### [Implant multifocal / EDOF](https://docteurmajoulet.com/implants-multifocaux)
 
-Bientôt en ligne
+[Vise l’indépendance aux lunettes. Compromis possibles : halos, éblouissement nocturne.](https://docteurmajoulet.com/implants-multifocaux)
 
-fiche à venir
-
-##### Implant multifocal / EDOF
-
-Vise l’indépendance aux lunettes. Compromis possibles : halos, éblouissement nocturne.
-
-Bientôt en ligne
+[En savoir plus](https://docteurmajoulet.com/implants-multifocaux)
 
 ##### Parcours patient
 

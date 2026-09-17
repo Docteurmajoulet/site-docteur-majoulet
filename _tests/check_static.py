@@ -829,6 +829,19 @@ def check(root):
     _ix = open(os.path.join(root, '_tests/indexnow_submit.py'), encoding='utf-8').read() if exists('_tests/indexnow_submit.py') else ''
     if 'TECH22BI-2026-09-17' not in _ix or 'def latest_blob(' not in _ix or "f'{remote}/{branch}:' + html_name" not in _ix or 'want = {local} | ({latest} if latest else set())' not in _ix:
         E('_tests/indexnow_submit.py : attente robuste aux pushs en rafale (latest_blob, origin/main, TECH22BI) absente ou modifiée')
+    # ---- TECH22BK-2026-09-17 : plus de carte « fiche à venir » (les fiches existent) ; toute .pillar-card munie d'un « En savoir plus »
+    # est un lien vers une page du site ; plus de règle .pillar-card.soft ; aucun nœud page en inLanguage "fr" (fr-FR partout ; les
+    # articles de /publications gardent leur langue)
+    if re.search(r'\.pillar-card\.soft\b', re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)): E('main.css : règle .pillar-card.soft de retour (cartes inertes) — TECH22BK')
+    for name, pg in pages.items():
+        if re.search(r'fiche à venir|Bientôt en ligne|pillar-card soft', pg.txt, re.I): E(f'{name} : carte « fiche à venir » / « Bientôt en ligne » (les fiches implants existent) — TECH22BK')
+        for _m in re.finditer(r'<(a|div) class="pillar-card( [^"]*)?"([^>]*)>(.*?)</\1>', pg.txt, re.S):
+            if 'read-more' not in _m.group(4): continue
+            _h = re.search(r'href="([^"]+)"', _m.group(3))
+            if _m.group(1) != 'a' or not _h: E(f'{name} : .pillar-card avec « En savoir plus » qui n’est pas un lien (<{_m.group(1)}>) — TECH22BK'); continue
+            _t = _h.group(1).split('#')[0]
+            if _t and not (_t.startswith('/') and exists(_t.lstrip('/') + '.html')): E(f'{name} : .pillar-card vers une page inexistante « {_h.group(1)} » — TECH22BK')
+        if re.search(r'^  "inLanguage": "fr",?$', pg.txt, re.M): E(f'{name} : nœud page en "inLanguage": "fr" (attendu "fr-FR" comme les autres pages) — TECH22BK')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

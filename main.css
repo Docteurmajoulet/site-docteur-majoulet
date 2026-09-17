@@ -1651,21 +1651,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     transform: translateX(3px);
 }
 }
-:where(body.v9) .pillar-card.soft {
-    background: var(--blanc-naturel);
-    border-style: dashed;
-}
-:where(body.v9) .pillar-card.soft .read-more {
-    color: var(--text-muted);
-    pointer-events: none;
-}
-:where(body.v9) .pillar-card.soft .badge {
-    font-size: 0.72rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--text-muted);
-    margin-bottom: 8px;
-}
 :where(body.v9) .parcours-list {
     background: var(--blanc-naturel);
     border-left: 3px solid var(--sable);
@@ -6669,10 +6654,6 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
         forced-color-adjust: none;
         background-color: LinkText;
     }
-    :where(body.v9) .pillar-card.soft .read-more::after {
-        forced-color-adjust: none;
-        background-color: CanvasText;
-    }
 }
 
 /* ============================================================
@@ -7059,7 +7040,7 @@ article.pathology-content .cta-line-link {
 .parcours-card-header h3,
 .pub-year, .pub-link, .pub-role, .press-source,
 .eeat-block .meta, body.page-pathologies .hub-eeat .meta,
-.pillar-card .read-more, .pillar-card.soft .badge,
+.pillar-card .read-more,
 body.page-decollement-retine .urgence-badge, body.page-dechirure-retine-corps-flottants .page-header .urgence-badge,
 body.page-pathologies .page-header .breadcrumb-mini,
 body.page-confidentialite th {
@@ -7642,4 +7623,17 @@ div.key-facts:not(:has(.key-fact)) {
 :where(body.m2, body.m3) article.pathology-content > :is(section.page-section, section:not([class]), div.page-section) {
     padding: 0;
 }
+}
+
+/* ============================================================
+   TECH22BK-2026-09-17 — Cartes « fiche à venir » de
+   /chirurgie-cataracte devenues des liens vers les trois fiches
+   implants (en ligne depuis avril) ; les règles .pillar-card.soft
+   (fond crème, bord pointillé, badge, lien inerte, variante
+   forced-colors) sont retirées de la feuille : plus aucune carte
+   inerte sur le site. Contrôlé par check_static (pages et feuille)
+   et browser.mjs (/chirurgie-cataracte).
+   ============================================================ */
+:where(body.v9) .pillar-cards > a.pillar-card {
+    cursor: pointer;
 }

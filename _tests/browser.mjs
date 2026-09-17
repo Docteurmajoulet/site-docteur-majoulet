@@ -1069,6 +1069,39 @@ try {
     }
     await ctx.close();
   }
+  // TECH22BK-2026-09-17 — /chirurgie-cataracte à 1 366 et 390 px : les cinq cartes de « Pathologies et interventions » sont des liens
+  // (href interne), toutes cliquables (pointer-events, cursor pointer), avec la flèche dessinée après « En savoir plus » (::after ≥ 8 px),
+  // et aucune n'affiche « fiche à venir » ni « Bientôt en ligne ».
+  for (const w of [1366, 390]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const slug = 'chirurgie-cataracte';
+    if (slugs.includes(slug)) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = []; const cards = [...document.querySelectorAll('.pillar-cards .pillar-card')];
+          if (cards.length !== 5) out.push(`${cards.length} cartes (5 attendues)`);
+          for (const c of cards) {
+            const t = c.querySelector('h3')?.textContent.trim().slice(0, 25) || '?';
+            if (c.tagName !== 'A' || !c.getAttribute('href')?.startsWith('/')) out.push(`carte « ${t} » sans lien interne`);
+            if (/fiche à venir|bientôt en ligne/i.test(c.textContent)) out.push(`carte « ${t} » encore annoncée « à venir »`);
+            const rm = c.querySelector('.read-more');
+            if (!rm) { out.push(`carte « ${t} » sans « En savoir plus »`); continue; }
+            const cs = getComputedStyle(rm), ps = getComputedStyle(rm, '::after');
+            if (cs.pointerEvents === 'none' || getComputedStyle(c).cursor !== 'pointer') out.push(`carte « ${t} » inerte (pointer-events ${cs.pointerEvents}, cursor ${getComputedStyle(c).cursor})`);
+            if (parseFloat(ps.width) < 8) out.push(`carte « ${t} » : flèche absente (${ps.width})`);
+          }
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @${w} cartes implants — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} cartes implants — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

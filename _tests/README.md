@@ -274,3 +274,11 @@ Depuis le tour 22 (TECH22BJ-2026-09-17), les sections de contenu des familles m2
 sections et jusqu'à 184 px sous l'en-tête, contre 48 et 76 px sur tablette et sur les fiches m1 ; une règle explicite en fin de feuille
 fixe ce padding à 0. `check_static.py` refuse le retour des anciennes règles et exige la nouvelle (elle remplace la garde TECH19AS) ;
 `browser.mjs` mesure à 390 px, sur quatre pages, le padding nul des blocs, ≤ 100 px avant chaque h2 de l'article et ≥ 40 px sous l'en-tête.
+
+Depuis le tour 22 (TECH22BK-2026-09-17), /chirurgie-cataracte n'annonce plus trois « fiches à venir » pour les implants (monofocal,
+torique, multifocal & EDOF) : ces cartes sont des liens vers /implants-monofocaux, /implants-toriques et /implants-multifocaux (en ligne
+depuis avril), les règles `.pillar-card.soft` (carte inerte) sont retirées de la feuille, et le nœud page de /chirurgie-cataracte,
+/chirurgie-retine et /suivi-corrections-optiques porte `inLanguage` « fr-FR » comme les autres. `check_static.py` refuse toute mention
+« fiche à venir » / « Bientôt en ligne », toute `.pillar-card` qui ne serait pas un lien vers une page existante, le retour de
+`.pillar-card.soft`, et exige `inLanguage: fr-FR` sur chaque page ; `browser.mjs` vérifie sur /chirurgie-cataracte (1 366 et 390 px) les
+cinq cartes-liens cliquables avec leur flèche.
