@@ -850,6 +850,12 @@ def check(root):
     _mq = re.findall(r'@media \(max-width: 64em\) and \(max-height: 30em\) and \(orientation: landscape\)([^{]*)\{', css_txt)
     if len(_mq) < 3 or sum('(pointer: coarse)' in q for q in _mq) != 2 or sum('(pointer: fine)' in q for q in _mq) != 1:
         E(f'main.css : media queries « paysage bas » attendues : 2 avec (pointer: coarse) et 1 avec (pointer: fine), trouvé {[q.strip() for q in _mq]} — TECH22BM')
+    # ---- TECH22BN-2026-09-17 : /cataracte lie, dans <main>, la page de l'opération et la fiche cataracte secondaire (maillage du silo)
+    if 'cataracte.html' in pages:
+        _main = re.search(r'<main\b.*?</main>', pages['cataracte.html'].txt, re.S)
+        _body = _main.group(0) if _main else ''
+        for _t in ('/chirurgie-cataracte', '/cataracte-secondaire-laser-yag'):
+            if not re.search(r'<a [^>]*href="' + re.escape(_t) + r'"', _body): E(f'cataracte.html : aucun lien vers {_t} dans <main> (maillage du silo cataracte) — TECH22BN')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

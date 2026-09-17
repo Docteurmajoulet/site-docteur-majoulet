@@ -295,3 +295,8 @@ Depuis le tour 22 (TECH22BM-2026-09-17), la règle « paysage bas » (largeur �
 garde désormais sa barre de 48 px, un téléphone en paysage garde l'écran entier. `check_static.py` vérifie les trois media queries
 (deux en pointer: coarse, une en pointer: fine) ; `browser.mjs` charge /cataracte et / à 683 × 450 sans tactile (barre affichée, dans
 l'écran, hauteur réservée) et à 844 × 390 tactile (barre masquée).
+
+Depuis le tour 22 (TECH22BN-2026-09-17), la fiche /cataracte renvoie dans son corps vers la page de l'opération (/chirurgie-cataracte)
+et vers /cataracte-secondaire-laser-yag (les deux mentions « laser YAG » sont des liens ; le bloc de fin, retitré « Pages associées »,
+remplace « Trou maculaire » et « Membrane épirétinienne » par ces deux pages) : elle ne liait aucune des deux hors menu. `check_static.py`
+exige les deux liens dans `<main>`.
