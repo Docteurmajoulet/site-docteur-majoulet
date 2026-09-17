@@ -845,6 +845,11 @@ def check(root):
     # ---- TECH22BL-2026-09-17 : les cartes pilier (a.pillar-card) ne sont pas soulignées — règle en fin de feuille
     if ':where(body.v9) a.pillar-card {\n    text-decoration: none;\n}' not in css_txt:
         E('main.css : règle « :where(body.v9) a.pillar-card { text-decoration: none } » absente (cartes de /chirurgie-retine soulignées sur toute leur surface) — TECH22BL')
+    # ---- TECH22BM-2026-09-17 : la règle « paysage bas » (barre fixe masquée, scroll-padding-bottom 0) ne vise que les écrans tactiles ;
+    # un ordinateur zoomé à 200 % (683 × 450) garde sa barre de rendez-vous
+    _mq = re.findall(r'@media \(max-width: 64em\) and \(max-height: 30em\) and \(orientation: landscape\)([^{]*)\{', css_txt)
+    if len(_mq) < 3 or sum('(pointer: coarse)' in q for q in _mq) != 2 or sum('(pointer: fine)' in q for q in _mq) != 1:
+        E(f'main.css : media queries « paysage bas » attendues : 2 avec (pointer: coarse) et 1 avec (pointer: fine), trouvé {[q.strip() for q in _mq]} — TECH22BM')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

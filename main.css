@@ -6956,7 +6956,7 @@ p:has(> a.button) {
     align-items: center;
     gap: 12px;
 }
-@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) {
+@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) and (pointer: coarse) {
 .sticky-rdv {
         display: none;
     }
@@ -7152,7 +7152,7 @@ html {
         scroll-padding-bottom: 96px;
     }
 }
-@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) {
+@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) and (pointer: coarse) {
 html {
         scroll-padding-bottom: 0;
     }
@@ -7649,4 +7649,23 @@ div.key-facts:not(:has(.key-fact)) {
    ============================================================ */
 :where(body.v9) a.pillar-card {
     text-decoration: none;
+}
+
+/* ============================================================
+   TECH22BM-2026-09-17 — Barre fixe conservée à 200 % de zoom sur
+   ordinateur. La règle « paysage bas » (largeur ≤ 64 em, hauteur
+   ≤ 30 em, paysage : barre fixe masquée, scroll-padding-bottom 0)
+   ne vise plus que les écrans tactiles (pointer: coarse) : un
+   portable 1 366 × 900 zoomé à 200 % (fenêtre 683 × 450, WCAG 1.4.4)
+   n'avait plus aucun « Prendre rendez-vous » à l'écran, le CTA
+   d'en-tête étant déjà masqué sous 1 024 px. Les deux media queries
+   sont réécrites sur place ; la règle ci-dessous fixe la hauteur de
+   la barre dans ce cas (inchangée : 48 px de boutons). Contrôlé par
+   check_static (media queries) et browser.mjs (683 × 450 sans
+   tactile, 844 × 390 tactile).
+   ============================================================ */
+@media (max-width: 64em) and (max-height: 30em) and (orientation: landscape) and (pointer: fine) {
+.sticky-rdv {
+    display: flex;
+}
 }

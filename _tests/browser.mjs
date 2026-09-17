@@ -1125,6 +1125,37 @@ try {
     }
     await ctx.close();
   }
+  // TECH22BM-2026-09-17 — barre fixe à 200 % de zoom sur ordinateur : à 683 × 450 sans tactile (pointeur fin), en bas de page sur
+  // /cataracte et /, la barre fixe est affichée et entièrement dans l'écran, et le corps réserve sa hauteur (padding-bottom > 0) ; à
+  // 844 × 390 tactile (téléphone en paysage), elle reste masquée.
+  for (const pr of [{ name: '683x450 souris', viewport: { width: 683, height: 450 }, touch: false, expect: 'visible' }, { name: '844x390 tactile', viewport: { width: 844, height: 390 }, touch: true, expect: 'masquée' }]) {
+    const ctx = await browser.newContext({ viewport: pr.viewport, deviceScaleFactor: 1, hasTouch: pr.touch, isMobile: pr.touch, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['cataracte', 'index']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        await page.evaluate(() => window.scrollTo(0, document.documentElement.scrollHeight));
+        await page.waitForTimeout(400);
+        const res = await page.evaluate(expect => {
+          const out = []; const bar = document.querySelector('nav.sticky-rdv'); if (!bar) return ['barre fixe absente'];
+          const cs = getComputedStyle(bar); const r = bar.getBoundingClientRect();
+          const shown = cs.display !== 'none' && cs.visibility !== 'hidden' && r.height > 0;
+          if (expect === 'visible') {
+            if (!shown) out.push(`barre fixe masquée (display ${cs.display}, visibility ${cs.visibility})`);
+            else if (r.bottom > innerHeight + 1 || r.top < 0) out.push(`barre fixe hors écran (${Math.round(r.top)}..${Math.round(r.bottom)} pour ${innerHeight})`);
+            if (parseFloat(getComputedStyle(document.body).paddingBottom) <= 0) out.push('corps sans réserve de hauteur pour la barre (padding-bottom 0)');
+          } else if (shown) out.push('barre fixe visible en paysage bas tactile');
+          return out;
+        }, pr.expect);
+        for (const r of res) failures.push(`${slug} @${pr.name} barre fixe zoom — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${pr.name} barre fixe zoom — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

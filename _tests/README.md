@@ -288,3 +288,10 @@ soulignées sur toute leur surface (titre et description) par la règle généra
 (`:where(body.v9) a.pillar-card { text-decoration: none }`) la neutralise — la décoration d'un lien se propage à son contenu, le `none`
 de `.read-more` seul était sans effet. `check_static.py` exige la règle ; `browser.mjs` lit le style calculé des cartes sur les deux pages
 à 1 366 et 390 px.
+
+Depuis le tour 22 (TECH22BM-2026-09-17), la règle « paysage bas » (largeur ≤ 64 em, hauteur ≤ 30 em, paysage : barre fixe masquée et
+`scroll-padding-bottom` à 0, tour 9) ne s'applique qu'aux écrans tactiles (`and (pointer: coarse)`) : un ordinateur zoomé à 200 %
+(fenêtre 683 × 450, WCAG 1.4.4) n'avait plus aucun « Prendre rendez-vous » à l'écran, le CTA d'en-tête étant masqué sous 1 024 px ; il
+garde désormais sa barre de 48 px, un téléphone en paysage garde l'écran entier. `check_static.py` vérifie les trois media queries
+(deux en pointer: coarse, une en pointer: fine) ; `browser.mjs` charge /cataracte et / à 683 × 450 sans tactile (barre affichée, dans
+l'écran, hauteur réservée) et à 844 × 390 tactile (barre masquée).
