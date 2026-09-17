@@ -7637,3 +7637,16 @@ div.key-facts:not(:has(.key-fact)) {
 :where(body.v9) .pillar-cards > a.pillar-card {
     cursor: pointer;
 }
+
+/* ============================================================
+   TECH22BL-2026-09-17 — Cartes pilier sans soulignement. Les
+   <a class="pillar-card"> de /chirurgie-retine et /chirurgie-cataracte
+   étaient soulignées sur toute leur surface (titre et description)
+   par la règle générale des liens « :where(body.v6) a » : la
+   décoration d'un lien se propage à son contenu, et le « none » de
+   .read-more n'y pouvait rien. Contrôlé par check_static (règle) et
+   browser.mjs (styles calculés sur les deux pages).
+   ============================================================ */
+:where(body.v9) a.pillar-card {
+    text-decoration: none;
+}

@@ -282,3 +282,9 @@ depuis avril), les règles `.pillar-card.soft` (carte inerte) sont retirées de 
 « fiche à venir » / « Bientôt en ligne », toute `.pillar-card` qui ne serait pas un lien vers une page existante, le retour de
 `.pillar-card.soft`, et exige `inLanguage: fr-FR` sur chaque page ; `browser.mjs` vérifie sur /chirurgie-cataracte (1 366 et 390 px) les
 cinq cartes-liens cliquables avec leur flèche.
+
+Depuis le tour 22 (TECH22BL-2026-09-17), les cartes pilier `a.pillar-card` de /chirurgie-retine et /chirurgie-cataracte ne sont plus
+soulignées sur toute leur surface (titre et description) par la règle générale des liens `:where(body.v6) a` : une règle en fin de feuille
+(`:where(body.v9) a.pillar-card { text-decoration: none }`) la neutralise — la décoration d'un lien se propage à son contenu, le `none`
+de `.read-more` seul était sans effet. `check_static.py` exige la règle ; `browser.mjs` lit le style calculé des cartes sur les deux pages
+à 1 366 et 390 px.

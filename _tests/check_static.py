@@ -842,6 +842,9 @@ def check(root):
             _t = _h.group(1).split('#')[0]
             if _t and not (_t.startswith('/') and exists(_t.lstrip('/') + '.html')): E(f'{name} : .pillar-card vers une page inexistante « {_h.group(1)} » — TECH22BK')
         if re.search(r'^  "inLanguage": "fr",?$', pg.txt, re.M): E(f'{name} : nœud page en "inLanguage": "fr" (attendu "fr-FR" comme les autres pages) — TECH22BK')
+    # ---- TECH22BL-2026-09-17 : les cartes pilier (a.pillar-card) ne sont pas soulignées — règle en fin de feuille
+    if ':where(body.v9) a.pillar-card {\n    text-decoration: none;\n}' not in css_txt:
+        E('main.css : règle « :where(body.v9) a.pillar-card { text-decoration: none } » absente (cartes de /chirurgie-retine soulignées sur toute leur surface) — TECH22BL')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

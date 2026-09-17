@@ -1102,6 +1102,29 @@ try {
     }
     await ctx.close();
   }
+  // TECH22BL-2026-09-17 — cartes pilier sans soulignement : sur /chirurgie-retine et /chirurgie-cataracte à 1 366 et 390 px, aucune
+  // a.pillar-card n'a de soulignement calculé (text-decoration-line), et il y a bien des cartes à mesurer.
+  for (const w of [1366, 390]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['chirurgie-retine', 'chirurgie-cataracte']) {
+      if (!slugs.includes(slug)) continue;
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate(() => {
+          const out = []; const cards = [...document.querySelectorAll('a.pillar-card')];
+          if (!cards.length) out.push('aucune a.pillar-card trouvée (page changée ?)');
+          for (const c of cards) { const tdl = getComputedStyle(c).textDecorationLine; if (tdl !== 'none') out.push(`carte « ${c.querySelector('h3')?.textContent.trim().slice(0, 25)} » soulignée (${tdl})`); }
+          return out;
+        });
+        for (const r of res) failures.push(`${slug} @${w} cartes pilier — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`${slug} @${w} cartes pilier — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
