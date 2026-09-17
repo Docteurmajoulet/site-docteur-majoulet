@@ -259,3 +259,10 @@ plaçait le titre en colonne 1 et le texte sur 231 px en colonne 2. Sur /le-dr-m
 enveloppe son libellé dans un `<span>` (le lien est un conteneur flex : un `<sup>` nu devenait un item isolé à droite). `check_static.py` exige les trois règles et
 refuse tout lien de sommaire contenant un élément en ligne hors `<span>` englobant ; `browser.mjs` mesure à 1 366 px, sur quatre pages, le flux
 normal des blocs (paragraphes ≥ 600 px, icônes 18 px) et l'écart sup ↔ texte (≤ 3 px).
+
+Depuis le tour 22 (TECH22BI-2026-09-17), l'attente IndexNow (« la production sert-elle la nouvelle version de la première page
+modifiée ? ») accepte aussi la version **la plus récente** de la page sur `origin/main`, relue à chaque essai (`git fetch` + `git show
+origin/main:<page>`), et n'attend pas si un push suivant a retiré la page : quand plusieurs lots sont poussés en rafale (cinq en dix
+secondes le 16/09), Netlify ne déploie que le dernier et ne sert jamais un commit intermédiaire — les runs IndexNow #2 (lot BD) et #5
+(lot BG) avaient échoué après 6 min, 43 URL non signalées. Les URL soumises restent celles du diff `before..after`. `check_static.py`
+exige la fonction `latest_blob` et l'acceptation des deux empreintes. Rattrapage fait le jour du lot : `indexnow_submit.py --all`.

@@ -13,6 +13,9 @@ Règles (TECH20BC-2026-09-16) :
     (protocole IndexNow : https://www.indexnow.org/documentation) ;
   - avant l'envoi, on attend (≤ 6 min) que la production serve la nouvelle version de la première page modifiée (mêmes octets
     que le dépôt), sinon les moteurs recrawleraient l'ancienne ;
+  - TECH22BI-2026-09-17 — pushs en rafale : quand plusieurs pushs se suivent (cinq lots en dix secondes le 16/09), Netlify ne sert
+    jamais un commit intermédiaire ; l'attente accepte donc aussi la version la plus récente de la page sur origin/main (relue à
+    chaque essai par git fetch + git show), et n'attend pas si un push suivant a supprimé la page ;
   - réponses acceptées : 200 (OK) et 202 (clé en cours de validation) ; toute autre réponse fait échouer le job.
 Aucune dépendance. Code de sortie 1 en cas d'échec, 0 sinon (y compris « rien à soumettre »).
 """
@@ -63,16 +66,32 @@ def fetch(url, timeout=20):
     with urllib.request.urlopen(req, timeout=timeout) as r: return r.status, r.read()
 
 
+def latest_blob(html_name, remote='origin', branch='main'):
+    """TECH22BI-2026-09-17 — empreinte de la page telle que la branche distante la porte à cet instant (git fetch puis git show) :
+    c'est cette version que Netlify finit par servir quand plusieurs pushs se suivent. None si la page n'y est plus (supprimée
+    par un push suivant) ; '' si la branche distante est inconnue (dépôt sans remote : on ne compare qu'au commit signalé)."""
+    subprocess.run(['git', 'fetch', '-q', remote, branch], cwd=ROOT, capture_output=True)
+    r = subprocess.run(['git', 'show', f'{remote}/{branch}:' + html_name], cwd=ROOT, capture_output=True)
+    if r.returncode == 0: return hashlib.sha256(r.stdout).hexdigest()
+    err = r.stderr.decode('utf-8', 'replace')
+    return '' if 'invalid object name' in err or 'unknown revision' in err or 'bad revision' in err else None
+
+
 def wait_for_prod(site, html_name, minutes=6):
-    """Attend que la production serve les mêmes octets que le fichier du dépôt (Netlify déploie après le push)."""
-    with open(os.path.join(ROOT, html_name), 'rb') as f: want = hashlib.sha256(f.read()).hexdigest()
+    """Attend que la production serve la page telle qu'elle est dans le dépôt (Netlify déploie après le push) — au commit signalé
+    ou, pushs en rafale obligent, dans sa version la plus récente sur origin/main (TECH22BI-2026-09-17)."""
+    with open(os.path.join(ROOT, html_name), 'rb') as f: local = hashlib.sha256(f.read()).hexdigest()
     url = url_of(site, html_name); deadline = time.time() + minutes * 60; last = ''
     while time.time() < deadline:
+        latest = latest_blob(html_name)
+        if latest is None: print(f'  {html_name} n’est plus sur origin/main (retirée par un push suivant) — pas d’attente'); return True
+        want = {local} | ({latest} if latest else set())
         try:
             st, body = fetch(url + ('&' if '?' in url else '?') + 'indexnow=' + str(int(time.time())))
             got = hashlib.sha256(body).hexdigest()
-            if st == 200 and got == want: print(f'  production à jour : {url}'); return True
-            last = f'statut {st}, empreinte {got[:12]} ≠ {want[:12]}'
+            if st == 200 and got in want:
+                print(f'  production à jour : {url}' + (' (version du dernier push, plus récente que le commit signalé)' if got != local else '')); return True
+            last = f'statut {st}, empreinte {got[:12]} ∉ {{' + ', '.join(w[:12] for w in sorted(want)) + '}'
         except Exception as e: last = str(e)[:100]
         time.sleep(20)
     print(f'  production PAS à jour après {minutes} min ({last}) — envoi annulé'); return False

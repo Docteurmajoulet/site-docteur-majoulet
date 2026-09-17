@@ -821,6 +821,11 @@ def check(root):
             for _a in re.findall(r'<a href="#[^"]*">(.*?)</a>', _toc.group(1), re.S):
                 if '<' in _a and not (_a.startswith('<span>') and _a.endswith('</span>') and _a.count('<span>') == 1):
                     E(f'{name} : entrée de sommaire avec un élément en ligne hors <span> englobant (le lien est flex : l’élément se détache) « {_a[:60]} » — TECH21BH')
+    # ---- TECH22BI-2026-09-17 : l'attente IndexNow accepte la version la plus récente de la page sur origin/main (pushs en rafale :
+    # Netlify ne sert jamais un commit intermédiaire — runs #2 et #5 du 16/09 en échec)
+    _ix = open(os.path.join(root, '_tests/indexnow_submit.py'), encoding='utf-8').read() if exists('_tests/indexnow_submit.py') else ''
+    if 'TECH22BI-2026-09-17' not in _ix or 'def latest_blob(' not in _ix or "f'{remote}/{branch}:' + html_name" not in _ix or 'want = {local} | ({latest} if latest else set())' not in _ix:
+        E('_tests/indexnow_submit.py : attente robuste aux pushs en rafale (latest_blob, origin/main, TECH22BI) absente ou modifiée')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
