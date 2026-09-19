@@ -3656,7 +3656,7 @@ La prévention et le traitement de la rétinopathie reposent avant tout sur la *
 
 #### Traitement de l’œdème maculaire diabétique (OMD)
 
-Le traitement de **première intention** est l’**injection intravitréenne d’anti-VEGF** (aflibercept, ranibizumab, faricimab, brolucizumab), avec le même principe qu’en DMLA exsudative : phase d’induction puis schéma « Treat & Extend » adapté à l’OCT.
+Le traitement de **première intention** est l’**[injection intravitréenne d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (aflibercept, ranibizumab, faricimab, brolucizumab), avec le même principe qu’en DMLA exsudative : phase d’induction puis schéma « Treat & Extend » adapté à l’OCT.
 
 En cas de réponse insuffisante ou de contre-indication :
 
@@ -3665,13 +3665,13 @@ En cas de réponse insuffisante ou de contre-indication :
 
 #### Traitement des formes proliférantes
 
-Le traitement de référence est la **photocoagulation panrétinienne au laser (PPR)** : application de spots de laser sur la périphérie rétinienne ischémique pour faire régresser les néovaisseaux. Elle est réalisée en **plusieurs séances** au cabinet sous anesthésie topique.
+Le traitement de référence est la **[photocoagulation panrétinienne au laser (PPR)](https://docteurmajoulet.com/photocoagulation-laser)** : application de spots de laser sur la périphérie rétinienne ischémique pour faire régresser les néovaisseaux. Elle est réalisée en **plusieurs séances** au cabinet sous anesthésie topique.
 
 Les **anti-VEGF** peuvent être utilisés en complément, notamment avant chirurgie, ou comme alternative dans des situations particulières (essais PROTEUS, CLARITY).
 
 #### Place de la vitrectomie
 
-La chirurgie par **vitrectomie postérieure 25G** est indiquée en cas de :
+La chirurgie par **[vitrectomie postérieure 25G](https://docteurmajoulet.com/vitrectomie)** est indiquée en cas de :
 
 - **Hémorragie intravitréenne persistante** (> 2 à 3 mois) empêchant le laser et la vision.
 - **Décollement de rétine tractionnel** menaçant la macula.
@@ -3702,7 +3702,7 @@ Oui, partiellement. Un contrôle strict de la glycémie (HbA1c cible généralem
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
 
@@ -4189,13 +4189,13 @@ Dans la myopie, le globe oculaire est **trop long** : l’image nette se forme e
 
 Déformation focale ou diffuse de la paroi postérieure du globe, détectée à l’**OCT grand champ** ou à l’**échographie B**. Classification de **Curtin 1977** puis modernisée par **Ohno-Matsui 2014**. Le staphylome est à la fois un **marqueur de sévérité** et un **terrain anatomique favorisant** les complications maculaires.
 
-##### Néovaisseaux choroïdiens myopiques (mCNV)
+##### [Néovaisseaux choroïdiens myopiques](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort) (mCNV)
 
-Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **1 à 10 %** des yeux à myopie forte. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **injections intravitréennes d’anti-VEGF** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **excellent pronostic si traitement précoce**.
+Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **1 à 10 %** des yeux à myopie forte. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **excellent pronostic si traitement précoce**.
 
 ##### Fovéoschisis myopique et maculopathie de traction
 
-Clivage intra-rétinien et soulèvement localisé de la fovéa dans les yeux à staphylome postérieur sévère. Concerne **10 à 30 %** des yeux à myopie forte pathologique. Évolution lente vers le **trou maculaire myopique** ou le **décollement maculaire**. Le traitement chirurgical (**vitrectomie avec pelage de la MLI**, avec ou sans volet inversé de MLI, avec ou sans tamponnement gazeux) est envisagé en cas d’altération visuelle significative.
+Clivage intra-rétinien et soulèvement localisé de la fovéa dans les yeux à staphylome postérieur sévère. Concerne **10 à 30 %** des yeux à myopie forte pathologique. Évolution lente vers le **trou maculaire myopique** ou le **décollement maculaire**. Le traitement chirurgical (**[vitrectomie avec pelage de la MLI](https://docteurmajoulet.com/vitrectomie)**, avec ou sans volet inversé de MLI, avec ou sans tamponnement gazeux) est envisagé en cas d’altération visuelle significative.
 
 ##### Trou maculaire myopique
 
@@ -4268,7 +4268,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
 
