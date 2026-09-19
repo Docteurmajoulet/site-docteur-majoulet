@@ -887,6 +887,21 @@ def check(root):
         if len(re.findall(r'<a class="hv-tile hv-bezel" href="/[a-z-]+">', _a)) != 2: E('index.html : deux tuiles-liens .hv-tile attendues dans l’accès rapide — TECH24BP')
         if 'class="hv-urgence-title tc-title" href="/urgences-ophtalmologiques"' not in _a or 'class="hv-btn hv-btn--slate hv-call" href="tel:+33184191166"' not in _a: E('index.html : bande urgence sans lien « conduite à tenir » ou sans bouton d’appel — TECH24BP')
         if 'hv-btn--rdv' in _a: E('index.html : bouton cuivre dans la bande urgence (ambre et cuivre ne se côtoient pas) — TECH24BP')
+    # ---- TECH24BQ-2026-09-19 : spécialités de la home — six cartes-liens égales (grille 3 × 2), pictogrammes du graphiste (jamais de SVG
+    # dessiné à la place) ; la photo du microscope reste une section à part, juste après, hors de toute carte (décision d'Alexandre, 19/09/2026)
+    _ix = pages['index.html'].txt
+    _sp = re.search(r'<section id="specialites"[^>]*>(.*?)</section>', _ix, re.S)
+    if not _sp: E('index.html : section #specialites introuvable — TECH24BQ')
+    else:
+        _cards = re.findall(r'<a class="hv-card hv-bezel" href="(/[a-z-]+)">(.*?)</a>', _sp.group(1), re.S)
+        if [h for h, _ in _cards] != ['/chirurgie-retine', '/dmla', '/injection-intravitreenne', '/chirurgie-cataracte', '/glaucome', '/suivi-corrections-optiques']: E(f'index.html : cartes des spécialités inattendues {[h for h, _ in _cards]} — TECH24BQ')
+        for _h, _c in _cards:
+            _ic = re.search(r'<div class="specialty-icon">(.*?)</div>', _c, re.S)
+            if not _ic or '<svg' in _ic.group(1) or not re.search(r'<img src="[A-Za-z-]+-120\.webp" alt="" width="40" height="40"', _ic.group(1)): E(f'index.html : carte {_h} sans pictogramme du graphiste (.webp de la série, jamais un SVG) — TECH24BQ')
+            if re.search(r'<img[^>]+(chirurgie-|hero)', _c): E(f'index.html : photo dans la carte {_h} — les photos restent hors des cartes — TECH24BQ')
+        if 'class="section-espace"' in _sp.group(1): E('index.html : la photo du microscope est dans la section des spécialités — elle reste une section à part — TECH24BQ')
+    _ph = re.search(r'</section>\s*<!-- ===== PHOTO CHIRURGIE ===== -->\s*<div class="section-espace">(.*?)\n</div>', _ix, re.S)
+    if not _ph or _ix.count('class="section-espace"') != 1 or _ph.group(1).count('<img ') != 1 or 'class="img-bloc"' not in _ph.group(1) or re.search(r'<a\b', _ph.group(1)): E('index.html : la photo du microscope doit rester une section à part (.section-espace, une image .img-bloc, hors lien), juste après les spécialités — TECH24BQ')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

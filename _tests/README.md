@@ -312,3 +312,9 @@ CTA du hero est à l'écran).
 Depuis le tour 24 (TECH24BP-2026-09-19), l'accès rapide de la home est une grille 7/5 de deux tuiles-liens suivie de la bande
 « Urgence rétinienne » en pleine largeur (titre-lien vers la conduite à tenir, bouton d'appel ardoise à pastille — jamais cuivre) ;
 `check_static.py` en vérifie la structure ; les textes sont ceux de l'ancienne rangée de trois cartes, mot pour mot.
+
+Depuis le tour 24 (TECH24BQ-2026-09-19), les six cartes de spécialités de la home sont des cartes-liens à cadre double, en grille
+régulière 3 × 2 (2 colonnes sur tablette, 1 sur téléphone), avec les pictogrammes du graphiste. **La photo du microscope reste une
+section à part, juste après, telle quelle** (décision d'Alexandre du 19/09/2026 : une première maquette l'avait placée dans la carte
+« Chirurgie de la rétine ») : `check_static.py` refuse toute photo dans une carte, tout SVG à la place d'un pictogramme, et exige
+`.section-espace` hors de `#specialites` ; `browser.mjs` contrôle colonnes, hauteurs égales, pictogrammes et photo à 1 366, 768 et 390 px.

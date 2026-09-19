@@ -1195,6 +1195,35 @@ try {
     }
     await ctx.close();
   }
+  // TECH24BQ-2026-09-19 — home : six cartes de spécialités égales — 3 colonnes à 1 366 px, 2 à 768 px, 1 à 390 px ; même hauteur dans une
+  // rangée ; pictogramme chargé (40 px) ; la photo du microscope (.section-espace) suit la section, hors de toute carte, à sa taille (≤ 700 px).
+  for (const [w, cols] of [[1366, 3], [768, 2], [390, 1]]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    if (slugs.includes('index')) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        await page.evaluate(async () => { document.querySelector('#specialites').scrollIntoView(); await new Promise(r => setTimeout(r, 300)); document.querySelector('.section-espace').scrollIntoView(); await new Promise(r => setTimeout(r, 500)); });
+        const res = await page.evaluate((cols) => {
+          const out = []; const cards = [...document.querySelectorAll('#specialites .hv-cards > a.hv-card')];
+          if (cards.length !== 6) { out.push(`${cards.length} cartes (6 attendues)`); return out; }
+          const rows = new Map();
+          for (const c of cards) { const r = c.getBoundingClientRect(); const k = Math.round(r.top); if (!rows.has(k)) rows.set(k, []); rows.get(k).push(r); }
+          for (const [k, rs] of rows) { if (rs.length !== cols) out.push(`rangée de ${rs.length} carte(s) (${cols} attendues)`); if (Math.max(...rs.map(r => r.height)) - Math.min(...rs.map(r => r.height)) > 1) out.push('cartes de hauteurs différentes dans une rangée'); }
+          for (const c of cards) { const im = c.querySelector('.specialty-icon img'); if (!im || !im.complete || !im.naturalWidth || Math.abs(im.getBoundingClientRect().width - 40) > 1) out.push(`pictogramme absent ou mal dimensionné (${c.getAttribute('href')})`); }
+          const ph = document.querySelector('.section-espace img.img-bloc');
+          if (!ph || ph.closest('a, .hv-card, #specialites')) out.push('photo du microscope absente ou placée dans une carte');
+          else { const r = ph.getBoundingClientRect(); if (r.width > 701 || r.width < 250 || !ph.naturalWidth) out.push(`photo du microscope : largeur ${Math.round(r.width)} px`); if (r.top + scrollY < document.querySelector('#specialites').getBoundingClientRect().bottom + scrollY - 1) out.push('photo du microscope avant la fin des spécialités'); }
+          return out;
+        }, cols);
+        for (const r of res) failures.push(`index @${w} spécialités — ${r}`);
+        loads++;
+      } catch (e) { failures.push(`index @${w} spécialités — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
