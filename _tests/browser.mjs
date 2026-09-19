@@ -1156,6 +1156,45 @@ try {
     }
     await ctx.close();
   }
+  // TECH24BO-2026-09-19 — home à 1 366, 390 et 320 px : boutons à pastille (hero ×2, bloc contact) — pastille ronde de 38 px entièrement
+  // dans le bouton, libellé sur une seule ligne à 1 366 et 390 px, bouton ≥ 48 px de haut, nom accessible inchangé ; à 390 px la barre
+  // fixe reste masquée tant que le CTA du hero est à l'écran (nav.js observe .hero-buttons .btn-primary).
+  for (const w of [1366, 390, 320]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 800 }, deviceScaleFactor: 1, locale: 'fr-FR', isMobile: w < 500, hasTouch: w < 500 });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    if (slugs.includes('index')) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const res = await page.evaluate((w) => {
+          const out = []; const btns = [...document.querySelectorAll('main a.hv-btn')].filter(b => !b.classList.contains('hv-call'));
+          if (btns.length !== 3) out.push(`${btns.length} boutons à pastille hors accès rapide (3 attendus)`);
+          for (const b of btns) {
+            const t = b.textContent.trim().slice(0, 22), rb = b.getBoundingClientRect(), ico = b.querySelector('.hv-btn-ico'), lab = b.querySelector('.hv-btn-label');
+            if (!ico || !lab) { out.push(`« ${t} » : structure incomplète`); continue; }
+            const ri = ico.getBoundingClientRect();
+            if (Math.abs(ri.width - 38) > 1 || Math.abs(ri.height - 38) > 1) out.push(`« ${t} » : pastille ${Math.round(ri.width)}×${Math.round(ri.height)} (38 attendu)`);
+            if (ri.left < rb.left || ri.right > rb.right + 0.5 || ri.top < rb.top || ri.bottom > rb.bottom + 0.5) out.push(`« ${t} » : pastille hors du bouton`);
+            if (rb.height < 48) out.push(`« ${t} » : bouton de ${Math.round(rb.height)} px de haut (48 attendus)`);
+            if (w >= 390) { const lines = new Set(); const tw = document.createTreeWalker(lab, NodeFilter.SHOW_TEXT); for (let nd = tw.nextNode(); nd; nd = tw.nextNode()) { if (nd.parentElement.closest('.sr-only') || !nd.textContent.trim()) continue; const r = document.createRange(); r.selectNodeContents(nd); for (const q of r.getClientRects()) if (q.width > 1) lines.add(Math.round(q.top)); } if (lines.size > 1) out.push(`« ${t} » : libellé sur ${lines.size} lignes`); }
+          }
+          const cta = document.querySelector('.hero-buttons .btn-primary.hv-btn--rdv');
+          if (!cta) out.push('CTA du hero sans .btn-primary (la barre fixe ne se masquerait plus)');
+          return out;
+        }, w);
+        for (const r of res) failures.push(`index @${w} boutons à pastille — ${r}`);
+        if (w === 390) {
+          await page.evaluate(() => document.querySelector('.hero-buttons .btn-primary').scrollIntoView({ block: 'center' }));
+          await page.waitForTimeout(400);
+          const vis = await page.evaluate(() => document.body.classList.contains('hero-cta-visible'));
+          if (!vis) failures.push('index @390 boutons à pastille — CTA du hero à l’écran mais body sans .hero-cta-visible (barre fixe en double)');
+        }
+        loads++;
+      } catch (e) { failures.push(`index @${w} boutons à pastille — ${String(e).slice(0, 160)}`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

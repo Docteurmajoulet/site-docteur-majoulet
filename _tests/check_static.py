@@ -697,7 +697,15 @@ def check(root):
             if len(_true) != 1 or len(_any) != 1: E(f'{name} : {len(_any)} aria-current="true" dans le menu (attendu un seul, sur le bouton de la rubrique {_panel})')
             elif f'aria-controls="{_panel}"' not in _true[0]: E(f'{name} : aria-current="true" sur un bouton qui ne commande pas le panneau {_panel} de la page courante')
         elif _any: E(f'{name} : aria-current="true" dans le menu alors que la page n\'est dans aucun panneau')
-    if 'aria-hidden="true"' not in re.search(r'class="btn-primary">\s*(<svg[^>]*>)', pages['index.html'].txt).group(1): E('index.html : icône du CTA « Prendre rendez-vous » du hero sans aria-hidden="true" (décorative, lue « image » par VoiceOver)')
+    # TECH24BO-2026-09-19 : le CTA du hero est un bouton à icône imbriquée — la pastille et son SVG restent décoratifs (aria-hidden),
+    # et la classe .btn-primary est conservée dans .hero-buttons (nav.js s'en sert pour masquer la barre fixe tant que le CTA est à l'écran)
+    _hb = re.search(r'<div class="hero-buttons">(.*?)</div>', pages['index.html'].txt, re.S)
+    _cta = re.search(r'<a [^>]*class="btn-primary hv-btn hv-btn--rdv"[^>]*>(.*?)</a>', _hb.group(1), re.S) if _hb else None
+    if not _cta: E('index.html : CTA « Prendre rendez-vous » du hero introuvable (a.btn-primary.hv-btn.hv-btn--rdv dans .hero-buttons) — TECH24BO')
+    else:
+        _ico = re.search(r'<span class="hv-btn-ico"([^>]*)>\s*(<svg[^>]*>)', _cta.group(1))
+        if not _ico or 'aria-hidden="true"' not in _ico.group(1) or 'aria-hidden="true"' not in _ico.group(2): E('index.html : pastille du CTA du hero sans aria-hidden="true" (décorative, lue « image » par VoiceOver) — TECH24BO')
+        if '<span class="hv-btn-label">Prendre rendez-vous</span>' not in _cta.group(1) or '<span class="sr-only"> (nouvelle fenêtre)</span>' not in _cta.group(1): E('index.html : libellé du CTA du hero modifié (« Prendre rendez-vous » + « (nouvelle fenêtre) » attendus) — TECH24BO')
 
     # ---- TECH20AU-2026-09-16 : lignes de lecture ≤ 42 em hors corps de fiche — le bloc existe une fois, en fin de feuille, avec sa règle
     _au = css_txt.count('TECH20AU-2026-09-16')
@@ -856,6 +864,21 @@ def check(root):
         _body = _main.group(0) if _main else ''
         for _t in ('/chirurgie-cataracte', '/cataracte-secondaire-laser-yag'):
             if not re.search(r'<a [^>]*href="' + re.escape(_t) + r'"', _body): E(f'cataracte.html : aucun lien vers {_t} dans <main> (maillage du silo cataracte) — TECH22BN')
+    # ---- TECH24BO-2026-09-19 : socle « cadre double » de la home — le bloc existe une fois ; aucun !important, aucune animation de mise en page,
+    # aucune seconde police ; les trois boutons à pastille de la home (hero ×2, bloc contact) gardent leur structure
+    _b23 = re.search(r'TECH24BO-2026-09-19 — Home.*?(?=\n/\* =+\n   TECH|\Z)', css_txt, re.S)
+    if css_txt.count('TECH24BO-2026-09-19 — Home') != 1 or not _b23: E('main.css : bloc TECH24BO absent ou en double')
+    else:
+        _b = re.sub(r'/\*.*?\*/', '', _b23.group(0), flags=re.S)
+        if '!important' in _b: E('main.css : !important dans le bloc TECH24BO')
+        if 'font-family' in _b: E('main.css : font-family dans le bloc TECH24BO (une seule famille : Montserrat, héritée)')
+        for _t in re.findall(r'transition:([^;}]*)', _b):
+            if re.search(r'\b(all|width|height|padding|margin|gap|top|left|right|bottom)\b', _t): E(f'main.css : transition de mise en page dans le bloc TECH24BO « {_t.strip()[:60]} »')
+        if re.search(r'#9C4B2E|#82391F', re.sub(r'\.hv-btn--rdv[^{]*\{[^}]*\}', '', _b), re.I): E('main.css : cuivre RDV hors .hv-btn--rdv dans le bloc TECH24BO (règle du geste unique)')
+    _ix23 = pages['index.html'].txt
+    if len(re.findall(r'class="[^"]*\bhv-btn--rdv\b', _ix23)) != 2: E('index.html : deux boutons cuivre à pastille attendus (hero, bloc contact) — TECH24BO')
+    for _m in re.finditer(r'<a [^>]*class="[^"]*\bhv-btn\b[^"]*"[^>]*>(.*?)</a>', _ix23, re.S):
+        if _m.group(1).count('class="hv-btn-label"') != 1 or _m.group(1).count('class="hv-btn-ico" aria-hidden="true"') != 1: E('index.html : bouton .hv-btn sans libellé unique ou sans pastille décorative — TECH24BO')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

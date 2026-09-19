@@ -300,3 +300,11 @@ Depuis le tour 22 (TECH22BN-2026-09-17), la fiche /cataracte renvoie dans son co
 et vers /cataracte-secondaire-laser-yag (les deux mentions « laser YAG » sont des liens ; le bloc de fin, retitré « Pages associées »,
 remplace « Trou maculaire » et « Membrane épirétinienne » par ces deux pages) : elle ne liait aucune des deux hors menu. `check_static.py`
 exige les deux liens dans `<main>`.
+
+Depuis le tour 24 (TECH24BO-2026-09-19), la home porte la facture « cadre double » validée sur maquette (19/09/2026) : le bloc
+TECH24BO de `main.css` est le socle commun des lots BO-BS (cadre double en `box-shadow`, pastilles, boutons à icône imbriquée,
+en-têtes de section, accès rapide, cartes, barre des points clés). `check_static.py` refuse dans ce bloc tout `!important`, toute
+`font-family`, toute transition de mise en page et tout cuivre hors `.hv-btn--rdv`, et vérifie la structure des boutons à pastille
+(libellé unique + pastille décorative `aria-hidden`, `.btn-primary` conservé dans `.hero-buttons` pour nav.js) ; `browser.mjs`
+mesure ces boutons à 1 366, 390 et 320 px (pastille de 38 px dans le bouton, libellé sur une ligne, barre fixe masquée tant que le
+CTA du hero est à l'écran).
