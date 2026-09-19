@@ -1,4 +1,6 @@
-/* nav.js — docteurmajoulet.com — TECH14AD-2026-09-14 (v9)
+/* nav.js — docteurmajoulet.com — TECH32-2026-09-20 (v10)
+   v10 : tiroir ancré à la fenêtre, hauteur réelle à fort zoom et avec transparence réduite ;
+   position mise à jour lorsque le bandeau change de hauteur ou que la page défile.
    v9 : état des sous-menus centralisé (délais de fermeture annulés à chaque bascule),
    focus clavier préservé au survol, au changement de format et au retour de Doctolib.
    Relecture du 14/09 (tour 14, lot AD) : (1) à la souris, quitter le panneau le referme
@@ -135,11 +137,13 @@
     }
     function sizeDrawer() {
         if (!nav || !header || !body.classList.contains('menu-open')) { return; }
-        /* Le tiroir est en position:fixed dans le bloc conteneur de l'en-tête (backdrop-filter) :
-           top = hauteur de l'en-tête, hauteur = ce qui reste sous l'en-tête dans la fenêtre. */
+        /* TECH32-2026-09-20 : le tiroir ouvert est ancré à la fenêtre, y compris lorsque
+           le patient réduit la transparence. Il occupe seulement l’espace sous l’en-tête,
+           sans hauteur minimale qui dépasserait de la fenêtre à fort zoom. */
         var r = header.getBoundingClientRect();
-        nav.style.top = Math.round(r.height) + 'px';
-        nav.style.height = Math.max(200, Math.round(window.innerHeight - r.bottom)) + 'px';
+        var top = Math.max(0, Math.min(window.innerHeight, r.bottom));
+        nav.style.top = top + 'px';
+        nav.style.height = Math.max(0, window.innerHeight - top) + 'px';
     }
     function drawerFocusables() {
         var list = nav ? Array.prototype.slice.call(nav.querySelectorAll(FOCUSABLE)) : [];
@@ -230,11 +234,16 @@
     if (desktopMedia.addEventListener) { desktopMedia.addEventListener('change', updateLayout); }
     else { desktopMedia.addListener(updateLayout); }
     window.addEventListener('resize', updateLayout);
+    // Le focus peut faire défiler la page jusqu’à l’en-tête pendant l’ouverture.
+    window.addEventListener('scroll', sizeDrawer, { passive: true });
     // Suit aussi l’en-tête et l’apparition du bouton mobile : certains changements de police
     // modifient le format CSS sans émettre change ni resize, et sans changer la hauteur de l’en-tête.
     if (header && 'ResizeObserver' in window) {
         var layoutObserver = new ResizeObserver(updateLayout);
         layoutObserver.observe(header);
+        // Une police agrandie peut déplacer l’en-tête sans modifier sa propre hauteur.
+        var topbar = document.querySelector('.topbar');
+        if (topbar) { layoutObserver.observe(topbar); }
         if (toggle) { layoutObserver.observe(toggle); }
     }
 

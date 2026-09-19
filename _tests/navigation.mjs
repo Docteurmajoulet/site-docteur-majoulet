@@ -29,6 +29,7 @@ async function scenario(name, width, run) {
       bureau: matchMedia('(min-width: 64.0625em)').matches,
       classes: document.body.className,
       menus: Array.from(document.querySelectorAll('[data-megamenu] > .nav-link')).map(element => element.getAttribute('aria-expanded')),
+      boites: ['header.site-header', 'nav.main-nav'].map(selector => { const element = document.querySelector(selector), rect = element.getBoundingClientRect(); return { selector, top: rect.top, bottom: rect.bottom, style: element.getAttribute('style'), filtre: getComputedStyle(element).backdropFilter, transformation: getComputedStyle(element).transform }; }),
     }));
     failures.push(name + ' — ' + error.stack + '\n  État : ' + JSON.stringify(state));
   } finally {
@@ -140,6 +141,49 @@ try {
     assert.equal(await page.locator('main').evaluate(element => element.inert), false);
     assert.equal(await focused(page.locator('.mobile-toggle')), true, 'focus hors du tiroir fermé');
   });
+
+  // TECH32-2026-09-20 : le menu respecte l’espace visible, avec fort zoom et transparence réduite.
+  for (const profile of [
+    { width: 320, height: 256, transparency: false, font: 16 },
+    { width: 375, height: 667, transparency: true, font: 16 },
+    { width: 375, height: 667, transparency: false, font: 16 },
+    { width: 683, height: 450, transparency: true, font: 32 },
+  ]) {
+    await scenario(`tiroir ${profile.width}×${profile.height}, police ${profile.font}, transparence réduite ${profile.transparency}`, profile.width, async (page, context) => {
+      await page.setViewportSize({ width: profile.width, height: profile.height });
+      const cdp = await context.newCDPSession(page);
+      await cdp.send('Emulation.setEmulatedMedia', { features: [
+        { name: 'prefers-reduced-transparency', value: profile.transparency ? 'reduce' : 'no-preference' },
+        { name: 'prefers-reduced-motion', value: 'reduce' },
+      ] });
+      if (profile.font !== 16) await cdp.send('Page.setFontSizes', { fontSizes: { standard: profile.font, fixed: 26 } });
+      await page.locator('.mobile-toggle').focus();
+      await page.keyboard.press('Enter');
+      // Le focus initial peut faire défiler le bandeau supérieur : attendre son nouvel alignement.
+      const fits = () => {
+        const header = document.querySelector('header.site-header').getBoundingClientRect();
+        const panel = document.querySelector('nav.main-nav').getBoundingClientRect();
+        return Math.abs(panel.top - header.bottom) <= 1 && Math.abs(panel.bottom - innerHeight) <= 1;
+      };
+      await page.waitForFunction(fits, undefined, { timeout: 2000 });
+      const closeReachable = await page.locator('.mobile-toggle').evaluate(button => {
+        const r = button.getBoundingClientRect();
+        const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+        return !!hit && (button === hit || button.contains(hit));
+      });
+      assert.equal(closeReachable, true, 'le panneau ne recouvre pas le bouton de fermeture');
+      assert.equal(await page.locator('main').evaluate(element => element.inert), true);
+      await trigger(page).focus();
+      await page.keyboard.press('Enter');
+      await firstLink(page).waitFor({ state: 'visible' });
+      await page.keyboard.press('Tab');
+      assert.equal(await focused(firstLink(page)), true, 'le clavier entre dans les liens de la rubrique');
+      await page.waitForFunction(fits, undefined, { timeout: 2000 });
+      await page.keyboard.press('Escape');
+      assert.equal(await focused(page.locator('.mobile-toggle')), true);
+      assert.equal(await page.locator('main').evaluate(element => element.inert), false);
+    });
+  }
 } finally {
   if (browser) await browser.close();
   stop();

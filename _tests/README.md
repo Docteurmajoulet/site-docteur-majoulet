@@ -368,3 +368,9 @@ dans le HTML ; le lien secondaire annonce « Les spécialités » et les qualifi
 Les trois pages piliers présentent leurs fiches liées en lignes, empilées sur téléphone. La note d’urgence garde son nouveau cadre.
 Les gardes du tour 24 continuent de vérifier les boutons, les cartes et les pictogrammes ; les corrections du compteur de
 lisibilité et du décodage des images dans les captures sont intégrées sans supprimer ces gardes.
+
+Depuis le tour 32 (20/09/2026), `navigation.mjs` vérifie le tiroir à 320 × 256, 375 × 667 et 683 × 450,
+avec police agrandie et préférence de transparence réduite : panneau aligné sous l’en-tête, entièrement dans
+la fenêtre, bouton de fermeture atteignable, navigation clavier et retour au contenu. Le fond filtré de
+l’en-tête est désactivé seulement pendant l’ouverture afin que le tiroir ait toujours la fenêtre comme
+référence. Sa hauteur suit l’espace réellement disponible, y compris après le défilement provoqué par le focus.

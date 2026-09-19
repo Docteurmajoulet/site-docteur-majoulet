@@ -8070,3 +8070,14 @@ article.pathology-content .consultation-route p {
         padding-block: 8pt !important;
     }
 }
+
+/* ============================================================
+   TECH32-2026-09-20 — Le menu ouvert prend la fenêtre comme référence,
+   quelle que soit la préférence de transparence. Son bouton de fermeture
+   reste dans l’en-tête, au-dessus du panneau dimensionné par nav.js. */
+@media screen and (max-width: 64em) {
+    body.menu-open header.site-header {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+    }
+}
