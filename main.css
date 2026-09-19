@@ -7889,3 +7889,95 @@ body.page-index .cv12-h { font-variant-numeric: tabular-nums; }
 @media print {
     :where(body.v9) .pillar-card { break-inside: avoid; }
 }
+
+/* TOUR25-2026-09-19 — Rendez-vous et lieux de soins : une entrée claire,
+   puis des coordonnées en lignes. Les couleurs et les boutons de la charte
+   sont conservés ; aucune ressource ni interaction supplémentaire. */
+body.page-contact .page-header {
+    padding-block: 32px;
+}
+article.pathology-content .contact-booking {
+    margin-top: 0;
+    padding: 28px 18px;
+    outline: 1px solid var(--bleu-gris);
+    outline-offset: -8px;
+}
+article.pathology-content .contact-booking h2 {
+    margin: 0 0 18px;
+    padding: 0;
+    color: var(--blanc-naturel);
+    font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.65rem);
+    letter-spacing: 0;
+    text-transform: none;
+}
+article.pathology-content .contact-booking h2::after {
+    content: none;
+}
+article.pathology-content .contact-booking .contact-booking-note {
+    margin-top: 18px;
+    margin-bottom: 0;
+    font-size: 0.95rem;
+}
+article.pathology-content .contact-booking a:not(.btn-rdv),
+article.pathology-content .contact-booking strong {
+    color: var(--blanc-naturel);
+}
+.contact-shortcuts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 24px;
+    padding-block: 16px;
+}
+.contact-shortcuts a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-size: 1rem;
+}
+.care-locations {
+    margin: 0;
+    border-top: 1px solid var(--border);
+}
+.care-locations > div {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px 32px;
+    padding-block: 24px;
+    border-bottom: 1px solid var(--border);
+}
+.care-locations dt {
+    font-weight: 600;
+    color: var(--prusse);
+}
+.care-locations dd {
+    margin: 0;
+    max-width: 42em;
+    color: var(--text-light);
+    overflow-wrap: anywhere;
+}
+.care-locations :is(dt, dd) {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    font-variant-numeric: tabular-nums;
+}
+.consultation-route {
+    margin-block: 28px;
+    padding-block: 24px;
+    border-block: 1px solid var(--border);
+}
+article.pathology-content .consultation-route p {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    color: var(--text-light);
+}
+.consultation-route > a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    font-weight: 600;
+}
+@media (min-width: 50em) {
+    .care-locations > div {
+        grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr);
+    }
+}

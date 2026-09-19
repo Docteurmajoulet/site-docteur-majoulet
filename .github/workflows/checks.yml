@@ -19,6 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 _tests/check_static.py
+      - name: Dates de relecture médicale
+        run: python3 -m unittest discover -s _tests -p 'test_llms_full.py'
 
   navigateur:
     name: Navigateur (axe, CSP, débordements) + Lighthouse

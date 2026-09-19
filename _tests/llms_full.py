@@ -3,7 +3,7 @@
 
 Le fichier est GÉNÉRÉ depuis les pages HTML du dépôt : rien n'y est écrit à la main, chaque phrase existe sur une page
 publiée (validée), dans l'ordre de la carte du site (GROUPES de _tests/llms_pages.py). Par page : titre (H1), URL
-canonique, description (meta), date de relecture (JSON-LD lastReviewed / dateModified), puis le contenu de <main> converti
+canonique, description (meta), date de relecture (JSON-LD lastReviewed), puis le contenu de <main> converti
 en Markdown — titres, paragraphes, listes, tableaux, questions-réponses, liens en absolu — sans le chrome (fil d'Ariane,
 sommaire, boutons de rendez-vous, pages liées, carte). L'en-tête (identité, coordonnées, horaires) vient du JSON-LD de la home (llms_pages.identity, partagé avec llms.txt).
 
@@ -179,9 +179,10 @@ def page_markdown(root, slug):
 
 
 def page_meta(root, slug):
-    """Date de relecture (lastReviewed, sinon dateModified) lue dans le JSON-LD de la page ; '' si absente."""
-    s = open(os.path.join(root, slug + '.html'), encoding='utf-8').read()
-    dates = re.findall(r'"(?:lastReviewed|dateModified)":\s*"(\d{4}-\d{2}-\d{2})', s)
+    """Date de relecture explicite ; une mise à jour technique ne vaut pas relecture médicale."""
+    with open(os.path.join(root, slug + '.html'), encoding='utf-8') as source:
+        s = source.read()
+    dates = re.findall(r'"lastReviewed":\s*"(\d{4}-\d{2}-\d{2})', s)
     return max(dates) if dates else ''
 
 

@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-09-14
+Dernière mise à jour : 2026-09-19
 
 ## Identité et coordonnées
 
@@ -97,8 +97,8 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 ## Cabinet, prise de rendez-vous et urgences
 
 - [Dr Alexandre Majoulet, ophtalmologue & rétinologue à Boulogne-Billancourt](https://docteurmajoulet.com/): Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt : rétine, DMLA, cataracte, glaucome. Cabinet Ophtalife. Prenez RDV.
-- [Le Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet): Dr Majoulet, ophtalmologue fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Chirurgie vitréo-rétine et cataracte à la Clinique Jouvenet (Paris 16).
-- [Contact & accès](https://docteurmajoulet.com/contact): Coordonnées du Dr Majoulet : Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt. Tél. 01 84 19 11 66. Rendez-vous en ligne sur Doctolib.
+- [Le Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet): Dr Majoulet, rétinologue et praticien au CHNO des Quinze-Vingts. Consultations libérales à Boulogne-Billancourt et chirurgie à Jouvenet, Paris 16.
+- [Contact et rendez-vous](https://docteurmajoulet.com/contact): Coordonnées du Dr Majoulet : Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt. Tél. 01 84 19 11 66. Rendez-vous en ligne sur Doctolib.
 - [Ophtalmologue à Boulogne-Billancourt](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt): Ophtalmologue et rétinologue à Boulogne-Billancourt (92100). Consultations, chirurgie de la rétine, cataracte, glaucome. Cabinet Ophtalife, RDV Doctolib.
 - [Urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques): Urgences ophtalmologiques : baisse brutale de la vision, éclairs, œil rouge douloureux, traumatisme. Que faire, qui consulter. Dr Majoulet, Boulogne (92).
 - [Publications scientifiques](https://docteurmajoulet.com/publications): Publications scientifiques PubMed et presse grand public du Dr Majoulet, chirurgien ophtalmologue rétinologue (Quinze-Vingts, Cabinet Ophtalife Boulogne).
@@ -113,7 +113,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## Chirurgie de la rétine
 
-- [Chirurgie de la rétine](https://docteurmajoulet.com/chirurgie-retine): Chirurgie de la rétine à Boulogne : vitrectomie 25G, décollement de rétine, injections, laser. Dr Majoulet, chirurgien rétinologue. Prenez RDV en ligne.
+- [Chirurgie de la rétine](https://docteurmajoulet.com/chirurgie-retine): Chirurgie de la rétine à la Clinique Jouvenet, Paris 16. Consultation avec le Dr Majoulet au Cabinet Ophtalife, Boulogne-Billancourt. Rendez-vous Doctolib.
 - [Vitrectomie](https://docteurmajoulet.com/vitrectomie): Vitrectomie 25G : indications (décollement de rétine, trou maculaire, membrane), déroulé, suites. Dr Majoulet, chirurgien vitréo-rétinien à Boulogne.
 - [Décollement de Rétine](https://docteurmajoulet.com/decollement-retine): Décollement de rétine : signes d’alerte (voile noir, éclairs), urgence chirurgicale, vitrectomie. Dr Majoulet, chirurgien rétinologue à Boulogne. Prenez RDV.
 - [Membrane Épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne): Membrane épirétinienne : vision déformée, diagnostic OCT, chirurgie par vitrectomie avec pelage. Dr Majoulet, chirurgien rétinologue à Boulogne. Prenez RDV.
