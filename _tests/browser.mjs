@@ -20,6 +20,8 @@ import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { pages, urlFor, startServer } from './lib.mjs';
+import { readingLines } from './reading.mjs';
+import { assertReadingFixtures } from './reading-fixtures.mjs';
 
 const require = createRequire(import.meta.url);
 const AXE_SRC = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
@@ -34,6 +36,7 @@ const browser = await chromium.launch();
 const failures = [];
 let loads = 0, axeRuns = 0;
 try {
+  await assertReadingFixtures(browser);
   for (const w of WIDTHS) {
     const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
@@ -690,8 +693,8 @@ try {
   }
   // TECH20AU-2026-09-16 — longueur de ligne (Impeccable « line-length », WCAG 1.4.8) : sur toutes les pages à 1 366 et 1 920 px, aucun
   // bloc de texte de lecture (p, li, dd, dt, td, th, figcaption, blockquote, .travaux-ref ; ≥ 60 caractères ; hors pied de page, menus,
-  // sr-only) n'a de ligne rendue de plus de 90 caractères, espaces compris (comptage caractère par caractère via Range, seulement pour
-  // les blocs de plus de 30 em de large). Avant le lot : 250 blocs au-dessus de 90, jusqu'à 137 (/pathologies, /publications, « À propos »).
+  // sr-only) n'a de ligne rendue de plus de 90 caractères, espaces visibles compris (Range, blocs de plus de 30 em).
+  // Tour 23 : les espaces HTML fusionnées comptent une fois ; l'ancien compteur incluait l'indentation invisible du code.
   for (const w of [1366, 1920]) {
     const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
@@ -699,29 +702,8 @@ try {
       const page = await ctx.newPage();
       try {
         await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
-        const long = await page.evaluate(async () => {
-          await document.fonts.ready;
-          const out = [];
-          const sel = (el) => { const parts = []; let e = el; while (e && e !== document.body && parts.length < 3) { let s = e.tagName.toLowerCase(); if (e.id) s += '#' + e.id; else if (e.classList.length) s += '.' + [...e.classList].slice(0, 2).join('.'); parts.unshift(s); e = e.parentElement; } return parts.join(' > '); };
-          for (const el of document.querySelectorAll('p, li, dd, dt, td, th, figcaption, blockquote, .travaux-ref')) {
-            if (el.closest('footer, nav, [aria-hidden="true"], .sr-only')) continue;
-            const cs = getComputedStyle(el);
-            if (cs.display === 'none' || cs.visibility === 'hidden' || parseFloat(cs.opacity) === 0) continue;
-            const txt = (el.textContent || '').replace(/\s+/g, ' ').trim(); if (txt.length < 60) continue;
-            const rect = el.getBoundingClientRect(); if (rect.width < 100 || rect.height === 0) continue;
-            if (rect.width / parseFloat(cs.fontSize) <= 30) continue;   // un bloc de moins de 30 em ne peut pas dépasser 90 caractères
-            const lines = new Map(); const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let node;
-            while ((node = walker.nextNode())) {
-              const t = node.textContent; if (!t.trim() || node.parentElement.closest('.sr-only')) continue;
-              const range = document.createRange();
-              for (let i = 0; i < t.length; i++) { range.setStart(node, i); range.setEnd(node, i + 1); const rr = range.getBoundingClientRect(); if (!rr.width) continue; const k = Math.round(rr.top / 6); lines.set(k, (lines.get(k) || 0) + 1); }
-            }
-            const max = Math.max(0, ...lines.values());
-            if (max > 90) out.push(`${sel(el)} : ${max} caractères sur une ligne (${Math.round(rect.width)} px pour ${cs.fontSize}) « ${txt.slice(0, 40)} »`);
-          }
-          return out;
-        });
-        for (const x of long.slice(0, 5)) failures.push(`${slug} @${w} longueur de ligne — ${x}`);
+        const long = await page.evaluate(readingLines);
+        for (const x of long.slice(0, 5)) failures.push(`${slug} @${w} longueur de ligne — ${x.selector} : ${x.max} caractères sur une ligne (${x.width} px pour ${x.fontSize}) « ${x.text.slice(0, 40)} »`);
         loads++;
       } catch (e) { failures.push(`${slug} @${w} longueur de ligne — ${String(e).slice(0, 160)}`); }
       await page.close();

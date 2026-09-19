@@ -331,3 +331,11 @@ ont un en-tête éditorial — étiquette `.hv-eyebrow` (0,8 rem, jamais moins) 
 `.hv-section` (112 px sur écran large, 72 puis 64 px en dessous), qui active le chapô du récit du parcours et les cadres doubles de la
 carte « Postes & diplômes », de la fiche de contact et de la façade de carte. Aucun texte retiré ; trois étiquettes ajoutées
 (« Consultation & chirurgie », « Parcours », « Le cabinet »). `check_static.py` vérifie les trois en-têtes et le récit continu.
+
+Depuis le tour 23 (19/09/2026), le contrôle de longueur de ligne utilise `reading.mjs` : les espaces HTML fusionnées
+sont comptées une seule fois, même entre éléments en ligne. L'ancien compteur attribuait à chaque espace d'indentation
+le rectangle du même espace affiché (reproduction sur /cataracte : 95 caractères annoncés, 82 au maximum une fois
+l'indentation neutralisée, pour un texte et une hauteur strictement identiques). Le seuil reste 90 caractères.
+Sept cas de régression vérifient les variantes indentées, les éléments en ligne, les espaces insécables ou préservées,
+les sauts de ligne et le texte masqué. Ils sont exécutés par `browser.mjs`. Pour rejouer seulement ce contrôle sur
+toutes les pages à 1 366 et 1 920 px : `node _tests/reading-check.mjs`.
