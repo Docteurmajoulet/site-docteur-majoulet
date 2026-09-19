@@ -339,3 +339,12 @@ l'indentation neutralisée, pour un texte et une hauteur strictement identiques)
 Sept cas de régression vérifient les variantes indentées, les éléments en ligne, les espaces insécables ou préservées,
 les sauts de ligne et le texte masqué. Ils sont exécutés par `browser.mjs`. Pour rejouer seulement ce contrôle sur
 toutes les pages à 1 366 et 1 920 px : `node _tests/reading-check.mjs`.
+
+Depuis l’intégration du tour 23 au tour 24 (TECH24BT-2026-09-19), le nouveau design de la home reste la référence :
+les six cartes à cadre double, les pictogrammes de 40 px, l’accès rapide, la barre des points clés et les en-têtes éditoriaux
+sont conservés. Les descriptions des cartes passent à 1 rem ; le récit du parcours et les textes des pages piliers concernés
+à 1,05 rem, en conservant le premier paragraphe en chapô de 1,12 rem. Les boutons à pastille du hero précèdent la présentation
+dans le HTML ; le lien secondaire annonce « Les spécialités » et les qualifications répétées en pastilles sont retirées.
+Les trois pages piliers présentent leurs fiches liées en lignes, empilées sur téléphone. La note d’urgence garde son nouveau cadre.
+Les gardes du tour 24 continuent de vérifier les boutons, les cartes et les pictogrammes ; les corrections du compteur de
+lisibilité et du décodage des images dans les captures sont intégrées sans supprimer ces gardes.
