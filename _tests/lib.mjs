@@ -1,7 +1,7 @@
 // Outils communs des tests navigateur (serveur local, liste des pages).
 import { spawn } from 'node:child_process';
 import { readdirSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 export const TESTS_DIR = dirname(fileURLToPath(import.meta.url));
@@ -17,11 +17,30 @@ export function urlFor(slug, port) {
 
 /** Lance _tests/serve.py sur `port` et attend qu'il réponde ; renvoie une fonction d'arrêt. */
 export async function startServer(port) {
-  const proc = spawn('python3', [join(TESTS_DIR, 'serve.py'), String(port)], { stdio: ['ignore', 'pipe', 'inherit'] });
-  const deadline = Date.now() + 15000;
-  while (Date.now() < deadline) {
-    try { const r = await fetch(`http://127.0.0.1:${port}/robots.txt`); if (r.ok) break; } catch {}
-    await new Promise(r => setTimeout(r, 200));
-  }
+  const proc = spawn('python3', [join(TESTS_DIR, 'serve.py'), String(port)], { stdio: ['ignore', 'pipe', 'pipe'] });
+  // Seul le processus lancé peut confirmer qu'il a lié le port à cette copie.
+  // Un GET réussi sur un port déjà occupé pouvait valider une autre branche.
+  await new Promise((ready, reject) => {
+    let settled = false, output = '', diagnostic = '';
+    const fail = reason => {
+      if (settled) return;
+      settled = true;
+      clearTimeout(timer);
+      proc.kill();
+      reject(new Error(`Serveur local ${port} : ${reason}${diagnostic ? '\n' + diagnostic.trim() : ''}`));
+    };
+    const timer = setTimeout(() => fail('démarrage non confirmé après 15 secondes'), 15000);
+    proc.once('error', error => fail(error.message));
+    proc.once('exit', (code, signal) => fail(`arrêt avant démarrage (${signal || code})`));
+    proc.stderr.on('data', chunk => { diagnostic = (diagnostic + chunk).slice(-2000); });
+    proc.stdout.on('data', chunk => {
+      output = (output + chunk).slice(-4000);
+      if (!settled && output.includes(`Site servi sur http://127.0.0.1:${port}/ (racine ${resolve(ROOT)},`)) {
+        settled = true;
+        clearTimeout(timer);
+        ready();
+      }
+    });
+  });
   return () => { try { proc.kill(); } catch {} };
 }

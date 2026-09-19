@@ -10,10 +10,10 @@
 - compression gzip des textes ; Content-Type corrects (woff2, avif, webmanifest, xml).
 Aucune dépendance. Ctrl-C pour arrêter.
 """
-import gzip, http.server, mimetypes, os, re, socketserver, sys, fnmatch
+import gzip, http.server, mimetypes, os, re, socketserver, sys
+from urllib.parse import unquote, urlsplit
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
 for ext, ct in (('.woff2', 'font/woff2'), ('.avif', 'image/avif'), ('.webmanifest', 'application/manifest+json'),
                 ('.webp', 'image/webp'), ('.svg', 'image/svg+xml'), ('.xml', 'application/xml'), ('.js', 'application/javascript')):
     mimetypes.add_type(ct, ext)
@@ -45,20 +45,38 @@ def headers_for(url_path):
     return out
 
 
+def file_for_url(url):
+    """Résout une URL dans la racine publique, sans traversée ni lien sortant."""
+    try:
+        path = unquote(urlsplit(url).path)
+        root = os.path.realpath(ROOT)
+        candidate = os.path.realpath(os.path.join(root, path.lstrip('/')))
+        if os.path.isdir(candidate): candidate = os.path.realpath(os.path.join(candidate, 'index.html'))
+        if not os.path.isfile(candidate) and os.path.isfile(candidate + '.html'):
+            candidate = os.path.realpath(candidate + '.html')
+        if os.path.commonpath((root, candidate)) != root: return None
+        parts = os.path.relpath(candidate, root).split(os.sep)
+        if any(part.startswith('.') or part == '_tests' for part in parts): return None
+        if not os.path.isfile(candidate): return None
+        return candidate, path
+    except (ValueError, OSError):
+        return None
+
+
 class H(http.server.BaseHTTPRequestHandler):
     protocol_version = 'HTTP/1.1'
     def log_message(self, *a): pass
 
     def do_GET(self):
-        p = self.path.split('?')[0].split('#')[0]
-        f = 'index.html' if p == '/' else p.lstrip('/')
-        fp = os.path.join(ROOT, f)
-        if os.path.isdir(fp): fp = os.path.join(fp, 'index.html')
-        if not os.path.isfile(fp) and os.path.isfile(fp + '.html'): fp += '.html'
-        code = 200
-        if not os.path.isfile(fp) or '/_tests/' in p or p.startswith('/.'):
-            fp, code = os.path.join(ROOT, '404.html'), 404
-        data = open(fp, 'rb').read()
+        self.send_file(include_body=True)
+
+    def send_file(self, include_body):
+        resolved = file_for_url(self.path)
+        if resolved:
+            (fp, p), code = resolved, 200
+        else:
+            fp, p, code = os.path.join(ROOT, '404.html'), '/404.html', 404
+        with open(fp, 'rb') as source: data = source.read()
         ct = mimetypes.guess_type(fp)[0] or 'application/octet-stream'
         _hs = headers_for(p if code == 200 else '/404.html')   # TECH12Z-2026-09-12 : un Content-Type déclaré dans _headers l'emporte, comme sur Netlify
         if 'Content-Type' in _hs: ct = _hs['Content-Type']
@@ -72,13 +90,15 @@ class H(http.server.BaseHTTPRequestHandler):
         if enc: self.send_header('Content-Encoding', enc); self.send_header('Vary', 'Accept-Encoding')
         for k, v in _hs.items():
             if k.lower() != 'content-type': self.send_header(k, v)
-        self.end_headers(); self.wfile.write(data)
+        self.end_headers()
+        if include_body: self.wfile.write(data)
 
     def do_HEAD(self):
-        self.do_GET()
+        self.send_file(include_body=False)
 
 
 if __name__ == '__main__':
+    PORT = int(sys.argv[1]) if len(sys.argv) > 1 else 8765
     socketserver.ThreadingTCPServer.allow_reuse_address = True
     with socketserver.ThreadingTCPServer(('127.0.0.1', PORT), H) as s:
         print(f'Site servi sur http://127.0.0.1:{PORT}/ (racine {ROOT}, {len(RULES)} règles _headers) — Ctrl-C pour arrêter', flush=True)

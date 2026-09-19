@@ -19,8 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: python3 _tests/check_static.py
-      - name: Dates de relecture médicale
-        run: python3 -m unittest discover -s _tests -p 'test_llms_full.py'
+      - name: Dates de relecture et serveur d’aperçu
+        run: python3 -m unittest discover -s _tests -p 'test_*.py'
 
   navigateur:
     name: Navigateur (axe, CSP, débordements) + Lighthouse
@@ -39,6 +39,8 @@ jobs:
           cache-dependency-path: _tests/package-lock.json
       - run: npm ci
       - run: npx playwright install --with-deps chromium
+      - name: Démarrage du serveur local
+        run: npm run test:server
       - name: Navigation (clavier, souris, tiroir et changement de format)
         run: node navigation.mjs
       - name: Tests navigateur (48 pages × 4 largeurs)
