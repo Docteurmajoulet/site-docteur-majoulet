@@ -318,3 +318,6 @@ régulière 3 × 2 (2 colonnes sur tablette, 1 sur téléphone), avec les pictog
 section à part, juste après, telle quelle** (décision d'Alexandre du 19/09/2026 : une première maquette l'avait placée dans la carte
 « Chirurgie de la rétine ») : `check_static.py` refuse toute photo dans une carte, tout SVG à la place d'un pictogramme, et exige
 `.section-espace` hors de `#specialites` ; `browser.mjs` contrôle colonnes, hauteurs égales, pictogrammes et photo à 1 366, 768 et 390 px.
+
+Depuis le tour 24 (TECH24BR-2026-09-19), les quatre points clés de la home tiennent dans une seule barre à cadre double
+(`ul.hv-ledger-bar`, quatre cellules séparées par des filets ; 2 × 2 sur tablette, empilées sur téléphone) ; textes inchangés.

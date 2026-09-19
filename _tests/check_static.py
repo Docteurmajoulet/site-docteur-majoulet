@@ -902,6 +902,9 @@ def check(root):
         if 'class="section-espace"' in _sp.group(1): E('index.html : la photo du microscope est dans la section des spécialités — elle reste une section à part — TECH24BQ')
     _ph = re.search(r'</section>\s*<!-- ===== PHOTO CHIRURGIE ===== -->\s*<div class="section-espace">(.*?)\n</div>', _ix, re.S)
     if not _ph or _ix.count('class="section-espace"') != 1 or _ph.group(1).count('<img ') != 1 or 'class="img-bloc"' not in _ph.group(1) or re.search(r'<a\b', _ph.group(1)): E('index.html : la photo du microscope doit rester une section à part (.section-espace, une image .img-bloc, hors lien), juste après les spécialités — TECH24BQ')
+    # ---- TECH24BR-2026-09-19 : points clés de la home — une barre de quatre cellules (liste), coches décoratives
+    _lg = re.search(r'<section class="hv-ledger" aria-label="Points clés">(.*?)</section>', pages['index.html'].txt, re.S)
+    if not _lg or len(re.findall(r'<li><span class="hv-tick" aria-hidden="true"><svg[^>]*aria-hidden="true"[^>]*>.*?</svg></span><p class="usp-title">[^<]+</p><p class="usp-text">[^<]+</p></li>', _lg.group(1))) != 4: E('index.html : barre des points clés (.hv-ledger-bar, 4 cellules titre + texte, coche décorative) attendue — TECH24BR')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

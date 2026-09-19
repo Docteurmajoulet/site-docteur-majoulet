@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-09-17
+Dernière mise à jour : 2026-09-19
 
 ## Identité et coordonnées
 
@@ -92,17 +92,25 @@ Une prise en charge complète des pathologies rétiniennes et de la cataracte, a
 
 [En savoir plus](https://docteurmajoulet.com/suivi-corrections-optiques)
 
+-
+
 Secteur 2 conventionné
 
 Sécurité sociale + mutuelle
+
+-
 
 OCT sur place
 
 Diagnostic le jour même
 
+-
+
 Injections (IVT) en salle dédiée
 
 Sans délai si indiquée
+
+-
 
 Clinique Jouvenet
 
