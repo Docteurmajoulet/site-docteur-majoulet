@@ -1,12 +1,10 @@
 #!/usr/bin/env python3
 """lastmod du sitemap = date de mise à jour de la page (TECH16AL-2026-09-14).
 
-Chaque page indexable affiche sa date de mise à jour (« Dernière mise à jour : <time datetime> »), reprise dans son JSON-LD
-(lastReviewed / dateModified — check_static vérifie l'égalité depuis le tour 4). Le sitemap portait une troisième date, tenue
-à la main et bumpée par des lots techniques (31 pages sur 45 en écart le 14/09 : ex. /retinopathie-diabetique affichée
-« 20 avril 2026 », lastmod 2026-08-21, alors qu'aucun lot n'avait bumpé le sitemap depuis les nœuds JSON-LD de septembre) :
-Google ne se sert de lastmod que s'il est cohérent avec les autres dates de la page, sinon il l'ignore.
-Désormais lastmod = dateModified du JSON-LD de la page (la date validée, la même que celle affichée) — une seule date par page.
+Le sitemap reprend dateModified du JSON-LD de la page, qui décrit sa dernière modification.
+La date de relecture médicale lastReviewed reste distincte : une modification de présentation
+ne vaut pas relecture. check_static compare les dates visibles à leur champ respectif selon
+le libellé (« Dernière révision » ou « Dernière mise à jour »).
 
     python3 _tests/sitemap_dates.py            # contrôle : liste les écarts (code 1 s'il y en a)
     python3 _tests/sitemap_dates.py --write    # réécrit les lastmod (à lancer par tout lot qui change la date d'une page)

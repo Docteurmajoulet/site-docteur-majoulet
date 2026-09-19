@@ -148,6 +148,13 @@ Le bloc JSON-LD `FAQPage` de chaque page est généré à partir des questions-r
     python3 _tests/faq_jsonld.py            # contrôle (aussi fait par check_static)
     python3 _tests/faq_jsonld.py --write    # régénère les blocs après avoir modifié une FAQ visible
 
+Depuis le tour 30 (20/09/2026), `page_dates.py` distingue les dates selon leur libellé :
+« Dernière révision » se compare à `lastReviewed` lorsqu’il est renseigné ; « Dernière mise à jour »,
+« Informations pratiques mises à jour » et « Page actualisée le » à `dateModified`.
+Le texte français doit également correspondre au `datetime`. Aucun champ de relecture manquant
+n’est déduit d’une modification. Neuf cas de régression couvrent les deux dates distinctes,
+les dates périmées, les jours impossibles et les variantes de balisage.
+
 Une page sans FAQ visible n'a pas de `FAQPage` ; les questions sont des `<h3 class="q">`.
 
 ## Régression visuelle d'un lot

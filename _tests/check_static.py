@@ -16,7 +16,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
   - _redirects : cibles internes existantes, règles forcées (« ! ») quand le chemin existe ; sitemap : lastmod valides ; security.txt non expiré ;
   - JSON-LD conforme au vocabulaire schema.org (_tests/schemaorg_vocab.json : @type connus, propriétés dans leur domaine,
     énumérations existantes) ;
-  - dates : la date de révision affichée (en <time datetime>) = lastReviewed du JSON-LD, dateModified présent et
+  - dates : révision affichée = lastReviewed, mise à jour affichée = dateModified (en <time datetime>), dateModified présent et
     postérieur ou égal, lastmod du sitemap = dateModified (TECH16AL) ; nœuds Physician et MedicalClinic avec leur @id ;
   - règles éditoriales du Dr Majoulet : « baisse brutale » jamais seul (toujours « … de la vision »),
     jamais « OPTAM », jamais « 24/7 ».
@@ -25,6 +25,7 @@ Sortie : liste des erreurs (code 1) et des avertissements (code 0).
 import argparse, base64, datetime, glob, hashlib, html, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab, llms_pages, llms_full   # TECH6H-2026-09-07, TECH9S-2026-09-12, TECH12AA-2026-09-12, TECH15AE-2026-09-14
 from html.parser import HTMLParser
+from page_dates import check_visible_dates
 
 DOMAIN = 'https://docteurmajoulet.com'
 NOINDEX_OK_OUTSIDE_SITEMAP = True
@@ -298,18 +299,11 @@ def check(root):
             if 'Physician' in _ty and nd.get('@id') != DOMAIN + '/#physician': E(f'{name} : nœud Physician sans @id {DOMAIN}/#physician')
             if nd.get('@type') == 'MedicalClinic' and nd.get('@id') != DOMAIN + '/#cabinet': E(f'{name} : nœud MedicalClinic sans @id {DOMAIN}/#cabinet')
         pages_nodes = [nd for nd in nodes if isinstance(nd.get('@type'), str) and nd['@type'].endswith('Page') and ('lastReviewed' in nd or 'dateModified' in nd)]
-        MOIS_FR = {'janvier': 1, 'février': 2, 'mars': 3, 'avril': 4, 'mai': 5, 'juin': 6, 'juillet': 7, 'août': 8, 'septembre': 9, 'octobre': 10, 'novembre': 11, 'décembre': 12}
-        vis = None
-        mt = re.search(r'Dernière (?:révision|mise à jour)(?: |&nbsp;): <time datetime="(\d{4}-\d{2}-\d{2})">(1<sup>er</sup>|\d{1,2}) ([a-zéû]+) (\d{4})</time>', t)
-        if mt:
-            vis = mt.group(1); day = 1 if mt.group(2).startswith('1<') else int(mt.group(2))
-            if mt.group(3) not in MOIS_FR or vis != f'{mt.group(4)}-{MOIS_FR[mt.group(3)]:02d}-{day:02d}': E(f'{name} : <time datetime="{vis}"> ≠ date écrite « {mt.group(2)} {mt.group(3)} {mt.group(4)} »')
-        elif re.search(r'Dernière (?:révision|mise à jour)(?: |&nbsp;): (?:1<sup>er</sup>|\d{1,2}) [a-zéû]+ \d{4}', t): E(f'{name} : date de révision affichée sans <time datetime>')
         for nd in pages_nodes:
             lr, dm = nd.get('lastReviewed'), nd.get('dateModified')
             if lr and not dm: E(f'{name} : JSON-LD lastReviewed sans dateModified')
             if lr and dm and dm < lr: E(f'{name} : dateModified {dm} antérieur à lastReviewed {lr}')
-            if lr and vis and vis != lr: E(f'{name} : date affichée {vis} ≠ lastReviewed {lr} (JSON-LD)')
+            for err in check_visible_dates(t, nd): E(f'{name} : {err}')
             lm = re.search(r'<loc>\s*' + re.escape(pg.pretty_url()) + r'\s*</loc>\s*<lastmod>([^<]+)</lastmod>', sitemap)
             # TECH16AL-2026-09-14 : lastmod = dateModified (une seule date par page ; « postérieur ou égal » depuis le tour 4 laissait
             # 31 pages avec une date de sitemap sans rapport avec la date affichée)

@@ -56,11 +56,11 @@ Consultation & chirurgie
 
 #### Spécialités
 
-Une prise en charge complète des pathologies rétiniennes et de la cataracte, avec les techniques les plus récentes.
+Consultations, examens et traitements pour les maladies de la rétine, la cataracte et le suivi de votre vue.
 
 ##### [Chirurgie de la rétine](https://docteurmajoulet.com/chirurgie-retine)
 
-[Chirurgie vitréo-rétinienne : décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive de dernière génération.](https://docteurmajoulet.com/chirurgie-retine)
+[Chirurgie vitréo-rétinienne : décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive.](https://docteurmajoulet.com/chirurgie-retine)
 
 [En savoir plus](https://docteurmajoulet.com/chirurgie-retine)
 
@@ -72,13 +72,13 @@ Une prise en charge complète des pathologies rétiniennes et de la cataracte, a
 
 ##### [Injections intravitréennes](https://docteurmajoulet.com/injection-intravitreenne)
 
-[Injections dans l’œil (IVT) d’anti-VEGF ou de corticoïdes pour la DMLA exsudative, de l’œdème maculaire diabétique et des occlusions veineuses rétiniennes.](https://docteurmajoulet.com/injection-intravitreenne)
+[Injections dans l’œil (IVT) d’anti-VEGF ou de corticoïdes pour la DMLA exsudative, l’œdème maculaire diabétique et les occlusions veineuses rétiniennes.](https://docteurmajoulet.com/injection-intravitreenne)
 
 [En savoir plus](https://docteurmajoulet.com/injection-intravitreenne)
 
 ##### [Chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte)
 
-[Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique). Récupération visuelle rapide et indolore.](https://docteurmajoulet.com/chirurgie-cataracte)
+[Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique).](https://docteurmajoulet.com/chirurgie-cataracte)
 
 [En savoir plus](https://docteurmajoulet.com/chirurgie-cataracte)
 
@@ -278,7 +278,7 @@ Le Dr Majoulet intervient ponctuellement dans les médias grand public pour des 
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), fondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
 
-Dernière mise à jour : 2 juillet 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière mise à jour : 19 septembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Contact et rendez-vous
 
@@ -472,7 +472,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
-Dernière mise à jour : 4 mai 2026.
+Dernière mise à jour : 19 septembre 2026.
 
 ### Urgences ophtalmologiques
 
@@ -586,7 +586,7 @@ L’apparition récente de flashs lumineux ou de nombreux corps flottants justif
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Dernière mise à jour : 19 avril 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière révision : 19 avril 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Publications scientifiques
 
