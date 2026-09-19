@@ -1533,20 +1533,18 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Vitrectomie
 
 - URL : https://docteurmajoulet.com/vitrectomie
-- Description : Vitrectomie 25G : indications (décollement de rétine, trou maculaire, membrane), déroulé, suites. Dr Majoulet, chirurgien vitréo-rétinien à Boulogne.
+- Description : Vitrectomie : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16. Préparez votre RDV.
 - Relu le : 2026-04-20
 
 Chirurgie vitréo-rétinienne mini-invasive (25G / 27G)
 
-La **vitrectomie** est l’intervention de référence de la **chirurgie vitréo-rétinienne moderne**. Elle consiste à retirer le **vitré** (gel transparent qui remplit les 4/5 postérieurs de l’œil) pour accéder à la rétine et traiter une large palette de pathologies rétiniennes et maculaires. Réalisée par voie **mini-invasive** (micro-orifices de 0,4 à 0,5 mm), elle se fait **en ambulatoire sous anesthésie locorégionale**.
+La **vitrectomie** consiste à retirer le **vitré**, le gel transparent situé à l’intérieur de l’œil, pour accéder à la rétine et traiter certaines maladies rétiniennes, comme un décollement de rétine, une membrane épirétinienne ou un trou maculaire. Réalisée par voie **mini-invasive** (micro-orifices de 0,4 à 0,5 mm), elle se fait **en ambulatoire sous anesthésie locorégionale**.
 
-- **25G / 27G** — Calibre des micro-incisions
-- **~45-90 min** — Durée moyenne
-- **Ambulatoire** — Sortie le même jour
+**Un avis sur une intervention de la rétine**
 
-#### Chirurgien titulaire du DIU de Chirurgie Vitréo-Rétinienne
+Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife, à Boulogne-Billancourt. Les interventions libérales ont lieu à la Clinique Jouvenet, Paris 16.
 
-Le Dr Majoulet est **titulaire du DIU de Chirurgie Vitréo-Rétinienne** (Université Paris-Saclay, 2024), formation hyper-spécialisée dédiée aux interventions rétiniennes complexes, et travaille en lien avec les services hospitaliers de référence (CHNO des Quinze-Vingts).
+[Préparer votre consultation rétine](https://docteurmajoulet.com/contact#avis-retine)
 
 #### Qu’est-ce que le vitré ?
 
@@ -1589,6 +1587,10 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 - **Corps flottants invalidants** (indication à discuter au cas par cas, balance bénéfice/risque).
 
 #### Déroulement de l’intervention
+
+- **25G / 27G** — Calibre des micro-incisions
+- **~45-90 min** — Durée moyenne
+- **Ambulatoire** — Sortie le même jour
 
 ##### Avant l’opération
 
@@ -1833,22 +1835,24 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Membrane Épirétinienne
 
 - URL : https://docteurmajoulet.com/membrane-epiretinienne
-- Description : Membrane épirétinienne : vision déformée, diagnostic OCT, chirurgie par vitrectomie avec pelage. Dr Majoulet, chirurgien rétinologue à Boulogne. Prenez RDV.
+- Description : Membrane épirétinienne : vision déformée, examen OCT et chirurgie. Consultation avec le Dr Majoulet à Boulogne-Billancourt, opération à Jouvenet, Paris 16.
 - Relu le : 2026-09-01
 
 Diagnostic OCT et chirurgie par vitrectomie avec pelage
 
-La **membrane épirétinienne (MER)**, également appelée *pucker maculaire* ou *cellophane maculaire*, est une fine **prolifération fibrocellulaire** qui se développe à la surface interne de la rétine, le plus souvent au niveau de la macula. En se contractant, cette membrane **plisse la rétine centrale** et altère la qualité de la vision, entraînant des **métamorphopsies** (lignes droites déformées) et une baisse progressive de l’acuité visuelle.
+Une **membrane épirétinienne (MER)** est une fine pellicule qui se forme à la surface de la rétine, le plus souvent dans sa partie centrale, la **macula**. En se contractant, elle plisse la rétine : les lignes droites paraissent déformées et la vision peut baisser progressivement.
 
-- **7 à 11 %** — Prévalence après 60 ans
-- **10 à 30 %** — Atteinte bilatérale
-- **80 à 90 %** — Amélioration après chirurgie
+**Un avis sur une intervention de la rétine**
+
+Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife, à Boulogne-Billancourt. Les interventions libérales ont lieu à la Clinique Jouvenet, Paris 16.
+
+[Préparer votre consultation rétine](https://docteurmajoulet.com/contact#avis-retine)
 
 #### Qu’est-ce qu’une membrane épirétinienne ?
 
-Il s’agit d’une **pellicule fibrocellulaire** formée par la prolifération de cellules (cellules gliales, hyalocytes, cellules de l’épithélium pigmentaire rétinien) à la surface de la macula. Cette membrane exerce une **traction tangentielle** et antéropostérieure sur la rétine, créant un plissement qui perturbe l’organisation des photorécepteurs.
+La membrane, également appelée *pucker maculaire* ou *cellophane maculaire*, est une **pellicule fibrocellulaire** formée par la prolifération de cellules (cellules gliales, hyalocytes, cellules de l’épithélium pigmentaire rétinien) à la surface de la macula. Cette membrane exerce une **traction tangentielle** et antéropostérieure sur la rétine, créant un plissement qui perturbe l’organisation des photorécepteurs.
 
-#### Deux grandes formes étiologiques
+#### Les causes d’une membrane épirétinienne
 
 ##### Forme idiopathique — la plus fréquente
 
@@ -1923,6 +1927,9 @@ Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les 
 
 #### Pour aller plus loin — données scientifiques
 
+- **7 à 11 %** — Prévalence après 60 ans
+- **10 à 30 %** — Atteinte bilatérale
+- **80 à 90 %** — Amélioration après chirurgie
 - **Govetto et al.** (*Am J Ophthalmol*, 2017) ont proposé la classification OCT en 4 stades utilisée en routine, reposant sur la conservation de la dépression fovéolaire et la présence d’*ectopic inner foveal layers* — marqueurs pronostiques désormais validés.
 - La **supériorité du pelage combiné MER + MLI** sur le pelage isolé de la MER, en termes de réduction du risque de récidive, est documentée par plusieurs méta-analyses (Chang et al., *PLoS One*, 2017 ; Azuma et al., *Retina*, 2017). L’impact fonctionnel additionnel à long terme reste débattu.
 - Les études suggèrent qu’un **pelage précoce** (avant désorganisation fovéolaire importante, stades 1-2 de Govetto) est associé à un meilleur gain visuel et à une récupération plus prévisible.
@@ -1976,24 +1983,26 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Trou Maculaire
 
 - URL : https://docteurmajoulet.com/trou-maculaire
-- Description : Trou maculaire : diagnostic OCT, vitrectomie avec pelage et tamponnement par gaz. Dr Majoulet, chirurgien rétinologue à Boulogne-Billancourt. Prenez RDV.
+- Description : Trou maculaire : diagnostic OCT, opération et récupération. Consultation avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
 - Relu le : 2026-09-01
 
-Chirurgie par vitrectomie, pelage de la membrane limitante interne et tamponnement par gaz
+Comprendre le diagnostic, l’opération et la récupération
 
-Le **trou maculaire** est une perte de substance **de pleine épaisseur** de la rétine neurosensorielle au centre de la macula, c’est-à-dire dans la **fovéa**, zone responsable de la vision la plus fine. Il entraîne une baisse de l’acuité visuelle centrale et des déformations de l’image (**métamorphopsies**). Dans sa forme la plus fréquente, dite **idiopathique**, il résulte des tractions exercées par le vitré sur la rétine lors du **décollement postérieur du vitré** lié au vieillissement.
+Un **trou maculaire** est une ouverture dans toute l’épaisseur de la rétine, au centre de la **macula**, la zone qui permet de voir les détails. Il entraîne une baisse de la vision centrale et des déformations de l’image. L’examen OCT et la chirurgie par vitrectomie sont expliqués dans cette fiche.
 
-- **~0,3 %** — Prévalence après 65 ans
-- **3 pour 1** — Prédominance féminine (3 femmes pour 1 homme)
-- **~90 %** — Fermeture anatomique par chirurgie
+**Un avis sur une intervention de la rétine**
+
+Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife, à Boulogne-Billancourt. Les interventions libérales ont lieu à la Clinique Jouvenet, Paris 16.
+
+[Préparer votre consultation rétine](https://docteurmajoulet.com/contact#avis-retine)
 
 #### Qu’est-ce qu’un trou maculaire ?
 
-Avec l’âge, le gel vitréen qui remplit la cavité postérieure de l’œil se liquéfie et se décolle progressivement de la rétine : c’est le **décollement postérieur du vitré (DPV)**. Lorsque le vitré adhère anormalement à la fovéa, ce décollement peut exercer une **traction vitréomaculaire** qui déchire la rétine en son centre, créant un trou. On parle alors de **trou maculaire idiopathique** (> 80 % des cas).
+Avec l’âge, le gel vitréen qui remplit la cavité postérieure de l’œil se liquéfie et se décolle progressivement de la rétine : c’est le **décollement postérieur du vitré (DPV)**. Lorsque le vitré adhère anormalement à la **fovéa**, le centre de la macula, ce décollement peut exercer une **traction vitréomaculaire** qui déchire la rétine en son centre, créant un trou. On parle alors de **trou maculaire idiopathique** (> 80 % des cas).
 
 D’autres causes plus rares existent : **myopie forte** (trou maculaire myopique, parfois associé à un décollement de rétine), **traumatisme oculaire contusif**, **post-vitrectomie** ou secondaire à une membrane épirétinienne.
 
-#### Classification OCT (International Vitreomacular Traction Study, 2013)
+#### Classification du trou maculaire à l’OCT
 
 La classification moderne repose sur la mesure en **tomographie par cohérence optique (OCT)** du diamètre minimal du trou :
 
@@ -2078,6 +2087,9 @@ Plus la chirurgie est **précoce** (moins de 6 à 12 mois d’évolution) et plu
 
 #### Pour aller plus loin — données scientifiques
 
+- **~0,3 %** — Prévalence après 65 ans
+- **3 pour 1** — Prédominance féminine (3 femmes pour 1 homme)
+- **~90 %** — Fermeture anatomique par chirurgie
 - **Kelly & Wendel** (*Arch Ophthalmol*, 1991) ont décrit la première série chirurgicale de trous maculaires par vitrectomie avec tamponnement gazeux, avec un taux de fermeture de l’ordre de 58 %. L’addition du pelage de la MLI a progressivement fait monter ce taux au-delà de 90 % (méta-analyse Spiteri Cornish et al., *Cochrane*, 2013 ; Lois et al., *Invest Ophthalmol Vis Sci*, 2011 — étude FILMS).
 - **Michalewska et al.** (*Ophthalmology*, 2010) ont introduit la **technique du lambeau inversé de MLI**, qui permet d’améliorer sensiblement les résultats anatomiques dans les grands trous (> 400 µm).
 - La **classification IVTS** (*International Vitreomacular Traction Study*, Duker et al., *Ophthalmology*, 2013) a standardisé la terminologie (syndrome de traction vitréomaculaire, trou maculaire de pleine épaisseur classé par diamètre minimal en OCT).
