@@ -2778,7 +2778,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Chirurgie de la cataracte
 
 - URL : https://docteurmajoulet.com/chirurgie-cataracte
-- Description : Chirurgie de la cataracte en ambulatoire à Boulogne : phacoémulsification, implants monofocaux à multifocaux. Dr Majoulet, Cabinet Ophtalife. Prenez RDV.
+- Description : Chirurgie de la cataracte à la Clinique Jouvenet, Paris 16. Bilan et choix de l’implant avec le Dr Majoulet au Cabinet Ophtalife à Boulogne-Billancourt.
 - Relu le : 2026-08-20
 
 Phacoémulsification par micro-incision, choix de l’implant intraoculaire
@@ -2787,7 +2787,11 @@ La chirurgie de la cataracte consiste à remplacer le cristallin opacifié par u
 
 Le choix de l’implant est un élément clé de la consultation pré-opératoire : monofocal (gold standard), monofocal torique (astigmatisme cornéen), EDOF ou multifocal (indépendance aux lunettes — avec compromis).
 
-#### Pathologies et interventions prises en charge
+**Votre consultation cataracte à Boulogne** / Bilan préopératoire au Cabinet Ophtalife, intervention à la Clinique Jouvenet, Paris 16e.
+
+[Préparer votre consultation](https://docteurmajoulet.com/contact#preparer-consultation)
+
+#### Comprendre l’opération et les implants
 
 ##### [Cataracte (fiche pathologie)](https://docteurmajoulet.com/cataracte)
 
@@ -2877,13 +2881,26 @@ Chirurgie par phacoémulsification avec implantation intraoculaire
 
 La **cataracte** correspond à l’**opacification progressive du cristallin**, lentille naturelle de l’œil située derrière la pupille. Elle survient habituellement après 60 ans et reste la **première cause de baisse visuelle réversible** dans le monde. Sa prise en charge repose exclusivement sur la **chirurgie** : aucun collyre ni traitement médical ne permet de la faire régresser.
 
-- **~20 %** — Des plus de 65 ans
-- **~80 %** — Des plus de 85 ans
-- **> 95 %** — Succès fonctionnel de la chirurgie
+**Votre consultation cataracte à Boulogne** / Bilan préopératoire au Cabinet Ophtalife, intervention à la Clinique Jouvenet, Paris 16e.
+
+[Préparer votre consultation](https://docteurmajoulet.com/contact#preparer-consultation)
+
+#### Les symptômes de la cataracte
+
+- **Baisse progressive et indolore** de l’acuité visuelle.
+- **Éblouissement**, halos autour des lumières (surtout en conduite nocturne).
+- **Diminution de la perception des contrastes** et des couleurs (teintes plus « jaunies »).
+- **Myopisation** : changements fréquents de correction, lecture possible sans lunettes chez un patient presbyte.
+- **Diplopie monoculaire** : dédoublement de l’image d’un seul œil.
+- Aucune douleur ni rougeur : la cataracte est **toujours indolore**.
 
 #### Qu’est-ce que la cataracte ?
 
 Le cristallin est une **lentille biconvexe transparente** située derrière l’iris. Il assure, avec la cornée, la focalisation des images sur la rétine et joue un rôle dans **l’accommodation** (mise au point sur les objets proches). Avec le temps, ses protéines se modifient et s’agrègent, entraînant une **perte progressive de transparence** : c’est la cataracte. Les rayons lumineux sont alors diffusés, ce qui explique l’éblouissement et le flou.
+
+- **~20 %** — Des plus de 65 ans
+- **~80 %** — Des plus de 85 ans
+- **> 95 %** — Succès fonctionnel de la chirurgie
 
 #### Principaux types de cataracte
 
@@ -2910,15 +2927,6 @@ Opacification juste en avant de la capsule postérieure. Elle entraîne une **g�
 - **Myopie forte**.
 - **Antécédent de vitrectomie** (cataracte nucléaire très fréquente dans les 12-24 mois).
 - Causes congénitales et héréditaires (cataracte de l’enfant).
-
-#### Les symptômes de la cataracte
-
-- **Baisse progressive et indolore** de l’acuité visuelle.
-- **Éblouissement**, halos autour des lumières (surtout en conduite nocturne).
-- **Diminution de la perception des contrastes** et des couleurs (teintes plus « jaunies »).
-- **Myopisation** : changements fréquents de correction, lecture possible sans lunettes chez un patient presbyte.
-- **Diplopie monoculaire** : dédoublement de l’image d’un seul œil.
-- Aucune douleur ni rougeur : la cataracte est **toujours indolore**.
 
 #### Bilan pré-opératoire
 
