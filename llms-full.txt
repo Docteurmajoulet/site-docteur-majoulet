@@ -168,7 +168,7 @@ Cabinet Ophtalife — Boulogne-Billancourt
 
 Métro Boulogne — Jean Jaurès (ligne 10) / Métro Marcel Sembat (ligne 9)
 
-Bus 123, 126, 175 — arrêt Église de Boulogne
+[Transports en commun — Google Maps](https://www.google.com/maps/dir/?api=1&destination=37+rue+d%27Aguesseau%2C+92100+Boulogne-Billancourt&travelmode=transit)
 
 **Horaires :**
 
@@ -330,9 +330,9 @@ Lundi, mercredi, jeudi : 9 h – 20 h / Mardi, vendredi, samedi : 9 h – 18 h /
 
 #### Accès & transports
 
-- **Métro :** Boulogne-Jean Jaurès (ligne 10) — à 5 min à pied
-- **Métro :** Marcel Sembat (ligne 9) — à 8 min à pied
-- **Bus :** 123, 126, 175 — arrêt Église de Boulogne
+- **Métro :** Boulogne-Jean Jaurès (ligne 10)
+- **Métro :** Marcel Sembat (ligne 9)
+- **Itinéraire :** [transports en commun sur Google Maps](https://www.google.com/maps/dir/?api=1&destination=37+rue+d%27Aguesseau%2C+92100+Boulogne-Billancourt&travelmode=transit).
 - **Voiture :** stationnement de surface et parkings publics à proximité (parking Rhin-et-Danube, parking Marcel Sembat)
 - **Vélo :** Vélib’ stations à proximité immédiate
 
@@ -356,7 +356,7 @@ En dehors des heures d’ouverture du cabinet ou en cas d’urgence vitale : **S
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Informations pratiques mises à jour : 19 septembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Informations pratiques mises à jour : 20 septembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Ophtalmologue à Boulogne-Billancourt
 
@@ -408,9 +408,9 @@ Prise en charge de la [sécheresse oculaire](https://docteurmajoulet.com/sechere
 
 ##### Accès et transports
 
-- **Métro :** Boulogne-Jean Jaurès (ligne 10), à 5 min à pied.
-- **Métro :** Marcel Sembat (ligne 9), à 8 min à pied.
-- **Bus :** 123, 126, 175 — arrêt Église de Boulogne.
+- **Métro :** Boulogne-Jean Jaurès (ligne 10).
+- **Métro :** Marcel Sembat (ligne 9).
+- **Itinéraire :** [transports en commun sur Google Maps](https://www.google.com/maps/dir/?api=1&destination=37+rue+d%27Aguesseau%2C+92100+Boulogne-Billancourt&travelmode=transit).
 - **Voiture :** stationnement de surface et parkings publics à proximité (parking Rhin-et-Danube, parking Marcel Sembat).
 - **Vélo :** stations Vélib’ à proximité immédiate.
 - **Accessibilité PMR :** cabinet aménagé pour les personnes à mobilité réduite. À signaler à la prise de rendez-vous.
@@ -458,7 +458,7 @@ Bilan ophtalmologique, suivi rétine (DMLA, rétinopathie diabétique, OVR, memb
 
 ##### Comment se rendre au cabinet en transport en commun ?
 
-Métro Boulogne-Jean Jaurès (ligne 10) à 5 min à pied, métro Marcel Sembat (ligne 9) à 8 min, bus 123, 126 ou 175 (arrêt Église de Boulogne).
+Métro Boulogne-Jean Jaurès (ligne 10) ou Marcel Sembat (ligne 9). Pour préparer votre trajet, consultez les [transports en commun sur Google Maps](https://www.google.com/maps/dir/?api=1&destination=37+rue+d%27Aguesseau%2C+92100+Boulogne-Billancourt&travelmode=transit).
 
 ##### Le cabinet est-il accessible aux personnes à mobilité réduite ?
 
@@ -476,7 +476,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
-Dernière mise à jour : 19 septembre 2026.
+Dernière mise à jour : 20 septembre 2026.
 
 ### Urgences ophtalmologiques
 
