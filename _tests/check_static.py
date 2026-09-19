@@ -905,6 +905,14 @@ def check(root):
     # ---- TECH24BR-2026-09-19 : points clés de la home — une barre de quatre cellules (liste), coches décoratives
     _lg = re.search(r'<section class="hv-ledger" aria-label="Points clés">(.*?)</section>', pages['index.html'].txt, re.S)
     if not _lg or len(re.findall(r'<li><span class="hv-tick" aria-hidden="true"><svg[^>]*aria-hidden="true"[^>]*>.*?</svg></span><p class="usp-title">[^<]+</p><p class="usp-text">[^<]+</p></li>', _lg.group(1))) != 4: E('index.html : barre des points clés (.hv-ledger-bar, 4 cellules titre + texte, coche décorative) attendue — TECH24BR')
+    # ---- TECH24BS-2026-09-19 : en-têtes de section de la home — étiquette + titre à gauche, chapô à droite ; trois sections .hv-section
+    # (spécialités, parcours, contact) ; un seul h1 et les mêmes h2 qu'avant ; le récit du parcours reste un texte continu
+    _ix = pages['index.html'].txt
+    for _sid, _eb in (('specialites', 'Consultation &amp; chirurgie'), ('parcours', 'Parcours'), ('contact', 'Le cabinet')):
+        if not re.search(r'<section id="' + _sid + r'" class="hv-section">\s*<div class="container">\s*<div class="hv-head[^"]*">\s*<div><span class="hv-eyebrow">' + re.escape(_eb) + r'</span><h2>[^<]+(?:&amp;[^<]+)?</h2></div>\s*<p>[^<]+</p>', _ix): E(f'index.html : en-tête éditorial de #{_sid} (étiquette « {_eb} », h2, chapô) attendu — TECH24BS')
+    if _ix.count('class="hv-eyebrow"') != 3: E('index.html : trois étiquettes .hv-eyebrow attendues — TECH24BS')
+    if 'class="section-header"' in _ix: E('index.html : ancien en-tête centré .section-header encore présent — TECH24BS')
+    if len(re.findall(r'<p>', re.search(r'<div class="parcours-recit">(.*?)</div>', _ix, re.S).group(1))) < 4: E('index.html : le récit du parcours doit rester un texte continu d’au moins quatre paragraphes — TECH24BS')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

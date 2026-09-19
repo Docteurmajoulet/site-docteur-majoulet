@@ -321,3 +321,9 @@ section à part, juste après, telle quelle** (décision d'Alexandre du 19/09/20
 
 Depuis le tour 24 (TECH24BR-2026-09-19), les quatre points clés de la home tiennent dans une seule barre à cadre double
 (`ul.hv-ledger-bar`, quatre cellules séparées par des filets ; 2 × 2 sur tablette, empilées sur téléphone) ; textes inchangés.
+
+Depuis le tour 24 (TECH24BS-2026-09-19), les trois sections titrées de la home (spécialités, parcours, informations pratiques)
+ont un en-tête éditorial — étiquette `.hv-eyebrow` (0,8 rem, jamais moins) + h2 à gauche, chapô à droite, filet — et la classe
+`.hv-section` (112 px sur écran large, 72 puis 64 px en dessous), qui active le chapô du récit du parcours et les cadres doubles de la
+carte « Postes & diplômes », de la fiche de contact et de la façade de carte. Aucun texte retiré ; trois étiquettes ajoutées
+(« Consultation & chirurgie », « Parcours », « Le cabinet »). `check_static.py` vérifie les trois en-têtes et le récit continu.
