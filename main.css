@@ -7981,3 +7981,92 @@ article.pathology-content .consultation-route p {
         grid-template-columns: minmax(0, 0.8fr) minmax(0, 2fr);
     }
 }
+
+/* ============================================================
+   TECH31-2026-09-20 — Lecture sur papier : les espacements et hauteurs
+   de l’écran ne doivent pas produire une page vide ou isoler un libellé.
+   Le corps reste à 12 pt ; les coordonnées existantes restent imprimables. */
+@media print {
+    html { font-size: 12pt; }
+    body, main { padding: 0 !important; }
+    .container, article.pathology-content {
+        width: auto !important;
+        max-width: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+    }
+    main :is(p, li, dt, dd) {
+        font-size: 12pt !important;
+        line-height: 1.45 !important;
+        max-width: none !important;
+        orphans: 3;
+        widows: 3;
+    }
+    main p { margin: 0 0 7pt !important; }
+    main :is(ul, ol) { margin-block: 6pt 10pt !important; }
+    main li { margin-block: 3pt !important; }
+    main h2 { margin: 16pt 0 8pt !important; padding: 0 !important; font-size: 15pt !important; }
+    main h3 { margin: 12pt 0 6pt !important; font-size: 12pt !important; }
+    main h4 { margin: 10pt 0 5pt !important; font-size: 12pt !important; }
+    main :is(h2, h3)::after { display: none !important; }
+    main :is(.meta, .p-note-fin) { font-size: 10pt !important; }
+    main .page-section { padding: 0 !important; margin-block: 12pt !important; }
+    .forme-box, .qr-block, .eeat-block, .hors-horaires, .enbref, .alert-urgence, .consultation-route {
+        margin-block: 10pt !important;
+        padding: 8pt 10pt !important;
+    }
+    .consultation-route > a { min-height: 0; display: inline; }
+    .key-facts { margin-block: 10pt !important; }
+    .key-fact { padding: 6pt !important; }
+    .key-fact-number { font-size: 15pt !important; }
+    .key-fact-label { font-size: 10pt !important; }
+    table { break-inside: auto; page-break-inside: auto; }
+    tr, .care-locations > div { break-inside: avoid; page-break-inside: avoid; }
+    th, td { padding: 6pt 8pt !important; }
+    .care-locations > div { display: block; padding-block: 8pt; }
+    .care-locations dt { break-after: avoid; margin-bottom: 4pt; }
+    .contact-shortcuts { display: none !important; }
+    /* Les liens de réservation disparaissent ; le numéro déjà présent reste. */
+    .cta-block {
+        display: block !important;
+        border: 0 !important;
+        outline: 0 !important;
+        padding: 0 !important;
+        margin-block: 8pt !important;
+    }
+    .cta-block > * { display: none !important; }
+    .cta-block > .cta-alt { display: block !important; }
+    /* Accueil : un document linéaire, sans espace réservé à une image masquée. */
+    .page-index :is(.hero-visual, .section-espace, .hv-more, .hv-ico-ring, .hv-btn-ico, .hv-tick, .hv-eyebrow, .parcours-card-icon, .contact-map) {
+        display: none !important;
+    }
+    .page-index :is(.hero, .hero-content, .hero-left) {
+        display: block !important;
+        width: auto !important;
+        max-width: none !important;
+        min-height: 0 !important;
+        height: auto !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        text-align: left !important;
+    }
+    .page-index .hero h1 { margin-block: 8pt !important; font-size: 22pt !important; }
+    .page-index .hero :is(.h1-major, .h1-amp) { font-size: 22pt !important; }
+    .page-index .hero :is(.hero-text, .hero-note, .hero-subtitle) { text-align: left !important; }
+    .page-index :is(.hv-section, .hv-access, .hv-ledger) { padding-block: 12pt !important; }
+    .page-index :is(.hv-head, .hv-access-grid, .hv-cards, .hv-ledger-bar, .parcours-v11, .contact-v12) { display: block !important; }
+    .page-index :is(.hv-head, .hv-card, .hv-tile, .hv-card-body, .hv-ledger-bar > li, .parcours-card, .contact-card-v12) {
+        padding: 6pt 0 !important;
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
+    .page-index :is(.hv-card, .hv-tile, .cv12-row) { break-inside: avoid; }
+    .page-index :is(.hv-card, .hv-tile) { display: block !important; }
+    .page-index .hv-ledger-bar > li { border: 0 !important; }
+    .page-index .cv12-row {
+        grid-template-columns: 140pt minmax(0, 1fr) !important;
+        gap: 12pt !important;
+        padding-block: 8pt !important;
+    }
+}
