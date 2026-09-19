@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-09-19
+Dernière mise à jour : 2026-09-20
 
 ## Identité et coordonnées
 
@@ -910,37 +910,21 @@ Consultation spécialisée rétine et cataracte au Cabinet Ophtalife, 37 rue d�
 
 ## DMLA
 
-### Dégénérescence Maculaire Liée à l’Âge (DMLA)
+### DMLA : diagnostic et suivi
 
 - URL : https://docteurmajoulet.com/dmla
-- Description : DMLA sèche ou humide : symptômes, OCT sur place, injections anti-VEGF sans délai. Consultation rétine rapide à Boulogne-Billancourt. Prenez RDV.
+- Description : DMLA sèche ou humide : symptômes, examen OCT et traitements. Consultation et suivi rétinien avec le Dr Majoulet au Cabinet Ophtalife à Boulogne-Billancourt.
 - Relu le : 2026-09-01
 
-Première cause de malvoyance après 65 ans — prise en charge par le Dr Alexandre Majoulet
+Formes sèche et humide, symptômes et traitements
 
 La **Dégénérescence Maculaire Liée à l’Âge (DMLA)** est une maladie dégénérative qui touche la **macula**, zone centrale de la rétine responsable de la vision précise, de la lecture et de la reconnaissance des visages. C’est la **première cause de malvoyance** dans les pays industrialisés chez les personnes de plus de 65 ans.
 
-- **> 1 M** — Personnes atteintes en France (estimation)
-- **+50 ans** — Âge de début possible
-- **≈ 1/4** — Des plus de 75 ans concernés (ordre de grandeur)
+**Votre suivi rétinien à Boulogne-Billancourt**
 
-#### Qu’est-ce que la DMLA exactement ?
+Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife. L’OCT, examen d’imagerie de la rétine, et les injections intravitréennes sont réalisés sur place lorsqu’ils sont indiqués.
 
-La DMLA correspond à un **vieillissement pathologique** de la macula. Des déchets cellulaires, appelés **drusen**, s’accumulent sous la rétine centrale. Avec le temps, ces dépôts peuvent évoluer soit vers une **atrophie** des cellules visuelles (forme sèche), soit déclencher la prolifération de vaisseaux anormaux (néovaisseaux) sous la rétine responsable de la **forme humide**, plus agressive.
-
-#### Les deux formes de DMLA
-
-##### Forme sèche (atrophique) — 80 à 85 % des cas
-
-C’est la forme la plus fréquente mais également la plus lentement évolutive. Elle se manifeste par une **disparition progressive des cellules visuelles** de la macula. La baisse visuelle s’installe sur plusieurs années. Aucun traitement médicamenteux n’est autorisé en France pour la forme atrophique à ce jour, mais des essais cliniques sont en cours, y compris en France. Une **complémentation AREDS2** (vitamines, lutéine, zéaxanthine, zinc, oméga-3) peut ralentir l’évolution dans certaines formes intermédiaires.
-
-##### Forme humide (exsudative ou néovasculaire) — 15 à 20 % des cas
-
-Elle est caractérisée par le développement de **néovaisseaux choroïdiens anormaux** qui traversent la membrane séparant la rétine de la choroïde. Ces vaisseaux fragiles **fuient** (exsudation, œdème) et peuvent **saigner**, entraînant une baisse visuelle **rapide** (en quelques semaines). Cette forme est une **urgence thérapeutique relative** : plus le traitement est débuté tôt, meilleur est le pronostic visuel.
-
-##### Maculopathie liée à l’âge débutante
-
-Stade précoce, souvent asymptomatique : quelques **drusen** et de discrètes altérations pigmentaires au fond d’œil, avec une vision conservée. Ce n’est pas encore une DMLA constituée, mais ce stade justifie une **surveillance régulière** et la correction des facteurs de risque modifiables (tabac en premier lieu).
+[Préparer votre rendez-vous au cabinet](https://docteurmajoulet.com/contact#preparer-consultation)
 
 #### Symptômes et signes d’alerte
 
@@ -956,6 +940,28 @@ Un **test simple d’autosurveillance** existe : la [**grille d’Amsler**](http
 **Signes d’alerte imposant une consultation rapide :** baisse visuelle centrale **rapide** d’un œil, **déformation des lignes droites** (métamorphopsies — tester avec la [grille d’Amsler](https://docteurmajoulet.com/grille-amsler)), **tache centrale** (scotome) gênant la lecture, sensation de voile. Ces signes imposent une consultation **dans les 24 à 48 heures**.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
+
+#### Qu’est-ce que la DMLA exactement ?
+
+La DMLA correspond à un **vieillissement pathologique** de la macula. Des déchets cellulaires, appelés **drusen**, s’accumulent sous la rétine centrale. Avec le temps, ces dépôts peuvent évoluer soit vers une **atrophie** des cellules visuelles (forme sèche), soit déclencher la prolifération de vaisseaux anormaux (néovaisseaux) sous la rétine responsable de la **forme humide**, plus agressive.
+
+- **> 1 M** — Personnes atteintes en France (estimation)
+- **+50 ans** — Âge de début possible
+- **≈ 1/4** — Des plus de 75 ans concernés (ordre de grandeur)
+
+#### Les deux formes de DMLA
+
+##### Forme sèche (atrophique) — 80 à 85 % des cas
+
+C’est la forme la plus fréquente mais également la plus lentement évolutive. Elle se manifeste par une **disparition progressive des cellules visuelles** de la macula. La baisse visuelle s’installe sur plusieurs années. Aucun traitement médicamenteux n’est autorisé en France pour la forme atrophique à ce jour, mais des essais cliniques sont en cours, y compris en France. Une **complémentation AREDS2** (vitamines, lutéine, zéaxanthine, zinc, oméga-3) peut ralentir l’évolution dans certaines formes intermédiaires.
+
+##### Forme humide (exsudative ou néovasculaire) — 15 à 20 % des cas
+
+Elle est caractérisée par le développement de **néovaisseaux choroïdiens anormaux** qui traversent la membrane séparant la rétine de la choroïde. Ces vaisseaux fragiles **fuient** (exsudation, œdème) et peuvent **saigner**, entraînant une baisse visuelle **rapide** (en quelques semaines). Cette forme est une **urgence thérapeutique relative** : plus le traitement est débuté tôt, meilleur est le pronostic visuel.
+
+##### Maculopathie liée à l’âge débutante
+
+Stade précoce, souvent asymptomatique : quelques **drusen** et de discrètes altérations pigmentaires au fond d’œil, avec une vision conservée. Ce n’est pas encore une DMLA constituée, mais ce stade justifie une **surveillance régulière** et la correction des facteurs de risque modifiables (tabac en premier lieu).
 
 #### Facteurs de risque et prévention
 
@@ -1001,6 +1007,8 @@ Pour la forme sèche, la prise en charge actuelle en France repose sur :
 #### Vivre avec une DMLA
 
 Lorsque la vision centrale est durablement altérée, une prise en charge **basse vision** améliore concrètement le quotidien : rééducation orthoptique (utilisation de la rétine périphérique), aides optiques et électroniques (loupes, télé-agrandisseurs, lecteurs vocaux), aménagement de l’éclairage. La vision périphérique étant préservée, l’autonomie de déplacement est le plus souvent conservée. Un accompagnement peut être organisé avec les orthoptistes et opticiens spécialisés du réseau.
+
+À lire aussi : [les conseils de l’Assurance Maladie pour vivre avec une DMLA](https://www.ameli.fr/assure/sante/themes/dmla/dmla-vivre-maladie).
 
 #### Questions fréquentes des patients
 
@@ -1121,16 +1129,18 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Injection intravitréenne (IVT)
 
 - URL : https://docteurmajoulet.com/injection-intravitreenne
-- Description : Injections anti-VEGF (DMLA, œdème maculaire, occlusions) : déroulement d’une IVT, rythme des injections, suivi OCT. IVT rapides à Boulogne. Prenez RDV.
+- Description : Injection intravitréenne : préparation, déroulement et suivi OCT. Le Dr Majoulet réalise les IVT au Cabinet Ophtalife à Boulogne-Billancourt. Infos et RDV.
 - Relu le : 2026-09-01
 
-Anti-VEGF et corticoïdes — le traitement de référence des pathologies maculaires
+Le déroulement, les suites et le suivi au cabinet
 
-L’**injection intravitréenne (IVT)** est devenue, depuis 2006, le **traitement de référence** d’un grand nombre de pathologies maculaires (DMLA exsudative, œdème maculaire diabétique, œdème maculaire post-OVR, néovaisseaux myopiques). Elle consiste à délivrer un médicament (**anti-VEGF** ou **corticoïde**) directement dans la cavité vitréenne, pour obtenir une concentration élevée au contact de la rétine. Elle a transformé le pronostic fonctionnel de plusieurs millions de patients dans le monde.
+Une **injection intravitréenne (IVT)** permet d’administrer un médicament dans le **vitré**, le gel transparent à l’intérieur de l’œil, au contact de la rétine. Elle est utilisée notamment pour traiter la DMLA humide, certains œdèmes de la macula et les néovaisseaux liés à la myopie forte.
 
-- **~5 min** — Durée du geste
-- **30G** — Aiguille ultra-fine
-- **1/3-5000** — Risque d’endophtalmie (< 0,05 %)
+**Votre suivi rétinien à Boulogne-Billancourt**
+
+Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife. L’OCT, examen d’imagerie de la rétine, et les injections intravitréennes sont réalisés sur place lorsqu’ils sont indiqués.
+
+[Préparer votre rendez-vous au cabinet](https://docteurmajoulet.com/contact#preparer-consultation)
 
 #### Pourquoi une injection dans l’œil ?
 
@@ -1140,52 +1150,11 @@ La rétine est protégée par la **barrière hémato-rétinienne**, qui empêche
 - Limiter les **effets systémiques** de la molécule.
 - Assurer une **libération progressive** (plusieurs semaines pour les anti-VEGF, plusieurs mois pour l’Ozurdex, jusqu’à 3 ans pour l’Iluvien).
 
-#### Les principales indications
-
-##### DMLA exsudative (néovasculaire)
-
-Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 injections mensuelles (*loading phase*), puis adaptation du rythme selon le protocole choisi (*Treat & Extend*, *PRN*). **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo), brolucizumab (Beovu). Voir [DMLA](https://docteurmajoulet.com/dmla).
-
-##### Œdème maculaire diabétique (OMD)
-
-1re ligne : **anti-VEGF** (aflibercept, ranibizumab, faricimab, brolucizumab). 2e ligne : **corticoïdes intravitréens** (Ozurdex = dexaméthasone, Iluvien = acétonide de fluocinolone 190 µg). Les corticoïdes exposent à la cataracte (fréquente chez le phaque) et à l’hypertonie oculaire. Voir [Rétinopathie diabétique](https://docteurmajoulet.com/retinopathie-diabetique).
-
-##### Occlusions veineuses rétiniennes (OVR)
-
-Œdème maculaire post-**OVCR** ou **OBVR** : anti-VEGF en 1re ligne, Ozurdex en 2e ligne. Voir [Occlusions veineuses rétiniennes](https://docteurmajoulet.com/occlusions-veineuses).
-
-##### Néovaisseaux choroïdiens myopiques (mCNV)
-
-Anti-VEGF en protocole *PRN* (1 à 3 injections dans la majorité des cas). Excellent pronostic si traitement précoce. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte).
-
-##### Autres indications
-
-- Néovaisseaux post-uvéitiques, choriorétinopathie séreuse centrale chronique avec composante néovasculaire.
-- Rétinopathie prématurité (traitement néonatal spécialisé).
-- Œdème maculaire post-chirurgical (Irvine-Gass), post-uvéitique.
-- Certaines hémorragies sous-rétiniennes (en association avec gaz et/ou anti-VEGF).
-
-#### Les molécules utilisées
-
-##### Anti-VEGF — inhibiteurs de la néo-angiogenèse
-
-- **Aflibercept (Eylea®)** : 2 mg classique, 8 mg (2024) permet d’espacer à 12-16 semaines.
-- **Ranibizumab (Lucentis® et biosimilaires)** : 0,5 mg, molécule pionnière de 2006 ; des biosimilaires, aussi efficaces et moins coûteux, sont désormais disponibles.
-- **Faricimab (Vabysmo®)** : molécule bispécifique anti-VEGF + anti-Ang2, permettant un espacement à 16 semaines chez une partie des patients.
-- **Brolucizumab (Beovu®)** : molécule de petite taille, efficacité importante mais signal de sécurité (uvéites, vascularites rétiniennes occlusives).
-- **Bevacizumab (Avastin®)** : utilisation hors AMM en ophtalmologie, molécule de référence internationale mais non remboursée en France dans cette indication.
-
-En pratique au cabinet, les molécules utilisées sont l’**aflibercept (Eylea, Eylea 8 mg)**, le **ranibizumab (Lucentis ou biosimilaire)** et le **faricimab (Vabysmo)** — toutes **remboursées** dans leurs indications. Le choix est individualisé et rediscuté au fil du suivi selon la réponse à l’OCT.
-
-##### Corticoïdes intravitréens
-
-- **Ozurdex®** (implant de dexaméthasone 0,7 mg, bio-résorbable, durée d’action 4 à 6 mois).
-- **Iluvien®** (implant d’acétonide de fluocinolone 190 µg, non résorbable, durée d’action jusqu’à 3 ans).
-- **Triamcinolone** (utilisation hors AMM dans certaines indications).
-
-**Contraintes à connaître :** une **cataracte** chez le patient phaque — environ deux tiers des yeux à 3 ans avec l’implant de dexaméthasone dans l’essai MEAD (Boyer et al., *Ophthalmology*, 2014), quasi constante avec l’implant de fluocinolone (essais FAME, Campochiaro et al., *Ophthalmology*, 2012) — et une **hypertonie oculaire** fréquente (selon les séries, jusqu’à un tiers des yeux), le plus souvent transitoire et contrôlée par un collyre ; une chirurgie filtrante reste rare (moins de 1 % avec la dexaméthasone, environ 5 % avec la fluocinolone).
-
 #### Déroulement de l’injection — étape par étape
+
+- **~5 min** — Durée du geste
+- **30G** — Aiguille ultra-fine
+- **1 sur 3 000 à 5 000** — Risque d’endophtalmie (< 0,05 %)
 
 ##### Avant l’injection
 
@@ -1215,7 +1184,54 @@ En cas de **forme humide de DMLA nouvellement diagnostiquée** ou de récidive a
 - Pas de piscine pendant 48 h, éviter le frottement.
 - La vision peut rester floue quelques heures.
 
-**Signes d’alerte après une IVT — consultation en urgence :** douleur oculaire **intense et croissante**, **baisse visuelle significative** (au-delà du flou des premières heures), **œil très rouge**, photophobie marquée. Ces signes peuvent évoquer une **endophtalmie**, rare mais grave, qui nécessite une prise en charge immédiate. Consultez au cabinet ; le dimanche, rendez-vous aux urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou [Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/), [01 40 02 15 20](tel:+33140021520)).
+**Signes d’alerte après une IVT — consultation en urgence :** douleur oculaire **intense et croissante**, **baisse visuelle significative** (au-delà du flou des premières heures), **œil très rouge**, photophobie marquée. Ces signes peuvent évoquer une **endophtalmie**, rare mais grave, qui nécessite une prise en charge immédiate. Consultez au cabinet aux heures d’ouverture ; lorsque le cabinet est fermé, rendez-vous aux urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou [Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/), [01 40 02 15 20](tel:+33140021520)).
+
+Information patient : [fiche de la Société Française d’Ophtalmologie sur les injections intravitréennes (PDF)](https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/65_Injection_intravitreenne_7sept14.pdf).
+
+#### Les principales indications
+
+##### DMLA exsudative (néovasculaire)
+
+Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 injections mensuelles (*loading phase*), puis adaptation du rythme selon le protocole choisi (*Treat & Extend*, *PRN*). **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo), brolucizumab (Beovu). Voir [DMLA](https://docteurmajoulet.com/dmla).
+
+##### Œdème maculaire diabétique (OMD)
+
+1re ligne : **anti-VEGF** (aflibercept, ranibizumab, faricimab, brolucizumab). 2e ligne : **corticoïdes intravitréens** (Ozurdex = dexaméthasone, Iluvien = acétonide de fluocinolone 190 µg). Les corticoïdes exposent à la cataracte (fréquente chez le phaque) et à l’hypertonie oculaire. Voir [Rétinopathie diabétique](https://docteurmajoulet.com/retinopathie-diabetique).
+
+##### Occlusions veineuses rétiniennes (OVR)
+
+Œdème maculaire post-**OVCR** ou **OBVR** : anti-VEGF en 1re ligne, Ozurdex en 2e ligne. Voir [Occlusions veineuses rétiniennes](https://docteurmajoulet.com/occlusions-veineuses).
+
+##### Néovaisseaux choroïdiens myopiques (mCNV)
+
+Anti-VEGF en protocole *PRN* (1 à 3 injections dans la majorité des cas). Excellent pronostic si traitement précoce. Voir [Néovaisseaux liés à la myopie forte](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort).
+
+##### Autres indications
+
+- Néovaisseaux post-uvéitiques, choriorétinopathie séreuse centrale chronique avec composante néovasculaire.
+- Rétinopathie prématurité (traitement néonatal spécialisé).
+- [Œdème maculaire post-chirurgical (Irvine-Gass)](https://docteurmajoulet.com/oedeme-maculaire-cystoide), post-uvéitique.
+- Certaines hémorragies sous-rétiniennes (en association avec gaz et/ou anti-VEGF).
+
+#### Les molécules utilisées
+
+##### Anti-VEGF — inhibiteurs de la néo-angiogenèse
+
+- **Aflibercept (Eylea®)** : 2 mg classique, 8 mg (2024) permet d’espacer à 12-16 semaines.
+- **Ranibizumab (Lucentis® et biosimilaires)** : 0,5 mg, molécule pionnière de 2006 ; des biosimilaires, aussi efficaces et moins coûteux, sont désormais disponibles.
+- **Faricimab (Vabysmo®)** : molécule bispécifique anti-VEGF + anti-Ang2, permettant un espacement à 16 semaines chez une partie des patients.
+- **Brolucizumab (Beovu®)** : molécule de petite taille, efficacité importante mais signal de sécurité (uvéites, vascularites rétiniennes occlusives).
+- **Bevacizumab (Avastin®)** : utilisation hors AMM en ophtalmologie, molécule de référence internationale mais non remboursée en France dans cette indication.
+
+En pratique au cabinet, les molécules utilisées sont l’**aflibercept (Eylea, Eylea 8 mg)**, le **ranibizumab (Lucentis ou biosimilaire)** et le **faricimab (Vabysmo)** — toutes **remboursées** dans leurs indications. Le choix est individualisé et rediscuté au fil du suivi selon la réponse à l’OCT.
+
+##### Corticoïdes intravitréens
+
+- **Ozurdex®** (implant de dexaméthasone 0,7 mg, bio-résorbable, durée d’action 4 à 6 mois).
+- **Iluvien®** (implant d’acétonide de fluocinolone 190 µg, non résorbable, durée d’action jusqu’à 3 ans).
+- **Triamcinolone** (utilisation hors AMM dans certaines indications).
+
+**Contraintes à connaître :** une **cataracte** chez le patient phaque — environ deux tiers des yeux à 3 ans avec l’implant de dexaméthasone dans l’essai MEAD (Boyer et al., *Ophthalmology*, 2014), quasi constante avec l’implant de fluocinolone (essais FAME, Campochiaro et al., *Ophthalmology*, 2012) — et une **hypertonie oculaire** fréquente (selon les séries, jusqu’à un tiers des yeux), le plus souvent transitoire et contrôlée par un collyre ; une chirurgie filtrante reste rare (moins de 1 % avec la dexaméthasone, environ 5 % avec la fluocinolone).
 
 #### Les protocoles de suivi
 

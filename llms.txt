@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-09-19
+Dernière mise à jour : 2026-09-20
 
 ## Identité et coordonnées
 
@@ -106,9 +106,9 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## DMLA
 
-- [Dégénérescence Maculaire Liée à l’Âge (DMLA)](https://docteurmajoulet.com/dmla): DMLA sèche ou humide : symptômes, OCT sur place, injections anti-VEGF sans délai. Consultation rétine rapide à Boulogne-Billancourt. Prenez RDV.
+- [DMLA : diagnostic et suivi](https://docteurmajoulet.com/dmla): DMLA sèche ou humide : symptômes, examen OCT et traitements. Consultation et suivi rétinien avec le Dr Majoulet au Cabinet Ophtalife à Boulogne-Billancourt.
 - [DMLA sèche (atrophique)](https://docteurmajoulet.com/dmla-seche): DMLA sèche : évolution, surveillance OCT tous les 6 mois, compléments AREDS2, état de la recherche. Suivi spécialisé à Boulogne-Billancourt. Prenez RDV.
-- [Injection intravitréenne (IVT)](https://docteurmajoulet.com/injection-intravitreenne): Injections anti-VEGF (DMLA, œdème maculaire, occlusions) : déroulement d’une IVT, rythme des injections, suivi OCT. IVT rapides à Boulogne. Prenez RDV.
+- [Injection intravitréenne (IVT)](https://docteurmajoulet.com/injection-intravitreenne): Injection intravitréenne : préparation, déroulement et suivi OCT. Le Dr Majoulet réalise les IVT au Cabinet Ophtalife à Boulogne-Billancourt. Infos et RDV.
 - [Grille d’Amsler : tester sa vision centrale chez soi](https://docteurmajoulet.com/grille-amsler): Grille d’Amsler à imprimer (PDF) : mode d’emploi, interprétation, quand consulter. Autosurveillance quotidienne de la macula. Dr Majoulet, Boulogne.
 
 ## Chirurgie de la rétine
