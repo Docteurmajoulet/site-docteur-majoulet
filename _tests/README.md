@@ -146,6 +146,10 @@ Une page sans FAQ visible n'a pas de `FAQPage` ; les questions sont des `<h3 cla
 
 `_tests/shots/`, `_tests/reports/` et `node_modules/` ne sont pas versionnés.
 
+Depuis le tour 23 (19/09/2026), les captures attendent le décodage de toutes les images,
+y compris celles chargées normalement au défilement. Une image en erreur fait échouer
+la capture. Cette anticipation ne s'applique pas aux tests de performance Lighthouse.
+
 ## Quand un contrôle échoue
 
 - *script inline non autorisé par la CSP* : le script inline des pages a changé (ou un second a été ajouté) —

@@ -48,6 +48,15 @@ try {
       const page = await ctx.newPage();
       await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle' });
       await page.evaluate(() => document.fonts.ready);
+      // Une capture pleine page ne fait pas défiler le navigateur : les images
+      // différées éloignées du premier écran resteraient blanches. Ce chargement
+      // anticipé concerne uniquement les captures, jamais les mesures Lighthouse.
+      await page.evaluate(async () => {
+        await Promise.all(Array.from(document.images, async img => {
+          img.loading = 'eager';
+          await img.decode();
+        }));
+      });
       await page.screenshot({ path: join(OUT, `${slug}-${w}.png`), fullPage: true, animations: 'disabled' });
       await page.close();
     }
