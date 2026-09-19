@@ -308,3 +308,7 @@ en-têtes de section, accès rapide, cartes, barre des points clés). `check_sta
 (libellé unique + pastille décorative `aria-hidden`, `.btn-primary` conservé dans `.hero-buttons` pour nav.js) ; `browser.mjs`
 mesure ces boutons à 1 366, 390 et 320 px (pastille de 38 px dans le bouton, libellé sur une ligne, barre fixe masquée tant que le
 CTA du hero est à l'écran).
+
+Depuis le tour 24 (TECH24BP-2026-09-19), l'accès rapide de la home est une grille 7/5 de deux tuiles-liens suivie de la bande
+« Urgence rétinienne » en pleine largeur (titre-lien vers la conduite à tenir, bouton d'appel ardoise à pastille — jamais cuivre) ;
+`check_static.py` en vérifie la structure ; les textes sont ceux de l'ancienne rangée de trois cartes, mot pour mot.

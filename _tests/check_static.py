@@ -879,6 +879,14 @@ def check(root):
     if len(re.findall(r'class="[^"]*\bhv-btn--rdv\b', _ix23)) != 2: E('index.html : deux boutons cuivre à pastille attendus (hero, bloc contact) — TECH24BO')
     for _m in re.finditer(r'<a [^>]*class="[^"]*\bhv-btn\b[^"]*"[^>]*>(.*?)</a>', _ix23, re.S):
         if _m.group(1).count('class="hv-btn-label"') != 1 or _m.group(1).count('class="hv-btn-ico" aria-hidden="true"') != 1: E('index.html : bouton .hv-btn sans libellé unique ou sans pastille décorative — TECH24BO')
+    # ---- TECH24BP-2026-09-19 : accès rapide de la home — deux tuiles-liens + la bande urgence (titre-lien vers la conduite à tenir, bouton d'appel)
+    _acc = re.search(r'<section class="hv-access" aria-label="Accès rapide">(.*?)</section>', pages['index.html'].txt, re.S)
+    if not _acc: E('index.html : section .hv-access « Accès rapide » introuvable — TECH24BP')
+    else:
+        _a = _acc.group(1)
+        if len(re.findall(r'<a class="hv-tile hv-bezel" href="/[a-z-]+">', _a)) != 2: E('index.html : deux tuiles-liens .hv-tile attendues dans l’accès rapide — TECH24BP')
+        if 'class="hv-urgence-title tc-title" href="/urgences-ophtalmologiques"' not in _a or 'class="hv-btn hv-btn--slate hv-call" href="tel:+33184191166"' not in _a: E('index.html : bande urgence sans lien « conduite à tenir » ou sans bouton d’appel — TECH24BP')
+        if 'hv-btn--rdv' in _a: E('index.html : bouton cuivre dans la bande urgence (ambre et cuivre ne se côtoient pas) — TECH24BP')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
