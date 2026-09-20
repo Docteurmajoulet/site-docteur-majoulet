@@ -4665,21 +4665,39 @@ Diagnostic, traitements médicaux, laser et chirurgie du nerf optique
 
 Le **glaucome** est une **neuropathie optique chronique progressive** caractérisée par une destruction lente et irréversible des fibres du nerf optique, responsable d’une altération du champ visuel. Il reste la **deuxième cause mondiale de cécité irréversible**. La **pression intraoculaire (PIO)** élevée en est le principal facteur de risque modifiable — elle n’est pas toujours élevée, mais sa diminution reste à ce jour le **seul traitement ayant fait la preuve scientifique** de ralentir la progression.
 
-- **~76 M** — Personnes atteintes dans le monde
-- **~1,5 M** — Patients atteints en France
-- **~50 %** — Non diagnostiqués (dépistage insuffisant)
+**Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 15 20](tel:+33140021520)).
 
-#### Expertise du Dr Majoulet dans le glaucome
+#### Symptômes : pourquoi le dépistage est essentiel
 
-Le Dr Majoulet exerce actuellement comme **Praticien Contractuel au CHNO des Quinze-Vingts, dans le service de glaucome du Pr Christophe Baudouin** — service de référence nationale pour la prise en charge du glaucome. Il est **premier auteur d’une étude publiée dans le *Journal of Clinical Medicine* (2022)** sur le dispositif **PreserFlo MicroShunt**, un implant micro-invasif de chirurgie filtrante du glaucome.
+Le glaucome chronique est **asymptomatique pendant des années**. Les symptômes n’apparaissent qu’à un stade avancé, lorsque la moitié des fibres du nerf optique est déjà détruite : **vision périphérique « en tunnel »**, gêne à la conduite ou dans les escaliers, accrochages latéraux. Seul un dépistage régulier peut permettre un diagnostic précoce, avant que les pertes deviennent fonctionnellement gênantes.
 
-Majoulet A, Scemla B, Hamard P, et al. *Safety and Efficacy of the Preserflo Microshunt in Refractory Glaucoma: A One-Year Study.* J Clin Med. 2022;11(23):7086 — [doi:10.3390/jcm11237086](https://doi.org/10.3390/jcm11237086). Voir la liste complète des publications sur la page [Publications](https://docteurmajoulet.com/publications).
+**Dépistage recommandé :**
+
+- À partir de **40 ans** en population générale.
+- Plus tôt en cas de **myopie forte, d’origine africaine, d’antécédent familial de glaucome, de pseudo-exfoliation, de corticothérapie prolongée** ou d’un SAOS sévère.
+- Tous les **2 ans** en population générale, **annuellement** après 60 ans ou en présence de facteurs de risque.
+
+#### Bilan diagnostique
+
+Le diagnostic de glaucome repose sur un **faisceau d’arguments cliniques et paracliniques** :
+
+- **Mesure de la PIO** par tonométrie à aplanation de Goldmann (référence).
+- **Pachymétrie cornéenne** centrale (corrige la PIO et identifie un risque).
+- **Gonioscopie** : évaluation de l’angle irido-cornéen (ouvert / étroit / fermé).
+- **Examen du nerf optique** à la lampe à fente et au verre de Volk, avec recherche d’**excavation papillaire asymétrique**, d’**amincissement de l’anneau neuro-rétinien**, d’**hémorragies péripapillaires (signes de Drance)**.
+- **OCT RNFL et complexe ganglionnaire maculaire (GCC)** : mesure objective de l’épaisseur des fibres ; permet le suivi longitudinal et la détection de progression.
+- **Champ visuel automatisé** (Humphrey 24-2 ou 30-2) : quantifie le retentissement fonctionnel sur la vision périphérique.
+- **Rétinographie** ou photographie du nerf optique : documentation et comparaison.
 
 #### Comprendre le mécanisme du glaucome
 
 L’**humeur aqueuse** est un liquide clair sécrété par le corps ciliaire. Elle circule de la chambre postérieure vers la chambre antérieure, puis s’évacue par le **trabéculum**, filtre situé dans l’angle irido-cornéen. Un **déséquilibre** entre sa production et son évacuation entraîne une **élévation de la pression intraoculaire**, qui comprime et détruit progressivement les fibres du nerf optique à leur traversée de la papille.
 
 Chez certains patients, les fibres se détruisent même à pression « normale » : c’est le **glaucome à pression normale (GPN)**, où interviennent aussi des facteurs vasculaires (hypotension nocturne, vasospasmes, apnées du sommeil).
+
+- **~76 M** — Personnes atteintes dans le monde
+- **~1,5 M** — Patients atteints en France
+- **~50 %** — Non diagnostiqués (dépistage insuffisant)
 
 #### Principales formes de glaucome
 
@@ -4694,8 +4712,6 @@ Neuropathie glaucomateuse caractéristique avec pression intraoculaire mesurée 
 ##### Glaucome par fermeture de l’angle (GFA)
 
 L’angle irido-cornéen est trop étroit ou obstrué : l’humeur aqueuse ne peut plus s’évacuer. Terrain fréquent : **hypermétrope, femme, âge > 50 ans, asiatique**. Peut être chronique, subaigu, ou se manifester par une **crise aiguë de fermeture de l’angle — urgence ophtalmologique absolue**.
-
-**Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 15 20](tel:+33140021520)).
 
 ##### Glaucomes secondaires
 
@@ -4721,28 +4737,6 @@ Une pression intraoculaire supérieure à 21 mmHg **sans atteinte du nerf optiqu
 - **Diabète**, **apnée du sommeil**.
 - **Corticothérapie prolongée** (collyres, comprimés, infiltrations, inhalateurs).
 - **Traumatisme oculaire** (contusif ou perforant) ancien ou récent.
-
-#### Symptômes : pourquoi le dépistage est essentiel
-
-Le glaucome chronique est **asymptomatique pendant des années**. Les symptômes n’apparaissent qu’à un stade avancé, lorsque la moitié des fibres du nerf optique est déjà détruite : **vision périphérique « en tunnel »**, gêne à la conduite ou dans les escaliers, accrochages latéraux. Seul un dépistage régulier peut permettre un diagnostic précoce, avant que les pertes deviennent fonctionnellement gênantes.
-
-**Dépistage recommandé :**
-
-- À partir de **40 ans** en population générale.
-- Plus tôt en cas de **myopie forte, d’origine africaine, d’antécédent familial de glaucome, de pseudo-exfoliation, de corticothérapie prolongée** ou d’un SAOS sévère.
-- Tous les **2 ans** en population générale, **annuellement** après 60 ans ou en présence de facteurs de risque.
-
-#### Bilan diagnostique
-
-Le diagnostic de glaucome repose sur un **faisceau d’arguments cliniques et paracliniques** :
-
-- **Mesure de la PIO** par tonométrie à aplanation de Goldmann (référence).
-- **Pachymétrie cornéenne** centrale (corrige la PIO et identifie un risque).
-- **Gonioscopie** : évaluation de l’angle irido-cornéen (ouvert / étroit / fermé).
-- **Examen du nerf optique** à la lampe à fente et au verre de Volk, avec recherche d’**excavation papillaire asymétrique**, d’**amincissement de l’anneau neuro-rétinien**, d’**hémorragies péripapillaires (signes de Drance)**.
-- **OCT RNFL et complexe ganglionnaire maculaire (GCC)** : mesure objective de l’épaisseur des fibres ; permet le suivi longitudinal et la détection de progression.
-- **Champ visuel automatisé** (Humphrey 24-2 ou 30-2) : quantifie le retentissement fonctionnel sur la vision périphérique.
-- **Rétinographie** ou photographie du nerf optique : documentation et comparaison.
 
 #### Traitement médical : les collyres hypotonisants
 
@@ -4863,9 +4857,15 @@ Le PreserFlo est un **dispositif implantable de 8,5 mm** en **SIBS** (poly-styr�
 
 Un fond d’œil avec mesure de la PIO est recommandé **à partir de 40 ans** pour tout le monde, et plus tôt en cas de facteurs de risque : **antécédents familiaux**, **myopie forte**, **origine africaine**, corticothérapie prolongée, SAOS sévère, diabète. Les apparentés du 1er degré d’un patient glaucomateux doivent être dépistés systématiquement.
 
+#### Expertise du Dr Majoulet dans le glaucome
+
+Le Dr Majoulet exerce actuellement comme **Praticien Contractuel au CHNO des Quinze-Vingts, dans le service de glaucome du Pr Christophe Baudouin** — service de référence nationale pour la prise en charge du glaucome. Il est **premier auteur d’une étude publiée dans le *Journal of Clinical Medicine* (2022)** sur le dispositif **PreserFlo MicroShunt**, un implant micro-invasif de chirurgie filtrante du glaucome.
+
+Majoulet A, Scemla B, Hamard P, et al. *Safety and Efficacy of the Preserflo Microshunt in Refractory Glaucoma: A One-Year Study.* J Clin Med. 2022;11(23):7086 — [doi:10.3390/jcm11237086](https://doi.org/10.3390/jcm11237086). Voir la liste complète des publications sur la page [Publications](https://docteurmajoulet.com/publications).
+
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EGS (European Glaucoma Society)](https://www.eugs.org/). / Dernière révision : 20 août 2026.
 
