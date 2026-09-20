@@ -2170,7 +2170,7 @@ Les symptômes dépendent du volume et de la localisation du sang dans le vitré
 - **Phosphènes** (éclairs lumineux), très évocateurs d’une traction vitréorétinienne associée.
 - Une **amputation périphérique du champ visuel** doit faire suspecter un décollement de rétine associé.
 
-**Consultation ophtalmologique sans délai.** Une hémorragie intra-vitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
+**Consultation ophtalmologique sous 24 à 48 heures.** Une hémorragie intra-vitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -2247,7 +2247,7 @@ Oui, dans la majorité des cas, l’hémorragie se résorbe progressivement en *
 
 ##### Dois-je être opéré en urgence ?
 
-Cela dépend de la cause. Si une **échographie en mode B** montre un décollement de rétine associé, une chirurgie est rapidement indiquée (24-72 h). En l’absence de décollement, la surveillance est souvent possible, avec un traitement complémentaire (laser, anti-VEGF) adapté à la cause. L’indication et le délai d’une vitrectomie dépendent de la cause de l’hémorragie, de l’état de la rétine et de l’évolution. Une intervention précoce peut être nécessaire.
+Cela dépend de la cause. Si une **échographie en mode B** montre un décollement de rétine associé, une prise en charge chirurgicale urgente est nécessaire, avec un délai fixé selon l’avis du chirurgien. En l’absence de décollement, la surveillance est souvent possible, avec un traitement complémentaire (laser, anti-VEGF) adapté à la cause. L’indication et le délai d’une vitrectomie dépendent de la cause de l’hémorragie, de l’état de la rétine et de l’évolution. Une intervention précoce peut être nécessaire.
 
 ##### À quoi sert l’échographie en mode B ?
 
@@ -3582,15 +3582,15 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Rétinopathie Diabétique
 
 - URL : https://docteurmajoulet.com/retinopathie-diabetique
-- Description : Rétinopathie diabétique : dépistage annuel du fond d’œil, injections anti-VEGF, laser, vitrectomie. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
+- Description : Rétinopathie diabétique : dépistage et suivi, injections anti-VEGF, laser et vitrectomie. Dr Majoulet, rétinologue à Boulogne. Prenez rendez-vous au cabinet.
 - Relu le : 2026-04-20
 
-Dépistage annuel, traitement de l’œdème maculaire, laser et chirurgie
+Dépistage et suivi, traitement de l’œdème maculaire, laser et chirurgie
 
-La **rétinopathie diabétique** est une atteinte des **petits vaisseaux de la rétine** (microangiopathie) liée au diabète. Elle reste la **première cause de cécité évitable** chez l’adulte en âge de travailler dans les pays industrialisés. Elle évolue longtemps **sans aucun symptôme**, ce qui rend le **dépistage ophtalmologique annuel** absolument essentiel chez tout patient diabétique.
+La **rétinopathie diabétique** est une atteinte des **petits vaisseaux de la rétine** (microangiopathie) liée au diabète. Elle reste la **première cause de cécité évitable** chez l’adulte en âge de travailler dans les pays industrialisés. Elle évolue longtemps **sans aucun symptôme**, ce qui rend le **dépistage ophtalmologique régulier** essentiel chez toute personne diabétique.
 
 - **~40 %** — Des diabétiques ont une atteinte rétinienne
-- **1×/an** — Fond d’œil de dépistage minimal
+- **1×/an** — Dépistage au moins annuel proposé au cabinet
 - **1re** — Cause de cécité des actifs
 
 #### Comment le diabète abîme-t-il la rétine ?
@@ -3627,13 +3627,13 @@ Apparition de **néovaisseaux** à la surface de la rétine ou de la papille. St
 
 #### Quand et comment dépister ?
 
-**Le dépistage est la clé :** la rétinopathie diabétique est silencieuse à son début. **Tout patient diabétique** doit bénéficier d’un **fond d’œil (ou d’une rétinographie non mydriatique) au minimum une fois par an**, à vie.
+**Le dépistage est la clé :** la rétinopathie diabétique est silencieuse à son début. Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un suivi plus rapproché selon le bilan. Le rythme du fond d’œil est fixé selon le type de diabète, son équilibre, les traitements et l’état de la rétine. Un bilan régulier reste nécessaire même en l’absence de symptôme.
 
 Rythmes de surveillance :
 
-- **Diabète de type 1** : premier fond d’œil dès 10 ans d’âge ou à partir de 5 ans d’évolution du diabète.
-- **Diabète de type 2** : fond d’œil **dès le diagnostic** (car le diabète évoluait souvent silencieusement avant le diagnostic), puis annuel.
-- **Diabète et grossesse** : fond d’œil avant la conception, au 1er trimestre, puis tous les 3 mois jusqu’à l’accouchement.
+- **Diabète de type 1 chez l’enfant** : Chez l’enfant ayant un diabète de type 1, le début du dépistage dépend de l’âge, de la puberté et de l’ancienneté du diabète. Le calendrier est fixé avec l’équipe de diabétologie et l’ophtalmologue.
+- **Diabète de type 2** : fond d’œil **dès le diagnostic** (car le diabète évoluait souvent silencieusement avant le diagnostic), puis un suivi au moins annuel est proposé au cabinet, adapté au bilan.
+- **Diabète et grossesse** : En cas de diabète préexistant à la grossesse, le suivi est organisé avec l’ophtalmologue dès le projet de grossesse. Pendant la grossesse, un contrôle trimestriel est généralement prévu ; il peut être rapproché selon la situation, notamment lorsqu’une rétinopathie est déjà présente. La surveillance se poursuit après l’accouchement selon les consignes médicales.
 - En cas de rétinopathie avérée : suivi tous les 4 à 6 mois selon la sévérité.
 
 #### Examens ophtalmologiques
@@ -3681,11 +3681,11 @@ La chirurgie par **[vitrectomie postérieure 25G](https://docteurmajoulet.com/vi
 
 ##### À quelle fréquence faut-il faire surveiller ses yeux quand on est diabétique ?
 
-Un fond d’œil (ou une rétinographie non mydriatique) est recommandé **au moins une fois par an** chez tout diabétique. Ce rythme est plus rapproché (**tous les 4 à 6 mois**) en cas de rétinopathie avérée, de grossesse, de déséquilibre glycémique récent, d’HTA sévère ou de néphropathie.
+Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un suivi plus rapproché selon le bilan. Le rythme du fond d’œil est fixé selon le type de diabète, son équilibre, les traitements et l’état de la rétine. Un bilan régulier reste nécessaire même en l’absence de symptôme. En cas de diabète préexistant à la grossesse, le suivi est organisé avec l’ophtalmologue dès le projet de grossesse. Pendant la grossesse, un contrôle trimestriel est généralement prévu ; il peut être rapproché selon la situation, notamment lorsqu’une rétinopathie est déjà présente. La surveillance se poursuit après l’accouchement selon les consignes médicales.
 
 ##### La rétinopathie diabétique donne-t-elle des symptômes ?
 
-**Non, pas au début.** La rétinopathie diabétique évolue longtemps de manière silencieuse, sans aucun symptôme. C’est toute l’importance du dépistage annuel systématique. Les symptômes n’apparaissent souvent qu’à un stade déjà avancé : baisse de la vision centrale (œdème maculaire), mouches volantes ou voile noir (hémorragie intravitréenne), perte brutale de la vision (décollement de rétine tractionnel).
+**Non, pas au début.** La rétinopathie diabétique évolue longtemps de manière silencieuse, sans aucun symptôme. C’est toute l’importance du dépistage régulier. Les symptômes n’apparaissent souvent qu’à un stade déjà avancé : baisse de la vision centrale (œdème maculaire), mouches volantes ou voile noir (hémorragie intravitréenne), perte brutale de la vision (décollement de rétine tractionnel).
 
 ##### Comment traiter un œdème maculaire diabétique ?
 
@@ -3970,7 +3970,8 @@ Le diagnostic repose sur l’**OCT maculaire** (Tomographie en Cohérence Optiqu
 - Un **épaississement** rétinien maculaire.
 - Des **logettes hyporéflectives** (liquide) dans la couche nucléaire interne et plexiforme externe.
 - Parfois un **décollement séreux rétinien** associé.
-- L’**OCT-angiographie** peut visualiser une hyperperméabilité capillaire périfovéolaire.
+
+L’**OCT-angiographie** peut compléter l’étude des petits vaisseaux de la rétine. Elle ne montre pas directement les fuites vasculaires, recherchées si nécessaire par angiographie à la fluorescéine.
 
 L’**angiographie à la fluorescéine** reste utile pour documenter une diffusion péricapillaire en « pétales de fleur » très caractéristique, surtout dans les formes chroniques ou lorsqu’on suspecte une vasculopathie sous-jacente.
 
@@ -3980,10 +3981,10 @@ L’**angiographie à la fluorescéine** reste utile pour documenter une diffusi
 
 Le traitement repose sur des collyres anti-inflammatoires, avec une réponse favorable dans plus de 50 % des cas :
 
-- **Collyres AINS** (bromfénac, népafénac, indométacine) 4 fois par jour.
+- Des **collyres anti-inflammatoires** peuvent être prescrits. Le choix du produit, la fréquence et la durée du traitement sont adaptés par l’ophtalmologue. Suivez l’ordonnance remise en consultation.
 - **Collyres corticoïdes** (dexaméthasone, fluorométholone) en association, avec dégression progressive.
 - **Acétazolamide** par voie orale (2 × 250 mg/j) en cas d’œdème marqué, avec surveillance de la kaliémie et de la fonction rénale.
-- Arrêt d’un éventuel **collyre à la prostaglandine** facteur favorisant.
+- Si un collyre est suspecté de favoriser l’œdème, son maintien ou son remplacement est discuté avec l’ophtalmologue. **Ne modifiez pas votre traitement sans son avis.**
 
 ##### Seconde ligne — formes réfractaires
 
@@ -4566,12 +4567,14 @@ Détails cliniques et traitements dans la fiche sur la [rétinopathie diabétiqu
 
 #### Rythme du suivi
 
+Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un suivi plus rapproché selon le bilan. Le rythme du fond d’œil est fixé selon le type de diabète, son équilibre, les traitements et l’état de la rétine. Un bilan régulier reste nécessaire même en l’absence de symptôme.
+
 | Situation | Rythme du fond d’œil |
 |---|---|
-| Diabète type 1 enfant < 10 ans | Premier bilan à 11 ans ou à la puberté |
-| Diabète type 1 adulte sans rétinopathie | Annuel |
-| Diabète type 2 dès le diagnostic | Systématique au diagnostic, puis annuel si pas de rétinopathie |
-| Grossesse chez diabétique | Au 1er trimestre, puis tous les 3 mois |
+| Diabète de type 1 chez l’enfant | Chez l’enfant ayant un diabète de type 1, le début du dépistage dépend de l’âge, de la puberté et de l’ancienneté du diabète. Le calendrier est fixé avec l’équipe de diabétologie et l’ophtalmologue. |
+| Diabète type 1 adulte sans rétinopathie | Au moins annuel au cabinet, adapté au bilan |
+| Diabète type 2 dès le diagnostic | Systématique au diagnostic, puis suivi au moins annuel proposé au cabinet, adapté au bilan |
+| Diabète préexistant à la grossesse | Dès le projet de grossesse, puis généralement chaque trimestre ; suivi rapproché selon la situation et poursuivi après l’accouchement |
 | Rétinopathie non proliférante modérée | Tous les 6 mois |
 | Rétinopathie non proliférante sévère ou proliférante | Tous les 2-4 mois, ou selon traitement |
 | Œdème maculaire traité | Tous les 1-2 mois initialement, puis selon évolution |
@@ -4625,9 +4628,9 @@ Le fond d’œil est systématiquement réalisé au bilan initial d’une HTA et
 
 #### Questions fréquentes
 
-##### J’ai un bon HbA1c, dois-je quand même passer des fonds d’œil annuels ?
+##### Mon diabète est bien équilibré, dois-je quand même faire surveiller mes yeux ?
 
-Oui. Un bon équilibre diminue le risque mais ne l’annule pas. La durée du diabète, la coexistence d’HTA, de dyslipidémie, de tabagisme ou d’apnée du sommeil influencent également le risque rétinien. Le suivi annuel reste recommandé même chez les diabétiques bien équilibrés tant qu’il n’y a pas de rétinopathie détectable. Une fois une rétinopathie apparue, le rythme devient plus rapproché.
+Oui. Un bon équilibre diminue le risque mais ne l’annule pas. Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un suivi plus rapproché selon le bilan. Le rythme du fond d’œil est fixé selon le type de diabète, son équilibre, les traitements et l’état de la rétine. Un bilan régulier reste nécessaire même en l’absence de symptôme.
 
 ##### Peut-on télétransmettre les fonds d’œil (dépistage par rétinographe) ?
 
@@ -4635,7 +4638,7 @@ Oui. Le dépistage de la rétinopathie diabétique par rétinographie non mydria
 
 ##### Je suis enceinte et diabétique — que faire ?
 
-La grossesse peut aggraver rapidement une rétinopathie diabétique. Un fond d’œil est recommandé en début de grossesse (1er trimestre), puis à chaque trimestre, et plus souvent en cas de rétinopathie préexistante. Certains traitements (injections intravitréennes d’anti-VEGF) sont contre-indiqués ou à limiter pendant la grossesse — discuter la stratégie avec votre ophtalmologue, votre diabétologue et votre gynécologue-obstétricien.
+La grossesse peut aggraver rapidement une rétinopathie diabétique. En cas de diabète préexistant à la grossesse, le suivi est organisé avec l’ophtalmologue dès le projet de grossesse. Pendant la grossesse, un contrôle trimestriel est généralement prévu ; il peut être rapproché selon la situation, notamment lorsqu’une rétinopathie est déjà présente. La surveillance se poursuit après l’accouchement selon les consignes médicales. Certains traitements (injections intravitréennes d’anti-VEGF) sont contre-indiqués ou à limiter pendant la grossesse — discuter la stratégie avec votre ophtalmologue, votre diabétologue et votre gynécologue-obstétricien.
 
 ##### Auteur et révision médicale
 
@@ -4651,7 +4654,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 - Description : Glaucome : dépistage, collyres, laser SLT, chirurgie (MIGS, PreserFlo, trabéculectomie). Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 - Relu le : 2026-08-20
 
-Diagnostic, traitements médicaux, laser et chirurgie du nerf optique
+Diagnostic, collyres, laser et chirurgie du glaucome
 
 Le **glaucome** est une **neuropathie optique chronique progressive** caractérisée par une destruction lente et irréversible des fibres du nerf optique, responsable d’une altération du champ visuel. Il reste la **deuxième cause mondiale de cécité irréversible**. La **pression intraoculaire (PIO)** élevée en est le principal facteur de risque modifiable — elle n’est pas toujours élevée, mais sa diminution reste à ce jour le **seul traitement ayant fait la preuve scientifique** de ralentir la progression.
 
@@ -4672,7 +4675,7 @@ Le glaucome chronique est **asymptomatique pendant des années**. Les symptômes
 Le diagnostic de glaucome repose sur un **faisceau d’arguments cliniques et paracliniques** :
 
 - **Mesure de la PIO** par tonométrie à aplanation de Goldmann (référence).
-- **Pachymétrie cornéenne** centrale (corrige la PIO et identifie un risque).
+- **Pachymétrie cornéenne centrale** : mesure de l’épaisseur de la cornée, utile pour interpréter la pression intraoculaire et apprécier le risque.
 - **Gonioscopie** : évaluation de l’angle irido-cornéen (ouvert / étroit / fermé).
 - **Examen du nerf optique** à la lampe à fente et au verre de Volk, avec recherche d’**excavation papillaire asymétrique**, d’**amincissement de l’anneau neuro-rétinien**, d’**hémorragies péripapillaires (signes de Drance)**.
 - **OCT RNFL et complexe ganglionnaire maculaire (GCC)** : mesure objective de l’épaisseur des fibres ; permet le suivi longitudinal et la détection de progression.
@@ -4825,7 +4828,7 @@ Le glaucome est une maladie chronique : le traitement, quel qu’il soit, **ne g
 
 ##### Le glaucome fait-il perdre la vue ?
 
-**Non, s’il est dépisté tôt et traité correctement.** Le glaucome entraîne une atteinte progressive et **irréversible** du nerf optique, mais la baisse visuelle est très lente (années ou décennies). Un traitement bien conduit — collyres, laser SLT, chirurgie — peut stabiliser la maladie. Non dépisté, il reste néanmoins la deuxième cause mondiale de cécité irréversible.
+Le glaucome peut entraîner une **perte irréversible du champ visuel**. Le dépistage, le traitement et le suivi régulier visent à ralentir sa progression et à préserver la vision. Le traitement est adapté au stade de la maladie et à son évolution ; il ne permet pas de récupérer les fibres du nerf optique déjà perdues.
 
 ##### Pourquoi faut-il mettre des gouttes tous les jours ?
 
@@ -4841,7 +4844,7 @@ Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal 
 
 ##### Qu’est-ce que le PreserFlo MicroShunt ?
 
-Le PreserFlo est un **dispositif implantable de 8,5 mm** en **SIBS** (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte. Il draine l’humeur aqueuse de la chambre antérieure vers l’espace sous-conjonctival. Efficacité hypotonisante **proche de la trabéculectomie** avec un **profil de sécurité amélioré**. J’ai publié un article de synthèse en premier auteur sur ce dispositif dans le *Journal of Clinical Medicine* en 2022.
+Le PreserFlo est un **dispositif implantable de 8,5 mm** en **SIBS** (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte. Il draine l’humeur aqueuse de la chambre antérieure vers l’espace sous-conjonctival. Efficacité hypotonisante **proche de la trabéculectomie** avec un **profil de sécurité amélioré**. J’ai publié une étude rétrospective en premier auteur sur ce dispositif dans le *Journal of Clinical Medicine* en 2022.
 
 ##### Qui doit se faire dépister ?
 
