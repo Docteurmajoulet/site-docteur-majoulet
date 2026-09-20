@@ -489,7 +489,7 @@ Savoir reconnaître les signes d’alerte — qui appeler, quand, où
 Une **urgence ophtalmologique** se définit par un risque de **perte visuelle irréversible** en l’absence de traitement rapide. Cette page recense les signes d’alerte, les délais d’intervention critiques et les structures de prise en charge en Île-de-France.
 
 - **< 4-6 h** — Fenêtre thérapeutique en cas d’occlusion de l’artère centrale de la rétine (OACR)
-- **24-72 h** — Délai maximum pour flashs/corps flottants récents
+- **24-48 h** — Délai maximum pour flashs/corps flottants récents
 - **15** — Si signe neurologique associé
 
 #### Signes qui imposent une consultation immédiate
@@ -498,7 +498,7 @@ Une **urgence ophtalmologique** se définit par un risque de **perte visuelle ir
 |---|---|
 | Baisse brutale et indolore de la vision d’un œil | Urgence hospitalière (occlusion artérielle — OACR, neuropathie optique ischémique — NOIA, occlusion veineuse, DMLA exsudative, hémorragie) |
 | Voile noir ou rideau fixe dans le champ visuel | Urgence hospitalière (décollement de rétine) |
-| Flashs lumineux + nuée de corps flottants récents | Consultation ophtalmologique dans les 24-72 h (fond d’œil dilaté) |
+| Flashs lumineux ou corps flottants récents, sans voile noir ni baisse brutale de vision | Consultation ophtalmologique dans les 24-48 h (fond d’œil dilaté) |
 | Œil rouge, douloureux, baisse de vision + nausées | Urgence hospitalière (glaucome aigu par fermeture d’angle) |
 | Traumatisme oculaire avec plaie pénétrante | Protection coque, à jeun, urgence chirurgicale |
 | Projection de produit chimique | Rinçage abondant > 15 min au sérum physiologique, puis urgence |
@@ -547,9 +547,11 @@ Ne pas frotter. Rincer au sérum physiologique ou à l’eau claire. Si gêne pe
 | Délai | Situations |
 |---|---|
 | Appel 15 immédiat | Signe neurologique associé, céphalée en coup de tonnerre, plaie pénétrante, projection chimique grave |
+| Immédiatement | Suspicion d’endophtalmie après une opération ou une injection : contacter immédiatement l’ophtalmologue ou se rendre aux urgences ophtalmologiques. |
 | < 6 h | Suspicion OACR, glaucome aigu, plaie oculaire, brûlure chimique |
 | < 24 h | Décollement de rétine débutant (voile), occlusion veineuse (OVCR), uvéite aiguë avec douleur, kératite sévère |
-| 24-72 h | Flashs et corps flottants récents (fond d’œil dilaté), œil rouge modéré, suspicion endophtalmie post-op |
+| 24-48 h | Flashs ou corps flottants récents, sans voile noir ni baisse brutale de vision (fond d’œil dilaté) |
+| 24-72 h | Œil rouge modéré |
 | 1-2 semaines | Chalazion persistant, conjonctivite traînante, baisse visuelle modérée progressive |
 
 #### Questions fréquentes
@@ -953,7 +955,7 @@ La DMLA correspond à un **vieillissement pathologique** de la macula. Des déch
 
 ##### Forme sèche (atrophique) — 80 à 85 % des cas
 
-C’est la forme la plus fréquente mais également la plus lentement évolutive. Elle se manifeste par une **disparition progressive des cellules visuelles** de la macula. La baisse visuelle s’installe sur plusieurs années. Aucun traitement médicamenteux n’est autorisé en France pour la forme atrophique à ce jour, mais des essais cliniques sont en cours, y compris en France. Une **complémentation AREDS2** (vitamines, lutéine, zéaxanthine, zinc, oméga-3) peut ralentir l’évolution dans certaines formes intermédiaires.
+C’est la forme la plus fréquente mais également la plus lentement évolutive. Elle se manifeste par une **disparition progressive des cellules visuelles** de la macula. La baisse visuelle s’installe sur plusieurs années. Aucun traitement médicamenteux n’est autorisé en France pour la forme atrophique à ce jour, mais des essais cliniques sont en cours, y compris en France. Une **complémentation AREDS2** (vitamines C et E, lutéine, zéaxanthine, zinc et cuivre) peut ralentir l’évolution dans certaines formes intermédiaires.
 
 ##### Forme humide (exsudative ou néovasculaire) — 15 à 20 % des cas
 
@@ -1078,7 +1080,7 @@ Deux médicaments (inhibiteurs du complément en injection intravitréenne) ont 
 
 ##### Compléments AREDS2 — dans les formes intermédiaires
 
-La formule **AREDS2** (vitamines C et E, zinc, lutéine, zéaxanthine) a démontré une réduction du risque de progression vers une forme évoluée d’environ 25 % dans les **formes intermédiaires**. Elle se prend sur prescription, au long cours ; elle n’a pas d’intérêt démontré aux stades très précoces ni en prévention chez le sujet sain.
+La formule **AREDS2** (vitamines C et E, lutéine, zéaxanthine, zinc et cuivre) a démontré une réduction du risque de progression vers une forme évoluée d’environ 25 % dans les **formes intermédiaires**. Elle se prend sur prescription, au long cours ; elle n’a pas d’intérêt démontré aux stades très précoces ni en prévention chez le sujet sain.
 
 ##### Hygiène de vie
 
@@ -1518,7 +1520,7 @@ Oui, c’est fréquent chez le patient phaque de plus de 50 ans. La vitrectomie 
 
 ##### Peut-on reprendre l’avion après une vitrectomie sous gaz ?
 
-Non, jamais tant que la bulle de gaz persiste (2 à 5 semaines selon le gaz utilisé). La dépressurisation en altitude entraîne une expansion brutale de la bulle et une élévation dangereuse de la pression intraoculaire. L’information est remise par écrit avant la sortie.
+Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 ##### Faut-il arrêter les anticoagulants ou antiagrégants avant l’intervention ?
 
@@ -1644,7 +1646,7 @@ Tamponnement **long**, mélangé à de l’air à une concentration non expansiv
 
 Tamponnement **prolongé** (plusieurs mois à années, puis retrait chirurgical). Indiqué dans les décollements complexes, les formes récidivantes, les vitréorétinopathies prolifératives, la rétinopathie diabétique avec décollement tractionnel, les enfants.
 
-**Si tamponnement par gaz :pas d’avion, pas d’altitude > 1000-1500 m**, et **signalement impératif au médecin anesthésiste** en cas d’intervention sous AG (risque de détente du gaz avec l’azote N2O). La durée de cette contre-indication est de **2 semaines pour le SF6** et de **4 à 5 semaines pour le C2F6**.
+Tant qu’une bulle de gaz est présente dans l’œil, **les voyages en avion et en altitude sont contre-indiqués**. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : **le protoxyde d’azote (N₂O) est contre-indiqué**. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 #### Le positionnement post-opératoire
 
@@ -1707,7 +1709,7 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
-**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. Délai : **2 semaines** (SF6) ou **4 à 5 semaines** (C2F6). Si l’intervention a été faite sous huile de silicone, le vol est possible sans délai.
+**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
 ##### Combien de temps d’arrêt de travail prévoir ?
 
@@ -1816,7 +1818,7 @@ Le **pronostic anatomique** (remise à plat de la rétine) dépasse 90 % après 
 - L’**atteinte ou non de la macula** (« macula on » vs « macula off »)
 - La présence éventuelle d’une **prolifération vitréo-rétinienne (PVR)**, cicatrisation anormale qui contracte la rétine
 
-Si un gaz est utilisé, la vision reste floue tant que la bulle n’est pas résorbée (1 à 8 semaines selon le type). Les **voyages en avion** et les **anesthésies générales au protoxyde d’azote** sont formellement contre-indiqués tant que la bulle est présente.
+Si un gaz est utilisé, la vision reste floue tant que la bulle n’est pas résorbée (1 à 8 semaines selon le type). Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 #### Questions fréquentes
 
@@ -1838,7 +1840,7 @@ La prévention repose sur le **dépistage et le traitement par laser** des lési
 
 ##### Puis-je reprendre une activité normale après l’opération ?
 
-La reprise est **progressive** : le sport, les efforts importants et le sauna sont à éviter 4 à 6 semaines. Les voyages en avion sont contre-indiqués tant que le gaz est présent dans l’œil. Une **chirurgie de cataracte** est souvent nécessaire dans l’année qui suit la vitrectomie chez les patients phakiques.
+La reprise est **progressive** : le sport, les efforts importants et le sauna sont à éviter 4 à 6 semaines. Les voyages en avion et en altitude sont contre-indiqués tant que le gaz est présent dans l’œil. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Une **chirurgie de cataracte** est souvent nécessaire dans l’année qui suit la vitrectomie chez les patients phakiques.
 
 ##### Auteur et révision médicale
 
@@ -2069,9 +2071,9 @@ Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) e
 
 Durant toute la période où la bulle de gaz est présente :
 
-- **Le voyage aérien est strictement interdit** (risque d’expansion de la bulle et d’élévation massive de la pression intraoculaire).
+- **Les voyages en avion et en altitude sont contre-indiqués** (risque d’expansion de la bulle et d’élévation massive de la pression intraoculaire).
 - La vision de l’œil opéré est très floue et remplie par la bulle visible comme une « ligne d’eau » qui descend progressivement.
-- Une anesthésie générale avec protoxyde d’azote (N₂O) est contre-indiquée.
+- Signalez la présence de gaz dans l’œil à tout soignant avant une anesthésie ou un traitement de la douleur : **le protoxyde d’azote (N₂O) est contre-indiqué**.
 - Un collyre antibiotique et anti-inflammatoire est prescrit pendant 1 mois.
 
 Le suivi OCT est habituellement réalisé à **J7, M1 puis M3**. La récupération visuelle est progressive sur **3 à 6 mois**.
@@ -2126,7 +2128,7 @@ Le taux de fermeture anatomique est de **90 à 95 %** pour les trous de petite e
 
 ##### Quand vais-je pouvoir reprendre une vie normale ?
 
-La reprise d’activité est progressive. Éviction des efforts violents et de la natation **2 à 4 semaines**. Conduite automobile reprise quand la vision permet les exigences légales (en général 2 à 4 semaines). **Le voyage aérien est strictement contre-indiqué tant que la bulle de gaz est présente** — environ 2 à 3 semaines pour le SF6, 4 à 5 semaines pour le C2F6.
+La reprise d’activité est progressive. Éviction des efforts violents et de la natation **2 à 4 semaines**. Conduite automobile reprise quand la vision permet les exigences légales (en général 2 à 4 semaines). **Les voyages en avion et en altitude sont contre-indiqués tant que la bulle de gaz est présente.** Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 ##### Vais-je avoir une cataracte après l’opération ?
 
@@ -2180,7 +2182,7 @@ Les **néovaisseaux** prérétiniens ou papillaires, fragiles, peuvent rompre sp
 
 ##### Décollement postérieur du vitré (DPV) hémorragique
 
-Au moment du décollement du vitré, un vaisseau rétinien peut être arraché, provoquant une hémorragie. Dans environ **10-15 %** des DPV hémorragiques, une **déchirure rétinienne** est associée — un **fond d’œil détaillé** après éclaircissement est donc impératif. Voir [DPV](https://docteurmajoulet.com/decollement-posterieur-vitre).
+Au moment du décollement du vitré, un vaisseau rétinien peut être arraché, provoquant une hémorragie. Un décollement du vitré accompagné d’une hémorragie peut être associé à une **déchirure rétinienne**, parfois difficile à voir lorsque le sang masque le fond d’œil. Un examen de la rétine et un suivi adaptés sont nécessaires pour rechercher cette complication. Voir [DPV](https://docteurmajoulet.com/decollement-posterieur-vitre).
 
 ##### Déchirure rétinienne / décollement de rétine
 
@@ -2245,7 +2247,7 @@ Oui, dans la majorité des cas, l’hémorragie se résorbe progressivement en *
 
 ##### Dois-je être opéré en urgence ?
 
-Cela dépend de la cause. Si une **échographie en mode B** montre un décollement de rétine associé, une chirurgie est rapidement indiquée (24-72 h). En l’absence de décollement, la surveillance est souvent possible, avec un traitement complémentaire (laser, anti-VEGF) adapté à la cause, et une vitrectomie décidée seulement si l’hémorragie ne se résorbe pas après 6-12 semaines.
+Cela dépend de la cause. Si une **échographie en mode B** montre un décollement de rétine associé, une chirurgie est rapidement indiquée (24-72 h). En l’absence de décollement, la surveillance est souvent possible, avec un traitement complémentaire (laser, anti-VEGF) adapté à la cause. L’indication et le délai d’une vitrectomie dépendent de la cause de l’hémorragie, de l’état de la rétine et de l’évolution. Une intervention précoce peut être nécessaire.
 
 ##### À quoi sert l’échographie en mode B ?
 
@@ -2491,7 +2493,7 @@ L’apparition d’**éclairs lumineux (phosphènes)**, de **corps flottants (my
 
 - **85 %** — DPV isolé bénin
 - **10-15 %** — Déchirure rétinienne associée
-- **24-72 h** — Délai pour un fond d’œil dilaté
+- **24-48 h** — Délai pour un fond d’œil dilaté
 
 #### Décollement postérieur du vitré (DPV) : le mécanisme bénin
 
