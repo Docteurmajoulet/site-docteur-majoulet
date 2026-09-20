@@ -5,11 +5,12 @@
   "description": "Contrôles automatiques du site docteurmajoulet.com (statiques, navigateur, Lighthouse, captures).",
   "type": "module",
   "scripts": {
-    "test": "npm run test:static && npm run test:server && npm run test:html && npm run test:navigation && npm run test:browser && npm run test:lh",
+    "test": "npm run test:static && npm run test:server && npm run test:html && npm run test:navigation && npm run test:browser && npm run test:compatibility && npm run test:lh",
     "test:static": "python3 check_static.py && python3 -m unittest discover -s . -p 'test_*.py'",
     "test:server": "node --test server.test.mjs",
     "test:html": "node html_validate.mjs",
     "test:navigation": "node navigation.mjs",
+    "test:compatibility": "node compatibility.mjs",
     "test:browser": "node browser.mjs",
     "test:lh": "node lighthouse.mjs",
     "serve": "python3 serve.py 8765",

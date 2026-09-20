@@ -56,6 +56,33 @@ jobs:
           path: _tests/reports/
           retention-days: 30
 
+  compatibilite:
+    name: Firefox et WebKit (parcours de rendez-vous)
+    runs-on: ubuntu-24.04
+    needs: statique
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: _tests
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: _tests/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps firefox webkit
+      - name: Parcours essentiels sous la CSP du site
+        run: npm run test:compatibility
+      - name: Résultats de compatibilité
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: rapports-compatibilite
+          path: _tests/reports/compatibility.json
+          retention-days: 30
+
   html:
     name: Validation HTML W3C (Nu Html Checker, toutes les pages)
     runs-on: ubuntu-latest

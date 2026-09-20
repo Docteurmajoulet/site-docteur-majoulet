@@ -10,13 +10,14 @@ Sans rien installer (Python 3 seulement), depuis la racine du dépôt (`_deploy-
 
     python3 _tests/check_static.py
 
-Pour tout le reste (navigateur, Lighthouse, captures), une fois : `cd _tests && npm install && npx playwright install chromium`, puis :
+Pour tout le reste (navigateur, Lighthouse, captures), une fois : `cd _tests && npm install && npx playwright install chromium firefox webkit`, puis :
 
     cd _tests
-    npm test                 # statique + navigateur + Lighthouse (≈ 6 min)
+    npm test                 # tous les contrôles ; durée variable selon la machine
     npm run test:server      # refuse un port occupé par une autre copie du site
     npm run test:browser     # 48 pages × 320/390/768/1366 : console, CSP, débordements, axe (≈ 4 min)
     npm run test:navigation  # interactions du menu : souris, clavier, tiroir et changement de format
+    npm run test:compatibility # 3 pages × 2 formats × Firefox/WebKit ; OpenSSL requis
     npm run test:lh          # Lighthouse mobile sur 4 pages clés, rapports dans _tests/reports/
     npm run test:html        # validation HTML W3C de toutes les pages (Java ≥ 11 requis ; sinon sautée — GitHub la fait)
     npm run serve            # le site sur http://127.0.0.1:8765/ avec les en-têtes de production (CSP incluse)
@@ -34,6 +35,16 @@ uniquement à `127.0.0.1` ; ces changements ne modifient pas le site Netlify.
 maintien du panneau tant qu’un lien garde le focus clavier, Échap et boucle Tab du tiroir, passage ordinateur/mobile,
 changement de police système sans redimensionnement, retour de Doctolib avec un focus visible. Les services externes
 sont bloqués. Ces contrôles font partie de `npm test` et du workflow GitHub.
+
+**compatibility.mjs** — accueil, contact et vitrectomie à 375 et 1366 px sur Firefox et WebKit :
+12 parcours, accessibilité automatisée, débordements, exceptions et violations CSP, ouverture/fermeture
+du menu et retour depuis le lien Doctolib libéral. La destination est interceptée localement : aucun
+service de rendez-vous n’est contacté. Un certificat éphémère OpenSSL et un relais HTTPS limité à
+127.0.0.1 conservent la CSP du site, y compris `upgrade-insecure-requests`. Le certificat est supprimé
+à la fin ; le résultat est conservé dans `_tests/reports/compatibility.json`. Le serveur HTTP de test
+utilise le port 8797 et refuse de réutiliser un serveur préexistant ; le relais HTTPS choisit un port libre.
+Ce contrôle fait partie de `npm test` et d’un job GitHub distinct. Il utilise les versions de navigateurs
+associées à Playwright, pas toutes les versions de Safari ou Firefox utilisées par les patients.
 
 **check_static.py** (quelques secondes, aucune dépendance) — pages ↔ sitemap (noindex exclus), robots,
 manifest et favicons ; par page : lang, charset, viewport, title unique, meta description, canonical = URL
