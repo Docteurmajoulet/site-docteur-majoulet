@@ -3502,7 +3502,6 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 - **Lasers modernes** : pattern (PASCAL, Navilas) — traitement plus rapide, moins douloureux ; micropulse sub-seuil (577 nm) pour l’œdème maculaire.
 - **Durée** : 10 à 30 minutes par séance en ambulatoire.
 - **Efficacité** : régression des néovaisseaux dans 60-80 % des cas après PPR complète ; adhérence chorio-rétinienne durable après barrage sur déchirure.
-- **Remboursement** : intégral par l’Assurance Maladie (actes BGQP001, BGQP002 selon la technique).
 
 #### Indications
 
@@ -3576,13 +3575,15 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 
 #### Prendre rendez-vous
 
+[Honoraires et remboursement](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt#honoraires) · [Préparer votre consultation au cabinet](https://docteurmajoulet.com/contact#preparer-consultation)
+
 Pour un bilan de rétinopathie diabétique, une suspicion de déchirure rétinienne (éclairs, corps flottants), ou une séance de laser programmée :
 
 [Rendez-vous Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris) [01 84 19 11 66](tel:+33184191166)
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 22 avril 2026.
 
@@ -3726,13 +3727,20 @@ OVCR et OBVR : diagnostic, œdème maculaire et prise en charge
 
 Les **occlusions veineuses rétiniennes (OVR)** sont la **deuxième cause la plus fréquente de pathologie vasculaire rétinienne** après la rétinopathie diabétique. Elles résultent de l’obstruction aiguë d’une veine rétinienne, à l’origine d’hémorragies rétiniennes, d’un **œdème maculaire** et, dans les formes évoluées, d’une **ischémie rétinienne** exposant à des complications néovasculaires. Elles constituent le plus souvent un signal d’alerte cardiovasculaire.
 
-- **2e** — Cause vasculaire rétinienne
-- **+60 ans** — Âge moyen de survenue
-- **5-10 %** — Risque controlatéral à 5 ans
+#### Symptômes
+
+- **Baisse visuelle** d’apparition brutale ou subaiguë, **indolore**, sur un œil.
+- Voile, scotome ou amputation du champ visuel selon la topographie.
+- **OBVR** : altération souvent partielle, parfois remarquée seulement à l’occlusion manuelle de l’autre œil.
+- **OVCR ischémique** : baisse visuelle profonde, parfois à moins de 1/20.
 
 #### Qu’est-ce qu’une occlusion veineuse rétinienne ?
 
 Les veines rétiniennes drainent le sang de la rétine vers le nerf optique puis vers la circulation générale. Lorsqu’une veine se bouche (par compression artérielle, inflammation pariétale ou thrombose locale), le sang stagne en amont : la paroi capillaire devient perméable, entraînant **hémorragies rétiniennes**, **exsudats** et **œdème**. Si l’occlusion est sévère, la rétine devient **ischémique** (manque d’oxygène) et produit des facteurs de croissance (**VEGF**) responsables des néovaisseaux.
+
+- **2e** — Cause vasculaire rétinienne
+- **+60 ans** — Âge moyen de survenue
+- **5-10 %** — Risque controlatéral à 5 ans
 
 #### Classification anatomique
 
@@ -3760,13 +3768,6 @@ Forme intermédiaire atteignant environ la moitié de la rétine. Son pronostic 
 - **Maladies inflammatoires systémiques** (vascularites, Behçet).
 - **Contraceptifs œstroprogestatifs** chez la femme jeune.
 
-#### Symptômes
-
-- **Baisse visuelle** d’apparition brutale ou subaiguë, **indolore**, sur un œil.
-- Voile, scotome ou amputation du champ visuel selon la topographie.
-- **OBVR** : altération souvent partielle, parfois remarquée seulement à l’occlusion manuelle de l’autre œil.
-- **OVCR ischémique** : baisse visuelle profonde, parfois à moins de 1/20.
-
 #### Examens diagnostiques
 
 - **Fond d’œil** : hémorragies rétiniennes disséminées, nodules cotonneux, veines tortueuses et dilatées, œdème papillaire (OVCR).
@@ -3792,13 +3793,13 @@ Bilan usuel :
 
 ##### 1 — L’œdème maculaire
 
-Traitement de **première intention** : **injections intravitréennes d’anti-VEGF** (aflibercept, ranibizumab, faricimab, brolucizumab), avec phase d’induction puis schéma « Treat & Extend ».
+Traitement de **première intention** : **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (aflibercept, ranibizumab, faricimab, brolucizumab), avec phase d’induction puis schéma « Treat & Extend ».
 
 En cas de réponse insuffisante ou chez les patients pseudophaques non compliants pour les injections mensuelles : **implant intravitréen de dexaméthasone (Ozurdex®)**, d’action prolongée sur 4 à 6 mois. À surveiller : élévation de la pression intraoculaire et accélération de la cataracte.
 
 ##### 2 — L’ischémie et la néovascularisation
 
-Les formes ischémiques (OVCR ischémique, OBVR étendue) justifient une **photocoagulation panrétinienne au laser (PPR)** — partielle ou étendue selon la forme — pour prévenir ou traiter les néovaisseaux. Dans l’OVCR ischémique, la surveillance de l’**angle iridocornéen** est essentielle pour dépister précocement un **glaucome néovasculaire**.
+Les formes ischémiques (OVCR ischémique, OBVR étendue) justifient une **[photocoagulation panrétinienne au laser (PPR)](https://docteurmajoulet.com/photocoagulation-laser)** — partielle ou étendue selon la forme — pour prévenir ou traiter les néovaisseaux. Dans l’OVCR ischémique, la surveillance de l’**angle iridocornéen** est essentielle pour dépister précocement un **glaucome néovasculaire**.
 
 ##### 3 — Les facteurs de risque cardiovasculaires
 
