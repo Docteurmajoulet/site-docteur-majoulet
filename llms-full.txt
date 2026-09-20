@@ -4575,7 +4575,7 @@ La **rétinopathie diabétique** est la complication oculaire la plus fréquente
 - **Proliférante** : néovaisseaux (papillaires et/ou rétiniens) — risque d’hémorragie intravitréenne et de décollement tractionnel.
 - **Œdème maculaire** : peut apparaître à tous les stades et menace directement la vision centrale.
 
-Détails cliniques et traitements sur notre page dédiée [/retinopathie-diabetique](https://docteurmajoulet.com/retinopathie-diabetique).
+Détails cliniques et traitements dans la fiche sur la [rétinopathie diabétique](https://docteurmajoulet.com/retinopathie-diabetique).
 
 #### Rythme du suivi
 
@@ -4600,7 +4600,7 @@ L’HTA altère les vaisseaux rétiniens par un épaississement des parois arté
 - **Stade III** : hémorragies rétiniennes, exsudats cotonneux.
 - **Stade IV** : œdème papillaire — HTA maligne, urgence.
 
-Le fond d’œil est systématiquement réalisé au bilan initial d’une HTA et à la recherche de complications cardiovasculaires. L’HTA est également un facteur de risque majeur d’**occlusion veineuse rétinienne** (OVCR, OBVR) et d’**occlusion artérielle rétinienne**. Voir nos pages [/occlusions-veineuses](https://docteurmajoulet.com/occlusions-veineuses).
+Le fond d’œil est systématiquement réalisé au bilan initial d’une HTA et à la recherche de complications cardiovasculaires. L’HTA est également un facteur de risque majeur d’**occlusion veineuse rétinienne** (OVCR, OBVR) et d’**occlusion artérielle rétinienne**. Voir la fiche sur les [occlusions veineuses rétiniennes](https://docteurmajoulet.com/occlusions-veineuses).
 
 #### Quels examens réalisés au cabinet ?
 
@@ -5154,7 +5154,7 @@ Solution simple, adaptée à tous les âges. Pour les fortes myopies, choisir de
 
 ##### Lentilles de contact
 
-Souples journalières, mensuelles, ou rigides perméables. Avantages : meilleure qualité optique (pas d’effet de bord ni de limite du champ), esthétique, activités sportives. Nécessitent une hygiène rigoureuse — voir notre page /lentilles-de-contact.
+Souples journalières, mensuelles, ou rigides perméables. Avantages : meilleure qualité optique (pas d’effet de bord ni de limite du champ), esthétique, activités sportives. Nécessitent une hygiène rigoureuse — voir les [informations sur les lentilles de contact](https://docteurmajoulet.com/suivi-corrections-optiques#lentilles).
 
 ##### Chirurgie réfractive
 
@@ -5276,7 +5276,7 @@ LASIK et PKR corrigent les hypermétropies jusqu’à +4 à +5 D. Au-delà, impl
 - Nausées, vomissements.
 - Pupille en semi-mydriase aréactive.
 
-Traitement en urgence : collyres hypotonisants, acétazolamide (Diamox®), puis iridotomie laser YAG dès que la crise est maîtrisée. Voir notre page [/glaucome](https://docteurmajoulet.com/glaucome).
+Traitement en urgence : collyres hypotonisants, acétazolamide (Diamox®), puis iridotomie laser YAG dès que la crise est maîtrisée. Voir la fiche sur le [glaucome](https://docteurmajoulet.com/glaucome).
 
 En prévention, une **gonioscopie** est réalisée au bilan ophtalmologique pour évaluer la profondeur de l’angle. En cas d’angle très étroit et de risque élevé (notamment chez la femme hypermétrope > 50 ans), une **iridotomie laser YAG préventive** peut être proposée.
 
@@ -5292,7 +5292,7 @@ Chez l’enfant, l’hypermétropie physiologique diminue progressivement avec l
 
 ##### Je suis hypermétrope et j’ai la cataracte : puis-je bénéficier d’un implant qui corrige mon hypermétropie ?
 
-Oui. La chirurgie de la cataracte est l’occasion de corriger durablement l’hypermétropie grâce à un implant intraoculaire calculé sur mesure (biométrie optique IOLMaster). Selon vos attentes et votre mode de vie, on peut proposer un implant monofocal (vision de loin uniquement), un implant torique (si astigmatisme associé), ou un implant multifocal / EDOF pour retrouver également la vision de près sans lunettes. Voir notre page [/cataracte](https://docteurmajoulet.com/cataracte).
+Oui. La chirurgie de la cataracte est l’occasion de corriger durablement l’hypermétropie grâce à un implant intraoculaire calculé sur mesure (biométrie optique IOLMaster). Selon vos attentes et votre mode de vie, on peut proposer un implant monofocal (vision de loin uniquement), un implant torique (si astigmatisme associé), ou un implant multifocal / EDOF pour retrouver également la vision de près sans lunettes. Voir la fiche sur la [cataracte](https://docteurmajoulet.com/cataracte).
 
 ##### Auteur et révision médicale
 
