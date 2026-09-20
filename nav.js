@@ -1,4 +1,5 @@
-/* nav.js — docteurmajoulet.com — TECH32-2026-09-20 (v10)
+/* nav.js — docteurmajoulet.com — TECH55-2026-09-20 (v11)
+   v11 : après dix secondes sans réponse de la carte, signaler l’attente et laisser son lien externe disponible.
    v10 : tiroir ancré à la fenêtre, hauteur réelle à fort zoom et avec transparence réduite ;
    position mise à jour lorsque le bandeau change de hauteur ou que la page défile.
    v9 : état des sous-menus centralisé (délais de fermeture annulés à chaque bascule),
@@ -262,8 +263,22 @@
             f.style.minHeight = mapFacade.getBoundingClientRect().height + 'px';
             /* TECH5F-2026-09-06 : « Chargement de la carte… » tant que Google n'a pas répondu */
             var mapWrap = mapFacade.parentNode;
+            var mapStatus = document.getElementById('map-status');
             mapWrap.classList.add('map-loading');
-            f.addEventListener('load', function () { mapWrap.classList.remove('map-loading'); });
+            // Une iframe bloquée ne déclenche pas toujours load ou error (Firefox, WebKit).
+            // Le délai informe sans interrompre une carte qui pourrait encore finir de charger.
+            var loadingTimer = setTimeout(function () {
+                mapWrap.classList.remove('map-loading');
+                if (mapStatus) {
+                    mapStatus.textContent = 'La carte tarde à s’afficher.';
+                    mapStatus.appendChild(document.createElement('br'));
+                }
+            }, 10000);
+            f.addEventListener('load', function () {
+                clearTimeout(loadingTimer);
+                mapWrap.classList.remove('map-loading');
+                if (mapStatus) { mapStatus.textContent = ''; }
+            });
             mapWrap.replaceChild(f, mapFacade);
             f.focus();
         });

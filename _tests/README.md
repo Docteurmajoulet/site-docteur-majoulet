@@ -385,3 +385,8 @@ avec police agrandie et préférence de transparence réduite : panneau aligné 
 la fenêtre, bouton de fermeture atteignable, navigation clavier et retour au contenu. Le fond filtré de
 l’en-tête est désactivé seulement pendant l’ouverture afin que le tiroir ait toujours la fenêtre comme
 référence. Sa hauteur suit l’espace réellement disponible, y compris après le défilement provoqué par le focus.
+
+Depuis le tour 55 (20/09/2026), `compatibility.mjs` vérifie aussi la carte Google Maps bloquée
+sur Firefox et WebKit : après dix secondes, le message d’attente indique le retard, le libellé
+« Chargement » disparaît et le lien externe reste accessible au clavier. Les services tiers
+sont toujours interceptés ; aucune requête réelle vers Google n’est nécessaire.

@@ -97,6 +97,21 @@ try {
               await page.keyboard.press('Escape');
               assert.equal(await trigger.getAttribute('aria-expanded'), 'false');
             }
+            if (slug === 'index') {
+              // TECH55 : Google est bloqué par le test. L’attente doit laisser place au lien utile.
+              const mapButton = page.locator('.map-facade-btn');
+              await mapButton.scrollIntoViewIfNeeded();
+              await mapButton.focus();
+              await page.keyboard.press('Enter');
+              await page.waitForFunction(() =>
+                document.getElementById('map-status').textContent.includes('La carte tarde') &&
+                !document.querySelector('.contact-map').classList.contains('map-loading'),
+                undefined, { timeout: 12000 });
+              const mapLink = page.locator('.cv12-map-note a');
+              await mapLink.focus();
+              assert.equal(await mapLink.evaluate(e => document.activeElement === e), true,
+                'le lien Google Maps reste accessible au clavier lorsque la carte est bloquée');
+            }
             assert.deepEqual(errors, [], 'exceptions JavaScript');
             assert.deepEqual(await page.evaluate(() => window.__cspViolations), [], 'CSP');
             results.push({ browser: name, version: browser.version(), width, page: slug, ok: true });
