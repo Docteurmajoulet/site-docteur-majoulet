@@ -390,3 +390,8 @@ Depuis le tour 55 (20/09/2026), `compatibility.mjs` vérifie aussi la carte Goog
 sur Firefox et WebKit : après dix secondes, le message d’attente indique le retard, le libellé
 « Chargement » disparaît et le lien externe reste accessible au clavier. Les services tiers
 sont toujours interceptés ; aucune requête réelle vers Google n’est nécessaire.
+
+Depuis le tour 58 (20/09/2026), `navigation.mjs` vérifie aussi les tableaux après un
+agrandissement du texte sans redimensionner la fenêtre : accès au clavier, défilement
+avec la flèche droite, puis retrait de l’arrêt clavier supplémentaire lorsque le tableau
+tient de nouveau. Les pages Amblyopie et Myopie couvrent deux largeurs différentes.

@@ -11,14 +11,14 @@ let browser;
 let checks = 0;
 const failures = [];
 
-async function scenario(name, width, run) {
+async function scenario(name, width, run, slug = 'index') {
   const context = await browser.newContext({ viewport: { width, height: 900 }, locale: 'fr-FR' });
   await context.route(/^https?:\/\/(?!127\.0\.0\.1)/, route => route.abort());
   const page = await context.newPage();
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   try {
-    await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle' });
+    await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle' });
     await run(page, context);
     assert.deepEqual(errors, [], 'aucune exception JavaScript');
     checks++;
@@ -183,6 +183,32 @@ try {
       assert.equal(await focused(page.locator('.mobile-toggle')), true);
       assert.equal(await page.locator('main').evaluate(element => element.inert), false);
     });
+  }
+  // TECH58-2026-09-20 : agrandir le texte après chargement, sans redimensionner la fenêtre.
+  for (const profile of [{ slug: 'amblyopie', width: 375 }, { slug: 'myopie', width: 683 }]) {
+    await scenario(`tableau ${profile.slug} : texte agrandi puis rétabli`, profile.width, async (page, context) => {
+      const table = page.locator('.table-scroll').first();
+      const cdp = await context.newCDPSession(page);
+      assert.equal(await table.getAttribute('tabindex'), null, 'le tableau tient initialement sans arrêt clavier supplémentaire');
+      await cdp.send('Page.setFontSizes', { fontSizes: { standard: 32, fixed: 26 } });
+      await page.waitForFunction(() => {
+        const element = document.querySelector('.table-scroll');
+        return element.scrollWidth > element.clientWidth + 1 && element.getAttribute('tabindex') === '0';
+      }, undefined, { timeout: 2000 });
+      assert.match(await table.getAttribute('aria-label'), /défilement horizontal possible/);
+      await table.focus();
+      assert.equal(await focused(table), true, 'le tableau reçoit le focus');
+      await page.keyboard.press('ArrowRight');
+      await page.waitForFunction(() => document.querySelector('.table-scroll').scrollLeft > 0, undefined, { timeout: 2000 });
+      await cdp.send('Page.setFontSizes', { fontSizes: { standard: 16, fixed: 13 } });
+      await page.waitForFunction(() => {
+        const element = document.querySelector('.table-scroll');
+        return element.scrollWidth <= element.clientWidth + 1 && !element.hasAttribute('tabindex');
+      }, undefined, { timeout: 2000 });
+      assert.equal(await table.getAttribute('aria-label'), 'Tableau');
+      await page.keyboard.press('Tab');
+      assert.equal(await focused(table), false, 'Tab permet de poursuivre la lecture');
+    }, profile.slug);
   }
 } finally {
   if (browser) await browser.close();

@@ -1,4 +1,5 @@
-/* nav.js — docteurmajoulet.com — TECH55-2026-09-20 (v11)
+/* nav.js — docteurmajoulet.com — TECH58-2026-09-20 (v12)
+   v12 : maintenir le défilement clavier des tableaux après un agrandissement du texte ou le chargement d’une police.
    v11 : après dix secondes sans réponse de la carte, signaler l’attente et laisser son lien externe disponible.
    v10 : tiroir ancré à la fenêtre, hauteur réelle à fort zoom et avec transparence réduite ;
    position mise à jour lorsque le bandeau change de hauteur ou que la page défile.
@@ -297,7 +298,20 @@
             }
         });
     }
-    if (scrollers.length) { fitTables(); window.addEventListener('resize', fitTables); }
+    if (scrollers.length) {
+        fitTables();
+        window.addEventListener('resize', fitTables);
+        // Le texte peut grandir sans redimensionnement de la fenêtre. Le tableau et son
+        // conteneur sont suivis séparément : l'un peut déborder sans élargir l'autre.
+        if ('ResizeObserver' in window) {
+            var tableObserver = new ResizeObserver(fitTables);
+            scrollers.forEach(function (ts) {
+                tableObserver.observe(ts);
+                var table = ts.querySelector('table');
+                if (table) { tableObserver.observe(table); }
+            });
+        }
+    }
 
     /* ---------- Barre RDV fixe : masquée tant que le bouton RDV du hero est à l'écran ---------- */
     var heroCta = document.querySelector('.hero-buttons .btn-primary');
