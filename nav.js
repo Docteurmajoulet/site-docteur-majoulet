@@ -1,4 +1,5 @@
-/* nav.js — docteurmajoulet.com — TECH58-2026-09-20 (v12)
+/* nav.js — docteurmajoulet.com — TECH59-2026-09-20 (v13)
+   v13 : décaler les ancres selon la hauteur réelle de l’en-tête, notamment avec texte agrandi.
    v12 : maintenir le défilement clavier des tableaux après un agrandissement du texte ou le chargement d’une police.
    v11 : après dix secondes sans réponse de la carte, signaler l’attente et laisser son lien externe disponible.
    v10 : tiroir ancré à la fenêtre, hauteur réelle à fort zoom et avec transparence réduite ;
@@ -157,12 +158,20 @@
     }
     function openMenu() {
         if (isDesktop()) { return; }
+        if (header) {
+            var headerRect = header.getBoundingClientRect();
+            // À fort agrandissement, le bandeau peut occuper toute la place au-dessus
+            // du menu. Le faire défiler avant de verrouiller la page libère le tiroir.
+            if (headerRect.top > 0 && headerRect.bottom > window.innerHeight - 96) {
+                window.scrollBy({ top: headerRect.top, behavior: 'instant' });
+            }
+        }
         body.classList.add('menu-open');
         if (toggle) { toggle.setAttribute('aria-expanded', 'true'); toggle.setAttribute('aria-label', 'Fermer le menu'); }
         inertTargets().forEach(function (el) { el.setAttribute('inert', ''); });
         sizeDrawer();
         var first = drawerFocusables()[0];
-        if (first) { first.focus(); }
+        if (first) { first.focus({ preventScroll: true }); }
     }
     function closeMenu(restoreFocus) {
         body.classList.remove('menu-open');
@@ -219,6 +228,10 @@
         if (e.target === navFocus && e.target.getClientRects().length > 0) { navFocus = null; }   // vrai retrait du focus
     });
     function updateLayout() {
+        if (header) {
+            // Même marge de lecture de 19 px, y compris si le nom occupe plusieurs lignes.
+            document.documentElement.style.setProperty('--header-scroll-space', Math.ceil(header.getBoundingClientRect().height) + 19 + 'px');
+        }
         var desktop = isDesktop();
         if (desktop !== wasDesktop) {
             var active = document.activeElement;
@@ -236,6 +249,7 @@
     if (desktopMedia.addEventListener) { desktopMedia.addEventListener('change', updateLayout); }
     else { desktopMedia.addListener(updateLayout); }
     window.addEventListener('resize', updateLayout);
+    updateLayout();
     // Le focus peut faire défiler la page jusqu’à l’en-tête pendant l’ouverture.
     window.addEventListener('scroll', sizeDrawer, { passive: true });
     // Suit aussi l’en-tête et l’apparition du bouton mobile : certains changements de police

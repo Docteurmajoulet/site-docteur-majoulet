@@ -7144,6 +7144,7 @@ body.page-index .hero-v3 .hero-photo::after {
    ============================================================ */
 html {
     scroll-padding-top: 96px;
+    scroll-padding-top: var(--header-scroll-space, 96px);
 }
 @media (max-width: 64em) {
 html {
@@ -8076,8 +8077,19 @@ article.pathology-content .consultation-route p {
    quelle que soit la préférence de transparence. Son bouton de fermeture
    reste dans l’en-tête, au-dessus du panneau dimensionné par nav.js. */
 @media screen and (max-width: 64em) {
+    /* TECH59-2026-09-20 : le nom du médecin reste dans l'en-tête quand le texte
+       agrandi passe sur plusieurs lignes. Hauteur normale conservée à 76 px. */
+    .header-inner {
+        height: auto;
+        min-height: 76px;
+        padding-block: 10px;
+    }
     body.menu-open header.site-header {
         -webkit-backdrop-filter: none;
         backdrop-filter: none;
     }
+}
+@media screen and (max-width: 64em) and (max-height: 20em) {
+    /* Laisser une ligne utilisable dans le tiroir des fenêtres très basses. */
+    body.menu-open header.site-header nav.main-nav { padding-block: 8px; }
 }

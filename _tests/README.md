@@ -395,3 +395,7 @@ Depuis le tour 58 (20/09/2026), `navigation.mjs` vérifie aussi les tableaux apr
 agrandissement du texte sans redimensionner la fenêtre : accès au clavier, défilement
 avec la flèche droite, puis retrait de l’arrêt clavier supplémentaire lorsque le tableau
 tient de nouveau. Les pages Amblyopie et Myopie couvrent deux largeurs différentes.
+
+Depuis le tour 59 (20/09/2026), trois scénarios supplémentaires contrôlent le nom du
+médecin dans son en-tête avec une police de 32 px, puis l’arrivée du sommaire sous cet
+en-tête, à 320, 375 et 683 px. L’espace de lecture suit sa hauteur réelle.

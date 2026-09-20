@@ -145,6 +145,7 @@ try {
   // TECH32-2026-09-20 : le menu respecte l’espace visible, avec fort zoom et transparence réduite.
   for (const profile of [
     { width: 320, height: 256, transparency: false, font: 16 },
+    { width: 320, height: 256, transparency: false, font: 32 },
     { width: 375, height: 667, transparency: true, font: 16 },
     { width: 375, height: 667, transparency: false, font: 16 },
     { width: 683, height: 450, transparency: true, font: 32 },
@@ -184,6 +185,26 @@ try {
       assert.equal(await page.locator('main').evaluate(element => element.inert), false);
     });
   }
+  // TECH59-2026-09-20 : le nom agrandi reste dans l'en-tête et les ancres arrivent en dessous.
+  for (const width of [320, 375, 683]) {
+    await scenario(`en-tête et sommaire à ${width} px avec texte agrandi`, width, async (page, context) => {
+      const cdp = await context.newCDPSession(page);
+      await cdp.send('Page.setFontSizes', { fontSizes: { standard: 32, fixed: 26 } });
+      await page.waitForFunction(() => {
+        const header = document.querySelector('.site-header').getBoundingClientRect();
+        const name = document.querySelector('.site-logo').getBoundingClientRect();
+        return name.top >= header.top && name.bottom <= header.bottom;
+      }, undefined, { timeout: 2000 });
+      await page.locator('.toc a').first().focus();
+      await page.keyboard.press('Enter');
+      await page.waitForFunction(() => {
+        const target = document.querySelector(location.hash);
+        return target && target.getBoundingClientRect().top >= document.querySelector('.site-header').getBoundingClientRect().bottom + 8;
+      }, undefined, { timeout: 2000 });
+      assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    }, 'amblyopie');
+  }
+
   // TECH58-2026-09-20 : agrandir le texte après chargement, sans redimensionner la fenêtre.
   for (const profile of [{ slug: 'amblyopie', width: 375 }, { slug: 'myopie', width: 683 }]) {
     await scenario(`tableau ${profile.slug} : texte agrandi puis rétabli`, profile.width, async (page, context) => {
