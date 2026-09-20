@@ -1568,7 +1568,7 @@ Le vitré est un **gel transparent** composé à 98 % d’eau, de fibres de coll
 
 - **Tirer sur la rétine** (tractions vitréo-rétiniennes) : déchirures, trous maculaires.
 - **Former des membranes** qui déforment la rétine (membranes épirétiniennes).
-- Être **opacifié** par du sang (hémorragie intravitréenne) ou par de l’inflammation (vitrites, endophtalmies).
+- Être **opacifié** par du sang ([hémorragie intravitréenne](https://docteurmajoulet.com/hemorragie-intravitreenne)) ou par de l’inflammation (vitrites, endophtalmies).
 - Permettre la **migration de cellules** qui forment des néovaisseaux ou des tractions (rétinopathie diabétique).
 
 #### Indications principales de la vitrectomie
@@ -2292,7 +2292,7 @@ Chez le patient opéré de la cataracte, on distingue la luxation de l’**impla
 - la **myopie forte** ;
 - certains **antécédents chirurgicaux** (vitrectomie, chirurgie de cataracte complexe) ;
 - plus rarement, des **maladies du tissu élastique** comme le syndrome de Marfan ou l’homocystinurie, à évoquer chez un sujet jeune avec une atteinte des deux yeux ;
-- une **uvéite chronique** ou une **rétinite pigmentaire** peuvent également fragiliser la zonule.
+- une **uvéite chronique** ou une **[rétinite pigmentaire](https://docteurmajoulet.com/retinite-pigmentaire)** peuvent également fragiliser la zonule.
 
 #### Quels symptômes ?
 
@@ -3596,7 +3596,7 @@ La **rétinopathie diabétique** est une atteinte des **petits vaisseaux de la r
 L’hyperglycémie chronique altère progressivement la paroi des capillaires rétiniens. Deux mécanismes se combinent :
 
 - Une **hyperperméabilité capillaire** responsable de fuites (exsudats, œdème rétinien, **œdème maculaire diabétique**).
-- Une **occlusion capillaire** progressive, responsable d’une **ischémie rétinienne**. Pour compenser, la rétine fabrique des **facteurs de croissance (VEGF)** qui stimulent la croissance de **néovaisseaux** anormaux. Ces néovaisseaux sont fragiles et peuvent saigner (hémorragie intravitréenne) ou entraîner un décollement de rétine par traction.
+- Une **occlusion capillaire** progressive, responsable d’une **ischémie rétinienne**. Pour compenser, la rétine fabrique des **facteurs de croissance (VEGF)** qui stimulent la croissance de **néovaisseaux** anormaux. Ces néovaisseaux sont fragiles et peuvent saigner ([hémorragie intravitréenne](https://docteurmajoulet.com/hemorragie-intravitreenne)) ou entraîner un décollement de rétine par traction.
 
 #### Classification de la rétinopathie diabétique
 
@@ -3949,7 +3949,7 @@ Toute **uvéite chronique**, notamment intermédiaire et postérieure, peut se c
 
 ##### Autres causes
 
-Rétinites pigmentaires (OMC dans 10 à 50 % des cas selon les études), traction vitréomaculaire ou [membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne), vasculopathies rétiniennes, post-chirurgie vitréo-rétinienne (vitrectomie, chirurgie de décollement).
+[Rétinites pigmentaires](https://docteurmajoulet.com/retinite-pigmentaire) (OMC dans 10 à 50 % des cas selon les études), traction vitréomaculaire ou [membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne), vasculopathies rétiniennes, post-chirurgie vitréo-rétinienne (vitrectomie, chirurgie de décollement).
 
 #### Quels sont les symptômes ?
 
