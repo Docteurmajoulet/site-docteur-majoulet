@@ -13,7 +13,7 @@ Vérifie en quelques secondes ce qui casse silencieusement entre deux lots :
   - sécurité : un seul script inline (celui autorisé par la CSP), dont le hash sha256 est bien celui
     déclaré dans _headers ; aucun autre <script> inline ; nav.js et main.css référencés avec le même
     ?v= sur toutes les pages, fichiers présents ;
-  - _redirects : cibles internes existantes, règles forcées (« ! ») quand le chemin existe ; sitemap : lastmod valides ; security.txt non expiré ;
+  - _redirects : cibles internes et rubriques existantes, règles forcées (« ! ») quand le chemin existe ; sitemap : lastmod valides ; security.txt non expiré ;
   - JSON-LD conforme au vocabulaire schema.org (_tests/schemaorg_vocab.json : @type connus, propriétés dans leur domaine,
     énumérations existantes) ;
   - dates : révision affichée = lastReviewed, mise à jour affichée = dateModified (en <time datetime>), dateModified présent et
@@ -25,6 +25,8 @@ Sortie : liste des erreurs (code 1) et des avertissements (code 0).
 import argparse, base64, datetime, glob, hashlib, html, json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); import faq_jsonld, schemaorg_vocab, llms_pages, llms_full   # TECH6H-2026-09-07, TECH9S-2026-09-12, TECH12AA-2026-09-12, TECH15AE-2026-09-14
 from html.parser import HTMLParser
+from urllib.parse import urljoin, urlsplit, unquote
+import xml.etree.ElementTree as ET
 from page_dates import check_visible_dates
 
 DOMAIN = 'https://docteurmajoulet.com'
@@ -37,7 +39,8 @@ class Page:
     """Extraction légère (regex + HTMLParser) d'une page."""
     def __init__(self, path):
         self.path = path; self.name = os.path.basename(path); self.slug = self.name[:-5]
-        self.txt = open(path, encoding='utf-8').read()
+        with open(path, encoding='utf-8') as source:
+            self.txt = source.read()
         self.ids, self.tags, self.headings, self.links, self.imgs, self.scripts = set(), [], [], [], [], []
         self.dup_ids = set()
         p = _Parser(self); p.feed(self.txt)
@@ -81,6 +84,53 @@ def text_only(t):
     t = re.sub(r'<!--.*?-->', ' ', t, flags=re.S)
     t = re.sub(r'<[^>]+>', ' ', t)
     return re.sub(r'\s+', ' ', html.unescape(t))
+
+
+def check_redirects(root, pages):
+    """Contrôle les destinations et les rubriques sans tronquer les fragments d’URL."""
+    errs = []
+    E = lambda message: errs.append(message)
+    exists = lambda rel: os.path.exists(os.path.join(root, rel.lstrip('/')))
+    # ---- redirections
+    redirects = {}
+    if exists('_redirects'):
+        with open(os.path.join(root, '_redirects'), encoding='utf-8') as source:
+            lines = source.readlines()
+        for line in lines:
+            # Le # d’une destination désigne une rubrique ; seul le début de ligne marque un commentaire.
+            line = line.strip()
+            if not line or line.startswith('#'): continue
+            parts = line.split()
+            if len(parts) >= 2:
+                redirects.setdefault(parts[0], (parts[1], parts[2] if len(parts) > 2 else '301'))
+            if len(parts) >= 2 and parts[1].startswith('/'):
+                destination = urlsplit(parts[1])
+                target = unquote(destination.path)
+                if target != '/' and not (exists(target) or exists(target + '.html') or exists(target.rstrip('/') + '/index.html')):
+                    E(f'_redirects : cible inexistante {parts[1]}')
+                elif destination.fragment:
+                    name = target.lstrip('/') or 'index.html'
+                    candidates = (name, name + '.html', name.rstrip('/') + '/index.html')
+                    page = next((pages[n] for n in candidates if n in pages), None)
+                    if page is not None and unquote(destination.fragment) not in page.ids:
+                        E(f'_redirects : rubrique inexistante {parts[1]} (depuis {parts[0]})')
+            if len(parts) >= 2 and parts[0].startswith('/'):
+                # Netlify sert un fichier existant AVANT d'appliquer une règle non forcée : une règle qui vise un
+                # chemin présent dans le dépôt (/_tests/*, /x.html → /x) doit porter un « ! » sur le statut.
+                status = parts[2] if len(parts) > 2 else '301'
+                base = parts[0].split('*')[0].rstrip('/')
+                if base and (exists(base) or exists(base + '/index.html')) and not status.endswith('!'):
+                    E(f'_redirects : « {parts[0]} » vise un chemin présent dans le dépôt — Netlify servira le fichier et ignorera la règle (mettre {status}!)')
+
+    # Chaque fichier patient mène directement à son adresse canonique, même s’il existe sur disque.
+    # La page d’erreur doit rester disponible telle quelle pour Netlify.
+    for name, page in pages.items():
+        if name == '404.html': continue
+        target = page.pretty_url()[len(DOMAIN):]
+        if redirects.get('/' + name) not in ((target, '301!'), (target, '308!')):
+            E(f'_redirects : /{name} doit rediriger directement vers {target} (301! ou 308!)')
+
+    return errs
 
 
 def check(root):
@@ -151,34 +201,7 @@ def check(root):
     if not _lk: E('_headers : bloc /grille-amsler.pdf (Link rel=canonical vers sa page) absent')
     elif not exists(_lk.group(1) + '.html'): E(f'_headers : /grille-amsler.pdf canonique vers une page inexistante /{_lk.group(1)}')
 
-    # ---- redirections
-    redirects = {}
-    if exists('_redirects'):
-        for line in open(os.path.join(root, '_redirects'), encoding='utf-8'):
-            line = line.split('#')[0].strip()
-            if not line: continue
-            parts = line.split()
-            if len(parts) >= 2:
-                redirects.setdefault(parts[0], (parts[1], parts[2] if len(parts) > 2 else '301'))
-            if len(parts) >= 2 and parts[1].startswith('/'):
-                target = parts[1].split('#')[0].split('?')[0]
-                if target != '/' and not (exists(target) or exists(target + '.html') or exists(target.rstrip('/') + '/index.html')):
-                    E(f'_redirects : cible inexistante {parts[1]}')
-            if len(parts) >= 2 and parts[0].startswith('/'):
-                # Netlify sert un fichier existant AVANT d'appliquer une règle non forcée : une règle qui vise un
-                # chemin présent dans le dépôt (/_tests/*, /x.html → /x) doit porter un « ! » sur le statut.
-                status = parts[2] if len(parts) > 2 else '301'
-                base = parts[0].split('*')[0].rstrip('/')
-                if base and (exists(base) or exists(base + '/index.html')) and not status.endswith('!'):
-                    E(f'_redirects : « {parts[0]} » vise un chemin présent dans le dépôt — Netlify servira le fichier et ignorera la règle (mettre {status}!)')
-
-    # Chaque fichier patient mène directement à son adresse canonique, même s’il existe sur disque.
-    # La page d’erreur doit rester disponible telle quelle pour Netlify.
-    for name, page in pages.items():
-        if name == '404.html': continue
-        target = page.pretty_url()[len(DOMAIN):]
-        if redirects.get('/' + name) not in ((target, '301!'), (target, '308!')):
-            E(f'_redirects : /{name} doit rediriger directement vers {target} (301! ou 308!)')
+    errs.extend(check_redirects(root, pages))
 
     css_versions, js_versions, inline_hashes = {}, {}, {}
     slugs = {p.slug for p in pages.values()}
