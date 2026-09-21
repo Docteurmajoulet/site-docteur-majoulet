@@ -374,8 +374,8 @@ toutes les pages à 1 366 et 1 920 px : `node _tests/reading-check.mjs`.
 Depuis l’intégration du tour 23 au tour 24 (TECH24BT-2026-09-19), le nouveau design de la home reste la référence :
 les six cartes à cadre double, les pictogrammes de 40 px, l’accès rapide, la barre des points clés et les en-têtes éditoriaux
 sont conservés. Les descriptions des cartes passent à 1 rem ; le récit du parcours et les textes des pages piliers concernés
-à 1,05 rem, en conservant le premier paragraphe en chapô de 1,12 rem. Les boutons à pastille du hero précèdent la présentation
-dans le HTML ; le lien secondaire annonce « Les spécialités » et les qualifications répétées en pastilles sont retirées.
+à 1,05 rem, en conservant le premier paragraphe en chapô de 1,12 rem. Depuis la demande du 21/09/2026, les boutons à pastille du hero suivent les trois paragraphes
+de présentation dans le HTML et sur mobile, avant la note d’urgence ; le lien secondaire annonce « Les spécialités » et les qualifications répétées en pastilles sont retirées.
 Les trois pages piliers présentent leurs fiches liées en lignes, empilées sur téléphone. La note d’urgence garde son nouveau cadre.
 Les gardes du tour 24 continuent de vérifier les boutons, les cartes et les pictogrammes ; les corrections du compteur de
 lisibilité et du décodage des images dans les captures sont intégrées sans supprimer ces gardes.
@@ -399,3 +399,11 @@ tient de nouveau. Les pages Amblyopie et Myopie couvrent deux largeurs différen
 Depuis le tour 59 (20/09/2026), trois scénarios supplémentaires contrôlent le nom du
 médecin dans son en-tête avec une police de 32 px, puis l’arrivée du sommaire sous cet
 en-tête, à 320, 375 et 683 px. L’espace de lecture suit sa hauteur réelle.
+
+
+Depuis le 21/09/2026, les liens complémentaires des blocs de rendez-vous réservent
+44 px à l’écran : le lien de préparation ne recouvre plus le téléphone. À l’impression,
+les liens restent en ligne. La barre fixe de l’accueil reste disponible tant que le
+bouton de présentation n’est pas entièrement accessible entre l’en-tête et le bas
+de l’écran. Deux scénarios de navigation vérifient ces limites à 375 et 683 px, avec
+texte normal puis agrandi. Le contrôle navigateur suit aussi le nouvel ordre de l’accueil.

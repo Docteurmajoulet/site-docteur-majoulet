@@ -804,8 +804,8 @@ try {
     await ctx.close();
   }
   // TECH20AZ-2026-09-16 — barre fixe avant le contenu : à 390 px, sur /dmla, Tab depuis le bouton de menu donne « Appeler » puis
-  // « Prendre rendez-vous » puis un élément de <main> ; sur la home en haut de page (CTA du hero visible), la barre est visibility:
-  // hidden et n'est pas focalisable, puis redevient visible en bas de page.
+  // « Prendre rendez-vous » puis un élément de <main>. Même parcours sur la home : depuis le 21/09, son CTA suit le texte.
+  // Lorsque ce CTA est entièrement visible, la barre est masquée et non focalisable ; elle revient en bas de page.
   {
     const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
@@ -819,19 +819,17 @@ try {
         await page.focus('.mobile-toggle');
         const seq = [];
         for (let i = 0; i < 3; i++) { await page.keyboard.press('Tab'); seq.push(await page.evaluate(() => { const a = document.activeElement; return (a.className || '').toString().split(' ')[0] || a.tagName + (a.closest('main') ? ' (main)' : ''); })); }
-        const inBar = await page.evaluate(() => { const a = document.activeElement; return !!a.closest('.sticky-rdv'); });
-        if (slug === 'dmla') {
-          if (seq[0] !== 'sticky-tel' || seq[1] !== 'sticky-doctolib') failures.push(`${slug} @390 barre fixe — après le bouton de menu, Tab donne ${seq.slice(0, 2).join(' → ')} (attendu sticky-tel → sticky-doctolib)`);
-          const third = await page.evaluate(() => !!document.activeElement.closest('main'));
-          if (!third) failures.push(`${slug} @390 barre fixe — le 3e Tab après le menu n'est pas dans <main> (${seq[2]})`);
-        } else {
-          const st = await page.evaluate(() => ({ cls: document.body.classList.contains('hero-cta-visible'), vis: getComputedStyle(document.querySelector('.sticky-rdv')).visibility }));
-          if (!st.cls) failures.push(`${slug} @390 barre fixe — body.hero-cta-visible absent en haut de page (CTA du hero à l'écran)`);
-          else if (st.vis !== 'hidden') failures.push(`${slug} @390 barre fixe — barre hors écran mais visibility ${st.vis} (focalisable à l'aveugle)`);
-          if (seq.some(s => s.startsWith('sticky-'))) failures.push(`${slug} @390 barre fixe — la barre hors écran reçoit le focus (${seq.join(' → ')})`);
-          await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight)); await page.waitForTimeout(700);
-          const vis = await page.evaluate(() => getComputedStyle(document.querySelector('.sticky-rdv')).visibility);
-          if (vis !== 'visible') failures.push(`${slug} @390 barre fixe — barre toujours ${vis} en bas de page`);
+        if (seq[0] !== 'sticky-tel' || seq[1] !== 'sticky-doctolib') failures.push(`${slug} @390 barre fixe — après le bouton de menu, Tab donne ${seq.slice(0, 2).join(' → ')} (attendu sticky-tel → sticky-doctolib)`);
+        const third = await page.evaluate(() => !!document.activeElement.closest('main'));
+        if (!third) failures.push(`${slug} @390 barre fixe — le 3e Tab après le menu n'est pas dans <main> (${seq[2]})`);
+        if (slug === 'index') {
+          await page.locator('.hero-buttons .btn-primary').evaluate(a => a.scrollIntoView({ block: 'center', behavior: 'instant' }));
+          await page.waitForFunction(() => document.body.classList.contains('hero-cta-visible') && getComputedStyle(document.querySelector('.sticky-rdv')).visibility === 'hidden', undefined, { timeout: 2000 });
+          await page.locator('.mobile-toggle').evaluate(a => a.focus({ preventScroll: true }));
+          await page.keyboard.press('Tab');
+          if (await page.evaluate(() => !!document.activeElement.closest('.sticky-rdv'))) failures.push(`${slug} @390 barre fixe — la barre masquée reçoit le focus`);
+          await page.evaluate(() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'instant' }));
+          await page.waitForFunction(() => getComputedStyle(document.querySelector('.sticky-rdv')).visibility === 'visible', undefined, { timeout: 2000 });
         }
         loads++;
       } catch (e) { failures.push(`${slug} @390 barre fixe — ${String(e).slice(0, 160)}`); }

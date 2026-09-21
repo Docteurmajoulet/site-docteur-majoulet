@@ -98,6 +98,25 @@ try {
               assert.equal(await trigger.getAttribute('aria-expanded'), 'false');
             }
             if (slug === 'index') {
+              if (width === 375) {
+                // Le bouton du hero peut être recouvert par l’en-tête fixe sans sortir de la fenêtre.
+                for (const position of ['bas', 'centre', 'derriere-entete']) {
+                  await page.evaluate(position => {
+                    const button = document.querySelector('.hero-buttons .btn-primary').getBoundingClientRect();
+                    const header = document.querySelector('.site-header').getBoundingClientRect();
+                    const top = position === 'bas' ? innerHeight - 2 : position === 'centre' ? innerHeight / 2 : header.height - button.height - 2;
+                    window.scrollTo({ top: scrollY + button.top - top, behavior: 'instant' });
+                  }, position);
+                  await page.waitForFunction(hidden => document.body.classList.contains('hero-cta-visible') === hidden,
+                    position === 'centre', { timeout: 2000 });
+                  const selector = position === 'centre' ? '.hero-buttons .btn-primary' : '.sticky-doctolib';
+                  await page.waitForFunction(selector => {
+                    const button = document.querySelector(selector), r = button.getBoundingClientRect();
+                    const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+                    return r.height >= 44 && r.top >= 0 && r.bottom <= innerHeight && (hit === button || button.contains(hit));
+                  }, selector, { timeout: 2000 });
+                }
+              }
               // TECH55 : Google est bloqué par le test. L’attente doit laisser place au lien utile.
               const mapButton = page.locator('.map-facade-btn');
               await mapButton.scrollIntoViewIfNeeded();

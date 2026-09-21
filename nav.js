@@ -1,4 +1,5 @@
-/* nav.js — docteurmajoulet.com — TECH59-2026-09-20 (v13)
+/* nav.js — docteurmajoulet.com — TECH61-2026-09-21 (v14)
+   v14 : garder le rendez-vous accessible lorsque le bouton du hero passe derrière l’en-tête.
    v13 : décaler les ancres selon la hauteur réelle de l’en-tête, notamment avec texte agrandi.
    v12 : maintenir le défilement clavier des tableaux après un agrandissement du texte ou le chargement d’une police.
    v11 : après dix secondes sans réponse de la carte, signaler l’attente et laisser son lien externe disponible.
@@ -46,6 +47,10 @@
     var overlay = document.querySelector('.menu-overlay');
     var nav = document.querySelector('nav.main-nav');
     var header = document.querySelector('header.site-header');
+    var heroCta = document.querySelector('.hero-buttons .btn-primary');
+    var stickyRdv = document.querySelector('.sticky-rdv');
+    var heroObserver = null;
+    var heroMargin = '';
     var FOCUSABLE = 'a[href], button:not([disabled]), [tabindex]:not([tabindex="-1"])';
 
     function isDesktop() { return desktopMedia.matches; } // Même seuil en em que main.css.
@@ -232,6 +237,7 @@
             // Même marge de lecture de 19 px, y compris si le nom occupe plusieurs lignes.
             document.documentElement.style.setProperty('--header-scroll-space', Math.ceil(header.getBoundingClientRect().height) + 19 + 'px');
         }
+        observeHeroCta();
         var desktop = isDesktop();
         if (desktop !== wasDesktop) {
             var active = document.activeElement;
@@ -261,6 +267,7 @@
         var topbar = document.querySelector('.topbar');
         if (topbar) { layoutObserver.observe(topbar); }
         if (toggle) { layoutObserver.observe(toggle); }
+        if (stickyRdv) { layoutObserver.observe(stickyRdv); }
     }
 
     /* ---------- TECH4D-2026-09-06 : façade Google Maps (home) — l'iframe n'existe qu'après le clic ---------- */
@@ -327,15 +334,24 @@
         }
     }
 
-    /* ---------- Barre RDV fixe : masquée tant que le bouton RDV du hero est à l'écran ---------- */
-    var heroCta = document.querySelector('.hero-buttons .btn-primary');
-    if (heroCta && 'IntersectionObserver' in window) {
-        var io = new IntersectionObserver(function (entries) {
+    /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
+    function observeHeroCta() {
+        if (!heroCta || !('IntersectionObserver' in window)) { return; }
+        // L’observateur ne voit pas les éléments fixes qui recouvrent le bouton.
+        // Réserver leurs hauteurs évite aussi de masquer/afficher la barre en boucle.
+        var top = header ? Math.ceil(header.getBoundingClientRect().height) : 0;
+        var bottom = stickyRdv && window.getComputedStyle(stickyRdv).display !== 'none'
+            ? Math.ceil(stickyRdv.getBoundingClientRect().height) : 0;
+        var margin = '-' + top + 'px 0px -' + bottom + 'px 0px';
+        if (heroObserver && margin === heroMargin) { return; }
+        heroMargin = margin;
+        if (heroObserver) { heroObserver.disconnect(); }
+        body.classList.remove('hero-cta-visible');
+        heroObserver = new IntersectionObserver(function (entries) {
             entries.forEach(function (en) {
-                if (en.isIntersecting) { body.classList.add('hero-cta-visible'); }
-                else { body.classList.remove('hero-cta-visible'); }
+                body.classList.toggle('hero-cta-visible', en.isIntersecting && en.intersectionRatio >= 1);
             });
-        }, { threshold: 0.6 });
-        io.observe(heroCta);
+        }, { threshold: 1, rootMargin: margin });
+        heroObserver.observe(heroCta);
     }
 })();

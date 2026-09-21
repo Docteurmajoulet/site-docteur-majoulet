@@ -4412,12 +4412,12 @@ body.page-index .parcours-card {
     border-left: none;
     border: 1px solid var(--border);
 }
-/* Hero mobile et tablette portrait (≤ 900 px) : l'action avant la présentation */
+/* Hero mobile et tablette portrait (≤ 900 px) : présentation puis actions */
 @media (max-width: 56.25em) {
 body.page-index .hero-v3 h1 { order: 1; }
 body.page-index .hero-v3 .hero-subtitle { order: 2; }
-body.page-index .hero-v3 .hero-buttons { order: 3; margin: 6px 0 26px; }
-body.page-index .hero-v3 .hero-text { order: 4; }
+body.page-index .hero-v3 .hero-buttons { order: 4; margin: 6px 0 26px; }
+body.page-index .hero-v3 .hero-text { order: 3; }
 body.page-index .hero-v3 .hero-note { order: 5; }
 body.page-index .hero-v3 .hero-chips { order: 6; }
 }
@@ -4568,8 +4568,8 @@ nav.main-nav .drawer-horaires {
    Desktop : la colonne gagne ~72 px ; on en rend une partie
    (respirations du lockup et du bandeau resserrées de 4 à 20 px)
    pour garder le bouton RDV le plus haut possible à 1366×768.
-   Mobile : l'action reste en tête (ordre 3), la liste suit le
-   paragraphe (ordre 5 ; note 6, chips 7) ; bloc centré, lignes
+   Mobile : les actions suivent désormais les paragraphes (demande du
+   21/09/2026 ; note 6, chips 7) ; bloc centré, lignes
    alignées à gauche pour que les filets restent sur un même axe.
    ============================================================ */
 body.page-index .hero-v3 .hero-text {
@@ -5195,6 +5195,16 @@ article.pathology-content .cta-block .cta-alt {
     font-size: 0.9rem;
     color: rgba(249, 247, 242, 0.72);
     max-width: none;
+}
+/* À l’écran, les liens réservent leur zone tactile sans recouvrir leur voisin.
+   À l’impression, ils restent dans le texte sans hauteur de bouton. */
+@media screen {
+article.pathology-content .cta-block .cta-alt a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    max-width: 100%;
+}
 }
 article.pathology-content .cta-block .cta-alt a {
     color: var(--blanc-naturel);
@@ -7865,7 +7875,8 @@ a.hv-bezel:hover, .hv-btn:hover, .hv-btn:hover .hv-btn-ico, .hv-btn--ghost:hover
 
 /* TECH24BT-2026-09-19 — Intégration du tour 23 au nouveau design.
    Cartes, cadres doubles, en-têtes et pictogrammes du tour 24 conservés.
-   Action avant présentation, descriptions plus lisibles, fiches liées en lignes. */
+   Descriptions plus lisibles, fiches liées en lignes.
+   L’action suit la présentation depuis la demande du 21/09/2026. */
 body.page-index.page-index .hv-card p { font-size: 1rem; }
 body.page-index .parcours-recit p:not(.parcours-recherche),
 article.pathology-content .pillar-intro p,

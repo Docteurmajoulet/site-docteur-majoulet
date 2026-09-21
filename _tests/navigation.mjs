@@ -231,6 +231,33 @@ try {
       assert.equal(await focused(table), false, 'Tab permet de poursuivre la lecture');
     }, profile.slug);
   }
+  // TECH61-2026-09-21 : l’en-tête ne doit pas masquer le seul bouton de rendez-vous disponible.
+  for (const width of [375, 683]) {
+    await scenario(`rendez-vous accessible aux limites de l’écran à ${width} px`, width, async (page, context) => {
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const cdp = await context.newCDPSession(page);
+      for (const font of [16, 32]) {
+        await cdp.send('Page.setFontSizes', { fontSizes: { standard: font, fixed: font === 32 ? 26 : 13 } });
+        await page.waitForFunction(font => getComputedStyle(document.documentElement).fontSize === font + 'px', font, { timeout: 2000 });
+        await page.evaluate(() => new Promise(resolve => requestAnimationFrame(() => requestAnimationFrame(resolve))));
+        for (const position of ['bas', 'centre', 'derriere-entete']) {
+          await page.evaluate(position => {
+            const button = document.querySelector('.hero-buttons .btn-primary').getBoundingClientRect();
+            const header = document.querySelector('.site-header').getBoundingClientRect();
+            const top = position === 'bas' ? innerHeight - 2 : position === 'centre' ? innerHeight / 2 : header.height - button.height - 2;
+            window.scrollTo({ top: scrollY + button.top - top, behavior: 'instant' });
+          }, position);
+          await page.waitForFunction(hidden => document.body.classList.contains('hero-cta-visible') === hidden, position === 'centre', { timeout: 2000 });
+          const selector = position === 'centre' ? '.hero-buttons .btn-primary' : '.sticky-doctolib';
+          await page.waitForFunction(selector => {
+            const button = document.querySelector(selector), r = button.getBoundingClientRect();
+            const hit = document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2);
+            return r.height >= 44 && r.top >= 0 && r.bottom <= innerHeight && (hit === button || button.contains(hit));
+          }, selector, { timeout: 2000 });
+        }
+      }
+    });
+  }
 } finally {
   if (browser) await browser.close();
   stop();
