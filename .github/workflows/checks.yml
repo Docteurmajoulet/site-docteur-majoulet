@@ -48,7 +48,7 @@ jobs:
       - name: Lighthouse mobile (4 pages clés)
         if: always()
         run: node lighthouse.mjs
-      - name: Rapports Lighthouse
+      - name: Rapports navigateur et Lighthouse
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
@@ -80,7 +80,9 @@ jobs:
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
         with:
           name: rapports-compatibilite
-          path: _tests/reports/compatibility.json
+          path: |
+            _tests/reports/compatibility.json
+            _tests/reports/schemas-*.json
           retention-days: 30
 
   html:
