@@ -33,7 +33,10 @@
   #   JSON-LD sont des données, pas des chargements) ; interest-cohort (FLoC, obsolète) retiré de Permissions-Policy.
   # CSP-2026-08-25 : plus de 'unsafe-inline' pour les scripts. JS externe (/nav.js) + un seul script inline,
   #   identique sur toutes les pages et autorisé par son hash :
-  #   <script>document.documentElement.classList.add('js');</script>  → sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw=
+  #   Le petit script commun marque JS disponible et écoute en capture l’erreur de chargement de /nav.js.
+  #   Si ce fichier échoue, il réactive le menu CSS et masque le bouton de carte inactif.
+  #   Il doit rester dans la page pour fonctionner même quand le fichier externe est indisponible.
+  #   Empreinte du script exact, contrôlée sur les 48 pages : sha256-fs049vmQVmCO7MUlwG5IK2ojr6/9XGBZkCyCV//tj58=
   #   ⚠️ Ne pas modifier ce script inline (ni ajouter d'autre script inline) sans recalculer le hash ici,
   #   sinon le script est bloqué (le contenu reste visible : filet CSS pour les sections .fade-in de la home).
   #   Les blocs <script type="application/ld+json"> ne sont pas exécutés : hors champ de script-src.
@@ -43,7 +46,7 @@
   #   trusted-types 'none' : aucune politique ne peut être créée (le site n'en a besoin d'aucune : nav.js n'écrit jamais de HTML).
   #   Défense en profondeur contre les XSS par le DOM, en plus de la CSP sans 'unsafe-inline' ; ignoré par les navigateurs qui ne
   #   connaissent pas la directive. check_static.py refuse tout puits dans nav.js ; browser.mjs vérifie que l'interdiction s'applique.
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-/x7W7R75k8Roq0WaVRQX9blP4OufE5xbAdzklGxsgpw='; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none'
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'sha256-fs049vmQVmCO7MUlwG5IK2ojr6/9XGBZkCyCV//tj58='; style-src 'self'; font-src 'self'; img-src 'self' data:; frame-src https://www.google.com; connect-src 'self'; object-src 'none'; form-action 'self'; base-uri 'self'; frame-ancestors 'self'; upgrade-insecure-requests; require-trusted-types-for 'script'; trusted-types 'none'
   # TECH12Z-2026-09-12 : anticipation du clic — règles de préchargement des pages internes (Chrome/Edge ; ignoré ailleurs)
   Speculation-Rules: "/speculationrules.json"
 

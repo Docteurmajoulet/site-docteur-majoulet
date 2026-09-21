@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-    <script>document.documentElement.classList.add('js');</script>
+    <script>document.documentElement.classList.add('js');document.addEventListener('error',function(e){var s=e.target;if(s.tagName==='SCRIPT'&&(s.getAttribute('src')||'').split('?')[0]==='/nav.js'){document.documentElement.classList.remove('js');}},true);</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->

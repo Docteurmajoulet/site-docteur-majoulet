@@ -43,6 +43,8 @@ jobs:
         run: npm run test:server
       - name: Navigation (clavier, souris, tiroir et changement de format)
         run: node navigation.mjs
+      - name: Navigation lorsque son script est indisponible
+        run: npm run test:nav-fallback
       - name: Tests navigateur (48 pages × 4 largeurs)
         run: node browser.mjs
       - name: Lighthouse mobile (4 pages clés)
@@ -75,6 +77,8 @@ jobs:
       - run: npx playwright install --with-deps firefox webkit
       - name: Parcours essentiels sous la CSP du site
         run: npm run test:compatibility
+      - name: Navigation de secours sous Firefox et WebKit
+        run: node nav-fallback.mjs --browsers firefox,webkit
       - name: Résultats de compatibilité
         if: always()
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
@@ -83,6 +87,7 @@ jobs:
           path: |
             _tests/reports/compatibility.json
             _tests/reports/schemas-*.json
+            _tests/reports/nav-fallback-*.json
           retention-days: 30
 
   html:
