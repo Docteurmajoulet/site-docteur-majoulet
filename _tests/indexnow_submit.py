@@ -67,14 +67,22 @@ def fetch(url, timeout=20):
 
 
 def latest_blob(html_name, remote='origin', branch='main'):
-    """TECH22BI-2026-09-17 — empreinte de la page telle que la branche distante la porte à cet instant (git fetch puis git show) :
-    c'est cette version que Netlify finit par servir quand plusieurs pushs se suivent. None si la page n'y est plus (supprimée
-    par un push suivant) ; '' si la branche distante est inconnue (dépôt sans remote : on ne compare qu'au commit signalé)."""
-    subprocess.run(['git', 'fetch', '-q', remote, branch], cwd=ROOT, capture_output=True)
-    r = subprocess.run(['git', 'show', f'{remote}/{branch}:' + html_name], cwd=ROOT, capture_output=True)
-    if r.returncode == 0: return hashlib.sha256(r.stdout).hexdigest()
-    err = r.stderr.decode('utf-8', 'replace')
-    return '' if 'invalid object name' in err or 'unknown revision' in err or 'bad revision' in err else None
+    """Empreinte après synchronisation réussie ; None si la page est confirmée absente.
+    Une lecture ou synchronisation impossible retourne '' : seule la version locale attendue
+    peut alors valider la production, jamais une ancienne référence distante en cache."""
+    try:
+        synced = subprocess.run(['git', 'fetch', '-q', remote, branch], cwd=ROOT, capture_output=True, timeout=20)
+        if synced.returncode != 0: return ''
+        ref = f'{remote}/{branch}'
+        blob = subprocess.run(['git', 'show', f'{remote}/{branch}:' + html_name], cwd=ROOT, capture_output=True, timeout=20)
+        if blob.returncode == 0: return hashlib.sha256(blob.stdout).hexdigest()
+        # Une erreur de lecture n’est pas une preuve de suppression. Vérifier l’arbre
+        # évite aussi de dépendre de la langue des messages d’erreur de Git.
+        tree = subprocess.run(['git', 'ls-tree', '--name-only', ref, '--', html_name],
+                              cwd=ROOT, capture_output=True, timeout=20)
+        return None if tree.returncode == 0 and not tree.stdout.strip() else ''
+    except (OSError, subprocess.TimeoutExpired):
+        return ''
 
 
 def wait_for_prod(site, html_name, minutes=6):
