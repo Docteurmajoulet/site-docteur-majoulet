@@ -152,11 +152,14 @@ def check(root):
     elif not exists(_lk.group(1) + '.html'): E(f'_headers : /grille-amsler.pdf canonique vers une page inexistante /{_lk.group(1)}')
 
     # ---- redirections
+    redirects = {}
     if exists('_redirects'):
         for line in open(os.path.join(root, '_redirects'), encoding='utf-8'):
             line = line.split('#')[0].strip()
             if not line: continue
             parts = line.split()
+            if len(parts) >= 2:
+                redirects.setdefault(parts[0], (parts[1], parts[2] if len(parts) > 2 else '301'))
             if len(parts) >= 2 and parts[1].startswith('/'):
                 target = parts[1].split('#')[0].split('?')[0]
                 if target != '/' and not (exists(target) or exists(target + '.html') or exists(target.rstrip('/') + '/index.html')):
@@ -168,6 +171,14 @@ def check(root):
                 base = parts[0].split('*')[0].rstrip('/')
                 if base and (exists(base) or exists(base + '/index.html')) and not status.endswith('!'):
                     E(f'_redirects : « {parts[0]} » vise un chemin présent dans le dépôt — Netlify servira le fichier et ignorera la règle (mettre {status}!)')
+
+    # Chaque fichier patient mène directement à son adresse canonique, même s’il existe sur disque.
+    # La page d’erreur doit rester disponible telle quelle pour Netlify.
+    for name, page in pages.items():
+        if name == '404.html': continue
+        target = page.pretty_url()[len(DOMAIN):]
+        if redirects.get('/' + name) not in ((target, '301!'), (target, '308!')):
+            E(f'_redirects : /{name} doit rediriger directement vers {target} (301! ou 308!)')
 
     css_versions, js_versions, inline_hashes = {}, {}, {}
     slugs = {p.slug for p in pages.values()}

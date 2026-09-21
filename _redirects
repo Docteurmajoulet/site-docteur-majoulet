@@ -45,6 +45,7 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /secheresse-oculaire.html                /secheresse-oculaire   301!
 /uveites.html                            /pathologies#uveites   301!
 /vitrectomie.html                /vitrectomie                301!
+/luxation-cristallin-implant.html /luxation-cristallin-implant 301!
 /injection-intravitreenne.html   /injection-intravitreenne   301!
 /keratocone.html                 /publications                 301!
 /decollement-posterieur-vitre.html  /decollement-posterieur-vitre  301!
@@ -88,6 +89,7 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 # Batch 5 (2026-04-19) : 16 fiches de transition (bio + contact + 14 chirurgies) :
 /le-dr-majoulet.html                     /le-dr-majoulet                     301!
 /contact.html                            /contact                            301!
+/ophtalmologue-boulogne-billancourt.html /ophtalmologue-boulogne-billancourt 301!
 /implants-monofocaux.html                /implants-monofocaux                301!
 /implants-toriques.html                  /implants-toriques                  301!
 /implants-multifocaux.html               /implants-multifocaux               301!
