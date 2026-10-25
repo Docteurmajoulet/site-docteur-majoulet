@@ -424,3 +424,11 @@ Depuis le tour 67 (TECH67BX-2026-09-21), tous les jobs des trois workflows tourn
 `check_static.py` refuse `ubuntu-latest`, ainsi qu'une action officielle non épinglée par empreinte ou antérieure à la v5 (Node 20) —
 les actions v7 épinglées datent du 21/09 (bc89028). Pour changer d'image : essayer `ubuntu-26.04` sur une branche (workflow_dispatch),
 puis relever les trois fichiers. Un push qui modifie `.github/workflows/` exige un jeton GitHub avec le scope `workflow`.
+
+Depuis le tour 67 (TECH67BY-2026-09-21), `main.css` ne contient plus de classe morte : 86 sélecteurs (70 règles entières, une liste `:is()` allégée, 9 blocs
+`@media` vidés, 8 commentaires devenus orphelins, ≈ 10 Ko) ont été retirés — la home d'avant le tour 24 (`.trust-card*`, `.usp*`,
+`.specialty-card*`, `.specialties-grid`, `.hero-chips`, `.hero-tag`, `.section-header`, `.hero-cta`, `.tc-call`), le bloc « à venir » de
+/publications (`.placeholder-block`) et trois sélecteurs sans page correspondante ; 96 captures (48 pages × 390/1 366 px) identiques
+au pixel avant/après. `check_static.py` refuse désormais toute classe d'un sélecteur de `main.css` absente des attributs `class` des
+pages, de `nav.js` et du script en ligne. Conservés bien que sans correspondance au chargement : `html:not(.js) …` (sans JavaScript),
+les règles d'`iframe` (carte créée au clic), `.mega-list a.external` (variante du menu), `figure` à l'impression.

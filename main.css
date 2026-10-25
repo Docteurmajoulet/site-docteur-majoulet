@@ -118,34 +118,8 @@
 @media (max-width: 35em) {
 .tb-plus { display: none; }
 }
-/* --- Chips hero --- */
-.hero-chips { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 20px; }
-.hero-chips .hero-tag { margin-bottom: 0; }
 /* --- Note sous les boutons hero --- */
 .hero-note { font-size: 0.8rem; color: var(--text-muted); font-weight: 400; margin: -22px 0 34px; }
-/* --- Trust cards (home) --- */
-.trust-section { background: var(--blanc-naturel); padding: 0 0 56px; }
-.trust-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
-.trust-card { display: block; background: var(--blanc); border: 1px solid var(--border); border-radius: var(--radius); padding: 20px 24px; text-decoration: none; transition: all 0.25s; }
-@media (hover: hover) {
-.trust-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); }
-}
-.trust-card .tc-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
-.trust-card .tc-text { font-size: 0.85rem; color: var(--text-muted); font-weight: 400; line-height: 1.5; }
-.trust-card.urgence { background: var(--alerte-fond); border-color: var(--alerte-bordure); }
-.trust-card.urgence .tc-title, .trust-card.urgence .tc-text { color: var(--alerte-texte); }
-@media (max-width: 53.75em) {
-.trust-cards { grid-template-columns: minmax(0, 1fr); }
-}
-/* --- Rangée USP (home) --- */
-.usp-section { background: var(--blanc); padding: 52px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-.usp-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; text-align: center; }
-.usp-check { width: 40px; height: 40px; margin: 0 auto 12px; border-radius: 50%; background: var(--sable-light); color: var(--prusse); font-weight: 700; display: flex; align-items: center; justify-content: center; }
-.usp .usp-title { font-size: 0.82rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: var(--prusse); margin-bottom: 4px; }
-.usp .usp-text { font-size: 0.82rem; color: var(--text-muted); font-weight: 400; }
-@media (max-width: 53.75em) {
-.usp-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
-}
 /* --- Cartes implants (fiche cataracte) --- */
 .implant-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin: 26px 0 34px; }
 .implant-card { display: block; background: var(--blanc-naturel); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 22px 18px; text-decoration: none; transition: all 0.25s; }
@@ -298,19 +272,6 @@ body.v26 {
     justify-content: center;
     padding: 60px 60px 60px 0;
 }
-:where(body.page-index) .hero-tag {
-    display: inline-block;
-    padding: 6px 16px;
-    border: 1px solid var(--bleu-gris);
-    color: var(--bleu-gris);
-    border-radius: 50px;
-    font-size: 0.72rem;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    width: fit-content;
-}
 :where(body.page-index) .hero h1 {
     font-size: 2.6rem;
     font-weight: 700;
@@ -402,38 +363,8 @@ body.v26 {
 :where(body.page-index) section {
     padding: 90px 0;
 }
-:where(body.page-index) .section-header {
-    text-align: center;
-    max-width: 650px;
-    margin: 0 auto 56px;
-}
-:where(body.page-index) .section-header p {
-    color: var(--text-muted);
-    font-size: 0.98rem;
-    margin-top: 12px;
-    font-weight: 300;
-}
 :where(body.page-index) #specialites {
     background: var(--blanc);
-}
-:where(body.page-index) .specialties-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-}
-:where(body.page-index) .specialty-card {
-    background: var(--blanc-naturel);
-    border-radius: var(--radius);
-    padding: 36px 28px;
-    border: 1px solid var(--border);
-    transition: all 0.3s;
-}
-@media (hover: hover) {
-:where(body.page-index) .specialty-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
-    border-color: var(--bleu-gris);
-}
 }
 :where(body.page-index) .specialty-icon {
     width: 64px;
@@ -450,18 +381,6 @@ body.v26 {
     width: 40px;
     height: 40px;
     object-fit: contain;
-}
-:where(body.page-index) .specialty-card h3 {
-    margin-bottom: 10px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
-}
-:where(body.page-index) .specialty-card p {
-    color: var(--text-muted);
-    font-size: 0.88rem;
-    line-height: 1.65;
-    font-weight: 400;
 }
 :where(body.page-index) #parcours {
     background: var(--blanc-naturel);
@@ -557,9 +476,6 @@ body.v26 {
 }
 :where(body.page-index) #contact h2 {
     color: var(--blanc-naturel);
-}
-:where(body.page-index) #contact .section-header p {
-    color: rgba(249,247,242,0.55);
 }
 :where(body.page-index) .contact-map {
     display: flex;
@@ -1527,7 +1443,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 :where(body.v5) footer.site-footer a {
     color: rgba(249,247,242,0.8);
 }
-:where(body.v16) .btn-primary:focus-visible, :where(body.v16) .btn-doctolib:focus-visible, :where(body.v16) .hero-cta:focus-visible, :where(body.v16) .nav-cta:focus-visible {
+:where(body.v16) .nav-cta:focus-visible {
     outline-color: var(--sable);
     outline-offset: 4px;
 }
@@ -1790,19 +1706,6 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     gap: 10px;
     flex-wrap: wrap;
 }
-:where(body.page-publications) .placeholder-block {
-    background: rgba(154,170,178,0.08);
-    border: 1px dashed var(--bleu-gris);
-    border-radius: var(--radius);
-    padding: 22px 26px;
-    text-align: center;
-}
-:where(body.page-publications) .placeholder-block p {
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    font-style: italic;
-    margin: 0;
-}
 :where(body.page-publications) .press-card {
     background: var(--blanc);
     border-left: 3px solid var(--bleu-gris);
@@ -1874,8 +1777,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--prusse);
 }
 }
-:where(body.page-glaucome) .expert-highlight,
-:where(body.page-vitrectomie) .expert-highlight {
+:where(body.page-glaucome) .expert-highlight {
     background: linear-gradient(135deg, rgba(191,178,151,0.18), rgba(154,170,178,0.10));
     border-left: 4px solid var(--sable);
     padding: 22px 26px;
@@ -2505,11 +2407,6 @@ body.m6.menu-open nav.main-nav {
 }
 }
 /* m7 : 1 pages */
-@media (max-width: 64em) {
-:where(body.m7) .specialties-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-}
 @media (max-width: 48em) {
 :where(body.m7) .hero-content {
     grid-template-columns: minmax(0, 1fr);
@@ -2518,10 +2415,6 @@ body.m6.menu-open nav.main-nav {
 }
 :where(body.m7) .hero-left {
     padding: 40px 0;
-}
-:where(body.m7) .hero-tag {
-    margin-left: auto;
-    margin-right: auto;
 }
 :where(body.m7) .hero-text {
     margin: 0 auto 36px;
@@ -2537,9 +2430,6 @@ body.m6.menu-open nav.main-nav {
 }
 :where(body.m7) .hero h1 {
     font-size: 2rem;
-}
-:where(body.m7) .specialties-grid {
-    grid-template-columns: minmax(0, 1fr);
 }
 }
 @media (max-width: 30em) {
@@ -3568,21 +3458,6 @@ body.page-index .hero-v3 .hero-note {
 body.page-index .hero-v3 .hero-note a {
     white-space: nowrap;
 }
-/* --- Chips : réassurance en pied de colonne, filet fin --- */
-body.page-index .hero-v3 .hero-chips {
-    margin: 0;
-    padding-top: 24px;
-    border-top: 1px solid rgba(191, 178, 151, 0.22);
-}
-body.page-index .hero-v3 .hero-tag {
-    border: 1px solid rgba(191, 178, 151, 0.38);
-    color: var(--sable-light);
-    background: transparent;
-    margin-bottom: 0;
-    font-size: 0.72rem;
-    letter-spacing: 0.13em;
-    padding: 6px 14px;
-}
 /* --- Portrait : fondu dans l'ardoise (prise de vue continue) --- */
 body.page-index .hero-v3 .hero-visual {
     position: relative;
@@ -3663,7 +3538,6 @@ body.page-index .hero-v3 .hero-subtitle { animation: heroRise 0.55s cubic-bezier
 body.page-index .hero-v3 .hero-text     { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.32s both; }
 body.page-index .hero-v3 .hero-buttons  { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.42s both; }
 body.page-index .hero-v3 .hero-note     { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.5s both; }
-body.page-index .hero-v3 .hero-chips    { animation: heroRise 0.55s cubic-bezier(0.16, 1, 0.3, 1) 0.56s both; }
 @media (prefers-reduced-motion: reduce) {
 body.page-index .hero-v3 .h1-name,
     body.page-index .hero-v3 .h1-major,
@@ -3672,7 +3546,6 @@ body.page-index .hero-v3 .h1-name,
     body.page-index .hero-v3 .hero-text,
     body.page-index .hero-v3 .hero-buttons,
     body.page-index .hero-v3 .hero-note,
-    body.page-index .hero-v3 .hero-chips,
     body.page-index .hero-v3 .hero-oct-path {
         animation: none;
     }
@@ -3748,9 +3621,6 @@ body.page-index .hero-v3 .hero-buttons {
 body.page-index .hero-v3 .hero-note {
         margin-bottom: 30px;
     }
-body.page-index .hero-v3 .hero-chips {
-        justify-content: center;
-    }
 body.page-index .hero-v3 .hero-oct {
         bottom: 8px;
         height: 40px;
@@ -3773,31 +3643,6 @@ body.page-index .hero-v3 .hero-left {
       doivent plus toucher le bandeau).
    4. Transition ciblée (plus de `all` : aucun glissement de position
       pendant chargement/reflow). */
-.trust-section {
-    padding: 64px 0 72px;
-}
-.trust-cards {
-    align-items: stretch;
-}
-.trust-card {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
-}
-.trust-card .tc-title {
-    line-height: 1.35;
-    min-height: 2.7em;
-    margin-bottom: 8px;
-}
-@media (max-width: 53.75em) {
-.trust-section {
-        padding: 44px 0 52px;
-    }
-.trust-card .tc-title {
-        min-height: 0;
-    }
-}
 /* ==============================================================
    ACCESSIBILITÉ — Contrastes WCAG 2.1 AA (lot du 20/08/2026)
    Audit Playwright sur les 51 pages x 2 viewports : 685 échecs -> 0.
@@ -4359,35 +4204,6 @@ h2.h-sub::after {
     flex: none;
     color: var(--ambre-urgence, #d98c2a);
 }
-/* USP : coche dessinée */
-.usp-check .ico {
-    width: 18px;
-    height: 18px;
-}
-/* Carte « RDV rapide » : surface neutre, pictogramme ambre, texte lisible */
-body.page-index .trust-card.urgence {
-    background: var(--blanc);
-    border-color: var(--border);
-}
-body.page-index .trust-card.urgence .tc-title {
-    color: var(--prusse);
-    display: flex;
-    align-items: flex-start;
-    gap: 8px;
-}
-body.page-index .trust-card.urgence .tc-title::before {
-    content: "";
-    width: 16px;
-    height: 16px;
-    flex: none;
-    margin-top: 1px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d98c2a' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13.5'/%3E%3Ccircle cx='12' cy='17' r='0.4'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-body.page-index .trust-card.urgence .tc-text {
-    color: var(--text-light);
-}
 /* CTA final de la home : geste unique cuivre */
 body.page-index .btn-doctolib {
     background: var(--cuivre-rdv);
@@ -4419,7 +4235,6 @@ body.page-index .hero-v3 .hero-subtitle { order: 2; }
 body.page-index .hero-v3 .hero-buttons { order: 4; margin: 6px 0 26px; }
 body.page-index .hero-v3 .hero-text { order: 3; }
 body.page-index .hero-v3 .hero-note { order: 5; }
-body.page-index .hero-v3 .hero-chips { order: 6; }
 }
 /* ============================================================
    CRAFT v8 — Lot Impeccable 4 (20/08/2026) : cartes cliquables,
@@ -4427,48 +4242,6 @@ body.page-index .hero-v3 .hero-chips { order: 6; }
    dérives de charte (lien sable, forme-box, qr-block, skip-link),
    garde-fous 320 px.
    ============================================================ */
-/* Cartes de spécialités = liens */
-body.page-index a.specialty-card {
-    display: flex;
-    flex-direction: column;
-    color: inherit;
-    text-decoration: none;
-}
-body.page-index a.specialty-card h3 {
-    color: var(--prusse);
-}
-body.page-index a.specialty-card p {
-    flex: 1 1 auto;
-}
-body.page-index .specialty-card .sc-more {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    margin-top: 18px;
-    font-size: 0.78rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--prusse);
-    transition: none;   /* TECH20AW-2026-09-16 : la flèche glisse par transform (ex-gap) */
-}
-body.page-index .specialty-card .sc-more .ico {
-    width: 16px;
-    height: 16px;
-    flex: none;
-}
-body.page-index a.specialty-card:focus-visible .sc-more {
-    gap: 10px;
-}
-@media (hover: hover) {
-body.page-index a.specialty-card:hover .sc-more {
-    gap: 10px;
-}
-}
-body.page-index a.specialty-card:focus-visible {
-    outline: 3px solid var(--prusse);
-    outline-offset: 3px;
-}
 /* Liens discrets (ex sable inline 2,1:1) */
 .link-quiet {
     display: inline-flex;
@@ -4593,7 +4366,6 @@ body.page-index .hero-v3 .hero-left {
 }
 @media (max-width: 56.25em) {
 body.page-index .hero-v3 .hero-note { order: 6; }
-body.page-index .hero-v3 .hero-chips { order: 7; }
 }
 /* ============================================================
    CRAFT v11 — Home, section « Formation & expérience » (20/08/2026 soir)
@@ -4606,9 +4378,6 @@ body.page-index .hero-v3 .hero-chips { order: 7; }
    d'où la flèche « En savoir plus » non dimensionnée en prod).
    Marqueur d'idempotence : PARCOURS-V11
    ============================================================ */
-body.page-index #parcours .section-header {
-    max-width: 760px;
-}
 body.page-index .parcours-v11 {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
@@ -4791,12 +4560,6 @@ body.page-index .pc-when {
    (orphelines, lot dette CSS).
    Marqueur d'idempotence : CONTACT-V12
    ============================================================ */
-body.page-index #contact .section-header {
-    margin-bottom: 44px;
-}
-body.page-index #contact .section-header p {
-    color: rgba(249, 247, 242, 0.66);
-}
 body.page-index .contact-v12 {
     display: grid;
     grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
@@ -5887,10 +5650,8 @@ html:not(.js) .mobile-toggle,
 /* --- Plancher typographique pour 55-85 ans (charte : label 0,8 rem) --- */
 body.page-index .pc-when,
 body.page-index .pr-group { font-size: 0.85rem; }
-body.page-index .hero-v3 .hero-tag { font-size: 0.8rem; letter-spacing: 0.1em; }
 .site-logo .logo-city { font-size: 0.8rem; }
 body.page-index .cv12-row dt { font-size: 0.8rem; }
-body.page-index .specialty-card .sc-more,
 body.page-index .parcours-more .sc-more { font-size: 0.8rem; }
 .topbar-urgence, .topbar-info { font-size: 0.8rem; }
 .key-fact-label { font-size: 0.8rem; }
@@ -5907,43 +5668,6 @@ body.page-index .hero-v3 .btn-outline {
 @media (max-width: 37.5em) {
 .alert-urgence .btn-alert-tel { flex-wrap: wrap; line-height: 1.3; }
 .alert-urgence .btn-alert-tel .num { display: inline; }
-}
-/* --- Home : carte « Urgence rétinienne » (div + titre-lien + pill d'appel) --- */
-body.page-index .trust-card.urgence a.tc-title {
-    text-decoration: none;
-    color: var(--prusse);
-}
-@media (hover: hover) {
-body.page-index .trust-card.urgence a.tc-title:hover { color: var(--prusse-light); }
-}
-body.page-index .trust-card.urgence .tc-call {
-    display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
-    min-height: 44px;
-    margin-top: 14px;
-    padding: 8px 16px;
-    border: 1px solid var(--border);
-    border-radius: 50px;
-    background: var(--blanc);
-    color: var(--prusse);
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    text-decoration: none;
-    white-space: nowrap;
-    transition: background 0.2s, border-color 0.2s;
-}
-body.page-index .trust-card.urgence .tc-call:focus-visible {
-    background: var(--blanc-naturel);
-    border-color: var(--sable);
-}
-@media (hover: hover) {
-body.page-index .trust-card.urgence .tc-call:hover {
-    background: var(--blanc-naturel);
-    border-color: var(--sable);
-}
 }
 /* --- Hub : survol du sommaire en sable, respirations resserrées --- */
 body.page-pathologies .hub-nav a:focus-visible { border-color: var(--sable); }
@@ -6275,7 +5999,6 @@ article.pathology-content .cta-line-link { margin-left: 0; }
 .site-logo,
 header.site-header .nav-cta,
 .topbar-info a,
-.trust-card.urgence .tc-title,
 .link-quiet,
 .parcours-more .sc-more,
 .cv12-link,
@@ -6291,7 +6014,6 @@ footer p a,
 .site-logo::after,
 header.site-header .nav-cta::after,
 .topbar-info a::after,
-.trust-card.urgence .tc-title::after,
 .link-quiet::after,
 .parcours-more .sc-more::after,
 .cv12-link::after,
@@ -6638,7 +6360,7 @@ article.pathology-content table.paliers col.c-pec { width: 28%; }
    forcée). Toujours aucun effet hors de ce mode.
    ============================================================ */
 @media (forced-colors: active) {
-    .btn-primary, .btn-doctolib, .nav-cta, .hero-cta,
+    .btn-primary, .btn-doctolib, .nav-cta,
     .btn-alert-tel, .sticky-rdv a, .btn-rdv {
         border: 2px solid currentColor;
     }
@@ -7003,11 +6725,10 @@ sup {
     main {
         overflow-wrap: anywhere;
     }
-    main :is(table, [class^="btn-"], [class*=" btn-"], .button, .external-btn, .related-link, .tc-call, .cta-line-link, .sc-more, .cv12-link, .cv12-btn-more, .map-facade-btn) {
+    main :is(table, [class^="btn-"], [class*=" btn-"], .button, .external-btn, .related-link, .cta-line-link, .sc-more, .cv12-link, .cv12-btn-more, .map-facade-btn) {
         overflow-wrap: normal;
     }
 }
-.trust-card > *,
 .key-fact > *,
 .implant-card > * {
     min-width: 0;
@@ -7015,7 +6736,6 @@ sup {
 /* Très petits écrans ou police très agrandie : les deux liens « nowrap » (bouton d'appel de la home,
    lien de fin de fiche) peuvent passer à la ligne au lieu de déborder (≤ 375 px à police normale). */
 @media (max-width: 23.4375em) {
-body.page-index .trust-card.urgence .tc-call,
 article.pathology-content .cta-line-link {
         white-space: normal;
     }
@@ -7083,15 +6803,11 @@ article.pathology-content .cta-line-link:hover {
 }
 /* Coordonnées de la home (carte sombre) : libellés et mentions à 0,8 d'opacité (7,4:1 ; ex-0,66-0,72 : 6,2-6,3:1) */
 body.page-index .cv12-row dt,
-body.page-index #contact .section-header p,
 body.page-index .cv12-muted,
 body.page-index .cv12-hours .cv12-closed,
 body.page-index .cv12-action-note,
 body.page-index .cv12-map-note a {
     color: rgba(249, 247, 242, 0.8);
-}
-body.page-publications .placeholder-block {
-    background: transparent;
 }
 /* TECH8P-2026-09-07 — survol collant au toucher : chaque règle :hover est dans un @media (hover: hover), à sa place. Aucune autre règle. */
 
@@ -7365,7 +7081,6 @@ body.page-publications .pub-summary,
 body.page-publications .pub-authors,
 body.page-publications .pub-journal,
 body.page-publications .press-summary,
-body.page-publications .placeholder-block p,
 body.page-publications .external-links p,
 article.pathology-content .cta-line,
 .alert-rouge :is(p, li),
@@ -7379,7 +7094,6 @@ article.pathology-content .travaux-ref,
     max-width: 42em;
 }
 header.page-header .tagline,
-body.page-publications .placeholder-block p,
 body.page-publications .external-links p {
     margin-inline: auto;
 }
@@ -7434,20 +7148,15 @@ body.page-publications .press-card {
     transform: translateX(4px);
 }
 }
-body.page-index .specialty-card .sc-more .ico,
 body.page-index .parcours-more .sc-more .ico,
 body.page-pathologies .hub-more .ico {
     transition: transform 0.2s;
 }
-body.page-index a.specialty-card:focus-visible .sc-more { gap: 6px; }
-body.page-index a.specialty-card:focus-visible .sc-more .ico { transform: translateX(4px); }
 body.page-index .parcours-more .sc-more:focus-visible { gap: 8px; }
 body.page-index .parcours-more .sc-more:focus-visible .ico { transform: translateX(4px); }
 body.page-pathologies a.hub-card:focus-visible .hub-more { gap: 6px; }
 body.page-pathologies a.hub-card:focus-visible .hub-more .ico { transform: translateX(4px); }
 @media (hover: hover) {
-body.page-index a.specialty-card:hover .sc-more { gap: 6px; }
-body.page-index a.specialty-card:hover .sc-more .ico { transform: translateX(4px); }
 body.page-index .parcours-more .sc-more:hover { gap: 8px; }
 body.page-index .parcours-more .sc-more:hover .ico { transform: translateX(4px); }
 body.page-pathologies a.hub-card:hover .hub-more { gap: 6px; }

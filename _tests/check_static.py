@@ -748,7 +748,7 @@ def check(root):
     # ---- TECH20AW-2026-09-16 : transitions sans propriété de mise en page — bloc présent une fois ; plus aucune transition de gap ni
     # de padding-left dans la feuille (le glissement des liens du méga-menu et des liens fléchés se fait par transform)
     _aw = css_txt.count('TECH20AW-2026-09-16')
-    if _aw < 5: E(f'main.css : marqueur TECH20AW attendu 5 fois (bloc + 4 déclarations réécrites), trouvé {_aw}')
+    if _aw < 4: E(f'main.css : marqueur TECH20AW attendu 4 fois (bloc + 3 déclarations réécrites ; la 4e, .specialty-card .sc-more, est partie avec la purge TECH67BY), trouvé {_aw}')
     for _bad in ('transition: gap', 'padding-left 0.15s', 'transition: padding', 'transition: margin', 'transition: width', 'transition: height'):
         if _bad in css_txt: E(f'main.css : « {_bad} » — transition d’une propriété de mise en page (reflow à chaque survol)')
     # ---- TECH20AX-2026-09-16 : colonne de lecture des fiches sur téléphone — le bloc existe une fois avec ses trois règles clés
@@ -963,6 +963,19 @@ def check(root):
             if not re.fullmatch(r'[0-9a-f]{40}', _ref): E(f'.github/workflows/{_wfn} : actions/{_act}@{_ref} n’est pas épinglée par empreinte (40 caractères + commentaire « # vN ») — TECH67BX')
             elif not _ver or int(_ver) < 5: E(f'.github/workflows/{_wfn} : actions/{_act} sans commentaire de version ou antérieure à la v5 (Node 20, retiré des exécuteurs) — TECH67BX')
         if re.search(r'runs-on:\s*ubuntu-latest', _wf67): E(f'.github/workflows/{_wfn} : exécuteur « ubuntu-latest » non figé — TECH67BX')
+    # ---- TECH67BY-2026-09-21 : aucune classe morte dans main.css — toute classe d'un sélecteur existe dans l'attribut class d'une page,
+    #      dans nav.js ou dans le script en ligne (classes posées par script : js, menu-open, is-open…) ; purge du 21/09 : 15 classes de la
+    #      home d'avant le tour 24 (.trust-card, .usp, .specialty-card, .hero-chips…) et du bloc « à venir » de /publications, 10 Ko
+    _css67by = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
+    _prev67 = None
+    while _prev67 != _css67by: _prev67 = _css67by; _css67by = re.sub(r'\{[^{}]*\}', ';', _css67by)   # ne restent que les sélecteurs et les préludes @
+    _cls_css67 = set(re.findall(r'\.(-?[_a-zA-Z][\w-]*)', _css67by))
+    _cls_html67 = set()
+    for pg in pages.values():
+        for _m in re.findall(r'\bclass="([^"]*)"', pg.txt): _cls_html67.update(_m.split())
+        for _m in re.findall(r'<script\b[^>]*>(.*?)</script>', pg.txt, re.S): _cls_html67.update(re.findall(r'[\w-]+', _m))
+    with open(os.path.join(root, 'nav.js'), encoding='utf-8') as _f: _cls_html67.update(re.findall(r'[\w-]+', _f.read()))
+    for _c in sorted(_cls_css67 - _cls_html67): E(f'main.css : classe « .{_c} » absente des pages et de nav.js (règle morte à retirer, ou faute de frappe) — TECH67BY')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
