@@ -1210,6 +1210,8 @@ En cas de **forme humide de DMLA nouvellement diagnostiquée** ou de récidive a
 5. **Injection** avec une aiguille 30G à 3,5-4 mm du limbe en pars plana, dans le quadrant temporal inférieur ou supérieur. Durée 1-2 minutes.
 6. **Contrôle de la perception lumineuse** immédiatement après.
 
+Une injection intravitréenne permet d’administrer un médicament dans le vitré, le gel transparent à l’intérieur de l’œil, au contact de la rétine. L’aiguille, ultra-fine, entre en arrière du limbe, en pars plana.
+
 ##### Après l’injection
 
 - Sensation de **sable, démangeaison, larmoiement** dans les heures qui suivent (liés à la Povidone iodée). Les **larmes artificielles** sont recommandées.
@@ -3646,6 +3648,8 @@ Apparition de **néovaisseaux** à la surface de la rétine ou de la papille. St
 
 Épaississement de la macula par accumulation de liquide et d’exsudats. Il peut survenir **à tous les stades** de la rétinopathie et constitue la **première cause de baisse visuelle** chez le patient diabétique. L’OCT maculaire en est l’examen clé.
 
+**Œdème maculaire diabétique.** Épaississement de la macula par accumulation de liquide et d’exsudats, à partir de capillaires qui fuient.
+
 #### Facteurs de risque et d’aggravation
 
 - **Ancienneté du diabète** (> 10 ans : risque très élevé, notamment dans le diabète de type 1).
@@ -3959,6 +3963,8 @@ Accumulation de liquide dans la macula — principale cause de baisse visuelle a
 
 L’**œdème maculaire cystoïde (OMC)** correspond à l’accumulation de liquide sous forme de **logettes cystoïdes** dans les différentes couches de la macula, zone centrale de la rétine responsable de la vision précise. Il résulte d’une **rupture de la barrière hémato-rétinienne** laissant diffuser des fluides à partir des vaisseaux rétiniens. L’OMC n’est pas une maladie en soi mais une **réaction rétinienne commune** à plusieurs situations cliniques — la plus classique étant la chirurgie de la cataracte (**syndrome d’Irvine-Gass**).
 
+**Œdème maculaire cystoïde.** Le liquide s’accumule sous forme de logettes dans les couches de la macula, qui s’épaissit.
+
 - **1-2 %** — Incidence du syndrome d’Irvine-Gass (cataracte simple)
 - **4-12 sem** — Délai typique après chirurgie
 - **OCT** — Examen de référence pour le diagnostic
@@ -4090,6 +4096,8 @@ La **choriorétinopathie séreuse centrale (CRSC)** est une maladie maculaire ca
 
 La rétine centrale (macula) repose sur l’**épithélium pigmentaire rétinien (EPR)**, lui-même nourri par la **choriocapillaire**. Dans la CRSC, un dysfonctionnement de la choriocapillaire et de l’EPR entraîne un **passage anormal de liquide sous la rétine** centrale : la rétine se décolle localement, comme une petite bulle, ce qui altère la vision. La CRSC appartient au spectre des **pachychoroïdopathies**, caractérisées par une choroïde anormalement épaissie visible en OCT-EDI.
 
+**Choriorétinopathie séreuse centrale.** Du liquide passe sous la rétine et la décolle localement au niveau de la macula ; la choroïde est anormalement épaissie.
+
 #### Facteurs favorisants
 
 - **Sexe masculin** (prédominance nette, ratio 4:1 à 8:1).
@@ -4215,6 +4223,8 @@ La **myopie forte** (ou myopie pathologique) est définie par une correction **s
 
 Dans la myopie, le globe oculaire est **trop long** : l’image nette se forme en avant de la rétine. Plus la myopie est forte, plus le globe est allongé et plus la rétine, la choroïde et la sclère sont étirées et amincies. Dans la myopie forte, des altérations structurelles se développent progressivement : **staphylome postérieur**, atrophie choriorétinienne, craquelures (« lacquer cracks »), qui fragilisent la rétine et ouvrent la voie à des complications.
 
+Dans la myopie, le globe oculaire est trop long : l’image nette se forme en avant de la rétine. Plus la myopie est forte, plus le globe est allongé et plus la rétine, la choroïde et la sclère sont étirées et amincies.
+
 #### Principales complications de la myopie forte
 
 ##### Staphylome postérieur
@@ -4323,6 +4333,8 @@ Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovasculari
 #### Qu’est-ce que la myopie forte ?
 
 La myopie est dite **forte** (ou « myopie pathologique ») lorsque la **longueur axiale** de l’œil dépasse **26,5 mm**, ou que l’équivalent sphérique est inférieur à **-6 dioptries**. L’allongement du globe étire mécaniquement la choroïde et la rétine, provoque un **staphylome postérieur** (déformation en cuvette du pôle postérieur), et fragilise la **membrane de Bruch**, fine couche qui sépare normalement la choroïde de l’épithélium pigmentaire. Des **ruptures linéaires** (« *lacquer cracks* ») apparaissent, par où des vaisseaux choroïdiens anormaux peuvent proliférer sous la rétine. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) pour l’ensemble des complications rétiniennes associées.
+
+**Néovaisseau du myope fort.** L’allongement du globe étire la choroïde et la rétine et fragilise la membrane de Bruch ; par ses ruptures, un vaisseau choroïdien anormal prolifère sous la rétine.
 
 #### Symptômes
 
