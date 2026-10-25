@@ -17,3 +17,8 @@ __pycache__/
 node_modules
 _tests/shots/
 _tests/reports/
+_tests/.npm-cache/
+
+# Claude Code (local) : config de session, skills copiés, notes privées — jamais poussés
+.claude/
+CLAUDE.local.md
