@@ -8102,3 +8102,8 @@ article.pathology-content .table-scroll {
 @media print {
     .schema, .schema-grille .schema-vignette { break-inside: avoid; }
 }
+
+/* TECH69E-2026-10-25 — « 24-48 h » ne se coupe plus au trait d'union (bandeau et intertitre du menu, sur téléphone) */
+.sans-coupure {
+    white-space: nowrap;
+}
