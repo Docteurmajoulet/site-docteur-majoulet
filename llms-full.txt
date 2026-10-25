@@ -260,7 +260,7 @@ Bilan annuel, mesure de la réfraction, dépistage du glaucome et des pathologie
 
 #### Publications scientifiques
 
-Le Dr Majoulet contribue régulièrement à la littérature ophtalmologique, avec une bibliographie indexée sur PubMed et sur son profil [ORCID 0000-0003-1116-1937](https://orcid.org/0000-0003-1116-1937). Ses travaux portent notamment sur la chirurgie vitréo-rétinienne, le glaucome et les innovations thérapeutiques en ophtalmologie, dans des revues telles que le *Journal Français d’Ophtalmologie* et *Graefe’s Archive for Clinical and Experimental Ophthalmology*. Il participe également à des communications lors des congrès de la Société Française d’Ophtalmologie (SFO).
+Le Dr Majoulet est auteur ou co-auteur de six articles indexés dans PubMed et recensés sur son profil [ORCID 0000-0003-1116-1937](https://orcid.org/0000-0003-1116-1937), publiés dans le *Journal Français d’Ophtalmologie*, le *Journal of Clinical Medicine* et *Documenta Ophthalmologica*. Ils portent sur la chirurgie du glaucome réfractaire, les endophtalmies après chirurgie de la cataracte, le frottement oculaire et la cécité corticale. Il participe également à des communications lors des congrès de la Société Française d’Ophtalmologie (SFO).
 
 [Consulter la bibliographie complète](https://docteurmajoulet.com/publications)
 
@@ -280,9 +280,9 @@ Le Dr Majoulet intervient ponctuellement dans les médias grand public pour des 
 
 ##### À propos de cette fiche
 
-Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), fondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
+Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), cofondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
 
-Dernière mise à jour : 19 septembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière mise à jour : 25 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Contact et rendez-vous
 
@@ -496,15 +496,15 @@ Une **urgence ophtalmologique** se définit par un risque de **perte visuelle ir
 
 | Signe | Conduite à tenir |
 |---|---|
-| Baisse brutale et indolore de la vision d’un œil | Urgence hospitalière (occlusion artérielle — OACR, neuropathie optique ischémique — NOIA, occlusion veineuse, DMLA exsudative, hémorragie) |
-| Voile noir ou rideau fixe dans le champ visuel | Urgence hospitalière (décollement de rétine) |
+| Baisse brutale et indolore de la vision d’un œil | Le jour même : aux heures d’ouverture, appelez le cabinet ([01 84 19 11 66](tel:+33184191166)) ; en dehors, urgences ophtalmologiques 24h/24. Si une occlusion de l’artère centrale de la rétine (OACR) est suspectée : rendez-vous en urgence au cabinet ou directement à la Fondation Rothschild. Causes possibles : OACR, neuropathie optique ischémique (NOIA), occlusion veineuse, DMLA exsudative, hémorragie. |
+| Voile noir ou rideau fixe dans le champ visuel | Le jour même : aux heures d’ouverture, appelez le cabinet ([01 84 19 11 66](tel:+33184191166)) ; en dehors, urgences ophtalmologiques 24h/24 (suspicion de décollement de rétine). |
 | Flashs lumineux ou corps flottants récents, sans voile noir ni baisse brutale de la vision | Consultation ophtalmologique dans les 24-48 h (fond d’œil dilaté) |
 | Œil rouge, douloureux, baisse de vision + nausées | Urgence hospitalière (glaucome aigu par fermeture d’angle) |
 | Traumatisme oculaire avec plaie pénétrante | Protection coque, à jeun, urgence chirurgicale |
 | Projection de produit chimique | Rinçage abondant > 15 min au sérum physiologique, puis urgence |
 | Corps étranger intra-oculaire suspecté | Urgence hospitalière (imagerie + chirurgie si confirmé) |
 | Céphalée brutale + troubles visuels + > 50 ans | Urgence (suspicion d’artérite à cellules géantes de Horton) |
-| Signes neurologiques (faiblesse, parole, face) + baisse de vision | Appel du 15 (AVC) |
+| Signes neurologiques (faiblesse, parole, face) + baisse de vision | Appel du [15](tel:15) (AVC) |
 
 #### Signes qui peuvent attendre une consultation programmée (48-72 h)
 
@@ -518,7 +518,7 @@ Une **urgence ophtalmologique** se définit par un risque de **perte visuelle ir
 
 ##### Services publics d’urgence ophtalmologique 24h/24 en Île-de-France
 
-- **Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts** — 28 rue de Charenton, Paris 12e · [01 40 02 15 20](tel:+33140021520). Référence nationale, tout motif ophtalmologique, 24h/24.
+- **Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts** — 28 rue de Charenton, Paris 12e · [01 40 02 16 80](tel:+33140021680). Référence nationale, tout motif ophtalmologique, 24h/24.
 - **Hôpital Fondation Adolphe de Rothschild** — 29 rue Manin, Paris 19e (entrée 27 rue Manin de 19 h à 7 h, week-ends et jours fériés) · [01 48 03 68 84](tel:+33148036884). Urgences ophtalmologiques et neuro-ophtalmologiques, 24h/24.
 - **OphtalmoPôle de Paris — Hôpital Cochin (AP-HP)** — 27 rue du Faubourg-Saint-Jacques, Paris 14e (entrée des urgences 8 rue Méchain) · [01 58 41 23 00](tel:+33158412300). Urgences ophtalmologiques, 24h/24.
 
@@ -546,17 +546,18 @@ Ne pas frotter. Rincer au sérum physiologique ou à l’eau claire. Si gêne pe
 
 | Délai | Situations |
 |---|---|
-| Appel 15 immédiat | Signe neurologique associé, céphalée en coup de tonnerre, plaie pénétrante, projection chimique grave |
+| Appel du [15](tel:15) immédiat | Signe neurologique associé, céphalée en coup de tonnerre, plaie pénétrante, projection chimique grave |
 | Immédiatement | Suspicion d’endophtalmie après une opération ou une injection : contacter immédiatement l’ophtalmologue ou se rendre aux urgences ophtalmologiques. |
 | < 6 h | Suspicion OACR, glaucome aigu, plaie oculaire, brûlure chimique |
-| < 24 h | Décollement de rétine débutant (voile), occlusion veineuse (OVCR), uvéite aiguë avec douleur, kératite sévère |
+| Le jour même | Voile noir ou rideau (décollement de rétine débutant) : le cabinet aux heures d’ouverture, sinon les urgences ophtalmologiques 24h/24 |
+| < 24 h | Occlusion veineuse (OVCR), uvéite aiguë avec douleur, kératite sévère |
 | 24-48 h | Flashs ou corps flottants récents, sans voile noir ni baisse brutale de la vision (fond d’œil dilaté) |
 | 24-72 h | Œil rouge modéré |
 | 1-2 semaines | Chalazion persistant, conjonctivite traînante, baisse visuelle modérée progressive |
 
 #### Questions fréquentes
 
-**Quand appeler le 15 (SAMU) plutôt que l’ophtalmologue :** traumatisme oculaire grave ou plaie pénétrante, projection chimique, perte brutale de la vision des deux yeux, ou baisse de vision accompagnée de signes neurologiques (trouble de la parole, faiblesse d’un membre, paralysie faciale, céphalée brutale inhabituelle). Un décollement de rétine, lui, relève d’un service d’urgences ophtalmologiques, pas du 15.
+**Quand appeler le [15](tel:15) (SAMU) plutôt que l’ophtalmologue :** traumatisme oculaire grave ou plaie pénétrante, projection chimique, perte brutale de la vision des deux yeux, ou baisse de vision accompagnée de signes neurologiques (trouble de la parole, faiblesse d’un membre, paralysie faciale, céphalée brutale inhabituelle). Un décollement de rétine, lui, relève d’un service d’urgences ophtalmologiques, pas du 15.
 
 ##### Dans quels cas faut-il appeler le 15 plutôt qu’un ophtalmologue ?
 
@@ -1186,7 +1187,7 @@ En cas de **forme humide de DMLA nouvellement diagnostiquée** ou de récidive a
 - Pas de piscine pendant 48 h, éviter le frottement.
 - La vision peut rester floue quelques heures.
 
-**Signes d’alerte après une IVT — consultation en urgence :** douleur oculaire **intense et croissante**, **baisse visuelle significative** (au-delà du flou des premières heures), **œil très rouge**, photophobie marquée. Ces signes peuvent évoquer une **endophtalmie**, rare mais grave, qui nécessite une prise en charge immédiate. Consultez au cabinet aux heures d’ouverture ; lorsque le cabinet est fermé, rendez-vous aux urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou [Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/), [01 40 02 15 20](tel:+33140021520)).
+**Signes d’alerte après une IVT — consultation en urgence :** douleur oculaire **intense et croissante**, **baisse visuelle significative** (au-delà du flou des premières heures), **œil très rouge**, photophobie marquée. Ces signes peuvent évoquer une **endophtalmie**, rare mais grave, qui nécessite une prise en charge immédiate. Consultez au cabinet aux heures d’ouverture ; lorsque le cabinet est fermé, rendez-vous aux urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou [Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/), [01 40 02 16 80](tel:+33140021680)).
 
 Information patient : [fiche de la Société Française d’Ophtalmologie sur les injections intravitréennes (PDF)](https://www.sfo-online.fr/sites/www.sfo-online.fr/files/medias/documents/65_Injection_intravitreenne_7sept14.pdf).
 
@@ -1206,7 +1207,7 @@ Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 i
 
 ##### Néovaisseaux choroïdiens myopiques (mCNV)
 
-Anti-VEGF en protocole *PRN* (1 à 3 injections dans la majorité des cas). Excellent pronostic si traitement précoce. Voir [Néovaisseaux liés à la myopie forte](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort).
+Anti-VEGF en protocole *PRN* (1 à 3 injections dans la majorité des cas). Un traitement précoce est important pour préserver la vision. Voir [Néovaisseaux liés à la myopie forte](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort).
 
 ##### Autres indications
 
@@ -1267,7 +1268,7 @@ Utilisé dans certains essais thérapeutiques ou chez des patients difficiles à
 
 ##### Vais-je voir l’aiguille venir ?
 
-Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre passagère, mais pas l’aiguille elle-même. De nombreux patients sont agréablement surpris par le côté très atténué du geste.
+Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre passagère, mais pas l’aiguille elle-même.
 
 ##### Combien de temps dure l’effet d’une injection d’anti-VEGF ?
 
@@ -1753,7 +1754,7 @@ Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urg
 
 Hors horaires — urgences hospitalières 24h/24
 
-- **CHNO des Quinze-Vingts** [01 40 02 15 20](tel:+33140021520) 28 rue de Charenton, Paris 12e
+- **CHNO des Quinze-Vingts** [01 40 02 16 80](tel:+33140021680) 28 rue de Charenton, Paris 12e
 - **Hôpital Fondation Rothschild** [01 48 03 68 84](tel:+33148036884) 29 rue Manin, Paris 19e (27 rue Manin la nuit et le week-end)
 - **Hôpital Cochin — OphtalmoPôle** [01 58 41 23 00](tel:+33158412300) 27 rue du Faubourg-Saint-Jacques, Paris 14e (entrée 8 rue Méchain)
 
@@ -2513,7 +2514,7 @@ Le vitré est un gel transparent qui remplit la cavité oculaire. Avec l’âge 
 - **Baisse d’acuité visuelle** rapide.
 - Symptômes après **traumatisme oculaire**.
 
-**Toute apparition d’un de ces signes impose une consultation en urgence** (moins de 24 h) avec fond d’œil dilaté.
+**Toute apparition d’un de ces signes impose une consultation en urgence** (le jour même) avec fond d’œil dilaté.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
 
@@ -2833,7 +2834,7 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 ##### Pratique de la chirurgie cataracte
 
-La phacoémulsification est une chirurgie extrêmement codifiée (HAS 2010, recommandations SFO). Le Dr Majoulet la pratique en technique standard, en salle ambulatoire équipée. Le taux de réussite est élevé (> 95 % de gain d’acuité significatif, registre EURETINA 2020), avec un taux de complications inférieur à 2 %.
+La phacoémulsification est une chirurgie extrêmement codifiée (HAS 2010, recommandations SFO). Le Dr Majoulet la pratique en technique standard, en salle ambulatoire équipée. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications graves sont rares.
 
 La discussion sur le choix de l’implant intègre systématiquement les compromis visuels potentiels (halos, éblouissement nocturne avec les multifocaux, besoin résiduel de lunettes avec les monofocaux) pour un consentement vraiment éclairé.
 
@@ -2898,7 +2899,6 @@ Le cristallin est une **lentille biconvexe transparente** située derrière l’
 
 - **~20 %** — Des plus de 65 ans
 - **~80 %** — Des plus de 85 ans
-- **> 95 %** — Succès fonctionnel de la chirurgie
 
 #### Principaux types de cataracte
 
@@ -2945,7 +2945,7 @@ L’implant est une lentille souple et permanente qui remplace le cristallin opa
 
 ##### Implant monofocal (remboursé)
 
-Donne une excellente vision à une distance unique, le plus souvent de loin. Des lunettes de lecture seront nécessaires après l’intervention. C’est le choix le plus sûr et le plus répandu, notamment en cas de pathologie rétinienne.
+Vise une vision nette à une distance unique, le plus souvent de loin. Des lunettes de lecture seront nécessaires après l’intervention. C’est le choix le plus sûr et le plus répandu, notamment en cas de pathologie rétinienne.
 
 ##### Implant torique
 
@@ -3008,9 +3008,9 @@ Les étapes sont :
 
 #### Risques et complications
 
-La chirurgie de la cataracte est très sûre (taux de succès > 95 %). Les complications restent rares :
+Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications graves sont rares :
 
-- **Endophtalmie** (infection intraoculaire) : 0,05 à 0,1 % — complication la plus grave, justifiant une asepsie chirurgicale rigoureuse et une injection intracamérulaire d’antibiotique en fin d’intervention.
+- **Endophtalmie** (infection intraoculaire) : de l’ordre de 2 à 3 cas pour 10 000 opérations, et 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts (étude ci-dessous) — complication la plus grave, justifiant une asepsie chirurgicale rigoureuse et une injection intracamérulaire d’antibiotique en fin d’intervention.
 - **Œdème maculaire post-opératoire** (syndrome d’Irvine-Gass) : 1 à 2 %, habituellement résolutif sous collyres.
 - **Rupture capsulaire per-opératoire** : 1 à 2 %.
 - **Décollement de rétine** : 0,5 à 1 %, plus fréquent chez le myope fort.
@@ -3035,7 +3035,7 @@ L’indication est posée sur le **retentissement fonctionnel** et non sur l’a
 
 ##### Quel implant choisir : monofocal, torique, multifocal, EDOF ?
 
-Le choix dépend de vos **besoins visuels**, de votre **astigmatisme cornéen**, de l’état de la rétine et du cristallin, et de votre profil de vie. L’implant monofocal (remboursé) donne une excellente vision de loin et nécessite des lunettes pour la lecture. L’implant torique corrige un astigmatisme cornéen. Les implants multifocaux ou EDOF offrent une indépendance partielle ou quasi-complète aux lunettes, mais peuvent occasionner des halos et sont à reconsidérer avec prudence si la rétine n’est pas parfaitement saine.
+Le choix dépend de vos **besoins visuels**, de votre **astigmatisme cornéen**, de l’état de la rétine et du cristallin, et de votre profil de vie. L’implant monofocal (remboursé) vise une vision nette de loin et nécessite des lunettes pour la lecture. L’implant torique corrige un astigmatisme cornéen. Les implants multifocaux ou EDOF offrent une indépendance partielle ou quasi-complète aux lunettes, mais peuvent occasionner des halos et sont à reconsidérer avec prudence si la rétine n’est pas parfaitement saine.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -3043,7 +3043,7 @@ Dans la majorité des cas, les deux yeux sont opérés à **1 à 4 semaines d’
 
 ##### Quels sont les risques de la chirurgie ?
 
-C’est la **chirurgie la plus pratiquée au monde**, avec un taux de succès supérieur à **95 %**. Les complications sont rares : endophtalmie (0,05 à 0,1 %), œdème maculaire post-opératoire (1 à 2 %), rupture capsulaire per-opératoire (1 à 2 %), décollement de rétine (0,5 à 1 %, plus fréquent chez le myope fort), opacification capsulaire secondaire traitée au [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) (15 à 30 % à 2-3 ans).
+C’est la **chirurgie la plus pratiquée au monde**. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications sont rares : endophtalmie (de l’ordre de 2 à 3 cas pour 10 000 opérations ; 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts), œdème maculaire post-opératoire (1 à 2 %), rupture capsulaire per-opératoire (1 à 2 %), décollement de rétine (0,5 à 1 %, plus fréquent chez le myope fort), opacification capsulaire secondaire traitée au [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) (15 à 30 % à 2-3 ans).
 
 ##### Auteur et révision médicale
 
@@ -3133,7 +3133,7 @@ La chirurgie de la cataracte par phacoémulsification avec implantation est l’
 
 - **Opacification capsulaire postérieure** (« cataracte secondaire ») : 10 à 20 % à 5 ans, traitée en une séance par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag).
 - **Œdème maculaire postopératoire** (syndrome d’Irvine-Gass) : < 2 % des cas, régressif sous collyres.
-- **Endophtalmie** (infection intraoculaire) : 0,03 à 0,10 % — prévenue par antibiotique intracamérulaire (céfuroxime).
+- **Endophtalmie** (infection intraoculaire) : de l’ordre de 2 à 3 cas pour 10 000 opérations, et 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts — prévenue par antibiotique intracamérulaire (céfuroxime).
 - **Décentrement ou luxation tardive de l’implant** : exceptionnel.
 - **Erreur biométrique résiduelle** : rare avec les formules modernes ; peut conduire à une petite correction par lunettes, lentilles ou, dans de rares cas, un geste de retouche (échange d’implant, LASIK de retouche).
 
@@ -3330,7 +3330,7 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 
 #### Complications et gestion de l’insatisfaction
 
-- Complications chirurgicales : identiques à la cataracte standard (endophtalmie < 0,1 %, œdème maculaire < 2 %, opacification capsulaire traitée par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag)).
+- Complications chirurgicales : identiques à la cataracte standard (endophtalmie de l’ordre de 2 à 3 cas pour 10 000 opérations, œdème maculaire < 2 %, opacification capsulaire traitée par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag)).
 - **Dysphotopsies persistantes** au-delà de 6-12 mois : identifier une cause traitable (opacification capsulaire, décentrement, sécheresse oculaire, erreur réfractive résiduelle).
 - **Erreur réfractive résiduelle** : majore fortement les halos. Correction par retouche laser cornéenne (LASIK, PKR) si > 0,50 D.
 - **Explant-échange** pour implant monofocal en cas d’intolérance définitive : 1 à 3 % des patients selon les séries.
@@ -4658,7 +4658,7 @@ Diagnostic, collyres, laser et chirurgie du glaucome
 
 Le **glaucome** est une **neuropathie optique chronique progressive** caractérisée par une destruction lente et irréversible des fibres du nerf optique, responsable d’une altération du champ visuel. Il reste la **deuxième cause mondiale de cécité irréversible**. La **pression intraoculaire (PIO)** élevée en est le principal facteur de risque modifiable — elle n’est pas toujours élevée, mais sa diminution reste à ce jour le **seul traitement ayant fait la preuve scientifique** de ralentir la progression.
 
-**Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 15 20](tel:+33140021520)).
+**Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 16 80](tel:+33140021680)).
 
 #### Symptômes : pourquoi le dépistage est essentiel
 
@@ -4790,7 +4790,7 @@ La **sclérectomie profonde non perforante** est une alternative plus sûre, ave
 
 Ces dispositifs **sous-conjonctivaux** combinent l’efficacité de la chirurgie filtrante avec un geste moins délabrant. Ils créent une **bulle de filtration contrôlée**, habituellement avec application de **mitomycine C** pour prévenir la fibrose.
 
-**XEN 45** : implant en collagène porcin de 6 mm, posé ab-interno (voie chambre antérieure) ou ab-externo. / **PreserFlo MicroShunt** : implant de 8,5 mm en SIBS, posé ab-externo. **Ces dispositifs offrent une efficacité hypotonisante proche de la trabéculectomie avec un profil de sécurité amélioré**, mais restent exposés aux risques de fibrose et d’encapsulation, qui peuvent nécessiter un *needling* secondaire.
+**XEN 45** : implant en collagène porcin de 6 mm, posé ab-interno (voie chambre antérieure) ou ab-externo. / **PreserFlo MicroShunt** : implant de 8,5 mm en SIBS, posé ab-externo. **Ces dispositifs offrent une efficacité proche de celle de la trabéculectomie, avec un meilleur profil de risque**, mais restent exposés aux risques de fibrose et d’encapsulation, qui peuvent nécessiter un *needling* secondaire.
 
 ##### Ce que montrent nos travaux au CHNO des Quinze-Vingts
 
@@ -4844,7 +4844,7 @@ Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal 
 
 ##### Qu’est-ce que le PreserFlo MicroShunt ?
 
-Le PreserFlo est un **dispositif implantable de 8,5 mm** en **SIBS** (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte. Il draine l’humeur aqueuse de la chambre antérieure vers l’espace sous-conjonctival. Efficacité hypotonisante **proche de la trabéculectomie** avec un **profil de sécurité amélioré**. J’ai publié une étude rétrospective en premier auteur sur ce dispositif dans le *Journal of Clinical Medicine* en 2022.
+Le PreserFlo est un **dispositif implantable de 8,5 mm** en **SIBS** (poly-styrène-isobutylène-styrène), un biomatériau bio-inerte. Il draine l’humeur aqueuse de la chambre antérieure vers l’espace sous-conjonctival. Son efficacité est **proche de celle de la trabéculectomie**, avec un **meilleur profil de risque**. J’ai publié une étude rétrospective en premier auteur sur ce dispositif dans le *Journal of Clinical Medicine* en 2022.
 
 ##### Qui doit se faire dépister ?
 
