@@ -62,6 +62,14 @@ try {
             assert.equal(response.status(), 200);
             assert.match(response.headers()['content-security-policy'], /upgrade-insecure-requests/);
             assert.ok(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), 'aucun débordement horizontal');
+            // TECH69G-2026-10-25 : axe mesure les contrastes une fois les fondus terminés (échec ponctuel du 25/10 sur la home,
+            // contraste lu en pleine transition) ; seules les animations finies sont attendues, 3 s au plus.
+            await page.evaluate(() => Promise.race([
+              Promise.all(document.getAnimations()
+                .filter(a => Number.isFinite(a.effect?.getComputedTiming?.().endTime))
+                .map(a => a.finished.catch(() => null))),
+              new Promise(resolve => setTimeout(resolve, 3000)),
+            ]));
             await page.evaluate(axe);
             const violations = await page.evaluate(async () => (await axe.run(document, {
               runOnly: { type: 'tag', values: ['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa'] },
