@@ -8104,3 +8104,21 @@ article.pathology-content .consultation-route p {
     /* Laisser une ligne utilisable dans le tiroir des fenêtres très basses. */
     body.menu-open header.site-header nav.main-nav { padding-block: 8px; }
 }
+
+/* ============================================================
+   TECH67BV-2026-09-21 — Libellés de boutons centrés sur téléphone.
+   1. .btn-rdv est un conteneur flex sans justify-content : dès que
+      le bouton occupe toute la largeur (≤ 30 em : bloc « rendez-vous »
+      de 39 pages, page 404, contact), « Prendre rendez-vous » se
+      plaquait à gauche de la pastille cuivre, dans un bloc centré.
+   2. Boutons des encadrés d'alerte : un libellé qui passe sur deux
+      lignes (« Créneau urgence sur Doctolib », 4 fiches à 390 px)
+      s'alignait à gauche dans son bouton pleine largeur.
+   Aucun changement quand le bouton épouse son libellé (≥ 481 px).
+   ============================================================ */
+.btn-rdv {
+    justify-content: center;
+}
+.alert-urgence .alert-actions a {
+    text-align: center;
+}

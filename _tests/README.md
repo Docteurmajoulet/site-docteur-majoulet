@@ -407,3 +407,8 @@ les liens restent en ligne. La barre fixe de l’accueil reste disponible tant q
 bouton de présentation n’est pas entièrement accessible entre l’en-tête et le bas
 de l’écran. Deux scénarios de navigation vérifient ces limites à 375 et 683 px, avec
 texte normal puis agrandi. Le contrôle navigateur suit aussi le nouvel ordre de l’accueil.
+
+Depuis le tour 67 (TECH67BV-2026-09-21), `.btn-rdv` centre son contenu (`justify-content: center`) et les boutons des encadrés
+d'alerte centrent leurs lignes : `check_static.py` vérifie les deux règles ; `browser.mjs` mesure à 390 et 320 px, sur toutes les
+pages, que le contenu de chaque bouton visible est centré à 3 px près et que les lignes d'un libellé replié le sont aussi (avant le
+lot : « Prendre rendez-vous » plaqué à gauche de 38 px sur 39 pages, « Créneau urgence sur Doctolib » aligné à gauche sur 4 fiches).

@@ -941,6 +941,10 @@ def check(root):
     if _ix.count('class="hv-eyebrow"') != 3: E('index.html : trois étiquettes .hv-eyebrow attendues — TECH24BS')
     if 'class="section-header"' in _ix: E('index.html : ancien en-tête centré .section-header encore présent — TECH24BS')
     if len(re.findall(r'<p>', re.search(r'<div class="parcours-recit">(.*?)</div>', _ix, re.S).group(1))) < 4: E('index.html : le récit du parcours doit rester un texte continu d’au moins quatre paragraphes — TECH24BS')
+    # ---- TECH67BV-2026-09-21 : libellés centrés — .btn-rdv (flex) centre son contenu, les boutons d'alerte centrent leurs lignes
+    _css67bv = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
+    if not re.search(r'(?m)^\.btn-rdv\s*\{[^}]*justify-content:\s*center', _css67bv): E('main.css : règle « .btn-rdv { justify-content: center } » absente (libellé plaqué à gauche sur téléphone) — TECH67BV')
+    if not re.search(r'(?m)^\.alert-urgence \.alert-actions a\s*\{[^}]*text-align:\s*center', _css67bv): E('main.css : règle « .alert-urgence .alert-actions a { text-align: center } » absente — TECH67BV')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

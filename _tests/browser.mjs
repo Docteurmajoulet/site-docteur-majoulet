@@ -1204,6 +1204,48 @@ try {
     }
     await ctx.close();
   }
+  // TECH67BV-2026-09-21 — libellés de boutons centrés : à 390 et 320 px, sur toutes les pages, le contenu de chaque bouton visible
+  // (.btn-rdv, boutons d'alerte, .btn-ghost, .btn-urgence) est centré dans le bouton à 3 px près, et un libellé sur plusieurs lignes
+  // a ses lignes centrées. Trouvé le 21/09/2026 : « Prendre rendez-vous » plaqué à gauche (–38 px) sur 39 pages, « Créneau urgence
+  // sur Doctolib » aligné à gauche sur 4 fiches.
+  for (const w of [390, 320]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of slugs) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'domcontentloaded', timeout: 30000 }); loads++;
+        await page.evaluate(() => document.fonts.ready);
+        const bad = await page.evaluate(() => {
+          const out = [];
+          for (const el of document.querySelectorAll('.btn-rdv, .alert-actions a, .cta-block .btn-ghost, .cta-block .btn-urgence')) {
+            const cs = getComputedStyle(el), r = el.getBoundingClientRect();
+            if (!r.width || !r.height || cs.visibility === 'hidden') continue;
+            const kids = Array.from(el.childNodes).filter(n => (n.nodeType === 1 && n.getClientRects().length && getComputedStyle(n).position !== 'absolute') || (n.nodeType === 3 && n.textContent.trim()));
+            if (!kids.length) continue;
+            const range = document.createRange(); range.setStartBefore(kids[0]); range.setEndAfter(kids[kids.length - 1]);
+            const rects = Array.from(range.getClientRects()).filter(x => x.width > 1 && x.height > 1);
+            const left = Math.min(...rects.map(x => x.left)), right = Math.max(...rects.map(x => x.right));
+            const off = (left + right) / 2 - (r.left + r.width / 2);
+            const name = (el.className || el.tagName).toString().split(' ')[0] + ' « ' + el.textContent.trim().replace(/\s+/g, ' ').slice(0, 26) + ' »';
+            if (Math.abs(off) > 3) out.push(`${name} : contenu décentré de ${off.toFixed(0)} px`);
+            // lignes d'un libellé replié : chacune centrée (les lignes du seul nœud texte ou du .btn-label)
+            const label = el.querySelector('.btn-label') || kids.find(n => n.nodeType === 3);
+            if (label) {
+              const lr = document.createRange(); lr.selectNodeContents(label);
+              const lines = new Map();
+              for (const x of lr.getClientRects()) { if (x.width < 2) continue; const k = Math.round(x.top); const c = lines.get(k) || [x.left, x.right]; lines.set(k, [Math.min(c[0], x.left), Math.max(c[1], x.right)]); }
+              if (lines.size > 1 && !el.querySelector('svg')) for (const [, [l, rr]] of lines) { const o = (l + rr) / 2 - (r.left + r.width / 2); if (Math.abs(o) > 4) { out.push(`${name} : ligne du libellé décentrée de ${o.toFixed(0)} px`); break; } }
+            }
+          }
+          return out;
+        });
+        for (const x of bad) failures.push(`${slug} @${w} — ${x} (TECH67BV)`);
+      } catch (e) { failures.push(`${slug} @${w} — libellés centrés : ${String(e).slice(0, 160)} (TECH67BV)`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
