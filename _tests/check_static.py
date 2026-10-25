@@ -347,7 +347,8 @@ def check(root):
         for m in re.finditer(r'baisse brutale', body, re.I):
             suite = body[m.end():m.end() + 80]
             suite = re.split(r'[.;!?]', suite)[0]          # même phrase seulement
-            if not re.search(r'\bvision\b', suite, re.I):
+            # TECH68B-2026-10-24 : « de la vision » exigé (le simple mot « vision » laissait passer « baisse brutale de vision », /urgences, 20/09)
+            if not re.search(r'\bde la vision\b', suite, re.I):
                 ctx = body[max(0, m.start() - 30):m.end() + 40]
                 E(f'{name} : « baisse brutale » sans « … de la vision » dans la phrase → …{ctx}…')
         if re.search(r'\bOPTAM\b', body): E(f'{name} : mention de l’OPTAM (interdite sur le site)')

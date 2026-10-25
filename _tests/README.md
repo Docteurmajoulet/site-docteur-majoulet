@@ -440,3 +440,7 @@ refuse un paragraphe `.cta-alt` de plusieurs liens sans cette classe, un `<br>` 
 pas la dernière ligne ; `browser.mjs` mesure à 390 et 320 px la hauteur réellement cliquable de chaque lien du bloc sur six fiches
 (un voisin qui recouvre la zone la réduit). Avant le lot : « · » orphelin en début de ligne sur /glaucome à 390 px, ordre des lignes
 différent sur /retinopathie-diabetique.
+
+Depuis le tour 68 (TECH68B-2026-10-24), la règle éditoriale « baisse brutale » exige « de la vision » dans la même phrase (et non plus
+le seul mot « vision ») : la correction du 20/09 avait écrit deux fois « baisse brutale de vision » sur /urgences-ophtalmologiques, que
+l'ancienne garde laissait passer.
