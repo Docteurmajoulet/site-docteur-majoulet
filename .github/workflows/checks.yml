@@ -15,7 +15,7 @@ permissions:
 jobs:
   statique:
     name: Contrôles statiques (HTML, liens, CSP, sitemap, règles éditoriales)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - run: python3 _tests/check_static.py
@@ -24,7 +24,7 @@ jobs:
 
   navigateur:
     name: Navigateur (axe, CSP, débordements) + Lighthouse
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: statique
     timeout-minutes: 25
     defaults:
@@ -92,7 +92,7 @@ jobs:
 
   html:
     name: Validation HTML W3C (Nu Html Checker, toutes les pages)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     needs: statique
     timeout-minutes: 10
     defaults:

@@ -418,3 +418,9 @@ Depuis le tour 67 (TECH67BW-2026-09-21), la règle qui masque le libellé de la 
 `data-label="Ce que c'est"`, devenu « c’est » avec l'apostrophe typographique du tour 9 — « Ce que c’est : » s'affichait depuis le 12/09.
 `check_static.py` refuse tout sélecteur `[data-…="…"]` ou `[aria-…="…"]` de main.css dont la valeur n'existe dans aucune page (hors états
 posés par nav.js) ; `browser.mjs` lit le contenu `::before` des cellules à 390 px.
+
+Depuis le tour 67 (TECH67BX-2026-09-21), tous les jobs des trois workflows tournent sur l'exécuteur figé `ubuntu-24.04`
+(`ubuntu-latest` bascule sur Ubuntu 26 à partir du 19/10/2026 : Playwright 1.56 et ses dépendances système n'y sont pas éprouvés).
+`check_static.py` refuse `ubuntu-latest`, ainsi qu'une action officielle non épinglée par empreinte ou antérieure à la v5 (Node 20) —
+les actions v7 épinglées datent du 21/09 (bc89028). Pour changer d'image : essayer `ubuntu-26.04` sur une branche (workflow_dispatch),
+puis relever les trois fichiers. Un push qui modifie `.github/workflows/` exige un jeton GitHub avec le scope `workflow`.

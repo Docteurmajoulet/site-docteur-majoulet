@@ -954,6 +954,15 @@ def check(root):
         if _attr in ('aria-expanded', 'aria-current', 'aria-hidden', 'aria-selected', 'aria-pressed'): continue   # états posés par nav.js
         if f'{_attr}="{_val}"' not in _all67bw: E(f'main.css : sélecteur [{_attr}="{_val}"] sans aucune correspondance dans les pages — TECH67BW')
     if 'table.paliers th + td[data-label]::before { content: none; }' not in _css67bw: E('main.css : règle structurelle du tableau des paliers absente — TECH67BW')
+    # ---- TECH67BX-2026-09-21 : workflows GitHub — exécuteur figé (ubuntu-latest change d'image sans prévenir : Ubuntu 26 à partir du
+    #      19/10/2026) ; actions officielles épinglées par empreinte, en version Node 24 (≥ v5 — état posé par bc89028 le 21/09)
+    for _wfp in sorted(glob.glob(os.path.join(root, '.github', 'workflows', '*.yml'))):
+        with open(_wfp, encoding='utf-8') as _f: _wf67 = _f.read()
+        _wfn = os.path.basename(_wfp)
+        for _act, _ref, _ver in re.findall(r'uses:\s*actions/([a-z-]+)@(\S+)(?:\s*#\s*v(\d+))?', _wf67):
+            if not re.fullmatch(r'[0-9a-f]{40}', _ref): E(f'.github/workflows/{_wfn} : actions/{_act}@{_ref} n’est pas épinglée par empreinte (40 caractères + commentaire « # vN ») — TECH67BX')
+            elif not _ver or int(_ver) < 5: E(f'.github/workflows/{_wfn} : actions/{_act} sans commentaire de version ou antérieure à la v5 (Node 20, retiré des exécuteurs) — TECH67BX')
+        if re.search(r'runs-on:\s*ubuntu-latest', _wf67): E(f'.github/workflows/{_wfn} : exécuteur « ubuntu-latest » non figé — TECH67BX')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
