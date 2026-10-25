@@ -8053,3 +8053,52 @@ body.page-pathologies header.page-header .hub-nav {
 article.pathology-content .table-scroll {
     max-width: 45.25rem;
 }
+
+/* TECH69C-2026-10-25 — schémas anatomiques au trait (SVG en ligne, palette de la charte), validés médicalement par le
+   Dr Majoulet : planche (coupe de l'œil) et grille de vignettes (coupes maculaires). Légendes en texte : nettes au zoom. */
+.schema {
+    margin: 28px 0;
+}
+.schema-planche {
+    background: var(--blanc);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 14px 16px;
+}
+.schema-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.schema-planche .schema-svg {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.schema figcaption {
+    color: var(--text-light);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 12px;
+    max-width: 39.5em;
+}
+.schema-grille {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    margin: 28px 0;
+}
+.schema-grille .schema-vignette {
+    margin: 0;
+    background: var(--blanc);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 12px 14px;
+}
+@media (min-width: 48em) {
+    .schema-grille {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media print {
+    .schema, .schema-grille .schema-vignette { break-inside: avoid; }
+}

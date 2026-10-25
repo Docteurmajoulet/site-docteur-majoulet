@@ -970,6 +970,8 @@ Un **test simple d’autosurveillance** existe : la [**grille d’Amsler**](http
 
 La DMLA correspond à un **vieillissement pathologique** de la macula. Des déchets cellulaires, appelés **drusen**, s’accumulent sous la rétine centrale. Avec le temps, ces dépôts peuvent évoluer soit vers une **atrophie** des cellules visuelles (forme sèche), soit déclencher la prolifération de vaisseaux anormaux (néovaisseaux) sous la rétine responsable de la **forme humide**, plus agressive.
 
+La macula se trouve au centre de la rétine, dans l’axe de la vision. C’est pourquoi la DMLA touche la vision centrale et épargne la vision périphérique.
+
 - **> 1 M** — Personnes atteintes en France (estimation)
 - **+50 ans** — Âge de début possible
 - **≈ 1/4** — Des plus de 75 ans concernés (ordre de grandeur)
@@ -987,6 +989,14 @@ Elle est caractérisée par le développement de **néovaisseaux choroïdiens an
 ##### Maculopathie liée à l’âge débutante
 
 Stade précoce, souvent asymptomatique : quelques **drusen** et de discrètes altérations pigmentaires au fond d’œil, avec une vision conservée. Ce n’est pas encore une DMLA constituée, mais ce stade justifie une **surveillance régulière** et la correction des facteurs de risque modifiables (tabac en premier lieu).
+
+**Macula normale.** Au centre de la macula, la rétine forme un léger creux : la fovéa.
+
+**Stade débutant.** Des déchets cellulaires, les drusen, s’accumulent sous la rétine centrale.
+
+**Forme sèche (atrophique).** Les cellules visuelles de la macula disparaissent progressivement : la rétine s’amincit.
+
+**Forme humide.** Des néovaisseaux venus de la choroïde traversent la membrane qui la sépare de la rétine ; ils fuient et la soulèvent.
 
 #### Facteurs de risque et prévention
 
