@@ -126,7 +126,7 @@
 @media (hover: hover) {
 .implant-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: var(--sable); }
 }
-.implant-card .ic-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: var(--prusse); margin-bottom: 6px; }
+.implant-card .ic-title { font-size: 0.85rem; font-weight: 700; letter-spacing: 0; text-transform: none; color: var(--prusse); margin-bottom: 6px; }
 .implant-card .ic-text { font-size: 0.83rem; color: var(--text-muted); font-weight: 400; line-height: 1.55; margin-bottom: 10px; }
 .implant-card .ic-more { font-size: 0.78rem; font-weight: 600; color: var(--prusse); border-bottom: 2px solid var(--sable); padding-bottom: 2px; }
 @media (max-width: 47.5em) {
@@ -172,8 +172,8 @@ body.v26 {
     font-size: 1.3rem;
     margin-top: 44px;
     margin-bottom: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    text-transform: none;
+    letter-spacing: 0;
     padding-bottom: 10px;
     border-bottom: 1px solid var(--border);
 }
@@ -182,8 +182,8 @@ body.v26 {
     font-size: 1.25rem;
     margin-top: 36px;
     margin-bottom: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    text-transform: none;
+    letter-spacing: 0;
 }
 :where(body.page-index) h2,
 :where(body.page-pathologies) h2 {
@@ -193,12 +193,16 @@ body.v26 {
     letter-spacing: 0.06em;
     margin-bottom: 1rem;
 }
+:where(body.page-pathologies) h2 {
+    text-transform: none;
+    letter-spacing: 0;
+}
 :where(body.page-publications) h2 {
     font-size: 1.35rem;
     margin-top: 48px;
     margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    text-transform: none;
+    letter-spacing: 0;
     padding-bottom: 12px;
     border-bottom: 1px solid var(--border);
 }
@@ -637,8 +641,8 @@ body.v26 {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-light);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     transition: color 0.2s;
     cursor: pointer;
     background: none;
@@ -656,8 +660,8 @@ body.v26 {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-light);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     transition: color 0.2s;
     cursor: pointer;
     background: none;
@@ -763,8 +767,8 @@ body.v26 {
     font-size: 0.72rem;
     font-weight: 700;
     color: var(--text-muted, #7a8a92);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    text-transform: none;
+    letter-spacing: 0;
     padding: 12px 8px 4px;
     margin-top: 8px;
     border-top: 1px dashed var(--border);
@@ -773,8 +777,8 @@ body.v26 {
     font-size: 0.72rem;
     font-weight: 700;
     color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    text-transform: none;
+    letter-spacing: 0;
     padding: 12px 8px 4px;
     margin-top: 8px;
     border-top: 1px dashed var(--border);
@@ -824,8 +828,8 @@ body.v26 {
     color: var(--blanc-naturel);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     transition: background 0.2s, transform 0.15s;
 }
@@ -895,14 +899,14 @@ body.v3.menu-open {
 }
 :where(body.v1) h1 {
     font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    text-transform: none;
+    letter-spacing: 0;
     margin-bottom: 10px;
 }
 :where(body.v25) h1 {
     font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    text-transform: none;
+    letter-spacing: 0;
     margin-bottom: 12px;
 }
 :where(body.v1) p {
@@ -954,8 +958,8 @@ body.v3.menu-open {
     font-size: 0.8rem;
     font-weight: 500;
     color: var(--text-light);
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     transition: color 0.2s;
     cursor: pointer;
     background: none;
@@ -995,8 +999,8 @@ body.v3.menu-open {
     color: var(--blanc-naturel);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     transition: background 0.2s, transform 0.15s;
 }
@@ -1011,8 +1015,8 @@ body.v3.menu-open {
     color: var(--blanc-naturel);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
 }
 :where(body.page-pathologies) .nav-cta {
@@ -1025,8 +1029,8 @@ body.v3.menu-open {
     color: var(--blanc-naturel) !important;
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     transition: all 0.2s;
 }
 @media (hover: hover) {
@@ -1123,15 +1127,15 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 :where(body.v10) .page-header .breadcrumb-mini {
     color: rgba(249,247,242,0.75);
     font-size: 0.75rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 14px;
 }
 :where(body.page-decollement-retine) .page-header .breadcrumb-mini {
     color: rgba(255,255,255,0.8);
     font-size: 0.75rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 14px;
 }
 :where(body.v10) .page-header .breadcrumb-mini a {
@@ -1157,8 +1161,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--blanc-naturel);
     font-size: 2.4rem;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    text-transform: none;
+    letter-spacing: 0;
     margin-bottom: 12px;
 }
 :where(body.v7) .page-header .tagline {
@@ -1303,8 +1307,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--prusse);
     font-weight: 600;
     font-size: 0.82rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    text-transform: none;
+    letter-spacing: 0;
 }
 :where(body.v1) .eeat-block {
     margin-top: 40px;
@@ -1317,8 +1321,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--sable);
     font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 10px;
     margin-top: 0;
 }
@@ -1326,8 +1330,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--sable);
     font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 10px;
 }
 :where(body.v1) .eeat-block p {
@@ -1366,8 +1370,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--blanc-naturel);
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
 }
 :where(body.page-dechirure-retine-corps-flottants) .btn-rdv {
@@ -1380,8 +1384,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--blanc-naturel);
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     margin: 4px;
 }
@@ -1399,15 +1403,15 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 :where(body.v5) .related-pathologies h3 {
     font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    text-transform: none;
+    letter-spacing: 0;
     margin-bottom: 14px;
     margin-top: 0;
 }
 :where(body.v12) .related-pathologies h3 {
     font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    text-transform: none;
+    letter-spacing: 0;
     margin-bottom: 14px;
 }
 :where(body.v1) .related-grid {
@@ -1553,8 +1557,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     font-size: 0.78rem;
     font-weight: 600;
     color: var(--prusse);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    text-transform: none;
+    letter-spacing: 0;
     text-decoration: none;
     grid-column: 2;
 }
@@ -1716,8 +1720,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 :where(body.page-publications) .press-source {
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--text-muted); /* 20/08/2026 : ex-bleu-gris (2,4:1) */
     margin-bottom: 6px;
 }
@@ -1747,8 +1751,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--blanc-naturel);
     font-size: 1.1rem;
     margin-bottom: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.06em;
+    text-transform: none;
+    letter-spacing: 0;
 }
 :where(body.page-publications) .external-links p {
     color: rgba(249,247,242,0.7);
@@ -1765,8 +1769,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--prusse);
     font-size: 0.82rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     margin: 4px 6px;
     transition: all 0.2s;
@@ -1798,8 +1802,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     padding: 4px 14px;
     font-size: 0.72rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     border-radius: 50px;
     margin-bottom: 10px;
 }
@@ -1813,8 +1817,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--blanc-naturel);
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     margin: 4px;
 }
@@ -1828,8 +1832,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: #ffffff;
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
 }
 @media (hover: hover) {
@@ -1852,8 +1856,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     border-radius: 50px;
     font-size: 0.74rem;
     font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 14px;
 }
 :where(body.page-confidentialite) p, :where(body.page-confidentialite) li {
@@ -1884,9 +1888,9 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     background: var(--blanc-naturel);
     color: var(--prusse);
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: none;
     font-size: 0.78rem;
-    letter-spacing: 0.06em;
+    letter-spacing: 0;
 }
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table {
     width: 100%;
@@ -1904,8 +1908,8 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
     color: var(--prusse);
     font-weight: 600;
     font-size: 0.82rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    text-transform: none;
+    letter-spacing: 0;
 }
 :where(body.page-neovaisseaux-choroidiens-myope-fort) .compare-table td {
     color: var(--text-light);
@@ -2991,8 +2995,8 @@ body.m12.menu-open nav.main-nav {
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     white-space: nowrap;
     transition: background 0.2s;
@@ -3215,8 +3219,8 @@ article.pathology-content .cta-block {
 article.pathology-content .cta-block h3 {
     color: var(--blanc-naturel);
     font-size: 1.25rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-top: 0;
 }
 article.pathology-content .cta-block p {
@@ -3271,8 +3275,8 @@ article.pathology-content .eeat-block {
 }
 article.pathology-content .eeat-block h3 {
     color: var(--sable);
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     font-size: 0.85rem;
 }
 /* --- 9. Home : le hero s'affirme --- */
@@ -3675,8 +3679,8 @@ article.pathology-content .travaux-block h3 {
     margin-top: 0;
     margin-bottom: 12px;
     font-size: 0.85rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
 }
 article.pathology-content .travaux-block p {
@@ -3846,8 +3850,8 @@ nav.main-nav .nav-link { padding-left: 12px; padding-right: 12px; }
     font-size: 0.72rem;
     font-weight: 700;
     color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
+    text-transform: none;
+    letter-spacing: 0;
     padding: 12px 8px 4px;
     margin-top: 8px;
     border-top: 1px dashed var(--border);
@@ -3969,8 +3973,8 @@ nav.main-nav .drawer-actions a {
         border-radius: 50px;
         font-size: 0.78rem;
         font-weight: 600;
-        letter-spacing: 0.05em;
-        text-transform: uppercase;
+        letter-spacing: 0;
+        text-transform: none;
         text-decoration: none;
         white-space: nowrap;
     }
@@ -4037,8 +4041,8 @@ body.page-dechirure-retine-corps-flottants .page-header .urgence-badge {
     border-radius: 50px;
     font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 12px;
 }
 body.page-decollement-retine .urgence-badge .ico,
@@ -4114,8 +4118,8 @@ body.page-dechirure-retine-corps-flottants .btn-urgence:hover {
     border-radius: 50px;
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     transition: background 0.2s, border-color 0.2s;
 }
@@ -4918,8 +4922,8 @@ article.pathology-content .cta-block .btn-ghost {
     color: var(--blanc-naturel);
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     transition: background 0.2s, border-color 0.2s;
 }
@@ -5034,8 +5038,8 @@ article.pathology-content .cta-block .btn-ghost .lbl-more {
     font-weight: 700;
     line-height: 1.3;
     color: var(--prusse);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    text-transform: none;
+    letter-spacing: 0;
     padding-bottom: 10px;
     margin: 0 0 12px;
     border-bottom: 2px solid var(--sable);
@@ -5223,8 +5227,8 @@ header.site-header .mobile-toggle { flex: 0 0 auto; }
 body.page-pathologies .page-header .breadcrumb-mini {
     color: rgba(249, 247, 242, 0.75);
     font-size: 0.75rem;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 14px;
 }
 body.page-pathologies .page-header .breadcrumb-mini a {
@@ -5277,8 +5281,8 @@ body.page-pathologies .hub-nav a {
     color: var(--prusse);
     font-size: 0.78rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     transition: background 0.2s, border-color 0.2s;
 }
@@ -5328,8 +5332,8 @@ body.page-pathologies .hub-intro--sub {
 body.page-pathologies .hub-sub {
     font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
     margin: 30px 0 14px;
 }
@@ -5415,8 +5419,8 @@ body.page-pathologies .hub-more {
     gap: 6px;
     font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
     transition: none;   /* TECH20AW-2026-09-16 : la flèche glisse par transform (ex-gap) */
 }
@@ -5487,8 +5491,8 @@ body.page-pathologies .hub-cta h3 {
     color: var(--blanc-naturel);
     font-size: 1.15rem;
     font-weight: 700;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin: 0 0 10px;
     padding: 0;
 }
@@ -5517,8 +5521,8 @@ body.page-pathologies .hub-cta .btn-rdv {
     color: #ffffff;
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     transition: background 0.2s;
 }
@@ -5557,8 +5561,8 @@ body.page-pathologies .hub-eeat h3 {
     color: var(--prusse);
     font-size: 0.85rem;
     font-weight: 600;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin: 0 0 10px;
 }
 body.page-pathologies .hub-eeat p {
@@ -5695,8 +5699,8 @@ body.page-pathologies .hub-alert { margin-bottom: 22px; }
     margin: 0 0 6px;
     font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
 }
 .toc-list {
@@ -5764,8 +5768,8 @@ article.pathology-content .enbref h2.h-sub {
     margin: 0 0 10px;
     font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
 }
 article.pathology-content .enbref ul {
@@ -5815,8 +5819,8 @@ article.pathology-content table.paliers thead th {
     color: var(--prusse);
     font-weight: 600;
     font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    text-transform: none;
+    letter-spacing: 0;
 }
 article.pathology-content table.paliers tbody th {
     color: var(--prusse);
@@ -5879,8 +5883,8 @@ body.page-pathologies .hub-symptoms {
 body.page-pathologies .hub-sym-title {
     font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
     margin: 0 0 8px;
     padding: 0;
@@ -5939,8 +5943,8 @@ article.pathology-content .hh-title {
     margin: 0 0 6px;
     font-size: 0.8rem;
     font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     color: var(--prusse);
 }
 article.pathology-content .hh-list {
@@ -6108,15 +6112,15 @@ body.page-404 .p404 .cta-block h2::after {
 }
 body.page-404 .p404 .related-pathologies h2 {
     font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
+    text-transform: none;
+    letter-spacing: 0;
     margin-bottom: 14px;
 }
 body.page-404 .p404 .cta-block h2 {
     color: var(--blanc-naturel);
     font-size: 1.25rem;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     margin-bottom: 12px;
 }
 body.page-404 .p404 .alert-urgence .alert-title {
@@ -6655,8 +6659,8 @@ a.button {
     color: var(--prusse);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    letter-spacing: 0;
+    text-transform: none;
     text-decoration: none;
     text-align: center;
     transition: background 0.2s;
@@ -7852,28 +7856,28 @@ article.pathology-content .cta-block .cta-links {
     .cta-block > .cta-alt.cta-links { display: none !important; }
 }
 
-/* MAQUETTE-EDITORIALE-2026-10-25 — maquette « sortir du générique » (CLAUDE.md §6, pistes 5 et 8), limitée aux pages
-   dont le <body> porte la classe maquette-editoriale (/dmla, /urgences-ophtalmologiques). À valider par le Dr Majoulet
-   avant toute généralisation : elle déroge à la règle des capitales espacées de DESIGN.md. */
-body.maquette-editoriale header.page-header {
+/* TECH69B-2026-10-25 — typographie éditoriale (maquette validée par le Dr Majoulet le 25/10/2026, CLAUDE.md §6 pistes 5 et 8) :
+   titres, fil d'Ariane, sommaire, menu et boutons en casse normale ; en-tête de page compact aligné à gauche ;
+   corps de fiche sans carte ; sommaire numéroté ; bloc « Que faire maintenant ? » de /urgences-ophtalmologiques. */
+header.page-header {
     padding: 28px 0 52px;
     text-align: start;
 }
-body.maquette-editoriale header.page-header::after {
+header.page-header::after {
     bottom: 8px;
     height: 28px;
 }
-body.maquette-editoriale header.page-header .breadcrumb-mini,
-body.maquette-editoriale header.page-header .breadcrumb-mini a {
+header.page-header .breadcrumb-mini,
+header.page-header .breadcrumb-mini a {
     text-transform: none;
     letter-spacing: 0;
     font-size: 0.875rem;
     text-align: start;
 }
-body.maquette-editoriale header.page-header .breadcrumb-mini {
+header.page-header .breadcrumb-mini {
     margin-bottom: 16px;
 }
-body.maquette-editoriale header.page-header h1 {
+header.page-header h1 {
     text-transform: none;
     letter-spacing: -0.01em;
     font-size: clamp(1.55rem, 1.1rem + 2.2vw, 3rem);
@@ -7883,54 +7887,54 @@ body.maquette-editoriale header.page-header h1 {
     margin-left: 0;
     margin-right: 0;
 }
-body.maquette-editoriale header.page-header .tagline {
+header.page-header .tagline {
     text-align: start;
     font-size: 1.05rem;
     margin-left: 0;
     margin-right: 0;
 }
-body.maquette-editoriale header.page-header + .container {
+header.page-header + .container {
     padding-top: 32px;
 }
-body.maquette-editoriale article.pathology-content {
+article.pathology-content {
     background: transparent;
     box-shadow: none;
     border-radius: 0;
     padding: 0;
 }
-body.maquette-editoriale .toc,
-body.maquette-editoriale article.pathology-content .forme-box,
-body.maquette-editoriale article.pathology-content .key-fact {
+.toc,
+article.pathology-content .forme-box,
+article.pathology-content .key-fact {
     background-color: var(--blanc);
 }
-body.maquette-editoriale article.pathology-content h2 {
+article.pathology-content h2 {
     text-transform: none;
     letter-spacing: -0.005em;
     font-size: clamp(1.5rem, 1.25rem + 1vw, 1.85rem);
     line-height: 1.25;
 }
-body.maquette-editoriale .toc {
+.toc {
     padding: 16px 18px 8px;
 }
-body.maquette-editoriale .toc-title {
+.toc-title {
     text-transform: none;
     letter-spacing: 0;
     font-size: 1rem;
     font-weight: 600;
 }
-body.maquette-editoriale .toc-list {
+.toc-list {
     counter-reset: toc;
 }
-body.maquette-editoriale .toc-list li {
+.toc-list li {
     counter-increment: toc;
 }
-body.maquette-editoriale .toc-list a {
+.toc-list a {
     min-height: 40px;
     gap: 12px;
     border-bottom: 0;
     font-size: 0.97rem;
 }
-body.maquette-editoriale .toc-list a::before {
+.toc-list a::before {
     content: counter(toc);
     width: auto;
     min-width: 1.3em;
@@ -7941,39 +7945,39 @@ body.maquette-editoriale .toc-list a::before {
     font-weight: 600;
     font-variant-numeric: tabular-nums;
 }
-body.maquette-editoriale nav.main-nav .nav-link,
-body.maquette-editoriale .nav-cta,
-body.maquette-editoriale .drawer-rdv,
-body.maquette-editoriale .sticky-rdv a,
-body.maquette-editoriale a.button,
-body.maquette-editoriale .btn-rdv,
-body.maquette-editoriale .btn-alert-tel,
-body.maquette-editoriale .btn-alert-rdv {
+nav.main-nav .nav-link,
+.nav-cta,
+.drawer-rdv,
+.sticky-rdv a,
+a.button,
+.btn-rdv,
+.btn-alert-tel,
+.btn-alert-rdv {
     text-transform: none;
     letter-spacing: 0;
 }
-body.maquette-editoriale .sticky-rdv a,
-body.maquette-editoriale a.button,
-body.maquette-editoriale .btn-rdv {
+.sticky-rdv a,
+a.button,
+.btn-rdv {
     font-size: 0.95rem;
 }
-body.maquette-editoriale nav.main-nav .nav-link {
+nav.main-nav .nav-link {
     font-size: 0.9rem;
 }
 /* /urgences : « Que faire maintenant ? » en tête de page (piste 5) */
-body.maquette-editoriale article.pathology-content .maintenant {
+article.pathology-content .maintenant {
     margin: 0 0 36px;
     padding: 20px 18px 8px;
     background: var(--alerte-fond);
     border: 1px solid rgba(217, 140, 42, 0.45);
     border-radius: var(--radius);
 }
-body.maquette-editoriale article.pathology-content .maintenant h2 {
+article.pathology-content .maintenant h2 {
     margin: 0 0 6px;
     padding: 0;
     font-size: 1.35rem;
 }
-body.maquette-editoriale article.pathology-content .maintenant h2::after {
+article.pathology-content .maintenant h2::after {
     content: none;
 }
 .maintenant-liste {
@@ -8016,22 +8020,32 @@ body.maquette-editoriale article.pathology-content .maintenant h2::after {
     min-height: 48px;
     margin: 0;
 }
-body.maquette-editoriale article.pathology-content p,
-body.maquette-editoriale article.pathology-content li {
-    max-width: 42em;
+article.pathology-content p,
+article.pathology-content li {
+    max-width: 39.5em;
 }
-@media (forced-colors: active) { body.maquette-editoriale .toc-list a::before { content: ""; width: 6px; min-width: 0; height: 6px; border-radius: 50%; forced-color-adjust: none; background: CanvasText; } }
+@media (forced-colors: active) { .toc-list a::before { content: ""; width: 6px; min-width: 0; height: 6px; border-radius: 50%; forced-color-adjust: none; background: CanvasText; } }
 @media (min-width: 64em) {
-    body.maquette-editoriale header.page-header {
+    header.page-header {
         padding: 56px 0 72px;
     }
-    body.maquette-editoriale header.page-header::after {
+    header.page-header::after {
         height: 40px;
     }
-    body.maquette-editoriale header.page-header + .container {
+    header.page-header + .container {
         padding-top: 48px;
     }
-    body.maquette-editoriale article.pathology-content .maintenant {
+    article.pathology-content .maintenant {
         padding: 28px 32px 14px;
     }
+}
+/* En-têtes alignés à gauche jusqu'au bout : sous-titre, identifiants de /publications, rubriques du hub */
+header.page-header p {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: start;
+}
+body.page-publications header.page-header .header-meta,
+body.page-pathologies header.page-header .hub-nav {
+    justify-content: flex-start;
 }

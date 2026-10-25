@@ -206,7 +206,8 @@ try {
   }
 
   // TECH58-2026-09-20 : agrandir le texte après chargement, sans redimensionner la fenêtre.
-  for (const profile of [{ slug: 'amblyopie', width: 375 }, { slug: 'myopie', width: 683 }]) {
+  // TECH69B-2026-10-25 : /myopie passe de 683 à 520 px — sans carte autour du texte, son tableau tient à 683 px même agrandi.
+  for (const profile of [{ slug: 'amblyopie', width: 375 }, { slug: 'myopie', width: 520 }]) {
     await scenario(`tableau ${profile.slug} : texte agrandi puis rétabli`, profile.width, async (page, context) => {
       const table = page.locator('.table-scroll').first();
       const cdp = await context.newCDPSession(page);

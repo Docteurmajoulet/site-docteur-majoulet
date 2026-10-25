@@ -1758,7 +1758,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
-### Décollement de Rétine
+### Décollement de rétine
 
 - URL : https://docteurmajoulet.com/decollement-retine
 - Description : Décollement de rétine : signes d’alerte (voile noir, éclairs), urgence chirurgicale, vitrectomie. Dr Majoulet, chirurgien rétinologue à Boulogne. Prenez RDV.
@@ -1873,7 +1873,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
-### Membrane Épirétinienne
+### Membrane épirétinienne
 
 - URL : https://docteurmajoulet.com/membrane-epiretinienne
 - Description : Membrane épirétinienne : vision déformée, examen OCT et chirurgie. Consultation avec le Dr Majoulet à Boulogne-Billancourt, opération à Jouvenet, Paris 16.
@@ -2021,7 +2021,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
-### Trou Maculaire
+### Trou maculaire
 
 - URL : https://docteurmajoulet.com/trou-maculaire
 - Description : Trou maculaire : diagnostic OCT, opération et récupération. Consultation avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
@@ -3601,7 +3601,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 ## Rétine médicale
 
-### Rétinopathie Diabétique
+### Rétinopathie diabétique
 
 - URL : https://docteurmajoulet.com/retinopathie-diabetique
 - Description : Rétinopathie diabétique : dépistage et suivi, injections anti-VEGF, laser et vitrectomie. Dr Majoulet, rétinologue à Boulogne. Prenez rendez-vous au cabinet.
@@ -3729,7 +3729,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
-### Occlusions Veineuses Rétiniennes
+### Occlusions veineuses rétiniennes
 
 - URL : https://docteurmajoulet.com/occlusions-veineuses
 - Description : Occlusion veineuse rétinienne (OVCR, OBVR) : œdème maculaire, injections anti-VEGF, laser. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV.
@@ -3900,7 +3900,7 @@ Des manœuvres simples peuvent être tentées dans les premières heures, avec u
 - **Paracentèse de chambre antérieure** (drainage humeur aqueuse).
 - **Inhalation de carbogène** (vasodilatation rétinienne) — rarement utilisé aujourd’hui.
 
-##### Admission en Unité Neuro-Vasculaire (UNV)
+##### Admission en unité neurovasculaire (UNV)
 
 L’**OACR est assimilée à un AVC** (AHA/ASA 2021). Le patient doit être adressé directement vers une UNV pour :
 
@@ -4062,7 +4062,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
-### Choriorétinopathie Séreuse Centrale
+### Choriorétinopathie séreuse centrale
 
 - URL : https://docteurmajoulet.com/chorioretinopathie-sereuse-centrale
 - Description : Choriorétinopathie séreuse centrale (CRSC) : rôle du stress et des corticoïdes, diagnostic OCT, traitements. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
@@ -4781,7 +4781,7 @@ Lorsque la cible n’est pas atteinte, des **associations fixes** (2 molécules 
 
 #### Traitement par laser — SLT et iridotomie
 
-##### Trabéculoplastie Sélective au Laser (SLT) — désormais 1re ligne
+##### Trabéculoplastie sélective au laser (SLT) — désormais 1re ligne
 
 Le laser SLT cible **sélectivement les cellules pigmentées du trabéculum** pour restaurer son fonctionnement. Il abaisse la PIO de 20-30 % en moyenne, pour une durée de 3 à 5 ans, et peut être répété.
 
@@ -4858,7 +4858,7 @@ Parce que le glaucome est une maladie **chronique** et silencieuse qui ne se gu�
 
 ##### Qu’est-ce que la SLT et pourquoi l’utiliser en 1re ligne ?
 
-La SLT (Trabéculoplastie Sélective au Laser) cible les cellules pigmentées du trabéculum. Elle abaisse la PIO de **20-30 %** pendant **3 à 5 ans**, est indolore, répétable, et évite la contrainte quotidienne des collyres. Depuis l’étude **LiGHT (Lancet 2019)**, elle est recommandée en **1re ligne du GPAO**.
+La SLT (Trabéculoplastie sélective au laser) cible les cellules pigmentées du trabéculum. Elle abaisse la PIO de **20-30 %** pendant **3 à 5 ans**, est indolore, répétable, et évite la contrainte quotidienne des collyres. Depuis l’étude **LiGHT (Lancet 2019)**, elle est recommandée en **1re ligne du GPAO**.
 
 ##### Quand faut-il opérer un glaucome ?
 
