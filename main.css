@@ -8049,3 +8049,7 @@ body.page-publications header.page-header .header-meta,
 body.page-pathologies header.page-header .hub-nav {
     justify-content: flex-start;
 }
+/* Tableaux des fiches : largeur d'avant le retrait de la carte (724 px), pour rester sous 90 caractères par ligne de cellule */
+article.pathology-content .table-scroll {
+    max-width: 45.25rem;
+}
