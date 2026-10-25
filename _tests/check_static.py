@@ -389,6 +389,11 @@ def check(root):
             if b is None:
                 if key == 'barre fixe' and name in ('confidentialite.html', 'mentions-legales.html'): continue
                 E(f'{name} : {key} absent'); continue
+            # TECH69D-2026-10-25 : sur /urgences, « Urgences 24h/24 » remplace le rendez-vous (décision C5) — barre vérifiée à part
+            if key == 'barre fixe' and name == 'urgences-ophtalmologiques.html':
+                if 'href="tel:+33184191166"' not in b or 'class="sticky-urgences" href="#ou-consulter-en-urgence-en-ile-de-france"' not in b:
+                    E(f'{name} : barre fixe des urgences incomplète (téléphone du cabinet + « Urgences 24h/24 ») — TECH69D')
+                continue
             chrome.setdefault(key, {}).setdefault(b, []).append(name)
         bc = re.search(r'<nav class="breadcrumb-mini"[^>]*>(.*?)</nav>', t, re.S)
         if bc:

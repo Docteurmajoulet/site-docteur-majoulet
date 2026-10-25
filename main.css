@@ -8102,3 +8102,34 @@ article.pathology-content .table-scroll {
 @media print {
     .schema, .schema-grille .schema-vignette { break-inside: avoid; }
 }
+
+/* TECH69D-2026-10-25 — barre fixe (≤ 64 em) repliée pendant la lecture : nav.js pose body.sticky-rdv-repli quand on
+   fait défiler vers le bas et la retire en remontant, en haut et en fin de page, et au clavier. Hors écran, elle n'est
+   jamais focalisable (visibility). Sur /urgences-ophtalmologiques, « Urgences 24h/24 » remplace le rendez-vous. */
+body.sticky-rdv-repli .sticky-rdv {
+    transform: translateY(110%);
+    visibility: hidden;
+    transition: transform 0.25s ease, visibility 0s linear 0.25s;
+}
+.sticky-rdv .sticky-urgences {
+    flex: 1 1 auto;
+    background: var(--prusse);
+    color: var(--blanc-naturel);
+}
+.sticky-rdv .sticky-urgences:active {
+    background: var(--prusse-light);
+    color: var(--blanc-naturel);
+}
+@media (hover: hover) {
+.sticky-rdv .sticky-urgences:hover {
+    background: var(--prusse-light);
+    color: var(--blanc-naturel);
+}
+}
+@media (max-width: 22.5em) {
+.sticky-rdv .sticky-urgences {
+        min-width: 0;
+        white-space: normal;
+        line-height: 1.2;
+    }
+}
