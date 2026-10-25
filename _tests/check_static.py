@@ -976,6 +976,26 @@ def check(root):
         for _m in re.findall(r'<script\b[^>]*>(.*?)</script>', pg.txt, re.S): _cls_html67.update(re.findall(r'[\w-]+', _m))
     with open(os.path.join(root, 'nav.js'), encoding='utf-8') as _f: _cls_html67.update(re.findall(r'[\w-]+', _f.read()))
     for _c in sorted(_cls_css67 - _cls_html67): E(f'main.css : classe « .{_c} » absente des pages et de nav.js (règle morte à retirer, ou faute de frappe) — TECH67BY')
+    # ---- TECH67BZ-2026-09-21 : bloc « rendez-vous » des fiches — un paragraphe .cta-alt de plusieurs liens est une rangée .cta-links (sans <br> ni
+    #      séparateur : chaque lien a sa zone de 44 px), et le numéro de téléphone reste la dernière ligne du bloc
+    def _div_inner67(txt, start):
+        depth, i = 0, start
+        for m in re.finditer(r'<(/?)div\b', txt[start:]):
+            depth += -1 if m.group(1) else 1
+            if depth == 0: return txt[start:start + m.start()]
+        return txt[start:]
+    for name, pg in pages.items():
+        for _m in re.finditer(r'<div class="cta-block[^"]*"', pg.txt):
+            _blk = _div_inner67(pg.txt, _m.start())
+            _alts = re.findall(r'<p class="(cta-alt[^"]*)">(.*?)</p>', _blk, re.S)
+            for _cls, _inner in _alts:
+                _n = len(re.findall(r'<a\b', _inner))
+                if _n > 1 and 'cta-links' not in _cls.split(): E(f'{name} : paragraphe .cta-alt de {_n} liens sans la classe cta-links (zones de toucher superposées) — TECH67BZ')
+                if 'cta-links' in _cls.split() and ('<br' in _inner or '·' in _inner): E(f'{name} : rangée .cta-links avec <br> ou séparateur « · » — TECH67BZ')
+            _tel = [i for i, (_c, _i) in enumerate(_alts) if 'href="tel:' in _i]
+            if _tel and _tel[-1] != len(_alts) - 1: E(f'{name} : dans le bloc rendez-vous, la ligne du téléphone n’est pas la dernière — TECH67BZ')
+    _css67bz = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
+    if not re.search(r'article\.pathology-content \.cta-block \.cta-links\s*\{[^}]*flex-wrap:\s*wrap', _css67bz): E('main.css : règle .cta-links (rangée qui passe à la ligne) absente — TECH67BZ')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

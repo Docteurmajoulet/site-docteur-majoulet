@@ -1263,6 +1263,44 @@ try {
     } catch (e) { failures.push(`secheresse-oculaire @390 — tableau des paliers : ${String(e).slice(0, 160)} (TECH67BW)`); }
     await page.close(); await ctx.close();
   }
+  // TECH67BZ-2026-09-21 — bloc « rendez-vous » des fiches : à 390 et 320 px (tactile), chaque lien du bloc (bouton, liens pratiques, numéro)
+  // offre au moins 44 px de hauteur réellement cliquable (elementFromPoint : un voisin qui recouvre la zone la réduit) et les liens
+  // pratiques sont suivis du numéro ; aucun séparateur orphelin en début de ligne.
+  for (const w of [390, 320]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    for (const slug of ['glaucome', 'retinopathie-diabetique', 'implants-monofocaux', 'implants-multifocaux', 'implants-toriques', 'dmla']) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 }); loads++;
+        const bad = await page.evaluate(async () => {
+          const out = [];
+          const bar = document.querySelector('.sticky-rdv'); if (bar) bar.style.display = 'none';   // la barre fixe a son propre contrôle
+          const links = Array.from(document.querySelectorAll('article.pathology-content .cta-block a')).filter(a => a.getClientRects().length);
+          if (!links.length) out.push('aucun lien dans le bloc rendez-vous');
+          for (const a of links) {
+            a.scrollIntoView({ block: 'center' }); await new Promise(r => setTimeout(r, 20));
+            const r = a.getBoundingClientRect(); const cx = r.left + Math.min(r.width / 2, 40), cy = r.top + r.height / 2;
+            const hit = (x, y) => { const e = document.elementFromPoint(x, y); return !!e && (e === a || a.contains(e)); };
+            let top = cy, bot = cy;
+            while (top > cy - 40 && hit(cx, top - 1)) top--;
+            while (bot < cy + 40 && hit(cx, bot + 1)) bot++;
+            const h = bot - top + 1;
+            if (h < 42) out.push(`« ${a.textContent.trim().replace(/\s+/g, ' ').slice(0, 28)} » : ${h} px cliquables < 44`);
+          }
+          for (const p of document.querySelectorAll('article.pathology-content .cta-block .cta-alt')) {
+            if (p.querySelectorAll('a').length > 1 && getComputedStyle(p).display !== 'flex') out.push('paragraphe de plusieurs liens hors rangée flex (.cta-links)');
+          }
+          const row = document.querySelector('article.pathology-content .cta-block .cta-links');
+          if (row) { const next = row.nextElementSibling; if (!next || !next.querySelector('a[href^="tel:"]')) out.push('la rangée .cta-links n’est pas suivie de la ligne du téléphone'); }
+          return out;
+        });
+        for (const x of bad) failures.push(`${slug} @${w} — bloc rendez-vous : ${x} (TECH67BZ)`);
+      } catch (e) { failures.push(`${slug} @${w} — bloc rendez-vous : ${String(e).slice(0, 160)} (TECH67BZ)`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

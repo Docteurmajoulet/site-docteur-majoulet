@@ -432,3 +432,11 @@ Depuis le tour 67 (TECH67BY-2026-09-21), `main.css` ne contient plus de classe m
 au pixel avant/après. `check_static.py` refuse désormais toute classe d'un sélecteur de `main.css` absente des attributs `class` des
 pages, de `nav.js` et du script en ligne. Conservés bien que sans correspondance au chargement : `html:not(.js) …` (sans JavaScript),
 les règles d'`iframe` (carte créée au clic), `.mega-list a.external` (variante du menu), `figure` à l'impression.
+
+Depuis le tour 67 (TECH67BZ-2026-09-21), les liens pratiques du bloc « rendez-vous » des fiches forment une rangée `.cta-links`
+(24 px d'écart, passage à la ligne sur téléphone ; les 44 px de haut par lien viennent de la règle `.cta-alt a` du 21/09) suivie de la
+ligne du téléphone : `check_static.py`
+refuse un paragraphe `.cta-alt` de plusieurs liens sans cette classe, un `<br>` ou un « · » dans la rangée, et un numéro qui ne serait
+pas la dernière ligne ; `browser.mjs` mesure à 390 et 320 px la hauteur réellement cliquable de chaque lien du bloc sur six fiches
+(un voisin qui recouvre la zone la réduit). Avant le lot : « · » orphelin en début de ligne sur /glaucome à 390 px, ordre des lignes
+différent sur /retinopathie-diabetique.

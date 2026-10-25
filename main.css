@@ -7831,3 +7831,23 @@ article.pathology-content .consultation-route p {
 .alert-urgence .alert-actions a {
     text-align: center;
 }
+
+/* ============================================================
+   TECH67BZ-2026-09-21 — Bloc « rendez-vous » des fiches : les deux
+   liens pratiques forment une rangée. Depuis le 21/09 (de9ed28),
+   chaque lien .cta-alt réserve 44 px ; restaient, sur cinq fiches,
+   un « · » orphelin en début de ligne sur téléphone (/glaucome),
+   des <br> de mise en page (implants, rétinopathie diabétique) et
+   un ordre différent d'une fiche à l'autre. La rangée passe à la
+   ligne d'elle-même, 24 px entre deux liens, et précède toujours
+   la ligne du téléphone.
+   ============================================================ */
+article.pathology-content .cta-block .cta-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0 24px;
+}
+@media print {
+    .cta-block > .cta-alt.cta-links { display: none !important; }
+}
