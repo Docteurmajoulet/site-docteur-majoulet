@@ -7851,3 +7851,187 @@ article.pathology-content .cta-block .cta-links {
 @media print {
     .cta-block > .cta-alt.cta-links { display: none !important; }
 }
+
+/* MAQUETTE-EDITORIALE-2026-10-25 — maquette « sortir du générique » (CLAUDE.md §6, pistes 5 et 8), limitée aux pages
+   dont le <body> porte la classe maquette-editoriale (/dmla, /urgences-ophtalmologiques). À valider par le Dr Majoulet
+   avant toute généralisation : elle déroge à la règle des capitales espacées de DESIGN.md. */
+body.maquette-editoriale header.page-header {
+    padding: 28px 0 52px;
+    text-align: start;
+}
+body.maquette-editoriale header.page-header::after {
+    bottom: 8px;
+    height: 28px;
+}
+body.maquette-editoriale header.page-header .breadcrumb-mini,
+body.maquette-editoriale header.page-header .breadcrumb-mini a {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 0.875rem;
+    text-align: start;
+}
+body.maquette-editoriale header.page-header .breadcrumb-mini {
+    margin-bottom: 16px;
+}
+body.maquette-editoriale header.page-header h1 {
+    text-transform: none;
+    letter-spacing: -0.01em;
+    font-size: clamp(1.55rem, 1.1rem + 2.2vw, 3rem);
+    line-height: 1.15;
+    text-align: start;
+    max-width: 20ch;
+    margin-left: 0;
+    margin-right: 0;
+}
+body.maquette-editoriale header.page-header .tagline {
+    text-align: start;
+    font-size: 1.05rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+body.maquette-editoriale header.page-header + .container {
+    padding-top: 32px;
+}
+body.maquette-editoriale article.pathology-content {
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+}
+body.maquette-editoriale .toc,
+body.maquette-editoriale article.pathology-content .forme-box,
+body.maquette-editoriale article.pathology-content .key-fact {
+    background-color: var(--blanc);
+}
+body.maquette-editoriale article.pathology-content h2 {
+    text-transform: none;
+    letter-spacing: -0.005em;
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 1.85rem);
+    line-height: 1.25;
+}
+body.maquette-editoriale .toc {
+    padding: 16px 18px 8px;
+}
+body.maquette-editoriale .toc-title {
+    text-transform: none;
+    letter-spacing: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
+body.maquette-editoriale .toc-list {
+    counter-reset: toc;
+}
+body.maquette-editoriale .toc-list li {
+    counter-increment: toc;
+}
+body.maquette-editoriale .toc-list a {
+    min-height: 40px;
+    gap: 12px;
+    border-bottom: 0;
+    font-size: 0.97rem;
+}
+body.maquette-editoriale .toc-list a::before {
+    content: counter(toc);
+    width: auto;
+    min-width: 1.3em;
+    height: auto;
+    border-radius: 0;
+    background: none;
+    color: var(--sable-fonce);
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+}
+body.maquette-editoriale nav.main-nav .nav-link,
+body.maquette-editoriale .nav-cta,
+body.maquette-editoriale .drawer-rdv,
+body.maquette-editoriale .sticky-rdv a,
+body.maquette-editoriale a.button,
+body.maquette-editoriale .btn-rdv,
+body.maquette-editoriale .btn-alert-tel,
+body.maquette-editoriale .btn-alert-rdv {
+    text-transform: none;
+    letter-spacing: 0;
+}
+body.maquette-editoriale .sticky-rdv a,
+body.maquette-editoriale a.button,
+body.maquette-editoriale .btn-rdv {
+    font-size: 0.95rem;
+}
+body.maquette-editoriale nav.main-nav .nav-link {
+    font-size: 0.9rem;
+}
+/* /urgences : « Que faire maintenant ? » en tête de page (piste 5) */
+body.maquette-editoriale article.pathology-content .maintenant {
+    margin: 0 0 36px;
+    padding: 20px 18px 8px;
+    background: var(--alerte-fond);
+    border: 1px solid rgba(217, 140, 42, 0.45);
+    border-radius: var(--radius);
+}
+body.maquette-editoriale article.pathology-content .maintenant h2 {
+    margin: 0 0 6px;
+    padding: 0;
+    font-size: 1.35rem;
+}
+body.maquette-editoriale article.pathology-content .maintenant h2::after {
+    content: none;
+}
+.maintenant-liste {
+    margin: 0;
+}
+.maintenant-cas {
+    padding: 14px 0;
+    border-top: 1px solid rgba(217, 140, 42, 0.3);
+}
+.maintenant-cas:first-child {
+    border-top: 0;
+}
+.maintenant-cas dt {
+    margin: 0 0 4px;
+    font-weight: 600;
+    color: var(--alerte-texte);
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+.maintenant-cas dd {
+    margin: 0 0 6px;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 42em;
+}
+.maintenant-cas dd.maintenant-action {
+    margin-top: 10px;
+}
+.maintenant-tels {
+    margin: 4px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.maintenant-tels li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 8px;
+    min-height: 48px;
+    margin: 0;
+}
+body.maquette-editoriale article.pathology-content p,
+body.maquette-editoriale article.pathology-content li {
+    max-width: 42em;
+}
+@media (forced-colors: active) { body.maquette-editoriale .toc-list a::before { content: ""; width: 6px; min-width: 0; height: 6px; border-radius: 50%; forced-color-adjust: none; background: CanvasText; } }
+@media (min-width: 64em) {
+    body.maquette-editoriale header.page-header {
+        padding: 56px 0 72px;
+    }
+    body.maquette-editoriale header.page-header::after {
+        height: 40px;
+    }
+    body.maquette-editoriale header.page-header + .container {
+        padding-top: 48px;
+    }
+    body.maquette-editoriale article.pathology-content .maintenant {
+        padding: 28px 32px 14px;
+    }
+}
