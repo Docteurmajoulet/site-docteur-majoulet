@@ -1246,6 +1246,23 @@ try {
     }
     await ctx.close();
   }
+  // TECH67BW-2026-09-21 — /secheresse-oculaire à 390 px : dans le tableau des paliers empilé, la première cellule de chaque palier
+  // n'affiche pas de libellé (« Ce que c’est : » revenu le 12/09 avec l'apostrophe typographique), la suivante garde « Prise en charge : ».
+  {
+    const ctx = await browser.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, isMobile: true, hasTouch: true, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const page = await ctx.newPage();
+    try {
+      await page.goto(urlFor('secheresse-oculaire', PORT), { waitUntil: 'domcontentloaded', timeout: 30000 }); loads++;
+      const res = await page.evaluate(() => Array.from(document.querySelectorAll('table.paliers tbody tr')).map(tr => Array.from(tr.querySelectorAll('td')).map(td => getComputedStyle(td, '::before').content)));
+      if (!res.length) failures.push('secheresse-oculaire @390 — tableau des paliers introuvable (TECH67BW)');
+      for (const [i, row] of res.entries()) {
+        if (row[0] !== 'none') failures.push(`secheresse-oculaire @390 — palier ${i + 1} : libellé affiché devant la première cellule (${row[0].slice(0, 40)}) (TECH67BW)`);
+        if (row[1] !== undefined && !/Prise en charge/.test(row[1])) failures.push(`secheresse-oculaire @390 — palier ${i + 1} : libellé « Prise en charge » absent (${String(row[1]).slice(0, 40)}) (TECH67BW)`);
+      }
+    } catch (e) { failures.push(`secheresse-oculaire @390 — tableau des paliers : ${String(e).slice(0, 160)} (TECH67BW)`); }
+    await page.close(); await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);

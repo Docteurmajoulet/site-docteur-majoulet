@@ -412,3 +412,9 @@ Depuis le tour 67 (TECH67BV-2026-09-21), `.btn-rdv` centre son contenu (`justify
 d'alerte centrent leurs lignes : `check_static.py` vérifie les deux règles ; `browser.mjs` mesure à 390 et 320 px, sur toutes les
 pages, que le contenu de chaque bouton visible est centré à 3 px près et que les lignes d'un libellé replié le sont aussi (avant le
 lot : « Prendre rendez-vous » plaqué à gauche de 38 px sur 39 pages, « Créneau urgence sur Doctolib » aligné à gauche sur 4 fiches).
+
+Depuis le tour 67 (TECH67BW-2026-09-21), la règle qui masque le libellé de la première cellule du tableau des paliers
+(/secheresse-oculaire, affichage empilé sous 43,75 em) est structurelle (`th + td[data-label]`) : l'ancienne comparait le texte
+`data-label="Ce que c'est"`, devenu « c’est » avec l'apostrophe typographique du tour 9 — « Ce que c’est : » s'affichait depuis le 12/09.
+`check_static.py` refuse tout sélecteur `[data-…="…"]` ou `[aria-…="…"]` de main.css dont la valeur n'existe dans aucune page (hors états
+posés par nav.js) ; `browser.mjs` lit le contenu `::before` des cellules à 390 px.

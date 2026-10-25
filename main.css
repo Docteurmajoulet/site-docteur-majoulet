@@ -6119,7 +6119,7 @@ article.pathology-content table.paliers td[data-label]::before {
         font-weight: 700;
         color: var(--prusse);
     }
-article.pathology-content table.paliers td[data-label="Ce que c'est"]::before { content: none; }
+article.pathology-content table.paliers th + td[data-label]::before { content: none; } /* TECH67BW-2026-09-21 : 1re cellule du palier, sans libellé — sélecteur structurel (l'ancien comparait le texte « Ce que c'est », devenu « c’est » au tour 9) */
 }
 article.pathology-content table.paliers td strong { color: var(--prusse); }
 article.pathology-content table.paliers a { color: var(--prusse); }

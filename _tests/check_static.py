@@ -945,6 +945,15 @@ def check(root):
     _css67bv = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
     if not re.search(r'(?m)^\.btn-rdv\s*\{[^}]*justify-content:\s*center', _css67bv): E('main.css : règle « .btn-rdv { justify-content: center } » absente (libellé plaqué à gauche sur téléphone) — TECH67BV')
     if not re.search(r'(?m)^\.alert-urgence \.alert-actions a\s*\{[^}]*text-align:\s*center', _css67bv): E('main.css : règle « .alert-urgence .alert-actions a { text-align: center } » absente — TECH67BV')
+    # ---- TECH67BW-2026-09-21 : aucun sélecteur d'attribut à valeur textuelle de main.css ne reste sans correspondance dans les pages
+    #      (le 12/09, l'apostrophe typographique a changé data-label="Ce que c'est" en « c’est » : la règle qui masquait ce libellé
+    #      sur téléphone ne visait plus rien — /secheresse-oculaire, tableau des paliers)
+    _css67bw = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
+    _all67bw = '\n'.join(pg.txt for pg in pages.values())
+    for _attr, _val in sorted(set(re.findall(r'\[((?:data|aria)-[a-z-]+)="([^"\]]*)"\]', _css67bw))):
+        if _attr in ('aria-expanded', 'aria-current', 'aria-hidden', 'aria-selected', 'aria-pressed'): continue   # états posés par nav.js
+        if f'{_attr}="{_val}"' not in _all67bw: E(f'main.css : sélecteur [{_attr}="{_val}"] sans aucune correspondance dans les pages — TECH67BW')
+    if 'table.paliers th + td[data-label]::before { content: none; }' not in _css67bw: E('main.css : règle structurelle du tableau des paliers absente — TECH67BW')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))
