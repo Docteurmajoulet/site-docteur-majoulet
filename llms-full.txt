@@ -5276,7 +5276,7 @@ La stratégie suit les recommandations TFOS DEWS II : on commence par les mesure
 
 | Palier | Ce que c’est | Prise en charge |
 |---|---|---|
-| 1. Les bases, pour tous | **Larmes artificielles sans conservateur** plusieurs fois par jour (formules lipidiques si DGM ; gel ou pommade le soir) ; **hygiène des paupières** quotidienne : chaleur 5 à 10 minutes, massage doux du bord des paupières, nettoyage des cils ; pauses et clignements sur écran, air humidifié, hydratation ; oméga-3 (bénéfice modeste et discuté) ; collyres avec conservateurs remplacés par des unidoses, avec le prescripteur. | Sur ordonnance |
+| 1. Les bases, pour tous | **Larmes artificielles sans conservateur** plusieurs fois par jour (formules lipidiques si DGM ; gel ou pommade le soir) ; **hygiène des paupières** quotidienne : chaleur 5 à 10 minutes, massage doux du bord des paupières, nettoyage des cils ; pauses et clignements sur écran, air humidifié, hydratation ; oméga-3 (bénéfice non démontré dans le plus grand essai randomisé) ; collyres avec conservateurs remplacés par des unidoses, avec le prescripteur. | Sur ordonnance |
 | 2. Traiter l’inflammation | **Ciclosporine en collyre** (Ikervis®) dans les kératites sèches sévères, au long cours ; **cyclines orales** (doxycycline à faible dose) en cure de plusieurs semaines à quelques mois (DGM, rosacée oculaire) ; corticoïdes locaux en cure courte encadrée lors des poussées ; traitement du *Demodex* si blépharite antérieure. | Sur ordonnance |
 | 3. Les gestes au cabinet | IPL (dysfonction des glandes de Meibomius, rosacée oculaire) ; bouchons méatiques (déficit de production) ; incision de chalazion si échec des soins locaux au-delà de 4 à 6 semaines. | IPL non remboursée : 150 € la séance ; bouchons et incision pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires) |
 | 4. Les formes sévères | Sérum autologue, lentilles sclérales, greffe de membrane amniotique, occlusion définitive des points lacrymaux — patients orientés vers le service du CHNO des Quinze-Vingts, où j’exerce. | Prise en charge hospitalière |
@@ -5291,7 +5291,7 @@ L’**IPL** (*Intense Pulsed Light*) est une technique issue de la dermatologie,
 
 Le protocole comporte en général **3 à 4 séances espacées de 2 à 4 semaines**, puis des séances d’entretien selon l’évolution (souvent tous les 6 à 12 mois). Les soins des paupières doivent être poursuivis : l’IPL les complète, il ne les remplace pas.
 
-**Ce que disent les données :** plusieurs essais randomisés et méta-analyses rapportent une amélioration des symptômes et de la stabilité du film lacrymal après IPL dans la DGM, chez une majorité de patients ; le niveau de preuve reste toutefois modéré (protocoles hétérogènes, suivi souvent court), et le bénéfice s’entretient par les séances de rappel.
+**Ce que disent les données :** des essais randomisés et des méta-analyses montrent une amélioration de la stabilité du film lacrymal et du fonctionnement des glandes de Meibomius après IPL ; l’effet sur les symptômes est moins bien établi. Le niveau de preuve reste faible (protocoles hétérogènes, suivi souvent court), et le bénéfice s’entretient par les séances de rappel.
 
 **Contre-indications :** peau très foncée (phototypes V et VI), bronzage récent, grossesse, traitement photosensibilisant en cours, lésion cutanée suspecte ou tatouage dans la zone traitée. Les effets indésirables se limitent en règle à une rougeur transitoire de la peau. L’IPL n’est **pas prise en charge par l’Assurance maladie** : 150 € la séance, tarif annoncé lors de la consultation de bilan, avant toute décision.
 
@@ -5299,17 +5299,17 @@ Le protocole comporte en général **3 à 4 séances espacées de 2 à 4 semaine
 
 Lorsque la production de larmes est insuffisante, de petits **obturateurs en silicone** (ou en collagène résorbable, pour un essai) sont placés dans les points lacrymaux, au bord interne des paupières, afin de ralentir l’évacuation des larmes et de les garder plus longtemps au contact de l’œil.
 
-La pose se fait en consultation, en quelques minutes, sans douleur, d’abord sur les points inférieurs ; le geste est réversible et pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires). L’amélioration du confort concerne la majorité des patients ; un larmoiement gênant, l’expulsion spontanée du bouchon ou, rarement, une infection du canal lacrymal peuvent conduire à le retirer.
+La pose se fait en consultation, en quelques minutes, sans douleur, d’abord sur les points inférieurs ; le geste est réversible et pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires). Beaucoup de patients se disent soulagés, mais les essais ne permettent pas de chiffrer ce bénéfice ; un larmoiement gênant, l’expulsion spontanée du bouchon ou, plus rarement, une infection du canal lacrymal peuvent conduire à le retirer.
 
 #### Chalazion : du traitement médical à l’incision
 
 Le **chalazion** est un kyste inflammatoire d’une glande de Meibomius obstruée : une boule ferme, indolore ou peu douloureuse, dans l’épaisseur de la paupière. Il est bénin et non contagieux, à distinguer de l’orgelet, infection d’un follicule de cil, plus superficiel et douloureux. Les chalazions récidivants sont le signe d’une blépharite ou d’une rosacée sous-jacente, qu’il faut traiter pour éviter les récidives.
 
-**Le traitement médical suffit le plus souvent :** compresses chaudes et massages plusieurs fois par jour pendant plusieurs semaines, pommade antibio-corticoïde si besoin.
+**Le traitement médical suffit dans environ la moitié des cas :** compresses chaudes et massages plusieurs fois par jour pendant plusieurs semaines, pommade antibio-corticoïde si besoin.
 
 En cas de **persistance au-delà de 4 à 6 semaines**, de chalazion volumineux, abcédé ou gênant la vision (astigmatisme induit par la pression sur la cornée), je réalise une **incision-curetage** au cabinet, sous anesthésie locale : un geste d’une quinzaine de minutes, par la face interne de la paupière (pas de cicatrice visible), avec reprise immédiate des activités ; pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires).
 
-Le chalazion disparaît en une à deux semaines dans la grande majorité des cas ; un hématome de la paupière est possible les premiers jours, et une récidive survient surtout lorsque la blépharite n’est pas traitée. Toute lésion qui récidive toujours au même endroit ou d’aspect inhabituel fait l’objet d’une analyse au laboratoire.
+Le chalazion a disparu à 3 semaines dans près de 9 cas sur 10 ; un hématome de la paupière est possible les premiers jours, et une récidive survient surtout lorsque la blépharite n’est pas traitée. Toute lésion qui récidive toujours au même endroit ou d’aspect inhabituel fait l’objet d’une analyse au laboratoire.
 
 ##### Ce que montrent nos travaux sur le frottement oculaire
 
