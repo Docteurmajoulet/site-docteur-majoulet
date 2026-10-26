@@ -8098,6 +8098,12 @@ article.pathology-content .table-scroll {
     .schema-grille {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
+    /* TECH69F-2026-10-25 : vignette seule ou dernière d'un nombre impair — centrée, à la largeur des autres */
+    .schema-grille > .schema-vignette:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: calc(50% - 8px);
+    }
 }
 @media print {
     .schema, .schema-grille .schema-vignette { break-inside: avoid; }
