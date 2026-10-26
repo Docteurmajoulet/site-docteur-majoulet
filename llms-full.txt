@@ -5079,7 +5079,7 @@ Sécheresse oculaire et blépharite sont chroniques, mais elles se traitent bien
 
 #### Sécheresse oculaire : de quoi parle-t-on ?
 
-La sécheresse oculaire est définie par le consensus international TFOS DEWS II (consensus international sur l’œil sec, 2017) comme une **maladie multifactorielle de la surface oculaire** : le film lacrymal perd sa stabilité, devient trop concentré (hyperosmolarité) et entretient une inflammation de la surface de l’œil. Deux mécanismes s’associent à des degrés divers :
+La sécheresse oculaire est définie par le consensus international sur l’œil sec TFOS DEWS III (2025) comme une **maladie multifactorielle et toujours symptomatique** : l’équilibre du film lacrymal, de la surface de l’œil, ou des deux, est rompu. Le film lacrymal devient instable et trop concentré (hyperosmolarité), la surface s’enflamme et s’abîme, et des anomalies des nerfs sensitifs y participent. Deux mécanismes s’associent à des degrés divers :
 
 **Glandes de Meibomius.** Ces glandes des paupières produisent la couche grasse qui empêche la larme de s’évaporer.
 
@@ -5202,6 +5202,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 #### Sources et références
 
+- Wolffsohn JS, Benítez-Del-Castillo JM, Loya-Garcia D, et al. *TFOS DEWS III: Diagnostic Methodology.* Am J Ophthalmol. 2025;279:387-450 — [doi:10.1016/j.ajo.2025.05.033](https://doi.org/10.1016/j.ajo.2025.05.033)
 - Craig JP, Nichols KK, Akpek EK, et al. *TFOS DEWS II Definition and Classification Report.* Ocul Surf. 2017;15(3):276-283 — [doi:10.1016/j.jtos.2017.05.008](https://doi.org/10.1016/j.jtos.2017.05.008)
 - Jones L, Downie LE, Korb D, et al. *TFOS DEWS II Management and Therapy Report.* Ocul Surf. 2017;15(3):575-628 — [doi:10.1016/j.jtos.2017.05.006](https://doi.org/10.1016/j.jtos.2017.05.006)
 - Société Française d’Ophtalmologie. *Surface oculaire.* Rapport annuel de la SFO, 2015 (dir. P.-J. Pisella, C. Baudouin, T. Hoang-Xuan).
