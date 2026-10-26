@@ -8320,3 +8320,14 @@ article.pathology-content > .forme-box :is(ul, ol) {
     height: 2px;
     background: var(--sable);
 }
+/* TECH69S (suite, à valider) — téléphone (≤ 30 em) : une seule marge latérale de 16 px pour tout le site. Les fiches
+   étaient à 16 px depuis TECH20AX (largeur de lecture), mais le bandeau, l'en-tête et les autres pages restaient à
+   24 px : sur les fiches, le texte partait 8 px à gauche du logo. Bandeau, en-tête, contenu et pied de page partagent
+   désormais le même bord, sur toutes les pages. */
+@media (max-width: 30em) {
+    .topbar-inner,
+    .header-inner,
+    .container {
+        padding-inline: 16px;
+    }
+}
