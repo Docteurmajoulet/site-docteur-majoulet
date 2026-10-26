@@ -3110,7 +3110,7 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 ##### Pratique de la chirurgie cataracte
 
-La phacoémulsification est une chirurgie extrêmement codifiée (HAS 2010, recommandations SFO). Le Dr Majoulet la pratique en technique standard, en salle ambulatoire équipée. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications graves sont rares.
+La phacoémulsification est une chirurgie très encadrée (HAS, 2010 ; recommandations SFO). Le Dr Majoulet la pratique en technique standard, en salle ambulatoire équipée. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications graves sont rares.
 
 La discussion sur le choix de l’implant intègre systématiquement les compromis visuels potentiels (halos, éblouissement nocturne avec les multifocaux, besoin résiduel de lunettes avec les monofocaux) pour un consentement vraiment éclairé.
 
@@ -3138,7 +3138,7 @@ Oui, la cataracte peut être opérée chez les patients glaucomateux, porteurs d
 
 ##### Quelle est la durée de vie de l’implant ?
 
-L’implant est prévu pour toute la vie. Il ne s’use pas, ne se colore pas, ne nécessite aucune maintenance. Dans ~15 à 30 % des cas survient une cataracte secondaire (opacification capsulaire), traitée simplement au laser YAG en consultation.
+L’implant est prévu pour toute la vie et ne demande aucun entretien. Il peut rarement s’opacifier, surtout certains implants hydrophiles après une injection de gaz dans l’œil (vitrectomie, greffe de cornée) ; il est alors changé. Avec les implants actuels, une cataracte secondaire apparaît chez environ 1 opéré sur 10 à 1 sur 5 dans les 5 ans ; elle se traite par un laser fait en consultation.
 
 ##### Auteur et révision médicale
 
