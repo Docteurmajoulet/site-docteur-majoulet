@@ -1688,6 +1688,8 @@ Le patient est installé, l’**anesthésie locorégionale** (péribulbaire ou s
 2. Un trocart pour l’**endo-illumination**.
 3. Un trocart pour le **vitréotome** (instrument rotatif qui coupe et aspire le vitré).
 
+**Vitrectomie.** Trois trocarts de petit calibre sont placés dans la pars plana : l’infusion maintient la pression de l’œil, la lumière éclaire l’intérieur, le vitréotome coupe et aspire le vitré.
+
 Selon l’indication, le chirurgien peut ensuite réaliser : pelage de MLI (avec colorant bleu brillant), pelage de membrane épirétinienne, endolaser, cryoapplication, injection d’un **tamponnement** (BSS, air, gaz SF6/C2F6 ou huile de silicone).
 
 #### Les tamponnements internes
@@ -1717,6 +1719,10 @@ Lorsque le tamponnement est gazeux, la bulle de gaz remonte à la partie supéri
 - **Face vers le bas (face down)** en cas de trou maculaire ou de pathologie maculaire.
 - **Tête sur le côté** en cas de déchirure latérale.
 - **Position assise / dos contre la bulle** en cas de pathologie inférieure.
+
+**Œil rempli de gaz, tête droite.** La bulle de gaz remonte à la partie supérieure de l’œil ; sa limite se voit comme une « ligne d’eau » qui descend à mesure que le gaz se résorbe.
+
+**Face vers le bas.** La bulle de gaz remonte toujours vers le haut : tête penchée en avant, elle vient appuyer sur la macula.
 
 La durée du positionnement dépend de la pathologie et du tamponnement : de quelques jours à une semaine environ, selon la taille du trou ou l’emplacement des déchirures (consignes précises remises avant la sortie). Des équipements (chaise de positionnement, matelas spéciaux) peuvent être proposés. La vision reste très limitée tant que la bulle est présente.
 
@@ -1952,6 +1958,8 @@ Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife, à B
 
 La membrane, également appelée *pucker maculaire* ou *cellophane maculaire*, est une **pellicule fibrocellulaire** formée par la prolifération de cellules (cellules gliales, hyalocytes, cellules de l’épithélium pigmentaire rétinien) à la surface de la macula. Cette membrane exerce une **traction tangentielle** et antéropostérieure sur la rétine, créant un plissement qui perturbe l’organisation des photorécepteurs.
 
+**Membrane épirétinienne.** Une fine pellicule s’est formée à la surface de la rétine ; en se contractant, elle la plisse.
+
 #### Les causes d’une membrane épirétinienne
 
 ##### Forme idiopathique — la plus fréquente
@@ -2003,6 +2011,10 @@ La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégional
 2. **Pelage de la membrane épirétinienne** à la pince microchirurgicale.
 3. **Pelage complémentaire de la membrane limitante interne (MLI)** après coloration par un **colorant vital** (bleu brillant en première intention). Cette association MER + MLI est devenue la **technique de référence** car elle diminue le risque de récidive.
 4. Habituellement, **pas de tamponnement par gaz** ni de **positionnement postural**, sauf en cas d’association à un trou maculaire.
+
+**Pelage de la membrane.** La membrane est retirée à la pince microchirurgicale, avec la membrane limitante interne.
+
+**Membrane retirée.** La traction qui plissait la rétine est levée.
 
 Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les patients phaques de plus de 50 ans, pour éviter la cataracte quasi systématique qui survient après vitrectomie.
 
@@ -2106,6 +2118,8 @@ Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife, à B
 
 Avec l’âge, le gel vitréen qui remplit la cavité postérieure de l’œil se liquéfie et se décolle progressivement de la rétine : c’est le **décollement postérieur du vitré (DPV)**. Lorsque le vitré adhère anormalement à la **fovéa**, le centre de la macula, ce décollement peut exercer une **traction vitréomaculaire** qui déchire la rétine en son centre, créant un trou. On parle alors de **trou maculaire idiopathique** (> 80 % des cas).
 
+**Trou maculaire.** Une ouverture dans toute l’épaisseur de la rétine, au centre de la macula.
+
 D’autres causes plus rares existent : **myopie forte** (trou maculaire myopique, parfois associé à un décollement de rétine), **traumatisme oculaire contusif**, **post-vitrectomie** ou secondaire à une membrane épirétinienne.
 
 #### Classification du trou maculaire à l’OCT
@@ -2160,6 +2174,12 @@ Les trois temps chirurgicaux sont :
 2. **Pelage de la membrane limitante interne (MLI)** : retrait d’une fine membrane qui tapisse la surface de la rétine, après coloration par un colorant vital (**bleu brillant** le plus souvent). Ce pelage lève les tractions résiduelles et favorise la fermeture du trou.
 3. **Tamponnement intraoculaire par gaz expansif** : la cavité vitréenne est remplie d’un gaz qui applique les berges du trou contre l’épithélium pigmentaire. Deux gaz sont utilisés selon la taille et la chronicité du trou : **SF6** (résorption ~2 semaines) ou **C2F6** (résorption ~4 à 5 semaines).
 
+**Pelage de la limitante interne.** Une fine membrane est retirée à la surface de la rétine : ce pelage lève les tractions et favorise la fermeture du trou.
+
+**Tamponnement par gaz.** La cavité de l’œil est remplie d’un gaz qui applique les berges du trou contre l’épithélium pigmentaire.
+
+**Trou refermé.** Les berges se sont rejointes : la rétine retrouve sa continuité au centre de la macula.
+
 Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) est souvent proposée en un seul temps opératoire chez les patients phaques de plus de 50 ans, pour éviter la chirurgie secondaire quasi systématique de la cataracte dans les suites.
 
 #### Positionnement post-opératoire et suites
@@ -2172,6 +2192,10 @@ Durant toute la période où la bulle de gaz est présente :
 - La vision de l’œil opéré est très floue et remplie par la bulle visible comme une « ligne d’eau » qui descend progressivement.
 - Signalez la présence de gaz dans l’œil à tout soignant avant une anesthésie ou un traitement de la douleur : **le protoxyde d’azote (N₂O) est contre-indiqué**.
 - Un collyre antibiotique et anti-inflammatoire est prescrit pendant 1 mois.
+
+**Œil rempli de gaz, tête droite.** La bulle de gaz remonte à la partie supérieure de l’œil ; sa limite se voit comme une « ligne d’eau » qui descend à mesure que le gaz se résorbe.
+
+**Face vers le bas.** La bulle de gaz remonte toujours vers le haut : tête penchée en avant, elle vient appuyer sur la macula.
 
 Le suivi OCT est habituellement réalisé à **J7, M1 puis M3**. La récupération visuelle est progressive sur **3 à 6 mois**.
 
