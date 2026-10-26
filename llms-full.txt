@@ -4919,7 +4919,7 @@ Sécheresse oculaire et blépharite sont chroniques, mais elles se traitent bien
 
 #### Sécheresse oculaire : de quoi parle-t-on ?
 
-La sécheresse oculaire est définie par le dernier consensus international sur l’œil sec, TFOS DEWS III (2025), comme une **maladie multifactorielle et toujours symptomatique** : l’équilibre du film lacrymal et de la surface de l’œil est rompu. Le film lacrymal devient instable et trop concentré (hyperosmolarité), la surface de l’œil s’enflamme et s’abîme, et des anomalies des nerfs sensitifs de la surface de l’œil y participent. Deux mécanismes s’associent à des degrés divers :
+La sécheresse oculaire est définie par le consensus international sur l’œil sec TFOS DEWS III (2025) comme une **maladie multifactorielle et toujours symptomatique** : l’équilibre du film lacrymal, de la surface de l’œil, ou des deux, est rompu. Le film lacrymal devient instable et trop concentré (hyperosmolarité), la surface s’enflamme et s’abîme, et des anomalies des nerfs sensitifs y participent. Deux mécanismes s’associent à des degrés divers :
 
 - la **sécheresse par évaporation**, de loin la plus fréquente, liée à une **dysfonction des glandes de Meibomius** (DGM) : ces glandes des paupières produisent la couche grasse qui empêche la larme de s’évaporer ; lorsqu’elles s’obstruent ou s’atrophient, la larme s’évapore trop vite ;
 - la **sécheresse par déficit de production** (aqueux-déficiente), plus rare, rencontrée notamment dans le syndrome de Gougerot-Sjögren et après certains traitements.
