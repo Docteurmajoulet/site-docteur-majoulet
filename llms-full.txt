@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-27
 
 ## Identité et coordonnées
 
@@ -4041,7 +4041,7 @@ Les veines rétiniennes drainent le sang de la rétine vers le nerf optique puis
 
 - **2e** — Cause vasculaire rétinienne
 - **+60 ans** — Âge moyen de survenue
-- **5-10 %** — Risque controlatéral à 5 ans
+- **1 sur 10** — Risque pour l’autre œil à 4 ans
 
 #### Classification anatomique
 
@@ -4083,7 +4083,7 @@ Forme intermédiaire atteignant environ la moitié de la rétine. Son pronostic 
 
 #### Bilan étiologique : indispensable
 
-**L’OVR est un « signal d’alerte vasculaire »** : au-delà du traitement oculaire, un bilan cardiovasculaire et tensionnel doit être mené conjointement avec le médecin traitant. Il contribue à prévenir les accidents vasculaires cérébraux et coronariens et à diminuer le risque d’atteinte controlatérale.
+**L’OVR est un « signal d’alerte vasculaire »** : au-delà du traitement oculaire, un bilan cardiovasculaire et tensionnel doit être mené conjointement avec le médecin traitant. Il contribue à prévenir les accidents vasculaires cérébraux et coronariens.
 
 Bilan usuel :
 
@@ -4100,7 +4100,7 @@ Bilan usuel :
 
 Traitement de **première intention** : **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (aflibercept, ranibizumab, faricimab, brolucizumab), avec phase d’induction puis schéma « Treat & Extend ».
 
-En cas de réponse insuffisante ou chez les patients pseudophaques non compliants pour les injections mensuelles : **implant intravitréen de dexaméthasone (Ozurdex®)**, d’action prolongée sur 4 à 6 mois. À surveiller : élévation de la pression intraoculaire et accélération de la cataracte.
+En cas de réponse insuffisante ou chez les patients pseudophaques non compliants pour les injections mensuelles : **implant intravitréen de dexaméthasone (Ozurdex®)**, dont l’effet dure en général 3 à 6 mois. À surveiller : élévation de la pression intraoculaire et accélération de la cataracte.
 
 ##### 2 — L’ischémie et la néovascularisation
 
@@ -4113,9 +4113,9 @@ Prise en charge pluridisciplinaire : contrôle tensionnel strict, équilibration
 #### Pronostic
 
 - **OBVR non ischémique** : récupération visuelle souvent bonne avec traitement anti-VEGF adapté.
-- **OVCR œdémateuse** : résultats variables, gain moyen de 1 à 3 lignes sous anti-VEGF.
+- **OVCR œdémateuse** : dans les grands essais, le gain moyen est d’environ 3 lignes la première année sous anti-VEGF, avec des résultats variables d’un patient à l’autre.
 - **OVCR ischémique** : pronostic visuel réservé ; surveillance étroite pour prévenir le glaucome néovasculaire.
-- Durée de traitement : 1 à 3 ans en moyenne, parfois plus, selon la réponse sur l’OCT.
+- Durée de traitement : souvent plusieurs années. Dans une étude de suivi à 4 ans, environ la moitié des patients n’avaient plus besoin d’injection, la plupart après moins de 2 ans de traitement ; les autres en recevaient encore.
 
 #### Questions fréquentes des patients
 
@@ -4137,7 +4137,7 @@ Il est difficile de donner un chiffre exact : le traitement est adapté à chaqu
 
 ##### Peut-on avoir une occlusion veineuse sur l’autre œil ?
 
-Le risque d’atteinte controlatérale est d’environ **5 à 10 % à 5 ans**. Il est considérablement réduit par une bonne prise en charge des facteurs de risque vasculaires (HTA, diabète, dyslipidémie, tabac, apnées du sommeil). Une surveillance ophtalmologique régulière de l’œil controlatéral est recommandée.
+Le risque d’occlusion de l’autre œil est d’environ 8 % à 2 ans et 12 % à 4 ans dans la plus grande série publiée. La prise en charge des facteurs de risque vasculaires (HTA, diabète, cholestérol, tabac, apnées du sommeil) est indispensable pour la santé générale ; son effet sur ce risque n’a pas été mesuré. Une surveillance régulière de l’autre œil est recommandée.
 
 ##### Auteur et révision médicale
 
