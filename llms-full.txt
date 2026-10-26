@@ -5655,15 +5655,15 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 - Description : Dépistage visuel de l’enfant : calendrier HAS, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 - Relu le : 2026-07-06
 
-Calendrier HAS 2016 — naissance, 9 mois, 2-4 ans, 6 ans
+Recommandations HAS (2002) et AFSOP (2021), de la naissance à 6 ans
 
-Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il suit un calendrier fixé par la **HAS (Haute Autorité de Santé, 2016)** et repose sur une collaboration entre pédiatre, médecin généraliste, PMI et ophtalmologue.
+Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il repose sur les recommandations de la **HAS** (2002 : bilan visuel à la naissance, entre 9 et 15 mois et entre 2 ans et demi et 4 ans), actualisées en 2021 par l’Association francophone de strabologie et d’ophtalmologie pédiatrique (**AFSOP**), et sur les examens de santé obligatoires de l’enfant, notés dans le carnet de santé.
 
-- **9-15 mois** — 1er examen ophtalmologique recommandé
-- **2-3 %** — Prévalence de l’amblyopie
-- **HAS 2016** — Référentiel de dépistage en France
+- **9-15 mois** — Premier bilan visuel recommandé (HAS)
+- **2-3 %** — Prévalence de l’amblyopie (Europe)
+- **HAS 2002 · AFSOP 2021** — Recommandations de dépistage en France
 
-#### Calendrier de dépistage (HAS 2016)
+#### Calendrier de dépistage (HAS 2002, AFSOP 2021)
 
 | Âge | Qui | Ce qu’on vérifie |
 |---|---|---|
@@ -5671,7 +5671,9 @@ Le **dépistage visuel de l’enfant** vise à repérer précocement les trouble
 | 2 semaines – 2 mois | Pédiatre, PMI | Lueur pupillaire, fixation d’un visage, poursuite visuelle débutante. |
 | 4 mois | Pédiatre, PMI | Poursuite oculaire complète, fixation stable, absence de strabisme constant. |
 | 9 mois (examen obligatoire) | Pédiatre, ophtalmologue | Préhension visuelle, absence de strabisme, dépistage des amétropies fortes. 1er bilan ophtalmologique recommandé. |
+| 12-15 mois | Ophtalmologiste | Examen avec mesure de la réfraction sous cycloplégie si l’enfant est à risque (antécédents familiaux, prématurité…). |
 | 24 mois (examen obligatoire) | Pédiatre, ophtalmologue | Acuité par images (Lea, Pigassou), réfraction si doute, cover-test. |
+| Vers 3 ans | Orthoptiste ou médecin | Dépistage systématique : acuité de chaque œil, test de l’écran, photodépistage. |
 | 3 ans | Médecine scolaire | Acuité visuelle en images, dépistage amblyopie et strabisme latent. |
 | 4-5 ans | Médecine scolaire, ophtalmologue | Acuité visuelle chiffrée, vision binoculaire, dépistage avant la lecture. |
 | 6 ans (examen obligatoire) | Médecine scolaire | Acuité, vision binoculaire, réfraction sur prescription si doute. |
@@ -5684,7 +5686,7 @@ Le **dépistage visuel de l’enfant** vise à repérer précocement les trouble
 - **Cataracte congénitale** (leucocorie, lueur absente). Urgence : chirurgie avant 6 semaines pour cataracte unilatérale.
 - **Rétinoblastome** (leucocorie, strabisme, décollement). Urgence absolue.
 - **Glaucome congénital** (buphtalmie, larmoiement, photophobie).
-- **Strabisme constant** après 4-6 mois.
+- **Strabisme constant** à tout âge, ou strabisme même intermittent après 4 mois.
 - **Nystagmus** (mouvements oculaires anormaux).
 
 ##### 1-3 ans
@@ -5722,7 +5724,7 @@ La **réfraction sous cycloplégie** (collyre atropine ou cyclopentolate) est l�
 
 #### Strabisme de l’enfant
 
-Le strabisme est un défaut d’alignement des axes visuels qui touche **2 à 4 % des enfants**. Au-delà de 4 à 6 mois, une déviation oculaire n’est plus « physiologique » et impose un examen ophtalmologique. L’enjeu principal est la **prévention de l’amblyopie** : le cerveau « éteint » l’image de l’œil dévié pour éviter la vision double, au détriment de son développement visuel.
+Le strabisme est un défaut d’alignement des axes visuels qui touche **2 à 4 % des enfants**. Un strabisme permanent est anormal à tout âge ; après 4 mois, même un strabisme intermittent impose un examen ophtalmologique. L’enjeu principal est la **prévention de l’amblyopie** : le cerveau « éteint » l’image de l’œil dévié pour éviter la vision double, au détriment de son développement visuel.
 
 La prise en charge est multidisciplinaire (ophtalmologue, orthoptiste, strabologue-chirurgien si besoin) : **correction optique totale sous cycloplégie** en première étape — de nombreuses ésotropies accommodatives se corrigent avec les lunettes seules —, traitement de l’amblyopie par occlusion, puis chirurgie des muscles oculomoteurs en cas de déviation résiduelle. Un strabisme d’apparition brutale, quel que soit l’âge, doit faire consulter rapidement.
 
@@ -5730,12 +5732,12 @@ La prise en charge est multidisciplinaire (ophtalmologue, orthoptiste, strabolog
 
 La myopie de l’enfant progresse par **allongement de l’œil**, et chaque dioptrie supplémentaire augmente le risque à l’âge adulte de décollement de rétine, de glaucome et de maculopathie myopique — d’où l’intérêt de freiner son évolution dès qu’elle est rapide (≥ 0,5 D par an), particulièrement entre 6 et 12 ans.
 
-Les moyens de freination validés réduisent la progression d’environ **50 à 60 %** : **atropine à basse concentration** (collyre quotidien), **verres de freination** (technologies DIMS ou HAL), **orthokératologie** (lentilles rigides portées la nuit) ou lentilles souples à défocalisation périphérique. S’y ajoutent les mesures d’hygiène visuelle : temps quotidien en extérieur (au moins 1 à 2 heures) et pauses lors du travail en vision de près. Le choix se fait selon l’âge, la vitesse de progression et le mode de vie de l’enfant.
+Les moyens de freination validés réduisent la progression de la myopie d’**environ la moitié en moyenne**, avec des écarts selon la méthode et la dose : **verres de freination** (DIMS ou HAL), **orthokératologie**, **atropine à faible dose** (plus efficace à 0,05 % qu’à 0,01 %), lentilles souples à défocalisation périphérique. S’y ajoutent les mesures d’hygiène visuelle : le temps passé dehors (1 à 2 heures par jour), qui retarde surtout l’apparition de la myopie, et des pauses lors du travail de près. Le choix se fait selon l’âge, la vitesse de progression et le mode de vie de l’enfant.
 
 #### Signes devant amener à consulter sans attendre
 
 - **Leucocorie** (reflet blanc de la pupille sur photo au flash) : urgence absolue.
-- **Strabisme** constant ou intermittent récurrent après 4-6 mois.
+- **Strabisme** constant à tout âge, ou strabisme même intermittent après 4 mois.
 - Œil rouge avec larmoiement et photophobie chez le nourrisson (suspicion de glaucome congénital).
 - Enfant qui ferme un œil systématiquement ou qui penche la tête.
 - Nystagmus (mouvements oculaires anormaux).
