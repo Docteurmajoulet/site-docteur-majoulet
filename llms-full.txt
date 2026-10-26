@@ -5761,18 +5761,18 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Baisse visuelle unilatérale réversible — traitement précoce (< 7-8 ans)
 
-L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », est une **baisse d’acuité visuelle uni- ou bilatérale** sans lésion organique décelable, liée à une privation de stimulation visuelle pendant la période critique de développement (0 à 7-8 ans). Elle touche environ **2 à 3 % des enfants**. Son traitement précoce permet une récupération dans la majorité des cas.
+L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », est une **baisse d’acuité visuelle uni- ou bilatérale** sans lésion organique décelable, liée à une privation de stimulation visuelle pendant la période critique de développement (0 à 7-8 ans). Elle touche environ **2 à 3 % des enfants** en Europe. Son traitement précoce permet une récupération dans la majorité des cas.
 
-- **2-3 %** — Prévalence chez l’enfant
-- **< 7-8 ans** — Période critique pour traiter efficacement
+- **2-3 %** — Prévalence chez l’enfant (Europe)
+- **Avant 7 ans** — Période la plus favorable au traitement
 - **3 causes** — Strabisme / anisométropie / privation
 
 #### Mécanismes de l’amblyopie
 
 | Type | Cause |
 |---|---|
-| Amblyopie strabique | Un œil qui louche est « éteint » par le cerveau pour éviter la diplopie (vision double). 40 à 50 % des amblyopies. |
-| Amblyopie anisométropique | Différence de correction optique importante entre les deux yeux (> 1,5 D en hypermétropie, > 3 D en myopie, > 1,5 D en astigmatisme). L’œil moins net n’est pas investi par le cortex visuel. |
+| Amblyopie strabique | Un œil qui louche est « éteint » par le cerveau pour éviter la diplopie (vision double). Environ 4 amblyopies sur 10 dans les grands essais ; une sur quatre associe strabisme et anisométropie. |
+| Amblyopie anisométropique | Différence de correction optique importante entre les deux yeux (> 1,5 D en hypermétropie, > 3 D en myopie, > 1,5 D en astigmatisme). L’œil moins net n’est pas investi par le cortex visuel. La cause la plus fréquente dans les études de population. |
 | Amblyopie bilatérale (isométropique) | Forte amétropie bilatérale non corrigée (hypermétropie > +5 D typiquement). |
 | Amblyopie de privation | Obstacle à la formation d’une image nette : cataracte congénitale, ptosis sévère, opacité cornéenne, hémangiome palpébral obstructif. C’est la forme la plus sévère et la plus difficile à récupérer. |
 
@@ -5780,7 +5780,7 @@ L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », 
 
 ##### Signes devant faire consulter un ophtalmologue
 
-- Strabisme intermittent ou constant après l’âge de 4-6 mois.
+- Strabisme constant à tout âge, ou strabisme même intermittent après 4 mois.
 - Enfant qui ferme un œil à la lumière ou pour regarder.
 - Tête penchée ou tournée constante (torticolis oculaire).
 - Enfant qui se rapproche de la télévision, tient les objets très près du visage, plisse les yeux.
@@ -5800,7 +5800,7 @@ L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », 
 
 ##### Étape 1 : correction optique totale
 
-Toujours en premier. Les lunettes doivent être portées **en permanence**. Pour les anisométropies modérées, la correction seule peut suffire en 6 à 18 semaines (PEDIG ATS5). C’est seulement en cas de persistance de l’amblyopie qu’on ajoute un traitement actif.
+Toujours en premier. Les lunettes doivent être portées **en permanence**. Pour les anisométropies, les lunettes seules améliorent l’acuité chez 3 enfants sur 4 et suffisent chez au moins 1 sur 4 ; l’amélioration peut prendre jusqu’à 30 semaines (PEDIG ATS5). C’est seulement en cas de persistance de l’amblyopie qu’on ajoute un traitement actif.
 
 ##### Étape 2 : traitement actif (occlusion ou pénalisation)
 
@@ -5824,7 +5824,7 @@ Chirurgie précoce d’une cataracte congénitale (< 6 semaines pour l’amblyop
 
 #### Pronostic
 
-Un traitement commencé avant 5 ans permet une **récupération d’acuité normale ou quasi-normale dans 70 à 80 % des cas** pour les amblyopies modérées. Le pronostic est moins bon pour les amblyopies sévères (< 1/10), de privation, ou pour un traitement débuté après 7 ans. Environ 25 % des enfants présentent une récidive dans les deux ans, d’où l’importance du suivi prolongé.
+Chez l’enfant de 3 à 7 ans atteint d’amblyopie modérée, **3 sur 4 atteignent environ 7/10 ou gagnent au moins 3 lignes** après 6 mois de traitement (essai ATS1). Le pronostic est moins bon pour les amblyopies profondes (moins de 1/10), de privation, ou traitées tardivement. Après 7 ans, le traitement reste utile chez environ la moitié des enfants de 7 à 12 ans. Environ 1 enfant sur 4 récidive dans l’année qui suit l’arrêt, d’où un sevrage progressif et un suivi prolongé.
 
 ##### Auteur et révision médicale
 
