@@ -8410,10 +8410,10 @@ article.pathology-content .carrousel h2 {
         gap: 16px;
     }
 }
-/* Avec la colonne unique des fiches (maquette TECH69S), le carrousel déborde comme les grilles de schémas (812 px dès
-   60 em) ; dans la colonne actuelle de 812 px, la marge calculée vaut 0. */
+/* Avec la colonne unique des fiches (maquette TECH69S), les images du carrousel débordent comme les grilles de schémas
+   (812 px dès 60 em), le titre reste dans la colonne ; dans la colonne actuelle de 812 px, la marge calculée vaut 0. */
 @media (min-width: 60em) {
-    :where(body.v1) article.pathology-content .carrousel {
+    :where(body.v1) article.pathology-content .carrousel > :is(.carrousel-barres, .carrousel-piste, .carrousel-nav) {
         margin-inline: calc((100% - 812px) / 2);
     }
 }
