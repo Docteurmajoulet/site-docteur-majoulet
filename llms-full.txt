@@ -4731,10 +4731,10 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Dystrophies rétiniennes héréditaires — diagnostic, suivi et thérapie génique
 
-La **rétinite pigmentaire (RP)** est la plus fréquente des **dystrophies rétiniennes héréditaires**. Elle touche environ **1 personne sur 4000** dans le monde. Elle est liée à une dégénérescence progressive des **photorécepteurs rétiniens**, d’abord les **bâtonnets** (vision nocturne et périphérique), puis les **cônes** (vision centrale et des couleurs). Plus de **100 gènes** sont aujourd’hui identifiés. Depuis 2018, une première **thérapie génique** (Luxturna®) est disponible pour certains patients porteurs d’une mutation bi-allélique du gène *RPE65*.
+La **rétinite pigmentaire (RP)** est la plus fréquente des **dystrophies rétiniennes héréditaires**. Elle touche environ **1 personne sur 4000** dans le monde. Elle est liée à une dégénérescence progressive des **photorécepteurs rétiniens**, d’abord les **bâtonnets** (vision nocturne et périphérique), puis les **cônes** (vision centrale et des couleurs). Plus de **80 gènes** sont aujourd’hui identifiés. Depuis 2018, une première **thérapie génique** (Luxturna®) est disponible pour certains patients porteurs d’une mutation bi-allélique du gène *RPE65*.
 
 - **1/4000** — Prévalence mondiale
-- **> 100** — Gènes identifiés
+- **> 80** — Gènes identifiés (forme non syndromique)
 - **2018** — 1re thérapie génique (AMM EU)
 
 #### Symptômes évocateurs
@@ -4760,6 +4760,8 @@ Les deux parents sont porteurs (souvent asymptomatiques). Chaque enfant a un ris
 ##### Liée à l’X (10-15 %)
 
 Mère porteuse, fils atteints. Gènes principaux : *RPGR*, *RP2*. Forme souvent sévère chez le garçon.
+
+Dans environ 30 % des cas, aucun autre membre de la famille n’est atteint (cas isolés).
 
 ##### Formes syndromiques
 
@@ -4828,7 +4830,7 @@ Autorisée en Europe depuis 2018, c’est la **première thérapie génique** r�
 
 ##### Traitement de l’œdème maculaire cystoïde
 
-Fréquent dans les RP, il répond partiellement aux **inhibiteurs de l’anhydrase carbonique** (acétazolamide oral 250-500 mg/j, dorzolamide collyre 3×/j), et plus rarement aux injections intravitréennes de corticoïdes.
+Fréquent dans les RP, il répond souvent aux **inhibiteurs de l’anhydrase carbonique** (acétazolamide par voie orale en première intention, dorzolamide en collyre), avec des rechutes fréquentes ; les corticoïdes intravitréens sont une option en cas d’échec.
 
 ##### Supplémentation
 
