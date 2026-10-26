@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -1021,6 +1021,13 @@ Au Cabinet Ophtalife, l’**OCT maculaire est réalisé sur place, le jour même
 
 Le traitement de référence est l’**injection intravitréenne (IVT) d’anti-VEGF**. Les médicaments disponibles et remboursés en France sont l’**aflibercept** (Eylea, et sa forme haute dose Eylea 8 mg), le **ranibizumab** (Lucentis et ses biosimilaires) et le **faricimab** (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Le choix de la molécule est individualisé selon la lésion, la réponse au traitement et le rythme d’injections visé. L’injection est une piqûre très brève dans le vitré, réalisée sous anesthésie locale par collyre, en conditions d’asepsie chirurgicale rigoureuses, dans la **salle dédiée du cabinet**. [**En savoir plus sur le déroulement d’une IVT**](https://docteurmajoulet.com/injection-intravitreenne)
 
+##### Ma pratique
+
+- **Les injections** : dans la salle dédiée du cabinet, aux normes ISO 7.
+- **L’OCT** : réalisé sur place, le jour même de l’injection.
+- **Après l’injection** : collyre antiseptique pendant 3 jours.
+- **Déformation récente des lignes droites** : consultation sous 24-48 h. Le cabinet réserve des créneaux d’urgence rétinienne : [01 84 19 11 66](tel:+33184191166).
+
 Le protocole habituel est :
 
 1. **Phase d’induction** : 3 à 4 injections mensuelles pour contrôler l’œdème et les néovaisseaux.
@@ -1643,6 +1650,14 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 - **~45-90 min** — Durée moyenne
 - **Ambulatoire** — Sortie le même jour
 
+##### Ma pratique
+
+- **Décollement de rétine** : indentation sclérale avant 45 ans, si le cristallin naturel est en place et la déchirure accessible à l’indentation ; vitrectomie dans tous les autres cas.
+- **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
+- **Cataracte** : souvent opérée dans le même temps en chirurgie maculaire (trou, membrane) ; pas dans le décollement de rétine, sauf si elle est déjà gênante.
+- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
+
 ##### Avant l’opération
 
 - **Bilan pré-opératoire** complet : OCT, rétinographie, biométrie, échographie B si milieux troubles.
@@ -1831,6 +1846,14 @@ Le diagnostic est clinique, posé à l’**examen du fond d’œil après dilata
 
 La chirurgie est indiquée en quasi-totalité des décollements rhegmatogènes. Deux techniques peuvent être utilisées, seules ou combinées :
 
+##### Ma pratique
+
+- **Indentation sclérale** lorsque trois conditions sont réunies : moins de 45 ans, cristallin naturel en place et déchirure accessible à l’indentation. Dans tous les autres cas, je réalise une **vitrectomie**.
+- **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
+- **Cataracte** : je ne l’opère pas en même temps que le décollement, sauf si elle est déjà gênante.
+- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
+
 ##### 1. Vitrectomie postérieure mini-invasive
 
 Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale ou générale, elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (SF6 ou C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
@@ -1950,6 +1973,11 @@ Les indications opératoires classiques sont :
 
 La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégionale** ou générale, et dure **30 à 45 minutes**. Les étapes sont :
 
+##### Ma pratique
+
+- **L’opération** : vitrectomie et pelage de la membrane. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
+- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 1. **[Vitrectomie postérieure 25G ou 27G](https://docteurmajoulet.com/vitrectomie)** par trois trocarts de petit calibre, sans suture.
 2. **Pelage de la membrane épirétinienne** à la pince microchirurgicale.
 3. **Pelage complémentaire de la membrane limitante interne (MLI)** après coloration par un **colorant vital** (bleu brillant en première intention). Cette association MER + MLI est devenue la **technique de référence** car elle diminue le risque de récidive.
@@ -2089,6 +2117,15 @@ L’OCT permet également de différencier un **trou maculaire de pleine épaiss
 #### Traitement chirurgical : vitrectomie + pelage MLI + gaz
 
 Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Elle se déroule en **ambulatoire**, sous **anesthésie locorégionale** (péribulbaire) ou générale, et dure en général **30 à 45 minutes**.
+
+##### Ma pratique
+
+- **L’opération** : vitrectomie, pelage de la membrane limitante interne et bulle de gaz. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
+- **Posture** : face vers le bas, un maximum de temps chaque jour.
+- **Collyres** : pendant 1 mois.
+- **Contrôles** : à J7, à 1 mois et à 3 mois.
+- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 Les trois temps chirurgicaux sont :
 
