@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-27
 
 ## Identité et coordonnées
 
@@ -1563,7 +1563,7 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 - **Surveillance avec repos en position semi-assise** pour favoriser la sédimentation de l’hémorragie en cas de forme modérée et sans déchirure décelée.
 - **Vitrectomie postérieure 25G** indiquée en cas d’hémorragie abondante empêchant la visualisation du fond d’œil et le traitement étiologique, d’hémorragie persistante (typiquement au-delà de 4 à 8 semaines), d’association à une déchirure rétinienne ou à un décollement de rétine. La vitrectomie permet d’évacuer le sang, d’identifier et de traiter la cause (laser, photocoagulation), et de prévenir les complications (prolifération vitréo-rétinienne, hémorragies à répétition).
 
-**Urgence relative.** Une baisse de vision brutale avec corps flottants nombreux ou voile doit faire consulter rapidement pour écarter une déchirure rétinienne ou un décollement de rétine sous-jacent.
+**Urgence relative.** Une baisse brutale de la vision avec corps flottants nombreux ou voile doit faire consulter rapidement pour écarter une déchirure rétinienne ou un décollement de rétine sous-jacent.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -2884,7 +2884,7 @@ Le vitré adhère normalement à la rétine à plusieurs endroits : autour du ne
 - **Multiplication brutale** des corps flottants.
 - **Voile noir** ou **ombre fixe** dans le champ visuel.
 - **Rideau** qui tombe depuis la périphérie.
-- **Baisse visuelle** brutale, même partielle.
+- **Baisse brutale de la vision**, même partielle.
 - Persistance d’**éclairs lumineux** intenses.
 
 Ces symptômes évoquent une **déchirure rétinienne** ou un **décollement de rétine débutant**.
