@@ -8146,3 +8146,13 @@ article.pathology-content .maintenant .etat-cabinet { margin: 0; }
 }
 .btn-etat-cabinet.est-ferme .etat-pastille { background: var(--prusse); color: var(--blanc); }
 article.pathology-content .maintenant .etat-consigne { margin: 8px 0 0; }
+/* TECH69N-2026-10-26 — finitions (CLAUDE.md §6, piste 9) : fondu enchaîné entre deux pages du site
+   (View Transitions entre documents, amélioration progressive : les navigateurs qui ne le gèrent pas
+   changent de page comme avant), désactivé quand l'utilisateur réduit les animations ;
+   à l'impression, la grande coupe d'un schéma ne dépasse pas 12 cm de large. */
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition { navigation: auto; }
+}
+@media print {
+    .schema-planche .schema-svg { width: 12cm; margin-inline: auto; }   /* la règle d’impression img, svg { max-width: 100% } reste en garde-fou */
+}
