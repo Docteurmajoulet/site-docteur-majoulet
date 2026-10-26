@@ -1652,7 +1652,7 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 
 ##### Ma pratique
 
-- **Décollement de rétine** : indentation sclérale avant 45 ans, si le cristallin naturel est en place et la déchirure accessible à l’indentation ; vitrectomie dans tous les autres cas.
+- **Décollement de rétine** : indentation sclérale avant 45 ans, si le cristallin naturel est en place et la déchirure accessible à l’indentation ; vitrectomie dans les autres cas. Chaque dossier est jugé au cas par cas.
 - **Gaz, dans le décollement** : le plus souvent du C2F6, très rarement du C3F8.
 - **Cataracte** : souvent opérée dans le même temps en chirurgie maculaire (trou, membrane) ; pas dans le décollement de rétine, sauf si elle est déjà gênante.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
@@ -1858,7 +1858,7 @@ La **rétinopexie pneumatique** (injection d’une bulle de gaz en consultation,
 
 ##### Ma pratique
 
-- **Indentation sclérale** lorsque trois conditions sont réunies : moins de 45 ans, cristallin naturel en place et déchirure accessible à l’indentation. Dans tous les autres cas, je réalise une **vitrectomie**.
+- **Indentation sclérale** lorsque trois conditions sont réunies : moins de 45 ans, cristallin naturel en place et déchirure accessible à l’indentation. Dans les autres cas, je réalise une **vitrectomie**. Chaque dossier est jugé au cas par cas.
 - **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
 - **Cataracte** : je ne l’opère pas en même temps que le décollement, sauf si elle est déjà gênante.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
