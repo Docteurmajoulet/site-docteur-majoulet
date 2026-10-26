@@ -1836,7 +1836,7 @@ Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Indications maculaires : recommandations de l’American Academy of Ophthalmology sur le trou maculaire ([2025](https://doi.org/10.1016/j.ophtha.2024.12.021)) et sur la membrane épirétinienne ([2025](https://doi.org/10.1016/j.ophtha.2024.12.019)). / Dernière révision : 20 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2008,7 +2008,7 @@ La reprise est **progressive** : le sport, les efforts importants et le sauna so
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 24 août 2026.
+Signes d’alerte et prévention des déchirures : recommandations de l’American Academy of Ophthalmology ([2025](https://doi.org/10.1016/j.ophtha.2024.12.023)). / Dernière révision : 24 août 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2171,7 +2171,7 @@ Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **in
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 1er septembre 2026.
+Rédigé à partir des recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire ([2025](https://doi.org/10.1016/j.ophtha.2024.12.019)). / Dernière révision : 1er septembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2393,7 +2393,7 @@ La fermeture spontanée est **possible mais rare**, essentiellement dans les tr�
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 1er septembre 2026.
+Rédigé à partir des recommandations de l’American Academy of Ophthalmology sur le trou maculaire ([2025](https://doi.org/10.1016/j.ophtha.2024.12.021)). / Dernière révision : 1er septembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2520,7 +2520,7 @@ La plupart des anticoagulants et antiagrégants sont **poursuivis** car leur arr
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / RPPS : 10101500121 — Dernière révision : 22 avril 2026.
+Selon la cause : recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique ([2025](https://doi.org/10.1016/j.ophtha.2024.12.020)) et sur le décollement postérieur du vitré et les déchirures de la rétine ([2025](https://doi.org/10.1016/j.ophtha.2024.12.023)). / RPPS : 10101500121 — Dernière révision : 22 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2748,7 +2748,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 24 août 2026.
+Rédigé à partir des recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades ([2025](https://doi.org/10.1016/j.ophtha.2024.12.023)). / Dernière révision : 24 août 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2830,7 +2830,7 @@ Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urg
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de la [HAS (Haute Autorité de Santé)](https://www.has-sante.fr/). / Dernière révision : 19 août 2026.
+Rédigé à partir des recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades ([2025](https://doi.org/10.1016/j.ophtha.2024.12.023)). / Dernière révision : 19 août 2026.
 
 ### Décollement postérieur du vitré
 
@@ -2948,7 +2948,7 @@ Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinien
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 19 août 2026.
+Rédigé à partir des recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades ([2025](https://doi.org/10.1016/j.ophtha.2024.12.023)). / Dernière révision : 19 août 2026.
 
 ### Baisse brutale de la vision
 
@@ -3884,7 +3884,7 @@ Pour un bilan de rétinopathie diabétique, une suspicion de déchirure rétinie
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 22 avril 2026.
+Principales indications : recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique ([2025](https://doi.org/10.1016/j.ophtha.2024.12.020)) et sur le décollement postérieur du vitré et les déchirures de la rétine ([2025](https://doi.org/10.1016/j.ophtha.2024.12.023)). / Dernière révision : 22 avril 2026.
 
 ## Rétine médicale
 
@@ -4234,7 +4234,7 @@ Le pronostic est **sombre** dans la grande majorité des cas : sans traitement, 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Rédigé en tenant compte des recommandations de l’American Academy of Ophthalmology sur les occlusions artérielles de la rétine ([2025](https://doi.org/10.1016/j.ophtha.2024.12.024)) et de la déclaration scientifique de l’American Heart Association sur l’OACR ([2021](https://doi.org/10.1161/STR.0000000000000366)). / Dernière révision : 20 avril 2026.
 
 ### Œdème maculaire cystoïde (syndrome d’Irvine-Gass)
 
@@ -4357,7 +4357,7 @@ Dans la majorité des syndromes d’Irvine-Gass pris en charge précocement, la 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / RPPS : 10101500121 — Dernière révision : 22 avril 2026.
+Syndrome d’Irvine-Gass (œdème après chirurgie de la cataracte) : recommandations de l’ESCRS sur la chirurgie de la cataracte ([2024](https://doi.org/10.1097/j.jcrs.0000000000002012)). / RPPS : 10101500121 — Dernière révision : 22 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
