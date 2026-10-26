@@ -8276,3 +8276,12 @@ body.page-pathologies .hub-sym-list .dest .ico {
         justify-content: flex-start;
     }
 }
+/* TECH69S-2026-10-26 — colonnes des fiches (tour technique du 26/10). Les listes à puces s'arrêtaient 60 px avant les
+   paragraphes à 1 366 px : leur largeur de 60ch était calculée sur leur propre corps (0,95 rem) et non sur celui
+   des puces (1,05 rem). 41.475rem = 60 caractères du corps des fiches (39,5 em × 1,05) : listes et paragraphes ont
+   le même bord droit, dans le texte comme dans les encadrés. */
+article.pathology-content > :is(ul, ol),
+article.pathology-content > .page-section > :is(ul, ol),
+article.pathology-content > .forme-box :is(ul, ol) {
+    max-width: 41.475rem;
+}
