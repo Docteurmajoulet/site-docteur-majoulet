@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-27
 
 ## Identité et coordonnées
 
@@ -1113,7 +1113,7 @@ Oui. Une **déformation nouvelle des lignes droites** ou une tache centrale réc
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 1er septembre 2026.
+Rédigé à partir de la fiche mémo de la HAS sur la DMLA ([2022](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age)) et des recommandations EURETINA sur la DMLA néovasculaire ([2014](https://doi.org/10.1136/bjophthalmol-2014-305702)). / Dernière révision : 1er septembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1201,7 +1201,7 @@ Au cabinet : **OCT maculaire tous les 6 mois**, rythme adapté au stade. Chez vo
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 6 juillet 2026.
+Rédigé à partir des recommandations de la Fédération France Macula sur la DMLA atrophique ([2025](https://doi.org/10.1016/j.jfo.2025.104473)). / Dernière révision : 6 juillet 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1368,7 +1368,7 @@ Les deux. En France, elles peuvent être réalisées au **cabinet** (en salle d�
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 1er septembre 2026.
+Rédigé à partir des recommandations de la SFO et de la Société française d’hygiène hospitalière sur les injections intravitréennes ([2019](https://doi.org/10.1016/j.jfo.2019.11.002)) et du consensus EURETINA ([2018](https://doi.org/10.1159/000486145)). / Dernière révision : 1er septembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1447,7 +1447,7 @@ Oui. Entre deux injections, la grille permet de détecter une **réactivation** 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 6 juillet 2026.
+Rédigé à partir de la fiche mémo de la HAS sur la DMLA ([2022](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age)), qui recommande l’autosurveillance par la grille d’Amsler. / Dernière révision : 6 juillet 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4014,7 +4014,7 @@ Oui, partiellement. Un contrôle strict de la glycémie (HbA1c cible généralem
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Rédigé à partir des recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique ([2025](https://doi.org/10.1016/j.ophtha.2024.12.020)) et des recommandations EURETINA sur l’œdème maculaire diabétique ([2017](https://doi.org/10.1159/000458539)). / Dernière révision : 20 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4143,7 +4143,7 @@ Le risque d’atteinte controlatérale est d’environ **5 à 10 % à 5 ans**. I
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Rédigé à partir des recommandations EURETINA sur les occlusions veineuses rétiniennes ([2019](https://doi.org/10.1159/000502041)). / Dernière révision : 20 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4484,7 +4484,7 @@ Oui, les récidives sont fréquentes (**30 à 50 % sur 10 ans**), particulièrem
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Rédigé à partir des recommandations d’un groupe international d’experts ([2024](https://doi.org/10.1016/j.preteyeres.2024.101236)) et du consensus international de l’Asia Pacific Vitreo-retina Society ([2025](https://doi.org/10.1016/j.apjo.2025.100252)) sur la choriorétinopathie séreuse centrale. / Dernière révision : 20 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4595,7 +4595,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Néovaisseaux choroïdiens myopiques : consensus international ([2017](https://doi.org/10.1016/j.ophtha.2017.04.028)). Glaucome du myope fort : recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine ([2026](https://doi.org/10.1016/j.jfo.2026.104958)). / Dernière révision : 20 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4719,7 +4719,7 @@ Oui. Le risque de **bilatéralisation** existe (environ 30 % à 5-10 ans), surto
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / RPPS : 10101500121 — Dernière révision : 22 avril 2026.
+Rédigé à partir du consensus international sur les néovaisseaux choroïdiens du myope fort ([2017](https://doi.org/10.1016/j.ophtha.2017.04.028)) et des recommandations de la Fédération France Macula ([2014](https://doi.org/10.1016/j.jfo.2013.12.003)). / RPPS : 10101500121 — Dernière révision : 22 avril 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4973,7 +4973,7 @@ La grossesse peut aggraver rapidement une rétinopathie diabétique. En cas de d
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et de l’[EURETINA (European Society of Retina Specialists)](https://www.euretina.org/). / Dernière révision : 20 avril 2026.
+Rétinopathie diabétique : recommandation de la HAS sur le dépistage ([2010](https://www.has-sante.fr/jcms/c_1028305/fr/depistage-de-la-retinopathie-diabetique-par-lecture-differee-de-photographies-du-fond-d-oeil)) et recommandations de l’American Academy of Ophthalmology ([2025](https://doi.org/10.1016/j.ophtha.2024.12.020)). / Dernière révision : 20 avril 2026.
 
 ## Glaucome
 
