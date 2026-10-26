@@ -8186,3 +8186,73 @@ body.sticky-rdv-repli .sticky-rdv {
         line-height: 1.2;
     }
 }
+/* TECH69Q-2026-10-26 — alignements (tour technique du 26/10). Dans une rangée de cartes ou de tuiles, chaque texte
+   part de la même ligne que ses voisins, même quand un titre, un chiffre ou un dessin prend plus de hauteur : chaque
+   carte reprend les rangées de la grille (sous-grille). Accueil : pictogramme, titre, texte, « En savoir plus ».
+   /pathologies : titre, texte, « Lire la fiche ». Chiffres clés : chiffre, légende. Schémas : dessin (centré dans
+   sa rangée), légende. L'espace entre les cartes ne change pas ; à l'intérieur, row-gap 0 garde les marges
+   actuelles. Sans sous-grille (navigateurs anciens) : affichage inchangé. */
+@supports (grid-template-rows: subgrid) {
+    a.hv-card {
+        display: grid;
+        grid-row: span 4;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+    }
+    .hv-card-body {
+        display: grid;
+        grid-row: 1 / -1;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+    }
+    body.page-pathologies .hub-grid > .hub-card {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr);
+        grid-row: span 3;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+        align-items: start;
+    }
+    body.page-pathologies .hub-grid > .hub-card > .hub-card-icon {
+        grid-row: 1 / -1;
+    }
+    body.page-pathologies .hub-grid > .hub-card > .hub-card-body {
+        display: grid;
+        grid-row: 1 / -1;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+        align-items: start;
+    }
+    :where(body.v1) .key-facts > .key-fact {
+        display: grid;
+        grid-row: span 2;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+    }
+    .schema-grille > .schema-vignette {
+        display: grid;
+        grid-row: span 2;
+        grid-template-rows: subgrid;
+        row-gap: 0;
+    }
+    .schema-grille > .schema-vignette > .schema-svg {
+        align-self: center;
+    }
+}
+/* Chiffre clé sur deux lignes (« 1 sur 3 000 à 5 000 ») : interligne serré, le chiffre reste un bloc. */
+.key-fact-number {
+    line-height: 1.25;
+}
+/* /pathologies, « Quel symptôme ? » : la flèche suit le dernier mot de la destination (elle restait au bord droit,
+   à mi-hauteur, quand la destination tenait sur deux lignes) ; les filets d'une même rangée sont à la même hauteur. */
+body.page-pathologies .hub-sym-list > li {
+    display: grid;
+}
+body.page-pathologies .hub-sym-list .dest {
+    display: block;
+}
+body.page-pathologies .hub-sym-list .dest .ico {
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: -0.1em;
+}
