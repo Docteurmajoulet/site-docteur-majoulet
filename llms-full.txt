@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -1792,9 +1792,9 @@ Hors horaires — urgences hospitalières 24h/24
 
 Le **décollement de rétine** est le décollement de la rétine neurosensorielle de la couche qui la nourrit (épithélium pigmentaire). Il constitue une **urgence chirurgicale** : sans traitement rapide, il conduit à une perte visuelle définitive de l’œil atteint.
 
-- **1/10 000** — Incidence annuelle
+- **1/10 000** — Incidence annuelle, un peu plus élevée en Europe
 - **Le jour même** — Examen si voile noir ou baisse brutale de la vision
-- **> 90 %** — Taux de succès anatomique
+- **~95 %** — Rétine recollée après une ou plusieurs interventions
 
 #### Les trois types de décollement de rétine
 
@@ -1841,11 +1841,11 @@ Technique ancienne mais toujours pertinente, particulièrement chez le jeune pha
 
 La **rétinopexie pneumatique** (injection d’une bulle de gaz en consultation, suivie d’un laser ou d’une cryothérapie), pratiquée en Amérique du Nord pour certains décollements limités et supérieurs, n’est pas utilisée en France.
 
-Le taux de réapplication anatomique après une seule intervention est de **85 à 90 %**, et dépasse **95 %** après un second temps chirurgical si nécessaire, selon les techniques et les séries. Le pronostic visuel dépend surtout du **statut maculaire** au moment de la chirurgie, d’où l’importance d’une prise en charge sans délai.
+Dans les grandes séries, une seule intervention suffit à recoller la rétine dans **85 à 90 %** des cas. Après une ou plusieurs interventions, la rétine est recollée dans **environ 95 %** des cas. Les décollements plus complexes ont des taux de succès en une intervention plus bas. Le pronostic visuel dépend surtout du **statut maculaire** au moment de la chirurgie, d’où l’importance d’une prise en charge sans délai.
 
 #### Pronostic et suites
 
-Le **pronostic anatomique** (remise à plat de la rétine) dépasse 90 % après une ou plusieurs interventions. Le **pronostic fonctionnel** (récupération visuelle) dépend essentiellement de :
+Le **pronostic anatomique** (remise à plat de la rétine) est d’environ 95 % après une ou plusieurs interventions. Le **pronostic fonctionnel** (récupération visuelle) dépend essentiellement de :
 
 - L’**ancienneté** du décollement lors de la chirurgie
 - L’**atteinte ou non de la macula** (« macula on » vs « macula off »)
@@ -2096,7 +2096,7 @@ Les trois temps chirurgicaux sont :
 2. **Pelage de la membrane limitante interne (MLI)** : retrait d’une fine membrane qui tapisse la surface de la rétine, après coloration par un colorant vital (**bleu brillant** le plus souvent). Ce pelage lève les tractions résiduelles et favorise la fermeture du trou.
 3. **Tamponnement intraoculaire par gaz expansif** : la cavité vitréenne est remplie d’un gaz qui applique les berges du trou contre l’épithélium pigmentaire. Deux gaz sont utilisés selon la taille et la chronicité du trou : **SF6** (résorption ~2 semaines) ou **C2F6** (résorption ~4 à 5 semaines).
 
-Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) est souvent proposée en un seul temps opératoire chez les patients phaques de plus de 50 ans, pour éviter la chirurgie secondaire quasi systématique de la cataracte dans les suites.
+Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) est souvent proposée en un seul temps opératoire chez les patients phaques de plus de 50 ans, pour éviter une seconde opération : après 50 ans, environ 2 patients sur 3 sont opérés de la cataracte dans les 1 à 2 ans qui suivent une vitrectomie.
 
 #### Positionnement post-opératoire et suites
 
@@ -2118,9 +2118,9 @@ Pour un trou maculaire idiopathique opéré dans l’année, on peut attendre :
 - Une **fermeture anatomique** dans 90 à 95 % des cas pour les trous < 400 µm.
 - Un **gain moyen de 2 à 4 lignes** d’acuité visuelle.
 - Des métamorphopsies qui régressent plus lentement que l’acuité.
-- Un risque résiduel de **réouverture** du trou de l’ordre de 2 à 5 %.
-- Un risque de **décollement de rétine** post-vitrectomie de 1 à 3 %.
-- Un risque estimé à **10-15 %** de survenue d’un trou maculaire sur l’œil controlatéral, justifiant une surveillance régulière.
+- Une **réouverture** du trou rare : moins de 1 % des cas lorsque la membrane limitante interne a été pelée, contre environ 5 % sans pelage dans les séries anciennes.
+- Un risque de **décollement de rétine** post-vitrectomie de 1 à 3 % (2,4 % dans le registre national britannique).
+- Un risque de survenue d’un trou maculaire sur l’autre œil de l’ordre de **5 à 15 %** sur 5 à 10 ans selon les études, plus faible si le vitré de cet œil est déjà décollé ; une surveillance régulière reste justifiée.
 
 Plus la chirurgie est **précoce** (moins de 6 à 12 mois d’évolution) et plus le trou est de petite taille, meilleur est le résultat fonctionnel final.
 
@@ -2133,19 +2133,32 @@ Plus la chirurgie est **précoce** (moins de 6 à 12 mois d’évolution) et plu
 - **Pelage MLI étendu** sur environ 2 diamètres papillaires autour du trou.
 - **Technique du lambeau inversé de MLI** (Michalewska 2010) pour les **grands trous > 400 µm** et les trous chroniques : amélioration documentée du taux de fermeture (méta-analyses 2019-2021) au prix d’une récupération fonctionnelle parfois plus lente.
 - **Choix du gaz** adapté : SF6 18-20 % pour les trous petits/moyens avec posture courte ; C2F6 pour les grands trous, les trous chroniques et les contextes myopes.
-- **Chirurgie combinée phaco-vitrectomie** discutée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter la chirurgie secondaire de cataracte quasi systématique.
+- **Chirurgie combinée phaco-vitrectomie** discutée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une seconde opération de la cataracte, fréquente dans les 1 à 2 ans.
 - **Surveillance de l’œil controlatéral** avec OCT à chaque contrôle.
 
 #### Pour aller plus loin — données scientifiques
 
-- **~0,3 %** — Prévalence après 65 ans
-- **3 pour 1** — Prédominance féminine (3 femmes pour 1 homme)
+- **~0,4 %** — Prévalence après 63 ans (étude de population en OCT)
+- **3 pour 1** — Prédominance féminine (environ 3 femmes pour 1 homme)
 - **~90 %** — Fermeture anatomique par chirurgie
 - **Kelly & Wendel** (*Arch Ophthalmol*, 1991) ont décrit la première série chirurgicale de trous maculaires par vitrectomie avec tamponnement gazeux, avec un taux de fermeture de l’ordre de 58 %. L’addition du pelage de la MLI a progressivement fait monter ce taux au-delà de 90 % (méta-analyse Spiteri Cornish et al., *Cochrane*, 2013 ; Lois et al., *Invest Ophthalmol Vis Sci*, 2011 — étude FILMS).
 - **Michalewska et al.** (*Ophthalmology*, 2010) ont introduit la **technique du lambeau inversé de MLI**, qui permet d’améliorer sensiblement les résultats anatomiques dans les grands trous (> 400 µm).
 - La **classification IVTS** (*International Vitreomacular Traction Study*, Duker et al., *Ophthalmology*, 2013) a standardisé la terminologie (syndrome de traction vitréomaculaire, trou maculaire de pleine épaisseur classé par diamètre minimal en OCT).
-- Dans la cohorte prospective britannique de 1 253 opérations (Steel et al., *Eye*, 2020), la fermeture est obtenue dans 96 % des cas ; le taux commence à baisser au-delà d’environ 500 µm de diamètre. Dans la série de Manchester (Ch’ng et al., *Am J Ophthalmol*, 2018), les trous de 400 à 650 µm ferment dans 91 à 98 % des cas avec un pelage simple de la MLI, contre 76 % au-delà de 650 µm. Le lambeau inversé améliore la fermeture des grands trous (méta-analyse de 16 études, Marques et al., *Ophthalmic Surg Lasers Imaging Retina*, 2020).
+- Dans la cohorte prospective britannique de 1 253 opérations (Steel et al., *Eye*, 2021), la fermeture est obtenue dans 96 % des cas ; le taux commence à baisser au-delà d’environ 500 µm de diamètre. Dans la série de Manchester (Ch’ng et al., *Am J Ophthalmol*, 2018), les trous de 400 à 650 µm ferment dans 91 à 98 % des cas avec un pelage simple de la MLI, contre 76 % au-delà de 650 µm. Le lambeau inversé améliore la fermeture des grands trous (méta-analyse de 16 études, Marques et al., *Ophthalmic Surg Lasers Imaging Retina*, 2020).
 - Le **positionnement face-vers-le-bas** n’influence pas la fermeture des trous < 400 µm dans l’essai randomisé de Guillaubey et al. (*Am J Ophthalmol*, 2008) ; pour les grands trous (≥ 400 µm), l’essai PIMS (Pasu et al., *JAMA Ophthalmol*, 2020) retrouve une fermeture comparable mais une meilleure acuité à 3 mois avec le face-vers-le-bas. Les méta-analyses d’essais randomisés (Hu et al., *Acta Ophthalmol*, 2016 ; Ye et al., *BMC Ophthalmol*, 2019) concluent de même : posture peu utile sous 400 µm, recommandée au-delà.
+
+##### Références (vérifiées dans PubMed)
+
+- Kelly NE, Wendel RT. *Vitreous surgery for idiopathic macular holes. Results of a pilot study*. Arch Ophthalmol. 1991;109(5):654-659. [doi:10.1001/archopht.1991.01080050068031](https://doi.org/10.1001/archopht.1991.01080050068031)
+- Spiteri Cornish K, Lois N, Scott N, et al. *Vitrectomy with internal limiting membrane (ILM) peeling versus vitrectomy with no peeling for idiopathic full-thickness macular hole (FTMH)*. Cochrane Database Syst Rev. 2013;(6):CD009306. [doi:10.1002/14651858.CD009306.pub2](https://doi.org/10.1002/14651858.CD009306.pub2)
+- Steel DH, Donachie PHJ, Aylward GW, et al. *Factors affecting anatomical and visual outcome after macular hole surgery: findings from a large prospective UK cohort*. Eye (Lond). 2021;35(1):316-325. [doi:10.1038/s41433-020-0844-x](https://doi.org/10.1038/s41433-020-0844-x)
+- Ch’ng SW, Patton N, Ahmed M, et al. *The Manchester Large Macular Hole Study: Is it Time to Reclassify Large Macular Holes?* Am J Ophthalmol. 2018;195:36-42. [doi:10.1016/j.ajo.2018.07.027](https://doi.org/10.1016/j.ajo.2018.07.027)
+- Kumagai K, Furukawa M, Ogino N, Larson E. *Incidence and factors related to macular hole reopening*. Am J Ophthalmol. 2010;149(1):127-132. [doi:10.1016/j.ajo.2009.08.002](https://doi.org/10.1016/j.ajo.2009.08.002)
+- Jackson TL, Donachie PHJ, Sparrow JM, Johnston RL. *United Kingdom National Ophthalmology Database study of vitreoretinal surgery: report 2, macular hole*. Ophthalmology. 2013;120(3):629-634. [doi:10.1016/j.ophtha.2012.09.003](https://doi.org/10.1016/j.ophtha.2012.09.003)
+- Ezra E, Wells JA, Gray RH, et al. *Incidence of idiopathic full-thickness macular holes in fellow eyes. A 5-year prospective natural history study*. Ophthalmology. 1998;105(2):353-359. [doi:10.1016/s0161-6420(98)93562-x](https://doi.org/10.1016/s0161-6420(98)93562-x)
+- Lindtjørn B, Krohn J, Forsaa VA. *Optical coherence tomography features and risk of macular hole formation in the fellow eye*. BMC Ophthalmol. 2021;21(1):351. [doi:10.1186/s12886-021-02111-1](https://doi.org/10.1186/s12886-021-02111-1)
+- Meuer SM, Myers CE, Klein BEK, et al. *The epidemiology of vitreoretinal interface abnormalities as detected by spectral-domain optical coherence tomography: the beaver dam eye study*. Ophthalmology. 2015;122(4):787-795. [doi:10.1016/j.ophtha.2014.10.014](https://doi.org/10.1016/j.ophtha.2014.10.014)
+- McCannel CA, Ensminger JL, Diehl NN, Hodge DN. *Population-based incidence of macular holes*. Ophthalmology. 2009;116(7):1366-1369. [doi:10.1016/j.ophtha.2009.01.052](https://doi.org/10.1016/j.ophtha.2009.01.052)
 
 Références indicatives pour le lecteur averti ; elles ne se substituent pas à l’information remise en consultation.
 
@@ -2165,7 +2178,7 @@ La reprise d’activité est progressive. Éviction des efforts violents et de l
 
 ##### Vais-je avoir une cataracte après l’opération ?
 
-Chez les patients de plus de 50 ans encore phaques, une cataracte survient dans **70 à 90 % des cas** dans les 12 à 24 mois suivant la vitrectomie. Il est fréquent de proposer une **chirurgie combinée** (vitrectomie + phacoémulsification + implant) dans le même temps opératoire pour éviter une seconde intervention.
+Après 50 ans, si le cristallin est conservé, la cataracte progresse nettement après la vitrectomie : environ **2 patients sur 3** sont opérés de la cataracte dans les 1 à 2 ans. Il est fréquent de proposer une **chirurgie combinée** (vitrectomie + phacoémulsification + implant) dans le même temps opératoire pour éviter une seconde intervention.
 
 ##### Un trou maculaire peut-il se refermer tout seul ?
 
@@ -2414,7 +2427,7 @@ Les **corps flottants** (ou *myodésopsies*) sont des petites ombres mobiles per
 
 - **+50 ans** — Âge du décollement postérieur du vitré (DPV) spontané
 - **10-15 %** — Des DPV symptomatiques se compliquent d’une déchirure
-- **> 95 %** — De déchirures « verrouillées » par laser préventif
+- **2 à 9 %** — De décollements malgré le laser préventif (35 à 47 % sans traitement)
 
 #### Qu’est-ce qu’un corps flottant ?
 
@@ -2428,7 +2441,7 @@ Le **vitré** est un gel transparent qui remplit les 4/5 postérieurs de l’œi
 - Des **éclairs lumineux (phosphènes)** brefs, souvent latéraux, surtout perçus dans l’obscurité.
 - Une discrète impression de « sable » ou de « petites mouches » secondaires.
 
-Le DPV simple (non compliqué) évolue favorablement en quelques semaines à quelques mois par neuroadaptation. Mais dans **10 à 15 % des DPV symptomatiques**, la traction exercée par le vitré sur la rétine provoque une **déchirure rétinienne**.
+Le DPV simple (non compliqué) évolue favorablement en quelques semaines à quelques mois par neuroadaptation. Mais dans **10 à 15 % des DPV symptomatiques** (14 % dans une méta-analyse de 17 études, soit environ 1 cas sur 7), la traction exercée par le vitré sur la rétine provoque une **déchirure rétinienne**. Le risque est plus élevé si la vision baisse ou si de nombreux nouveaux corps flottants apparaissent.
 
 #### La déchirure rétinienne
 
@@ -2469,7 +2482,7 @@ La consultation d’urgence comporte systématiquement :
 
 ##### Déchirure rétinienne symptomatique
 
-**Traitement par barrage laser** (photocoagulation argon) réalisé en urgence au cabinet, sous anesthésie topique, en une seule séance. Le laser crée une **cicatrice adhérente** autour de la déchirure qui empêche le liquide de passer sous la rétine. Ce traitement est **efficace dans plus de 95 % des cas** lorsqu’il est réalisé avant tout début de décollement.
+**Traitement par barrage laser** (photocoagulation argon) réalisé en urgence au cabinet, sous anesthésie topique, en une seule séance. Le laser crée une **cicatrice adhérente** autour de la déchirure qui empêche le liquide de passer sous la rétine. Réalisé avant tout début de décollement, il réduit nettement le risque : sans traitement, une déchirure symptomatique évolue vers un décollement dans **35 à 47 %** des cas ; après le laser, un décollement survient malgré tout dans **environ 2 à 9 %** des cas, et une séance complémentaire est parfois nécessaire.
 
 ##### Décollement de rétine débutant
 
@@ -3013,7 +3026,7 @@ Offre une **indépendance large aux lunettes** à toutes les distances. En contr
 
 #### La chirurgie par phacoémulsification
 
-C’est la chirurgie la plus pratiquée au monde, standardisée et très sûre. Elle est réalisée en **ambulatoire**, sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire), et dure habituellement **15 à 25 minutes**.
+C’est une chirurgie très fréquente (en moyenne environ 640 000 opérations par an en France entre 2005 et 2014) et standardisée ; les complications graves sont rares. Elle est réalisée en **ambulatoire**, sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire), et dure habituellement **15 à 25 minutes**.
 
 Les étapes sont :
 
@@ -3075,7 +3088,7 @@ Dans la majorité des cas, les deux yeux sont opérés à **1 à 4 semaines d’
 
 ##### Quels sont les risques de la chirurgie ?
 
-C’est la **chirurgie la plus pratiquée au monde**. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications sont rares : endophtalmie (de l’ordre de 2 à 3 cas pour 10 000 opérations ; 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts), œdème maculaire post-opératoire (1 à 2 %), rupture capsulaire per-opératoire (1 à 2 %), décollement de rétine (0,5 à 1 %, plus fréquent chez le myope fort), opacification capsulaire secondaire traitée au [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) (15 à 30 % à 2-3 ans).
+C’est une **chirurgie très fréquente**, en moyenne environ 640 000 opérations par an en France entre 2005 et 2014. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications sont rares : endophtalmie (de l’ordre de 2 à 3 cas pour 10 000 opérations ; 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts), œdème maculaire post-opératoire (1 à 2 %), rupture capsulaire per-opératoire (1 à 2 %), décollement de rétine (0,5 à 1 %, plus fréquent chez le myope fort), opacification capsulaire secondaire traitée au [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) (15 à 30 % à 2-3 ans).
 
 ##### Auteur et révision médicale
 
@@ -3298,13 +3311,13 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Indépendance aux lunettes · Chirurgie de la cataracte
 
-Les **implants multifocaux** et les implants **EDOF** (Extended Depth of Focus, à profondeur de champ étendue) sont des lentilles intraoculaires dites « premium » qui permettent, lors de la [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte), de voir nettement à plusieurs distances — de loin, en vision intermédiaire et souvent de près — réduisant la dépendance aux lunettes chez 80 à 90 % des patients bien sélectionnés. Ils reposent sur un **compromis optique** : le partage de la lumière entre plusieurs foyers peut générer des halos nocturnes et une légère baisse du contraste, que la plupart des patients compensent par neuro-adaptation en quelques mois. Une **sélection rigoureuse** des candidats est le facteur clé de satisfaction.
+Les **implants multifocaux** et les implants **EDOF** (Extended Depth of Focus, à profondeur de champ étendue) sont des lentilles intraoculaires dites « premium » qui permettent, lors de la [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte), de voir nettement à plusieurs distances — de loin, en vision intermédiaire et souvent de près : environ 8 patients sur 10 n’ont plus besoin de lunettes (méta-analyse de 2016, tous implants multifocaux confondus). Ils reposent sur un **compromis optique** : le partage de la lumière entre plusieurs foyers peut générer des halos nocturnes et une légère baisse du contraste, dont la tolérance varie d’une personne à l’autre. Une **sélection rigoureuse** des candidats est le facteur clé de satisfaction.
 
 #### L’essentiel en 30 secondes
 
 - **Objectif** : corriger simultanément cataracte et [presbytie](https://docteurmajoulet.com/suivi-corrections-optiques#presbytie).
 - **Technologies** : bifocaux (historiques), **trifocaux** (PanOptix, AT LISA tri, FineVision), **EDOF** (Vivity, Symfony, IC-8), trifocaux-EDOF hybrides.
-- **Résultats** : indépendance totale aux lunettes 80-90 % avec trifocaux, 60-75 % avec EDOF (près parfois limité).
+- **Résultats** : environ 8 patients sur 10 sans lunettes (tous implants multifocaux) ; avec un EDOF, la vision de près est moins bonne qu’avec un trifocal.
 - **Compromis** : halos nocturnes et glare possibles, sensibilité aux contrastes légèrement diminuée.
 - **Remboursement** : supplément 800 à 1500 € par œil non pris en charge par l’Assurance Maladie.
 - **Sélection clé** : œil « parfait » (pas de pathologie rétinienne ni glaucomateuse), patient informé et motivé.
@@ -3335,7 +3348,7 @@ Les contre-indications (absolues ou relatives) sont aussi importantes à connaî
 #### Les grandes familles d’implants
 
 - **Bifocaux diffractifs (ReSTOR, Tecnis Multifocal)** : 2 foyers (loin + près). Bons résultats de lecture mais halos plus marqués ; vision intermédiaire parfois médiocre. Moins utilisés depuis l’arrivée des trifocaux.
-- **Trifocaux (AcrySof IQ PanOptix, AT LISA tri, FineVision)** : 3 foyers (loin, intermédiaire ~60-80 cm, près ~40 cm). Excellente lecture et vision d’ordinateur. Halos possibles mais bien tolérés après neuro-adaptation. Référence actuelle pour l’indépendance totale aux lunettes.
+- **Trifocaux (AcrySof IQ PanOptix, AT LISA tri, FineVision)** : 3 foyers (loin, intermédiaire ~60-80 cm, près ~40 cm). Permettent la lecture et le travail sur écran. Halos possibles, dont la tolérance varie d’une personne à l’autre. Référence actuelle pour l’indépendance totale aux lunettes.
 - **EDOF (Tecnis Symfony, AcrySof IQ Vivity, IC-8 Apthera)** : profondeur de champ continue, de loin à intermédiaire. Moins de halos que les trifocaux ; vision de près souvent limitée (lunettes fines possibles pour la lecture prolongée).
 - **Trifocaux-EDOF hybrides** (PanOptix Pro, Synergy) : compromis entre indépendance totale et réduction des halos.
 - **Versions toriques** disponibles pour la plupart de ces modèles si astigmatisme cornéen ≥ 1,0 D.
@@ -3355,17 +3368,18 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 
 #### Résultats attendus
 
-- **Trifocaux** : indépendance aux lunettes rapportée chez 80 à 90 % des patients (méta-analyses Cochrane 2016, *J Cataract Refract Surg* 2017). Acuité sans correction de loin ≥ 8/10 chez > 90 %, de près (40 cm) ≥ Parinaud 2-3 chez > 85 %.
-- **EDOF** : excellents résultats de loin et intermédiaire ; lunettes de près encore nécessaires chez 30 à 50 % des patients pour la lecture fine prolongée.
-- **Dysphotopsies** : halos nocturnes (30-50 % des patients à 3 mois), diminuant à moins de 10-15 % de gêne persistante à 1 an grâce à la neuro-adaptation.
-- **Satisfaction globale** : 85 à 95 % dans les séries publiées avec sélection rigoureuse. La sélection et l’information sont les déterminants majeurs de la satisfaction.
+- **Indépendance aux lunettes** : environ 8 patients sur 10 n’ont plus besoin de lunettes (méta-analyse de 2016, plus de 6 000 patients, tous implants multifocaux confondus). Par rapport à un implant monofocal, la dépendance aux lunettes est moindre (revue Cochrane 2016).
+- **Trifocaux** : meilleure vision intermédiaire que les bifocaux (méta-analyse de 2017).
+- **EDOF** : bonne vision de loin et intermédiaire ; la vision de près est moins bonne et l’indépendance aux lunettes moins fréquente qu’avec un trifocal (méta-analyse de 22 études, 2023).
+- **Dysphotopsies** : des halos autour des lumières, la nuit, sont fréquents avec ces implants, nettement plus qu’avec un implant monofocal (revue Cochrane 2016). Leur tolérance varie d’une personne à l’autre.
+- **Satisfaction** : elle dépend avant tout de la sélection des candidats et de l’information donnée avant l’opération.
 
 #### Complications et gestion de l’insatisfaction
 
 - Complications chirurgicales : identiques à la cataracte standard (endophtalmie de l’ordre de 2 à 3 cas pour 10 000 opérations, œdème maculaire < 2 %, opacification capsulaire traitée par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag)).
 - **Dysphotopsies persistantes** au-delà de 6-12 mois : identifier une cause traitable (opacification capsulaire, décentrement, sécheresse oculaire, erreur réfractive résiduelle).
 - **Erreur réfractive résiduelle** : majore fortement les halos. Correction par retouche laser cornéenne (LASIK, PKR) si > 0,50 D.
-- **Explant-échange** pour implant monofocal en cas d’intolérance définitive : 1 à 3 % des patients selon les séries.
+- **Explant-échange** pour un implant monofocal en cas d’intolérance définitive : il reste rare, la plupart des gênes ayant une cause traitable (correction optique d’appoint, laser de la capsule, traitement de la sécheresse).
 - La meilleure prévention reste la sélection préopératoire.
 
 #### Alternatives
@@ -3378,9 +3392,13 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 #### Sources et références
 
 - de Silva SR, Evans JR, Kirthi V, et al. *Multifocal versus monofocal intraocular lenses after cataract extraction*. Cochrane Database Syst Rev. 2016;(12):CD003169. [doi:10.1002/14651858.CD003169.pub4](https://doi.org/10.1002/14651858.CD003169.pub4)
-- Rosen E, Alió JL, Dick HB, et al. *Efficacy and safety of multifocal intraocular lenses following cataract and refractive lens exchange*. J Cataract Refract Surg. 2016;42(2):310-328. [doi:10.1016/j.jcrs.2016.01.014](https://doi.org/10.1016/j.jcrs.2016.01.014)
+- Rosen E, Alió JL, Dick HB, et al. *Efficacy and safety of multifocal intraocular lenses following cataract and refractive lens exchange: Metaanalysis of peer-reviewed publications*. J Cataract Refract Surg. 2016;42(2):310-328. [doi:10.1016/j.jcrs.2016.01.014](https://doi.org/10.1016/j.jcrs.2016.01.014)
 - Kohnen T, Suryakumar R. *Extended depth-of-focus technology in intraocular lenses*. J Cataract Refract Surg. 2020;46(2):298-304. [doi:10.1097/j.jcrs.0000000000000109](https://doi.org/10.1097/j.jcrs.0000000000000109)
-- Kanclerz P, Toto F, Grzybowski A, Alió JL. *Extended depth-of-field intraocular lenses: an update*. Asia Pac J Ophthalmol. 2020;9(3):194-202. [doi:10.1097/APO.0000000000000296](https://doi.org/10.1097/APO.0000000000000296)
+- Kanclerz P, Toto F, Grzybowski A, Alió JL. *Extended Depth-of-Field Intraocular Lenses: An Update*. Asia Pac J Ophthalmol (Phila). 2020;9(3):194-202. [doi:10.1097/APO.0000000000000296](https://doi.org/10.1097/APO.0000000000000296)
+- Shen Z, Lin Y, Zhu Y, et al. *Clinical comparison of patient outcomes following implantation of trifocal or bifocal intraocular lenses: a systematic review and meta-analysis*. Sci Rep. 2017;7:45337. [doi:10.1038/srep45337](https://doi.org/10.1038/srep45337)
+- Karam M, Alkhowaiter N, Alkhabbaz A, et al. *Extended Depth of Focus Versus Trifocal for Intraocular Lens Implantation: An Updated Systematic Review and Meta-Analysis*. Am J Ophthalmol. 2023;251:52-70. [doi:10.1016/j.ajo.2023.01.024](https://doi.org/10.1016/j.ajo.2023.01.024)
+- Woodward MA, Randleman JB, Stulting RD. *Dissatisfaction after multifocal intraocular lens implantation*. J Cataract Refract Surg. 2009;35(6):992-997. [doi:10.1016/j.jcrs.2009.01.031](https://doi.org/10.1016/j.jcrs.2009.01.031)
+- de Vries NE, Webers CA, Touwslager WR, et al. *Dissatisfaction after implantation of multifocal intraocular lenses*. J Cataract Refract Surg. 2011;37(5):859-865. [doi:10.1016/j.jcrs.2010.11.032](https://doi.org/10.1016/j.jcrs.2010.11.032)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aao.org](https://www.aao.org/)
 - Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants.
 
