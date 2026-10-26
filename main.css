@@ -8410,6 +8410,13 @@ article.pathology-content .carrousel h2 {
         gap: 16px;
     }
 }
+/* Avec la colonne unique des fiches (maquette TECH69S), le carrousel déborde comme les grilles de schémas (812 px dès
+   60 em) ; dans la colonne actuelle de 812 px, la marge calculée vaut 0. */
+@media (min-width: 60em) {
+    :where(body.v1) article.pathology-content .carrousel {
+        margin-inline: calc((100% - 812px) / 2);
+    }
+}
 @media (prefers-reduced-motion: reduce) {
     .carrousel-barres > span {
         transition: none;
