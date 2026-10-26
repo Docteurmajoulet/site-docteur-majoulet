@@ -62,7 +62,8 @@ jobs:
     name: Firefox et WebKit (parcours de rendez-vous)
     runs-on: ubuntu-24.04
     needs: statique
-    timeout-minutes: 10
+    # 20 min : l'installation de Firefox et WebKit a dépassé 10 min trois fois le 26/10 (job annulé avant les tests)
+    timeout-minutes: 20
     defaults:
       run:
         working-directory: _tests
