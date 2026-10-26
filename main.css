@@ -8276,3 +8276,147 @@ body.page-pathologies .hub-sym-list .dest .ico {
         justify-content: flex-start;
     }
 }
+/* TECH69T-2026-10-26 — carrousels de schémas (maquette soumise au Dr Majoulet, CLAUDE.md §6) : en tête de fiche, la
+   pathologie racontée en images avec les schémas validés et leurs légendes. Défilement horizontal natif (glisser au
+   doigt, molette, flèches du clavier sur la piste), arrêt net sur chaque image ; nav.js ajoute la barre de progression
+   façon « stories », les boutons précédent/suivant et le compteur. Jamais de défilement automatique. Sans JavaScript :
+   la piste défile seule, barre et boutons restent masqués (hidden). */
+.carrousel {
+    margin: 28px 0 44px;
+}
+article.pathology-content .carrousel h2 {
+    margin-top: 0;
+}
+.carrousel-aide {
+    margin: 6px 0 0;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+.carrousel-barres {
+    display: flex;
+    gap: 4px;
+    margin: 16px 0 12px;
+}
+.carrousel-barres[hidden] {
+    display: none;
+}
+.carrousel-barres > span {
+    flex: 1 1 0;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--border);
+    transition: background-color 0.2s ease;
+}
+.carrousel-barres > span.est-vue {
+    background: var(--prusse);
+}
+.carrousel-piste {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 88%;
+    gap: 12px;
+    margin-top: 14px;
+    padding-bottom: 10px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: var(--sable) transparent;
+}
+.carrousel-barres:not([hidden]) + .carrousel-piste {
+    margin-top: 0;
+}
+.carrousel-piste:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 4px;
+}
+.carrousel-diapo {
+    padding: 14px 16px 18px;
+    background: var(--blanc);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    scroll-snap-align: start;
+}
+.carrousel-diapo > figure {
+    margin: 0;
+}
+.carrousel-dessin {
+    aspect-ratio: 3 / 2;
+}
+.carrousel-dessin > svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.carrousel-diapo figcaption {
+    margin-top: 12px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+.carrousel-diapo figcaption strong {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+    color: var(--prusse);
+}
+.carrousel-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 10px;
+}
+.carrousel-nav[hidden] {
+    display: none;
+}
+.carrousel-nav button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 2px solid var(--prusse);
+    border-radius: 50%;
+    background: transparent;
+    color: var(--prusse);
+    cursor: pointer;
+}
+.carrousel-nav button:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+}
+.carrousel-nav button:disabled {
+    border-color: var(--border);
+    color: var(--text-light);
+    cursor: default;
+}
+@media (hover: hover) {
+    .carrousel-nav button:not(:disabled):hover {
+        background: var(--prusse);
+        color: var(--blanc-naturel);
+    }
+}
+.carrousel-compteur {
+    margin: 0;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    color: var(--prusse);
+}
+@media (min-width: 48em) {
+    .carrousel-piste {
+        grid-auto-columns: 72%;
+        gap: 16px;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .carrousel-barres > span {
+        transition: none;
+    }
+}
+@media print {
+    .carrousel {
+        display: none;
+    }
+}
