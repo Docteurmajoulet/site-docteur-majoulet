@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -4742,7 +4742,7 @@ Chez certains patients, les fibres se détruisent même à pression « normale �
 
 **Nerf optique sain.** Les fibres du nerf optique convergent vers la papille, où elles forment le nerf optique.
 
-**Glaucome.** Les fibres du nerf optique se détruisent progressivement ; la papille se creuse : c’est l’excavation.
+**Glaucome.** La pression de l’œil (PIO) appuie sur la papille et contribue à la creuser : c’est l’excavation. Les fibres du nerf optique se détruisent progressivement.
 
 - **~76 M** — Personnes atteintes dans le monde
 - **~1,5 M** — Patients atteints en France
