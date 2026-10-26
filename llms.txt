@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -96,26 +96,26 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## Cabinet, prise de rendez-vous et urgences
 
-- [Dr Alexandre Majoulet, ophtalmologue & rétinologue à Boulogne-Billancourt](https://docteurmajoulet.com/): Dr Alexandre Majoulet, chirurgien ophtalmologue et rétinologue à Boulogne-Billancourt : rétine, DMLA, cataracte, glaucome. Cabinet Ophtalife. Prenez RDV.
-- [Le Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet): Dr Majoulet, rétinologue et praticien au CHNO des Quinze-Vingts. Consultations libérales à Boulogne-Billancourt et chirurgie à Jouvenet, Paris 16.
+- [Dr Alexandre Majoulet, ophtalmologue & rétinologue à Boulogne-Billancourt](https://docteurmajoulet.com/): Chirurgien ophtalmologue spécialisé en rétine à Boulogne-Billancourt : DMLA, décollement de rétine, cataracte. OCT et injections au Cabinet Ophtalife.
+- [Le Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet): Chirurgien ophtalmologue rétinologue, praticien au CHNO des Quinze-Vingts et cofondateur du Cabinet Ophtalife. Parcours, diplômes et publications.
 - [Contact et rendez-vous](https://docteurmajoulet.com/contact): Coordonnées du Dr Majoulet : Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt. Tél. 01 84 19 11 66. Rendez-vous en ligne sur Doctolib.
-- [Ophtalmologue à Boulogne-Billancourt](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt): Ophtalmologue et rétinologue à Boulogne-Billancourt (92100). Consultations, chirurgie de la rétine, cataracte, glaucome. Cabinet Ophtalife, RDV Doctolib.
-- [Urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques): Urgences ophtalmologiques : baisse brutale de la vision, éclairs, œil rouge douloureux, traumatisme. Que faire, qui consulter. Dr Majoulet, Boulogne (92).
+- [Ophtalmologue à Boulogne-Billancourt](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt): Cabinet Ophtalife, 37 rue d’Aguesseau à Boulogne-Billancourt : consultations d’ophtalmologie et de rétine, OCT sur place. Accès, horaires et rendez-vous.
+- [Urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques): Voile noir, baisse brutale de la vision, éclairs : où aller maintenant. Le cabinet de Boulogne le jour même, sinon les urgences 24h/24 à Paris.
 - [Publications scientifiques](https://docteurmajoulet.com/publications): Publications scientifiques PubMed et presse grand public du Dr Majoulet, chirurgien ophtalmologue rétinologue (Quinze-Vingts, Cabinet Ophtalife Boulogne).
 - [Toutes les pathologies](https://docteurmajoulet.com/pathologies): Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome, cornée. Fiches détaillées. RDV.
 
 ## DMLA
 
-- [DMLA : diagnostic et suivi](https://docteurmajoulet.com/dmla): DMLA sèche ou humide : symptômes, examen OCT et traitements. Consultation et suivi rétinien avec le Dr Majoulet au Cabinet Ophtalife à Boulogne-Billancourt.
+- [DMLA : diagnostic et suivi](https://docteurmajoulet.com/dmla): DMLA sèche ou humide : symptômes, grille d’Amsler, OCT et injections au cabinet. Suivi rétinien par le Dr Majoulet, Cabinet Ophtalife à Boulogne.
 - [DMLA sèche (atrophique)](https://docteurmajoulet.com/dmla-seche): DMLA sèche : évolution, surveillance OCT tous les 6 mois, compléments AREDS2, état de la recherche. Suivi spécialisé à Boulogne-Billancourt. Prenez RDV.
-- [Injection intravitréenne (IVT)](https://docteurmajoulet.com/injection-intravitreenne): Injection intravitréenne : préparation, déroulement et suivi OCT. Le Dr Majoulet réalise les IVT au Cabinet Ophtalife à Boulogne-Billancourt. Infos et RDV.
+- [Injection intravitréenne (IVT)](https://docteurmajoulet.com/injection-intravitreenne): IVT pour la DMLA humide et l’œdème maculaire : préparation, déroulement, suivi OCT. Réalisées en salle dédiée au Cabinet Ophtalife, Boulogne-Billancourt.
 - [Grille d’Amsler : tester sa vision centrale chez soi](https://docteurmajoulet.com/grille-amsler): Grille d’Amsler à imprimer (PDF) : mode d’emploi, interprétation, quand consulter. Autosurveillance quotidienne de la macula. Dr Majoulet, Boulogne.
 
 ## Chirurgie de la rétine
 
-- [Chirurgie de la rétine](https://docteurmajoulet.com/chirurgie-retine): Chirurgie de la rétine à la Clinique Jouvenet, Paris 16. Consultation avec le Dr Majoulet au Cabinet Ophtalife, Boulogne-Billancourt. Rendez-vous Doctolib.
+- [Chirurgie de la rétine](https://docteurmajoulet.com/chirurgie-retine): Décollement, trou maculaire, membrane épirétinienne : opérations à la Clinique Jouvenet (Paris 16), consultation au Cabinet Ophtalife à Boulogne.
 - [Vitrectomie](https://docteurmajoulet.com/vitrectomie): Vitrectomie : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16. Préparez votre RDV.
-- [Décollement de rétine](https://docteurmajoulet.com/decollement-retine): Décollement de rétine : signes d’alerte (voile noir, éclairs), urgence chirurgicale, vitrectomie. Dr Majoulet, chirurgien rétinologue à Boulogne. Prenez RDV.
+- [Décollement de rétine](https://docteurmajoulet.com/decollement-retine): Voile noir, éclairs, baisse brutale de la vision : que faire le jour même. Indentation ou vitrectomie selon le cas. Dr Majoulet, chirurgien de la rétine.
 - [Membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne): Membrane épirétinienne : vision déformée, examen OCT et chirurgie. Consultation avec le Dr Majoulet à Boulogne-Billancourt, opération à Jouvenet, Paris 16.
 - [Trou maculaire](https://docteurmajoulet.com/trou-maculaire): Trou maculaire : diagnostic OCT, opération et récupération. Consultation avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
 - [Hémorragie intra-vitréenne](https://docteurmajoulet.com/hemorragie-intravitreenne): Hémorragie intravitréenne : causes, échographie en mode B, vitrectomie si nécessaire. Dr Majoulet, chirurgien rétinologue à Boulogne-Billancourt. Prenez RDV.
@@ -155,7 +155,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## Glaucome
 
-- [Glaucome](https://docteurmajoulet.com/glaucome): Glaucome : dépistage, collyres, laser SLT, chirurgie (MIGS, PreserFlo, trabéculectomie). Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
+- [Glaucome](https://docteurmajoulet.com/glaucome): Glaucome : dépistage, collyres, laser SLT et chirurgie. Suivi et opération avec le Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez rendez-vous.
 
 ## Surface oculaire
 
