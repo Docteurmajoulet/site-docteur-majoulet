@@ -334,6 +334,27 @@
         }
     }
 
+    /* ---------- TECH69M-2026-10-26 : /urgences, cabinet ouvert ou fermé à l’heure de Paris (CLAUDE.md §6, piste 5) ----------
+       Horaires du cabinet : lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h ; fermé le dimanche.
+       Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
+       écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas. Jours fériés inconnus.
+       Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
+    var etatCabinet = document.querySelector('[data-etat-cabinet]');
+    if (etatCabinet && window.Intl && Intl.DateTimeFormat) {
+        try {
+            var heureParis = {};
+            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
+                .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
+            var fin = { Mon: 20, Wed: 20, Thu: 20, Tue: 18, Fri: 18, Sat: 18 }[heureParis.weekday];
+            var h = parseInt(heureParis.hour, 10) % 24;
+            var ouvert = Boolean(fin && h >= 9 && h < fin);
+            var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
+            etatCabinet.textContent = ouvert ? 'Ouvert' : 'Fermé';
+            if (boutonCabinet) { boutonCabinet.classList.add(ouvert ? 'est-ouvert' : 'est-ferme'); }
+            etatCabinet.hidden = false;
+        } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
+    }
+
     /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
     function observeHeroCta() {
         if (!heroCta || !('IntersectionObserver' in window)) { return; }

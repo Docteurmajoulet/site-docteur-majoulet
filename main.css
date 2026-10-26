@@ -8113,3 +8113,36 @@ article.pathology-content .table-scroll {
 .sans-coupure {
     white-space: nowrap;
 }
+/* TECH69M-2026-10-26 — /urgences : bouton d'appel du cabinet avec badge « Ouvert » / « Fermé » posé par nav.js
+   (plein aux heures d'ouverture, contour en dehors) ; la consigne en dessous ne change pas. */
+article.pathology-content .maintenant .etat-cabinet { margin: 0; }
+.btn-etat-cabinet {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px 10px;
+    min-height: 48px;
+    padding: 8px 20px 8px 10px;
+    border: 2px solid var(--prusse);
+    border-radius: 999px;
+    background: var(--prusse);
+    color: var(--blanc-naturel);
+    font-weight: 600;
+    line-height: 1.3;
+    text-decoration: none;
+}
+.btn-etat-cabinet.est-ferme { background: var(--blanc); color: var(--prusse); }
+.btn-etat-cabinet:focus-visible { outline: 3px solid var(--prusse); outline-offset: 3px; }
+@media (hover: hover) {
+.btn-etat-cabinet:hover { text-decoration: underline; text-underline-offset: 3px; }
+}
+.etat-pastille {
+    padding: 3px 12px;
+    border-radius: 999px;
+    background: var(--blanc);
+    color: var(--prusse);
+    font-size: 0.85em;
+    font-weight: 700;
+}
+.btn-etat-cabinet.est-ferme .etat-pastille { background: var(--prusse); color: var(--blanc); }
+article.pathology-content .maintenant .etat-consigne { margin: 8px 0 0; }
