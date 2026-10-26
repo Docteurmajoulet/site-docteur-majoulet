@@ -2435,7 +2435,7 @@ Les **corps flottants** (ou *myodésopsies*) sont des petites ombres mobiles per
 
 - **+50 ans** — Âge du décollement postérieur du vitré (DPV) spontané
 - **10-15 %** — Des DPV symptomatiques se compliquent d’une déchirure
-- **2 à 9 %** — De décollements malgré le laser préventif (35 à 47 % sans traitement)
+- **2 à 9 %** — De décollements malgré le laser (contre 35 à 47 % sans laser)
 
 #### Qu’est-ce qu’un corps flottant ?
 
@@ -2490,7 +2490,7 @@ La consultation d’urgence comporte systématiquement :
 
 ##### Déchirure rétinienne symptomatique
 
-**Traitement par barrage laser** (photocoagulation argon) réalisé en urgence au cabinet, sous anesthésie topique, le plus souvent en une seule séance. Le laser crée une **cicatrice adhérente** autour de la déchirure qui empêche le liquide de passer sous la rétine. Réalisé avant tout début de décollement, il réduit nettement le risque : sans traitement, une déchirure symptomatique évolue vers un décollement dans **35 à 47 %** des cas ; après le laser, un décollement survient malgré tout dans **environ 2 à 9 %** des cas, et une séance complémentaire est parfois nécessaire.
+**Traitement par barrage laser** (photocoagulation argon) réalisé en urgence au cabinet, sous anesthésie topique, le plus souvent en une seule séance. Le laser crée une **cicatrice adhérente** autour de la déchirure qui empêche le liquide de passer sous la rétine. Réalisé avant tout début de décollement, il réduit nettement le risque : sans laser, une déchirure symptomatique se complique d’un décollement dans **35 à 47 %** des cas ; après le laser, un décollement survient malgré tout dans **environ 2 à 9 %** des cas, et une séance complémentaire est parfois nécessaire.
 
 ##### Décollement de rétine débutant
 
