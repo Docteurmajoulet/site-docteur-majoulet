@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -960,6 +960,10 @@ La DMLA touche la vision **centrale** et épargne la vision périphérique. Les 
 - **Baisse d’acuité visuelle** de près et de loin, besoin de plus de lumière pour lire.
 - **Diminution de la sensibilité aux contrastes** et des couleurs qui paraissent ternes.
 
+**Métamorphopsies.** Les lignes droites paraissent ondulées ou déformées.
+
+**Scotome central.** Tache sombre ou grise au centre du champ visuel, gênant la lecture.
+
 Un **test simple d’autosurveillance** existe : la [**grille d’Amsler**](https://docteurmajoulet.com/grille-amsler), à regarder chaque jour, un œil après l’autre (grille imprimable et mode d’emploi sur la page dédiée). Toute déformation nouvelle des lignes doit faire consulter rapidement.
 
 **Signes d’alerte imposant une consultation rapide :** baisse visuelle centrale **rapide** d’un œil, **déformation des lignes droites** (métamorphopsies — tester avec la [grille d’Amsler](https://docteurmajoulet.com/grille-amsler)), **tache centrale** (scotome) gênant la lecture, sensation de voile. Ces signes imposent une consultation **dans les 24 à 48 heures**.
@@ -1364,6 +1368,12 @@ Toutes les lignes paraissent **droites et régulières**, toutes les cases sont 
 ##### Test anormal
 
 En fixant le point central : des lignes paraissent **ondulées, déformées ou interrompues** (métamorphopsies), une **tache sombre, grise ou floue** apparaît (scotome), ou une **zone de la grille manque**. Toute **modification par rapport aux jours précédents** compte, même discrète.
+
+**Test normal.** Toutes les lignes paraissent droites et régulières, le point central est net.
+
+**Métamorphopsies.** Des lignes paraissent ondulées, déformées ou interrompues.
+
+**Scotome.** Une tache sombre, grise ou floue apparaît au centre.
 
 **Test anormal ou modifié :** consultez un ophtalmologue **sous 48 heures**. Une déformation nouvelle des lignes peut révéler une forme humide de DMLA, dont le pronostic dépend de la rapidité du traitement. Le cabinet prévoit des **créneaux d’urgence** pour ces situations : OCT réalisé sur place le jour même et, si l’indication est confirmée, [injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) sans délai.
 
@@ -1796,6 +1806,14 @@ Le **décollement de rétine** est le décollement de la rétine neurosensoriell
 - **Le jour même** — Examen si voile noir ou baisse brutale de la vision
 - **> 90 %** — Taux de succès anatomique
 
+#### Quels sont les symptômes d’un décollement de rétine ?
+
+L’apparition brutale de **corps flottants** associée à des **éclairs lumineux** peut révéler une déchirure rétinienne qui pourrait évoluer vers un décollement de rétine : elle impose un fond d’œil dilaté dans les 24 à 48 heures. Un **voile noir**, un **rideau** ou une **baisse brutale de la vision** font suspecter le décollement lui-même : l’œil doit être examiné **le jour même**.
+
+**Voile noir.** Une ombre, comme un rideau, envahit le champ de vision depuis la périphérie.
+
+**Corps flottants et éclairs.** Mouches, filaments ou anneau qui bougent avec le regard ; éclairs lumineux brefs, souvent latéraux.
+
 #### Les trois types de décollement de rétine
 
 ##### Décollement rhegmatogène (par déchirure) — le plus fréquent
@@ -1920,6 +1938,8 @@ Elle complique une autre affection oculaire : **déchirure ou décollement de r�
 - **Macropsie** : sensation que les objets vus par l’œil atteint paraissent plus grands que par l’autre œil.
 - **Diplopie monoculaire** (dédoublement de l’image d’un seul œil) : plus rare.
 - Aucune douleur ni rougeur : la MER est **toujours indolore**.
+
+**Métamorphopsies.** Les lignes droites apparaissent ondulées.
 
 #### Diagnostic : l’OCT est l’examen clé
 
@@ -2076,6 +2096,10 @@ Le taux de fermeture reste élevé (≈ 90 %) jusqu’à 650 µm environ, puis d
 - **Scotome central** : tache floue ou sombre au centre de la vision.
 - **Micropsie** : sensation que les objets vus par l’œil atteint paraissent plus petits.
 - Pas de douleur ni de rougeur : un trou maculaire est **toujours indolore**.
+
+**Métamorphopsies.** Les lignes droites apparaissent ondulées.
+
+**Scotome central.** Tache floue ou sombre au centre de la vision.
 
 #### Comment est posé le diagnostic ?
 
@@ -2419,6 +2443,8 @@ Les **corps flottants** (ou *myodésopsies*) sont des petites ombres mobiles per
 #### Qu’est-ce qu’un corps flottant ?
 
 Le **vitré** est un gel transparent qui remplit les 4/5 postérieurs de l’œil. Avec l’âge, il se liquéfie et perd sa cohésion : des petites opacités apparaissent en son sein. Ces opacités, en se déplaçant, projettent leur ombre sur la rétine — c’est ce que l’on perçoit comme des corps flottants ou des mouches volantes. Ils sont plus visibles sur fond clair (ciel, mur blanc, écran).
+
+**Corps flottants et éclairs.** Mouches, filaments ou anneau qui bougent avec le regard ; éclairs lumineux brefs, souvent latéraux.
 
 #### Le décollement postérieur du vitré (DPV)
 
@@ -4450,6 +4476,8 @@ La **rétinite pigmentaire (RP)** est la plus fréquente des **dystrophies réti
 - **Difficulté d’adaptation** aux variations de luminosité.
 - **Baisse d’acuité centrale** : tardive en général, liée à l’atteinte des cônes ou à un œdème maculaire cystoïde associé.
 
+**Vision en tunnel.** Le champ visuel se rétrécit de façon concentrique, avec une aggravation progressive.
+
 #### Modes de transmission
 
 ##### Autosomique dominante (20-25 %)
@@ -4695,6 +4723,8 @@ Le **glaucome** est une **neuropathie optique chronique progressive** caractéri
 #### Symptômes : pourquoi le dépistage est essentiel
 
 Le glaucome chronique est **asymptomatique pendant des années**. Les symptômes n’apparaissent qu’à un stade avancé, lorsque la moitié des fibres du nerf optique est déjà détruite : **vision périphérique « en tunnel »**, gêne à la conduite ou dans les escaliers, accrochages latéraux. Seul un dépistage régulier peut permettre un diagnostic précoce, avant que les pertes deviennent fonctionnellement gênantes.
+
+**Vision en tunnel.** Elle n’apparaît qu’à un stade avancé du glaucome : d’où l’intérêt du dépistage.
 
 **Dépistage recommandé :**
 
