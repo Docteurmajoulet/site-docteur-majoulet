@@ -4876,15 +4876,15 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Pourquoi, à quelle fréquence, comment — le bilan rétinien systémique
 
-Le **diabète** et l’**hypertension artérielle** (HTA) sont les deux premières pathologies systémiques qui altèrent silencieusement la rétine. Elles peuvent évoluer pendant des années sans aucun symptôme visuel avant de provoquer une baisse de vue brutale ou progressive. Le **dépistage et le suivi ophtalmologiques systématiques** sont la clé pour prévenir la cécité évitable.
+Le **diabète** et l’**hypertension artérielle** (HTA) peuvent altérer la rétine pendant des années sans aucun symptôme visuel, avant de provoquer une baisse brutale de la vision ou une baisse progressive. Le **dépistage et le suivi ophtalmologiques systématiques** sont la clé pour prévenir la cécité évitable.
 
-- **1re cause** — de cécité entre 20 et 65 ans (diabète)
-- **~ 30 %** — DT2 avec rétinopathie au diagnostic
-- **−35 %** — Risque / baisse de 1 % d’HbA1c (UKPDS)
+- **Cause majeure** — de cécité évitable chez l’adulte en âge de travailler (diabète)
+- **35-39 %** — DT2 avec rétinopathie dès le diagnostic (UKPDS)
+- **−37 %** — Complications microvasculaires par point d’HbA1c en moins (UKPDS)
 
 #### Diabète : la rétinopathie diabétique
 
-La **rétinopathie diabétique** est la complication oculaire la plus fréquente et la plus grave du diabète. Elle résulte d’une **microangiopathie** : les capillaires rétiniens se fragilisent, laissent fuir des fluides et des protéines (exsudats, œdème maculaire), puis s’obstruent (ischémie rétinienne, avec risque de néovaisseaux anarchiques qui saignent et décollent la rétine).
+La **rétinopathie diabétique** est une complication fréquente et spécifique du diabète, qui peut menacer la vision. Elle résulte d’une **microangiopathie** : les capillaires rétiniens se fragilisent, laissent fuir des fluides et des protéines (exsudats, œdème maculaire), puis s’obstruent (ischémie rétinienne, avec risque de néovaisseaux anarchiques qui saignent et décollent la rétine).
 
 ##### Stades de la rétinopathie diabétique
 
@@ -4965,7 +4965,7 @@ Oui. Un bon équilibre diminue le risque mais ne l’annule pas. Au cabinet, un 
 
 ##### Peut-on télétransmettre les fonds d’œil (dépistage par rétinographe) ?
 
-Oui. Le dépistage de la rétinopathie diabétique par rétinographie non mydriatique et télé-expertise est validé en France depuis 2014 (réseau ophtalmo-diabète). Il est utilisé en maison de santé ou en pharmacie dans certaines régions, avec relecture par un ophtalmologue. Il convient en particulier pour un premier dépistage ou un suivi sans anomalie antérieure. En cas d’anomalie détectée, une consultation ophtalmologique en présentiel est nécessaire pour compléter le bilan (examen complet, OCT, indications thérapeutiques).
+Oui. Le dépistage par rétinographie non mydriatique, avec lecture à distance par un ophtalmologiste, est validé en France ; le réseau OPHDIAT l’utilise en Île-de-France depuis les années 2000. Il est utilisé en maison de santé ou en pharmacie dans certaines régions, avec relecture par un ophtalmologue. Il convient en particulier pour un premier dépistage ou un suivi sans anomalie antérieure. En cas d’anomalie détectée, une consultation ophtalmologique en présentiel est nécessaire pour compléter le bilan (examen complet, OCT, indications thérapeutiques).
 
 ##### Je suis enceinte et diabétique — que faire ?
 
