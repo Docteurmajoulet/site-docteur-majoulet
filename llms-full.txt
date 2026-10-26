@@ -3458,10 +3458,10 @@ Les **implants toriques** sont des lentilles intraoculaires pliables conçues po
 #### L’essentiel en 30 secondes
 
 - **Indication** : astigmatisme cornéen régulier ≥ 1,0 à 1,25 D lors d’une chirurgie de la cataracte.
-- **Objectif** : réduire à moins de 0,50 D l’astigmatisme résiduel postopératoire chez > 75 % des yeux (données Barrett Toric Calculator).
+- **Objectif** : un astigmatisme résiduel inférieur à 0,50 D, obtenu chez environ 7 yeux sur 10 dans les essais randomisés.
 - **Point clé** : chaque degré de désalignement = ~3,3 % de perte de correction ; 10° = 33 % ; 30° = effet nul.
 - **Remboursement** : pour certains implants dits premium, un surcoût non pris en charge par l’Assurance Maladie peut s’ajouter ; il est discuté en consultation.
-- **Acuité sans lunettes de loin attendue** : ≥ 6/10 chez plus de 85 % des patients opérés.
+- **Sans lunettes de loin** : dans l’essai randomisé le plus large (517 patients), 6 opérés sur 10 n’en portaient plus, contre moins de 4 sur 10 avec un implant non torique.
 
 #### Indications
 
@@ -3484,7 +3484,7 @@ Les **contre-indications relatives** comprennent : pathologie rétinienne altér
 
 #### Principe et choix de l’implant
 
-L’implant torique est une lentille monofocale classique à laquelle est ajouté un **cylindre correcteur** sur l’une des faces. Il comporte des **marques gravées** sur l’optique indiquant l’axe du cylindre, permettant au chirurgien d’aligner précisément l’implant sur l’axe cornéen prévu. Les implants modernes en **acrylique hydrophobe à haptiques fermées ou en plaque** présentent la meilleure stabilité rotationnelle (rotation moyenne < 3° à 1 an selon Vale et al., *J Cataract Refract Surg* 2016).
+L’implant torique est une lentille monofocale classique à laquelle est ajouté un **cylindre correcteur** sur l’une des faces. Il comporte des **marques gravées** sur l’optique indiquant l’axe du cylindre, permettant au chirurgien d’aligner précisément l’implant sur l’axe cornéen prévu. Les implants modernes en **acrylique hydrophobe à haptiques fermées ou en plaque** présentent la meilleure stabilité rotationnelle. Les implants actuels tournent peu : moins de 4° en moyenne à un an dans l’essai randomisé le plus large.
 
 Les cylindres disponibles couvrent en général de **T2 à T9** (soit 1,00 à 6,00 D au plan de l’implant), avec plusieurs pas intermédiaires. Au-delà, un geste complémentaire (LASIK de retouche, PKR) peut être envisagé.
 
@@ -3511,15 +3511,14 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 #### Résultats attendus
 
-- Astigmatisme résiduel ≤ 0,50 D chez 75 à 85 % des yeux avec les formules de dernière génération (Ferreira et al., *J Cataract Refract Surg* 2018).
-- Acuité visuelle non corrigée de loin ≥ 6/10 chez plus de 85 % des patients.
+- Astigmatisme résiduel inférieur à 0,50 D chez environ 7 yeux sur 10 (méta-analyse Cochrane, 2019).
+- Sans lunettes de loin : dans l’essai randomisé le plus large (517 patients), 6 opérés sur 10 n’en portaient plus, contre moins de 4 sur 10 avec un implant non torique.
 - Nette réduction de la dépendance aux lunettes pour la vision de loin (conduite, sport, extérieur).
 - Lunettes de près encore nécessaires (sauf version torique multifocale / EDOF).
-- Satisfaction patient ≥ 90 % dans les séries publiées.
 
 #### Complications spécifiques
 
-- **Rotation postopératoire** : principale complication spécifique. Moins de 3 % des implants modernes subissent une rotation significative (> 10°) nécessitant un repositionnement. Ce geste, réalisé dans les 4 à 6 semaines après la chirurgie, est simple et rapide.
+- **Rotation postopératoire** : principale complication spécifique. Moins de 2 % des implants doivent être repositionnés ; ce geste simple est fait en général après la première semaine, dans le premier mois.
 - **Erreur d’axe peropératoire** : prévenue par le marquage manuel à la lampe à fente et/ou le guidage numérique.
 - **Sur ou sous-correction** : rare avec les formules modernes ; une petite correction résiduelle peut être traitée par retouche laser cornéenne.
 - Les autres complications (œdème maculaire, endophtalmie, opacification capsulaire postérieure) sont les mêmes que dans la chirurgie de la cataracte standard — voir la page [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte).
@@ -3534,9 +3533,10 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 #### Sources et références
 
 - Abulafia A, Barrett GD, Kleinmann G, et al. *Prediction of refractive outcomes with toric intraocular lens implantation*. J Cataract Refract Surg. 2015;41(5):936-944. [doi:10.1016/j.jcrs.2014.08.036](https://doi.org/10.1016/j.jcrs.2014.08.036)
-- Vale C, Menezes C, Firmino-Machado J, et al. *Astigmatism axis stability of a new toric intraocular lens*. J Cataract Refract Surg. 2016;42(11):1617-1623. [doi:10.1016/j.jcrs.2016.08.026](https://doi.org/10.1016/j.jcrs.2016.08.026)
-- Ferreira TB, Ribeiro FJ, Pinheiro J, et al. *Comparison of refractive outcomes with toric IOL calculation formulas*. J Cataract Refract Surg. 2018;44(9):1116-1123. [doi:10.1016/j.jcrs.2018.06.023](https://doi.org/10.1016/j.jcrs.2018.06.023)
-- Kane JX, Connell B, Yip H, et al. *Accuracy of toric intraocular lens calculations using toric calculators*. J Cataract Refract Surg. 2020;46(8):1134-1141. [doi:10.1097/j.jcrs.0000000000000233](https://doi.org/10.1097/j.jcrs.0000000000000233)
+- Vale C, Menezes C, Firmino-Machado J, et al. *Astigmatism management in cataract surgery with Precizon® toric intraocular lens: a prospective study*. Clin Ophthalmol. 2016;10:151-159. [doi:10.2147/OPTH.S91298](https://doi.org/10.2147/OPTH.S91298)
+- Lake JC, Victor G, Clare G, et al. *Toric intraocular lens versus limbal relaxing incisions for corneal astigmatism after phacoemulsification*. Cochrane Database Syst Rev. 2019. [doi:10.1002/14651858.CD012801.pub2](https://doi.org/10.1002/14651858.CD012801.pub2)
+- Kane JX, Connell B. *A Comparison of the Accuracy of 6 Modern Toric Intraocular Lens Formulas*. Ophthalmology. 2020;127(11):1472-1486. [doi:10.1016/j.ophtha.2020.04.039](https://doi.org/10.1016/j.ophtha.2020.04.039)
+- Holland E, Lane S, Horn JD, et al. *The AcrySof Toric intraocular lens in subjects with cataracts and corneal astigmatism: a randomized, subject-masked, parallel-group, 1-year study*. Ophthalmology. 2010. [doi:10.1016/j.ophtha.2010.07.033](https://doi.org/10.1016/j.ophtha.2010.07.033)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aao.org](https://www.aao.org/)
 - Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants. [sfo-online.fr](https://www.sfo-online.fr/)
 
