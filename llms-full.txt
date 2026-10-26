@@ -3256,7 +3256,7 @@ Le geste s’inscrit dans une **chirurgie de la cataracte standard par phacoému
 - **Étapes** : micro-incision cornéenne, capsulorhexis (ouverture circulaire de la capsule antérieure), phacoémulsification du noyau cristallinien, aspiration des masses corticales, **injection de l’implant** replié dans le sac capsulaire où il se déploie.
 - **Sutures** : aucune en règle générale (auto-étanchéité de l’incision).
 
-L’intervention est indolore. Le deuxième œil est opéré habituellement 1 à 4 semaines après le premier, selon les recommandations de la Société Française d’Ophtalmologie.
+L’intervention est indolore. Le deuxième œil est opéré habituellement 1 à 4 semaines après le premier.
 
 #### Suites opératoires et récupération
 
@@ -3725,7 +3725,7 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 - Branch Vein Occlusion Study Group. *Argon laser photocoagulation for macular edema in branch vein occlusion (BVOS)*. Am J Ophthalmol. 1984;98(3):271-282.
 - Central Vein Occlusion Study Group. *Baseline and early natural history report (CVOS)*. Arch Ophthalmol. 1993;111(8):1087-1095.
 - American Academy of Ophthalmology. *Diabetic Retinopathy — Preferred Practice Pattern*. 2019.
-- Société Française d’Ophtalmologie (SFO) — Rapport 2020 : Urgences en ophtalmologie et rétine médicale.
+- Bourges JL (dir.). *Urgences en ophtalmologie*. Rapport de la Société française d’ophtalmologie. Elsevier Masson, 2018.
 
 #### Prendre rendez-vous
 
