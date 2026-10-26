@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -2809,7 +2809,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Chirurgie de la cataracte
 
 - URL : https://docteurmajoulet.com/chirurgie-cataracte
-- Description : Bilan et choix de l’implant au Cabinet Ophtalife à Boulogne-Billancourt, opération à la Clinique Jouvenet (Paris 16). Déroulé de l’intervention et suites.
+- Description : Chirurgie de la cataracte à la Clinique Jouvenet, Paris 16. Bilan et choix de l’implant avec le Dr Majoulet au Cabinet Ophtalife à Boulogne-Billancourt.
 - Relu le : 2026-08-20
 
 Phacoémulsification par micro-incision, choix de l’implant intraoculaire
@@ -2905,7 +2905,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 ### Cataracte
 
 - URL : https://docteurmajoulet.com/cataracte
-- Description : Vision qui baisse, éblouissement : reconnaître la cataracte et savoir quand l’opérer. Bilan avec le Dr Majoulet au Cabinet Ophtalife, Boulogne.
+- Description : Cataracte : symptômes, chirurgie par phacoémulsification, implants monofocaux, toriques ou multifocaux. Dr Majoulet, chirurgien à Boulogne. Prenez RDV.
 - Relu le : 2026-08-20
 
 Chirurgie par phacoémulsification avec implantation intraoculaire

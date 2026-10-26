@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -130,8 +130,8 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## Cataracte et implants
 
-- [Chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte): Bilan et choix de l’implant au Cabinet Ophtalife à Boulogne-Billancourt, opération à la Clinique Jouvenet (Paris 16). Déroulé de l’intervention et suites.
-- [Cataracte](https://docteurmajoulet.com/cataracte): Vision qui baisse, éblouissement : reconnaître la cataracte et savoir quand l’opérer. Bilan avec le Dr Majoulet au Cabinet Ophtalife, Boulogne.
+- [Chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte): Chirurgie de la cataracte à la Clinique Jouvenet, Paris 16. Bilan et choix de l’implant avec le Dr Majoulet au Cabinet Ophtalife à Boulogne-Billancourt.
+- [Cataracte](https://docteurmajoulet.com/cataracte): Cataracte : symptômes, chirurgie par phacoémulsification, implants monofocaux, toriques ou multifocaux. Dr Majoulet, chirurgien à Boulogne. Prenez RDV.
 - [Implants monofocaux](https://docteurmajoulet.com/implants-monofocaux): Implants monofocaux pour la cataracte : principe, bilan, récupération et limites. Consultation avec le Dr Majoulet à Boulogne-Billancourt. Rendez-vous.
 - [Implants toriques](https://docteurmajoulet.com/implants-toriques): Implants toriques et cataracte : indications, bilan, résultats et limites. Consultation avec le Dr Majoulet à Boulogne-Billancourt. Rendez-vous.
 - [Implants multifocaux & EDOF](https://docteurmajoulet.com/implants-multifocaux): Implants multifocaux et EDOF pour la cataracte : indications, bilan et limites. Consultation avec le Dr Majoulet à Boulogne-Billancourt. Rendez-vous.
