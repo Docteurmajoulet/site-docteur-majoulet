@@ -2103,7 +2103,7 @@ Les trois temps chirurgicaux sont :
 2. **Pelage de la membrane limitante interne (MLI)** : retrait d’une fine membrane qui tapisse la surface de la rétine, après coloration par un colorant vital (**bleu brillant** le plus souvent). Ce pelage lève les tractions résiduelles et favorise la fermeture du trou.
 3. **Tamponnement intraoculaire par gaz expansif** : la cavité vitréenne est remplie d’un gaz qui applique les berges du trou contre l’épithélium pigmentaire. Deux gaz sont utilisés selon la taille et la chronicité du trou : **SF6** (résorption ~2 semaines) ou **C2F6** (résorption ~4 à 5 semaines).
 
-Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) est souvent proposée en un seul temps opératoire chez les patients phaques de plus de 50 ans, pour éviter une seconde opération : après 50 ans, environ 2 patients sur 3 sont opérés de la cataracte dans les 1 à 2 ans qui suivent une vitrectomie.
+Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) est souvent proposée en un seul temps opératoire chez les patients phaques de plus de 50 ans, pour éviter une seconde opération : si le cristallin est conservé, la cataracte progresse dans plus de 95 % des yeux dans les 2 ans qui suivent une vitrectomie.
 
 #### Positionnement post-opératoire et suites
 
@@ -2186,7 +2186,7 @@ La reprise d’activité est progressive. Éviction des efforts violents et de l
 
 ##### Vais-je avoir une cataracte après l’opération ?
 
-Après 50 ans, si le cristallin est conservé, la cataracte progresse nettement après la vitrectomie : environ **2 patients sur 3** sont opérés de la cataracte dans les 1 à 2 ans. Il est fréquent de proposer une **chirurgie combinée** (vitrectomie + phacoémulsification + implant) dans le même temps opératoire pour éviter une seconde intervention.
+Après 50 ans, si le cristallin est conservé, la cataracte progresse après la vitrectomie dans **plus de 95 % des yeux** dans les 2 ans. Il est fréquent de proposer une **chirurgie combinée** (vitrectomie + phacoémulsification + implant) dans le même temps opératoire pour éviter une seconde intervention.
 
 ##### Un trou maculaire peut-il se refermer tout seul ?
 
