@@ -8155,6 +8155,7 @@ article.pathology-content .maintenant .etat-consigne { margin: 8px 0 0; }
 }
 @media print {
     .schema-planche .schema-svg { width: 12cm; margin-inline: auto; }   /* la règle d’impression img, svg { max-width: 100% } reste en garde-fou */
+}
 /* TECH69D-2026-10-25 — barre fixe (≤ 64 em) repliée pendant la lecture : nav.js pose body.sticky-rdv-repli quand on
    fait défiler vers le bas et la retire en remontant, en haut et en fin de page, et au clavier. Hors écran, elle n'est
    jamais focalisable (visibility). Sur /urgences-ophtalmologiques, « Urgences 24h/24 » remplace le rendez-vous. */

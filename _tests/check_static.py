@@ -416,6 +416,14 @@ def check(root):
         if k != 1: E(f'{name} : {k} meta theme-color (attendu : 1)')
         # (TECH9S-2026-09-12 : la garde « URL schema.org » du tour 8 est remplacée par le contrôle du vocabulaire, plus haut)
     css_txt = open(os.path.join(root, 'main.css'), encoding='utf-8').read()
+    # TECH69R-2026-10-26 : accolades équilibrées (hors commentaires et chaînes). Le 26/10, la fusion de deux blocs ajoutés
+    # en fin de fichier a perdu le « } » d'un @media print : tout ce qui suivait ne s'appliquait plus qu'à l'impression.
+    _nu = re.sub(r"/\*.*?\*/|\"(?:\\.|[^\"\\])*\"|'(?:\\.|[^'\\])*'", '', css_txt, flags=re.S)
+    _prof = 0
+    for _l, _ligne in enumerate(_nu.split('\n'), 1):
+        _prof += _ligne.count('{') - _ligne.count('}')
+        if _prof < 0: E(f'main.css : « }} » sans bloc ouvert, ligne {_l} — TECH69R'); break
+    if _prof > 0: E(f"main.css : {_prof} bloc(s) jamais fermé(s) — les règles suivantes ne s'appliquent qu'à l'intérieur du bloc ouvert (TECH69R)")
     for m in re.finditer(r'([^{}]*:focus(?::not\(:focus-visible\))?)\s*\{([^}]*)\}', css_txt):
         sel, body = m.group(1).strip(), m.group(2)
         if re.search(r'outline:\s*(none|0)\b', body) and ':not(:focus-visible)' not in sel and 'main[tabindex="-1"]' not in sel:
