@@ -3673,7 +3673,7 @@ Opacification capsulaire postérieure — traitement par capsulotomie au laser Y
 
 La **cataracte secondaire**, ou **opacification capsulaire postérieure (PCO)**, est la complication tardive la plus fréquente de la chirurgie de la cataracte. Elle se manifeste par une **baisse visuelle progressive** plusieurs mois à plusieurs années après la chirurgie, et donne souvent au patient l’impression que « la cataracte est revenue ». Son traitement est en réalité **simple, rapide et indolore** : une **capsulotomie au laser YAG**, réalisée en quelques minutes au cabinet.
 
-- **10-40 %** — Patients concernés à 2-5 ans
+- **1 sur 10 à 1 sur 5** — Opérés concernés à 5 ans
 - **~5 min** — Durée du laser YAG
 - **Définitif** — Résultat après un seul geste
 
@@ -3688,7 +3688,7 @@ Lors de la chirurgie de la cataracte, le chirurgien retire le **noyau du cristal
 #### Facteurs favorisants
 
 - **Âge jeune** à la chirurgie : plus le patient est jeune, plus le risque de PCO est élevé (cellules épithéliales plus actives).
-- **Type d’implant** : les implants hydrophiles ont historiquement un taux de PCO légèrement plus élevé que les hydrophobes à bords carrés (optic edge design). Les implants actuels réduisent fortement ce risque.
+- **Type d’implant** : les implants hydrophiles exposent nettement plus à la cataracte secondaire que les implants hydrophobes à bords carrés ; la forme carrée du bord de l’implant est le facteur le mieux démontré. Les implants actuels réduisent fortement ce risque.
 - **Myopie forte**, **rétinopathie diabétique**, **uvéite**, **pseudoexfoliation capsulaire**.
 - **Intervention combinée** (cataracte + vitrectomie par exemple).
 
@@ -3737,10 +3737,11 @@ La **récupération visuelle est rapide** : amélioration perçue dans les heure
 - **Corps flottants** liés aux fragments capsulaires dans le vitré, souvent transitoires et bien tolérés.
 - **Discrète inflammation** intraoculaire (uvéite antérieure) contrôlée par les collyres.
 
+Une hausse de la pression de l’œil ou un œdème maculaire peuvent survenir dans les semaines qui suivent (1 à 5 % des cas), plus souvent en cas de diabète ou quand le laser est fait dans l’année qui suit l’opération ; ils se traitent par collyres.
+
 ##### Complications rares
 
 - **Déchirure rétinienne** ou **décollement de rétine** : risque ~ 0,5 à 2 %, majoré en cas de myopie forte ou d’antécédents. Voir [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
-- **Œdème maculaire cystoïde** (œdème d’Irvine-Gass) dans les semaines qui suivent, traitement par collyres AINS.
 - **Endommagement de l’implant** (marques sur l’optique) : exceptionnel avec un opérateur expérimenté et habituellement sans conséquence visuelle.
 
 **Consultez en urgence** après un laser YAG en cas de :
