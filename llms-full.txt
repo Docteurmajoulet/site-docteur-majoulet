@@ -4242,21 +4242,21 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 - Description : Œdème maculaire cystoïde : causes (post-cataracte, diabète, uvéite), diagnostic OCT, traitements. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
 - Relu le : 2026-04-22
 
-Accumulation de liquide dans la macula — principale cause de baisse visuelle après chirurgie de cataracte
+Accumulation de liquide dans la macula — cause la plus fréquente de mauvais résultat visuel après une chirurgie de la cataracte
 
 L’**œdème maculaire cystoïde (OMC)** correspond à l’accumulation de liquide sous forme de **logettes cystoïdes** dans les différentes couches de la macula, zone centrale de la rétine responsable de la vision précise. Il résulte d’une **rupture de la barrière hémato-rétinienne** laissant diffuser des fluides à partir des vaisseaux rétiniens. L’OMC n’est pas une maladie en soi mais une **réaction rétinienne commune** à plusieurs situations cliniques — la plus classique étant la chirurgie de la cataracte (**syndrome d’Irvine-Gass**).
 
 **Œdème maculaire cystoïde.** Le liquide s’accumule sous forme de logettes dans les couches de la macula, qui s’épaissit.
 
 - **1-2 %** — Incidence du syndrome d’Irvine-Gass (cataracte simple)
-- **4-12 sem** — Délai typique après chirurgie
+- **< 3 mois** — Délai typique après chirurgie
 - **OCT** — Examen de référence pour le diagnostic
 
 #### Les principales causes d’œdème maculaire cystoïde
 
 ##### Syndrome d’Irvine-Gass (OMC post-cataracte)
 
-Première cause d’OMC en pratique courante. Il survient typiquement **4 à 12 semaines** après une phacoémulsification, avec un pic d’incidence à **6 semaines**. Le mécanisme est **inflammatoire** : libération de prostaglandines intra-oculaires déclenchée par les manipulations chirurgicales, avec rupture de la barrière hémato-rétinienne. Les facteurs favorisants sont : rupture capsulaire peropératoire, diabète, occlusion veineuse antérieure, uvéite chronique, membrane épirétinienne préexistante, traitement par collyre à la prostaglandine (glaucome).
+Il survient typiquement dans les 3 mois qui suivent une phacoémulsification. Le mécanisme est **inflammatoire** : libération de prostaglandines intra-oculaires déclenchée par les manipulations chirurgicales, avec rupture de la barrière hémato-rétinienne. Les facteurs favorisants sont : rupture capsulaire peropératoire, diabète, occlusion veineuse antérieure, uvéite chronique, membrane épirétinienne préexistante, traitement par collyre à la prostaglandine (glaucome), facteur discuté.
 
 ##### Œdème maculaire diabétique
 
@@ -4300,7 +4300,7 @@ L’**angiographie à la fluorescéine** reste utile pour documenter une diffusi
 
 ##### Traitement médical de première ligne (syndrome d’Irvine-Gass)
 
-Le traitement repose sur des collyres anti-inflammatoires, avec une réponse favorable dans plus de 50 % des cas :
+Le traitement repose sur des collyres anti-inflammatoires ; beaucoup d’OMC récents régressent, mais l’efficacité propre de chaque collyre est mal établie.
 
 - Des **collyres anti-inflammatoires** peuvent être prescrits. Le choix du produit, la fréquence et la durée du traitement sont adaptés par l’ophtalmologue. Suivez l’ordonnance remise en consultation.
 - **Collyres corticoïdes** (dexaméthasone, fluorométholone) en association, avec dégression progressive.
@@ -4315,7 +4315,7 @@ En cas de non-amélioration à 3-6 semaines malgré un traitement topique bien c
 - **Implant intravitréen de dexaméthasone (Ozurdex)** à libération prolongée, procurant 3 à 6 mois d’action anti-inflammatoire ; répétable si nécessaire.
 - **Corticothérapie par voie orale** courte dans certaines formes très inflammatoires.
 - **Vitrectomie** en cas de traction vitréomaculaire démontrée, membrane épirétinienne surajoutée, ou OMC chronique résistant à tous les traitements médicaux.
-- Les **anti-VEGF** (ranibizumab, aflibercept) sont moins efficaces que les anti-inflammatoires dans l’Irvine-Gass pur (mécanisme principalement inflammatoire, non angiogénique) ; ils restent un traitement de première ligne pour l’œdème maculaire diabétique et post-occlusion veineuse.
+- Les **anti-VEGF** ne sont pas un traitement de première intention dans l’Irvine-Gass (mécanisme surtout inflammatoire, données limitées) ; ils restent un traitement de première ligne de l’œdème maculaire diabétique et post-occlusion veineuse.
 
 #### Prévention en chirurgie de la cataracte
 
@@ -4329,13 +4329,13 @@ Plusieurs mesures permettent de réduire le risque d’Irvine-Gass :
 
 #### Pronostic
 
-Le pronostic du syndrome d’Irvine-Gass est **globalement favorable** : la majorité des patients récupèrent une acuité visuelle proche de la normale sous traitement bien conduit. Les formes **chroniques non traitées** au-delà de 6 à 12 mois peuvent laisser des altérations structurelles des photorécepteurs (atrophie maculaire) avec déficit visuel résiduel. D’où l’importance d’un **diagnostic précoce** par OCT devant toute baisse visuelle post-chirurgicale.
+Le pronostic du syndrome d’Irvine-Gass est **globalement favorable** : la majorité des patients récupèrent une acuité visuelle proche de la normale sous traitement bien conduit. Les formes **chroniques (au-delà de 4 mois) non traitées** peuvent laisser des altérations structurelles des photorécepteurs (atrophie maculaire) avec déficit visuel résiduel. D’où l’importance d’un **diagnostic précoce** par OCT devant toute baisse visuelle post-chirurgicale.
 
 #### Questions fréquentes des patients
 
 ##### Quand survient l’œdème maculaire après une chirurgie de cataracte ?
 
-Le syndrome d’Irvine-Gass survient typiquement **4 à 12 semaines** après la chirurgie, avec un pic à 6 semaines. Des formes plus tardives (au-delà de 3 mois) existent, notamment en cas de rupture capsulaire peropératoire ou de complication associée.
+Le syndrome d’Irvine-Gass survient typiquement **4 à 12 semaines** après la chirurgie. Des formes plus tardives (au-delà de 3 mois) existent, notamment en cas de rupture capsulaire peropératoire ou de complication associée.
 
 ##### Un patient diabétique doit-il craindre davantage un OMC après cataracte ?
 
