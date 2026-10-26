@@ -2956,6 +2956,10 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 4. **Intervention** : anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
 5. **Suites** : contrôles à J1, J7, M1. Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
 
+**Phacoémulsification.** Le cristallin est fragmenté par ultrasons à travers une petite incision, puis aspiré.
+
+**Implant.** Un implant souple et permanent remplace le cristallin opacifié, dans le sac capsulaire.
+
 #### Expertise du Dr Majoulet
 
 ##### Pratique de la chirurgie cataracte
@@ -3022,6 +3026,10 @@ La **cataracte** correspond à l’**opacification progressive du cristallin**, 
 #### Qu’est-ce que la cataracte ?
 
 Le cristallin est une **lentille biconvexe transparente** située derrière l’iris. Il assure, avec la cornée, la focalisation des images sur la rétine et joue un rôle dans **l’accommodation** (mise au point sur les objets proches). Avec le temps, ses protéines se modifient et s’agrègent, entraînant une **perte progressive de transparence** : c’est la cataracte. Les rayons lumineux sont alors diffusés, ce qui explique l’éblouissement et le flou.
+
+**Cristallin clair.** Le cristallin est une lentille biconvexe transparente située derrière l’iris.
+
+**Cataracte.** La cataracte correspond à l’opacification progressive du cristallin.
 
 - **~20 %** — Des plus de 65 ans
 - **~80 %** — Des plus de 85 ans
@@ -3226,6 +3234,8 @@ S’ajoutent au bilan : une **OCT maculaire** systématique pour dépister une p
 L’implant monofocal moderne est une lentille **souple et pliable**, injectée par une micro-incision de 2,2 à 2,8 mm. Les matériaux actuels sont en **acrylique hydrophobe** (meilleure tolérance à long terme, incidence d’opacification capsulaire postérieure la plus faible) ou en acrylique hydrophile. Les optiques sont **asphériques** pour compenser l’aberration sphérique positive de la cornée, et munies d’un **filtre UV**, parfois d’un filtre à la lumière bleue.
 
 L’implant comporte une **optique centrale** (6,0 mm de diamètre habituellement) et des **haptiques** qui assurent sa stabilité dans le sac capsulaire. Sa puissance, exprimée en dioptries (typiquement entre +5 et +30 D), est choisie individuellement pour atteindre la réfraction cible convenue avec le patient.
+
+**Implant.** Un implant souple et permanent remplace le cristallin opacifié, dans le sac capsulaire.
 
 #### Déroulé de l’intervention
 
@@ -3503,6 +3513,10 @@ La **cataracte secondaire**, ou **opacification capsulaire postérieure (PCO)**,
 #### Comprendre la cataracte secondaire
 
 Lors de la chirurgie de la cataracte, le chirurgien retire le **noyau du cristallin** opacifié et met en place un **implant intraoculaire** à la place. Une partie de l’enveloppe du cristallin (le **sac capsulaire**) est conservée pour soutenir l’implant. Chez certains patients, des **cellules épithéliales** résiduelles prolifèrent sur cette capsule postérieure, qui s’opacifie progressivement. Ce n’est **pas une récidive** de la cataracte (le cristallin a été retiré), mais un phénomène cicatriciel. Voir [Cataracte](https://docteurmajoulet.com/cataracte).
+
+**Cataracte secondaire.** Une partie de la capsule est conservée pour soutenir l’implant ; chez certains patients, cette capsule postérieure s’opacifie progressivement.
+
+**Laser YAG.** Une série d’impacts laser crée une ouverture centrale dans la capsule postérieure opacifiée.
 
 #### Facteurs favorisants
 
@@ -4824,7 +4838,17 @@ Le diagnostic de glaucome repose sur un **faisceau d’arguments cliniques et pa
 
 L’**humeur aqueuse** est un liquide clair sécrété par le corps ciliaire. Elle circule de la chambre postérieure vers la chambre antérieure, puis s’évacue par le **trabéculum**, filtre situé dans l’angle irido-cornéen. Un **déséquilibre** entre sa production et son évacuation entraîne une **élévation de la pression intraoculaire**, qui comprime et détruit progressivement les fibres du nerf optique à leur traversée de la papille.
 
+**L’humeur aqueuse.** L’humeur aqueuse, liquide clair sécrété par le corps ciliaire, circule de la chambre postérieure vers la chambre antérieure, puis s’évacue par le trabéculum, filtre situé dans l’angle irido-cornéen.
+
+**Angle ouvert.** L’humeur aqueuse rejoint le trabéculum, dans l’angle irido-cornéen, et s’évacue.
+
+**Angle fermé.** L’angle irido-cornéen est trop étroit ou obstrué : l’humeur aqueuse ne peut plus s’évacuer.
+
 Chez certains patients, les fibres se détruisent même à pression « normale » : c’est le **glaucome à pression normale (GPN)**, où interviennent aussi des facteurs vasculaires (hypotension nocturne, vasospasmes, apnées du sommeil).
+
+**Nerf optique sain.** Les fibres du nerf optique convergent vers la papille, où elles forment le nerf optique.
+
+**Glaucome.** La pression de l’œil (PIO) appuie sur la papille et contribue à la creuser : c’est l’excavation. Les fibres du nerf optique se détruisent progressivement.
 
 - **~76 M** — Personnes atteintes dans le monde
 - **~1,5 M** — Patients atteints en France
@@ -5266,6 +5290,10 @@ La **myopie** est l’amétropie la plus fréquente dans les pays développés. 
 
 Dans un œil emmétrope (sans correction), les rayons lumineux parallèles arrivant de l’infini se focalisent exactement sur la rétine. Chez le myope, l’œil est **trop long** (myopie axile) ou **trop convergent** : les rayons se focalisent en avant de la rétine. Résultat : l’image perçue de loin est floue. En vision de près, les rayons divergents se focalisent à nouveau sur la rétine — d’où la vision de près souvent correcte sans correction.
 
+**Œil normal.** Les rayons venant de loin se focalisent exactement sur la rétine.
+
+**Myopie.** L’œil est trop long : les rayons se focalisent en avant de la rétine ; l’image de loin est floue.
+
 #### Classification
 
 | Niveau | Dioptries | Caractéristiques |
@@ -5353,6 +5381,10 @@ L’**hypermétropie** est une amétropie où l’image se forme **en arrière d
 #### Mécanisme
 
 Dans un œil emmétrope, la longueur axiale est d’environ 23,5 mm. Chez l’hypermétrope, elle est inférieure (souvent 21-22 mm, parfois moins). Les rayons lumineux se focaliseraient théoriquement derrière la rétine, mais le cristallin peut augmenter sa puissance optique (accommodation) pour les ramener sur la rétine. Cette accommodation est gratuite chez l’enfant mais devient insuffisante puis pénible à l’adulte, et s’épuise à la presbytie.
+
+**Œil normal.** Les rayons venant de loin se focalisent exactement sur la rétine.
+
+**Hypermétropie.** L’œil est trop court : sans accommodation, les rayons se focaliseraient en arrière de la rétine.
 
 #### Symptômes selon l’âge
 
