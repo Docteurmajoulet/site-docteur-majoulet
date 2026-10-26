@@ -375,4 +375,32 @@
         }, { threshold: 1, rootMargin: margin });
         heroObserver.observe(heroCta);
     }
+
+    /* ---------- TECH69D-2026-10-25 : barre RDV fixe repliée pendant la lecture ----------
+       Elle se retire quand on fait défiler vers le bas, revient dès qu'on remonte, en haut et en fin de page,
+       et au clavier (Tab). Sans animation demandée par le système, elle reste fixe. */
+    if (stickyRdv) {
+        var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        var lastY = window.pageYOffset;
+        var ticking = false;
+        var updateFold = function () {
+            ticking = false;
+            var y = window.pageYOffset;
+            if (reduceMotion.matches) { body.classList.remove('sticky-rdv-repli'); lastY = y; return; }
+            var delta = y - lastY;
+            var nearEnd = y + window.innerHeight >= document.documentElement.scrollHeight - 160;
+            if (y < 240 || nearEnd || delta < -12) {
+                body.classList.remove('sticky-rdv-repli');
+            } else if (delta > 12 && !body.classList.contains('menu-open')) {
+                body.classList.add('sticky-rdv-repli');
+            }
+            if (Math.abs(delta) > 12) { lastY = y; }
+        };
+        window.addEventListener('scroll', function () {
+            if (!ticking) { ticking = true; window.requestAnimationFrame(updateFold); }
+        }, { passive: true });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Tab') { body.classList.remove('sticky-rdv-repli'); lastY = window.pageYOffset; }
+        });
+    }
 })();

@@ -441,7 +441,7 @@ try {
           if (bar) {
             const cs = getComputedStyle(bar);
             if (innerHeight <= 480 && innerWidth > innerHeight && cs.display !== 'none') out.push('barre fixe visible en paysage bas');
-            else if (cs.display !== 'none' && !document.body.classList.contains('hero-cta-visible')) { const r = bar.getBoundingClientRect(); if (r.bottom > innerHeight + 1) out.push(`barre fixe sous le bas de l'écran (${Math.round(r.bottom - innerHeight)} px)`); }
+            else if (cs.display !== 'none' && !document.body.classList.contains('hero-cta-visible') && !document.body.classList.contains('sticky-rdv-repli') /* TECH69D : repliée pendant la lecture */) { const r = bar.getBoundingClientRect(); if (r.bottom > innerHeight + 1) out.push(`barre fixe sous le bas de l'écran (${Math.round(r.bottom - innerHeight)} px)`); }
           }
           return out;
         });
