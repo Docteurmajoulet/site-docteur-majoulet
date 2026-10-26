@@ -8239,9 +8239,11 @@ body.sticky-rdv-repli .sticky-rdv {
         align-self: center;
     }
 }
-/* Chiffre clé sur deux lignes (« 1 sur 3 000 à 5 000 ») : interligne serré, le chiffre reste un bloc. */
+/* Chiffre clé sur deux lignes (« 1 sur 3 000 à 5 000 ») : interligne serré, le chiffre reste un bloc ; la marge
+   rend l'espace que l'interligne serré retire entre le chiffre et sa légende. */
 .key-fact-number {
     line-height: 1.25;
+    margin-bottom: 0.3em;
 }
 /* /pathologies, « Quel symptôme ? » : la flèche suit le dernier mot de la destination (elle restait au bord droit,
    à mi-hauteur, quand la destination tenait sur deux lignes) ; les filets d'une même rangée sont à la même hauteur. */
