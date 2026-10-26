@@ -1381,7 +1381,7 @@ La grille d’Amsler est un outil de **dépistage**, pas de diagnostic : elle ne
 
 ##### Les lignes me paraissent légèrement floues sur les bords : est-ce anormal ?
 
-Un léger flou périphérique est fréquent et souvent lié à la correction optique ou à la fixation. Ce qui doit alerter : des lignes **ondulées ou tordues**, une **tache** qui persiste, ou un **changement** par rapport à vos tests précédents. Au moindre doute, faites contrôler.
+Un léger flou périphérique est fréquent et souvent lié à la correction optique ou à la fixation. Ce qui doit alerter : des lignes **ondulées ou tordues**, une **tache** qui persiste, ou un **changement** par rapport à vos tests précédents. Devant l’un de ces signes, consultez rapidement.
 
 ##### Le test remplace-t-il la consultation ?
 
@@ -1734,7 +1734,7 @@ Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, un pos
 
 ##### Vais-je retrouver toute ma vision ?
 
-La **récupération visuelle dépend essentiellement de l’état de la macula** avant l’intervention. Elle est généralement **excellente dans les trous maculaires pris en charge précocement**, **satisfaisante dans les membranes épirétiniennes**, variable dans les **décollements de rétine** (dépend de si la macula était soulevée ou non), souvent partielle dans les **rétinopathies diabétiques proliférantes compliquées**.
+La **récupération visuelle dépend essentiellement de l’état de la macula** avant l’intervention. Elle est **d’autant meilleure que le trou maculaire est opéré tôt** ; elle est **satisfaisante dans les membranes épirétiniennes**, variable dans les **décollements de rétine** (dépend de si la macula était soulevée ou non), souvent partielle dans les **rétinopathies diabétiques proliférantes compliquées**.
 
 ##### Pourquoi la cataracte apparaît-elle si souvent après une vitrectomie ?
 
@@ -2990,7 +2990,7 @@ L’implant est une lentille souple et permanente qui remplace le cristallin opa
 
 ##### Implant monofocal (remboursé)
 
-Vise une vision nette à une distance unique, le plus souvent de loin. Des lunettes de lecture seront nécessaires après l’intervention. C’est le choix le plus sûr et le plus répandu, notamment en cas de pathologie rétinienne.
+Vise une vision nette à une distance unique, le plus souvent de loin. Des lunettes de lecture seront nécessaires après l’intervention. C’est le choix le plus répandu, et celui à privilégier en cas de pathologie rétinienne.
 
 ##### Implant torique
 
@@ -3112,7 +3112,7 @@ Les **implants intraoculaires monofocaux** sont les lentilles artificielles plac
 
 - **Principe** : un implant souple pliable (acrylique hydrophobe le plus souvent) remplace le cristallin, avec une puissance calculée sur mesure par biométrie optique.
 - **Vision** : nette à une seule distance (de loin le plus souvent) ; lunettes requises pour la lecture et l’ordinateur.
-- **Qualité d’image** : excellente — contraste préservé, pas de halos ni de dédoublement nocturne.
+- **Qualité d’image** : contraste préservé, pas de halos ni de dédoublement nocturne.
 - **Remboursement** : intégral (reste à charge nul en secteur 1 + mutuelle), contrairement aux implants toriques ou multifocaux.
 - **Durée de vie** : définitive — l’implant ne se change pas.
 
@@ -3320,7 +3320,7 @@ Les **implants multifocaux** et les implants **EDOF** (Extended Depth of Focus, 
 - **Résultats** : environ 8 patients sur 10 sans lunettes (tous implants multifocaux) ; avec un EDOF, la vision de près est moins bonne qu’avec un trifocal.
 - **Compromis** : halos nocturnes et glare possibles, sensibilité aux contrastes légèrement diminuée.
 - **Remboursement** : supplément 800 à 1500 € par œil non pris en charge par l’Assurance Maladie.
-- **Sélection clé** : œil « parfait » (pas de pathologie rétinienne ni glaucomateuse), patient informé et motivé.
+- **Sélection clé** : œil sain par ailleurs (pas de pathologie rétinienne ni glaucomateuse), patient informé et motivé.
 
 #### Indications
 
@@ -3384,10 +3384,10 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 
 #### Alternatives
 
-- **[Implants monofocaux](https://docteurmajoulet.com/implants-monofocaux)** avec lunettes de près : solution remboursée, excellente qualité optique, pas de dysphotopsies.
+- **[Implants monofocaux](https://docteurmajoulet.com/implants-monofocaux)** avec lunettes de près : solution remboursée, contraste préservé, pas de dysphotopsies.
 - **Monovision** avec monofocaux : un œil en emmétropie, l’autre à -1,25 à -1,75 D. Bonne option chez les patients déjà habitués aux lentilles en monovision.
 - **[Implants toriques](https://docteurmajoulet.com/implants-toriques)** simples : pour astigmatisme sans exigence de presbytie.
-- **Implants EDOF seuls** : compromis idéal pour les patients qui acceptent des lunettes de lecture fine.
+- **Implants EDOF seuls** : une option pour les patients qui acceptent des lunettes de lecture fine.
 
 #### Sources et références
 
@@ -4241,7 +4241,7 @@ Déformation focale ou diffuse de la paroi postérieure du globe, détectée à 
 
 ##### [Néovaisseaux choroïdiens myopiques](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort) (mCNV)
 
-Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **1 à 10 %** des yeux à myopie forte. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **excellent pronostic si traitement précoce**.
+Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **1 à 10 %** des yeux à myopie forte. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
 
 ##### Fovéoschisis myopique et maculopathie de traction
 
@@ -4855,7 +4855,7 @@ Résultats observés dans des séries hospitalières de glaucomes réfractaires 
 
 Dispositifs **ab-interno**, souvent associés à une chirurgie de cataracte, ciblant le trabéculum ou le canal de Schlemm : **iStent inject W, Hydrus Microstent, Kahook Dual Blade, gonioscopy-assisted transluminal trabeculotomy (GATT)**.
 
-Efficacité hypotonisante **modérée** (baisse de 15-25 % de la PIO), indiqués principalement dans les glaucomes **légers à modérés**, mais avec un excellent profil de sécurité et une récupération rapide.
+Efficacité hypotonisante **modérée** (baisse de 15-25 % de la PIO), indiqués principalement dans les glaucomes **légers à modérés**, mais avec un profil de sécurité favorable et une récupération rapide.
 
 ##### Implants de drainage tubulaires
 
