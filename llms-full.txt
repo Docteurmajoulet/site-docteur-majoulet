@@ -1273,7 +1273,7 @@ Information patient : [fiche de la Société Française d’Ophtalmologie sur le
 
 ##### DMLA exsudative (néovasculaire)
 
-Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 injections mensuelles (*loading phase*), puis adaptation du rythme selon le protocole choisi (*Treat & Extend*, *PRN*). **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo), brolucizumab (Beovu). Voir [DMLA](https://docteurmajoulet.com/dmla).
+Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 à 4 injections mensuelles selon la molécule (*loading phase*), puis adaptation du rythme selon le protocole choisi (*Treat & Extend*, *PRN*). **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Voir [DMLA](https://docteurmajoulet.com/dmla).
 
 ##### Œdème maculaire diabétique (OMD)
 
@@ -4098,7 +4098,7 @@ Bilan usuel :
 
 ##### 1 — L’œdème maculaire
 
-Traitement de **première intention** : **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (aflibercept, ranibizumab, faricimab, brolucizumab), avec phase d’induction puis schéma « Treat & Extend ».
+Traitement de **première intention** : **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (aflibercept, ranibizumab, faricimab), avec phase d’induction puis schéma « Treat & Extend ».
 
 En cas de réponse insuffisante ou chez les patients pseudophaques non compliants pour les injections mensuelles : **implant intravitréen de dexaméthasone (Ozurdex®)**, d’action prolongée sur 4 à 6 mois. À surveiller : élévation de la pression intraoculaire et accélération de la cataracte.
 
