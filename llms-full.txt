@@ -1691,6 +1691,12 @@ Tamponnement **prolongé** (plusieurs mois à années, puis retrait chirurgical)
 
 Tant qu’une bulle de gaz est présente dans l’œil, **les voyages en avion et en altitude sont contre-indiqués**. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : **le protoxyde d’azote (N₂O) est contre-indiqué**. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
+**Les premiers jours.** La bulle de gaz remplit l’œil : la vision de l’œil opéré est très floue.
+
+**Puis la « ligne d’eau ».** Elle descend progressivement à mesure que le gaz se résorbe.
+
+**En fin de résorption.** Il ne reste qu’une petite bulle, en bas du champ de vision, avant qu’elle disparaisse.
+
 #### Le positionnement post-opératoire
 
 Lorsque le tamponnement est gazeux, la bulle de gaz remonte à la partie supérieure de l’œil en position debout. Pour qu’elle **appuie sur la zone à traiter**, le patient doit adopter un positionnement spécifique :
@@ -2132,6 +2138,12 @@ Durant toute la période où la bulle de gaz est présente :
 - La vision de l’œil opéré est très floue et remplie par la bulle visible comme une « ligne d’eau » qui descend progressivement.
 - Signalez la présence de gaz dans l’œil à tout soignant avant une anesthésie ou un traitement de la douleur : **le protoxyde d’azote (N₂O) est contre-indiqué**.
 - Un collyre antibiotique et anti-inflammatoire est prescrit pendant 1 mois.
+
+**Les premiers jours.** La bulle de gaz remplit l’œil : la vision de l’œil opéré est très floue.
+
+**Puis la « ligne d’eau ».** Elle descend progressivement à mesure que le gaz se résorbe.
+
+**En fin de résorption.** Il ne reste qu’une petite bulle, en bas du champ de vision, avant qu’elle disparaisse.
 
 Le suivi OCT est habituellement réalisé à **J7, M1 puis M3**. La récupération visuelle est progressive sur **3 à 6 mois**.
 
