@@ -1653,9 +1653,9 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 ##### Ma pratique
 
 - **Décollement de rétine** : indentation sclérale avant 45 ans, si le cristallin naturel est en place et la déchirure accessible à l’indentation ; vitrectomie dans tous les autres cas.
-- **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
+- **Gaz, dans le décollement** : le plus souvent du C2F6, très rarement du C3F8.
 - **Cataracte** : souvent opérée dans le même temps en chirurgie maculaire (trou, membrane) ; pas dans le décollement de rétine, sauf si elle est déjà gênante.
-- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
 - **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 ##### Avant l’opération
@@ -1846,14 +1846,6 @@ Le diagnostic est clinique, posé à l’**examen du fond d’œil après dilata
 
 La chirurgie est indiquée en quasi-totalité des décollements rhegmatogènes. Deux techniques peuvent être utilisées, seules ou combinées :
 
-##### Ma pratique
-
-- **Indentation sclérale** lorsque trois conditions sont réunies : moins de 45 ans, cristallin naturel en place et déchirure accessible à l’indentation. Dans tous les autres cas, je réalise une **vitrectomie**.
-- **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
-- **Cataracte** : je ne l’opère pas en même temps que le décollement, sauf si elle est déjà gênante.
-- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
-- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
-
 ##### 1. Vitrectomie postérieure mini-invasive
 
 Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale ou générale, elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (SF6 ou C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
@@ -1863,6 +1855,14 @@ Technique de référence pour la majorité des cas. Réalisée sous anesthésie 
 Technique ancienne mais toujours pertinente, particulièrement chez le jeune phakique. Un **matériau de silicone** est placé autour du globe pour créer un rapprochement entre la paroi de l’œil et la rétine décollée, refermant mécaniquement les déchirures. En pratique, elle est privilégiée chez le patient **jeune (moins de 45 ans), phakique (cristallin en place), avec une déchirure accessible à l’indentation** ; dans les autres situations, la vitrectomie est la technique de choix.
 
 La **rétinopexie pneumatique** (injection d’une bulle de gaz en consultation, suivie d’un laser ou d’une cryothérapie), pratiquée en Amérique du Nord pour certains décollements limités et supérieurs, n’est pas utilisée en France.
+
+##### Ma pratique
+
+- **Indentation sclérale** lorsque trois conditions sont réunies : moins de 45 ans, cristallin naturel en place et déchirure accessible à l’indentation. Dans tous les autres cas, je réalise une **vitrectomie**.
+- **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
+- **Cataracte** : je ne l’opère pas en même temps que le décollement, sauf si elle est déjà gênante.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 Le taux de réapplication anatomique après une seule intervention est de **85 à 90 %**, et dépasse **95 %** après un second temps chirurgical si nécessaire, selon les techniques et les séries. Le pronostic visuel dépend surtout du **statut maculaire** au moment de la chirurgie, d’où l’importance d’une prise en charge sans délai.
 
@@ -1973,17 +1973,18 @@ Les indications opératoires classiques sont :
 
 La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégionale** ou générale, et dure **30 à 45 minutes**. Les étapes sont :
 
-##### Ma pratique
-
-- **L’opération** : vitrectomie et pelage de la membrane. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
-- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
-- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 1. **[Vitrectomie postérieure 25G ou 27G](https://docteurmajoulet.com/vitrectomie)** par trois trocarts de petit calibre, sans suture.
 2. **Pelage de la membrane épirétinienne** à la pince microchirurgicale.
 3. **Pelage complémentaire de la membrane limitante interne (MLI)** après coloration par un **colorant vital** (bleu brillant en première intention). Cette association MER + MLI est devenue la **technique de référence** car elle diminue le risque de récidive.
 4. Habituellement, **pas de tamponnement par gaz** ni de **positionnement postural**, sauf en cas d’association à un trou maculaire.
 
 Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les patients phaques de plus de 50 ans, pour éviter la cataracte quasi systématique qui survient après vitrectomie.
+
+##### Ma pratique
+
+- **L’opération** : vitrectomie et pelage de la membrane. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 #### Résultats et récupération
 
@@ -2124,7 +2125,7 @@ Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Ell
 - **Posture** : face vers le bas, un maximum de temps chaque jour.
 - **Collyres** : pendant 1 mois.
 - **Contrôles** : à J7, à 1 mois et à 3 mois.
-- **Anticoagulants** : il n’est pas nécessaire de les arrêter ; la conduite à tenir suit le protocole de l’anesthésie.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
 - **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 Les trois temps chirurgicaux sont :
