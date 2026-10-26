@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -972,9 +972,9 @@ La DMLA correspond à un **vieillissement pathologique** de la macula. Des déch
 
 La macula se trouve au centre de la rétine, dans l’axe de la vision. C’est pourquoi la DMLA touche la vision centrale et épargne la vision périphérique.
 
-- **> 1 M** — Personnes atteintes en France (estimation)
+- **1 sur 4** — Des plus de 60 ans ont des signes de DMLA, le plus souvent débutante (Europe)
 - **+50 ans** — Âge de début possible
-- **≈ 1/4** — Des plus de 75 ans concernés (ordre de grandeur)
+- **2,4 %** — Des plus de 60 ans ont une forme évoluée (Europe)
 
 #### Les deux formes de DMLA
 
@@ -1561,7 +1561,7 @@ La gestion est individualisée en concertation avec le cardiologue ou le médeci
 
 ##### Quel délai avant la récupération visuelle ?
 
-Très variable selon l’indication. Après une vitrectomie pour membrane épirétinienne, l’amélioration visuelle est progressive sur 3 à 6 mois. Après une chirurgie de trou maculaire, la récupération est plus lente (6 à 12 mois). Dans le décollement de rétine, le pronostic dépend surtout de l’atteinte maculaire préopératoire. Une seconde chirurgie de cataracte est fréquemment nécessaire 6 à 12 mois plus tard chez le patient phaque.
+Très variable selon l’indication. Après une vitrectomie pour membrane épirétinienne, l’amélioration visuelle est progressive sur 3 à 6 mois. Après une chirurgie de trou maculaire, la récupération est plus lente (6 à 12 mois). Dans le décollement de rétine, le pronostic dépend surtout de l’atteinte maculaire préopératoire. Une seconde chirurgie de cataracte est fréquemment nécessaire dans les 1 à 2 ans chez le patient phaque.
 
 ##### Quels sont les principaux risques d’une vitrectomie ?
 
@@ -1703,7 +1703,7 @@ La durée du positionnement dépend de la pathologie et du tamponnement : de que
 
 La vitrectomie mini-invasive moderne est une chirurgie sûre, mais comme toute chirurgie intraoculaire, elle comporte des risques. Les principaux sont :
 
-- **Cataracte post-opératoire** : **quasi-constante** dans les 12-24 mois chez un patient phaque > 50 ans. Une chirurgie combinée phacoémulsification + vitrectomie est souvent proposée d’emblée en chirurgie maculaire (pas dans le décollement de rétine, sauf cataracte gênant la chirurgie).
+- **Cataracte post-opératoire** : si le cristallin est conservé, elle progresse dans plus de 95 % des yeux dans les 2 ans qui suivent la vitrectomie. Une chirurgie combinée phacoémulsification + vitrectomie est souvent proposée d’emblée en chirurgie maculaire (pas dans le décollement de rétine, sauf cataracte gênant la chirurgie).
 - **Hypertonie oculaire** transitoire (inflammation, tamponnement) ou durable (glaucome post-vitrectomie).
 - **Endophtalmie** : rare, de l’ordre de **0,03 à 0,1 %** (moins de 1 cas sur 1 000).
 - **Nouveau décollement de rétine** : 1 à 5 % selon les indications.
@@ -1716,7 +1716,7 @@ La vitrectomie mini-invasive moderne est une chirurgie sûre, mais comme toute c
 La vitrectomie a connu deux évolutions majeures depuis les années 2000 : le passage aux **micro-incisions transconjonctivales auto-obturantes** (25G en 2002, 27G en 2010) et la systématisation du **pelage de la membrane limitante interne** (MLI) dans la chirurgie maculaire.
 
 - **Pelage MLI dans le trou maculaire** : le pelage de la MLI colorée (bleu brillant, Dual Blue) améliore significativement le taux de fermeture anatomique, qui dépasse aujourd’hui **90 %** en un seul temps opératoire (méta-analyse Spiteri Cornish et al., *Cochrane Database Syst Rev*, 2013).
-- **Cataracte post-vitrectomie** : chez le patient phaque de plus de 50 ans, la progression d’une cataracte nucléaire est quasi-constante dans les 24 mois post-vitrectomie, ce qui motive la proposition fréquente d’une chirurgie combinée phaco-vitrectomie (Thompson, *Am J Ophthalmol*, 2004 ; Feng & Adelman, *Clin Ophthalmol*, 2014).
+- **Cataracte post-vitrectomie** : chez le patient phaque de plus de 50 ans, la cataracte nucléaire progresse dans 98 % des yeux à 1 an et 100 % à 2 ans dans l’essai Vitrectomy for Macular Hole Study (Cheng et al., *Am J Ophthalmol*, 2001 ; Thompson, *Am J Ophthalmol*, 2004), ce qui motive la proposition fréquente d’une chirurgie combinée phaco-vitrectomie.
 - **Endophtalmie** : une revue systématique de 21 études (148 643 vitrectomies) retrouve une fréquence de l’ordre de **3 pour 10 000** en 20G et pas de sur-risque avec les micro-incisions 23-25G lorsque les incisions sont obliques, donc auto-étanches (Govetto et al., *Ophthalmology*, 2013).
 - **Positionnement post-opératoire** dans le trou maculaire : la posture face vers le bas n’influence pas la fermeture des trous < 400 µm (essai randomisé de Guillaubey et al., *Am J Ophthalmol*, 2008) ; pour les grands trous (≥ 400 µm), l’essai PIMS (Pasu et al., *JAMA Ophthalmol*, 2020) retrouve une fermeture comparable mais une meilleure acuité à 3 mois avec le face-vers-le-bas, et les méta-analyses d’essais randomisés (Hu et al., *Acta Ophthalmol*, 2016 ; Ye et al., *BMC Ophthalmol*, 2019) concluent de même. La durée prescrite reste adaptée à la taille du trou et au tamponnement retenu.
 
@@ -1738,7 +1738,7 @@ La **récupération visuelle dépend essentiellement de l’état de la macula**
 
 ##### Pourquoi la cataracte apparaît-elle si souvent après une vitrectomie ?
 
-Le retrait du vitré modifie l’environnement métabolique et oxydant du cristallin. Chez le patient phaque de plus de 50 ans, une **cataracte nucléaire apparaît dans 60-90 % des cas** dans les 12 à 24 mois. C’est pour cela qu’une **chirurgie combinée phaco-vitrectomie** est souvent proposée lorsque la cataracte est déjà débutante.
+Le retrait du vitré modifie l’environnement métabolique et oxydant du cristallin. Chez le patient phaque de plus de 50 ans, la **cataracte progresse** dans plus de 95 % des yeux dans les 2 ans. C’est pour cela qu’une **chirurgie combinée phaco-vitrectomie** est souvent proposée lorsque la cataracte est déjà débutante.
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
@@ -1955,11 +1955,11 @@ La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégional
 3. **Pelage complémentaire de la membrane limitante interne (MLI)** après coloration par un **colorant vital** (bleu brillant en première intention). Cette association MER + MLI est devenue la **technique de référence** car elle diminue le risque de récidive.
 4. Habituellement, **pas de tamponnement par gaz** ni de **positionnement postural**, sauf en cas d’association à un trou maculaire.
 
-Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les patients phaques de plus de 50 ans, pour éviter la cataracte quasi systématique qui survient après vitrectomie.
+Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les patients phaques de plus de 50 ans, car la cataracte progresse plus vite après une vitrectomie.
 
 #### Résultats et récupération
 
-- **Amélioration de l’acuité visuelle** dans 80 à 90 % des cas, avec un gain moyen de 2 lignes.
+- **Acuité visuelle** : le but de la chirurgie est de stopper la dégradation de la vision ; le gain est en moyenne de 1 à 2 dixièmes.
 - **Récupération progressive sur 3 à 6 mois**.
 - **Les métamorphopsies régressent plus lentement et partiellement** : elles peuvent persister à un degré modéré, d’où l’importance d’une indication posée avant l’apparition d’une désorganisation rétinienne sévère.
 - **Récidive rare** (< 5 %) lorsque le pelage associe MER + MLI.
@@ -1973,18 +1973,18 @@ Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les 
 - **Vitrectomie 25G** en routine, avec induction d’un décollement postérieur du vitré si nécessaire.
 - **Pelage systématique MER + MLI** sous coloration par bleu brillant (Dual Blue) — la double étape limite le risque de récidive, validée par les méta-analyses récentes.
 - **Pas de tamponnement gazeux** en règle pour une MER isolée — donc **pas de posture** post-opératoire et aucune restriction de vol.
-- **Chirurgie combinée phaco-vitrectomie** proposée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une chirurgie secondaire de cataracte quasi systématique dans les 12 à 24 mois.
+- **Chirurgie combinée phaco-vitrectomie** proposée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une seconde opération de la cataracte, fréquente dans les 1 à 2 ans.
 - **Information du patient sur la dynamique de récupération** : l’amélioration visuelle se poursuit jusqu’à 6 à 12 mois ; une stabilisation à 3 mois n’est pas la valeur finale.
 
 #### Pour aller plus loin — données scientifiques
 
 - **7 à 11 %** — Prévalence après 60 ans
 - **10 à 30 %** — Atteinte bilatérale
-- **80 à 90 %** — Amélioration après chirurgie
+- **+1 à 2/10** — Gain moyen d’acuité ; le but est de stopper la dégradation
 - **Govetto et al.** (*Am J Ophthalmol*, 2017) ont proposé la classification OCT en 4 stades utilisée en routine, reposant sur la conservation de la dépression fovéolaire et la présence d’*ectopic inner foveal layers* — marqueurs pronostiques désormais validés.
 - La **supériorité du pelage combiné MER + MLI** sur le pelage isolé de la MER, en termes de réduction du risque de récidive, est documentée par plusieurs méta-analyses (Chang et al., *PLoS One*, 2017 ; Azuma et al., *Retina*, 2017). L’impact fonctionnel additionnel à long terme reste débattu.
 - Les études suggèrent qu’un **pelage précoce** (avant désorganisation fovéolaire importante, stades 1-2 de Govetto) est associé à un meilleur gain visuel et à une récupération plus prévisible.
-- **Cataracte post-vitrectomie** : chez le patient phaque > 50 ans, une cataracte nucléaire apparaît dans 70 à 90 % des cas dans les 24 mois (Feng & Adelman, *Clin Ophthalmol*, 2014), ce qui motive la fréquente chirurgie combinée.
+- **Cataracte post-vitrectomie** : chez le patient phaque > 50 ans, la cataracte progresse dans plus de 95 % des yeux dans les 2 ans qui suivent la vitrectomie (Cheng et al., *Am J Ophthalmol*, 2001), ce qui motive la fréquente chirurgie combinée.
 - **Complications de la vitrectomie 25G** : dans une série prospective de 1 409 yeux opérés en chirurgie réglée (membrane, trou, corps flottants…), déchirures peropératoires dans 1,8 % des cas — 2,8 % lorsque le décollement du vitré est induit pendant l’intervention — et décollement de rétine secondaire dans 0,6 % (Mura et al., *Br J Ophthalmol*, 2016).
 
 Références indicatives pour le lecteur averti ; elles ne se substituent pas à l’information remise en consultation.
@@ -1997,7 +1997,7 @@ Non. Lorsque la membrane est fine, peu symptomatique et que l’acuité visuelle
 
 ##### Combien de temps pour récupérer la vision après la chirurgie ?
 
-La récupération est **progressive sur 3 à 6 mois**. L’amélioration de l’acuité visuelle est observée dans **80 à 90 %** des cas, avec un gain moyen de 2 lignes. Les métamorphopsies régressent plus lentement et partiellement.
+La récupération est **progressive sur 3 à 6 mois**. Le but de la chirurgie est d’abord de **stopper la dégradation de la vision** ; le gain est en moyenne de 1 à 2 dixièmes. Les métamorphopsies régressent plus lentement et partiellement.
 
 ##### Faut-il rester face vers le bas après l’opération ?
 
@@ -2009,7 +2009,7 @@ La récidive est **rare (< 5 %)** lorsque le pelage associe la membrane épirét
 
 ##### Aurai-je besoin d’une chirurgie de la cataracte après ?
 
-Chez un patient phaque de plus de 50 ans, une **cataracte nucléaire** apparaît dans 70 à 90 % des cas dans les 12 à 24 mois post-vitrectomie. C’est pourquoi la **chirurgie de la cataracte est souvent proposée dans le même temps opératoire** (vitrectomie + phacoémulsification + implant), ce qui évite une seconde intervention.
+Chez un patient phaque de plus de 50 ans, la **cataracte** progresse dans plus de 95 % des yeux dans les 2 ans qui suivent la vitrectomie. C’est pourquoi la **chirurgie de la cataracte est souvent proposée dans le même temps opératoire** (vitrectomie + phacoémulsification + implant), ce qui évite une seconde intervention.
 
 ##### Y aura-t-il un gaz dans l’œil après la chirurgie ?
 
@@ -2673,7 +2673,7 @@ Aucun traitement spécifique : réassurance, information sur les signes d’aler
 
 ##### DPV + déchirure rétinienne
 
-**Laser argon de barrage** autour de la déchirure, dans les 24-48 h, pour créer une **cicatrice adhérente** qui empêche le décollement de se propager. Geste ambulatoire, indolore, réalisé avec un verre de contact, très efficace.
+**Laser argon de barrage** autour de la déchirure, dans les 24-48 h, pour créer une **cicatrice adhérente** qui empêche le décollement de se propager. Geste ambulatoire, indolore, réalisé avec un verre de contact.
 
 ##### DPV + hémorragie intravitréenne
 
@@ -2683,7 +2683,7 @@ Rechercher systématiquement une déchirure (échographie B si fond d’œil non
 
 Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent invalidants. Deux options peuvent être discutées, mais avec un **rapport bénéfice-risque à évaluer avec rigueur** :
 
-- **Vitrectomie** 25G / 27G : extrêmement efficace, mais expose à la **cataracte** (quasi-constante chez le phaque) et à un risque faible mais non nul d’endophtalmie et de décollement de rétine.
+- **Vitrectomie** 25G / 27G : elle retire le vitré et ses opacités, mais expose à la **cataracte** (fréquente chez le phaque) et à un risque faible mais non nul d’endophtalmie et de décollement de rétine.
 - **Vitréolyse au laser YAG** (Ellex Reflex®) : moins invasive, mais preuves d’efficacité limitées et réservée à des opacités bien sélectionnées (volumineuses, centrales, isolées).
 
 #### Questions fréquentes
@@ -3563,7 +3563,7 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 #### Résultats attendus
 
 - **Rétinopathie diabétique proliférante** : régression des néovaisseaux dans 60 à 80 % des cas ; réduction du risque de cécité sévère de 50 % à 2 ans (DRS). Des compléments de PPR peuvent être nécessaires.
-- **Déchirure rétinienne** : adhérence chorio-rétinienne stable en 1 à 2 semaines ; risque de décollement réduit à < 5 %.
+- **Déchirure rétinienne** : adhérence chorio-rétinienne stable en 1 à 2 semaines ; un décollement survient malgré tout dans environ 2 à 9 % des cas.
 - **Occlusions veineuses ischémiques** : prévention du glaucome néovasculaire, régression de la néovascularisation.
 - **Œdème maculaire diabétique** : efficacité modeste en monothérapie, supplantée par les anti-VEGF (ranibizumab, aflibercept) en première intention depuis DRCR.net Protocol I (2010).
 
@@ -3619,7 +3619,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Dépistage et suivi, traitement de l’œdème maculaire, laser et chirurgie
 
-La **rétinopathie diabétique** est une atteinte des **petits vaisseaux de la rétine** (microangiopathie) liée au diabète. Elle reste la **première cause de cécité évitable** chez l’adulte en âge de travailler dans les pays industrialisés. Elle évolue longtemps **sans aucun symptôme**, ce qui rend le **dépistage ophtalmologique régulier** essentiel chez toute personne diabétique.
+La **rétinopathie diabétique** est une atteinte des **petits vaisseaux de la rétine** (microangiopathie) liée au diabète. Elle reste l’**une des principales causes de cécité évitable** chez l’adulte en âge de travailler dans les pays industrialisés. Elle évolue longtemps **sans aucun symptôme**, ce qui rend le **dépistage ophtalmologique régulier** essentiel chez toute personne diabétique.
 
 - **~40 %** — Des diabétiques ont une atteinte rétinienne
 - **1×/an** — Dépistage au moins annuel proposé au cabinet
@@ -3933,7 +3933,7 @@ L’**OACR est assimilée à un AVC** (AHA/ASA 2021). Le patient doit être adre
 
 #### Pronostic visuel
 
-Le pronostic est **sombre** dans la grande majorité des cas : l’acuité visuelle finale reste inférieure à 1/10 chez plus de 80 % des patients (série Hayreh, Ophthalmology 2011). La présence d’une artère cilio-rétinienne perméable (variante anatomique présente chez ~30 % de la population) peut préserver la vision centrale. Le risque principal à long terme est **l’AVC cérébral**, d’où l’importance du bilan étiologique et de la prévention secondaire.
+Le pronostic est **sombre** dans la grande majorité des cas : sans traitement, une récupération notable de la vision n’est observée que chez environ 1 patient sur 5 (18 % dans une méta-analyse de 396 patients : Schrag et al., *JAMA Neurol*, 2015). La présence d’une artère cilio-rétinienne perméable (variante anatomique présente chez ~30 % de la population) peut préserver la vision centrale. Le risque principal à long terme est **l’AVC cérébral**, d’où l’importance du bilan étiologique et de la prévention secondaire.
 
 #### Prévention secondaire
 
@@ -4688,7 +4688,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Diagnostic, collyres, laser et chirurgie du glaucome
 
-Le **glaucome** est une **neuropathie optique chronique progressive** caractérisée par une destruction lente et irréversible des fibres du nerf optique, responsable d’une altération du champ visuel. Il reste la **deuxième cause mondiale de cécité irréversible**. La **pression intraoculaire (PIO)** élevée en est le principal facteur de risque modifiable — elle n’est pas toujours élevée, mais sa diminution reste à ce jour le **seul traitement ayant fait la preuve scientifique** de ralentir la progression.
+Le **glaucome** est une **neuropathie optique chronique progressive** caractérisée par une destruction lente et irréversible des fibres du nerf optique, responsable d’une altération du champ visuel. Il reste la **première cause de cécité irréversible dans le monde**. La **pression intraoculaire (PIO)** élevée en est le principal facteur de risque modifiable — elle n’est pas toujours élevée, mais sa diminution reste à ce jour le **seul traitement ayant fait la preuve scientifique** de ralentir la progression.
 
 **Crise aiguë de fermeture de l’angle : urgence absolue.** Œil rouge et douloureux, baisse brutale de la vision, halos lumineux, nausées et vomissements, céphalées. La PIO peut dépasser 60 mmHg et menacer rapidement la vision. Appelez le **15** ou rendez-vous aux [urgences du CHNO des Quinze-Vingts](https://www.15-20.fr/offre-de-soins/urgences-ophtalmologiques/) ([01 40 02 16 80](tel:+33140021680)).
 
