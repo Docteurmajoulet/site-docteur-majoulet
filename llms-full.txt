@@ -4607,10 +4607,10 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Complication maculaire de la myopie forte — à traiter vite par anti-VEGF
 
-Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovascularization*, mCNV) sont des néovaisseaux anormaux qui se développent sous la rétine en traversant la **membrane de Bruch**, dans un contexte de **myopie pathologique**. Ils représentent la **deuxième cause** de néovaisseaux maculaires après la DMLA et touchent une population beaucoup plus jeune (40 à 55 ans en moyenne). Leur diagnostic précoce est capital : traités rapidement par **injections intravitréennes d’anti-VEGF**, ils ont un pronostic visuel nettement meilleur que les néovaisseaux de la DMLA.
+Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovascularization*, mCNV) sont des néovaisseaux anormaux qui se développent sous la rétine en traversant la **membrane de Bruch**, dans un contexte de **myopie pathologique**. Ils sont la **première cause** de néovaisseaux maculaires avant 50 ans (62 % des cas dans une série française) et l’une des plus fréquentes en dehors de la DMLA, chez des patients plus jeunes que dans la DMLA. Leur diagnostic précoce est capital : traités rapidement par **injections intravitréennes d’anti-VEGF**, ils ont un pronostic visuel nettement meilleur que les néovaisseaux de la DMLA.
 
 - **5-11 %** — Prévalence chez les myopes forts
-- **40-55 ans** — Âge moyen de survenue
+- **< 60 ans** — Âge habituel de survenue
 - **2-4** — Injections anti-VEGF la 1re année (médiane)
 
 #### Qu’est-ce que la myopie forte ?
@@ -4663,14 +4663,14 @@ La distinction est importante car le pronostic et le rythme des injections ne so
 | Type (classification OCT) | Type 2 (sous-rétinien) ++ | Type 1 (sous-EP) le plus souvent |
 | Taille de la lésion | Petite (< 1 diamètre papillaire) | Plus grande, souvent extensive |
 | Exsudation | Faible (peu de fluide) | Importante (œdème, DEP) |
-| Fréquence des injections | 2-4 la 1re année (PRN) | 6-8 la 1re année (T&E) |
+| Fréquence des injections | 2-4 la 1re année (PRN) | 7-10 la 1re année (T&E) |
 | Pronostic visuel | Favorable si traitement précoce | Plus variable, dépend du type |
 
 #### Traitement
 
 ##### Injections intravitréennes d’anti-VEGF — 1re intention
 
-Les **anti-VEGF** (*vascular endothelial growth factor*) neutralisent le facteur de croissance qui stimule la prolifération des néovaisseaux. Deux molécules disposent de données pivot validées dans le mCNV : le **ranibizumab** (étude RADIANCE, *Ophthalmology* 2014) et l’**aflibercept** (étude MYRROR, *Ophthalmology* 2015). Des données plus limitées existent pour le **brolucizumab** (séries japonaises, hors AMM française dans cette indication spécifique).
+Les **anti-VEGF** (*vascular endothelial growth factor*) neutralisent le facteur de croissance qui stimule la prolifération des néovaisseaux. Deux molécules disposent de données pivot validées dans le mCNV : le **ranibizumab** (étude RADIANCE, *Ophthalmology* 2014) et l’**aflibercept** (étude MYRROR, *Ophthalmology* 2015).
 
 Le protocole est en règle un schéma **Pro Re Nata** (PRN, littéralement « à la demande ») :
 
@@ -4686,10 +4686,10 @@ Avant l’ère des anti-VEGF, la **PDT à la vertéporfine** était le traitemen
 
 #### Pronostic et surveillance
 
-Avec un traitement précoce, le pronostic visuel est **favorable dans plus de 70 % des cas** à un an (stabilisation ou gain d’acuité visuelle selon les études RADIANCE / MYRROR). Deux points méritent néanmoins une vigilance au long cours :
+Avec un traitement précoce, l’acuité s’améliore en moyenne de **près de 3 lignes à un an** dans les essais RADIANCE et MYRROR. À long terme, ce gain peut s’éroder, surtout du fait de l’atrophie autour de la cicatrice. Deux points méritent néanmoins une vigilance au long cours :
 
 - **Atrophie choriorétinienne péri-lésionnelle** : le tissu autour de la cicatrice néovasculaire a tendance à s’atrophier progressivement, pouvant limiter la récupération finale. Ce phénomène est en partie lié à l’évolution naturelle de la myopie forte.
-- **Récidive** : environ **30 à 50 %** des mCNV récidivent à 4-5 ans, d’où l’importance d’un suivi ophtalmologique régulier à vie et d’une auto-surveillance par grille d’Amsler.
+- **Récidive** : environ 1 néovaisseau sur 3 récidive dans les 2 ans et plus d’un sur 2 dans les 5 ans, d’où l’importance d’un suivi ophtalmologique régulier à vie et d’une auto-surveillance par grille d’Amsler.
 
 La surveillance de l’**œil adelphe** (sain) est également essentielle : le risque de bilatéralisation est estimé à environ 30 % à 5-10 ans, particulièrement en présence de *lacquer cracks* ou d’un staphylome préexistant.
 
@@ -4709,7 +4709,7 @@ Le protocole habituel est **Pro Re Nata (PRN)** : une injection initiale, puis i
 
 ##### Vais-je récupérer ma vision ?
 
-Dans la majorité des cas, si le traitement est débuté précocement. **Plus de 70 %** des patients gagnent ou stabilisent leur acuité visuelle à 1 an sous anti-VEGF (études RADIANCE et MYRROR). Le résultat final dépend de la localisation de la néovascularisation (sous-fovéolaire, juxta ou extra-fovéolaire) et de l’ancienneté des lésions au moment du diagnostic.
+Dans la majorité des cas, si le traitement est débuté précocement. Avec un traitement précoce, l’acuité s’améliore en moyenne de près de 3 lignes à un an dans les essais RADIANCE et MYRROR. À long terme, ce gain peut s’éroder, surtout du fait de l’atrophie autour de la cicatrice. Le résultat final dépend de la localisation de la néovascularisation (sous-fovéolaire, juxta ou extra-fovéolaire) et de l’ancienneté des lésions au moment du diagnostic.
 
 ##### Dois-je surveiller mon autre œil ?
 
