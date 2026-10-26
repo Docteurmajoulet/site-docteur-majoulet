@@ -2203,7 +2203,7 @@ Les symptômes dépendent du volume et de la localisation du sang dans le vitré
 - **Phosphènes** (éclairs lumineux), très évocateurs d’une traction vitréorétinienne associée.
 - Une **amputation périphérique du champ visuel** doit faire suspecter un décollement de rétine associé.
 
-L’hémorragie intra-vitréenne correspond à la présence de sang dans la cavité vitréenne (le gel transparent qui remplit les 4/5 du volume de l’œil). Le sang provient en règle de la rupture d’un vaisseau rétinien ou d’un néovaisseau pathologique.
+L’hémorragie intravitréenne correspond à la présence de sang dans la cavité vitréenne (le gel transparent qui remplit les 4/5 du volume de l’œil). Le sang provient en règle de la rupture d’un vaisseau rétinien ou d’un néovaisseau pathologique.
 
 **Consultation ophtalmologique sous 24 à 48 heures.** Une hémorragie intra-vitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
 
