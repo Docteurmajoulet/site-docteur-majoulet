@@ -8285,7 +8285,7 @@ article.pathology-content > .page-section > :is(ul, ol),
 article.pathology-content > .forme-box :is(ul, ol) {
     max-width: 41.475rem;
 }
-/* TECH69S (suite, maquette soumise au Dr Majoulet le 26/10) — colonne unique des fiches : à partir de 48 em, fil
+/* TECH69S (suite, maquette validée par le Dr Majoulet le 26/10) — colonne unique des fiches : à partir de 48 em, fil
    d'Ariane, titre, texte, encadrés, chiffres clés, schémas et bloc rendez-vous partagent une même colonne de
    60 caractères (41.475rem), centrée. Avant : texte sur 664 px, mais encadrés et schémas sur 812 px (conteneur de
    860 px) — deux bords droits dans la même page. */
@@ -8320,7 +8320,7 @@ article.pathology-content > .forme-box :is(ul, ol) {
     height: 2px;
     background: var(--sable);
 }
-/* TECH69S (suite, à valider) — téléphone (≤ 30 em) : une seule marge latérale de 16 px pour tout le site. Les fiches
+/* TECH69S (suite, validée le 26/10) — téléphone (≤ 30 em) : une seule marge latérale de 16 px pour tout le site. Les fiches
    étaient à 16 px depuis TECH20AX (largeur de lecture), mais le bandeau, l'en-tête et les autres pages restaient à
    24 px : sur les fiches, le texte partait 8 px à gauche du logo. Bandeau, en-tête, contenu et pied de page partagent
    désormais le même bord, sur toutes les pages. */
@@ -8331,7 +8331,7 @@ article.pathology-content > .forme-box :is(ul, ol) {
         padding-inline: 16px;
 }
 }
-/* TECH69T-2026-10-26 — carrousels de schémas (maquette soumise au Dr Majoulet, CLAUDE.md §6) : en tête de fiche, la
+/* TECH69T-2026-10-26 — carrousels de schémas (maquette validée par le Dr Majoulet le 26/10, CLAUDE.md §6) : en tête de fiche, la
    pathologie racontée en images avec les schémas validés et leurs légendes. Défilement horizontal natif (glisser au
    doigt, molette, flèches du clavier sur la piste), arrêt net sur chaque image ; nav.js ajoute la barre de progression
    façon « stories », les boutons précédent/suivant et le compteur. Jamais de défilement automatique. Sans JavaScript :
@@ -8465,7 +8465,7 @@ article.pathology-content .carrousel h2 {
         gap: 16px;
     }
 }
-/* Avec la colonne unique des fiches (maquette TECH69S), les images du carrousel débordent comme les grilles de schémas
+/* Avec la colonne unique des fiches (TECH69S), les images du carrousel débordent comme les grilles de schémas
    (812 px dès 60 em), le titre reste dans la colonne ; dans la colonne actuelle de 812 px, la marge calculée vaut 0. */
 @media (min-width: 60em) {
     :where(body.v1) article.pathology-content .carrousel > :is(.carrousel-barres, .carrousel-piste, .carrousel-nav) {

@@ -355,7 +355,7 @@
         } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
     }
 
-    /* ---------- TECH69T-2026-10-26 : carrousels de schémas (maquette) ----------
+    /* ---------- TECH69T-2026-10-26 : carrousels de schémas (validés le 26/10) ----------
        La piste défile nativement (glisser, molette, clavier) avec arrêt sur chaque image. Ici : barre de progression
        (un trait par image, les traits vus en bleu prusse), boutons précédent/suivant (désactivés aux extrémités) et
        compteur « 2 / 8 » annoncé poliment, flèches, Début et Fin sur la piste. Défilement doux sauf si l’utilisateur
