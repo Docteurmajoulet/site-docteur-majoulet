@@ -1025,6 +1025,13 @@ Au Cabinet Ophtalife, l’**OCT maculaire est réalisé sur place, le jour même
 
 Le traitement de référence est l’**injection intravitréenne (IVT) d’anti-VEGF**. Les médicaments disponibles et remboursés en France sont l’**aflibercept** (Eylea, et sa forme haute dose Eylea 8 mg), le **ranibizumab** (Lucentis et ses biosimilaires) et le **faricimab** (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Le choix de la molécule est individualisé selon la lésion, la réponse au traitement et le rythme d’injections visé. L’injection est une piqûre très brève dans le vitré, réalisée sous anesthésie locale par collyre, en conditions d’asepsie chirurgicale rigoureuses, dans la **salle dédiée du cabinet**. [**En savoir plus sur le déroulement d’une IVT**](https://docteurmajoulet.com/injection-intravitreenne)
 
+##### Ma pratique
+
+- **Les injections** : dans la salle dédiée du cabinet, aux normes ISO 7.
+- **L’OCT** : réalisé sur place, le jour même de l’injection.
+- **Après l’injection** : collyre antiseptique pendant 3 jours.
+- **Déformation récente des lignes droites** : consultation sous 24-48 h. Le cabinet réserve des créneaux d’urgence rétinienne : [01 84 19 11 66](tel:+33184191166).
+
 Le protocole habituel est :
 
 1. **Phase d’induction** : 3 à 4 injections mensuelles pour contrôler l’œdème et les néovaisseaux.
@@ -1647,6 +1654,14 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 - **~45-90 min** — Durée moyenne
 - **Ambulatoire** — Sortie le même jour
 
+##### Ma pratique
+
+- **Décollement de rétine** : indentation sclérale avant 45 ans, si le cristallin naturel est en place et la déchirure accessible à l’indentation ; vitrectomie dans les autres cas. Chaque dossier est jugé au cas par cas.
+- **Gaz, dans le décollement** : le plus souvent du C2F6, très rarement du C3F8.
+- **Cataracte** : souvent opérée dans le même temps en chirurgie maculaire (trou, membrane) ; pas dans le décollement de rétine, sauf si elle est déjà gênante.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
+
 ##### Avant l’opération
 
 - **Bilan pré-opératoire** complet : OCT, rétinographie, biométrie, échographie B si milieux troubles.
@@ -1845,6 +1860,14 @@ Technique ancienne mais toujours pertinente, particulièrement chez le jeune pha
 
 La **rétinopexie pneumatique** (injection d’une bulle de gaz en consultation, suivie d’un laser ou d’une cryothérapie), pratiquée en Amérique du Nord pour certains décollements limités et supérieurs, n’est pas utilisée en France.
 
+##### Ma pratique
+
+- **Indentation sclérale** lorsque trois conditions sont réunies : moins de 45 ans, cristallin naturel en place et déchirure accessible à l’indentation. Dans les autres cas, je réalise une **vitrectomie**. Chaque dossier est jugé au cas par cas.
+- **Gaz** : le plus souvent du C2F6, très rarement du C3F8.
+- **Cataracte** : je ne l’opère pas en même temps que le décollement, sauf si elle est déjà gênante.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
+
 Le taux de réapplication anatomique après une seule intervention est de **85 à 90 %**, et dépasse **95 %** après un second temps chirurgical si nécessaire, selon les techniques et les séries. Le pronostic visuel dépend surtout du **statut maculaire** au moment de la chirurgie, d’où l’importance d’une prise en charge sans délai.
 
 #### Pronostic et suites
@@ -1960,6 +1983,12 @@ La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégional
 4. Habituellement, **pas de tamponnement par gaz** ni de **positionnement postural**, sauf en cas d’association à un trou maculaire.
 
 Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les patients phaques de plus de 50 ans, pour éviter la cataracte quasi systématique qui survient après vitrectomie.
+
+##### Ma pratique
+
+- **L’opération** : vitrectomie et pelage de la membrane. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 #### Résultats et récupération
 
@@ -2093,6 +2122,15 @@ L’OCT permet également de différencier un **trou maculaire de pleine épaiss
 #### Traitement chirurgical : vitrectomie + pelage MLI + gaz
 
 Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Elle se déroule en **ambulatoire**, sous **anesthésie locorégionale** (péribulbaire) ou générale, et dure en général **30 à 45 minutes**.
+
+##### Ma pratique
+
+- **L’opération** : vitrectomie, pelage de la membrane limitante interne et bulle de gaz. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
+- **Posture** : face vers le bas, un maximum de temps chaque jour.
+- **Collyres** : pendant 1 mois.
+- **Contrôles** : à J7, à 1 mois et à 3 mois.
+- **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+- **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
 Les trois temps chirurgicaux sont :
 
