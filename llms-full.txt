@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -3206,7 +3206,7 @@ Les **implants toriques** sont des lentilles intraoculaires pliables conçues po
 - **Indication** : astigmatisme cornéen régulier ≥ 1,0 à 1,25 D lors d’une chirurgie de la cataracte.
 - **Objectif** : réduire à moins de 0,50 D l’astigmatisme résiduel postopératoire chez > 75 % des yeux (données Barrett Toric Calculator).
 - **Point clé** : chaque degré de désalignement = ~3,3 % de perte de correction ; 10° = 33 % ; 30° = effet nul.
-- **Remboursement** : supplément non pris en charge par l’Assurance Maladie (200-600 € par œil).
+- **Remboursement** : supplément non pris en charge par l’Assurance Maladie ; son montant vous est indiqué en consultation, avant toute décision.
 - **Acuité sans lunettes de loin attendue** : ≥ 6/10 chez plus de 85 % des patients opérés.
 
 #### Indications
@@ -3306,7 +3306,7 @@ Les **implants multifocaux** et les implants **EDOF** (Extended Depth of Focus, 
 - **Technologies** : bifocaux (historiques), **trifocaux** (PanOptix, AT LISA tri, FineVision), **EDOF** (Vivity, Symfony, IC-8), trifocaux-EDOF hybrides.
 - **Résultats** : indépendance totale aux lunettes 80-90 % avec trifocaux, 60-75 % avec EDOF (près parfois limité).
 - **Compromis** : halos nocturnes et glare possibles, sensibilité aux contrastes légèrement diminuée.
-- **Remboursement** : supplément 800 à 1500 € par œil non pris en charge par l’Assurance Maladie.
+- **Remboursement** : supplément non pris en charge par l’Assurance Maladie ; son montant vous est indiqué en consultation, avant toute décision.
 - **Sélection clé** : œil « parfait » (pas de pathologie rétinienne ni glaucomateuse), patient informé et motivé.
 
 #### Indications
