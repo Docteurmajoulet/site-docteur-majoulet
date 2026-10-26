@@ -350,10 +350,11 @@
             var maintenant = 'Il est ' + h + ' h ' + (m < 10 ? '0' : '') + m + ' : ';
             if (fin && h >= 9 && h < fin) {
                 etatCabinet.textContent = maintenant + 'le cabinet est normalement ouvert jusqu’à ' + fin
-                    + ' h (sauf jour férié). Appelez-le d’abord ; sans réponse, allez aux urgences 24 h/24 ci-dessous.';
+                    + ' h (sauf jour férié). Pour un voile noir ou une baisse brutale de la vision, appelez-le d’abord ; '
+                    + 'sans réponse, allez aux urgences 24h/24 ci-dessous.';
             } else {
                 etatCabinet.textContent = maintenant + 'le cabinet est fermé. Pour un voile noir ou une baisse brutale de la vision, '
-                    + 'allez aux urgences 24 h/24 ci-dessous.';
+                    + 'allez aux urgences 24h/24 ci-dessous.';
             }
             etatCabinet.hidden = false;
         } catch (e) { /* fuseau inconnu : le paragraphe reste masqué */ }
