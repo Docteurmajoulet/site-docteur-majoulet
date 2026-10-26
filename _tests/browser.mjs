@@ -1301,6 +1301,49 @@ try {
     }
     await ctx.close();
   }
+  // TECH69Q-2026-10-26 — alignements : dans une rangée de cartes ou de tuiles, les textes partent de la même ligne (sous-grille CSS),
+  // à 768 et 1 366 px : textes et liens des cartes de l'accueil et de /pathologies, légendes des chiffres clés et des grilles
+  // de schémas (écart ≤ 1,5 px entre la première ligne de chaque élément d'une même rangée) ; filets de « Quel symptôme ? ».
+  for (const w of [768, 1366]) {
+    const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+    const cas = { 'index': [['.hv-cards > a.hv-card', ['p', '.hv-more']]],
+      'pathologies': [['.hub-grid > .hub-card', ['p', '.hub-more']], ['.hub-sym-list > li', ['a']]],
+      'injection-intravitreenne': [['.key-facts > .key-fact', ['.key-fact-label']]],
+      'trou-maculaire': [['.schema-grille > .schema-vignette', ['figcaption']]] };
+    for (const slug of Object.keys(cas).filter(s => slugs.includes(s))) {
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 }); loads++;
+        await page.evaluate(() => document.fonts.ready);
+        const bad = await page.evaluate((cas) => {
+          const out = [];
+          const haut = e => { const r = document.createRange(); r.selectNodeContents(e); const rs = [...r.getClientRects()].filter(x => x.width > 2 && x.height > 2); return rs.length ? Math.min(...rs.map(x => x.top)) : e.getBoundingClientRect().top; };
+          for (const [sel, subs] of cas) {
+            const cartes = [...document.querySelectorAll(sel)].filter(c => c.getClientRects().length);
+            if (!cartes.length) { out.push(`aucune carte « ${sel} »`); continue; }
+            const rangees = {};
+            for (const c of cartes) (rangees[Math.round(c.getBoundingClientRect().top)] ||= []).push(c);
+            for (const rg of Object.values(rangees)) {
+              if (rg.length < 2) continue;
+              for (const sub of subs) {
+                const els = rg.map(c => c.querySelector(sub)).filter(Boolean);
+                if (els.length < 2) continue;
+                // « Quel symptôme ? » : on compare le bas des liens (filets), ailleurs la première ligne de texte
+                const v = sel.includes('hub-sym') ? els.map(e => e.getBoundingClientRect().bottom) : els.map(haut);
+                const d = Math.max(...v) - Math.min(...v);
+                if (d > 1.5) out.push(`« ${sel} ${sub} » décalés de ${d.toFixed(1)} px dans une rangée`);
+              }
+            }
+          }
+          return out;
+        }, cas[slug]);
+        for (const x of bad) failures.push(`${slug} @${w} — alignement : ${x} (TECH69Q)`);
+      } catch (e) { failures.push(`${slug} @${w} — alignement : ${String(e).slice(0, 160)} (TECH69Q)`); }
+      await page.close();
+    }
+    await ctx.close();
+  }
 } finally { await browser.close(); stop(); }
 
 for (const f of failures) console.log('  ÉCHEC : ' + f);
