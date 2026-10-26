@@ -5467,10 +5467,10 @@ Dernière revue : 6 juillet 2026.
 
 Comprendre, corriger, freiner — de l’enfant à l’adulte
 
-La **myopie** est l’amétropie la plus fréquente dans les pays développés. Elle est liée à un **allongement de l’œil** ou, plus rarement, à un excès de puissance optique du cristallin ou de la cornée. Elle rend la vision floue de loin mais conserve souvent une bonne vision de près. Sa prévalence explose chez les enfants et adolescents dans le monde entier — l’OMS estime qu’environ **50 % de la population mondiale sera myope en 2050**.
+La **myopie** est l’amétropie la plus fréquente dans les pays développés. Elle est liée à un **allongement de l’œil** ou, plus rarement, à un excès de puissance optique du cristallin ou de la cornée. Elle rend la vision floue de loin mais conserve souvent une bonne vision de près. Sa prévalence explose chez les enfants et adolescents dans le monde entier. Selon une méta-analyse de 2016, reprise par l’OMS, environ **la moitié de la population mondiale pourrait être myope en 2050**.
 
 - **30-40 %** — Prévalence myopie en France (adulte)
-- **2 h / jour** — Temps dehors recommandé pour freiner chez l’enfant
+- **2 h / jour** — Temps dehors conseillé pour retarder l’apparition de la myopie
 - **50-60 %** — Réduction de progression avec verres Stellest/MiyoSmart
 
 #### Mécanisme
@@ -5509,7 +5509,7 @@ Freiner la progression myopique chez l’enfant est devenu un enjeu de santé pu
 
 ##### 1. Exposition à la lumière naturelle
 
-Objectif : **au moins 2 heures par jour à l’extérieur**. Effet dose-dépendant confirmé (étude ROTALS, 2015). C’est la mesure la plus simple, la moins chère et qui devrait être la première prescrite.
+Objectif : **1 à 2 heures par jour à l’extérieur**. Des essais randomisés en Chine (2015) et à Taïwan (2018) montrent qu’ajouter du temps dehors à l’école réduit l’apparition de la myopie, d’autant plus que ce temps est long. Chez l’enfant déjà myope, l’effet sur la progression est faible : le temps dehors ne remplace pas un traitement de freination.
 
 ##### 2. Verres correcteurs à freination intégrée
 
@@ -5517,13 +5517,13 @@ Objectif : **au moins 2 heures par jour à l’extérieur**. Effet dose-dépenda
 
 ##### 3. Atropine en collyre faible dose
 
-L’étude **LAMP (Low-concentration Atropine for Myopia Progression)** publiée en 2019 a démontré une efficacité significative de l’atropine à **0,05 %** chez l’enfant de 4 à 12 ans (meilleur équilibre efficacité/tolérance). Freination d’environ 50 % sur 2 ans.
+L’étude **LAMP** (Hong Kong, 2019), chez l’enfant de 4 à 12 ans, montre un effet proportionnel à la dose : en un an, la progression est réduite d’environ deux tiers avec l’atropine à **0,05 %** et d’environ un quart à 0,01 % par rapport au placebo ; l’effet se maintient la deuxième année.
 
 **Note réglementaire France :** les collyres d’atropine à 0,01 %, 0,025 % ou 0,05 % ne sont pas commercialisés sous forme de spécialité en France. Ils sont obtenus en **préparation magistrale hospitalière**, sur prescription d’un ophtalmologue.
 
 ##### 4. Orthokératologie (Ortho-K)
 
-Lentilles rigides de géométrie inversée portées la nuit, qui remodèlent la cornée et corrigent temporairement la myopie. La journée, l’enfant voit net sans aucune correction. Effet secondaire : freination myopique démontrée (méta-analyse Huang, 2016 : −45 % en moyenne). Nécessite une adaptation spécialisée et une hygiène rigoureuse.
+Lentilles rigides de géométrie inversée portées la nuit, qui remodèlent la cornée et corrigent temporairement la myopie. La journée, l’enfant voit net sans aucune correction. Effet secondaire : freination démontrée (méta-analyse Sun et al., 2015 : progression réduite d’environ 45 %). Nécessite une adaptation spécialisée et une hygiène rigoureuse.
 
 #### Quand consulter ?
 
