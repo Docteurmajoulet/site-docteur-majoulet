@@ -334,11 +334,11 @@
         }
     }
 
-    /* ---------- TECH69M-2026-10-26 : /urgences, état du cabinet à l’heure de Paris (CLAUDE.md §6, piste 5) ----------
+    /* ---------- TECH69M-2026-10-26 : /urgences, cabinet ouvert ou fermé à l’heure de Paris (CLAUDE.md §6, piste 5) ----------
        Horaires du cabinet : lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h ; fermé le dimanche.
-       Les jours fériés et les fermetures exceptionnelles ne sont pas connus : la phrase « ouvert » le rappelle et renvoie
-       aux urgences en l’absence de réponse ; la phrase « fermé » oriente toujours vers les urgences 24 h/24.
-       Sans JavaScript ou sans Intl, le paragraphe reste masqué (attribut hidden) et la page garde son texte statique. */
+       Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
+       écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas. Jours fériés inconnus.
+       Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
     var etatCabinet = document.querySelector('[data-etat-cabinet]');
     if (etatCabinet && window.Intl && Intl.DateTimeFormat) {
         try {
@@ -346,18 +346,13 @@
             new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
                 .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
             var fin = { Mon: 20, Wed: 20, Thu: 20, Tue: 18, Fri: 18, Sat: 18 }[heureParis.weekday];
-            var h = parseInt(heureParis.hour, 10) % 24, m = parseInt(heureParis.minute, 10);
-            var maintenant = 'Il est ' + h + ' h ' + (m < 10 ? '0' : '') + m + ' : ';
-            if (fin && h >= 9 && h < fin) {
-                etatCabinet.textContent = maintenant + 'le cabinet est normalement ouvert jusqu’à ' + fin
-                    + ' h (sauf jour férié). Pour un voile noir ou une baisse brutale de la vision, appelez-le d’abord ; '
-                    + 'sans réponse, allez aux urgences 24h/24 ci-dessous.';
-            } else {
-                etatCabinet.textContent = maintenant + 'le cabinet est fermé. Pour un voile noir ou une baisse brutale de la vision, '
-                    + 'allez aux urgences 24h/24 ci-dessous.';
-            }
+            var h = parseInt(heureParis.hour, 10) % 24;
+            var ouvert = Boolean(fin && h >= 9 && h < fin);
+            var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
+            etatCabinet.textContent = ouvert ? 'Ouvert' : 'Fermé';
+            if (boutonCabinet) { boutonCabinet.classList.add(ouvert ? 'est-ouvert' : 'est-ferme'); }
             etatCabinet.hidden = false;
-        } catch (e) { /* fuseau inconnu : le paragraphe reste masqué */ }
+        } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
     }
 
     /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
