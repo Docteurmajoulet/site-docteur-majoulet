@@ -5561,9 +5561,9 @@ Quand l’œil est trop court — symptômes, correction et précautions
 
 L’**hypermétropie** est une amétropie où l’image se forme **en arrière de la rétine**, en raison d’un œil trop court. Chez l’enfant et le jeune adulte, l’**accommodation cristallinienne** compense souvent le défaut : la vision reste nette, au prix d’une **fatigue visuelle** importante (asthénopie) et parfois d’un **strabisme accommodatif**. Avec l’âge, la perte de l’accommodation rend la correction indispensable.
 
-- **10-25 %** — Prévalence estimée en France (adulte)
+- **1 sur 4** — Adultes hypermétropes en Europe
 - **38-40 ans** — Âge typique de démasquage clinique
-- **× 3-4** — Risque de glaucome aigu si angle étroit
+- **Angle étroit** — À rechercher au bilan : risque de glaucome aigu
 
 #### Mécanisme
 
