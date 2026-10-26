@@ -1509,7 +1509,7 @@ Chaque cas fait l’objet d’une discussion individualisée avec le patient.
 
 ##### Chirurgie maculaire (trou, membrane épirétinienne)
 
-La vitrectomie 25G ou 27G est associée à un **pelage de la membrane limitante interne (MLI)** sous coloration par bleu brillant. Le tamponnement gazeux (SF6 ou C2F6) et le positionnement postural sont adaptés à la taille et à la chronicité du trou maculaire. Pour la membrane épirétinienne isolée, le tamponnement gazeux est discuté au cas par cas.
+La vitrectomie 25G ou 27G est associée à un **pelage de la membrane limitante interne (MLI)** sous coloration par bleu brillant. Le tamponnement gazeux (SF6 ou C2F6) et le positionnement postural sont adaptés à la taille et à la chronicité du trou maculaire. Pour la membrane épirétinienne isolée, il n’y a en règle pas de tamponnement gazeux ; chaque dossier est jugé au cas par cas.
 
 ##### Chirurgie combinée cataracte + vitrectomie (*phaco-vitrectomie*)
 
@@ -1543,7 +1543,7 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 1. **Consultation pré-opératoire** : confirmation diagnostique (OCT, fond d’œil), discussion des bénéfices et des risques, signature du consentement éclairé.
 2. **Bilan anesthésique** : consultation avec l’anesthésiste, bilan biologique éventuel selon les antécédents ; anticoagulants et antiagrégants gérés selon le protocole d’anesthésie — leur arrêt n’est en général pas nécessaire.
 3. **Intervention** : en ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.
-4. **Suites immédiates** : pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant 3 à 7 jours selon la taille du trou.
+4. **Suites immédiates** : pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas.
 5. **Suivi post-opératoire** : contrôles à J7, M1 et M3 avec OCT. Collyres antibio-anti-inflammatoires pendant 1 mois.
 
 #### Expertise du Dr Majoulet
@@ -1568,7 +1568,7 @@ Les vitrectomies se pratiquent en ambulatoire : vous rentrez chez vous le jour m
 
 ##### Faut-il vraiment tenir la posture face-vers-le-bas après un trou maculaire ?
 
-Oui : un maximum de temps chaque jour, pendant 3 à 7 jours selon la taille du trou, si un tamponnement gazeux est utilisé — la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Les essais randomisés montrent que la posture est déterminante pour les grands trous (≥ 400 µm) et peu influente pour les petits. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.
+Oui : un maximum de temps chaque jour, pendant quelques jours après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), si un tamponnement gazeux est utilisé — la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Les essais randomisés montrent que la posture est déterminante pour les grands trous (≥ 400 µm) et peu influente pour les petits. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.
 
 ##### Une cataracte peut-elle apparaître après une vitrectomie ?
 
@@ -1767,7 +1767,7 @@ Les références ci-dessus sont citées à titre indicatif pour le lecteur avert
 
 ##### Combien de temps dois-je rester face vers le bas ?
 
-Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, un positionnement court (**3 à 5 jours**) suffit pour les petits trous (< 400 µm) ; pour les grands trous, 7 jours ou plus peuvent être conseillés. Pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures. Le positionnement précis vous sera indiqué avant la sortie, avec un support écrit.
+Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, la posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas (taille du trou, gaz utilisé). Pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures. Le positionnement précis vous sera indiqué avant la sortie, avec un support écrit.
 
 ##### Vais-je retrouver toute ma vision ?
 
@@ -2023,6 +2023,7 @@ Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les 
 ##### Ma pratique
 
 - **L’opération** : vitrectomie et pelage de la membrane. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
+- **Gaz** : pas de gaz en règle ; chaque dossier est jugé au cas par cas.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
 - **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
 
@@ -2041,7 +2042,7 @@ Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les 
 - **Indication posée sur le retentissement fonctionnel** (acuité, métamorphopsies, gêne quotidienne) confronté à l’OCT (classification de Govetto), jamais sur la seule image morphologique.
 - **Vitrectomie 25G** en routine, avec induction d’un décollement postérieur du vitré si nécessaire.
 - **Pelage systématique MER + MLI** sous coloration par bleu brillant (Dual Blue) — la double étape limite le risque de récidive, validée par les méta-analyses récentes.
-- **Pas de tamponnement gazeux** en règle pour une MER isolée — donc **pas de posture** post-opératoire et aucune restriction de vol.
+- **Pas de tamponnement gazeux** en règle pour une MER isolée, chaque dossier étant jugé au cas par cas — donc **pas de posture** post-opératoire et aucune restriction de vol.
 - **Chirurgie combinée phaco-vitrectomie** proposée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une chirurgie secondaire de cataracte quasi systématique dans les 12 à 24 mois.
 - **Information du patient sur la dynamique de récupération** : l’amélioration visuelle se poursuit jusqu’à 6 à 12 mois ; une stabilisation à 3 mois n’est pas la valeur finale.
 
@@ -2164,7 +2165,8 @@ Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Ell
 ##### Ma pratique
 
 - **L’opération** : vitrectomie, pelage de la membrane limitante interne et bulle de gaz. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
-- **Posture** : face vers le bas, un maximum de temps chaque jour.
+- **Gaz** : SF6 ou C2F6, le plus souvent du SF6.
+- **Posture** : face vers le bas, un maximum de temps chaque jour, pendant quelques jours après l’opération ; la durée dépend des cas.
 - **Collyres** : pendant 1 mois.
 - **Contrôles** : à J7, à 1 mois et à 3 mois.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
@@ -2186,7 +2188,7 @@ Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) e
 
 #### Positionnement post-opératoire et suites
 
-**Positionnement face vers le bas (« face down »)** : après la chirurgie, il est essentiel de maintenir la tête face vers le bas un maximum de temps chaque jour, pendant **3 à 7 jours** selon la taille du trou et le gaz utilisé, afin que la bulle de gaz vienne appuyer sur la macula. Les consignes personnalisées vous seront remises à la sortie.
+**Positionnement face vers le bas (« face down »)** : après la chirurgie, il est essentiel de maintenir la tête face vers le bas un maximum de temps chaque jour, pendant **quelques jours** après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), afin que la bulle de gaz vienne appuyer sur la macula. Les consignes personnalisées vous seront remises à la sortie.
 
 Durant toute la période où la bulle de gaz est présente :
 
@@ -2243,7 +2245,7 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 ##### Combien de temps faut-il rester face vers le bas après l’opération ?
 
-La durée dépend de la taille du trou et du gaz utilisé. Pour les trous **< 400 µm**, un positionnement court de **3 à 5 jours** est suffisant : l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020) — 7 jours ou plus peuvent être conseillés. Les consignes précises vous seront remises en fonction de votre cas.
+La posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas, notamment de la taille du trou et du gaz utilisé. Pour les trous **< 400 µm**, l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020). Les consignes précises vous seront remises en fonction de votre cas.
 
 ##### Quel est le taux de succès de la chirurgie du trou maculaire ?
 
@@ -2964,7 +2966,7 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 2. **Bilan biométrique** : kératométrie topographique, longueur axiale (IOL Master), comptage endothélial si nécessaire, calcul de l’implant (formules Barrett, Hill-RBF, Kane).
 3. **Choix de l’implant** : discussion détaillée du projet visuel (lecture, conduite, travail sur écran), des limites de chaque type d’IOL, et de la prise en charge (Sécurité sociale + mutuelle).
 4. **Intervention** : anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
-5. **Suites** : contrôles à J1, J7, M1. Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
+5. **Suites** : contrôles une semaine, puis un mois après l’opération. Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
 
 **Phacoémulsification.** Le cristallin est fragmenté par ultrasons à travers une petite incision, puis aspiré.
 
@@ -3147,7 +3149,7 @@ Les étapes sont :
 - **Protection oculaire** à domicile les premiers jours (coque la nuit).
 - Éviter de se frotter l’œil, la natation et la piscine pendant 2 à 3 semaines.
 - Reprise du travail habituelle sous 3 à 7 jours selon la profession.
-- Contrôles habituels à J1, J7 et M1. Prescription définitive des lunettes vers la 4e semaine.
+- Contrôles habituels une semaine, puis un mois après l’opération. Prescription définitive des lunettes vers la 4e semaine.
 - Deuxième œil habituellement opéré à 1 à 4 semaines d’intervalle.
 
 #### Risques et complications
@@ -3365,7 +3367,7 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 - Collyres antibiotique + anti-inflammatoire pendant 3 à 4 semaines.
 - Coque oculaire nocturne 5 à 7 nuits.
-- Contrôle J1, J7 et M1. Mesure de l’axe de l’implant et de l’astigmatisme résiduel.
+- Contrôles une semaine, puis un mois après l’opération. Mesure de l’axe de l’implant et de l’astigmatisme résiduel.
 - Éviter les traumatismes oculaires et les frottements les premiers jours — une rotation significative survient, si elle doit survenir, dans les 2 premières semaines.
 - Stabilité réfractive définitive à 4-6 semaines.
 
