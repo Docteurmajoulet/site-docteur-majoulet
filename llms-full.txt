@@ -1831,6 +1831,12 @@ Le **décollement de rétine** est le décollement de la rétine neurosensoriell
 
 Il résulte d’une **déchirure** ou d’un **trou rétinien** qui laisse passer le vitré liquéfié sous la rétine. Il survient typiquement après un **décollement postérieur du vitré** (phénomène physiologique après 50 ans), plus précoce chez les myopes forts. C’est celui qui nécessite une chirurgie rapide.
 
+**Décollement postérieur du vitré.** Avec l’âge, le gel vitréen se décolle de la surface de la rétine. Là où une adhérence est anormalement forte, il tire sur la rétine.
+
+**Déchirure en fer à cheval.** La traction du vitré déchire la rétine en périphérie : un lambeau de rétine reste soulevé, tiré par le vitré.
+
+**Décollement de rétine.** Le vitré liquéfié s’infiltre sous la rétine par la déchirure, et la rétine se soulève.
+
 ##### Décollement tractionnel
 
 Il est causé par la **traction de membranes fibrovasculaires** sur la rétine. Principalement rencontré dans la **rétinopathie diabétique proliférante** ou après certaines occlusions veineuses.
@@ -1867,6 +1873,12 @@ Technique de référence pour la majorité des cas. Réalisée sous anesthésie 
 ##### 2. Cerclage scléral (indentation externe)
 
 Technique ancienne mais toujours pertinente, particulièrement chez le jeune phakique. Un **matériau de silicone** est placé autour du globe pour créer un rapprochement entre la paroi de l’œil et la rétine décollée, refermant mécaniquement les déchirures. En pratique, elle est privilégiée chez le patient **jeune (moins de 45 ans), phakique (cristallin en place), avec une déchirure accessible à l’indentation** ; dans les autres situations, la vitrectomie est la technique de choix.
+
+**Indentation sclérale.** Un matériau de silicone placé contre la paroi de l’œil la rapproche de la rétine et referme la déchirure.
+
+**Vitrectomie.** Par trois micro-incisions, le vitré est retiré, le liquide sous la rétine aspiré et la déchirure traitée.
+
+**Bulle de gaz.** En fin d’intervention, une bulle de gaz tamponne l’œil et maintient la rétine contre la paroi. La vision reste floue tant que la bulle n’est pas résorbée.
 
 La **rétinopexie pneumatique** (injection d’une bulle de gaz en consultation, suivie d’un laser ou d’une cryothérapie), pratiquée en Amérique du Nord pour certains décollements limités et supérieurs, n’est pas utilisée en France.
 
@@ -2486,6 +2498,8 @@ Le DPV simple (non compliqué) évolue favorablement en quelques semaines à que
 
 Une déchirure rétinienne est une **déhiscence** (trou ou déchirure en fer à cheval) de la rétine périphérique, le plus souvent provoquée par la traction vitréenne lors du DPV. Elle constitue la **porte d’entrée** d’un décollement de rétine (le vitré liquéfié s’infiltre sous la rétine, qui se soulève).
 
+**Déchirure en fer à cheval.** La traction du vitré déchire la rétine en périphérie : un lambeau de rétine reste soulevé, tiré par le vitré.
+
 Les signes évocateurs d’une déchirure sont :
 
 - **Pluie** de petits points noirs ou de filaments rouges (micro-hémorragie intravitréenne).
@@ -2690,6 +2704,8 @@ Le vitré adhère normalement à la rétine à plusieurs endroits : autour du ne
 - Une **déchirure rétinienne** (10-15 % des cas). Voir [Déchirure rétinienne](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 - Une **hémorragie intravitréenne** si un vaisseau rétinien est lésé.
 - Un **décollement de rétine** rhegmatogène si une déchirure laisse passer du liquide sous la rétine. Voir [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
+
+**Décollement postérieur du vitré.** Avec l’âge, le gel vitréen se décolle de la surface de la rétine. Là où une adhérence est anormalement forte, il tire sur la rétine.
 
 **Signes d’alerte — consultez en urgence :**
 
@@ -3585,6 +3601,8 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 - **Déchirures rétiniennes symptomatiques** (éclairs, corps flottants, déchirure en fer à cheval, trou opérculé symptomatique) : **barrage laser** en couronne autour de la déchirure pour empêcher la progression vers un décollement — voir [déchirure rétinienne](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 - **Rétinoschisis acquis étendu** à risque, angiomes rétiniens, maladie de Coats, rétinopathie radique, certaines pathologies vasculaires rares.
 - **Œdème maculaire diabétique focal** : laser focal ou micropulse sub-seuil sur microanévrismes fuitants — désormais en deuxième intention après les anti-VEGF (DRCR.net Protocol I).
+
+**Laser de barrage.** Le laser crée une cicatrice adhérente autour de la déchirure, qui empêche le liquide de passer sous la rétine.
 
 #### Bilan préopératoire
 
