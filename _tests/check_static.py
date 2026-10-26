@@ -424,6 +424,15 @@ def check(root):
         _prof += _ligne.count('{') - _ligne.count('}')
         if _prof < 0: E(f'main.css : « }} » sans bloc ouvert, ligne {_l} — TECH69R'); break
     if _prof > 0: E(f"main.css : {_prof} bloc(s) jamais fermé(s) — les règles suivantes ne s'appliquent qu'à l'intérieur du bloc ouvert (TECH69R)")
+    # TECH69U-2026-10-26 : deux refus du validateur W3C, qui ne tourne qu'en CI (Java absent en local) — le 26/10, les
+    # carrousels sont partis en ligne avec un aria-label sur un div sans rôle et un aria-hidden doublant hidden.
+    for name, pg in pages.items():
+        for m in re.finditer(r'<(div|span)\b([^>]*)>', pg.txt):
+            if re.search(r'\saria-label(?:ledby)?=', m.group(2)) and not re.search(r'\srole=', m.group(2)):
+                E(f'{name}:{pg.txt.count(chr(10), 0, m.start()) + 1} : aria-label sur un <{m.group(1)}> sans role (refusé par le W3C : ajouter un role, ou nommer autrement) — TECH69U')
+        for m in re.finditer(r'<[a-zA-Z][^>]*>', pg.txt):
+            if re.search(r'\shidden(?=[\s>/])', m.group(0)) and 'aria-hidden=' in m.group(0):
+                E(f'{name}:{pg.txt.count(chr(10), 0, m.start()) + 1} : aria-hidden en plus de hidden (redondant, signalé par le W3C) — TECH69U')
     for m in re.finditer(r'([^{}]*:focus(?::not\(:focus-visible\))?)\s*\{([^}]*)\}', css_txt):
         sel, body = m.group(1).strip(), m.group(2)
         if re.search(r'outline:\s*(none|0)\b', body) and ':not(:focus-visible)' not in sel and 'main[tabindex="-1"]' not in sel:
