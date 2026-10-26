@@ -8276,3 +8276,58 @@ body.page-pathologies .hub-sym-list .dest .ico {
         justify-content: flex-start;
     }
 }
+/* TECH69S-2026-10-26 — colonnes des fiches (tour technique du 26/10). Les listes à puces s'arrêtaient 60 px avant les
+   paragraphes à 1 366 px : leur largeur de 60ch était calculée sur leur propre corps (0,95 rem) et non sur celui
+   des puces (1,05 rem). 41.475rem = 60 caractères du corps des fiches (39,5 em × 1,05) : listes et paragraphes ont
+   le même bord droit, dans le texte comme dans les encadrés. */
+article.pathology-content > :is(ul, ol),
+article.pathology-content > .page-section > :is(ul, ol),
+article.pathology-content > .forme-box :is(ul, ol) {
+    max-width: 41.475rem;
+}
+/* TECH69S (suite, maquette soumise au Dr Majoulet le 26/10) — colonne unique des fiches : à partir de 48 em, fil
+   d'Ariane, titre, texte, encadrés, chiffres clés, schémas et bloc rendez-vous partagent une même colonne de
+   60 caractères (41.475rem), centrée. Avant : texte sur 664 px, mais encadrés et schémas sur 812 px (conteneur de
+   860 px) — deux bords droits dans la même page. */
+@media (min-width: 48em) {
+    :where(body.v1) .container {
+        max-width: calc(41.475rem + 48px);
+    }
+}
+/* Les grilles de schémas débordent de la colonne sur grand écran (812 px, la largeur d'avant) : les étiquettes des
+   dessins restent à leur taille de lecture. */
+@media (min-width: 60em) {
+    :where(body.v1) article.pathology-content .schema-grille {
+        margin-inline: calc((100% - 812px) / 2);
+    }
+}
+/* TECH69S (suite) — intertitres de /publications et des pages légales au dessin de ceux des fiches : même taille, trait
+   sable de 52 px au lieu d'un filet gris pleine largeur (publications) ou d'aucun trait (pages légales), 20-21,6 px → 24-29,6 px. */
+:where(body.page-publications, body.page-confidentialite, body.page-mentions-legales) main h2 {
+    position: relative;
+    padding-bottom: 14px;
+    border-bottom: none;
+    font-size: clamp(1.5rem, 1.25rem + 1vw, 1.85rem);
+    line-height: 1.25;
+    letter-spacing: -0.005em;
+}
+:where(body.page-publications, body.page-confidentialite, body.page-mentions-legales) main h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 52px;
+    height: 2px;
+    background: var(--sable);
+}
+/* TECH69S (suite, à valider) — téléphone (≤ 30 em) : une seule marge latérale de 16 px pour tout le site. Les fiches
+   étaient à 16 px depuis TECH20AX (largeur de lecture), mais le bandeau, l'en-tête et les autres pages restaient à
+   24 px : sur les fiches, le texte partait 8 px à gauche du logo. Bandeau, en-tête, contenu et pied de page partagent
+   désormais le même bord, sur toutes les pages. */
+@media (max-width: 30em) {
+    .topbar-inner,
+    .header-inner,
+    .container {
+        padding-inline: 16px;
+    }
+}
