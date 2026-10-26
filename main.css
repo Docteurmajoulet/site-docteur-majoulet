@@ -8285,3 +8285,19 @@ article.pathology-content > .page-section > :is(ul, ol),
 article.pathology-content > .forme-box :is(ul, ol) {
     max-width: 41.475rem;
 }
+/* TECH69S (suite, maquette soumise au Dr Majoulet le 26/10) — colonne unique des fiches : à partir de 48 em, fil
+   d'Ariane, titre, texte, encadrés, chiffres clés, schémas et bloc rendez-vous partagent une même colonne de
+   60 caractères (41.475rem), centrée. Avant : texte sur 664 px, mais encadrés et schémas sur 812 px (conteneur de
+   860 px) — deux bords droits dans la même page. */
+@media (min-width: 48em) {
+    :where(body.v1) .container {
+        max-width: calc(41.475rem + 48px);
+    }
+}
+/* Les grilles de schémas débordent de la colonne sur grand écran (812 px, la largeur d'avant) : les étiquettes des
+   dessins restent à leur taille de lecture. */
+@media (min-width: 60em) {
+    :where(body.v1) article.pathology-content .schema-grille {
+        margin-inline: calc((100% - 812px) / 2);
+    }
+}
