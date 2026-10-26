@@ -4373,7 +4373,7 @@ La **choriorétinopathie séreuse centrale (CRSC)** est une maladie maculaire ca
 
 - **25-50 ans** — Âge typique de survenue
 - **× 4 à 8** — Plus fréquente chez l’homme
-- **~80 %** — Résolution spontanée en 3-6 mois
+- **1 sur 3** — Récidive après un premier épisode (étude de population)
 
 #### Qu’est-ce que la CRSC ?
 
@@ -4414,7 +4414,7 @@ Le diagnostic repose sur plusieurs examens complémentaires :
 
 ##### Forme aiguë
 
-Premier épisode ou récidive courte (< 4 mois). Évolution naturelle souvent favorable avec résolution spontanée dans 80 à 90 % des cas en 3 à 6 mois. La prise en charge initiale est le plus souvent conservatrice.
+Premier épisode ou récidive courte (< 4 mois). La grande majorité des formes aiguës se résorbent spontanément en quelques mois. La prise en charge initiale est le plus souvent conservatrice.
 
 ##### Forme chronique / récurrente
 
@@ -4435,7 +4435,7 @@ Apparition possible, notamment sur les formes chroniques, d’une **néovascular
 
 ##### 2 — Photothérapie dynamique (PDT)
 
-Traitement de **référence** dans les formes chroniques ou les récidives symptomatiques. Elle consiste à injecter par voie intraveineuse un photosensibilisant (**vertéporfine**), puis à activer spécifiquement la zone maculaire malade par un laser non thermique. Utilisée en **demi-dose** ou **demi-fluence** (pour limiter le risque d’atrophie), elle résorbe le décollement séreux dans plus de 80 % des cas et réduit significativement le risque de récidive.
+Traitement de **référence** dans les formes chroniques ou les récidives symptomatiques. Elle consiste à injecter par voie intraveineuse un photosensibilisant (**vertéporfine**), puis à activer spécifiquement la zone maculaire malade par un laser non thermique. Utilisée en **demi-dose** ou **demi-fluence** (pour limiter le risque d’atrophie), elle fait disparaître complètement le liquide chez 2 à 3 patients sur 4 dans les essais randomisés (78 % à 3 mois dans l’essai SPECTRA) et réduit significativement le risque de récidive ; une seconde séance est possible.
 
 ##### 3 — Antagonistes des récepteurs minéralocorticoïdes
 
@@ -4453,10 +4453,10 @@ Réservés aux formes compliquées d’une **néovascularisation choroïdienne**
 
 #### Pronostic
 
-- 80 à 90 % des **formes aiguës** régressent spontanément en 3-6 mois avec récupération visuelle complète ou quasi-complète.
+- La grande majorité des **formes aiguës** se résorbent spontanément en quelques mois, avec récupération visuelle complète ou quasi-complète.
 - Les **formes chroniques** peuvent laisser des **séquelles visuelles** (atrophie de l’EPR, désorganisation des photorécepteurs) ; d’où l’intérêt de traiter activement au-delà de 4 mois.
 - Les **récidives** sont fréquentes (30 à 50 % sur 10 ans), d’où l’importance de la prévention (arrêt des corticoïdes, gestion du stress).
-- Le risque de **néovascularisation choroïdienne** secondaire est de l’ordre de 2 à 9 % ; il justifie un suivi OCT-A régulier.
+- Dans les formes chroniques, l’OCT-angiographie retrouve des **néovaisseaux** chez une part importante des patients (30 à 45 % dans certaines séries), souvent peu actifs ; ils justifient un suivi régulier.
 
 #### Questions fréquentes des patients
 
@@ -4470,11 +4470,11 @@ Les corticoïdes, sous **toutes leurs formes** (comprimés, injections, crèmes 
 
 ##### Une CRSC guérit-elle spontanément ?
 
-Oui, dans environ **80 à 90 % des formes aiguës**, une résolution spontanée survient en 3 à 6 mois. Lorsque le décollement séreux persiste au-delà de 4 à 6 mois, on parle de forme chronique : une surveillance simple n’est alors plus recommandée et un traitement est envisagé pour éviter des séquelles maculaires définitives.
+Oui. La grande majorité des **formes aiguës** se résorbent spontanément en quelques mois. Lorsque le décollement séreux persiste au-delà de 4 à 6 mois, on parle de forme chronique : une surveillance simple n’est alors plus recommandée et un traitement est envisagé pour éviter des séquelles maculaires définitives.
 
 ##### Quel est le traitement de référence ?
 
-La **photothérapie dynamique (PDT)** à la vertéporfine en demi-dose ou demi-fluence est actuellement le traitement de référence des formes chroniques ou des récidives symptomatiques. Elle est efficace dans plus de 80 % des cas. La photocoagulation laser focale reste indiquée pour un point de fuite extrafovéolaire. L’éplérénone/spironolactone ont une efficacité plus limitée que celle initialement espérée.
+La **photothérapie dynamique (PDT)** à la vertéporfine en demi-dose ou demi-fluence est actuellement le traitement de référence des formes chroniques ou des récidives symptomatiques. Elle est efficace chez la majorité des patients. La photocoagulation laser focale reste indiquée pour un point de fuite extrafovéolaire. L’éplérénone/spironolactone ont une efficacité plus limitée que celle initialement espérée.
 
 ##### La CRSC peut-elle récidiver ?
 
