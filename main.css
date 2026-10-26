@@ -8256,3 +8256,21 @@ body.page-pathologies .hub-sym-list .dest .ico {
     margin-left: 6px;
     vertical-align: -0.1em;
 }
+/* TECH69Q (suite) — accueil sur téléphone et tablette (≤ 900 px) : tout le haut de page aligné à gauche, comme sur
+   ordinateur et comme les en-têtes des fiches. Jusqu'ici, sur téléphone, les titres étaient centrés et les
+   paragraphes à gauche (TECH24BT) ; sur tablette, tout était centré, paragraphes de 7 lignes compris. */
+@media (max-width: 56.25em) {
+    body.page-index .hero-v3 .hero-content {
+        text-align: left;
+    }
+    body.page-index .hero-v3 :is(.hero-subtitle, .hero-text) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    body.page-index .hero-v3 .hero-text {
+        max-width: 36em;
+    }
+    body.page-index .hero-v3 .hero-buttons {
+        justify-content: flex-start;
+    }
+}
