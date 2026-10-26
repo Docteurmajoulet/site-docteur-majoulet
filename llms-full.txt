@@ -370,28 +370,6 @@ Le **Dr Alexandre Majoulet** est **chirurgien ophtalmologue et rétinologue** à
 
 Praticien Contractuel au **CHNO des Quinze-Vingts** (service du Pr Baudouin), ancien interne des **Hôpitaux de Paris**, le Dr Majoulet est titulaire du **DIU de Chirurgie Vitréo-Rétinienne** (Université Paris-Saclay) et **FEBO** (European Board of Ophthalmology).
 
-#### Spécialités proposées au cabinet
-
-##### Suivi ophtalmologique général
-
-Bilan ophtalmologique complet : mesure de l’acuité visuelle, réfraction (lunettes, lentilles), tonométrie, examen du segment antérieur, fond d’œil dilaté, OCT maculaire et papillaire si indiqués. Voir la [page bilan ophtalmologique annuel](https://docteurmajoulet.com/suivi-corrections-optiques#bilan).
-
-##### Chirurgie de la rétine et injections intravitréennes
-
-Prise en charge des pathologies rétiniennes médicales et chirurgicales : [DMLA](https://docteurmajoulet.com/dmla), [rétinopathie diabétique](https://docteurmajoulet.com/retinopathie-diabetique), [occlusions veineuses rétiniennes](https://docteurmajoulet.com/occlusions-veineuses), [membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne), [trou maculaire](https://docteurmajoulet.com/trou-maculaire), [décollement de rétine](https://docteurmajoulet.com/decollement-retine), [déchirures et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants). Les [injections intravitréennes](https://docteurmajoulet.com/injection-intravitreenne) d’anti-VEGF ou de corticoïdes sont réalisées au cabinet sur rendez-vous dédié.
-
-##### Chirurgie de la cataracte
-
-Phacoémulsification par micro-incision avec choix d’implant adapté ([monofocal](https://docteurmajoulet.com/implants-monofocaux), [torique](https://docteurmajoulet.com/implants-toriques), [multifocal ou EDOF](https://docteurmajoulet.com/implants-multifocaux)). La consultation pré-opératoire permet de définir l’implant le plus adapté à votre profil visuel. Voir la [page chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte).
-
-##### Glaucome
-
-Dépistage et suivi du [glaucome chronique](https://docteurmajoulet.com/glaucome), mesure du champ visuel et OCT du nerf optique. Traitements laser ([SLT](https://docteurmajoulet.com/glaucome#slt), [iridotomie YAG](https://docteurmajoulet.com/glaucome#iridotomie)) et chirurgie ([MIGS](https://docteurmajoulet.com/glaucome#migs), [trabéculectomie](https://docteurmajoulet.com/glaucome#trabeculectomie), [sclérectomie profonde non perforante](https://docteurmajoulet.com/glaucome#trabeculectomie)).
-
-##### Surface oculaire
-
-Prise en charge de la [sécheresse oculaire](https://docteurmajoulet.com/secheresse-oculaire), des [blépharites](https://docteurmajoulet.com/secheresse-oculaire#blepharite), traitement par [IPL (lumière pulsée)](https://docteurmajoulet.com/secheresse-oculaire#ipl), [incision de chalazion](https://docteurmajoulet.com/secheresse-oculaire#chalazion), pose de [bouchons méatiques](https://docteurmajoulet.com/secheresse-oculaire#bouchons-meatiques).
-
 #### Le cabinet — adresse, accès, équipement
 
 ##### Adresse
@@ -419,6 +397,10 @@ Prise en charge de la [sécheresse oculaire](https://docteurmajoulet.com/sechere
 
 Le cabinet dispose des principaux examens d’ophtalmologie spécialisée : OCT maculaire et OCT-A (angiographie sans injection), rétinographie couleur, champ visuel automatisé, tonométrie sans contact, biométrie pré-opératoire (calcul d’implant pour la cataracte), pachymétrie cornéenne.
 
+##### Lieu des interventions chirurgicales
+
+Les interventions libérales sont réalisées à la **Clinique Jouvenet**, 6 square Jouvenet, 75016 Paris, après la consultation préopératoire au cabinet.
+
 #### Prendre rendez-vous
 
 La prise de rendez-vous pour une **consultation libérale au Cabinet Ophtalife à Boulogne-Billancourt** se fait en ligne sur Doctolib ou par téléphone au secrétariat. Pour un avis spécialisé en rétine, retrouvez les [informations pour préparer votre venue](https://docteurmajoulet.com/contact#avis-retine), y compris si vous habitez hors de la région parisienne.
@@ -437,6 +419,28 @@ Le Dr Majoulet exerce en **secteur 2 conventionné** (honoraires libres).
 - Apporter toutes les **ordonnances en cours** (lunettes, gouttes, traitements généraux).
 - Apporter les **examens ophtalmologiques antérieurs** (OCT, champ visuel, photographies du fond d’œil) si vous en avez.
 - Pour une **première consultation rétine** ou un fond d’œil détaillé, prévoir une **dilatation pupillaire** : la vision de près reste floue 3 à 4 heures, la conduite est déconseillée à la sortie. Prévoyez un accompagnant ou un transport adapté.
+
+#### Spécialités proposées au cabinet
+
+##### Suivi ophtalmologique général
+
+Bilan ophtalmologique complet : mesure de l’acuité visuelle, réfraction (lunettes, lentilles), tonométrie, examen du segment antérieur, fond d’œil dilaté, OCT maculaire et papillaire si indiqués. Voir la [page bilan ophtalmologique annuel](https://docteurmajoulet.com/suivi-corrections-optiques#bilan).
+
+##### Chirurgie de la rétine et injections intravitréennes
+
+Prise en charge des pathologies rétiniennes médicales et chirurgicales : [DMLA](https://docteurmajoulet.com/dmla), [rétinopathie diabétique](https://docteurmajoulet.com/retinopathie-diabetique), [occlusions veineuses rétiniennes](https://docteurmajoulet.com/occlusions-veineuses), [membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne), [trou maculaire](https://docteurmajoulet.com/trou-maculaire), [décollement de rétine](https://docteurmajoulet.com/decollement-retine), [déchirures et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants). Les [injections intravitréennes](https://docteurmajoulet.com/injection-intravitreenne) d’anti-VEGF ou de corticoïdes sont réalisées au cabinet sur rendez-vous dédié.
+
+##### Chirurgie de la cataracte
+
+Phacoémulsification par micro-incision avec choix d’implant adapté ([monofocal](https://docteurmajoulet.com/implants-monofocaux), [torique](https://docteurmajoulet.com/implants-toriques), [multifocal ou EDOF](https://docteurmajoulet.com/implants-multifocaux)). La consultation pré-opératoire permet de définir l’implant le plus adapté à votre profil visuel. Voir la [page chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte).
+
+##### Glaucome
+
+Dépistage et suivi du [glaucome chronique](https://docteurmajoulet.com/glaucome), mesure du champ visuel et OCT du nerf optique. Traitements laser ([SLT](https://docteurmajoulet.com/glaucome#slt), [iridotomie YAG](https://docteurmajoulet.com/glaucome#iridotomie)) et chirurgie ([MIGS](https://docteurmajoulet.com/glaucome#migs), [trabéculectomie](https://docteurmajoulet.com/glaucome#trabeculectomie), [sclérectomie profonde non perforante](https://docteurmajoulet.com/glaucome#trabeculectomie)).
+
+##### Surface oculaire
+
+Prise en charge de la [sécheresse oculaire](https://docteurmajoulet.com/secheresse-oculaire), des [blépharites](https://docteurmajoulet.com/secheresse-oculaire#blepharite), traitement par [IPL (lumière pulsée)](https://docteurmajoulet.com/secheresse-oculaire#ipl), [incision de chalazion](https://docteurmajoulet.com/secheresse-oculaire#chalazion), pose de [bouchons méatiques](https://docteurmajoulet.com/secheresse-oculaire#bouchons-meatiques).
 
 #### Urgence ophtalmologique
 
@@ -476,7 +480,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
-Dernière mise à jour : 20 septembre 2026.
+Dernière mise à jour : 25 octobre 2026.
 
 ### Urgences ophtalmologiques
 
