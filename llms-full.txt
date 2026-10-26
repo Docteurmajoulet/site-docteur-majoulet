@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-25
+Dernière mise à jour : 2026-10-26
 
 ## Identité et coordonnées
 
@@ -2203,6 +2203,8 @@ Les symptômes dépendent du volume et de la localisation du sang dans le vitré
 - **Phosphènes** (éclairs lumineux), très évocateurs d’une traction vitréorétinienne associée.
 - Une **amputation périphérique du champ visuel** doit faire suspecter un décollement de rétine associé.
 
+L’hémorragie intra-vitréenne correspond à la présence de sang dans la cavité vitréenne (le gel transparent qui remplit les 4/5 du volume de l’œil). Le sang provient en règle de la rupture d’un vaisseau rétinien ou d’un néovaisseau pathologique.
+
 **Consultation ophtalmologique sous 24 à 48 heures.** Une hémorragie intra-vitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
@@ -2256,6 +2258,8 @@ La conduite dépend de l’étiologie identifiée :
 - **Surveillance** avec **positionnement semi-assis** pour favoriser la sédimentation inférieure du sang et dégager l’axe visuel. Évitement des efforts violents, maintien des anticoagulants en concertation avec le médecin traitant sauf contre-indication formelle.
 - **Traitement complémentaire** dès que la visibilité rétinienne le permet : **photocoagulation laser** (déchirure, rétinopathie diabétique), **injections d’anti-VEGF** (néovaisseaux actifs), cryothérapie trans-sclérale si la rétine n’est pas accessible au laser.
 - **Bilan étiologique** systématique : équilibre glycémique et tensionnel, bilan d’une uvéite suspectée.
+
+La position semi-assise (tête surélevée la nuit par 2-3 oreillers) favorise la sédimentation du sang en bas de la cavité vitréenne, ce qui dégage progressivement l’axe visuel central et facilite la surveillance au fond d’œil.
 
 ##### Indications de vitrectomie
 
@@ -2318,6 +2322,8 @@ La **subluxation** désigne un déplacement partiel : le cristallin ou l’impla
 
 La **luxation complète** correspond à la chute de la lentille, le plus souvent en arrière, dans la cavité vitréenne. La baisse de vision est alors marquée.
 
+Le cristallin — ou l’implant qui l’a remplacé après une chirurgie de la cataracte — est normalement maintenu derrière l’iris par la zonule. Lorsque ce support cède, la lentille se décale ou bascule dans la cavité vitréenne : c’est la luxation.
+
 Chez le patient opéré de la cataracte, on distingue la luxation de l’**implant seul** (hors du sac capsulaire) et la **luxation tardive de l’ensemble « sac + implant »**, où c’est tout le support qui s’est détaché — un mécanisme différent, de plus en plus fréquent avec le vieillissement des yeux opérés.
 
 #### Pourquoi cela arrive-t-il ?
@@ -2357,6 +2363,10 @@ Lorsque l’implant existant est intact et réutilisable, il peut parfois être 
 
 - l’**implant fixé à l’iris (type Artisan)**, positionné à la face postérieure de l’iris (fixation rétropupillaire) ;
 - l’**implant à fixation sclérale sans suture (type Carlevale)**, dont les appuis s’ancrent directement dans la paroi de l’œil.
+
+**Implant fixé à l’iris (type Artisan).** Il est positionné à la face postérieure de l’iris (fixation rétropupillaire).
+
+**Implant à fixation sclérale (type Carlevale).** Sans suture, ses appuis s’ancrent directement dans la paroi de l’œil.
 
 L’intervention se déroule le plus souvent en **ambulatoire**, sous anesthésie locorégionale, à la **Clinique Jouvenet (Paris 16)**, comme l’ensemble de mes chirurgies vitréo-rétiniennes.
 
@@ -3241,6 +3251,10 @@ Le temps chirurgical est **identique à une chirurgie de la cataracte standard**
 - **Marquage préopératoire** de l’axe de référence (0°-180°) ou utilisation d’un guidage numérique.
 - **Alignement peropératoire** : une fois l’implant injecté, le chirurgien le fait tourner délicatement pour aligner les marques gravées sur l’axe cible. Le viscoélastique est ensuite soigneusement évacué pour éviter toute rotation secondaire.
 
+**Alignement peropératoire.** Les marques gravées sur l’optique indiquent l’axe du cylindre ; une fois l’implant injecté, le chirurgien le fait tourner délicatement pour aligner ces marques sur l’axe cible, repéré à partir de l’axe de référence 0°-180°.
+
+**Implant décalé de 10°.** Chaque degré de désalignement fait perdre environ 3,3 % de la correction : 10° en font perdre 33 %, 30° l’annulent.
+
 Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’intervention 15 à 25 minutes.
 
 #### Suites opératoires
@@ -3339,6 +3353,14 @@ Les contre-indications (absolues ou relatives) sont aussi importantes à connaî
 - **EDOF (Tecnis Symfony, AcrySof IQ Vivity, IC-8 Apthera)** : profondeur de champ continue, de loin à intermédiaire. Moins de halos que les trifocaux ; vision de près souvent limitée (lunettes fines possibles pour la lecture prolongée).
 - **Trifocaux-EDOF hybrides** (PanOptix Pro, Synergy) : compromis entre indépendance totale et réduction des halos.
 - **Versions toriques** disponibles pour la plupart de ces modèles si astigmatisme cornéen ≥ 1,0 D.
+
+**Monofocal.** Vision nette à une seule distance, de loin le plus souvent ; lunettes requises pour la lecture et l’ordinateur.
+
+**Bifocal.** 2 foyers (loin + près) ; vision intermédiaire parfois médiocre.
+
+**Trifocal.** 3 foyers (loin, intermédiaire ~60-80 cm, près ~40 cm). Le partage de la lumière entre plusieurs foyers peut générer des halos nocturnes et une légère baisse du contraste.
+
+**EDOF.** Profondeur de champ continue, de loin à intermédiaire ; vision de près souvent limitée.
 
 #### Bilan préopératoire
 
@@ -3778,6 +3800,10 @@ Obstruction d’une branche veineuse périphérique, atteignant un **secteur ré
 
 Forme intermédiaire atteignant environ la moitié de la rétine. Son pronostic et sa prise en charge sont proches de ceux de l’OVCR.
 
+**Occlusion de branche veineuse (OBVR).** Obstruction d’une branche veineuse périphérique, atteignant un secteur rétinien (le plus souvent temporal supérieur). La vision peut être peu altérée si la macula est respectée.
+
+**Occlusion de la veine centrale (OVCR).** Obstruction du tronc veineux principal à son émergence de la papille, atteignant la totalité de la rétine : hémorragies rétiniennes disséminées, nodules cotonneux, veines tortueuses et dilatées, œdème papillaire.
+
 #### Facteurs de risque
 
 - **Hypertension artérielle** (facteur le plus fréquent).
@@ -3890,6 +3916,10 @@ Le patient décrit une baisse brutale, indolore et souvent complète de la visio
 - **Tache rouge cerise maculaire** (« cherry-red spot ») : la choroïde sous-jacente est visible à travers la rétine amincie de la fovéola.
 - **Artères filiformes** avec parfois embol visible (plaque de Hollenhorst, embol calcaire).
 - Veines de calibre normal ou légèrement dilatées.
+
+**Fond d’œil normal.** Pour comparaison : la papille, les artères (fines), les veines (plus larges) et la macula.
+
+**Occlusion de l’artère centrale.** Rétine blanchâtre et œdémateuse ; tache rouge cerise maculaire : la choroïde sous-jacente est visible à travers la rétine amincie de la fovéola. Artères filiformes, avec parfois un embol visible.
 
 #### Diagnostic différentiel
 
@@ -4920,6 +4950,10 @@ Sécheresse oculaire et blépharite sont chroniques, mais elles se traitent bien
 #### Sécheresse oculaire : de quoi parle-t-on ?
 
 La sécheresse oculaire est définie par le consensus international TFOS DEWS II (consensus international sur l’œil sec, 2017) comme une **maladie multifactorielle de la surface oculaire** : le film lacrymal perd sa stabilité, devient trop concentré (hyperosmolarité) et entretient une inflammation de la surface de l’œil. Deux mécanismes s’associent à des degrés divers :
+
+**Glandes de Meibomius.** Ces glandes des paupières produisent la couche grasse qui empêche la larme de s’évaporer.
+
+**Dysfonction des glandes de Meibomius.** Lorsqu’elles s’obstruent ou s’atrophient, la larme s’évapore trop vite.
 
 - la **sécheresse par évaporation**, de loin la plus fréquente, liée à une **dysfonction des glandes de Meibomius** (DGM) : ces glandes des paupières produisent la couche grasse qui empêche la larme de s’évaporer ; lorsqu’elles s’obstruent ou s’atrophient, la larme s’évapore trop vite ;
 - la **sécheresse par déficit de production** (aqueux-déficiente), plus rare, rencontrée notamment dans le syndrome de Gougerot-Sjögren et après certains traitements.
