@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-27
 
 ## Identité et coordonnées
 
@@ -595,7 +595,7 @@ Tout signe neurologique associé (troubles de la parole, faiblesse d’un membre
 
 ##### Où aller en urgence ophtalmologique en Île-de-France ?
 
-Les trois services publics d’urgence ophtalmologique 24h/24 de référence en Île-de-France sont : le Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (28 rue de Charenton, Paris 12e), la Fondation Ophtalmologique Adolphe de Rothschild (29 rue Manin, Paris 19e) et l’Ophtalmopôle de l’Hôpital Cochin — AP-HP (27 rue du Faubourg Saint-Jacques, Paris 14e). Appelez le **15** en cas de traumatisme oculaire grave, de projection chimique ou de baisse de vision brutale des deux yeux ou accompagnée de signes neurologiques ; pour un voile noir (suspicion de décollement de rétine), appelez le cabinet aux heures d’ouverture, sinon rendez-vous directement dans l’un de ces services, ouverts 24h/24.
+Les trois services publics d’urgence ophtalmologique 24h/24 de référence en Île-de-France sont : le Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (28 rue de Charenton, Paris 12e), la Fondation Ophtalmologique Adolphe de Rothschild (29 rue Manin, Paris 19e) et l’Ophtalmopôle de l’Hôpital Cochin — AP-HP (27 rue du Faubourg Saint-Jacques, Paris 14e). Appelez le **15** en cas de traumatisme oculaire grave, de projection chimique ou de baisse brutale de la vision des deux yeux ou accompagnée de signes neurologiques ; pour un voile noir (suspicion de décollement de rétine), appelez le cabinet aux heures d’ouverture, sinon rendez-vous directement dans l’un de ces services, ouverts 24h/24.
 
 ##### Le cabinet du Dr Majoulet prend-il des urgences ?
 
