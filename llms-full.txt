@@ -4496,11 +4496,11 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Staphylome, néovaisseaux myopiques, fovéoschisis, risque de décollement
 
-La **myopie forte** (ou myopie pathologique) est définie par une correction **supérieure à -6 dioptries** ou une **longueur axiale du globe ≥ 26 mm**. Elle concerne aujourd’hui **2 à 3 % de la population française**, et sa prévalence augmente fortement dans le monde, notamment en Asie. Au-delà du simple défaut réfractif, la myopie forte est un **facteur de risque majeur de complications rétiniennes** qui justifie un **suivi ophtalmologique spécialisé annuel**.
+La **myopie forte** est définie par une myopie **d’au moins 6 dioptries** ou une **longueur axiale d’au moins 26 mm**. On parle de myopie pathologique quand des lésions apparaissent au fond d’œil (staphylome, atrophie, néovaisseaux). La myopie forte concerne aujourd’hui **2 à 3 % de la population française**, et sa prévalence augmente fortement dans le monde, notamment en Asie. Au-delà du simple défaut réfractif, la myopie forte est un **facteur de risque majeur de complications rétiniennes** qui justifie un **suivi ophtalmologique spécialisé annuel**.
 
 - **≥ -6 D** — Seuil de myopie forte
 - **≥ 26 mm** — Longueur axiale pathologique
-- **× 5-10** — Risque de décollement de rétine
+- **× 10 et plus** — Risque de décollement de rétine
 
 #### Comprendre la myopie forte
 
@@ -4516,7 +4516,7 @@ Déformation focale ou diffuse de la paroi postérieure du globe, détectée à 
 
 ##### [Néovaisseaux choroïdiens myopiques](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort) (mCNV)
 
-Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **1 à 10 %** des yeux à myopie forte. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
+Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **5 à 11 %** des yeux atteints de myopie pathologique. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
 
 ##### Fovéoschisis myopique et maculopathie de traction
 
@@ -4528,7 +4528,7 @@ Forme particulière de trou maculaire, souvent associée à un fovéoschisis ou 
 
 ##### Décollement de rétine rhegmatogène
 
-La myopie forte multiplie par **5 à 10** le risque de décollement de rétine. Les déchirures périphériques sur rétine amincie (palissades, trous) sont plus fréquentes et souvent multiples. **Tout symptôme d’alerte** (myodésopsies brutales, phosphènes, voile noir) chez un myope fort impose une **consultation ophtalmologique en urgence**.
+La myopie forte multiplie **environ par 10**, voire davantage, le risque de décollement de rétine. Les déchirures périphériques sur rétine amincie (palissades, trous) sont plus fréquentes et souvent multiples. **Tout symptôme d’alerte** (myodésopsies brutales, phosphènes, voile noir) chez un myope fort impose une **consultation ophtalmologique en urgence**.
 
 **Signes devant faire consulter en urgence :** multiplication soudaine des **corps flottants (myodésopsies)**, **éclairs lumineux (phosphènes)**, apparition d’un **voile noir** ou d’une **amputation du champ visuel**. Ces signes évoquent une déchirure rétinienne ou un décollement de rétine débutant. Voir la page [Déchirure de rétine et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 
@@ -4540,7 +4540,7 @@ Amincissement progressif de la choroïde et de l’épithélium pigmentaire dans
 
 ##### Cataracte précoce
 
-Les myopes forts développent souvent une cataracte dès 50-55 ans, de type **nucléaire** (myopisation progressive, changements fréquents de correction) ou **sous-capsulaire postérieure**. La [chirurgie de cataracte](https://docteurmajoulet.com/cataracte) chez le myope fort requiert une biométrie optique de haute précision et comporte un **risque accru de décollement de rétine** (0,5 à 1 %, jusqu’à 2 % chez le myope fort).
+Les myopes forts ont plus souvent une cataracte : risque environ 3 fois plus élevé pour la cataracte **nucléaire** (myopisation progressive, changements fréquents de correction), 4 à 5 fois pour la **sous-capsulaire postérieure**. La [chirurgie de cataracte](https://docteurmajoulet.com/cataracte) chez le myope fort requiert une biométrie optique de haute précision et comporte un **risque accru de décollement de rétine** : environ 1 % à 4 ans en France tous patients confondus, 1,5 à 3 % chez le myope fort.
 
 ##### Glaucome associé
 
@@ -4561,11 +4561,11 @@ Un **bilan annuel** est recommandé chez tout patient ayant une myopie ≥ -6 D 
 
 Chez l’enfant, des traitements permettent de **ralentir la progression** de la myopie et donc de **limiter à l’âge adulte** le risque de complications :
 
-- **Collyres d’atropine faiblement dosée** (0,01 à 0,05 %), 1 goutte le soir : efficacité démontrée (études *ATOM*, *LAMP*). *Note réglementaire* : ces collyres ne sont pas commercialisés en France et sont obtenus sous forme de **préparation magistrale hospitalière** par la pharmacie hospitalière, sur prescription d’un ophtalmologiste.
+- **Collyres d’atropine faiblement dosée** (0,01 à 0,05 %), 1 goutte le soir : dans l’essai *LAMP*, l’effet augmente avec la dose, 0,05 % étant la plus efficace ; à 0,01 %, l’effet est faible et n’a pas été retrouvé dans un essai américain. *Note réglementaire* : ces collyres ne sont pas commercialisés en France et sont obtenus sous forme de **préparation magistrale hospitalière** par la pharmacie hospitalière, sur prescription d’un ophtalmologiste.
 - **Lentilles d’orthokératologie** (portées la nuit).
 - **Verres de lunettes à défocalisation périphérique** (MiYOSMART, Stellest).
 - **Lentilles souples à défocalisation**.
-- **Augmentation du temps passé en extérieur** (≥ 2 h par jour) et réduction du temps d’écran rapproché.
+- **Augmentation du temps passé en extérieur** (de l’ordre de 1 h 30 à 2 h par jour) et réduction du temps d’écran rapproché.
 
 La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste pédiatrique**. Le suivi à l’âge adulte relève ensuite du rétinologue.
 
@@ -4573,7 +4573,7 @@ La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste p
 
 ##### Ma myopie peut-elle continuer d’augmenter à l’âge adulte ?
 
-Rarement au-delà de 25-30 ans. Une **aggravation rapide chez l’adulte** doit faire rechercher d’autres causes : cataracte nucléaire débutante, décompensation d’un kératocône, diabète déséquilibré. Une augmentation prolongée au-delà de 30 ans chez un myope déjà fort doit alerter.
+Elle se stabilise le plus souvent à l’âge adulte. Une **aggravation rapide** doit faire rechercher d’autres causes : cataracte nucléaire débutante, décompensation d’un kératocône, diabète déséquilibré. Une augmentation prolongée au-delà de 30 ans chez un myope déjà fort doit alerter.
 
 ##### La chirurgie réfractive guérit-elle la myopie forte ?
 
