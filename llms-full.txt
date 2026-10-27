@@ -1343,7 +1343,7 @@ Le risque est une **récidive de la maladie** : reprise de la croissance néovas
 
 ##### Les injections se font-elles en hôpital ou en cabinet ?
 
-Les deux. En France, elles peuvent être réalisées au **cabinet** (en salle dédiée aux normes) ou en **hôpital / clinique**. Au Cabinet Ophtalife, les injections sont réalisées dans une **salle dédiée**, dans les mêmes conditions d’asepsie qu’au bloc, ce qui évite les déplacements et raccourcit les délais.
+Les deux. En France, elles peuvent être réalisées au **cabinet** (en salle dédiée aux normes) ou en **hôpital / clinique**. Au Cabinet Ophtalife, les injections sont réalisées dans une **salle dédiée** aux normes ISO 7, ce qui évite les déplacements et raccourcit les délais.
 
 ##### Auteur et révision médicale
 
@@ -1544,7 +1544,7 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 - **Surveillance avec repos en position semi-assise** pour favoriser la sédimentation de l’hémorragie en cas de forme modérée et sans déchirure décelée.
 - **Vitrectomie postérieure 25G** indiquée en cas d’hémorragie abondante empêchant la visualisation du fond d’œil et le traitement étiologique, d’hémorragie persistante (typiquement au-delà de 4 à 8 semaines), d’association à une déchirure rétinienne ou à un décollement de rétine. La vitrectomie permet d’évacuer le sang, d’identifier et de traiter la cause (laser, photocoagulation), et de prévenir les complications (prolifération vitréo-rétinienne, hémorragies à répétition).
 
-**Urgence relative.** Une baisse de vision brutale avec corps flottants nombreux ou voile doit faire consulter rapidement pour écarter une déchirure rétinienne ou un décollement de rétine sous-jacent.
+**Urgence relative.** Une baisse brutale de la vision avec corps flottants nombreux ou voile doit faire consulter rapidement pour écarter une déchirure rétinienne ou un décollement de rétine sous-jacent.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -1900,9 +1900,9 @@ La chirurgie est indiquée en quasi-totalité des décollements rhegmatogènes. 
 
 ##### 1. Vitrectomie postérieure mini-invasive
 
-Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale ou générale, elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (SF6 ou C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
+Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale ou générale, elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
 
-##### 2. Cerclage scléral (indentation externe)
+##### 2. Indentation sclérale (cerclage)
 
 Technique ancienne mais toujours pertinente, particulièrement chez le jeune phakique. Un **matériau de silicone** est placé autour du globe pour créer un rapprochement entre la paroi de l’œil et la rétine décollée, refermant mécaniquement les déchirures. En pratique, elle est privilégiée chez le patient **jeune (moins de 45 ans), phakique (cristallin en place), avec une déchirure accessible à l’indentation** ; dans les autres situations, la vitrectomie est la technique de choix.
 
@@ -2817,7 +2817,7 @@ Le vitré adhère normalement à la rétine à plusieurs endroits : autour du ne
 - **Multiplication brutale** des corps flottants.
 - **Voile noir** ou **ombre fixe** dans le champ visuel.
 - **Rideau** qui tombe depuis la périphérie.
-- **Baisse visuelle** brutale, même partielle.
+- **Baisse brutale de la vision**, même partielle.
 - Persistance d’**éclairs lumineux** intenses.
 
 Ces symptômes évoquent une **déchirure rétinienne** ou un **décollement de rétine débutant**.
