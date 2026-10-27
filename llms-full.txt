@@ -1550,11 +1550,49 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 
 ##### Parcours patient
 
-1. **Consultation pré-opératoire** : confirmation diagnostique (OCT, fond d’œil), discussion des bénéfices et des risques, signature du consentement éclairé.
-2. **Bilan anesthésique** : consultation avec l’anesthésiste, bilan biologique éventuel selon les antécédents ; anticoagulants et antiagrégants gérés selon le protocole d’anesthésie — leur arrêt n’est en général pas nécessaire.
-3. **Intervention** : en ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.
-4. **Suites immédiates** : pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas.
-5. **Suivi post-opératoire** : contrôles à J7, M1 et M3 avec OCT. Collyres antibio-anti-inflammatoires pendant 1 mois.
+1.
+
+###### Avant l’opération Consultation pré-opératoire
+
+Confirmation diagnostique (OCT, fond d’œil), discussion des bénéfices et des risques, signature du consentement éclairé.
+
+2.
+
+###### Bilan anesthésique
+
+Consultation avec l’anesthésiste, bilan biologique éventuel selon les antécédents ; anticoagulants et antiagrégants gérés selon le protocole d’anesthésie — leur arrêt n’est en général pas nécessaire.
+
+3.
+
+###### Jour J Intervention
+
+En ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.
+
+4.
+
+###### Les premiers jours Suites immédiates
+
+Pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Collyres antibio-anti-inflammatoires pendant 1 mois.
+
+5.
+
+###### J7 Premier contrôle
+
+Contrôle avec OCT.
+
+6.
+
+###### 1 mois Deuxième contrôle
+
+Contrôle avec OCT.
+
+7.
+
+###### 3 mois Troisième contrôle
+
+Contrôle avec OCT.
+
+Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 #### Expertise du Dr Majoulet
 
@@ -3073,11 +3111,49 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 ##### Parcours patient
 
-1. **Consultation initiale** : diagnostic de cataracte, mesure de l’acuité, examen biomicroscopique, examen du fond d’œil dilaté.
-2. **Bilan biométrique** : kératométrie topographique, longueur axiale (IOL Master), comptage endothélial si nécessaire, calcul de l’implant (formules Barrett, Hill-RBF, Kane).
-3. **Choix de l’implant** : discussion détaillée du projet visuel (lecture, conduite, travail sur écran), des limites de chaque type d’IOL, et de la prise en charge (Sécurité sociale + mutuelle).
-4. **Intervention** : anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
-5. **Suites** : contrôles une semaine, puis un mois après l’opération. Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
+1.
+
+###### Avant l’opération Consultation initiale
+
+Diagnostic de cataracte, mesure de l’acuité, examen biomicroscopique, examen du fond d’œil dilaté.
+
+2.
+
+###### Bilan biométrique
+
+Kératométrie topographique, longueur axiale (IOL Master), comptage endothélial si nécessaire, calcul de l’implant (formules Barrett, Hill-RBF, Kane).
+
+3.
+
+###### Choix de l’implant
+
+Discussion détaillée du projet visuel (lecture, conduite, travail sur écran), des limites de chaque type d’IOL, et de la prise en charge (Sécurité sociale + mutuelle).
+
+4.
+
+###### Jour J Intervention
+
+Anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
+
+5.
+
+###### Les premiers jours Suites
+
+Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
+
+6.
+
+###### 1 semaine Premier contrôle
+
+Contrôle une semaine après l’opération.
+
+7.
+
+###### 1 mois Deuxième contrôle
+
+Contrôle un mois après l’opération.
+
+Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 **Phacoémulsification.** Le cristallin est fragmenté par ultrasons à travers une petite incision, puis aspiré.
 
