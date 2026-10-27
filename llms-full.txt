@@ -2590,6 +2590,8 @@ Le **vitré** est un gel transparent qui remplit les 4/5 postérieurs de l’œi
 
 Le DPV simple (non compliqué) évolue favorablement en quelques semaines à quelques mois par neuroadaptation. Mais dans **10 à 15 % des DPV symptomatiques** (14 % dans une méta-analyse de 17 études, soit environ 1 cas sur 7), la traction exercée par le vitré sur la rétine provoque une **déchirure rétinienne**. Le risque est plus élevé si la vision baisse ou si de nombreux nouveaux corps flottants apparaissent.
 
+**Décollement postérieur du vitré.** Avec l’âge, le gel vitréen se décolle de la surface de la rétine. Là où une adhérence est anormalement forte, il tire sur la rétine.
+
 #### La déchirure rétinienne
 
 Une déchirure rétinienne est une **déhiscence** (trou ou déchirure en fer à cheval) de la rétine périphérique, le plus souvent provoquée par la traction vitréenne lors du DPV. Elle constitue la **porte d’entrée** d’un décollement de rétine (le vitré liquéfié s’infiltre sous la rétine, qui se soulève).
