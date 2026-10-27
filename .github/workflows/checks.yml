@@ -62,20 +62,23 @@ jobs:
     name: Firefox et WebKit (parcours de rendez-vous)
     runs-on: ubuntu-24.04
     needs: statique
-    # 20 min : l'installation de Firefox et WebKit a dépassé 10 min trois fois le 26/10 (job annulé avant les tests)
-    timeout-minutes: 20
+    # Image officielle de Playwright, à la version du projet (_tests/package.json, à changer avec elle) : Firefox, WebKit et leurs
+    # bibliothèques y sont déjà installés. Le 26/10, leur installation (117 Mo par le miroir apt, ~40 Ko/s) dépassait
+    # 10 puis 20 min et le job était annulé avant le moindre test. Node 22, Python 3 (serve.py) et OpenSSL (certificat
+    # de compatibility.mjs) viennent de l'image : job de ~2 min 30, image comprise (essai du 26/10).
+    # --user 1001 : Firefox refuse de tourner en root quand HOME (/github/home) appartient à l'utilisateur 1001.
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+      options: --user 1001
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: _tests
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
-        with:
-          node-version: 22
-          cache: npm
-          cache-dependency-path: _tests/package-lock.json
+      - name: Outils de l'image
+        run: node --version && python3 --version && openssl version
       - run: npm ci
-      - run: npx playwright install --with-deps firefox webkit
       - name: Parcours essentiels sous la CSP du site
         run: npm run test:compatibility
       - name: Navigation de secours sous Firefox et WebKit
