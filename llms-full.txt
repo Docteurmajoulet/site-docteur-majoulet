@@ -955,23 +955,24 @@ Dr Alexandre Majoulet · Retina and cataract surgery · Boulogne-Billancourt (92
 
 **Dr Alexandre Majoulet** is an ophthalmic surgeon specialising in vitreoretinal surgery. He sees patients in English and in French at the **Cabinet Ophtalife**, 37 rue d’Aguesseau, in Boulogne-Billancourt, on the western edge of Paris, and operates at the **Clinique Jouvenet** (Paris 16th). He also works at the **Quinze-Vingts National Eye Hospital** (Paris 12th), in Professor Baudouin’s department.
 
-He trained at the Paris university hospitals (residency 2017–2022), then as an assistant at the Quinze-Vingts (2022–2024). He holds the French specialist diploma in ophthalmology (2023), a university diploma in vitreoretinal surgery (Université Paris-Saclay, 2024), and is a Fellow of the European Board of Ophthalmology (FEBO, 2022). French medical registration number (RPPS): 10101500121.
+He trained at the Paris university hospitals (residency 2017–2022), then held a post-residency hospital post at the Quinze-Vingts (*assistant des Hôpitaux de Paris*, 2022–2024). He holds the French specialist diploma in ophthalmology (2023), a university diploma in vitreoretinal surgery (Université Paris-Saclay, 2024), and is a Fellow of the European Board of Ophthalmology (FEBO, 2022). French medical registration number (RPPS): 10101500121.
 
 The rest of this website is in French. This page gives the essentials in English.
 
 #### What we treat
 
-- **Retinal detachment** and retinal tears: surgery by scleral buckling or vitrectomy ([page in French](https://docteurmajoulet.com/decollement-retine)).
+- **Retinal tears**, treated by laser at the practice, and **retinal detachment**, treated by surgery: scleral buckling or vitrectomy ([French page on retinal detachment](https://docteurmajoulet.com/decollement-retine)).
 - **Macular hole** and **epiretinal membrane**: vitrectomy ([macular hole](https://docteurmajoulet.com/trou-maculaire), [epiretinal membrane](https://docteurmajoulet.com/membrane-epiretinienne)).
 - **Age-related macular degeneration** (AMD): diagnosis with OCT on site and intravitreal injections in a dedicated ISO 7 room at the practice ([AMD](https://docteurmajoulet.com/dmla), [injections](https://docteurmajoulet.com/injection-intravitreenne)).
 - **Diabetic retinopathy** and **retinal vein occlusion**.
-- **Cataract surgery** and lens implants ([page in French](https://docteurmajoulet.com/chirurgie-cataracte)).
+- **Cataract surgery** and lens implants ([French page on cataract surgery](https://docteurmajoulet.com/chirurgie-cataracte)).
 - **Floaters and flashes**, **glaucoma** and **dry eye**.
 
 #### Eye emergencies
 
-- **A dark curtain or shadow spreading across the vision of one eye, or a sudden loss of vision**: the eye must be examined the same day. During opening hours, call the practice on [+33 1 84 19 11 66](tel:+33184191166). Out of hours, go directly to a 24-hour eye emergency department: Quinze-Vingts (Paris 12th), Fondation Rothschild (Paris 19th) or Hôpital Cochin (Paris 14th).
-- **Suspected central retinal artery occlusion** (sudden, painless and severe loss of vision in one eye): come to the practice urgently, or go directly to the Fondation Rothschild. Call 15 (emergency medical service) only if it comes with difficulty speaking, weakness of an arm or a leg, or a drooping face.
+- **A dark curtain or shadow over the vision of one eye, or a sudden drop in vision**: the eye must be examined the same day. During opening hours, call the practice on [+33 1 84 19 11 66](tel:+33184191166). Outside opening hours, go directly to a 24-hour eye emergency department: Quinze-Vingts (Paris 12th, [+33 1 40 02 16 80](tel:+33140021680)), Fondation Rothschild (Paris 19th, [+33 1 48 03 68 84](tel:+33148036884)) or Hôpital Cochin (Paris 14th, [+33 1 58 41 23 00](tel:+33158412300)).
+- **Suspected central retinal artery occlusion** (sudden, painless and severe drop in vision in one eye): during opening hours, come to the practice urgently; otherwise, go directly to the Fondation Rothschild.
+- **Call 15** (emergency medical service) for an eye injury, a chemical splash or a loss of vision in both eyes, and when a drop in vision comes with difficulty speaking, weakness of an arm or a leg, or a drooping face.
 - **New flashes of light or new floaters**, without a curtain: an eye examination within 24–48 hours. The practice keeps urgent retinal appointments for this.
 - **Straight lines that suddenly look wavy or distorted**: an examination within 24–48 hours.
 
