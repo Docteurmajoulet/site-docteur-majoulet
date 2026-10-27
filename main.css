@@ -8384,6 +8384,7 @@ article.pathology-content > .forme-box :is(ul, ol) {
     background: var(--blanc-naturel);
 }
 .frise-etape--controle::after { background: var(--prusse); }
+.frise > p:not([class]) { font-size: 1.05rem; }   /* corps des paragraphes de la fiche (règle article.pathology-content > p) */
 .frise-etape > p { margin: 6px 0 0; font-size: 1.05rem; }
 .frise-etape--gaz-fin::before { background: linear-gradient(var(--bleu-gris-light), var(--sable)); }   /* la bulle se résorbe en 2 à 5 semaines : elle s'efface avant le contrôle d'un mois */
 .frise-titre {
