@@ -740,7 +740,7 @@ Identifiants externes : [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Majoulet+
 ### Toutes les pathologies
 
 - URL : https://docteurmajoulet.com/pathologies
-- Description : Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome, cornée. Fiches détaillées. RDV.
+- Description : Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome. Fiches détaillées. RDV.
 - Relu le : 2026-08-24
 
 Retrouvez votre pathologie, ou commencez par vos symptômes.
