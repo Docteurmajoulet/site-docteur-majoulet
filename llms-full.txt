@@ -5205,7 +5205,7 @@ En cas de signes évocateurs d’une maladie générale (bouche sèche, douleurs
 
 #### Les traitements, par paliers
 
-La stratégie s’appuie sur le consensus TFOS DEWS III (2025) : les mesures de base valent pour tous, puis les traitements sont **choisis selon les mécanismes en cause** chez chacun (film lacrymal, paupières, surface de l’œil), souvent associés. Le tableau les range par paliers : on ajoute un palier lorsque le précédent ne suffit pas.
+La stratégie s’appuie sur le consensus TFOS DEWS III (2025) : les mesures de base valent pour tous, puis les traitements sont **choisis selon les causes en jeu** chez chacun (larmes, paupières, surface de l’œil), souvent associés. Le tableau les range par paliers : on ajoute un palier lorsque le précédent ne suffit pas.
 
 | Palier | Ce que c’est | Prise en charge |
 |---|---|---|
