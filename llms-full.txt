@@ -5207,7 +5207,7 @@ En cas de signes évocateurs d’une maladie générale (bouche sèche, douleurs
 
 #### Les traitements, par paliers
 
-La stratégie suit les recommandations TFOS DEWS II : on commence par les mesures de base, on ajoute un palier lorsque le précédent ne suffit pas, et le traitement est **adapté au mécanisme dominant** (évaporation ou déficit de production).
+La stratégie s’appuie sur le consensus TFOS DEWS III (2025) : les mesures de base valent pour tous, puis les traitements sont **choisis selon les causes en jeu** chez chacun (larmes, paupières, surface de l’œil), souvent associés. Le tableau les range par paliers : on ajoute un palier lorsque le précédent ne suffit pas.
 
 | Palier | Ce que c’est | Prise en charge |
 |---|---|---|
@@ -5285,13 +5285,13 @@ Non. Les larmes sans conservateur peuvent être utilisées aussi souvent que né
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Contenu rédigé et revu selon les recommandations de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/) et le consensus international [TFOS DEWS II](https://www.tearfilm.org/) (Tear Film & Ocular Surface Society). / Dernière révision : 1er septembre 2026.
+Rédigé à partir du consensus international TFOS DEWS III (Tear Film & Ocular Surface Society) : [rapport sur le diagnostic de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.033) et [rapport sur la prise en charge de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.039). / Dernière révision : 1er septembre 2026.
 
 #### Sources et références
 
 - Wolffsohn JS, Benítez-Del-Castillo JM, Loya-Garcia D, et al. *TFOS DEWS III: Diagnostic Methodology.* Am J Ophthalmol. 2025;279:387-450 — [doi:10.1016/j.ajo.2025.05.033](https://doi.org/10.1016/j.ajo.2025.05.033)
+- Jones L, Craig JP, Markoulli M, et al. *TFOS DEWS III: Management and Therapy.* Am J Ophthalmol. 2025;279:289-386 — [doi:10.1016/j.ajo.2025.05.039](https://doi.org/10.1016/j.ajo.2025.05.039)
 - Craig JP, Nichols KK, Akpek EK, et al. *TFOS DEWS II Definition and Classification Report.* Ocul Surf. 2017;15(3):276-283 — [doi:10.1016/j.jtos.2017.05.008](https://doi.org/10.1016/j.jtos.2017.05.008)
-- Jones L, Downie LE, Korb D, et al. *TFOS DEWS II Management and Therapy Report.* Ocul Surf. 2017;15(3):575-628 — [doi:10.1016/j.jtos.2017.05.006](https://doi.org/10.1016/j.jtos.2017.05.006)
 - Société Française d’Ophtalmologie. *Surface oculaire.* Rapport annuel de la SFO, 2015 (dir. P.-J. Pisella, C. Baudouin, T. Hoang-Xuan).
 
 ## Vue et corrections optiques
