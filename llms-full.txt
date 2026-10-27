@@ -5201,7 +5201,7 @@ Majoulet A, Scemla B, Hamard P, et al. *Safety and Efficacy of the Preserflo Mic
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des recommandations de la Société européenne du glaucome (EGS, 6e édition, [2025](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines)). / Dernière révision : 20 août 2026.
+Rédigé à partir des [recommandations de la Société européenne du glaucome (EGS, 6e édition, 2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 août 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5748,7 +5748,7 @@ La consultation ophtalmologique est remboursée par la Sécurité sociale. Les l
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé en tenant compte des [recommandations de l’AFSOP sur le dépistage visuel de l’enfant (2020)](https://doi.org/10.1016/j.jfo.2020.07.005). / Dernière révision : 6 juillet 2026.
+Rédigé en tenant compte des [recommandations de l’AFSOP sur le dépistage visuel de l’enfant (2021)](https://doi.org/10.1016/j.jfo.2020.07.005). / Dernière révision : 6 juillet 2026.
 
 ### Amblyopie (« œil paresseux »)
 
@@ -5827,5 +5827,5 @@ Un traitement commencé avant 5 ans permet une **récupération d’acuité norm
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur l’amblyopie (2023)](https://doi.org/10.1016/j.ophtha.2022.11.003) et de l’[AFSOP sur le dépistage visuel de l’enfant (2020)](https://doi.org/10.1016/j.jfo.2020.07.005). / Dernière révision : 20 avril 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur l’amblyopie (2023)](https://doi.org/10.1016/j.ophtha.2022.11.003) et de l’[AFSOP sur le dépistage visuel de l’enfant (2021)](https://doi.org/10.1016/j.jfo.2020.07.005). / Dernière révision : 20 avril 2026.
 
