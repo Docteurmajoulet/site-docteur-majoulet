@@ -428,6 +428,13 @@ def check(root):
         _prof += _ligne.count('{') - _ligne.count('}')
         if _prof < 0: E(f'main.css : « }} » sans bloc ouvert, ligne {_l} — TECH69R'); break
     if _prof > 0: E(f"main.css : {_prof} bloc(s) jamais fermé(s) — les règles suivantes ne s'appliquent qu'à l'intérieur du bloc ouvert (TECH69R)")
+    # TECH69X-2026-10-27 : aucun marqueur de conflit git dans un fichier publié. Le 27/10, une répétition de fusion arrêtée
+    # sur un conflit a été commitée avec ses marqueurs (branche locale, jamais poussée) : aucune garde ne l'a vu.
+    for _f in sorted(glob.glob(os.path.join(root, '*'))):
+        if not os.path.isfile(_f) or not re.search(r'\.(html|css|js|txt|xml|json|webmanifest)$|/_(redirects|headers)$', _f): continue
+        _t = open(_f, encoding='utf-8', errors='replace').read()
+        for m in re.finditer(r'^(?:<{7}|>{7}|\|{7})(?: |$)|^={7}$', _t, re.M):
+            E(f'{os.path.basename(_f)}:{_t.count(chr(10), 0, m.start()) + 1} : marqueur de conflit git « {m.group(0).strip()} » — TECH69X'); break
     # TECH69U-2026-10-26 : deux refus du validateur W3C, qui ne tourne qu'en CI (Java absent en local) — le 26/10, les
     # carrousels sont partis en ligne avec un aria-label sur un div sans rôle et un aria-hidden doublant hidden.
     for name, pg in pages.items():
