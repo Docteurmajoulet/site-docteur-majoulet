@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-27
+Dernière mise à jour : 2026-10-28
 
 ## Identité et coordonnées
 
@@ -2388,6 +2388,10 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 #### Questions fréquentes des patients
 
+##### Combien de temps dure l’opération du trou maculaire, et comment se passe-t-elle ?
+
+L’opération du trou maculaire dure en général **30 à 45 minutes**. Elle se fait en ambulatoire, sous anesthésie locorégionale ou générale, à la Clinique Jouvenet (Paris 16e). Le Dr Majoulet réalise une vitrectomie : il retire le gel de l’œil, puis la membrane limitante interne, une fine membrane qui tapisse la surface de la rétine, et laisse dans l’œil une bulle de gaz, le plus souvent du SF6, sinon du C2F6. Si le cristallin est encore en place, il opère souvent la cataracte dans le même temps. Après l’opération, la tête est maintenue face vers le bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Les collyres sont prescrits pendant 1 mois et les contrôles ont lieu au cabinet, à J7, à 1 mois et à 3 mois. Tant que la bulle est présente (environ 2 semaines pour le SF6, 4 à 5 semaines pour le C2F6), la vision de l’œil opéré est très floue, et l’avion comme l’altitude sont contre-indiqués. La vision récupère ensuite progressivement, sur 3 à 6 mois.
+
 ##### Combien de temps faut-il rester face vers le bas après l’opération ?
 
 La posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas, notamment de la taille du trou et du gaz utilisé. Pour les trous **< 400 µm**, l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020). Les consignes précises vous seront remises en fonction de votre cas.
@@ -2412,7 +2416,7 @@ La fermeture spontanée est **possible mais rare**, essentiellement dans les tr�
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
