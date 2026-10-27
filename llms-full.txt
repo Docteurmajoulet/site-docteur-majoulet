@@ -2955,6 +2955,10 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 
 #### Questions fréquentes
 
+##### Un décollement postérieur du vitré est-il grave ?
+
+En lui-même, non. Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, surtout après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Mais en se décollant, le vitré peut tirer sur la rétine et la déchirer, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe ou un rideau, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
+
 ##### Peut-on prévenir un DPV ?
 
 Non. Le DPV est un phénomène physiologique lié au vieillissement du vitré, au même titre que l’apparition de cheveux blancs. Aucun complément alimentaire, collyre ou médicament n’a démontré d’efficacité préventive.
@@ -2975,7 +2979,7 @@ Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinien
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Baisse brutale de la vision
 
