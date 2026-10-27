@@ -8339,3 +8339,91 @@ article.pathology-content > .forme-box :is(ul, ol) {
         padding-inline: 16px;
     }
 }
+/* TECH69W-2026-10-27 — frise du parcours opératoire (CLAUDE.md §6, piste 4, maquette à valider) : de la consultation
+   au troisième mois, une étape par point sur un trait vertical, à toutes les largeurs (la colonne unique est trop
+   étroite pour six étapes côte à côte). Point plein : contrôle au cabinet. Trait épais bleu-gris : la bulle de gaz
+   est dans l'œil (dit aussi en toutes lettres dans l'introduction et dans l'étape). Le bouton « Imprimer ce
+   parcours » (révélé par nav.js) pose html.imprimer-frise : seule la frise s'imprime, avec les coordonnées du
+   cabinet ; sans :has(), toute la page s'imprime comme avant. */
+.frise-etapes {
+    list-style: none;
+    margin: 24px 0 0;
+    padding: 0;
+}
+.frise-etape {
+    position: relative;
+    margin: 0;
+    padding: 0 0 24px 36px;
+}
+.frise-etape::before {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    bottom: -10px;
+    width: 2px;
+    background: var(--sable);
+}
+.frise-etape:last-child::before { display: none; }
+.frise-etape--gaz::before {
+    left: 5px;
+    width: 8px;
+    border-radius: 4px;
+    background: var(--bleu-gris-light);
+}
+.frise-etape::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 18px;
+    height: 18px;
+    box-sizing: border-box;
+    border: 2px solid var(--prusse);
+    border-radius: 50%;
+    background: var(--blanc-naturel);
+}
+.frise-etape--controle::after { background: var(--prusse); }
+.frise-etape > p { margin: 6px 0 0; }
+.frise-titre {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.35;
+    color: var(--prusse);
+}
+.frise-quand {
+    display: block;
+    margin-bottom: 2px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--sable-fonce);
+}
+.frise-pied {
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+.frise-bouton {
+    min-height: 48px;
+    padding: 10px 20px;
+    border: 2px solid var(--prusse);
+    border-radius: 8px;
+    background: var(--blanc-naturel);
+    color: var(--prusse);
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+@media (hover: hover) {
+    .frise-bouton:hover { background: var(--prusse); color: var(--blanc-naturel); }
+}
+@media print {   /* les aplats disparaissent à l'impression (feuille générale) : trait et points en bordures */
+    .frise-imprimer { display: none; }
+    .frise-etape { break-inside: avoid; padding-bottom: 10pt; }
+    main .frise-titre { margin: 0 !important; }
+    .frise-etape::before { width: 0; border-left: 2px solid #777; }
+    .frise-etape--gaz::before { border-left: 8px solid #bbb; }
+    .frise-etape::after { border-color: #000; }
+    .frise-etape--controle::after { border-width: 9px; }
+    html.imprimer-frise body :not(:has(.frise), .frise, .frise *) { display: none !important; }
+}

@@ -355,6 +355,24 @@
         } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
     }
 
+    /* ---------- TECH69W-2026-10-27 : frise du parcours opératoire, « Imprimer ce parcours » (CLAUDE.md §6, piste 4) ----------
+       Le bouton reste masqué sans JavaScript. Au clic, html.imprimer-frise limite l’impression à la frise (main.css),
+       puis la classe est retirée après l’impression. */
+    var boutonsFrise = document.querySelectorAll('[data-imprimer-frise]');
+    if (boutonsFrise.length && typeof window.print === 'function') {
+        Array.prototype.forEach.call(boutonsFrise, function (bouton) {
+            var parent = bouton.closest('.frise-imprimer');
+            if (parent) { parent.hidden = false; }
+            bouton.addEventListener('click', function () {
+                document.documentElement.classList.add('imprimer-frise');
+                window.print();
+            });
+        });
+        window.addEventListener('afterprint', function () {
+            document.documentElement.classList.remove('imprimer-frise');
+        });
+    }
+
     /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
     function observeHeroCta() {
         if (!heroCta || !('IntersectionObserver' in window)) { return; }
