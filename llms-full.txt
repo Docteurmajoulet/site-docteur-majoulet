@@ -2348,7 +2348,7 @@ Les symptômes dépendent du volume et de la localisation du sang dans le vitré
 
 - **Myodésopsies massives** : apparition brutale de « pluie noire », de filaments, d’une « toile d’araignée » mobile devant l’œil.
 - **Vision voilée**, perception d’un **brouillard rougeâtre** ou noirâtre selon l’ancienneté du saignement.
-- **Baisse visuelle brutale** variable, de quelques dixièmes à la perception lumineuse seule en cas d’hémorragie massive.
+- **Baisse brutale de la vision**, d’importance variable, de quelques dixièmes à la perception lumineuse seule en cas d’hémorragie massive.
 - **Phosphènes** (éclairs lumineux), très évocateurs d’une traction vitréorétinienne associée.
 - Une **amputation périphérique du champ visuel** doit faire suspecter un décollement de rétine associé.
 
@@ -2486,9 +2486,9 @@ Chez le patient opéré de la cataracte, on distingue la luxation de l’**impla
 
 #### Quels symptômes ?
 
-Une **baisse de vision brutale ou rapidement progressive**, parfois fluctuante selon la position de la tête ; une **vision dédoublée d’un seul œil** (diplopie monoculaire) ; des éblouissements ou la perception du bord de l’implant dans le champ visuel ; parfois des corps flottants.
+Une **baisse brutale ou rapidement progressive de la vision**, parfois fluctuante selon la position de la tête ; une **vision dédoublée d’un seul œil** (diplopie monoculaire) ; des éblouissements ou la perception du bord de l’implant dans le champ visuel ; parfois des corps flottants.
 
-**Quand consulter en urgence (24-48 h) :** baisse de vision brutale, douleur oculaire, halos avec œil rouge, ou lentille visible dans la pupille. Ces signes peuvent témoigner d’une hypertonie oculaire ou d’un contact avec la cornée — créneaux dédiés au cabinet, appelez le [01 84 19 11 66](tel:+33184191166).
+**Quand consulter en urgence (24-48 h) :** baisse brutale de la vision, douleur oculaire, halos avec œil rouge, ou lentille visible dans la pupille. Ces signes peuvent témoigner d’une hypertonie oculaire ou d’un contact avec la cornée — créneaux dédiés au cabinet, appelez le [01 84 19 11 66](tel:+33184191166).
 
 #### Est-ce une urgence ?
 
@@ -2891,7 +2891,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 
 Ce qu’il faut faire tout de suite — et comment le médecin trouve la cause
 
-**Une baisse de vision brutale est une urgence : consultez le jour même.** Aux heures d’ouverture, appelez le cabinet ([01 84 19 11 66](tel:+33184191166)) ; en dehors, rendez-vous sans attendre aux urgences ophtalmologiques (Quinze-Vingts, Rothschild, Cochin — hors Île-de-France, le CHU de votre région). Perte de vision totale, brutale et indolore d’un œil : c’est peut-être une occlusion de l’artère de la rétine, **chaque heure compte** : appelez le cabinet pour un rendez-vous en urgence ou rendez-vous à la Fondation Rothschild (Paris 19e). Signes neurologiques associés (faiblesse, trouble de la parole, visage asymétrique) : appelez le 15. / La suite de cette page décrit la démarche du médecin — vous n’avez pas besoin de la lire pour agir.
+**Une baisse brutale de la vision est une urgence : consultez le jour même.** Aux heures d’ouverture, appelez le cabinet ([01 84 19 11 66](tel:+33184191166)) ; en dehors, rendez-vous sans attendre aux urgences ophtalmologiques (Quinze-Vingts, Rothschild, Cochin — hors Île-de-France, le CHU de votre région). Perte de vision totale, brutale et indolore d’un œil : c’est peut-être une occlusion de l’artère de la rétine, **chaque heure compte** : appelez le cabinet pour un rendez-vous en urgence ou rendez-vous à la Fondation Rothschild (Paris 19e). Signes neurologiques associés (faiblesse, trouble de la parole, visage asymétrique) : appelez le 15. / La suite de cette page décrit la démarche du médecin — vous n’avez pas besoin de la lire pour agir.
 
 La **baisse brutale de la vision (BAV)** est un motif fréquent de consultation urgente. Le diagnostic repose sur l’analyse précise du symptôme (unilatéral ou bilatéral, complet ou partiel, douloureux ou non, durable ou transitoire) et sur un examen ophtalmologique complet.
 
@@ -4450,7 +4450,7 @@ Déformation focale ou diffuse de la paroi postérieure du globe, détectée à 
 
 ##### [Néovaisseaux choroïdiens myopiques](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort) (mCNV)
 
-Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **5 à 11 %** des yeux atteints de myopie pathologique. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
+Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **5 à 11 %** des yeux atteints de myopie pathologique. Se manifestent par une **baisse brutale de la vision** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
 
 ##### Fovéoschisis myopique et maculopathie de traction
 
