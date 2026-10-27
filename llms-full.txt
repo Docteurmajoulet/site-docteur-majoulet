@@ -1254,7 +1254,9 @@ Information patient : [fiche de la Société Française d’Ophtalmologie sur le
 
 ##### DMLA exsudative (néovasculaire)
 
-Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 à 4 injections mensuelles selon la molécule (*loading phase*), puis adaptation du rythme selon le protocole choisi (*Treat & Extend*, *PRN*). **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Voir [DMLA](https://docteurmajoulet.com/dmla).
+La **DMLA humide** (exsudative ou néovasculaire) se traite par des injections répétées d’un médicament anti-VEGF dans l’œil, traitement de référence des **néovaisseaux choroïdiens** : ces vaisseaux anormaux, qui se développent sous la macula, fuient et peuvent saigner. Le traitement commence par 3 à 4 injections mensuelles selon la molécule (phase d’induction, *loading phase*). Le rythme est ensuite adapté à l’aspect de la rétine à l’OCT : le plus souvent selon le protocole *Treat & Extend*, où l’intervalle entre deux injections s’allonge progressivement tant que la rétine reste sèche, parfois selon un protocole *PRN*, avec une injection seulement en cas de récidive. Le traitement dure souvent plusieurs années. Au Cabinet Ophtalife de Boulogne-Billancourt, l’OCT est réalisé sur place le jour même, l’injection a lieu dans une salle dédiée aux normes ISO 7, sous anesthésie par collyre, et un collyre antiseptique est prescrit pendant 3 jours. Une déformation récente des lignes droites justifie une consultation sous 24-48 h.
+
+**Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Voir [DMLA](https://docteurmajoulet.com/dmla).
 
 ##### Œdème maculaire diabétique (OMD)
 
