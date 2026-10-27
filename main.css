@@ -8301,7 +8301,7 @@ article.pathology-content > .forme-box :is(ul, ol) {
         margin-inline: calc((100% - 812px) / 2);
     }
 }
-/* TECH69S (suite, maquette du 27/10 à valider) — tablette (48 à 60 em) : la colonne unique s'aligne sur le logo. Centrée,
+/* TECH69S (suite, maquette validée par le Dr Majoulet le 27/10) — tablette (48 à 60 em) : la colonne unique s'aligne sur le logo. Centrée,
    elle partait 28 px (768 px) à 94 px (900 px) à droite du logo, un écart trop petit pour sembler voulu ; l'accueil et
    /pathologies sont déjà alignés sur le logo à ces largeurs. Dès 60 em, la colonne redevient centrée. */
 @media (min-width: 48em) and (max-width: 59.9375em) {
