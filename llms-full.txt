@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-27
+Dernière mise à jour : 2026-10-28
 
 ## Identité et coordonnées
 
@@ -945,6 +945,42 @@ Dernière révision : 24 août 2026 · Dernière mise à jour : 27 octobre 2026.
 Consultation spécialisée rétine et cataracte au Cabinet Ophtalife, 37 rue d’Aguesseau, Boulogne-Billancourt.
 
 [Prendre rendez-vous sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+
+### Eye surgeon in west Paris, consultations in English
+
+- URL : https://docteurmajoulet.com/en
+- Description : English-speaking ophthalmic surgeon in Boulogne-Billancourt, west Paris: retina and cataract surgery, AMD injections, eye emergencies. Book on Doctolib.
+
+Dr Alexandre Majoulet · Retina and cataract surgery · Boulogne-Billancourt (92100)
+
+**Dr Alexandre Majoulet** is an ophthalmic surgeon specialising in vitreoretinal surgery. He sees patients in English and in French at the **Cabinet Ophtalife**, 37 rue d’Aguesseau, in Boulogne-Billancourt, on the western edge of Paris, and operates at the **Clinique Jouvenet** (Paris 16th). He also works at the **Quinze-Vingts National Eye Hospital** (Paris 12th), in Professor Baudouin’s department.
+
+He trained at the Paris university hospitals (residency 2017–2022), then as an assistant at the Quinze-Vingts (2022–2024). He holds the French specialist diploma in ophthalmology (2023), a university diploma in vitreoretinal surgery (Université Paris-Saclay, 2024), and is a Fellow of the European Board of Ophthalmology (FEBO, 2022). French medical registration number (RPPS): 10101500121.
+
+The rest of this website is in French. This page gives the essentials in English.
+
+#### What we treat
+
+- **Retinal detachment** and retinal tears: surgery by scleral buckling or vitrectomy ([page in French](https://docteurmajoulet.com/decollement-retine)).
+- **Macular hole** and **epiretinal membrane**: vitrectomy ([macular hole](https://docteurmajoulet.com/trou-maculaire), [epiretinal membrane](https://docteurmajoulet.com/membrane-epiretinienne)).
+- **Age-related macular degeneration** (AMD): diagnosis with OCT on site and intravitreal injections in a dedicated ISO 7 room at the practice ([AMD](https://docteurmajoulet.com/dmla), [injections](https://docteurmajoulet.com/injection-intravitreenne)).
+- **Diabetic retinopathy** and **retinal vein occlusion**.
+- **Cataract surgery** and lens implants ([page in French](https://docteurmajoulet.com/chirurgie-cataracte)).
+- **Floaters and flashes**, **glaucoma** and **dry eye**.
+
+#### Eye emergencies
+
+- **A dark curtain or shadow spreading across the vision of one eye, or a sudden loss of vision**: the eye must be examined the same day. During opening hours, call the practice on [+33 1 84 19 11 66](tel:+33184191166). Out of hours, go directly to a 24-hour eye emergency department: Quinze-Vingts (Paris 12th), Fondation Rothschild (Paris 19th) or Hôpital Cochin (Paris 14th).
+- **Suspected central retinal artery occlusion** (sudden, painless and severe loss of vision in one eye): come to the practice urgently, or go directly to the Fondation Rothschild. Call 15 (emergency medical service) only if it comes with difficulty speaking, weakness of an arm or a leg, or a drooping face.
+- **New flashes of light or new floaters**, without a curtain: an eye examination within 24–48 hours. The practice keeps urgent retinal appointments for this.
+- **Straight lines that suddenly look wavy or distorted**: an examination within 24–48 hours.
+
+#### Appointments and practical information
+
+- **Address**: Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt. Metro Boulogne–Jean Jaurès (line 10) or Marcel Sembat (line 9).
+- **Opening hours**: Monday, Wednesday and Thursday 9am–8pm; Tuesday, Friday and Saturday 9am–6pm.
+- **Surgery**: Clinique Jouvenet, 6 square Jouvenet, Paris 16th, as day surgery. The consultation before surgery and the follow-up afterwards take place at the practice.
+- **Fees**: Dr Majoulet is a “secteur 2” doctor: his fees may be above the standard French health insurance rate. They are shown on his Doctolib page.
 
 ## DMLA
 

@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-10-27
+Dernière mise à jour : 2026-10-28
 
 ## Identité et coordonnées
 
@@ -103,6 +103,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 - [Urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques): Voile noir, baisse brutale de la vision, éclairs : où aller maintenant. Le cabinet de Boulogne le jour même, sinon les urgences 24h/24 à Paris.
 - [Publications scientifiques](https://docteurmajoulet.com/publications): Publications scientifiques PubMed et presse grand public du Dr Majoulet, chirurgien ophtalmologue rétinologue (Quinze-Vingts, Cabinet Ophtalife Boulogne).
 - [Toutes les pathologies](https://docteurmajoulet.com/pathologies): Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome. Fiches détaillées. RDV.
+- [Eye surgeon in west Paris, consultations in English](https://docteurmajoulet.com/en): English-speaking ophthalmic surgeon in Boulogne-Billancourt, west Paris: retina and cataract surgery, AMD injections, eye emergencies. Book on Doctolib.
 
 ## DMLA
 

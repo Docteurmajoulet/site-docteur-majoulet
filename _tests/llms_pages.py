@@ -27,7 +27,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = 'https://docteurmajoulet.com'
 DATE_RE = re.compile(r'^Dernière mise à jour : \d{4}-\d{2}-\d{2}$', re.M)
 GROUPES = [
-    ('Cabinet, prise de rendez-vous et urgences', ['index', 'le-dr-majoulet', 'contact', 'ophtalmologue-boulogne-billancourt', 'urgences-ophtalmologiques', 'publications', 'pathologies']),
+    ('Cabinet, prise de rendez-vous et urgences', ['index', 'le-dr-majoulet', 'contact', 'ophtalmologue-boulogne-billancourt', 'urgences-ophtalmologiques', 'publications', 'pathologies', 'en']),
     ('DMLA', ['dmla', 'dmla-seche', 'injection-intravitreenne', 'grille-amsler']),
     ('Chirurgie de la rétine', ['chirurgie-retine', 'vitrectomie', 'decollement-retine', 'membrane-epiretinienne', 'trou-maculaire', 'hemorragie-intravitreenne', 'luxation-cristallin-implant']),
     ('Signes d’alerte — le jour même ou sous 24-48 h', ['dechirure-retine-corps-flottants', 'flashs-phosphenes-myodesopsies', 'decollement-posterieur-vitre', 'baisse-brutale-vision']),
