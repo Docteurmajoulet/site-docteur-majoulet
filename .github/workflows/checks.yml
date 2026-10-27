@@ -62,9 +62,10 @@ jobs:
     name: Firefox et WebKit (parcours de rendez-vous)
     runs-on: ubuntu-24.04
     needs: statique
-    # Image officielle de Playwright, à la version du projet (_tests/package.json) : Firefox, WebKit et leurs
+    # Image officielle de Playwright, à la version du projet (_tests/package.json, à changer avec elle) : Firefox, WebKit et leurs
     # bibliothèques y sont déjà installés. Le 26/10, leur installation (117 Mo par le miroir apt, ~40 Ko/s) dépassait
-    # 10 puis 20 min et le job était annulé avant le moindre test. Node 22 et OpenSSL viennent de l'image.
+    # 10 puis 20 min et le job était annulé avant le moindre test. Node 22, Python 3 (serve.py) et OpenSSL (certificat
+    # de compatibility.mjs) viennent de l'image : job de ~2 min 30, image comprise (essai du 26/10).
     # --user 1001 : Firefox refuse de tourner en root quand HOME (/github/home) appartient à l'utilisateur 1001.
     container:
       image: mcr.microsoft.com/playwright:v1.56.1-noble
@@ -75,17 +76,8 @@ jobs:
         working-directory: _tests
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      # Python sert le site avec les en-têtes de production (_tests/serve.py) ; l'image n'en a pas forcément.
       - name: Outils de l'image
-        id: outils
-        run: |
-          node --version
-          openssl version
-          if command -v python3; then echo "python=present" >> "$GITHUB_OUTPUT"; fi
-      - if: steps.outils.outputs.python != 'present'
-        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
-        with:
-          python-version: '3.12'
+        run: node --version && python3 --version && openssl version
       - run: npm ci
       - name: Parcours essentiels sous la CSP du site
         run: npm run test:compatibility
