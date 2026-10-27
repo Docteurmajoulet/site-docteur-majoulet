@@ -8384,7 +8384,8 @@ article.pathology-content > .forme-box :is(ul, ol) {
     background: var(--blanc-naturel);
 }
 .frise-etape--controle::after { background: var(--prusse); }
-.frise-etape > p { margin: 6px 0 0; }
+.frise-etape > p { margin: 6px 0 0; font-size: 1.05rem; }
+.frise-etape--gaz-fin::before { background: linear-gradient(var(--bleu-gris-light), var(--sable)); }   /* la bulle se résorbe en 2 à 5 semaines : elle s'efface avant le contrôle d'un mois */
 .frise-titre {
     margin: 0;
     font-size: 1.05rem;
@@ -8416,6 +8417,12 @@ article.pathology-content > .forme-box :is(ul, ol) {
 }
 @media (hover: hover) {
     .frise-bouton:hover { background: var(--prusse); color: var(--blanc-naturel); }
+}
+@media (forced-colors: active) {   /* contraste élevé de Windows : trait et points gardés, dans les couleurs du système */
+    .frise-etape::before, .frise-etape::after { forced-color-adjust: none; }
+    .frise-etape::before, .frise-etape--gaz::before, .frise-etape--gaz-fin::before { background: CanvasText; }
+    .frise-etape::after { border-color: CanvasText; background: Canvas; }
+    .frise-etape--controle::after { background: CanvasText; }
 }
 @media print {   /* les aplats disparaissent à l'impression (feuille générale) : trait et points en bordures */
     .frise-imprimer { display: none; }

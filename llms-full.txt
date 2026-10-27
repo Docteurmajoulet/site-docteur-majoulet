@@ -1548,47 +1548,47 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
-##### Parcours patient
+#### Parcours patient : chirurgie de la rétine
 
 1.
 
-###### Avant l’opération Consultation pré-opératoire
+##### Avant l’opération Consultation pré-opératoire
 
 Confirmation diagnostique (OCT, fond d’œil), discussion des bénéfices et des risques, signature du consentement éclairé.
 
 2.
 
-###### Bilan anesthésique
+##### Bilan anesthésique
 
 Consultation avec l’anesthésiste, bilan biologique éventuel selon les antécédents ; anticoagulants et antiagrégants gérés selon le protocole d’anesthésie — leur arrêt n’est en général pas nécessaire.
 
 3.
 
-###### Jour J Intervention
+##### Jour J Intervention
 
 En ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.
 
 4.
 
-###### Les premiers jours Suites immédiates
+##### Les premiers jours Suites immédiates
 
 Pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Collyres antibio-anti-inflammatoires pendant 1 mois.
 
 5.
 
-###### J7 Premier contrôle
+##### J7 Premier contrôle
 
 Contrôle avec OCT.
 
 6.
 
-###### 1 mois Deuxième contrôle
+##### 1 mois Deuxième contrôle
 
 Contrôle avec OCT.
 
 7.
 
-###### 3 mois Troisième contrôle
+##### 3 mois Troisième contrôle
 
 Contrôle avec OCT.
 
@@ -2301,7 +2301,7 @@ Examen et OCT. Fin des collyres.
 
 ##### 3 mois Troisième contrôle
 
-Examen et OCT. La vision continue de s’améliorer progressivement, sur 3 à 6 mois.
+Examen et OCT. La récupération visuelle est progressive, sur 3 à 6 mois.
 
 Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
@@ -3109,7 +3109,7 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 [En savoir plus](https://docteurmajoulet.com/implants-multifocaux)
 
-##### Parcours patient
+##### Parcours patient : chirurgie de la cataracte
 
 1.
 
