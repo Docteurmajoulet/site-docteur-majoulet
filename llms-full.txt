@@ -3176,7 +3176,7 @@ Offre une **indépendance large aux lunettes** à toutes les distances. En contr
 
 [Implant monofocal](https://docteurmajoulet.com/implants-monofocaux)
 
-[Vision nette à une distance choisie (souvent de loin), lunettes de près en complément. Implant intégralement remboursé.](https://docteurmajoulet.com/implants-monofocaux)
+[Vision nette à une distance choisie (souvent de loin), lunettes de près en complément. Implant sans surcoût.](https://docteurmajoulet.com/implants-monofocaux)
 
 [En savoir plus](https://docteurmajoulet.com/implants-monofocaux)
 
@@ -3359,7 +3359,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 #### Alternatives aux implants monofocaux
 
 - **[Implants toriques](https://docteurmajoulet.com/implants-toriques)** : si astigmatisme cornéen ≥ 1,0 à 1,25 D, pour corriger l’astigmatisme en même temps que la cataracte.
-- **[Implants multifocaux / EDOF](https://docteurmajoulet.com/implants-multifocaux)** : vision satisfaisante de loin et de près sans lunettes chez la majorité des patients, au prix d’halos nocturnes possibles et d’une légère baisse de contraste. Non remboursés, reste à charge.
+- **[Implants multifocaux / EDOF](https://docteurmajoulet.com/implants-multifocaux)** : vision satisfaisante de loin et de près sans lunettes chez la majorité des patients, au prix d’halos nocturnes possibles et d’une légère baisse de contraste. Un surcoût non pris en charge par l’Assurance Maladie peut s’ajouter.
 - **Monovision avec implants monofocaux** : un œil visé en emmétropie (loin net), l’autre légèrement myope (-1,25 à -1,75 D) pour la vision intermédiaire à près. Recommandé après simulation avec lentilles de contact pendant quelques jours afin de vérifier la tolérance (stéréoscopie, conduite nocturne).
 
 #### Sources et références
@@ -3458,7 +3458,7 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 - **Incisions cornéennes relaxantes (LRI)** réalisées en même temps que la phacoémulsification : utiles pour les astigmatismes modérés (0,75 à 1,5 D). Moins prédictibles que l’implant torique au-delà.
 - **Retouche laser cornéenne** (LASIK, PKR) après implantation monofocale standard : possible, mais ajoute un acte.
-- **Implants monofocaux standards + lunettes** : option remboursée intégralement, parfaitement acceptable si le patient ne souhaite pas de surcoût.
+- **Implants monofocaux standards + lunettes** : option sans surcoût pour l’implant, parfaitement acceptable.
 - **Implants toriques multifocaux / EDOF** : pour les astigmates souhaitant une indépendance à toutes les distances — voir [implants multifocaux](https://docteurmajoulet.com/implants-multifocaux).
 
 #### Sources et références
@@ -4545,7 +4545,7 @@ Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovasculari
 
 #### Qu’est-ce que la myopie forte ?
 
-La myopie est dite **forte** lorsque la **longueur axiale** de l’œil atteint **26 mm**, ou que l’équivalent sphérique est inférieur à **−6 dioptries**. On parle de **myopie pathologique** quand des lésions apparaissent au fond d’œil. L’allongement du globe étire mécaniquement la choroïde et la rétine, provoque un **staphylome postérieur** (déformation en cuvette du pôle postérieur), et fragilise la **membrane de Bruch**, fine couche qui sépare normalement la choroïde de l’épithélium pigmentaire. Des **ruptures linéaires** (« *lacquer cracks* ») apparaissent, par où des vaisseaux choroïdiens anormaux peuvent proliférer sous la rétine. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) pour l’ensemble des complications rétiniennes associées.
+La myopie est dite **forte** lorsqu’elle atteint **au moins 6 dioptries**, ou que la **longueur axiale** de l’œil atteint **26 mm**. On parle de **myopie pathologique** quand des lésions apparaissent au fond d’œil. L’allongement du globe étire mécaniquement la choroïde et la rétine, provoque un **staphylome postérieur** (déformation en cuvette du pôle postérieur), et fragilise la **membrane de Bruch**, fine couche qui sépare normalement la choroïde de l’épithélium pigmentaire. Des **ruptures linéaires** (« *lacquer cracks* ») apparaissent, par où des vaisseaux choroïdiens anormaux peuvent proliférer sous la rétine. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) pour l’ensemble des complications rétiniennes associées.
 
 **Néovaisseau du myope fort.** L’allongement du globe étire la choroïde et la rétine et fragilise la membrane de Bruch ; par ses ruptures, un vaisseau choroïdien anormal prolifère sous la rétine.
 
@@ -5399,7 +5399,7 @@ Comprendre, corriger, freiner — de l’enfant à l’adulte
 La **myopie** est l’amétropie la plus fréquente dans les pays développés. Elle est liée à un **allongement de l’œil** ou, plus rarement, à un excès de puissance optique du cristallin ou de la cornée. Elle rend la vision floue de loin mais conserve souvent une bonne vision de près. Sa prévalence explose chez les enfants et adolescents dans le monde entier. Selon une méta-analyse de 2016, reprise par l’OMS, environ **la moitié de la population mondiale pourrait être myope en 2050**.
 
 - **30-40 %** — Prévalence myopie en France (adulte)
-- **2 h / jour** — Temps dehors conseillé pour retarder l’apparition de la myopie
+- **1 à 2 h / jour** — Temps dehors conseillé pour retarder l’apparition de la myopie
 - **50-60 %** — Réduction de progression avec verres à microlentilles
 
 #### Mécanisme
@@ -5586,7 +5586,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 
 Recommandations ANAES (2002) et AFSOP (2021), de la naissance à 6 ans
 
-Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il repose sur les recommandations de l’**ANAES**, aujourd’hui HAS (2002 : bilan visuel à la naissance, entre 9 et 15 mois et entre 2 ans et demi et 4 ans), actualisées en 2021 par l’Association francophone de strabologie et d’ophtalmologie pédiatrique (**AFSOP**), et sur les examens de santé obligatoires de l’enfant, notés dans le carnet de santé.
+Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il repose sur les recommandations de 2002 de l’**ANAES**, devenue la HAS (bilan visuel à la naissance, entre 9 et 15 mois et entre 2 ans et demi et 4 ans), actualisées en 2021 par l’Association francophone de strabologie et d’ophtalmologie pédiatrique (**AFSOP**), et sur les examens de santé obligatoires de l’enfant, notés dans le carnet de santé.
 
 - **9-15 mois** — Premier bilan visuel recommandé (ANAES)
 - **2-3 %** — Prévalence de l’amblyopie (Europe)
