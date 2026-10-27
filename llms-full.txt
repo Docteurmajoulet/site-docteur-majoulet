@@ -200,7 +200,7 @@ Prise en charge Sécurité sociale + mutuelle
 
 Chirurgien ophtalmologue · Spécialiste de la rétine & du segment antérieur
 
-Je consulte au **Cabinet Ophtalife à Boulogne-Billancourt** et réalise mes interventions libérales à la **Clinique Jouvenet, Paris 16e**. J’exerce également comme Praticien Contractuel au **CHNO des Quinze-Vingts**. [Retrouver les lieux de soins et les modalités de rendez-vous](https://docteurmajoulet.com/contact#lieux-de-soins).
+Le **Dr Alexandre Majoulet** est chirurgien ophtalmologue, spécialisé en **chirurgie vitréo-rétinienne** (RPPS 10101500121). Il consulte au **Cabinet Ophtalife**, 37 rue d’Aguesseau à Boulogne-Billancourt, qu’il a cofondé, et réalise ses interventions libérales à la **Clinique Jouvenet** (Paris 16e). Il exerce également comme praticien contractuel au **CHNO des Quinze-Vingts** (Paris 12e), dans le service du Pr Baudouin. Ancien interne (2017–2022) puis assistant (2022–2024) des Hôpitaux de Paris, il est titulaire du DES d’ophtalmologie (2023) et du DIU de chirurgie vitréo-rétinienne (Université Paris-Saclay, 2024), et Fellow of the European Board of Ophthalmology (FEBO) depuis 2022. Il est auteur ou co-auteur de six articles indexés dans PubMed. [Retrouver les lieux de soins et les modalités de rendez-vous](https://docteurmajoulet.com/contact#lieux-de-soins).
 
 #### Cabinet Ophtalife — Boulogne-Billancourt
 
@@ -282,7 +282,7 @@ Le Dr Majoulet intervient ponctuellement dans les médias grand public pour des 
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), cofondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
 
-Dernière mise à jour : 25 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière mise à jour : 27 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Contact et rendez-vous
 
@@ -420,6 +420,10 @@ Le Dr Majoulet exerce en **secteur 2 conventionné** (honoraires libres).
 - Apporter les **examens ophtalmologiques antérieurs** (OCT, champ visuel, photographies du fond d’œil) si vous en avez.
 - Pour une **première consultation rétine** ou un fond d’œil détaillé, prévoir une **dilatation pupillaire** : la vision de près reste floue 3 à 4 heures, la conduite est déconseillée à la sortie. Prévoyez un accompagnant ou un transport adapté.
 
+#### Où consulter et se faire opérer de la rétine près de Boulogne-Billancourt ?
+
+À Boulogne-Billancourt, le **Dr Alexandre Majoulet**, chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, reçoit au **Cabinet Ophtalife**, 37 rue d’Aguesseau (métro Boulogne-Jean Jaurès, ligne 10, ou Marcel Sembat, ligne 9). On y consulte notamment pour un décollement de rétine, un trou maculaire, une membrane épirétinienne, une DMLA ou une rétinopathie diabétique. L’OCT est réalisé sur place, et les injections intravitréennes dans une salle dédiée aux normes ISO 7. En libéral, les opérations de la rétine et de la cataracte ont lieu à la **Clinique Jouvenet**, 6 square Jouvenet (Paris 16e) ; la consultation avant l’opération et le suivi après se font au cabinet. Rendez-vous sur Doctolib ou au [01 84 19 11 66](tel:+33184191166) ; le Dr Majoulet exerce en secteur 2 conventionné.
+
 #### Spécialités proposées au cabinet
 
 ##### Suivi ophtalmologique général
@@ -480,7 +484,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
-Dernière mise à jour : 25 octobre 2026.
+Dernière mise à jour : 27 octobre 2026.
 
 ### Urgences ophtalmologiques
 
@@ -736,7 +740,7 @@ Identifiants externes : [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Majoulet+
 ### Toutes les pathologies
 
 - URL : https://docteurmajoulet.com/pathologies
-- Description : Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome, cornée. Fiches détaillées. RDV.
+- Description : Pathologies prises en charge par le Dr Majoulet, rétinologue à Boulogne : rétine médicale et chirurgicale, cataracte, glaucome. Fiches détaillées. RDV.
 - Relu le : 2026-08-24
 
 Retrouvez votre pathologie, ou commencez par vos symptômes.
@@ -1254,7 +1258,9 @@ Information patient : [fiche de la Société Française d’Ophtalmologie sur le
 
 ##### DMLA exsudative (néovasculaire)
 
-Traitement de référence des **néovaisseaux choroïdiens**. Initiation par 3 à 4 injections mensuelles selon la molécule (*loading phase*), puis adaptation du rythme selon le protocole choisi (*Treat & Extend*, *PRN*). **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Voir [DMLA](https://docteurmajoulet.com/dmla).
+La **DMLA humide** (exsudative ou néovasculaire) se traite par des injections répétées d’un médicament anti-VEGF dans l’œil, traitement de référence des **néovaisseaux choroïdiens** : ces vaisseaux anormaux, qui se développent sous la macula, fuient et peuvent saigner. Le traitement commence par 3 à 4 injections mensuelles selon la molécule (phase d’induction, *loading phase*). Le rythme est ensuite adapté à l’aspect de la rétine à l’OCT : le plus souvent selon le protocole *Treat & Extend*, où l’intervalle entre deux injections s’allonge progressivement tant que la rétine reste sèche, parfois selon un protocole *PRN*, avec une injection seulement en cas de récidive. Le traitement dure souvent plusieurs années. Au Cabinet Ophtalife de Boulogne-Billancourt, l’OCT est réalisé sur place le jour même, l’injection a lieu dans une salle dédiée aux normes ISO 7, sous anesthésie par collyre, et un collyre antiseptique est prescrit pendant 3 jours. Une déformation récente des lignes droites justifie une consultation sous 24-48 h.
+
+**Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Voir [DMLA](https://docteurmajoulet.com/dmla).
 
 ##### Œdème maculaire diabétique (OMD)
 
@@ -1843,7 +1849,7 @@ Hors horaires — urgences hospitalières 24h/24
 - **Hôpital Fondation Rothschild** [01 48 03 68 84](tel:+33148036884) 29 rue Manin, Paris 19e (27 rue Manin la nuit et le week-end)
 - **Hôpital Cochin — OphtalmoPôle** [01 58 41 23 00](tel:+33158412300) 27 rue du Faubourg-Saint-Jacques, Paris 14e (entrée 8 rue Méchain)
 
-Le **décollement de rétine** est le décollement de la rétine neurosensorielle de la couche qui la nourrit (épithélium pigmentaire). Il constitue une **urgence chirurgicale** : sans traitement rapide, il conduit à une perte visuelle définitive de l’œil atteint.
+Le **décollement de rétine** est la séparation de la rétine, la fine membrane sensible à la lumière qui tapisse le fond de l’œil, de la couche qui la nourrit (l’épithélium pigmentaire). Le plus souvent, il part d’une déchirure de la rétine, par laquelle le vitré liquéfié, le gel qui remplit l’œil, s’infiltre sous la rétine. C’est une **urgence chirurgicale** : sans traitement rapide, il conduit à une perte définitive de la vision de l’œil atteint.
 
 - **1/10 000** — Incidence annuelle, un peu plus élevée en Europe
 - **Le jour même** — Examen si voile noir ou baisse brutale de la vision
@@ -1896,7 +1902,7 @@ Le diagnostic est clinique, posé à l’**examen du fond d’œil après dilata
 
 #### Traitement chirurgical
 
-La chirurgie est indiquée en quasi-totalité des décollements rhegmatogènes. Deux techniques peuvent être utilisées, seules ou combinées :
+Le décollement de rétine par déchirure (rhegmatogène), le plus fréquent, est opéré dans la quasi-totalité des cas, dans les jours qui suivent le diagnostic. L’opération a pour but de recoller la rétine et de refermer la déchirure. Deux techniques peuvent être utilisées, seules ou combinées : la **vitrectomie**, qui retire le vitré par trois micro-incisions, traite la déchirure, puis laisse dans l’œil du gaz ou de l’huile de silicone qui maintient la rétine en place ; et l’**indentation sclérale**, qui place un matériau de silicone contre la paroi de l’œil pour refermer la déchirure. Le choix dépend notamment de l’âge, de la présence du cristallin naturel et de la déchirure elle-même.
 
 ##### 1. Vitrectomie postérieure mini-invasive
 
