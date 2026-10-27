@@ -248,7 +248,7 @@ Décollement de rétine (vitrectomie, cryo-indentation), trou maculaire, membran
 
 ##### Rétine médicale
 
-DMLA (néovasculaire et atrophique), rétinopathie diabétique, occlusions veineuses, œdème maculaire, choriorétinopathie séreuse centrale. Injections intravitréennes (anti-VEGF, corticoïdes) et photocoagulation laser.
+DMLA (néovasculaire et atrophique), rétinopathie diabétique, occlusions veineuses, œdème maculaire, [choriorétinopathie séreuse centrale](https://docteurmajoulet.com/chorioretinopathie-sereuse-centrale). Injections intravitréennes (anti-VEGF, corticoïdes) et photocoagulation laser.
 
 ##### Chirurgie de la cataracte
 
@@ -346,7 +346,7 @@ Lundi, mercredi, jeudi : 9 h – 20 h / Mardi, vendredi, samedi : 9 h – 18 h /
 
 #### Urgence ophtalmologique ?
 
-**Signes nécessitant une consultation en urgence :** baisse brutale de la vision, voile noir, éclairs lumineux associés à de nombreux corps flottants, douleur oculaire intense, œil rouge avec vision trouble, traumatisme oculaire.
+**Signes nécessitant une consultation en urgence :** [baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision), voile noir, éclairs lumineux associés à de nombreux corps flottants, douleur oculaire intense, œil rouge avec vision trouble, traumatisme oculaire.
 
 **Voir notre [page dédiée aux urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques)** pour savoir quoi faire.
 
@@ -444,7 +444,7 @@ Prise en charge de la [sécheresse oculaire](https://docteurmajoulet.com/sechere
 
 #### Urgence ophtalmologique
 
-**Signes nécessitant une consultation rapide :** baisse brutale de la vision, voile noir ou rideau dans le champ visuel, éclairs lumineux associés à de nombreux corps flottants, douleur oculaire intense, œil rouge avec vision trouble, traumatisme oculaire.
+**Signes nécessitant une consultation rapide :** [baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision), voile noir ou rideau dans le champ visuel, éclairs lumineux associés à de nombreux corps flottants, douleur oculaire intense, œil rouge avec vision trouble, traumatisme oculaire.
 
 Pour orienter votre démarche, consultez la **[page dédiée aux urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques)**.
 
@@ -1270,7 +1270,7 @@ Anti-VEGF en protocole *PRN* (1 à 3 injections dans la majorité des cas). Un t
 
 ##### Autres indications
 
-- Néovaisseaux post-uvéitiques, choriorétinopathie séreuse centrale chronique avec composante néovasculaire.
+- Néovaisseaux post-uvéitiques, [choriorétinopathie séreuse centrale](https://docteurmajoulet.com/chorioretinopathie-sereuse-centrale) chronique avec composante néovasculaire.
 - Rétinopathie prématurité (traitement néonatal spécialisé).
 - [Œdème maculaire post-chirurgical (Irvine-Gass)](https://docteurmajoulet.com/oedeme-maculaire-cystoide), post-uvéitique.
 - Certaines hémorragies sous-rétiniennes (en association avec gaz et/ou anti-VEGF).
@@ -1875,7 +1875,7 @@ Il est causé par la **traction de membranes fibrovasculaires** sur la rétine. 
 
 ##### Décollement exsudatif
 
-Dû à une accumulation de liquide sous la rétine sans déchirure. Il peut compliquer une tumeur choroïdienne, une inflammation (uvéite) ou certaines formes de choriorétinopathie séreuse centrale. La prise en charge est d’abord médicale (traitement de la cause sous-jacente).
+Dû à une accumulation de liquide sous la rétine sans déchirure. Il peut compliquer une tumeur choroïdienne, une inflammation (uvéite) ou certaines formes de [choriorétinopathie séreuse centrale](https://docteurmajoulet.com/chorioretinopathie-sereuse-centrale). La prise en charge est d’abord médicale (traitement de la cause sous-jacente).
 
 #### Facteurs de risque
 
@@ -3401,7 +3401,7 @@ Les **implants toriques** sont des lentilles intraoculaires pliables conçues po
 L’implant torique s’adresse aux patients présentant :
 
 - Un **astigmatisme cornéen régulier** ≥ 1,0 à 1,25 D mesuré en biométrie + topographie cornéenne. En deçà, les incisions arciformes (LRI) ou l’implant monofocal simple restent préférables.
-- Une **cornée saine et stable** (pas de kératocône évolutif, pas d’ectasie post-LASIK évolutive, pas de sécheresse oculaire sévère altérant la qualité de la kératométrie).
+- Une **cornée saine et stable** (pas de kératocône évolutif, pas d’ectasie post-LASIK évolutive, pas de [sécheresse oculaire](https://docteurmajoulet.com/secheresse-oculaire) sévère altérant la qualité de la kératométrie).
 - Une **motivation à réduire la dépendance aux lunettes** pour la vision de loin.
 - Une **attente réaliste** : l’implant torique corrige l’astigmatisme, il ne corrige pas la presbytie (sauf version torique multifocale / EDOF).
 
@@ -3563,7 +3563,7 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 #### Complications et gestion de l’insatisfaction
 
 - Complications chirurgicales : identiques à la cataracte standard (endophtalmie de l’ordre de 2 à 3 cas pour 10 000 opérations, œdème maculaire < 2 %, opacification capsulaire traitée par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag)).
-- **Dysphotopsies persistantes** au-delà de 6-12 mois : identifier une cause traitable (opacification capsulaire, décentrement, sécheresse oculaire, erreur réfractive résiduelle).
+- **Dysphotopsies persistantes** au-delà de 6-12 mois : identifier une cause traitable (opacification capsulaire, décentrement, [sécheresse oculaire](https://docteurmajoulet.com/secheresse-oculaire), erreur réfractive résiduelle).
 - **Erreur réfractive résiduelle** : majore fortement les halos. Correction par retouche laser cornéenne (LASIK, PKR) si > 0,50 D.
 - **Explant-échange** pour un implant monofocal en cas d’intolérance définitive : il reste rare, la plupart des gênes ayant une cause traitable (correction optique d’appoint, laser de la capsule, traitement de la sécheresse).
 - La meilleure prévention reste la sélection préopératoire.
@@ -4676,7 +4676,7 @@ La **rétinite pigmentaire (RP)** est la plus fréquente des **dystrophies réti
 - **Rétrécissement concentrique** du champ visuel (vision « en tunnel »), d’aggravation progressive.
 - **Photophobie**, éblouissement.
 - **Difficulté d’adaptation** aux variations de luminosité.
-- **Baisse d’acuité centrale** : tardive en général, liée à l’atteinte des cônes ou à un œdème maculaire cystoïde associé.
+- **Baisse d’acuité centrale** : tardive en général, liée à l’atteinte des cônes ou à un [œdème maculaire cystoïde](https://docteurmajoulet.com/oedeme-maculaire-cystoide) associé.
 
 **Vision en tunnel.** Le champ visuel se rétrécit de façon concentrique, avec une aggravation progressive.
 
@@ -5532,7 +5532,7 @@ Le diagnostic repose sur la **réfraction** au cabinet, idéalement **sous cyclo
 
 ##### Lunettes à verres convexes
 
-Solution de première intention à tout âge. Chez l’enfant, correction totale de l’hypermétropie (sous cycloplégie) pour traiter strabisme et amblyopie. Chez l’adulte, correction adaptée au ressenti.
+Solution de première intention à tout âge. Chez l’enfant, correction totale de l’hypermétropie (sous cycloplégie) pour traiter strabisme et [amblyopie](https://docteurmajoulet.com/amblyopie). Chez l’adulte, correction adaptée au ressenti.
 
 ##### Lentilles de contact
 
