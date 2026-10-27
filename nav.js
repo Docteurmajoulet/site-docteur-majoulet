@@ -355,61 +355,6 @@
         } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
     }
 
-    /* ---------- TECH69T-2026-10-26 : carrousels de schémas (validés le 26/10) ----------
-       La piste défile nativement (glisser, molette, clavier) avec arrêt sur chaque image. Ici : barre de progression
-       (un trait par image, les traits vus en bleu prusse), boutons précédent/suivant (désactivés aux extrémités) et
-       compteur « 2 / 8 » annoncé poliment, flèches, Début et Fin sur la piste. Défilement doux sauf si l’utilisateur
-       réduit les animations. */
-    var carrouselsCalme = window.matchMedia('(prefers-reduced-motion: reduce)');
-    document.querySelectorAll('.carrousel').forEach(function (car) {
-        var piste = car.querySelector('.carrousel-piste');
-        var nav = car.querySelector('.carrousel-nav');
-        var diapos = piste ? piste.querySelectorAll('.carrousel-diapo') : [];
-        if (!piste || !nav || diapos.length < 2) { return; }
-        var prec = nav.querySelector('.carrousel-prec');
-        var suiv = nav.querySelector('.carrousel-suiv');
-        var compteur = nav.querySelector('.carrousel-compteur');
-        var barres = car.querySelector('.carrousel-barres');
-        var traits = [];
-        if (barres) {
-            for (var k = 0; k < diapos.length; k++) { traits.push(barres.appendChild(document.createElement('span'))); }
-            barres.hidden = false;
-        }
-        var courant = -1;
-        var attente = false;
-        function pas() { return diapos[1].offsetLeft - diapos[0].offsetLeft; }
-        function maj() {
-            var i = Math.round(piste.scrollLeft / pas());
-            if (piste.scrollLeft + piste.clientWidth >= piste.scrollWidth - 2) { i = diapos.length - 1; }
-            i = Math.max(0, Math.min(diapos.length - 1, i));
-            if (i === courant) { return; }
-            courant = i;
-            compteur.textContent = (i + 1) + '\u00a0/\u00a0' + diapos.length;
-            prec.disabled = i === 0;
-            suiv.disabled = i === diapos.length - 1;
-            traits.forEach(function (t, n) { t.classList.toggle('est-vue', n <= i); });
-        }
-        function aller(sens) {
-            var cible = Math.max(0, Math.min(diapos.length - 1, courant + sens));
-            piste.scrollTo({ left: cible * pas(), behavior: carrouselsCalme.matches ? 'auto' : 'smooth' });
-        }
-        prec.addEventListener('click', function () { aller(-1); });
-        suiv.addEventListener('click', function () { aller(1); });
-        // Clavier sur la piste : l’arrêt net sur chaque image annulait les petits pas des flèches du navigateur.
-        piste.addEventListener('keydown', function (e) {
-            var sens = { ArrowRight: 1, ArrowLeft: -1, Home: -diapos.length, End: diapos.length }[e.key];
-            if (!sens) { return; }
-            e.preventDefault();
-            aller(sens);
-        });
-        piste.addEventListener('scroll', function () {
-            if (!attente) { attente = true; window.requestAnimationFrame(function () { attente = false; maj(); }); }
-        }, { passive: true });
-        window.addEventListener('resize', function () { courant = -1; maj(); });
-        nav.hidden = false;
-        maj();
-    });
-
     /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
     function observeHeroCta() {
         if (!heroCta || !('IntersectionObserver' in window)) { return; }
