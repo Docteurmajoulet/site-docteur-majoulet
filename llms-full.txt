@@ -5205,7 +5205,7 @@ En cas de signes évocateurs d’une maladie générale (bouche sèche, douleurs
 
 #### Les traitements, par paliers
 
-La stratégie suit les recommandations TFOS DEWS II : on commence par les mesures de base, on ajoute un palier lorsque le précédent ne suffit pas, et le traitement est **adapté au mécanisme dominant** (évaporation ou déficit de production).
+La stratégie s’appuie sur le consensus TFOS DEWS III (2025) : les mesures de base valent pour tous, puis les traitements sont **choisis selon les mécanismes en cause** chez chacun (film lacrymal, paupières, surface de l’œil), souvent associés. Le tableau les range par paliers : on ajoute un palier lorsque le précédent ne suffit pas.
 
 | Palier | Ce que c’est | Prise en charge |
 |---|---|---|
@@ -5288,8 +5288,8 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 #### Sources et références
 
 - Wolffsohn JS, Benítez-Del-Castillo JM, Loya-Garcia D, et al. *TFOS DEWS III: Diagnostic Methodology.* Am J Ophthalmol. 2025;279:387-450 — [doi:10.1016/j.ajo.2025.05.033](https://doi.org/10.1016/j.ajo.2025.05.033)
+- Jones L, Craig JP, Markoulli M, et al. *TFOS DEWS III: Management and Therapy.* Am J Ophthalmol. 2025;279:289-386 — [doi:10.1016/j.ajo.2025.05.039](https://doi.org/10.1016/j.ajo.2025.05.039)
 - Craig JP, Nichols KK, Akpek EK, et al. *TFOS DEWS II Definition and Classification Report.* Ocul Surf. 2017;15(3):276-283 — [doi:10.1016/j.jtos.2017.05.008](https://doi.org/10.1016/j.jtos.2017.05.008)
-- Jones L, Downie LE, Korb D, et al. *TFOS DEWS II Management and Therapy Report.* Ocul Surf. 2017;15(3):575-628 — [doi:10.1016/j.jtos.2017.05.006](https://doi.org/10.1016/j.jtos.2017.05.006)
 - Société Française d’Ophtalmologie. *Surface oculaire.* Rapport annuel de la SFO, 2015 (dir. P.-J. Pisella, C. Baudouin, T. Hoang-Xuan).
 
 ## Vue et corrections optiques
