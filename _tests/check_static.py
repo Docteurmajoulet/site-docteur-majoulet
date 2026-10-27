@@ -351,6 +351,10 @@ def check(root):
             if not re.search(r'\bde la vision\b', suite, re.I):
                 ctx = body[max(0, m.start() - 30):m.end() + 40]
                 E(f'{name} : « baisse brutale » sans « … de la vision » dans la phrase → …{ctx}…')
+        # TECH69V-2026-10-27 : les tournures inversées échappaient à la garde ci-dessus (« baisse visuelle brutale »,
+        # « baisse de vision brutale », « baisse visuelle centrale brutale » : 4 fiches le 27/10). Formulation imposée.
+        for m in re.finditer(r'\bbaisses? (?:de (?:la )?vision|visuelles?)(?: centrales?)? brutales?\b', body, re.I):
+            E(f'{name} : « {m.group(0)} » → « baisse brutale de la vision » (formulation imposée, TECH69V)')
         if re.search(r'\bOPTAM\b', body): E(f'{name} : mention de l’OPTAM (interdite sur le site)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
