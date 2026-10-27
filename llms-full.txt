@@ -1174,6 +1174,10 @@ Dans les formes évoluées touchant le centre de la macula, la **rééducation b
 
 #### Questions fréquentes
 
+##### Existe-t-il un traitement de la DMLA sèche ?
+
+Il n’existe pas encore de médicament autorisé en France pour la **DMLA sèche**, ou atrophique. Deux médicaments injectés dans l’œil ont été approuvés aux États-Unis pour l’atrophie géographique : ils ralentissent la progression des lésions sans restaurer la vision perdue, et l’agence européenne du médicament (EMA) n’a pas délivré d’autorisation en Europe. Des essais cliniques sont en cours, y compris en France. La prise en charge repose aujourd’hui sur la surveillance et la prévention : compléments AREDS2 dans les formes intermédiaires, sur prescription ; arrêt du tabac et alimentation riche en légumes verts et en poissons gras ; **OCT maculaire tous les 6 mois** au cabinet ; **grille d’Amsler une fois par jour**, chaque œil séparément. Une déformation nouvelle des lignes droites peut signaler le passage à une forme humide, qui se traite par injections : elle justifie une consultation sous 24-48 h.
+
 ##### La DMLA sèche devient-elle toujours humide ?
 
 Non. La majorité des DMLA sèches restent atrophiques. La conversion néovasculaire est cependant possible à tout moment, d’où l’autosurveillance quotidienne par la grille d’Amsler et la surveillance OCT semestrielle : traitée tôt, la forme humide se contrôle d’autant mieux.
@@ -1194,7 +1198,7 @@ Au cabinet : **OCT maculaire tous les 6 mois**, rythme adapté au stade. Chez vo
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de la Fédération France Macula sur la DMLA atrophique (2025)](https://doi.org/10.1016/j.jfo.2025.104473). / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de la Fédération France Macula sur la DMLA atrophique (2025)](https://doi.org/10.1016/j.jfo.2025.104473). / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
