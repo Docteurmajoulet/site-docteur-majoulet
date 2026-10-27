@@ -3043,7 +3043,7 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 ##### Pratique de la chirurgie cataracte
 
-La phacoémulsification est une chirurgie extrêmement codifiée (HAS 2010, recommandations SFO). Le Dr Majoulet la pratique en technique standard, en salle ambulatoire équipée. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications graves sont rares.
+La phacoémulsification est une chirurgie très encadrée (HAS, 2010 ; recommandations SFO). Le Dr Majoulet la pratique en technique standard, en salle ambulatoire équipée. Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande majorité des cas ; une autre maladie de l’œil (DMLA, glaucome, diabète) peut limiter le résultat. Les complications graves sont rares.
 
 La discussion sur le choix de l’implant intègre systématiquement les compromis visuels potentiels (halos, éblouissement nocturne avec les multifocaux, besoin résiduel de lunettes avec les monofocaux) pour un consentement vraiment éclairé.
 
@@ -3071,7 +3071,7 @@ Oui, la cataracte peut être opérée chez les patients glaucomateux, porteurs d
 
 ##### Quelle est la durée de vie de l’implant ?
 
-L’implant est prévu pour toute la vie. Il ne s’use pas, ne se colore pas, ne nécessite aucune maintenance. Dans ~15 à 30 % des cas survient une cataracte secondaire (opacification capsulaire), traitée simplement au laser YAG en consultation.
+L’implant est prévu pour toute la vie et ne demande aucun entretien. Il peut rarement s’opacifier, surtout certains implants hydrophiles après une injection de gaz dans l’œil (vitrectomie, greffe de cornée) ; il est alors changé. Avec les implants actuels, une cataracte secondaire apparaît chez environ 1 opéré sur 10 à 1 sur 5 dans les 5 ans ; elle se traite par un laser fait en consultation.
 
 ##### Auteur et révision médicale
 
@@ -3278,7 +3278,7 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Implants intraoculaires standards · Chirurgie de la cataracte
 
-Les **implants intraoculaires monofocaux** sont les lentilles artificielles placées dans l’œil lors de la [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte), en remplacement du cristallin opacifié. Ils corrigent la vision nette à **une seule distance** — le plus souvent de loin — et constituent la **référence chirurgicale** depuis plus de trente ans. Ils sont intégralement pris en charge par l’Assurance Maladie (LPPR) et offrent, lorsque la biométrie est précise, une acuité visuelle non corrigée de loin ≥ 6/10 chez plus de 90 % des patients opérés d’une cataracte non compliquée.
+Les **implants intraoculaires monofocaux** sont les lentilles artificielles placées dans l’œil lors de la [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte), en remplacement du cristallin opacifié. Ils corrigent la vision nette à **une seule distance** — le plus souvent de loin — et constituent la **référence chirurgicale** depuis plus de trente ans. Ils sont intégralement pris en charge par l’Assurance Maladie (LPPR) et permettent, quand le reste de l’œil est sain, de retrouver le plus souvent une bonne vision de loin : dans le registre britannique, 8 yeux sur 10 voient au moins 5/10 sans lunettes, et 95 % avec lunettes.
 
 #### L’essentiel en 30 secondes
 
@@ -3308,13 +3308,13 @@ La puissance de l’implant est calculée par **biométrie optique sans contact*
 - La **courbure cornéenne** (kératométrie) sur plusieurs axes.
 - La **profondeur de chambre antérieure** et l’épaisseur cristallinienne.
 
-Les formules de calcul utilisées au cabinet sont les formules de **dernière génération** : Barrett Universal II, Kane, Hill-RBF (intelligence artificielle), Emmetropia Verifying Optical (EVO). Ces formules permettent d’obtenir la **réfraction cible à ±0,50 dioptrie chez plus de 80 % des yeux** et à ±1,0 D chez plus de 95 %, selon les séries internationales publiées (Melles et al., *Ophthalmology* 2018 ; Kane & Chang, *Ophthalmology* 2021).
+Les formules de calcul utilisées au cabinet sont les formules de **dernière génération** : Barrett Universal II, Kane, Hill-RBF (intelligence artificielle), Emmetropia Verifying Optical (EVO). Ces formules font partie des plus précises selon les séries internationales publiées (Melles et al., *Ophthalmology* 2018 ; Kane & Chang, *Ophthalmology* 2021).
 
 S’ajoutent au bilan : une **OCT maculaire** systématique pour dépister une pathologie rétinienne associée (DMLA, membrane épimaculaire, œdème diabétique), une kératométrie topographique en cas d’astigmatisme, et un examen du segment antérieur à la lampe à fente.
 
 #### Principe et matériau de l’implant
 
-L’implant monofocal moderne est une lentille **souple et pliable**, injectée par une micro-incision de 2,2 à 2,8 mm. Les matériaux actuels sont en **acrylique hydrophobe** (meilleure tolérance à long terme, incidence d’opacification capsulaire postérieure la plus faible) ou en acrylique hydrophile. Les optiques sont **asphériques** pour compenser l’aberration sphérique positive de la cornée, et munies d’un **filtre UV**, parfois d’un filtre à la lumière bleue.
+L’implant monofocal moderne est une lentille **souple et pliable**, injectée par une micro-incision de 2,2 à 2,8 mm. Les matériaux actuels sont en **acrylique hydrophobe** (bonne tolérance à long terme ; moins de cataracte secondaire dans les registres) ou en acrylique hydrophile. Les optiques sont **asphériques** pour compenser l’aberration sphérique positive de la cornée, et munies d’un **filtre UV**, parfois d’un filtre à la lumière bleue.
 
 L’implant comporte une **optique centrale** (6,0 mm de diamètre habituellement) et des **haptiques** qui assurent sa stabilité dans le sac capsulaire. Sa puissance, exprimée en dioptries (typiquement entre +5 et +30 D), est choisie individuellement pour atteindre la réfraction cible convenue avec le patient.
 
@@ -3341,19 +3341,19 @@ L’intervention est indolore. Le deuxième œil est opéré habituellement 1 à
 
 #### Résultats attendus
 
-- Acuité visuelle non corrigée de loin ≥ 6/10 chez plus de 90 % des yeux opérés d’une cataracte non compliquée (données SFO, registres internationaux).
-- Réfraction cible atteinte à ±0,50 D chez > 80 % des yeux avec les formules Barrett / Kane / Hill-RBF.
+- Acuité de loin d’au moins 5/10 sans lunettes chez 8 yeux sur 10, et avec lunettes chez 95 % des yeux sans autre maladie (registre britannique, 180 114 yeux).
+- Réfraction visée atteinte à 0,50 dioptrie près chez environ 3 yeux sur 4, et à 1 dioptrie près chez 9 sur 10 (registre européen, 282 811 opérations) ; les formules Barrett et Kane font partie des plus précises.
 - Récupération complète du contraste et des couleurs, sans halos ni dysphotopsies significatives.
 - Lunettes de lecture (+2,00 à +3,00 D) nécessaires pour le travail de près à partir de 35 cm.
 
 #### Complications possibles
 
-La chirurgie de la cataracte par phacoémulsification avec implantation est l’une des interventions les plus sûres au monde. Les complications restent **rares** :
+La chirurgie de la cataracte est une intervention courante et très encadrée ; les complications graves sont **rares** :
 
 - **Opacification capsulaire postérieure** (« cataracte secondaire ») : 10 à 20 % à 5 ans, traitée en une séance par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag).
 - **Œdème maculaire postopératoire** (syndrome d’Irvine-Gass) : < 2 % des cas, régressif sous collyres.
 - **Endophtalmie** (infection intraoculaire) : de l’ordre de 2 à 3 cas pour 10 000 opérations, et 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts — prévenue par antibiotique intracamérulaire (céfuroxime).
-- **Décentrement ou luxation tardive de l’implant** : exceptionnel.
+- **Décentrement ou luxation tardive de l’implant** : rare (environ 1 à 2 % à 25 ans), plus fréquent en cas de pseudo-exfoliation.
 - **Erreur biométrique résiduelle** : rare avec les formules modernes ; peut conduire à une petite correction par lunettes, lentilles ou, dans de rares cas, un geste de retouche (échange d’implant, LASIK de retouche).
 
 #### Alternatives aux implants monofocaux
@@ -3391,10 +3391,10 @@ Les **implants toriques** sont des lentilles intraoculaires pliables conçues po
 #### L’essentiel en 30 secondes
 
 - **Indication** : astigmatisme cornéen régulier ≥ 1,0 à 1,25 D lors d’une chirurgie de la cataracte.
-- **Objectif** : réduire à moins de 0,50 D l’astigmatisme résiduel postopératoire chez > 75 % des yeux (données Barrett Toric Calculator).
+- **Objectif** : un astigmatisme résiduel inférieur à 0,50 D, obtenu chez environ 7 yeux sur 10 dans les essais randomisés.
 - **Point clé** : chaque degré de désalignement = ~3,3 % de perte de correction ; 10° = 33 % ; 30° = effet nul.
 - **Remboursement** : pour certains implants dits premium, un surcoût non pris en charge par l’Assurance Maladie peut s’ajouter ; il est discuté en consultation.
-- **Acuité sans lunettes de loin attendue** : ≥ 6/10 chez plus de 85 % des patients opérés.
+- **Sans lunettes de loin** : dans l’essai randomisé le plus large (517 patients), 6 opérés sur 10 n’en portaient plus, contre moins de 4 sur 10 avec un implant non torique.
 
 #### Indications
 
@@ -3417,7 +3417,7 @@ Les **contre-indications relatives** comprennent : pathologie rétinienne altér
 
 #### Principe et choix de l’implant
 
-L’implant torique est une lentille monofocale classique à laquelle est ajouté un **cylindre correcteur** sur l’une des faces. Il comporte des **marques gravées** sur l’optique indiquant l’axe du cylindre, permettant au chirurgien d’aligner précisément l’implant sur l’axe cornéen prévu. Les implants modernes en **acrylique hydrophobe à haptiques fermées ou en plaque** présentent la meilleure stabilité rotationnelle (rotation moyenne < 3° à 1 an selon Vale et al., *J Cataract Refract Surg* 2016).
+L’implant torique est une lentille monofocale classique à laquelle est ajouté un **cylindre correcteur** sur l’une des faces. Il comporte des **marques gravées** sur l’optique indiquant l’axe du cylindre, permettant au chirurgien d’aligner précisément l’implant sur l’axe cornéen prévu. Les implants modernes en **acrylique hydrophobe à haptiques fermées ou en plaque** présentent la meilleure stabilité rotationnelle. Les implants actuels tournent peu : moins de 4° en moyenne à un an dans l’essai randomisé le plus large.
 
 Les cylindres disponibles couvrent en général de **T2 à T9** (soit 1,00 à 6,00 D au plan de l’implant), avec plusieurs pas intermédiaires. Au-delà, un geste complémentaire (LASIK de retouche, PKR) peut être envisagé.
 
@@ -3444,15 +3444,14 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 #### Résultats attendus
 
-- Astigmatisme résiduel ≤ 0,50 D chez 75 à 85 % des yeux avec les formules de dernière génération (Ferreira et al., *J Cataract Refract Surg* 2018).
-- Acuité visuelle non corrigée de loin ≥ 6/10 chez plus de 85 % des patients.
+- Astigmatisme résiduel inférieur à 0,50 D chez environ 7 yeux sur 10 (méta-analyse Cochrane, 2019).
+- Sans lunettes de loin : dans l’essai randomisé le plus large (517 patients), 6 opérés sur 10 n’en portaient plus, contre moins de 4 sur 10 avec un implant non torique.
 - Nette réduction de la dépendance aux lunettes pour la vision de loin (conduite, sport, extérieur).
 - Lunettes de près encore nécessaires (sauf version torique multifocale / EDOF).
-- Satisfaction patient ≥ 90 % dans les séries publiées.
 
 #### Complications spécifiques
 
-- **Rotation postopératoire** : principale complication spécifique. Moins de 3 % des implants modernes subissent une rotation significative (> 10°) nécessitant un repositionnement. Ce geste, réalisé dans les 4 à 6 semaines après la chirurgie, est simple et rapide.
+- **Rotation postopératoire** : principale complication spécifique. Moins de 2 % des implants doivent être repositionnés ; ce geste simple est fait en général après la première semaine, dans le premier mois.
 - **Erreur d’axe peropératoire** : prévenue par le marquage manuel à la lampe à fente et/ou le guidage numérique.
 - **Sur ou sous-correction** : rare avec les formules modernes ; une petite correction résiduelle peut être traitée par retouche laser cornéenne.
 - Les autres complications (œdème maculaire, endophtalmie, opacification capsulaire postérieure) sont les mêmes que dans la chirurgie de la cataracte standard — voir la page [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte).
@@ -3467,9 +3466,10 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 #### Sources et références
 
 - Abulafia A, Barrett GD, Kleinmann G, et al. *Prediction of refractive outcomes with toric intraocular lens implantation*. J Cataract Refract Surg. 2015;41(5):936-944. [doi:10.1016/j.jcrs.2014.08.036](https://doi.org/10.1016/j.jcrs.2014.08.036)
-- Vale C, Menezes C, Firmino-Machado J, et al. *Astigmatism axis stability of a new toric intraocular lens*. J Cataract Refract Surg. 2016;42(11):1617-1623. [doi:10.1016/j.jcrs.2016.08.026](https://doi.org/10.1016/j.jcrs.2016.08.026)
-- Ferreira TB, Ribeiro FJ, Pinheiro J, et al. *Comparison of refractive outcomes with toric IOL calculation formulas*. J Cataract Refract Surg. 2018;44(9):1116-1123. [doi:10.1016/j.jcrs.2018.06.023](https://doi.org/10.1016/j.jcrs.2018.06.023)
-- Kane JX, Connell B, Yip H, et al. *Accuracy of toric intraocular lens calculations using toric calculators*. J Cataract Refract Surg. 2020;46(8):1134-1141. [doi:10.1097/j.jcrs.0000000000000233](https://doi.org/10.1097/j.jcrs.0000000000000233)
+- Vale C, Menezes C, Firmino-Machado J, et al. *Astigmatism management in cataract surgery with Precizon® toric intraocular lens: a prospective study*. Clin Ophthalmol. 2016;10:151-159. [doi:10.2147/OPTH.S91298](https://doi.org/10.2147/OPTH.S91298)
+- Lake JC, Victor G, Clare G, et al. *Toric intraocular lens versus limbal relaxing incisions for corneal astigmatism after phacoemulsification*. Cochrane Database Syst Rev. 2019;12(12):CD012801. [doi:10.1002/14651858.CD012801.pub2](https://doi.org/10.1002/14651858.CD012801.pub2)
+- Kane JX, Connell B. *A Comparison of the Accuracy of 6 Modern Toric Intraocular Lens Formulas*. Ophthalmology. 2020;127(11):1472-1486. [doi:10.1016/j.ophtha.2020.04.039](https://doi.org/10.1016/j.ophtha.2020.04.039)
+- Holland E, Lane S, Horn JD, et al. *The AcrySof Toric intraocular lens in subjects with cataracts and corneal astigmatism: a randomized, subject-masked, parallel-group, 1-year study*. Ophthalmology. 2010;117(11):2104-2111. [doi:10.1016/j.ophtha.2010.07.033](https://doi.org/10.1016/j.ophtha.2010.07.033)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aao.org](https://www.aao.org/)
 - Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants. [sfo-online.fr](https://www.sfo-online.fr/)
 
@@ -3606,7 +3606,7 @@ Opacification capsulaire postérieure — traitement par capsulotomie au laser Y
 
 La **cataracte secondaire**, ou **opacification capsulaire postérieure (PCO)**, est la complication tardive la plus fréquente de la chirurgie de la cataracte. Elle se manifeste par une **baisse visuelle progressive** plusieurs mois à plusieurs années après la chirurgie, et donne souvent au patient l’impression que « la cataracte est revenue ». Son traitement est en réalité **simple, rapide et indolore** : une **capsulotomie au laser YAG**, réalisée en quelques minutes au cabinet.
 
-- **10-40 %** — Patients concernés à 2-5 ans
+- **1 sur 10 à 1 sur 5** — Opérés concernés à 5 ans
 - **~5 min** — Durée du laser YAG
 - **Définitif** — Résultat après un seul geste
 
@@ -3621,7 +3621,7 @@ Lors de la chirurgie de la cataracte, le chirurgien retire le **noyau du cristal
 #### Facteurs favorisants
 
 - **Âge jeune** à la chirurgie : plus le patient est jeune, plus le risque de PCO est élevé (cellules épithéliales plus actives).
-- **Type d’implant** : les implants hydrophiles ont historiquement un taux de PCO légèrement plus élevé que les hydrophobes à bords carrés (optic edge design). Les implants actuels réduisent fortement ce risque.
+- **Type d’implant** : les implants hydrophiles exposent nettement plus à la cataracte secondaire que les implants hydrophobes à bords carrés ; la forme carrée du bord de l’implant est le facteur le mieux démontré. Les implants actuels réduisent fortement ce risque.
 - **Myopie forte**, **rétinopathie diabétique**, **uvéite**, **pseudoexfoliation capsulaire**.
 - **Intervention combinée** (cataracte + vitrectomie par exemple).
 
@@ -3670,10 +3670,11 @@ La **récupération visuelle est rapide** : amélioration perçue dans les heure
 - **Corps flottants** liés aux fragments capsulaires dans le vitré, souvent transitoires et bien tolérés.
 - **Discrète inflammation** intraoculaire (uvéite antérieure) contrôlée par les collyres.
 
+Une hausse de la pression de l’œil ou un œdème maculaire peuvent survenir dans les semaines qui suivent (1 à 5 % des cas), plus souvent en cas de diabète ou quand le laser est fait dans l’année qui suit l’opération ; ils se traitent par collyres.
+
 ##### Complications rares
 
 - **Déchirure rétinienne** ou **décollement de rétine** : risque ~ 0,5 à 2 %, majoré en cas de myopie forte ou d’antécédents. Voir [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
-- **Œdème maculaire cystoïde** (œdème d’Irvine-Gass) dans les semaines qui suivent, traitement par collyres AINS.
 - **Endommagement de l’implant** (marques sur l’optique) : exceptionnel avec un opérateur expérimenté et habituellement sans conséquence visuelle.
 
 **Consultez en urgence** après un laser YAG en cas de :
@@ -3974,7 +3975,7 @@ Les veines rétiniennes drainent le sang de la rétine vers le nerf optique puis
 
 - **2e** — Cause vasculaire rétinienne
 - **+60 ans** — Âge moyen de survenue
-- **5-10 %** — Risque controlatéral à 5 ans
+- **1 sur 8** — Risque pour l’autre œil à 4 ans
 
 #### Classification anatomique
 
@@ -4016,7 +4017,7 @@ Forme intermédiaire atteignant environ la moitié de la rétine. Son pronostic 
 
 #### Bilan étiologique : indispensable
 
-**L’OVR est un « signal d’alerte vasculaire »** : au-delà du traitement oculaire, un bilan cardiovasculaire et tensionnel doit être mené conjointement avec le médecin traitant. Il contribue à prévenir les accidents vasculaires cérébraux et coronariens et à diminuer le risque d’atteinte controlatérale.
+**L’OVR est un « signal d’alerte vasculaire »** : au-delà du traitement oculaire, un bilan cardiovasculaire et tensionnel doit être mené conjointement avec le médecin traitant. Il contribue à prévenir les accidents vasculaires cérébraux et coronariens.
 
 Bilan usuel :
 
@@ -4033,7 +4034,7 @@ Bilan usuel :
 
 Traitement de **première intention** : **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (aflibercept, ranibizumab, faricimab), avec phase d’induction puis schéma « Treat & Extend ».
 
-En cas de réponse insuffisante ou chez les patients pseudophaques non compliants pour les injections mensuelles : **implant intravitréen de dexaméthasone (Ozurdex®)**, d’action prolongée sur 4 à 6 mois. À surveiller : élévation de la pression intraoculaire et accélération de la cataracte.
+En cas de réponse insuffisante ou chez les patients pseudophaques non compliants pour les injections mensuelles : **implant intravitréen de dexaméthasone (Ozurdex®)**, dont l’effet dure en général 3 à 6 mois. À surveiller : élévation de la pression intraoculaire et accélération de la cataracte.
 
 ##### 2 — L’ischémie et la néovascularisation
 
@@ -4046,9 +4047,9 @@ Prise en charge pluridisciplinaire : contrôle tensionnel strict, équilibration
 #### Pronostic
 
 - **OBVR non ischémique** : récupération visuelle souvent bonne avec traitement anti-VEGF adapté.
-- **OVCR œdémateuse** : résultats variables, gain moyen de 1 à 3 lignes sous anti-VEGF.
+- **OVCR œdémateuse** : dans les grands essais, le gain moyen est d’environ 3 lignes la première année sous anti-VEGF, avec des résultats variables d’un patient à l’autre.
 - **OVCR ischémique** : pronostic visuel réservé ; surveillance étroite pour prévenir le glaucome néovasculaire.
-- Durée de traitement : 1 à 3 ans en moyenne, parfois plus, selon la réponse sur l’OCT.
+- Durée de traitement : souvent plusieurs années. Dans une étude de suivi à 4 ans, environ la moitié des patients n’avaient plus besoin d’injection, la plupart après moins de 2 ans de traitement ; les autres en recevaient encore.
 
 #### Questions fréquentes des patients
 
@@ -4066,11 +4067,11 @@ Un **bilan cardiovasculaire complet** : pression artérielle, bilan lipidique, g
 
 ##### Combien d’injections d’anti-VEGF sont nécessaires ?
 
-Il est difficile de donner un chiffre exact : le traitement est adapté à chaque patient selon la réponse de l’œdème à l’OCT. Après une phase d’induction (habituellement 3 injections mensuelles), le schéma « Treat & Extend » permet d’espacer progressivement les injections. Le traitement est souvent nécessaire **pendant 1 à 3 ans**, parfois plus.
+Il est difficile de donner un chiffre exact : le traitement est adapté à chaque patient selon la réponse de l’œdème à l’OCT. Après une phase d’induction (habituellement 3 injections mensuelles), le schéma « Treat & Extend » permet d’espacer progressivement les injections. Le traitement dure souvent **plusieurs années** ; dans une étude de suivi à 4 ans, environ la moitié des patients n’avaient plus besoin d’injection.
 
 ##### Peut-on avoir une occlusion veineuse sur l’autre œil ?
 
-Le risque d’atteinte controlatérale est d’environ **5 à 10 % à 5 ans**. Il est considérablement réduit par une bonne prise en charge des facteurs de risque vasculaires (HTA, diabète, dyslipidémie, tabac, apnées du sommeil). Une surveillance ophtalmologique régulière de l’œil controlatéral est recommandée.
+Le risque d’occlusion de l’autre œil est d’environ 8 % à 2 ans et 12 % à 4 ans dans la plus grande série publiée. La prise en charge des facteurs de risque vasculaires (HTA, diabète, cholestérol, tabac, apnées du sommeil) est indispensable pour la santé générale ; son effet sur ce risque n’a pas été mesuré. Une surveillance régulière de l’autre œil est recommandée.
 
 ##### Auteur et révision médicale
 
@@ -4175,21 +4176,21 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 - Description : Œdème maculaire cystoïde : causes (post-cataracte, diabète, uvéite), diagnostic OCT, traitements. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
 - Relu le : 2026-04-22
 
-Accumulation de liquide dans la macula — principale cause de baisse visuelle après chirurgie de cataracte
+Accumulation de liquide dans la macula — cause la plus fréquente de mauvais résultat visuel après une chirurgie de la cataracte
 
 L’**œdème maculaire cystoïde (OMC)** correspond à l’accumulation de liquide sous forme de **logettes cystoïdes** dans les différentes couches de la macula, zone centrale de la rétine responsable de la vision précise. Il résulte d’une **rupture de la barrière hémato-rétinienne** laissant diffuser des fluides à partir des vaisseaux rétiniens. L’OMC n’est pas une maladie en soi mais une **réaction rétinienne commune** à plusieurs situations cliniques — la plus classique étant la chirurgie de la cataracte (**syndrome d’Irvine-Gass**).
 
 **Œdème maculaire cystoïde.** Le liquide s’accumule sous forme de logettes dans les couches de la macula, qui s’épaissit.
 
 - **1-2 %** — Incidence du syndrome d’Irvine-Gass (cataracte simple)
-- **4-12 sem** — Délai typique après chirurgie
+- **< 3 mois** — Délai typique après chirurgie
 - **OCT** — Examen de référence pour le diagnostic
 
 #### Les principales causes d’œdème maculaire cystoïde
 
 ##### Syndrome d’Irvine-Gass (OMC post-cataracte)
 
-Première cause d’OMC en pratique courante. Il survient typiquement **4 à 12 semaines** après une phacoémulsification, avec un pic d’incidence à **6 semaines**. Le mécanisme est **inflammatoire** : libération de prostaglandines intra-oculaires déclenchée par les manipulations chirurgicales, avec rupture de la barrière hémato-rétinienne. Les facteurs favorisants sont : rupture capsulaire peropératoire, diabète, occlusion veineuse antérieure, uvéite chronique, membrane épirétinienne préexistante, traitement par collyre à la prostaglandine (glaucome).
+Le syndrome d’Irvine-Gass survient typiquement dans les 3 mois qui suivent une phacoémulsification. Le mécanisme est **inflammatoire** : libération de prostaglandines intra-oculaires déclenchée par les manipulations chirurgicales, avec rupture de la barrière hémato-rétinienne. Les facteurs favorisants sont : rupture capsulaire peropératoire, diabète, occlusion veineuse antérieure, uvéite chronique, membrane épirétinienne préexistante, traitement par collyre à la prostaglandine (glaucome), facteur discuté.
 
 ##### Œdème maculaire diabétique
 
@@ -4233,7 +4234,7 @@ L’**angiographie à la fluorescéine** reste utile pour documenter une diffusi
 
 ##### Traitement médical de première ligne (syndrome d’Irvine-Gass)
 
-Le traitement repose sur des collyres anti-inflammatoires, avec une réponse favorable dans plus de 50 % des cas :
+Le traitement repose sur des collyres anti-inflammatoires ; beaucoup d’OMC récents régressent, mais l’efficacité propre de chaque collyre est mal établie.
 
 - Des **collyres anti-inflammatoires** peuvent être prescrits. Le choix du produit, la fréquence et la durée du traitement sont adaptés par l’ophtalmologue. Suivez l’ordonnance remise en consultation.
 - **Collyres corticoïdes** (dexaméthasone, fluorométholone) en association, avec dégression progressive.
@@ -4248,7 +4249,7 @@ En cas de non-amélioration à 3-6 semaines malgré un traitement topique bien c
 - **Implant intravitréen de dexaméthasone (Ozurdex)** à libération prolongée, procurant 3 à 6 mois d’action anti-inflammatoire ; répétable si nécessaire.
 - **Corticothérapie par voie orale** courte dans certaines formes très inflammatoires.
 - **Vitrectomie** en cas de traction vitréomaculaire démontrée, membrane épirétinienne surajoutée, ou OMC chronique résistant à tous les traitements médicaux.
-- Les **anti-VEGF** (ranibizumab, aflibercept) sont moins efficaces que les anti-inflammatoires dans l’Irvine-Gass pur (mécanisme principalement inflammatoire, non angiogénique) ; ils restent un traitement de première ligne pour l’œdème maculaire diabétique et post-occlusion veineuse.
+- Les **anti-VEGF** ne sont pas un traitement de première intention dans l’Irvine-Gass (mécanisme surtout inflammatoire, données limitées) ; ils restent un traitement de première ligne de l’œdème maculaire diabétique et post-occlusion veineuse.
 
 #### Prévention en chirurgie de la cataracte
 
@@ -4262,13 +4263,13 @@ Plusieurs mesures permettent de réduire le risque d’Irvine-Gass :
 
 #### Pronostic
 
-Le pronostic du syndrome d’Irvine-Gass est **globalement favorable** : la majorité des patients récupèrent une acuité visuelle proche de la normale sous traitement bien conduit. Les formes **chroniques non traitées** au-delà de 6 à 12 mois peuvent laisser des altérations structurelles des photorécepteurs (atrophie maculaire) avec déficit visuel résiduel. D’où l’importance d’un **diagnostic précoce** par OCT devant toute baisse visuelle post-chirurgicale.
+Le pronostic du syndrome d’Irvine-Gass est **globalement favorable** : la majorité des patients récupèrent une acuité visuelle proche de la normale sous traitement bien conduit. Les formes **chroniques (au-delà de 4 mois) non traitées** peuvent laisser des altérations structurelles des photorécepteurs (atrophie maculaire) avec déficit visuel résiduel. D’où l’importance d’un **diagnostic précoce** par OCT devant toute baisse visuelle post-chirurgicale.
 
 #### Questions fréquentes des patients
 
 ##### Quand survient l’œdème maculaire après une chirurgie de cataracte ?
 
-Le syndrome d’Irvine-Gass survient typiquement **4 à 12 semaines** après la chirurgie, avec un pic à 6 semaines. Des formes plus tardives (au-delà de 3 mois) existent, notamment en cas de rupture capsulaire peropératoire ou de complication associée.
+Le syndrome d’Irvine-Gass survient typiquement **dans les 3 mois** qui suivent la chirurgie. Des formes plus tardives (au-delà de 3 mois) existent, notamment en cas de rupture capsulaire peropératoire ou de complication associée.
 
 ##### Un patient diabétique doit-il craindre davantage un OMC après cataracte ?
 
@@ -4280,7 +4281,7 @@ Le traitement initial par collyres AINS et corticoïdes dure typiquement **2 à 
 
 ##### Les anti-VEGF sont-ils indiqués d’emblée ?
 
-**Non pour le syndrome d’Irvine-Gass** : le mécanisme est principalement inflammatoire, et les anti-inflammatoires (AINS, corticoïdes) sont plus efficaces que les anti-VEGF. En revanche, pour l’**œdème maculaire diabétique** ou post-occlusion veineuse, les anti-VEGF sont un traitement de première ligne.
+**Non pour le syndrome d’Irvine-Gass** : le mécanisme est surtout inflammatoire et les données sur les anti-VEGF y sont limitées ; le traitement commence par des anti-inflammatoires. En revanche, pour l’**œdème maculaire diabétique** ou post-occlusion veineuse, les anti-VEGF sont un traitement de première ligne.
 
 ##### La récupération visuelle est-elle complète ?
 
@@ -4306,7 +4307,7 @@ La **choriorétinopathie séreuse centrale (CRSC)** est une maladie maculaire ca
 
 - **25-50 ans** — Âge typique de survenue
 - **× 4 à 8** — Plus fréquente chez l’homme
-- **~80 %** — Résolution spontanée en 3-6 mois
+- **1 sur 3** — Récidive après un premier épisode (étude de population)
 
 #### Qu’est-ce que la CRSC ?
 
@@ -4347,7 +4348,7 @@ Le diagnostic repose sur plusieurs examens complémentaires :
 
 ##### Forme aiguë
 
-Premier épisode ou récidive courte (< 4 mois). Évolution naturelle souvent favorable avec résolution spontanée dans 80 à 90 % des cas en 3 à 6 mois. La prise en charge initiale est le plus souvent conservatrice.
+Premier épisode ou récidive courte (< 4 mois). La grande majorité des formes aiguës se résorbent spontanément en quelques mois. La prise en charge initiale est le plus souvent conservatrice.
 
 ##### Forme chronique / récurrente
 
@@ -4368,7 +4369,7 @@ Apparition possible, notamment sur les formes chroniques, d’une **néovascular
 
 ##### 2 — Photothérapie dynamique (PDT)
 
-Traitement de **référence** dans les formes chroniques ou les récidives symptomatiques. Elle consiste à injecter par voie intraveineuse un photosensibilisant (**vertéporfine**), puis à activer spécifiquement la zone maculaire malade par un laser non thermique. Utilisée en **demi-dose** ou **demi-fluence** (pour limiter le risque d’atrophie), elle résorbe le décollement séreux dans plus de 80 % des cas et réduit significativement le risque de récidive.
+Traitement de **référence** dans les formes chroniques ou les récidives symptomatiques. Elle consiste à injecter par voie intraveineuse un photosensibilisant (**vertéporfine**), puis à activer spécifiquement la zone maculaire malade par un laser non thermique. Utilisée en **demi-dose** ou **demi-fluence** (pour limiter le risque d’atrophie), elle fait disparaître complètement le liquide chez 2 à 3 patients sur 4 dans les essais randomisés (78 % à 3 mois dans l’essai SPECTRA) et réduit significativement le risque de récidive ; une seconde séance est possible.
 
 ##### 3 — Antagonistes des récepteurs minéralocorticoïdes
 
@@ -4386,10 +4387,10 @@ Réservés aux formes compliquées d’une **néovascularisation choroïdienne**
 
 #### Pronostic
 
-- 80 à 90 % des **formes aiguës** régressent spontanément en 3-6 mois avec récupération visuelle complète ou quasi-complète.
+- La grande majorité des **formes aiguës** se résorbent spontanément en quelques mois, avec récupération visuelle complète ou quasi-complète.
 - Les **formes chroniques** peuvent laisser des **séquelles visuelles** (atrophie de l’EPR, désorganisation des photorécepteurs) ; d’où l’intérêt de traiter activement au-delà de 4 mois.
 - Les **récidives** sont fréquentes (30 à 50 % sur 10 ans), d’où l’importance de la prévention (arrêt des corticoïdes, gestion du stress).
-- Le risque de **néovascularisation choroïdienne** secondaire est de l’ordre de 2 à 9 % ; il justifie un suivi OCT-A régulier.
+- Dans les formes chroniques, l’OCT-angiographie retrouve des **néovaisseaux** chez une part importante des patients (30 à 45 % dans certaines séries), souvent peu actifs ; ils justifient un suivi régulier.
 
 #### Questions fréquentes des patients
 
@@ -4403,11 +4404,11 @@ Les corticoïdes, sous **toutes leurs formes** (comprimés, injections, crèmes 
 
 ##### Une CRSC guérit-elle spontanément ?
 
-Oui, dans environ **80 à 90 % des formes aiguës**, une résolution spontanée survient en 3 à 6 mois. Lorsque le décollement séreux persiste au-delà de 4 à 6 mois, on parle de forme chronique : une surveillance simple n’est alors plus recommandée et un traitement est envisagé pour éviter des séquelles maculaires définitives.
+Oui. La grande majorité des **formes aiguës** se résorbent spontanément en quelques mois. Lorsque le décollement séreux persiste au-delà de 4 à 6 mois, on parle de forme chronique : une surveillance simple n’est alors plus recommandée et un traitement est envisagé pour éviter des séquelles maculaires définitives.
 
 ##### Quel est le traitement de référence ?
 
-La **photothérapie dynamique (PDT)** à la vertéporfine en demi-dose ou demi-fluence est actuellement le traitement de référence des formes chroniques ou des récidives symptomatiques. Elle est efficace dans plus de 80 % des cas. La photocoagulation laser focale reste indiquée pour un point de fuite extrafovéolaire. L’éplérénone/spironolactone ont une efficacité plus limitée que celle initialement espérée.
+La **photothérapie dynamique (PDT)** à la vertéporfine en demi-dose ou demi-fluence est actuellement le traitement de référence des formes chroniques ou des récidives symptomatiques. Elle est efficace chez la majorité des patients. La photocoagulation laser focale reste indiquée pour un point de fuite extrafovéolaire. L’éplérénone/spironolactone ont une efficacité plus limitée que celle initialement espérée.
 
 ##### La CRSC peut-elle récidiver ?
 
@@ -4429,11 +4430,11 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Staphylome, néovaisseaux myopiques, fovéoschisis, risque de décollement
 
-La **myopie forte** (ou myopie pathologique) est définie par une correction **supérieure à -6 dioptries** ou une **longueur axiale du globe ≥ 26 mm**. Elle concerne aujourd’hui **2 à 3 % de la population française**, et sa prévalence augmente fortement dans le monde, notamment en Asie. Au-delà du simple défaut réfractif, la myopie forte est un **facteur de risque majeur de complications rétiniennes** qui justifie un **suivi ophtalmologique spécialisé annuel**.
+La **myopie forte** est définie par une myopie **d’au moins 6 dioptries** ou une **longueur axiale d’au moins 26 mm**. On parle de myopie pathologique quand des lésions apparaissent au fond d’œil (staphylome, atrophie, néovaisseaux). La myopie forte concerne aujourd’hui **2 à 3 % de la population française**, et sa prévalence augmente fortement dans le monde, notamment en Asie. Au-delà du simple défaut réfractif, la myopie forte est un **facteur de risque majeur de complications rétiniennes** qui justifie un **suivi ophtalmologique spécialisé annuel**.
 
 - **≥ -6 D** — Seuil de myopie forte
 - **≥ 26 mm** — Longueur axiale pathologique
-- **× 5-10** — Risque de décollement de rétine
+- **× 10 et plus** — Risque de décollement de rétine
 
 #### Comprendre la myopie forte
 
@@ -4449,7 +4450,7 @@ Déformation focale ou diffuse de la paroi postérieure du globe, détectée à 
 
 ##### [Néovaisseaux choroïdiens myopiques](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort) (mCNV)
 
-Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **1 à 10 %** des yeux à myopie forte. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
+Vaisseaux anormaux se développant sous la rétine, souvent à partir de **craquelures (lacquer cracks)** ou d’atrophie choriorétinienne. Touchent **5 à 11 %** des yeux atteints de myopie pathologique. Se manifestent par une **baisse visuelle brutale** et/ou des **métamorphopsies**. L’OCT-A (angio-OCT) est l’examen clé du diagnostic. Traitement par **[injections intravitréennes d’anti-VEGF](https://docteurmajoulet.com/injection-intravitreenne)** (ranibizumab, aflibercept) en protocole *pro re nata* : 1 à 3 injections suffisent dans la majorité des cas, avec un **pronostic d’autant meilleur que le traitement est précoce**.
 
 ##### Fovéoschisis myopique et maculopathie de traction
 
@@ -4461,7 +4462,7 @@ Forme particulière de trou maculaire, souvent associée à un fovéoschisis ou 
 
 ##### Décollement de rétine rhegmatogène
 
-La myopie forte multiplie par **5 à 10** le risque de décollement de rétine. Les déchirures périphériques sur rétine amincie (palissades, trous) sont plus fréquentes et souvent multiples. **Tout symptôme d’alerte** (myodésopsies brutales, phosphènes, voile noir) chez un myope fort impose une **consultation ophtalmologique en urgence**.
+La myopie forte multiplie **environ par 10**, voire davantage, le risque de décollement de rétine. Les déchirures périphériques sur rétine amincie (palissades, trous) sont plus fréquentes et souvent multiples. **Tout symptôme d’alerte** (myodésopsies brutales, phosphènes, voile noir) chez un myope fort impose une **consultation ophtalmologique en urgence**.
 
 **Signes devant faire consulter en urgence :** multiplication soudaine des **corps flottants (myodésopsies)**, **éclairs lumineux (phosphènes)**, apparition d’un **voile noir** ou d’une **amputation du champ visuel**. Ces signes évoquent une déchirure rétinienne ou un décollement de rétine débutant. Voir la page [Déchirure de rétine et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 
@@ -4473,7 +4474,7 @@ Amincissement progressif de la choroïde et de l’épithélium pigmentaire dans
 
 ##### Cataracte précoce
 
-Les myopes forts développent souvent une cataracte dès 50-55 ans, de type **nucléaire** (myopisation progressive, changements fréquents de correction) ou **sous-capsulaire postérieure**. La [chirurgie de cataracte](https://docteurmajoulet.com/cataracte) chez le myope fort requiert une biométrie optique de haute précision et comporte un **risque accru de décollement de rétine** (0,5 à 1 %, jusqu’à 2 % chez le myope fort).
+Les myopes forts ont plus souvent une cataracte : risque environ 3 fois plus élevé pour la cataracte **nucléaire** (myopisation progressive, changements fréquents de correction), 4 à 5 fois pour la **sous-capsulaire postérieure**. La [chirurgie de cataracte](https://docteurmajoulet.com/cataracte) chez le myope fort requiert une biométrie optique de haute précision et comporte un **risque accru de décollement de rétine** : environ 1 % à 4 ans en France tous patients confondus, 1,5 à 3 % chez le myope fort.
 
 ##### Glaucome associé
 
@@ -4494,11 +4495,11 @@ Un **bilan annuel** est recommandé chez tout patient ayant une myopie ≥ -6 D 
 
 Chez l’enfant, des traitements permettent de **ralentir la progression** de la myopie et donc de **limiter à l’âge adulte** le risque de complications :
 
-- **Collyres d’atropine faiblement dosée** (0,01 à 0,05 %), 1 goutte le soir : efficacité démontrée (études *ATOM*, *LAMP*). *Note réglementaire* : ces collyres ne sont pas commercialisés en France et sont obtenus sous forme de **préparation magistrale hospitalière** par la pharmacie hospitalière, sur prescription d’un ophtalmologiste.
+- **Collyres d’atropine faiblement dosée** (0,01 à 0,05 %), 1 goutte le soir : dans l’essai *LAMP*, l’effet augmente avec la dose, 0,05 % étant la plus efficace ; à 0,01 %, l’effet est faible et n’a pas été retrouvé dans un essai américain. *Note réglementaire* : ces collyres ne sont pas commercialisés en France et sont obtenus sous forme de **préparation magistrale hospitalière** par la pharmacie hospitalière, sur prescription d’un ophtalmologiste.
 - **Lentilles d’orthokératologie** (portées la nuit).
 - **Verres de lunettes à défocalisation périphérique** (MiYOSMART, Stellest).
 - **Lentilles souples à défocalisation**.
-- **Augmentation du temps passé en extérieur** (≥ 2 h par jour) et réduction du temps d’écran rapproché.
+- **Augmentation du temps passé en extérieur** (de l’ordre de 1 h 30 à 2 h par jour) et réduction du temps d’écran rapproché.
 
 La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste pédiatrique**. Le suivi à l’âge adulte relève ensuite du rétinologue.
 
@@ -4506,7 +4507,7 @@ La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste p
 
 ##### Ma myopie peut-elle continuer d’augmenter à l’âge adulte ?
 
-Rarement au-delà de 25-30 ans. Une **aggravation rapide chez l’adulte** doit faire rechercher d’autres causes : cataracte nucléaire débutante, décompensation d’un kératocône, diabète déséquilibré. Une augmentation prolongée au-delà de 30 ans chez un myope déjà fort doit alerter.
+Elle se stabilise le plus souvent à l’âge adulte. Une **aggravation rapide** doit faire rechercher d’autres causes : cataracte nucléaire débutante, décompensation d’un kératocône, diabète déséquilibré. Une augmentation prolongée au-delà de 30 ans chez un myope déjà fort doit alerter.
 
 ##### La chirurgie réfractive guérit-elle la myopie forte ?
 
@@ -4540,10 +4541,10 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Complication maculaire de la myopie forte — à traiter vite par anti-VEGF
 
-Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovascularization*, mCNV) sont des néovaisseaux anormaux qui se développent sous la rétine en traversant la **membrane de Bruch**, dans un contexte de **myopie pathologique**. Ils représentent la **deuxième cause** de néovaisseaux maculaires après la DMLA et touchent une population beaucoup plus jeune (40 à 55 ans en moyenne). Leur diagnostic précoce est capital : traités rapidement par **injections intravitréennes d’anti-VEGF**, ils ont un pronostic visuel nettement meilleur que les néovaisseaux de la DMLA.
+Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovascularization*, mCNV) sont des néovaisseaux anormaux qui se développent sous la rétine en traversant la **membrane de Bruch**, dans un contexte de **myopie pathologique**. Ils sont la **première cause** de néovaisseaux maculaires avant 50 ans (62 % des cas dans une série française) et l’une des plus fréquentes en dehors de la DMLA, chez des patients plus jeunes que dans la DMLA. Leur diagnostic précoce est capital : traités rapidement par **injections intravitréennes d’anti-VEGF**, ils ont un pronostic visuel nettement meilleur que les néovaisseaux de la DMLA.
 
 - **5-11 %** — Prévalence chez les myopes forts
-- **40-55 ans** — Âge moyen de survenue
+- **< 60 ans** — Âge habituel de survenue
 - **2-4** — Injections anti-VEGF la 1re année (médiane)
 
 #### Qu’est-ce que la myopie forte ?
@@ -4562,7 +4563,7 @@ Les néovaisseaux maculaires du myope fort se révèlent typiquement par :
 - Parfois une **petite hémorragie maculaire** perçue comme une petite tache sombre.
 - L’atteinte est presque toujours **unilatérale** au début, mais une surveillance de l’œil controlatéral est indispensable.
 
-**Urgence semi-différée.** Toute métamorphopsie ou baisse visuelle centrale brutale chez un patient myope fort impose une consultation ophtalmologique dans les **1 à 2 semaines**. Plus le traitement est précoce, meilleur est le pronostic.
+**Urgence semi-différée.** Toute métamorphopsie ou baisse brutale de la vision centrale chez un patient myope fort impose une consultation ophtalmologique dans les **1 à 2 semaines**. Plus le traitement est précoce, meilleur est le pronostic.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -4592,18 +4593,18 @@ La distinction est importante car le pronostic et le rythme des injections ne so
 
 | Critère | NVC du myope fort | NVC de la DMLA |
 |---|---|---|
-| Âge de survenue | 40-55 ans | > 65 ans |
+| Âge de survenue | < 60 ans | > 65 ans |
 | Type (classification OCT) | Type 2 (sous-rétinien) ++ | Type 1 (sous-EP) le plus souvent |
 | Taille de la lésion | Petite (< 1 diamètre papillaire) | Plus grande, souvent extensive |
 | Exsudation | Faible (peu de fluide) | Importante (œdème, DEP) |
-| Fréquence des injections | 2-4 la 1re année (PRN) | 6-8 la 1re année (T&E) |
+| Fréquence des injections | 2-4 la 1re année (PRN) | 7-10 la 1re année (T&E) |
 | Pronostic visuel | Favorable si traitement précoce | Plus variable, dépend du type |
 
 #### Traitement
 
 ##### Injections intravitréennes d’anti-VEGF — 1re intention
 
-Les **anti-VEGF** (*vascular endothelial growth factor*) neutralisent le facteur de croissance qui stimule la prolifération des néovaisseaux. Deux molécules disposent de données pivot validées dans le mCNV : le **ranibizumab** (étude RADIANCE, *Ophthalmology* 2014) et l’**aflibercept** (étude MYRROR, *Ophthalmology* 2015). Des données plus limitées existent pour le **brolucizumab** (séries japonaises, hors AMM française dans cette indication spécifique).
+Les **anti-VEGF** (*vascular endothelial growth factor*) neutralisent le facteur de croissance qui stimule la prolifération des néovaisseaux. Deux molécules disposent de données pivot validées dans le mCNV : le **ranibizumab** (étude RADIANCE, *Ophthalmology* 2014) et l’**aflibercept** (étude MYRROR, *Ophthalmology* 2015).
 
 Le protocole est en règle un schéma **Pro Re Nata** (PRN, littéralement « à la demande ») :
 
@@ -4619,10 +4620,10 @@ Avant l’ère des anti-VEGF, la **PDT à la vertéporfine** était le traitemen
 
 #### Pronostic et surveillance
 
-Avec un traitement précoce, le pronostic visuel est **favorable dans plus de 70 % des cas** à un an (stabilisation ou gain d’acuité visuelle selon les études RADIANCE / MYRROR). Deux points méritent néanmoins une vigilance au long cours :
+Avec un traitement précoce, l’acuité s’améliore en moyenne de **près de 3 lignes à un an** dans les essais RADIANCE et MYRROR. À long terme, ce gain peut s’éroder, surtout du fait de l’atrophie autour de la cicatrice. Deux points méritent néanmoins une vigilance au long cours :
 
 - **Atrophie choriorétinienne péri-lésionnelle** : le tissu autour de la cicatrice néovasculaire a tendance à s’atrophier progressivement, pouvant limiter la récupération finale. Ce phénomène est en partie lié à l’évolution naturelle de la myopie forte.
-- **Récidive** : environ **30 à 50 %** des mCNV récidivent à 4-5 ans, d’où l’importance d’un suivi ophtalmologique régulier à vie et d’une auto-surveillance par grille d’Amsler.
+- **Récidive** : environ 1 néovaisseau sur 3 récidive dans les 2 ans et plus d’un sur 2 dans les 5 ans, d’où l’importance d’un suivi ophtalmologique régulier à vie et d’une auto-surveillance par grille d’Amsler.
 
 La surveillance de l’**œil adelphe** (sain) est également essentielle : le risque de bilatéralisation est estimé à environ 30 % à 5-10 ans, particulièrement en présence de *lacquer cracks* ou d’un staphylome préexistant.
 
@@ -4630,7 +4631,7 @@ La surveillance de l’**œil adelphe** (sain) est également essentielle : le r
 
 ##### Les néovaisseaux du myope fort sont-ils les mêmes que ceux de la DMLA ?
 
-**Non.** Ils apparaissent plus tôt (40-55 ans), sont de plus petite taille, saignent et exsudent moins, et sont presque toujours de type 2 (sous-rétiniens). Leur réponse aux anti-VEGF est meilleure et plus durable : **2 à 3 injections annuelles** suffisent souvent, contre un rythme plus soutenu dans la DMLA. Le pronostic visuel global est également plus favorable.
+**Non.** Ils apparaissent plus tôt (le plus souvent avant 60 ans), sont de plus petite taille, saignent et exsudent moins, et sont presque toujours de type 2 (sous-rétiniens). Leur réponse aux anti-VEGF est meilleure et plus durable : **2 à 3 injections annuelles** suffisent souvent, contre un rythme plus soutenu dans la DMLA. Le pronostic visuel global est également plus favorable.
 
 ##### Combien d’injections vais-je recevoir ?
 
@@ -4642,7 +4643,7 @@ Le protocole habituel est **Pro Re Nata (PRN)** : une injection initiale, puis i
 
 ##### Vais-je récupérer ma vision ?
 
-Dans la majorité des cas, si le traitement est débuté précocement. **Plus de 70 %** des patients gagnent ou stabilisent leur acuité visuelle à 1 an sous anti-VEGF (études RADIANCE et MYRROR). Le résultat final dépend de la localisation de la néovascularisation (sous-fovéolaire, juxta ou extra-fovéolaire) et de l’ancienneté des lésions au moment du diagnostic.
+Dans la majorité des cas, si le traitement est débuté précocement : l’acuité s’améliore en moyenne de près de 3 lignes à un an dans les essais RADIANCE et MYRROR. À long terme, ce gain peut s’éroder, surtout du fait de l’atrophie autour de la cicatrice. Le résultat final dépend de la localisation de la néovascularisation (sous-fovéolaire, juxta ou extra-fovéolaire) et de l’ancienneté des lésions au moment du diagnostic.
 
 ##### Dois-je surveiller mon autre œil ?
 
@@ -4664,10 +4665,10 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Dystrophies rétiniennes héréditaires — diagnostic, suivi et thérapie génique
 
-La **rétinite pigmentaire (RP)** est la plus fréquente des **dystrophies rétiniennes héréditaires**. Elle touche environ **1 personne sur 4000** dans le monde. Elle est liée à une dégénérescence progressive des **photorécepteurs rétiniens**, d’abord les **bâtonnets** (vision nocturne et périphérique), puis les **cônes** (vision centrale et des couleurs). Plus de **100 gènes** sont aujourd’hui identifiés. Depuis 2018, une première **thérapie génique** (Luxturna®) est disponible pour certains patients porteurs d’une mutation bi-allélique du gène *RPE65*.
+La **rétinite pigmentaire (RP)** est la plus fréquente des **dystrophies rétiniennes héréditaires**. Elle touche environ **1 personne sur 4000** dans le monde. Elle est liée à une dégénérescence progressive des **photorécepteurs rétiniens**, d’abord les **bâtonnets** (vision nocturne et périphérique), puis les **cônes** (vision centrale et des couleurs). Plus de **80 gènes** sont aujourd’hui identifiés. Depuis 2018, une première **thérapie génique** (Luxturna®) est disponible pour certains patients porteurs d’une mutation bi-allélique du gène *RPE65*.
 
 - **1/4000** — Prévalence mondiale
-- **> 100** — Gènes identifiés
+- **> 80** — Gènes identifiés (forme non syndromique)
 - **2018** — 1re thérapie génique (AMM EU)
 
 #### Symptômes évocateurs
@@ -4693,6 +4694,8 @@ Les deux parents sont porteurs (souvent asymptomatiques). Chaque enfant a un ris
 ##### Liée à l’X (10-15 %)
 
 Mère porteuse, fils atteints. Gènes principaux : *RPGR*, *RP2*. Forme souvent sévère chez le garçon.
+
+Dans environ 30 % des cas, aucun autre membre de la famille n’est atteint (cas isolés).
 
 ##### Formes syndromiques
 
@@ -4761,7 +4764,7 @@ Autorisée en Europe depuis 2018, c’est la **première thérapie génique** r�
 
 ##### Traitement de l’œdème maculaire cystoïde
 
-Fréquent dans les RP, il répond partiellement aux **inhibiteurs de l’anhydrase carbonique** (acétazolamide oral 250-500 mg/j, dorzolamide collyre 3×/j), et plus rarement aux injections intravitréennes de corticoïdes.
+Fréquent dans les RP, il répond souvent aux **inhibiteurs de l’anhydrase carbonique** (acétazolamide par voie orale en première intention, dorzolamide en collyre), avec des rechutes fréquentes ; les corticoïdes intravitréens sont une option en cas d’échec.
 
 ##### Supplémentation
 
@@ -4807,15 +4810,15 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Pourquoi, à quelle fréquence, comment — le bilan rétinien systémique
 
-Le **diabète** et l’**hypertension artérielle** (HTA) sont les deux premières pathologies systémiques qui altèrent silencieusement la rétine. Elles peuvent évoluer pendant des années sans aucun symptôme visuel avant de provoquer une baisse de vue brutale ou progressive. Le **dépistage et le suivi ophtalmologiques systématiques** sont la clé pour prévenir la cécité évitable.
+Le **diabète** et l’**hypertension artérielle** (HTA) peuvent altérer la rétine pendant des années sans aucun symptôme visuel, avant de provoquer une baisse brutale de la vision ou une baisse progressive. Le **dépistage et le suivi ophtalmologiques systématiques** sont la clé pour prévenir la cécité évitable.
 
-- **1re cause** — de cécité entre 20 et 65 ans (diabète)
-- **~ 30 %** — DT2 avec rétinopathie au diagnostic
-- **−35 %** — Risque / baisse de 1 % d’HbA1c (UKPDS)
+- **Cause majeure** — de cécité évitable chez l’adulte en âge de travailler (diabète)
+- **35-39 %** — DT2 avec rétinopathie dès le diagnostic (UKPDS)
+- **−37 %** — Complications microvasculaires par point d’HbA1c en moins (UKPDS)
 
 #### Diabète : la rétinopathie diabétique
 
-La **rétinopathie diabétique** est la complication oculaire la plus fréquente et la plus grave du diabète. Elle résulte d’une **microangiopathie** : les capillaires rétiniens se fragilisent, laissent fuir des fluides et des protéines (exsudats, œdème maculaire), puis s’obstruent (ischémie rétinienne, avec risque de néovaisseaux anarchiques qui saignent et décollent la rétine).
+La **rétinopathie diabétique** est une complication fréquente et spécifique du diabète, qui peut menacer la vision. Elle résulte d’une **microangiopathie** : les capillaires rétiniens se fragilisent, laissent fuir des fluides et des protéines (exsudats, œdème maculaire), puis s’obstruent (ischémie rétinienne, avec risque de néovaisseaux anarchiques qui saignent et décollent la rétine).
 
 ##### Stades de la rétinopathie diabétique
 
@@ -4896,7 +4899,7 @@ Oui. Un bon équilibre diminue le risque mais ne l’annule pas. Au cabinet, un 
 
 ##### Peut-on télétransmettre les fonds d’œil (dépistage par rétinographe) ?
 
-Oui. Le dépistage de la rétinopathie diabétique par rétinographie non mydriatique et télé-expertise est validé en France depuis 2014 (réseau ophtalmo-diabète). Il est utilisé en maison de santé ou en pharmacie dans certaines régions, avec relecture par un ophtalmologue. Il convient en particulier pour un premier dépistage ou un suivi sans anomalie antérieure. En cas d’anomalie détectée, une consultation ophtalmologique en présentiel est nécessaire pour compléter le bilan (examen complet, OCT, indications thérapeutiques).
+Oui. Le dépistage par rétinographie non mydriatique, avec lecture à distance par un ophtalmologiste, est validé en France ; le réseau OPHDIAT l’utilise en Île-de-France depuis les années 2000. Il est aussi proposé en maison de santé ou en pharmacie dans certaines régions. Il convient en particulier pour un premier dépistage ou un suivi sans anomalie antérieure. En cas d’anomalie détectée, une consultation ophtalmologique en présentiel est nécessaire pour compléter le bilan (examen complet, OCT, indications thérapeutiques).
 
 ##### Je suis enceinte et diabétique — que faire ?
 
@@ -5206,7 +5209,7 @@ La stratégie suit les recommandations TFOS DEWS II : on commence par les mesure
 
 | Palier | Ce que c’est | Prise en charge |
 |---|---|---|
-| 1. Les bases, pour tous | **Larmes artificielles sans conservateur** plusieurs fois par jour (formules lipidiques si DGM ; gel ou pommade le soir) ; **hygiène des paupières** quotidienne : chaleur 5 à 10 minutes, massage doux du bord des paupières, nettoyage des cils ; pauses et clignements sur écran, air humidifié, hydratation ; oméga-3 (bénéfice modeste et discuté) ; collyres avec conservateurs remplacés par des unidoses, avec le prescripteur. | Sur ordonnance |
+| 1. Les bases, pour tous | **Larmes artificielles sans conservateur** plusieurs fois par jour (formules lipidiques si DGM ; gel ou pommade le soir) ; **hygiène des paupières** quotidienne : chaleur 5 à 10 minutes, massage doux du bord des paupières, nettoyage des cils ; pauses et clignements sur écran, air humidifié, hydratation ; oméga-3 (bénéfice non démontré dans le plus grand essai randomisé) ; collyres avec conservateurs remplacés par des unidoses, avec le prescripteur. | Sur ordonnance |
 | 2. Traiter l’inflammation | **Ciclosporine en collyre** (Ikervis®) dans les kératites sèches sévères, au long cours ; **cyclines orales** (doxycycline à faible dose) en cure de plusieurs semaines à quelques mois (DGM, rosacée oculaire) ; corticoïdes locaux en cure courte encadrée lors des poussées ; traitement du *Demodex* si blépharite antérieure. | Sur ordonnance |
 | 3. Les gestes au cabinet | IPL (dysfonction des glandes de Meibomius, rosacée oculaire) ; bouchons méatiques (déficit de production) ; incision de chalazion si échec des soins locaux au-delà de 4 à 6 semaines. | IPL non remboursée : 150 € la séance ; bouchons et incision pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires) |
 | 4. Les formes sévères | Sérum autologue, lentilles sclérales, greffe de membrane amniotique, occlusion définitive des points lacrymaux — patients orientés vers le service du CHNO des Quinze-Vingts, où j’exerce. | Prise en charge hospitalière |
@@ -5221,7 +5224,7 @@ L’**IPL** (*Intense Pulsed Light*) est une technique issue de la dermatologie,
 
 Le protocole comporte en général **3 à 4 séances espacées de 2 à 4 semaines**, puis des séances d’entretien selon l’évolution (souvent tous les 6 à 12 mois). Les soins des paupières doivent être poursuivis : l’IPL les complète, il ne les remplace pas.
 
-**Ce que disent les données :** plusieurs essais randomisés et méta-analyses rapportent une amélioration des symptômes et de la stabilité du film lacrymal après IPL dans la DGM, chez une majorité de patients ; le niveau de preuve reste toutefois modéré (protocoles hétérogènes, suivi souvent court), et le bénéfice s’entretient par les séances de rappel.
+**Ce que disent les données :** des essais randomisés et des méta-analyses montrent une amélioration de la stabilité du film lacrymal et du fonctionnement des glandes de Meibomius après IPL ; l’effet sur les symptômes est moins bien établi. Le niveau de preuve reste faible (protocoles hétérogènes, suivi souvent court), et le bénéfice s’entretient par les séances de rappel.
 
 **Contre-indications :** peau très foncée (phototypes V et VI), bronzage récent, grossesse, traitement photosensibilisant en cours, lésion cutanée suspecte ou tatouage dans la zone traitée. Les effets indésirables se limitent en règle à une rougeur transitoire de la peau. L’IPL n’est **pas prise en charge par l’Assurance maladie** : 150 € la séance, tarif annoncé lors de la consultation de bilan, avant toute décision.
 
@@ -5229,17 +5232,17 @@ Le protocole comporte en général **3 à 4 séances espacées de 2 à 4 semaine
 
 Lorsque la production de larmes est insuffisante, de petits **obturateurs en silicone** (ou en collagène résorbable, pour un essai) sont placés dans les points lacrymaux, au bord interne des paupières, afin de ralentir l’évacuation des larmes et de les garder plus longtemps au contact de l’œil.
 
-La pose se fait en consultation, en quelques minutes, sans douleur, d’abord sur les points inférieurs ; le geste est réversible et pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires). L’amélioration du confort concerne la majorité des patients ; un larmoiement gênant, l’expulsion spontanée du bouchon ou, rarement, une infection du canal lacrymal peuvent conduire à le retirer.
+La pose se fait en consultation, en quelques minutes, sans douleur, d’abord sur les points inférieurs ; le geste est réversible et pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires). Beaucoup de patients se disent soulagés, mais les essais ne permettent pas de chiffrer ce bénéfice ; un larmoiement gênant, l’expulsion spontanée du bouchon ou, plus rarement, une infection du canal lacrymal peuvent conduire à le retirer.
 
 #### Chalazion : du traitement médical à l’incision
 
 Le **chalazion** est un kyste inflammatoire d’une glande de Meibomius obstruée : une boule ferme, indolore ou peu douloureuse, dans l’épaisseur de la paupière. Il est bénin et non contagieux, à distinguer de l’orgelet, infection d’un follicule de cil, plus superficiel et douloureux. Les chalazions récidivants sont le signe d’une blépharite ou d’une rosacée sous-jacente, qu’il faut traiter pour éviter les récidives.
 
-**Le traitement médical suffit le plus souvent :** compresses chaudes et massages plusieurs fois par jour pendant plusieurs semaines, pommade antibio-corticoïde si besoin.
+**Le traitement médical suffit dans environ la moitié des cas :** compresses chaudes et massages plusieurs fois par jour pendant plusieurs semaines, pommade antibio-corticoïde si besoin.
 
 En cas de **persistance au-delà de 4 à 6 semaines**, de chalazion volumineux, abcédé ou gênant la vision (astigmatisme induit par la pression sur la cornée), je réalise une **incision-curetage** au cabinet, sous anesthésie locale : un geste d’une quinzaine de minutes, par la face interne de la paupière (pas de cicatrice visible), avec reprise immédiate des activités ; pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires).
 
-Le chalazion disparaît en une à deux semaines dans la grande majorité des cas ; un hématome de la paupière est possible les premiers jours, et une récidive survient surtout lorsque la blépharite n’est pas traitée. Toute lésion qui récidive toujours au même endroit ou d’aspect inhabituel fait l’objet d’une analyse au laboratoire.
+Le chalazion a disparu à 3 semaines dans près de 9 cas sur 10 ; un hématome de la paupière est possible les premiers jours, et une récidive survient surtout lorsque la blépharite n’est pas traitée. Toute lésion qui récidive toujours au même endroit ou d’aspect inhabituel fait l’objet d’une analyse au laboratoire.
 
 ##### Ce que montrent nos travaux sur le frottement oculaire
 
@@ -5397,10 +5400,10 @@ Dernière revue : 6 juillet 2026.
 
 Comprendre, corriger, freiner — de l’enfant à l’adulte
 
-La **myopie** est l’amétropie la plus fréquente dans les pays développés. Elle est liée à un **allongement de l’œil** ou, plus rarement, à un excès de puissance optique du cristallin ou de la cornée. Elle rend la vision floue de loin mais conserve souvent une bonne vision de près. Sa prévalence explose chez les enfants et adolescents dans le monde entier — l’OMS estime qu’environ **50 % de la population mondiale sera myope en 2050**.
+La **myopie** est l’amétropie la plus fréquente dans les pays développés. Elle est liée à un **allongement de l’œil** ou, plus rarement, à un excès de puissance optique du cristallin ou de la cornée. Elle rend la vision floue de loin mais conserve souvent une bonne vision de près. Sa prévalence explose chez les enfants et adolescents dans le monde entier. Selon une méta-analyse de 2016, reprise par l’OMS, environ **la moitié de la population mondiale pourrait être myope en 2050**.
 
 - **30-40 %** — Prévalence myopie en France (adulte)
-- **2 h / jour** — Temps dehors recommandé pour freiner chez l’enfant
+- **2 h / jour** — Temps dehors conseillé pour retarder l’apparition de la myopie
 - **50-60 %** — Réduction de progression avec verres Stellest/MiyoSmart
 
 #### Mécanisme
@@ -5439,7 +5442,7 @@ Freiner la progression myopique chez l’enfant est devenu un enjeu de santé pu
 
 ##### 1. Exposition à la lumière naturelle
 
-Objectif : **au moins 2 heures par jour à l’extérieur**. Effet dose-dépendant confirmé (étude ROTALS, 2015). C’est la mesure la plus simple, la moins chère et qui devrait être la première prescrite.
+Objectif : **1 à 2 heures par jour à l’extérieur**. Des essais randomisés en Chine (2015) et à Taïwan (2018) montrent qu’ajouter du temps dehors à l’école réduit l’apparition de la myopie, d’autant plus que ce temps est long. Chez l’enfant déjà myope, l’effet sur la progression est faible : le temps dehors ne remplace pas un traitement de freination.
 
 ##### 2. Verres correcteurs à freination intégrée
 
@@ -5447,13 +5450,13 @@ Objectif : **au moins 2 heures par jour à l’extérieur**. Effet dose-dépenda
 
 ##### 3. Atropine en collyre faible dose
 
-L’étude **LAMP (Low-concentration Atropine for Myopia Progression)** publiée en 2019 a démontré une efficacité significative de l’atropine à **0,05 %** chez l’enfant de 4 à 12 ans (meilleur équilibre efficacité/tolérance). Freination d’environ 50 % sur 2 ans.
+L’étude **LAMP** (Hong Kong, 2019), chez l’enfant de 4 à 12 ans, montre un effet proportionnel à la dose : en un an, la progression est réduite d’environ deux tiers avec l’atropine à **0,05 %** et d’environ un quart à 0,01 % par rapport au placebo ; l’effet se maintient la deuxième année.
 
 **Note réglementaire France :** les collyres d’atropine à 0,01 %, 0,025 % ou 0,05 % ne sont pas commercialisés sous forme de spécialité en France. Ils sont obtenus en **préparation magistrale hospitalière**, sur prescription d’un ophtalmologue.
 
 ##### 4. Orthokératologie (Ortho-K)
 
-Lentilles rigides de géométrie inversée portées la nuit, qui remodèlent la cornée et corrigent temporairement la myopie. La journée, l’enfant voit net sans aucune correction. Effet secondaire : freination myopique démontrée (méta-analyse Huang, 2016 : −45 % en moyenne). Nécessite une adaptation spécialisée et une hygiène rigoureuse.
+Lentilles rigides de géométrie inversée portées la nuit, qui remodèlent la cornée et corrigent temporairement la myopie. La journée, l’enfant voit net sans aucune correction. Effet secondaire : freination démontrée (méta-analyse Sun et al., 2015 : progression réduite d’environ 45 %). Nécessite une adaptation spécialisée et une hygiène rigoureuse.
 
 #### Quand consulter ?
 
@@ -5491,9 +5494,9 @@ Quand l’œil est trop court — symptômes, correction et précautions
 
 L’**hypermétropie** est une amétropie où l’image se forme **en arrière de la rétine**, en raison d’un œil trop court. Chez l’enfant et le jeune adulte, l’**accommodation cristallinienne** compense souvent le défaut : la vision reste nette, au prix d’une **fatigue visuelle** importante (asthénopie) et parfois d’un **strabisme accommodatif**. Avec l’âge, la perte de l’accommodation rend la correction indispensable.
 
-- **10-25 %** — Prévalence estimée en France (adulte)
+- **1 sur 4** — Adultes hypermétropes en Europe
 - **38-40 ans** — Âge typique de démasquage clinique
-- **× 3-4** — Risque de glaucome aigu si angle étroit
+- **Angle étroit** — À rechercher au bilan : risque de glaucome aigu
 
 #### Mécanisme
 
@@ -5585,15 +5588,15 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 - Description : Dépistage visuel de l’enfant : calendrier HAS, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 - Relu le : 2026-07-06
 
-Calendrier HAS 2016 — naissance, 9 mois, 2-4 ans, 6 ans
+Recommandations HAS (2002) et AFSOP (2021), de la naissance à 6 ans
 
-Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il suit un calendrier fixé par la **HAS (Haute Autorité de Santé, 2016)** et repose sur une collaboration entre pédiatre, médecin généraliste, PMI et ophtalmologue.
+Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il repose sur les recommandations de la **HAS** (2002 : bilan visuel à la naissance, entre 9 et 15 mois et entre 2 ans et demi et 4 ans), actualisées en 2021 par l’Association francophone de strabologie et d’ophtalmologie pédiatrique (**AFSOP**), et sur les examens de santé obligatoires de l’enfant, notés dans le carnet de santé.
 
-- **9-15 mois** — 1er examen ophtalmologique recommandé
-- **2-3 %** — Prévalence de l’amblyopie
-- **HAS 2016** — Référentiel de dépistage en France
+- **9-15 mois** — Premier bilan visuel recommandé (HAS)
+- **2-3 %** — Prévalence de l’amblyopie (Europe)
+- **HAS 2002 · AFSOP 2021** — Recommandations de dépistage en France
 
-#### Calendrier de dépistage (HAS 2016)
+#### Calendrier de dépistage (HAS 2002, AFSOP 2021)
 
 | Âge | Qui | Ce qu’on vérifie |
 |---|---|---|
@@ -5601,7 +5604,9 @@ Le **dépistage visuel de l’enfant** vise à repérer précocement les trouble
 | 2 semaines – 2 mois | Pédiatre, PMI | Lueur pupillaire, fixation d’un visage, poursuite visuelle débutante. |
 | 4 mois | Pédiatre, PMI | Poursuite oculaire complète, fixation stable, absence de strabisme constant. |
 | 9 mois (examen obligatoire) | Pédiatre, ophtalmologue | Préhension visuelle, absence de strabisme, dépistage des amétropies fortes. 1er bilan ophtalmologique recommandé. |
+| 12-15 mois | Ophtalmologue | Examen avec mesure de la réfraction sous cycloplégie si l’enfant est à risque (antécédents familiaux, prématurité…). |
 | 24 mois (examen obligatoire) | Pédiatre, ophtalmologue | Acuité par images (Lea, Pigassou), réfraction si doute, cover-test. |
+| Vers 3 ans | Orthoptiste ou médecin | Dépistage systématique : acuité de chaque œil, test de l’écran, photodépistage. |
 | 3 ans | Médecine scolaire | Acuité visuelle en images, dépistage amblyopie et strabisme latent. |
 | 4-5 ans | Médecine scolaire, ophtalmologue | Acuité visuelle chiffrée, vision binoculaire, dépistage avant la lecture. |
 | 6 ans (examen obligatoire) | Médecine scolaire | Acuité, vision binoculaire, réfraction sur prescription si doute. |
@@ -5614,7 +5619,7 @@ Le **dépistage visuel de l’enfant** vise à repérer précocement les trouble
 - **Cataracte congénitale** (leucocorie, lueur absente). Urgence : chirurgie avant 6 semaines pour cataracte unilatérale.
 - **Rétinoblastome** (leucocorie, strabisme, décollement). Urgence absolue.
 - **Glaucome congénital** (buphtalmie, larmoiement, photophobie).
-- **Strabisme constant** après 4-6 mois.
+- **Strabisme constant** à tout âge, ou strabisme même intermittent après 4 mois.
 - **Nystagmus** (mouvements oculaires anormaux).
 
 ##### 1-3 ans
@@ -5652,7 +5657,7 @@ La **réfraction sous cycloplégie** (collyre atropine ou cyclopentolate) est l�
 
 #### Strabisme de l’enfant
 
-Le strabisme est un défaut d’alignement des axes visuels qui touche **2 à 4 % des enfants**. Au-delà de 4 à 6 mois, une déviation oculaire n’est plus « physiologique » et impose un examen ophtalmologique. L’enjeu principal est la **prévention de l’amblyopie** : le cerveau « éteint » l’image de l’œil dévié pour éviter la vision double, au détriment de son développement visuel.
+Le strabisme est un défaut d’alignement des axes visuels qui touche **2 à 4 % des enfants**. Un strabisme permanent est anormal à tout âge ; après 4 mois, même un strabisme intermittent impose un examen ophtalmologique. L’enjeu principal est la **prévention de l’amblyopie** : le cerveau « éteint » l’image de l’œil dévié pour éviter la vision double, au détriment de son développement visuel.
 
 La prise en charge est multidisciplinaire (ophtalmologue, orthoptiste, strabologue-chirurgien si besoin) : **correction optique totale sous cycloplégie** en première étape — de nombreuses ésotropies accommodatives se corrigent avec les lunettes seules —, traitement de l’amblyopie par occlusion, puis chirurgie des muscles oculomoteurs en cas de déviation résiduelle. Un strabisme d’apparition brutale, quel que soit l’âge, doit faire consulter rapidement.
 
@@ -5660,12 +5665,12 @@ La prise en charge est multidisciplinaire (ophtalmologue, orthoptiste, strabolog
 
 La myopie de l’enfant progresse par **allongement de l’œil**, et chaque dioptrie supplémentaire augmente le risque à l’âge adulte de décollement de rétine, de glaucome et de maculopathie myopique — d’où l’intérêt de freiner son évolution dès qu’elle est rapide (≥ 0,5 D par an), particulièrement entre 6 et 12 ans.
 
-Les moyens de freination validés réduisent la progression d’environ **50 à 60 %** : **atropine à basse concentration** (collyre quotidien), **verres de freination** (technologies DIMS ou HAL), **orthokératologie** (lentilles rigides portées la nuit) ou lentilles souples à défocalisation périphérique. S’y ajoutent les mesures d’hygiène visuelle : temps quotidien en extérieur (au moins 1 à 2 heures) et pauses lors du travail en vision de près. Le choix se fait selon l’âge, la vitesse de progression et le mode de vie de l’enfant.
+Les moyens de freination validés réduisent la progression de la myopie d’**environ la moitié en moyenne**, avec des écarts selon la méthode et la dose : **verres de freination** (DIMS ou HAL), **orthokératologie**, **atropine à faible dose** (plus efficace à 0,05 % qu’à 0,01 %), lentilles souples à défocalisation périphérique. S’y ajoutent les mesures d’hygiène visuelle : le temps passé dehors (1 à 2 heures par jour), qui retarde surtout l’apparition de la myopie, et des pauses lors du travail de près. Le choix se fait selon l’âge, la vitesse de progression et le mode de vie de l’enfant.
 
 #### Signes devant amener à consulter sans attendre
 
 - **Leucocorie** (reflet blanc de la pupille sur photo au flash) : urgence absolue.
-- **Strabisme** constant ou intermittent récurrent après 4-6 mois.
+- **Strabisme** constant à tout âge, ou strabisme même intermittent après 4 mois.
 - Œil rouge avec larmoiement et photophobie chez le nourrisson (suspicion de glaucome congénital).
 - Enfant qui ferme un œil systématiquement ou qui penche la tête.
 - Nystagmus (mouvements oculaires anormaux).
@@ -5691,18 +5696,18 @@ Contenu rédigé et revu selon les recommandations de la [Société Française d
 
 Baisse visuelle unilatérale réversible — traitement précoce (< 7-8 ans)
 
-L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », est une **baisse d’acuité visuelle uni- ou bilatérale** sans lésion organique décelable, liée à une privation de stimulation visuelle pendant la période critique de développement (0 à 7-8 ans). Elle touche environ **2 à 3 % des enfants**. Son traitement précoce permet une récupération dans la majorité des cas.
+L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », est une **baisse d’acuité visuelle uni- ou bilatérale** sans lésion organique décelable, liée à une privation de stimulation visuelle pendant la période critique de développement (0 à 7-8 ans). Elle touche environ **2 à 3 % des enfants** en Europe. Son traitement précoce permet une récupération dans la majorité des cas.
 
-- **2-3 %** — Prévalence chez l’enfant
-- **< 7-8 ans** — Période critique pour traiter efficacement
+- **2-3 %** — Prévalence chez l’enfant (Europe)
+- **Avant 7 ans** — Période la plus favorable au traitement
 - **3 causes** — Strabisme / anisométropie / privation
 
 #### Mécanismes de l’amblyopie
 
 | Type | Cause |
 |---|---|
-| Amblyopie strabique | Un œil qui louche est « éteint » par le cerveau pour éviter la diplopie (vision double). 40 à 50 % des amblyopies. |
-| Amblyopie anisométropique | Différence de correction optique importante entre les deux yeux (> 1,5 D en hypermétropie, > 3 D en myopie, > 1,5 D en astigmatisme). L’œil moins net n’est pas investi par le cortex visuel. |
+| Amblyopie strabique | Un œil qui louche est « éteint » par le cerveau pour éviter la diplopie (vision double). Environ 4 amblyopies sur 10 dans les grands essais ; une sur quatre associe strabisme et anisométropie. |
+| Amblyopie anisométropique | Différence de correction optique importante entre les deux yeux (> 1,5 D en hypermétropie, > 3 D en myopie, > 1,5 D en astigmatisme). L’œil moins net n’est pas investi par le cortex visuel. C’est la cause la plus fréquente dans les études de population. |
 | Amblyopie bilatérale (isométropique) | Forte amétropie bilatérale non corrigée (hypermétropie > +5 D typiquement). |
 | Amblyopie de privation | Obstacle à la formation d’une image nette : cataracte congénitale, ptosis sévère, opacité cornéenne, hémangiome palpébral obstructif. C’est la forme la plus sévère et la plus difficile à récupérer. |
 
@@ -5710,7 +5715,7 @@ L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », 
 
 ##### Signes devant faire consulter un ophtalmologue
 
-- Strabisme intermittent ou constant après l’âge de 4-6 mois.
+- Strabisme constant à tout âge, ou strabisme même intermittent après 4 mois.
 - Enfant qui ferme un œil à la lumière ou pour regarder.
 - Tête penchée ou tournée constante (torticolis oculaire).
 - Enfant qui se rapproche de la télévision, tient les objets très près du visage, plisse les yeux.
@@ -5730,7 +5735,7 @@ L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », 
 
 ##### Étape 1 : correction optique totale
 
-Toujours en premier. Les lunettes doivent être portées **en permanence**. Pour les anisométropies modérées, la correction seule peut suffire en 6 à 18 semaines (PEDIG ATS5). C’est seulement en cas de persistance de l’amblyopie qu’on ajoute un traitement actif.
+Toujours en premier. Les lunettes doivent être portées **en permanence**. Pour les anisométropies, les lunettes seules améliorent l’acuité chez 3 enfants sur 4 et suffisent chez au moins 1 sur 4 ; l’amélioration peut prendre jusqu’à 30 semaines (PEDIG ATS5). C’est seulement en cas de persistance de l’amblyopie qu’on ajoute un traitement actif.
 
 ##### Étape 2 : traitement actif (occlusion ou pénalisation)
 
@@ -5754,7 +5759,7 @@ Chirurgie précoce d’une cataracte congénitale (< 6 semaines pour l’amblyop
 
 #### Pronostic
 
-Un traitement commencé avant 5 ans permet une **récupération d’acuité normale ou quasi-normale dans 70 à 80 % des cas** pour les amblyopies modérées. Le pronostic est moins bon pour les amblyopies sévères (< 1/10), de privation, ou pour un traitement débuté après 7 ans. Environ 25 % des enfants présentent une récidive dans les deux ans, d’où l’importance du suivi prolongé.
+Chez l’enfant de 3 à 7 ans atteint d’amblyopie modérée, **3 sur 4 atteignent environ 7/10 ou gagnent au moins 3 lignes** après 6 mois de traitement (essai ATS1). Le pronostic est moins bon pour les amblyopies profondes (moins de 1/10), de privation, ou traitées tardivement. Entre 7 et 12 ans, le traitement reste utile chez environ la moitié des enfants. Environ 1 enfant sur 4 récidive dans l’année qui suit l’arrêt, d’où un sevrage progressif et un suivi prolongé.
 
 ##### Auteur et révision médicale
 
