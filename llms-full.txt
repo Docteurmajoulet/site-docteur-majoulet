@@ -3534,9 +3534,9 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 - Abulafia A, Barrett GD, Kleinmann G, et al. *Prediction of refractive outcomes with toric intraocular lens implantation*. J Cataract Refract Surg. 2015;41(5):936-944. [doi:10.1016/j.jcrs.2014.08.036](https://doi.org/10.1016/j.jcrs.2014.08.036)
 - Vale C, Menezes C, Firmino-Machado J, et al. *Astigmatism management in cataract surgery with Precizon® toric intraocular lens: a prospective study*. Clin Ophthalmol. 2016;10:151-159. [doi:10.2147/OPTH.S91298](https://doi.org/10.2147/OPTH.S91298)
-- Lake JC, Victor G, Clare G, et al. *Toric intraocular lens versus limbal relaxing incisions for corneal astigmatism after phacoemulsification*. Cochrane Database Syst Rev. 2019. [doi:10.1002/14651858.CD012801.pub2](https://doi.org/10.1002/14651858.CD012801.pub2)
+- Lake JC, Victor G, Clare G, et al. *Toric intraocular lens versus limbal relaxing incisions for corneal astigmatism after phacoemulsification*. Cochrane Database Syst Rev. 2019;12(12):CD012801. [doi:10.1002/14651858.CD012801.pub2](https://doi.org/10.1002/14651858.CD012801.pub2)
 - Kane JX, Connell B. *A Comparison of the Accuracy of 6 Modern Toric Intraocular Lens Formulas*. Ophthalmology. 2020;127(11):1472-1486. [doi:10.1016/j.ophtha.2020.04.039](https://doi.org/10.1016/j.ophtha.2020.04.039)
-- Holland E, Lane S, Horn JD, et al. *The AcrySof Toric intraocular lens in subjects with cataracts and corneal astigmatism: a randomized, subject-masked, parallel-group, 1-year study*. Ophthalmology. 2010. [doi:10.1016/j.ophtha.2010.07.033](https://doi.org/10.1016/j.ophtha.2010.07.033)
+- Holland E, Lane S, Horn JD, et al. *The AcrySof Toric intraocular lens in subjects with cataracts and corneal astigmatism: a randomized, subject-masked, parallel-group, 1-year study*. Ophthalmology. 2010;117(11):2104-2111. [doi:10.1016/j.ophtha.2010.07.033](https://doi.org/10.1016/j.ophtha.2010.07.033)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aao.org](https://www.aao.org/)
 - Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants. [sfo-online.fr](https://www.sfo-online.fr/)
 
@@ -4042,7 +4042,7 @@ Les veines rétiniennes drainent le sang de la rétine vers le nerf optique puis
 
 - **2e** — Cause vasculaire rétinienne
 - **+60 ans** — Âge moyen de survenue
-- **1 sur 10** — Risque pour l’autre œil à 4 ans
+- **1 sur 8** — Risque pour l’autre œil à 4 ans
 
 #### Classification anatomique
 
@@ -4257,7 +4257,7 @@ L’**œdème maculaire cystoïde (OMC)** correspond à l’accumulation de liqu
 
 ##### Syndrome d’Irvine-Gass (OMC post-cataracte)
 
-Il survient typiquement dans les 3 mois qui suivent une phacoémulsification. Le mécanisme est **inflammatoire** : libération de prostaglandines intra-oculaires déclenchée par les manipulations chirurgicales, avec rupture de la barrière hémato-rétinienne. Les facteurs favorisants sont : rupture capsulaire peropératoire, diabète, occlusion veineuse antérieure, uvéite chronique, membrane épirétinienne préexistante, traitement par collyre à la prostaglandine (glaucome), facteur discuté.
+Le syndrome d’Irvine-Gass survient typiquement dans les 3 mois qui suivent une phacoémulsification. Le mécanisme est **inflammatoire** : libération de prostaglandines intra-oculaires déclenchée par les manipulations chirurgicales, avec rupture de la barrière hémato-rétinienne. Les facteurs favorisants sont : rupture capsulaire peropératoire, diabète, occlusion veineuse antérieure, uvéite chronique, membrane épirétinienne préexistante, traitement par collyre à la prostaglandine (glaucome), facteur discuté.
 
 ##### Œdème maculaire diabétique
 
@@ -5671,7 +5671,7 @@ Le **dépistage visuel de l’enfant** vise à repérer précocement les trouble
 | 2 semaines – 2 mois | Pédiatre, PMI | Lueur pupillaire, fixation d’un visage, poursuite visuelle débutante. |
 | 4 mois | Pédiatre, PMI | Poursuite oculaire complète, fixation stable, absence de strabisme constant. |
 | 9 mois (examen obligatoire) | Pédiatre, ophtalmologue | Préhension visuelle, absence de strabisme, dépistage des amétropies fortes. 1er bilan ophtalmologique recommandé. |
-| 12-15 mois | Ophtalmologiste | Examen avec mesure de la réfraction sous cycloplégie si l’enfant est à risque (antécédents familiaux, prématurité…). |
+| 12-15 mois | Ophtalmologue | Examen avec mesure de la réfraction sous cycloplégie si l’enfant est à risque (antécédents familiaux, prématurité…). |
 | 24 mois (examen obligatoire) | Pédiatre, ophtalmologue | Acuité par images (Lea, Pigassou), réfraction si doute, cover-test. |
 | Vers 3 ans | Orthoptiste ou médecin | Dépistage systématique : acuité de chaque œil, test de l’écran, photodépistage. |
 | 3 ans | Médecine scolaire | Acuité visuelle en images, dépistage amblyopie et strabisme latent. |
@@ -5774,7 +5774,7 @@ L’**amblyopie** (CIM-10 *H53.0*), improprement appelée « œil paresseux », 
 | Type | Cause |
 |---|---|
 | Amblyopie strabique | Un œil qui louche est « éteint » par le cerveau pour éviter la diplopie (vision double). Environ 4 amblyopies sur 10 dans les grands essais ; une sur quatre associe strabisme et anisométropie. |
-| Amblyopie anisométropique | Différence de correction optique importante entre les deux yeux (> 1,5 D en hypermétropie, > 3 D en myopie, > 1,5 D en astigmatisme). L’œil moins net n’est pas investi par le cortex visuel. La cause la plus fréquente dans les études de population. |
+| Amblyopie anisométropique | Différence de correction optique importante entre les deux yeux (> 1,5 D en hypermétropie, > 3 D en myopie, > 1,5 D en astigmatisme). L’œil moins net n’est pas investi par le cortex visuel. C’est la cause la plus fréquente dans les études de population. |
 | Amblyopie bilatérale (isométropique) | Forte amétropie bilatérale non corrigée (hypermétropie > +5 D typiquement). |
 | Amblyopie de privation | Obstacle à la formation d’une image nette : cataracte congénitale, ptosis sévère, opacité cornéenne, hémangiome palpébral obstructif. C’est la forme la plus sévère et la plus difficile à récupérer. |
 
@@ -5826,7 +5826,7 @@ Chirurgie précoce d’une cataracte congénitale (< 6 semaines pour l’amblyop
 
 #### Pronostic
 
-Chez l’enfant de 3 à 7 ans atteint d’amblyopie modérée, **3 sur 4 atteignent environ 7/10 ou gagnent au moins 3 lignes** après 6 mois de traitement (essai ATS1). Le pronostic est moins bon pour les amblyopies profondes (moins de 1/10), de privation, ou traitées tardivement. Après 7 ans, le traitement reste utile chez environ la moitié des enfants de 7 à 12 ans. Environ 1 enfant sur 4 récidive dans l’année qui suit l’arrêt, d’où un sevrage progressif et un suivi prolongé.
+Chez l’enfant de 3 à 7 ans atteint d’amblyopie modérée, **3 sur 4 atteignent environ 7/10 ou gagnent au moins 3 lignes** après 6 mois de traitement (essai ATS1). Le pronostic est moins bon pour les amblyopies profondes (moins de 1/10), de privation, ou traitées tardivement. Entre 7 et 12 ans, le traitement reste utile chez environ la moitié des enfants. Environ 1 enfant sur 4 récidive dans l’année qui suit l’arrêt, d’où un sevrage progressif et un suivi prolongé.
 
 ##### Auteur et révision médicale
 
