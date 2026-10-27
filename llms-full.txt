@@ -2025,6 +2025,8 @@ Diagnostic OCT et chirurgie par vitrectomie avec pelage
 
 Une **membrane épirétinienne (MER)** est une fine pellicule qui se forme à la surface de la rétine, le plus souvent dans sa partie centrale, la **macula**. En se contractant, elle plisse la rétine : les lignes droites paraissent déformées et la vision peut baisser progressivement.
 
+Une membrane épirétinienne ne s’opère pas toujours : une membrane peu gênante est simplement surveillée par OCT. Lorsque la gêne s’installe (lignes déformées, baisse de la vision), le Dr Majoulet propose une **vitrectomie avec pelage de la membrane**. L’opération se fait en ambulatoire, à la Clinique Jouvenet (Paris 16e), et dure 30 à 45 minutes. En règle, aucun gaz n’est laissé dans l’œil, donc pas de posture après l’opération ni de restriction pour l’avion ; chaque dossier est jugé au cas par cas. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. La vision récupère progressivement, sur 3 à 6 mois : le but de l’opération est d’abord de stopper sa dégradation.
+
 **Un avis sur une intervention de la rétine**
 
 Le Dr Majoulet vous reçoit en consultation libérale au Cabinet Ophtalife, à Boulogne-Billancourt. Les interventions libérales ont lieu à la Clinique Jouvenet, Paris 16.
@@ -2174,7 +2176,7 @@ Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **in
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
