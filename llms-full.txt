@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-27
 
 ## Identité et coordonnées
 
@@ -536,7 +536,7 @@ Une **urgence ophtalmologique** se définit par un risque de **perte visuelle ir
 | Céphalée brutale + troubles visuels + > 50 ans | Urgence (suspicion d’artérite à cellules géantes de Horton) |
 | Signes neurologiques (faiblesse, parole, face) + baisse de vision | Appel du [15](tel:15) (AVC) |
 
-#### Signes qui peuvent attendre une consultation programmée (48-72 h)
+#### Signes qui peuvent attendre une consultation programmée
 
 - Œil rouge sans douleur intense ni baisse de vision (conjonctivite).
 - Sensation de corps étranger léger, larmoiement transitoire.
@@ -556,7 +556,7 @@ Une **urgence ophtalmologique** se définit par un risque de **perte visuelle ir
 
 Le cabinet prend les **urgences ambulatoires aux heures d’ouverture** — lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h, au [01 84 19 11 66](tel:+33184191166) — (œil rouge, corps étranger superficiel, contrôle post-chirurgical, flashs et corps flottants récents nécessitant un fond d’œil dilaté, bilan post-traumatique sans plaie pénétrante).
 
-Pour les urgences graves (décollement de rétine, plaie pénétrante, OACR, glaucome aigu), l’adressage est immédiat vers un centre chirurgical 24h/24.
+Une suspicion de décollement de rétine ou d’occlusion de l’artère centrale de la rétine (OACR) est vue en urgence au cabinet aux heures d’ouverture. Une plaie pénétrante ou un glaucome aigu relèvent directement d’un service d’urgences ophtalmologiques 24h/24.
 
 #### Gestes de premier secours
 
@@ -578,7 +578,8 @@ Ne pas frotter. Rincer au sérum physiologique ou à l’eau claire. Si gêne pe
 |---|---|
 | Appel du [15](tel:15) immédiat | Signe neurologique associé, céphalée en coup de tonnerre, plaie pénétrante, projection chimique grave |
 | Immédiatement | Suspicion d’endophtalmie après une opération ou une injection : contacter immédiatement l’ophtalmologue ou se rendre aux urgences ophtalmologiques. |
-| < 6 h | Suspicion OACR, glaucome aigu, plaie oculaire, brûlure chimique |
+| < 4-6 h | Suspicion d’OACR (fenêtre thérapeutique) |
+| < 6 h | Glaucome aigu, plaie oculaire, brûlure chimique |
 | Le jour même | Voile noir ou rideau (décollement de rétine débutant) : le cabinet aux heures d’ouverture, sinon les urgences ophtalmologiques 24h/24 |
 | < 24 h | Occlusion veineuse (OVCR), uvéite aiguë avec douleur, kératite sévère |
 | 24-48 h | Flashs ou corps flottants récents, sans voile noir ni baisse brutale de la vision (fond d’œil dilaté) |
@@ -595,11 +596,11 @@ Tout signe neurologique associé (troubles de la parole, faiblesse d’un membre
 
 ##### Où aller en urgence ophtalmologique en Île-de-France ?
 
-Les trois services publics d’urgence ophtalmologique 24h/24 de référence en Île-de-France sont : le Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (28 rue de Charenton, Paris 12e), la Fondation Ophtalmologique Adolphe de Rothschild (29 rue Manin, Paris 19e) et l’Ophtalmopôle de l’Hôpital Cochin — AP-HP (27 rue du Faubourg Saint-Jacques, Paris 14e). Appelez le **15** en cas de traumatisme oculaire grave, de projection chimique ou de baisse de vision brutale des deux yeux ou accompagnée de signes neurologiques ; pour un décollement de rétine, rendez-vous directement dans l’un de ces services, ouverts 24h/24.
+Les trois services publics d’urgence ophtalmologique 24h/24 de référence en Île-de-France sont : le Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (28 rue de Charenton, Paris 12e), la Fondation Ophtalmologique Adolphe de Rothschild (29 rue Manin, Paris 19e) et l’Ophtalmopôle de l’Hôpital Cochin — AP-HP (27 rue du Faubourg Saint-Jacques, Paris 14e). Appelez le **15** en cas de traumatisme oculaire grave, de projection chimique ou de baisse brutale de la vision des deux yeux ou accompagnée de signes neurologiques ; pour un voile noir (suspicion de décollement de rétine), appelez le cabinet aux heures d’ouverture, sinon rendez-vous directement dans l’un de ces services, ouverts 24h/24.
 
 ##### Le cabinet du Dr Majoulet prend-il des urgences ?
 
-Le cabinet Ophtalife de Boulogne-Billancourt traite les urgences ambulatoires aux heures d’ouverture — lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h — (œil rouge, corps étranger superficiel, flashs/corps flottants récents, bilan post-traumatique léger). Pour les urgences nocturnes, le week-end, ou nécessitant un plateau chirurgical (décollement de rétine, plaie pénétrante, OACR), l’orientation se fait vers un centre hospitalier spécialisé.
+Le cabinet Ophtalife de Boulogne-Billancourt traite les urgences ambulatoires aux heures d’ouverture — lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h — (œil rouge, corps étranger superficiel, flashs/corps flottants récents, bilan post-traumatique léger). Une suspicion de décollement de rétine ou d’OACR y est vue en urgence aux heures d’ouverture ; pour l’OACR, on peut aussi aller directement à la Fondation Rothschild. La nuit, le dimanche, ou pour une plaie pénétrante, l’orientation se fait vers un service d’urgences ophtalmologiques 24h/24.
 
 ##### Peut-on faire une téléconsultation d’urgence en ophtalmologie ?
 
