@@ -8301,6 +8301,14 @@ article.pathology-content > .forme-box :is(ul, ol) {
         margin-inline: calc((100% - 812px) / 2);
     }
 }
+/* TECH69S (suite, maquette du 27/10 à valider) — tablette (48 à 60 em) : la colonne unique s'aligne sur le logo. Centrée,
+   elle partait 28 px (768 px) à 94 px (900 px) à droite du logo, un écart trop petit pour sembler voulu ; l'accueil et
+   /pathologies sont déjà alignés sur le logo à ces largeurs. Dès 60 em, la colonne redevient centrée. */
+@media (min-width: 48em) and (max-width: 59.9375em) {
+    :where(body.v1) main .container {
+        margin-left: 0;
+    }
+}
 /* TECH69S (suite) — intertitres de /publications et des pages légales au dessin de ceux des fiches : même taille, trait
    sable de 52 px au lieu d'un filet gris pleine largeur (publications) ou d'aucun trait (pages légales), 20-21,6 px → 24-29,6 px. */
 :where(body.page-publications, body.page-confidentialite, body.page-mentions-legales) main h2 {
