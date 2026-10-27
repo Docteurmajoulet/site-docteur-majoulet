@@ -1554,13 +1554,51 @@ L’**hémorragie intravitréenne** est un saignement dans la cavité vitréenne
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
-##### Parcours patient
+#### Parcours patient : chirurgie de la rétine
 
-1. **Consultation pré-opératoire** : confirmation diagnostique (OCT, fond d’œil), discussion des bénéfices et des risques, signature du consentement éclairé.
-2. **Bilan anesthésique** : consultation avec l’anesthésiste, bilan biologique éventuel selon les antécédents ; anticoagulants et antiagrégants gérés selon le protocole d’anesthésie — leur arrêt n’est en général pas nécessaire.
-3. **Intervention** : en ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.
-4. **Suites immédiates** : pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas.
-5. **Suivi post-opératoire** : contrôles à J7, M1 et M3 avec OCT. Collyres antibio-anti-inflammatoires pendant 1 mois.
+1.
+
+##### Avant l’opération Consultation pré-opératoire
+
+Confirmation diagnostique (OCT, fond d’œil), discussion des bénéfices et des risques, signature du consentement éclairé.
+
+2.
+
+##### Bilan anesthésique
+
+Consultation avec l’anesthésiste, bilan biologique éventuel selon les antécédents ; anticoagulants et antiagrégants gérés selon le protocole d’anesthésie — leur arrêt n’est en général pas nécessaire.
+
+3.
+
+##### Jour J Intervention
+
+En ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribulbaire) parfois potentialisée, vitrectomie 25G par trois petites incisions conjonctivales.
+
+4.
+
+##### Les premiers jours Suites immédiates
+
+Pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Collyres antibio-anti-inflammatoires pendant 1 mois.
+
+5.
+
+##### J7 Premier contrôle
+
+Contrôle avec OCT.
+
+6.
+
+##### 1 mois Deuxième contrôle
+
+Contrôle avec OCT.
+
+7.
+
+##### 3 mois Troisième contrôle
+
+Contrôle avec OCT.
+
+Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 #### Expertise du Dr Majoulet
 
@@ -2228,6 +2266,50 @@ Les trois temps chirurgicaux sont :
 **Trou refermé.** Les berges se sont rejointes : la rétine retrouve sa continuité au centre de la macula.
 
 Une **chirurgie combinée avec la cataracte** (phacoémulsification + implant) est souvent proposée en un seul temps opératoire chez les patients phaques de plus de 50 ans, pour éviter une seconde opération : si le cristallin est conservé, la cataracte progresse dans plus de 95 % des yeux dans les 2 ans qui suivent une vitrectomie.
+
+#### Le parcours d’une opération du trou maculaire, étape par étape
+
+De la consultation au troisième mois, ce que vous vivez à chaque étape. Le trait plus épais marque la période où la bulle de gaz est dans l’œil.
+
+1.
+
+##### Avant La consultation
+
+Examen et OCT au cabinet. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. Anticoagulants : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+
+2.
+
+##### Jour J L’opération, en ambulatoire
+
+Vitrectomie, pelage de la membrane limitante interne et bulle de gaz, le plus souvent du SF6, sous anesthésie locorégionale ou générale. Elle dure en général 30 à 45 minutes.
+
+3.
+
+##### Les premiers jours Face vers le bas
+
+Un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Collyres pendant 1 mois.
+
+Tant que la bulle est là, la vision de l’œil opéré est très floue, l’avion et l’altitude sont contre-indiqués, et le gaz doit être signalé à tout soignant (pas de protoxyde d’azote). Elle se résorbe en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6.
+
+4.
+
+##### J7 Premier contrôle
+
+Examen et OCT au cabinet.
+
+5.
+
+##### 1 mois Deuxième contrôle
+
+Examen et OCT. Fin des collyres.
+
+6.
+
+##### 3 mois Troisième contrôle
+
+Examen et OCT. La récupération visuelle est progressive, sur 3 à 6 mois.
+
+Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 #### Positionnement post-opératoire et suites
 
@@ -3033,13 +3115,51 @@ Le choix de l’implant est un élément clé de la consultation pré-opératoir
 
 [En savoir plus](https://docteurmajoulet.com/implants-multifocaux)
 
-##### Parcours patient
+##### Parcours patient : chirurgie de la cataracte
 
-1. **Consultation initiale** : diagnostic de cataracte, mesure de l’acuité, examen biomicroscopique, examen du fond d’œil dilaté.
-2. **Bilan biométrique** : kératométrie topographique, longueur axiale (IOL Master), comptage endothélial si nécessaire, calcul de l’implant (formules Barrett, Hill-RBF, Kane).
-3. **Choix de l’implant** : discussion détaillée du projet visuel (lecture, conduite, travail sur écran), des limites de chaque type d’IOL, et de la prise en charge (Sécurité sociale + mutuelle).
-4. **Intervention** : anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
-5. **Suites** : contrôles une semaine, puis un mois après l’opération. Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
+1.
+
+###### Avant l’opération Consultation initiale
+
+Diagnostic de cataracte, mesure de l’acuité, examen biomicroscopique, examen du fond d’œil dilaté.
+
+2.
+
+###### Bilan biométrique
+
+Kératométrie topographique, longueur axiale (IOL Master), comptage endothélial si nécessaire, calcul de l’implant (formules Barrett, Hill-RBF, Kane).
+
+3.
+
+###### Choix de l’implant
+
+Discussion détaillée du projet visuel (lecture, conduite, travail sur écran), des limites de chaque type d’IOL, et de la prise en charge (Sécurité sociale + mutuelle).
+
+4.
+
+###### Jour J Intervention
+
+Anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
+
+5.
+
+###### Les premiers jours Suites
+
+Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
+
+6.
+
+###### 1 semaine Premier contrôle
+
+Contrôle une semaine après l’opération.
+
+7.
+
+###### 1 mois Deuxième contrôle
+
+Contrôle un mois après l’opération.
+
+Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 **Phacoémulsification.** Le cristallin est fragmenté par ultrasons à travers une petite incision, puis aspiré.
 
