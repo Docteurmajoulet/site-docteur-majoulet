@@ -5243,6 +5243,10 @@ Parce que le glaucome est une maladie **chronique** et silencieuse qui ne se gu�
 
 La SLT (Trabéculoplastie sélective au laser) cible les cellules pigmentées du trabéculum. Elle abaisse la PIO de **20-30 %** pendant **3 à 5 ans**, est indolore, répétable, et évite la contrainte quotidienne des collyres. Depuis l’étude **LiGHT (Lancet 2019)**, elle est recommandée en **1re ligne du GPAO**.
 
+##### Comment se déroule le laser SLT au cabinet ?
+
+Le laser SLT (trabéculoplastie sélective), qui abaisse la pression de l’œil dans le glaucome, se fait au cabinet, en consultation ; il est indolore. Le Dr Majoulet le réalise en **deux séances espacées de 4 à 6 semaines** : la moitié inférieure du trabéculum (180°) lors de la première, la moitié supérieure lors de la seconde, plutôt qu’en une seule séance de 360°. Cette approche limite le pic de pression et l’inflammation après le laser, à efficacité comparable. La SLT peut être répétée. Elle ne dispense pas du suivi, qui reste à vie : pression de l’œil, OCT et champ visuel sont contrôlés régulièrement.
+
 ##### Quand faut-il opérer un glaucome ?
 
 Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal et/ou une SLT, ou en cas de **progression du champ visuel / OCT**, d’**intolérance** ou de **mauvaise observance**. Le choix de la technique dépend du stade et des antécédents : **MIGS** (iStent, Hydrus) en glaucome léger ; **PreserFlo, XEN, trabéculectomie, sclérectomie** en modéré-sévère ; **implants tubulaires** en réfractaire.
@@ -5265,7 +5269,7 @@ Majoulet A, Scemla B, Hamard P, et al. *Safety and Efficacy of the Preserflo Mic
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de la Société européenne du glaucome (EGS, 6e édition, 2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 août 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de la Société européenne du glaucome (EGS, 6e édition, 2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
