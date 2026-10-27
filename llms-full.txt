@@ -1839,7 +1839,7 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
-**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
+**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. La bulle se résorbe d’elle-même : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
 ##### Combien de temps d’arrêt de travail prévoir ?
 
@@ -1861,7 +1861,7 @@ Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 26 octobre 2026.
+Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
