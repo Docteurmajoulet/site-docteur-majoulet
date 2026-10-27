@@ -1289,7 +1289,7 @@ En pratique au cabinet, les molécules utilisées sont l’**aflibercept (Eylea,
 
 ##### Corticoïdes intravitréens
 
-- **Ozurdex®** (implant de dexaméthasone 0,7 mg, bio-résorbable, durée d’action 4 à 6 mois).
+- **Ozurdex®** (implant de dexaméthasone 0,7 mg, bio-résorbable, durée d’action 3 à 6 mois).
 - **Iluvien®** (implant d’acétonide de fluocinolone 190 µg, non résorbable, durée d’action jusqu’à 3 ans).
 - **Triamcinolone** (utilisation hors AMM dans certaines indications).
 
@@ -2488,7 +2488,7 @@ Chez le patient opéré de la cataracte, on distingue la luxation de l’**impla
 
 Une **baisse brutale ou rapidement progressive de la vision**, parfois fluctuante selon la position de la tête ; une **vision dédoublée d’un seul œil** (diplopie monoculaire) ; des éblouissements ou la perception du bord de l’implant dans le champ visuel ; parfois des corps flottants.
 
-**Quand consulter en urgence (24-48 h) :** baisse brutale de la vision, douleur oculaire, halos avec œil rouge, ou lentille visible dans la pupille. Ces signes peuvent témoigner d’une hypertonie oculaire ou d’un contact avec la cornée — créneaux dédiés au cabinet, appelez le [01 84 19 11 66](tel:+33184191166).
+**Quand consulter le jour même :** baisse brutale de la vision, douleur oculaire, halos avec œil rouge, ou lentille visible dans la pupille. Ces signes peuvent témoigner d’une hypertonie oculaire ou d’un contact avec la cornée — créneaux dédiés au cabinet, appelez le [01 84 19 11 66](tel:+33184191166).
 
 #### Est-ce une urgence ?
 
@@ -3176,7 +3176,7 @@ Offre une **indépendance large aux lunettes** à toutes les distances. En contr
 
 [Implant monofocal](https://docteurmajoulet.com/implants-monofocaux)
 
-[Vision nette à une distance choisie (souvent de loin), lunettes de près en complément. Implant intégralement remboursé.](https://docteurmajoulet.com/implants-monofocaux)
+[Vision nette à une distance choisie (souvent de loin), lunettes de près en complément. Implant sans surcoût.](https://docteurmajoulet.com/implants-monofocaux)
 
 [En savoir plus](https://docteurmajoulet.com/implants-monofocaux)
 
@@ -3285,7 +3285,7 @@ Les **implants intraoculaires monofocaux** sont les lentilles artificielles plac
 - **Principe** : un implant souple pliable (acrylique hydrophobe le plus souvent) remplace le cristallin, avec une puissance calculée sur mesure par biométrie optique.
 - **Vision** : nette à une seule distance (de loin le plus souvent) ; lunettes requises pour la lecture et l’ordinateur.
 - **Qualité d’image** : contraste préservé, pas de halos ni de dédoublement nocturne.
-- **Remboursement** : intégral (reste à charge nul en secteur 1 + mutuelle), contrairement aux implants toriques ou multifocaux.
+- **Remboursement** : l’implant monofocal est pris en charge par l’Assurance Maladie, sans surcoût, contrairement à certains implants toriques ou multifocaux dits premium. Les honoraires du chirurgien (secteur 2) sont présentés dans [honoraires et remboursement](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt#honoraires).
 - **Durée de vie** : définitive — l’implant ne se change pas.
 
 #### Indications : quand l’implant monofocal est-il proposé ?
@@ -3296,7 +3296,7 @@ L’implant monofocal est proposé à la **grande majorité des patients** opér
 - Votre astigmatisme cornéen est faible (< 1,0 D) — au-delà, un [implant torique](https://docteurmajoulet.com/implants-toriques) apporte un bénéfice démontré.
 - Vous présentez une pathologie rétinienne, un glaucome, un antécédent d’uvéite ou une cornée irrégulière — ces situations contre-indiquent les implants multifocaux, qui diminuent la sensibilité aux contrastes.
 - Vous exercez une activité professionnelle ou sportive exigeant une **qualité de vision optimale** en conditions de faible luminosité ou de conduite nocturne.
-- Vous souhaitez une **solution remboursée à 100 %**.
+- Vous ne souhaitez pas de **surcoût pour l’implant**.
 
 À l’inverse, si vous souhaitez vous *passer de lunettes à toutes les distances*, une discussion sur les [implants multifocaux ou EDOF](https://docteurmajoulet.com/implants-multifocaux) ou la **monovision** (un œil cadré de loin, l’autre à -1,25 à -1,75 D pour la vision intermédiaire) sera proposée.
 
@@ -3359,7 +3359,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 #### Alternatives aux implants monofocaux
 
 - **[Implants toriques](https://docteurmajoulet.com/implants-toriques)** : si astigmatisme cornéen ≥ 1,0 à 1,25 D, pour corriger l’astigmatisme en même temps que la cataracte.
-- **[Implants multifocaux / EDOF](https://docteurmajoulet.com/implants-multifocaux)** : vision satisfaisante de loin et de près sans lunettes chez la majorité des patients, au prix d’halos nocturnes possibles et d’une légère baisse de contraste. Non remboursés, reste à charge.
+- **[Implants multifocaux / EDOF](https://docteurmajoulet.com/implants-multifocaux)** : vision satisfaisante de loin et de près sans lunettes chez la majorité des patients, au prix d’halos nocturnes possibles et d’une légère baisse de contraste. Un surcoût non pris en charge par l’Assurance Maladie peut s’ajouter.
 - **Monovision avec implants monofocaux** : un œil visé en emmétropie (loin net), l’autre légèrement myope (-1,25 à -1,75 D) pour la vision intermédiaire à près. Recommandé après simulation avec lentilles de contact pendant quelques jours afin de vérifier la tolérance (stéréoscopie, conduite nocturne).
 
 #### Sources et références
@@ -3367,8 +3367,6 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 - Melles RB, Holladay JT, Chang WJ. *Accuracy of Intraocular Lens Calculation Formulas*. Ophthalmology. 2018;125(2):169-178. [doi:10.1016/j.ophtha.2017.08.027](https://doi.org/10.1016/j.ophtha.2017.08.027)
 - Kane JX, Chang DF. *Intraocular Lens Power Formulas, Biometry, and Intraoperative Aberrometry: A Review*. Ophthalmology. 2021;128(11):e94-e114. [doi:10.1016/j.ophtha.2020.08.010](https://doi.org/10.1016/j.ophtha.2020.08.010)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aaojournal.org](https://www.aaojournal.org/)
-- Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants. [sfo-online.fr](https://www.sfo-online.fr/)
-- Haute Autorité de Santé. *Implants intraoculaires monofocaux — Avis CNEDIMTS*. [has-sante.fr](https://www.has-sante.fr/)
 
 #### Prendre rendez-vous
 
@@ -3460,7 +3458,7 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 - **Incisions cornéennes relaxantes (LRI)** réalisées en même temps que la phacoémulsification : utiles pour les astigmatismes modérés (0,75 à 1,5 D). Moins prédictibles que l’implant torique au-delà.
 - **Retouche laser cornéenne** (LASIK, PKR) après implantation monofocale standard : possible, mais ajoute un acte.
-- **Implants monofocaux standards + lunettes** : option remboursée intégralement, parfaitement acceptable si le patient ne souhaite pas de surcoût.
+- **Implants monofocaux standards + lunettes** : option sans surcoût pour l’implant, parfaitement acceptable.
 - **Implants toriques multifocaux / EDOF** : pour les astigmates souhaitant une indépendance à toutes les distances — voir [implants multifocaux](https://docteurmajoulet.com/implants-multifocaux).
 
 #### Sources et références
@@ -3471,7 +3469,6 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 - Kane JX, Connell B. *A Comparison of the Accuracy of 6 Modern Toric Intraocular Lens Formulas*. Ophthalmology. 2020;127(11):1472-1486. [doi:10.1016/j.ophtha.2020.04.039](https://doi.org/10.1016/j.ophtha.2020.04.039)
 - Holland E, Lane S, Horn JD, et al. *The AcrySof Toric intraocular lens in subjects with cataracts and corneal astigmatism: a randomized, subject-masked, parallel-group, 1-year study*. Ophthalmology. 2010;117(11):2104-2111. [doi:10.1016/j.ophtha.2010.07.033](https://doi.org/10.1016/j.ophtha.2010.07.033)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aao.org](https://www.aao.org/)
-- Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants. [sfo-online.fr](https://www.sfo-online.fr/)
 
 #### Prendre rendez-vous
 
@@ -3586,7 +3583,6 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 - Woodward MA, Randleman JB, Stulting RD. *Dissatisfaction after multifocal intraocular lens implantation*. J Cataract Refract Surg. 2009;35(6):992-997. [doi:10.1016/j.jcrs.2009.01.031](https://doi.org/10.1016/j.jcrs.2009.01.031)
 - de Vries NE, Webers CA, Touwslager WR, et al. *Dissatisfaction after implantation of multifocal intraocular lenses*. J Cataract Refract Surg. 2011;37(5):859-865. [doi:10.1016/j.jcrs.2010.11.032](https://doi.org/10.1016/j.jcrs.2010.11.032)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aao.org](https://www.aao.org/)
-- Société Française d’Ophtalmologie (SFO) — Rapport 2023 : Chirurgie de la cataracte et implants.
 
 #### Prendre rendez-vous
 
@@ -4277,7 +4273,7 @@ Oui. Le risque d’OMC post-cataracte est majoré en cas de rétinopathie diabé
 
 ##### Le traitement est-il long ?
 
-Le traitement initial par collyres AINS et corticoïdes dure typiquement **2 à 3 mois**. La majorité des OMC post-chirurgicaux guérissent sous ce traitement. En cas d’échec, une injection sous-ténonienne de triamcinolone ou un implant intravitréen de dexaméthasone (Ozurdex) offrent 3 à 6 mois d’action.
+Le traitement initial par collyres AINS et corticoïdes dure typiquement **2 à 3 mois**. La majorité des OMC post-chirurgicaux guérissent en quelques mois, mais l’efficacité propre de chaque collyre est mal établie. En cas d’échec, une injection sous-ténonienne de triamcinolone ou un implant intravitréen de dexaméthasone (Ozurdex) offrent 3 à 6 mois d’action.
 
 ##### Les anti-VEGF sont-ils indiqués d’emblée ?
 
@@ -4497,9 +4493,9 @@ Chez l’enfant, des traitements permettent de **ralentir la progression** de la
 
 - **Collyres d’atropine faiblement dosée** (0,01 à 0,05 %), 1 goutte le soir : dans l’essai *LAMP*, l’effet augmente avec la dose, 0,05 % étant la plus efficace ; à 0,01 %, l’effet est faible et n’a pas été retrouvé dans un essai américain. *Note réglementaire* : ces collyres ne sont pas commercialisés en France et sont obtenus sous forme de **préparation magistrale hospitalière** par la pharmacie hospitalière, sur prescription d’un ophtalmologiste.
 - **Lentilles d’orthokératologie** (portées la nuit).
-- **Verres de lunettes à défocalisation périphérique** (MiYOSMART, Stellest).
+- **Verres de lunettes à défocalisation périphérique**.
 - **Lentilles souples à défocalisation**.
-- **Augmentation du temps passé en extérieur** (de l’ordre de 1 h 30 à 2 h par jour) et réduction du temps d’écran rapproché.
+- **Augmentation du temps passé en extérieur** (1 à 2 heures par jour) et réduction du temps d’écran rapproché.
 
 La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste pédiatrique**. Le suivi à l’âge adulte relève ensuite du rétinologue.
 
@@ -4549,7 +4545,7 @@ Les **néovaisseaux choroïdiens du myope fort** (*myopic choroidal neovasculari
 
 #### Qu’est-ce que la myopie forte ?
 
-La myopie est dite **forte** (ou « myopie pathologique ») lorsque la **longueur axiale** de l’œil dépasse **26,5 mm**, ou que l’équivalent sphérique est inférieur à **-6 dioptries**. L’allongement du globe étire mécaniquement la choroïde et la rétine, provoque un **staphylome postérieur** (déformation en cuvette du pôle postérieur), et fragilise la **membrane de Bruch**, fine couche qui sépare normalement la choroïde de l’épithélium pigmentaire. Des **ruptures linéaires** (« *lacquer cracks* ») apparaissent, par où des vaisseaux choroïdiens anormaux peuvent proliférer sous la rétine. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) pour l’ensemble des complications rétiniennes associées.
+La myopie est dite **forte** lorsqu’elle atteint **au moins 6 dioptries**, ou que la **longueur axiale** de l’œil atteint **26 mm**. On parle de **myopie pathologique** quand des lésions apparaissent au fond d’œil. L’allongement du globe étire mécaniquement la choroïde et la rétine, provoque un **staphylome postérieur** (déformation en cuvette du pôle postérieur), et fragilise la **membrane de Bruch**, fine couche qui sépare normalement la choroïde de l’épithélium pigmentaire. Des **ruptures linéaires** (« *lacquer cracks* ») apparaissent, par où des vaisseaux choroïdiens anormaux peuvent proliférer sous la rétine. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) pour l’ensemble des complications rétiniennes associées.
 
 **Néovaisseau du myope fort.** L’allongement du globe étire la choroïde et la rétine et fragilise la membrane de Bruch ; par ses ruptures, un vaisseau choroïdien anormal prolifère sous la rétine.
 
@@ -4563,7 +4559,7 @@ Les néovaisseaux maculaires du myope fort se révèlent typiquement par :
 - Parfois une **petite hémorragie maculaire** perçue comme une petite tache sombre.
 - L’atteinte est presque toujours **unilatérale** au début, mais une surveillance de l’œil controlatéral est indispensable.
 
-**Urgence semi-différée.** Toute métamorphopsie ou baisse brutale de la vision centrale chez un patient myope fort impose une consultation ophtalmologique dans les **1 à 2 semaines**. Plus le traitement est précoce, meilleur est le pronostic.
+**Consultation rapide.** Chez un patient myope fort, des métamorphopsies récentes justifient une consultation ophtalmologique sous **24-48 h**, et une baisse brutale de la vision, le jour même. Plus le traitement est précoce, meilleur est le pronostic.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -4775,7 +4771,7 @@ La **vitamine A palmitate** à haute dose (15 000 UI/j) a été historiquement p
 - **Thérapies géniques** pour d’autres gènes : *RPGR*, *USH2A*, *CEP290*, *CHM*, *MYO7A*.
 - **Optogénétique** (étude PIONEER avec GS030).
 - **Cellules souches** (hESC, iPSC-RPE).
-- **Implants rétiniens** (Argus II, Prima System).
+- **Prothèses rétiniennes** (implants électroniques, en cours d’évaluation).
 - **Thérapies pharmacologiques** neuroprotectrices (ciliary neurotrophic factor CNTF, N-acétylcystéine).
 
 ##### Réhabilitation basse vision
@@ -4848,7 +4844,7 @@ Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un sui
 
 L’HTA altère les vaisseaux rétiniens par un épaississement des parois artériolaires (artériosclérose rétinienne) et, en cas de poussée aiguë ou d’HTA maligne, par une rupture de la barrière hémato-rétinienne (hémorragies, exsudats, œdème papillaire).
 
-##### Classification Kirkendall (modifiée)
+##### Classification de Keith-Wagener-Barker
 
 - **Stade I** : rétrécissement artériolaire diffus.
 - **Stade II** : signe du croisement artério-veineux.
@@ -5403,8 +5399,8 @@ Comprendre, corriger, freiner — de l’enfant à l’adulte
 La **myopie** est l’amétropie la plus fréquente dans les pays développés. Elle est liée à un **allongement de l’œil** ou, plus rarement, à un excès de puissance optique du cristallin ou de la cornée. Elle rend la vision floue de loin mais conserve souvent une bonne vision de près. Sa prévalence explose chez les enfants et adolescents dans le monde entier. Selon une méta-analyse de 2016, reprise par l’OMS, environ **la moitié de la population mondiale pourrait être myope en 2050**.
 
 - **30-40 %** — Prévalence myopie en France (adulte)
-- **2 h / jour** — Temps dehors conseillé pour retarder l’apparition de la myopie
-- **50-60 %** — Réduction de progression avec verres Stellest/MiyoSmart
+- **1 à 2 h / jour** — Temps dehors conseillé pour retarder l’apparition de la myopie
+- **50-60 %** — Réduction de progression avec verres à microlentilles
 
 #### Mécanisme
 
@@ -5420,7 +5416,7 @@ Dans un œil emmétrope (sans correction), les rayons lumineux parallèles arriv
 |---|---|---|
 | Faible | −0,25 à −3 D | Correction pour la conduite, le cinéma |
 | Moyenne | −3 à −6 D | Correction nécessaire en permanence |
-| Forte | > −6 D ou longueur axiale > 26 mm | Suivi rétinien annuel indispensable (voir la fiche [myopie forte](https://docteurmajoulet.com/myopie-forte)) |
+| Forte | > −6 D ou longueur axiale ≥ 26 mm | Suivi rétinien annuel indispensable (voir la fiche [myopie forte](https://docteurmajoulet.com/myopie-forte)) |
 
 #### Moyens de correction
 
@@ -5446,7 +5442,7 @@ Objectif : **1 à 2 heures par jour à l’extérieur**. Des essais randomisés 
 
 ##### 2. Verres correcteurs à freination intégrée
 
-**Stellest®** (Essilor) : technologie HALT (Highly Aspherical Lenslet Target). **MiyoSmart®** (Hoya) : technologie DIMS (Defocus Incorporated Multiple Segments). Ces verres créent un défocus myopique périphérique qui freine l’élongation axile. Dans les essais cliniques (2 ans, 3 ans), la progression myopique est réduite de **50 à 60 %** par rapport aux verres standards. Pris en charge partiellement (LPP) sous conditions.
+Deux technologies de verres à microlentilles sont disponibles : HALT (Highly Aspherical Lenslet Target) et DIMS (Defocus Incorporated Multiple Segments). Ces verres créent un défocus myopique périphérique qui freine l’élongation axile. Dans les essais cliniques (2 ans, 3 ans), la progression myopique est réduite de **50 à 60 %** par rapport aux verres standards. Pris en charge partiellement (LPP) sous conditions.
 
 ##### 3. Atropine en collyre faible dose
 
@@ -5585,18 +5581,18 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Dépistage visuel de l’enfant
 
 - URL : https://docteurmajoulet.com/depistage-visuel-enfant
-- Description : Dépistage visuel de l’enfant : calendrier HAS, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
+- Description : Dépistage visuel de l’enfant : calendrier de dépistage, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 - Relu le : 2026-07-06
 
-Recommandations HAS (2002) et AFSOP (2021), de la naissance à 6 ans
+Recommandations ANAES (2002) et AFSOP (2021), de la naissance à 6 ans
 
-Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il repose sur les recommandations de la **HAS** (2002 : bilan visuel à la naissance, entre 9 et 15 mois et entre 2 ans et demi et 4 ans), actualisées en 2021 par l’Association francophone de strabologie et d’ophtalmologie pédiatrique (**AFSOP**), et sur les examens de santé obligatoires de l’enfant, notés dans le carnet de santé.
+Le **dépistage visuel de l’enfant** vise à repérer précocement les troubles visuels susceptibles d’entraîner une **amblyopie définitive** si laissés sans traitement avant 7-8 ans. Il repose sur les recommandations de 2002 de l’**ANAES**, devenue la HAS (bilan visuel à la naissance, entre 9 et 15 mois et entre 2 ans et demi et 4 ans), actualisées en 2021 par l’Association francophone de strabologie et d’ophtalmologie pédiatrique (**AFSOP**), et sur les examens de santé obligatoires de l’enfant, notés dans le carnet de santé.
 
-- **9-15 mois** — Premier bilan visuel recommandé (HAS)
+- **9-15 mois** — Premier bilan visuel recommandé (ANAES)
 - **2-3 %** — Prévalence de l’amblyopie (Europe)
-- **HAS 2002 · AFSOP 2021** — Recommandations de dépistage en France
+- **ANAES 2002 · AFSOP 2021** — Recommandations de dépistage en France
 
-#### Calendrier de dépistage (HAS 2002, AFSOP 2021)
+#### Calendrier de dépistage (ANAES 2002, AFSOP 2021)
 
 | Âge | Qui | Ce qu’on vérifie |
 |---|---|---|
@@ -5680,7 +5676,7 @@ Les moyens de freination validés réduisent la progression de la myopie d’**e
 
 #### Prise en charge financière
 
-La consultation ophtalmologique est remboursée par la Sécurité sociale. Les lunettes de l’enfant bénéficient du panier **100 % Santé** depuis le 1er janvier 2020 (montures et verres pris en charge à 100 % pour les enfants de moins de 16 ans). Les examens complémentaires (champ visuel, OCT) sont prescrits au besoin.
+La consultation ophtalmologique est remboursée par la Sécurité sociale. Les lunettes de l’enfant bénéficient du panier **100 % Santé** depuis le 1er janvier 2020 (montures et verres de l’offre 100 % Santé, sans reste à charge). Les examens complémentaires (champ visuel, OCT) sont prescrits au besoin.
 
 ##### Auteur et révision médicale
 

@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-10-26
+Dernière mise à jour : 2026-10-27
 
 ## Identité et coordonnées
 
@@ -169,7 +169,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## Enfant
 
-- [Dépistage visuel de l’enfant](https://docteurmajoulet.com/depistage-visuel-enfant): Dépistage visuel de l’enfant : calendrier HAS, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
+- [Dépistage visuel de l’enfant](https://docteurmajoulet.com/depistage-visuel-enfant): Dépistage visuel de l’enfant : calendrier de dépistage, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 - [Amblyopie (« œil paresseux »)](https://docteurmajoulet.com/amblyopie): Amblyopie ou œil paresseux : dépistage avant 7-8 ans, correction optique, occlusion. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 
 ## Optional
