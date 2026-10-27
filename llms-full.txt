@@ -3375,7 +3375,7 @@ La puissance de l’implant est calculée par **biométrie optique sans contact*
 - La **courbure cornéenne** (kératométrie) sur plusieurs axes.
 - La **profondeur de chambre antérieure** et l’épaisseur cristallinienne.
 
-Les formules de calcul utilisées au cabinet sont les formules de **dernière génération** : Barrett Universal II, Kane, Hill-RBF (intelligence artificielle), Emmetropia Verifying Optical (EVO). Ces formules permettent d’obtenir la **réfraction cible à ±0,50 dioptrie chez plus de 80 % des yeux** et à ±1,0 D chez plus de 95 %, selon les séries internationales publiées (Melles et al., *Ophthalmology* 2018 ; Kane & Chang, *Ophthalmology* 2021).
+Les formules de calcul utilisées au cabinet sont les formules de **dernière génération** : Barrett Universal II, Kane, Hill-RBF (intelligence artificielle), Emmetropia Verifying Optical (EVO). Ces formules font partie des plus précises selon les séries internationales publiées (Melles et al., *Ophthalmology* 2018 ; Kane & Chang, *Ophthalmology* 2021).
 
 S’ajoutent au bilan : une **OCT maculaire** systématique pour dépister une pathologie rétinienne associée (DMLA, membrane épimaculaire, œdème diabétique), une kératométrie topographique en cas d’astigmatisme, et un examen du segment antérieur à la lampe à fente.
 
@@ -4134,7 +4134,7 @@ Un **bilan cardiovasculaire complet** : pression artérielle, bilan lipidique, g
 
 ##### Combien d’injections d’anti-VEGF sont nécessaires ?
 
-Il est difficile de donner un chiffre exact : le traitement est adapté à chaque patient selon la réponse de l’œdème à l’OCT. Après une phase d’induction (habituellement 3 injections mensuelles), le schéma « Treat & Extend » permet d’espacer progressivement les injections. Le traitement est souvent nécessaire **pendant 1 à 3 ans**, parfois plus.
+Il est difficile de donner un chiffre exact : le traitement est adapté à chaque patient selon la réponse de l’œdème à l’OCT. Après une phase d’induction (habituellement 3 injections mensuelles), le schéma « Treat & Extend » permet d’espacer progressivement les injections. Le traitement dure souvent **plusieurs années** ; dans une étude de suivi à 4 ans, environ la moitié des patients n’avaient plus besoin d’injection.
 
 ##### Peut-on avoir une occlusion veineuse sur l’autre œil ?
 
@@ -4348,7 +4348,7 @@ Le traitement initial par collyres AINS et corticoïdes dure typiquement **2 à 
 
 ##### Les anti-VEGF sont-ils indiqués d’emblée ?
 
-**Non pour le syndrome d’Irvine-Gass** : le mécanisme est principalement inflammatoire, et les anti-inflammatoires (AINS, corticoïdes) sont plus efficaces que les anti-VEGF. En revanche, pour l’**œdème maculaire diabétique** ou post-occlusion veineuse, les anti-VEGF sont un traitement de première ligne.
+**Non pour le syndrome d’Irvine-Gass** : le mécanisme est surtout inflammatoire et les données sur les anti-VEGF y sont limitées ; le traitement commence par des anti-inflammatoires. En revanche, pour l’**œdème maculaire diabétique** ou post-occlusion veineuse, les anti-VEGF sont un traitement de première ligne.
 
 ##### La récupération visuelle est-elle complète ?
 
@@ -4660,7 +4660,7 @@ La distinction est importante car le pronostic et le rythme des injections ne so
 
 | Critère | NVC du myope fort | NVC de la DMLA |
 |---|---|---|
-| Âge de survenue | 40-55 ans | > 65 ans |
+| Âge de survenue | < 60 ans | > 65 ans |
 | Type (classification OCT) | Type 2 (sous-rétinien) ++ | Type 1 (sous-EP) le plus souvent |
 | Taille de la lésion | Petite (< 1 diamètre papillaire) | Plus grande, souvent extensive |
 | Exsudation | Faible (peu de fluide) | Importante (œdème, DEP) |
@@ -4698,7 +4698,7 @@ La surveillance de l’**œil adelphe** (sain) est également essentielle : le r
 
 ##### Les néovaisseaux du myope fort sont-ils les mêmes que ceux de la DMLA ?
 
-**Non.** Ils apparaissent plus tôt (40-55 ans), sont de plus petite taille, saignent et exsudent moins, et sont presque toujours de type 2 (sous-rétiniens). Leur réponse aux anti-VEGF est meilleure et plus durable : **2 à 3 injections annuelles** suffisent souvent, contre un rythme plus soutenu dans la DMLA. Le pronostic visuel global est également plus favorable.
+**Non.** Ils apparaissent plus tôt (le plus souvent avant 60 ans), sont de plus petite taille, saignent et exsudent moins, et sont presque toujours de type 2 (sous-rétiniens). Leur réponse aux anti-VEGF est meilleure et plus durable : **2 à 3 injections annuelles** suffisent souvent, contre un rythme plus soutenu dans la DMLA. Le pronostic visuel global est également plus favorable.
 
 ##### Combien d’injections vais-je recevoir ?
 
@@ -4710,7 +4710,7 @@ Le protocole habituel est **Pro Re Nata (PRN)** : une injection initiale, puis i
 
 ##### Vais-je récupérer ma vision ?
 
-Dans la majorité des cas, si le traitement est débuté précocement. Avec un traitement précoce, l’acuité s’améliore en moyenne de près de 3 lignes à un an dans les essais RADIANCE et MYRROR. À long terme, ce gain peut s’éroder, surtout du fait de l’atrophie autour de la cicatrice. Le résultat final dépend de la localisation de la néovascularisation (sous-fovéolaire, juxta ou extra-fovéolaire) et de l’ancienneté des lésions au moment du diagnostic.
+Dans la majorité des cas, si le traitement est débuté précocement : l’acuité s’améliore en moyenne de près de 3 lignes à un an dans les essais RADIANCE et MYRROR. À long terme, ce gain peut s’éroder, surtout du fait de l’atrophie autour de la cicatrice. Le résultat final dépend de la localisation de la néovascularisation (sous-fovéolaire, juxta ou extra-fovéolaire) et de l’ancienneté des lésions au moment du diagnostic.
 
 ##### Dois-je surveiller mon autre œil ?
 
@@ -4966,7 +4966,7 @@ Oui. Un bon équilibre diminue le risque mais ne l’annule pas. Au cabinet, un 
 
 ##### Peut-on télétransmettre les fonds d’œil (dépistage par rétinographe) ?
 
-Oui. Le dépistage par rétinographie non mydriatique, avec lecture à distance par un ophtalmologiste, est validé en France ; le réseau OPHDIAT l’utilise en Île-de-France depuis les années 2000. Il est utilisé en maison de santé ou en pharmacie dans certaines régions, avec relecture par un ophtalmologue. Il convient en particulier pour un premier dépistage ou un suivi sans anomalie antérieure. En cas d’anomalie détectée, une consultation ophtalmologique en présentiel est nécessaire pour compléter le bilan (examen complet, OCT, indications thérapeutiques).
+Oui. Le dépistage par rétinographie non mydriatique, avec lecture à distance par un ophtalmologiste, est validé en France ; le réseau OPHDIAT l’utilise en Île-de-France depuis les années 2000. Il est aussi proposé en maison de santé ou en pharmacie dans certaines régions. Il convient en particulier pour un premier dépistage ou un suivi sans anomalie antérieure. En cas d’anomalie détectée, une consultation ophtalmologique en présentiel est nécessaire pour compléter le bilan (examen complet, OCT, indications thérapeutiques).
 
 ##### Je suis enceinte et diabétique — que faire ?
 
