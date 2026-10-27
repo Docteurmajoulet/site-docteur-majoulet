@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-27
+Dernière mise à jour : 2026-10-28
 
 ## Identité et coordonnées
 
@@ -1220,13 +1220,13 @@ La rétine est protégée par la **barrière hémato-rétinienne**, qui empêche
 - **30G** — Aiguille ultra-fine
 - **1 sur 3 000 à 5 000** — Risque d’endophtalmie (< 0,05 %)
 
-##### Vos consignes, du jour de l’injection au 3e jour
+##### Vos consignes, avant et après l’injection
 
 1.
 
 ###### Avant de venir Se préparer
 
-Venir propre (douche, cheveux attachés, pas de maquillage), accompagné si possible. Pas d’arrêt nécessaire des anticoagulants.
+Venir propre (douche, cheveux attachés, pas de maquillage), accompagné si possible : ne conduisez pas dans les heures qui suivent l’injection. Pas d’arrêt nécessaire des anticoagulants ni des antiagrégants.
 
 2.
 
@@ -1238,7 +1238,7 @@ OCT maculaire sur place, le jour même. Injection en salle dédiée aux normes I
 
 ###### Les premières heures Vision floue, sensation de sable
 
-La vision peut rester floue quelques heures. Une sensation de sable, des démangeaisons ou un larmoiement peuvent survenir : les larmes artificielles sont recommandées.
+La vision peut rester floue quelques heures. Une sensation de sable, des démangeaisons ou un larmoiement peuvent survenir : les larmes artificielles sont recommandées. Une petite tache rouge sur le blanc de l’œil (hémorragie conjonctivale) est bénigne ; de nouvelles mouches volantes (bulles d’air) apparaissent parfois, transitoires.
 
 4.
 
@@ -1248,13 +1248,13 @@ Collyre antiseptique pendant 3 jours. Pas de piscine pendant 48 h, et éviter de
 
 5.
 
-###### Ensuite Prochaine injection
+###### Ensuite Prochain rendez-vous
 
-Le rythme des injections suivantes dépend du protocole choisi et de l’aspect de la rétine à l’OCT.
+Le rythme des rendez-vous et des injections suivantes dépend du protocole choisi et de l’aspect de la rétine à l’OCT.
 
-**Signes d’alerte, consultation en urgence :** douleur oculaire intense et croissante, baisse visuelle significative (au-delà du flou des premières heures), œil très rouge, photophobie marquée. Cabinet aux heures d’ouverture ; lorsqu’il est fermé, urgences ophtalmologiques (Hôpital Cochin, Fondation Rothschild ou Quinze-Vingts, 01 40 02 16 80).
+**Signes d’alerte, consultation en urgence :** douleur oculaire intense et croissante, baisse visuelle significative (au-delà du flou des premières heures), œil très rouge, photophobie marquée. Cabinet aux heures d’ouverture ([01 84 19 11 66](tel:+33184191166)) ; lorsqu’il est fermé, urgences ophtalmologiques : Quinze-Vingts ([01 40 02 16 80](tel:+33140021680)), Fondation Rothschild ([01 48 03 68 84](tel:+33148036884)) ou Hôpital Cochin ([01 58 41 23 00](tel:+33158412300)).
 
-Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
+Ces repères ne remplacent pas les consignes données au cabinet. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 ##### Avant l’injection
 
@@ -2158,9 +2158,9 @@ Vitrectomie et pelage de la membrane, sous anesthésie locorégionale ou génér
 
 3.
 
-##### Les premiers jours Pas de position particulière
+##### Les premiers jours En règle, pas de position particulière
 
-Sans gaz, pas de posture ni de contre-indication au voyage aérien. Collyres pendant 1 mois.
+Sans gaz, pas de posture ni de contre-indication au voyage aérien. Si un gaz a été nécessaire, une posture et l’interdiction de l’avion s’appliquent tant que la bulle est présente. Collyres pendant 1 mois.
 
 4.
 
