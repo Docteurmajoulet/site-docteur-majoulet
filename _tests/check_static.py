@@ -440,6 +440,13 @@ def check(root):
         _t = open(_f, encoding='utf-8', errors='replace').read()
         for m in re.finditer(r'^(?:<{7}|>{7}|\|{7})(?: |$)|^={7}$', _t, re.M):
             E(f'{os.path.basename(_f)}:{_t.count(chr(10), 0, m.start()) + 1} : marqueur de conflit git « {m.group(0).strip()} » — TECH69X'); break
+    # TECH69AB-2026-10-28 : chaque <article> porte un intertitre à son propre niveau, pas seulement dans des <section>
+    # imbriquées (avertissement « Article lacks heading » du W3C, qui ne tourne qu'en CI : /en le 28/10).
+    for name, pg in pages.items():
+        for m in re.finditer(r'<article\b[^>]*>(.*?)</article>', pg.txt, re.S):
+            corps = re.sub(r'<(section|aside|nav)\b.*?</\1>', '', m.group(1), flags=re.S)
+            if not re.search(r'<h[1-6]\b', corps):
+                E(f'{name}:{pg.txt.count(chr(10), 0, m.start()) + 1} : <article> sans intertitre à son niveau (W3C « Article lacks heading ») — TECH69AB')
     # TECH69AA-2026-10-28 : aucune entité HTML (&nbsp;, &gt;…) dans un JSON-LD. Le contenu d'un <script> n'est pas décodé :
     # Google et les assistants liraient « &nbsp; » en toutes lettres. Trouvé le 28/10 sur /cataracte (FAQ) et /dechirure (« &gt; 50 ans »).
     for name, pg in pages.items():
