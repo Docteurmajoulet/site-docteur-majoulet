@@ -625,7 +625,7 @@ La téléconsultation a une utilité limitée en urgence ophtalmologique : elle 
 
 ##### Combien de temps peut-on attendre pour voir un ophtalmologue après un flash lumineux ou des corps flottants ?
 
-L’apparition récente de flashs lumineux ou de nombreux corps flottants justifie un fond d’œil dilaté dans les 24 à 48 heures. En effet, une déchirure rétinienne associée au décollement postérieur du vitré est retrouvée dans environ 10 à 15 % des cas, et un traitement laser de barrage précoce permet d’éviter l’évolution vers un décollement de rétine constitué.
+L’apparition récente de flashs lumineux ou de nombreux corps flottants justifie un fond d’œil dilaté dans les 24 à 48 heures. En effet, une déchirure rétinienne associée au décollement postérieur du vitré est retrouvée chez environ 1 patient sur 7 (14 % dans une méta-analyse de 17 études, [JAMA 2009](https://doi.org/10.1001/jama.2009.1714)), et un traitement laser de barrage précoce permet d’éviter l’évolution vers un décollement de rétine constitué.
 
 #### Pathologies d’urgence abordées sur le site
 
@@ -1099,7 +1099,7 @@ Le protocole habituel est :
 1. **Phase d’induction** : 3 à 4 injections mensuelles pour contrôler l’œdème et les néovaisseaux.
 2. **Phase d’entretien « Treat & Extend »** : intervalle progressivement adapté (de 6 à 16 semaines) selon la réponse observée sur l’OCT à chaque visite.
 
-Les études ont montré qu’un traitement précoce et régulier permet **de stabiliser voire d’améliorer la vision** dans la majorité des cas. Un suivi à long terme est nécessaire car la maladie reste chronique.
+Les études ont montré qu’un traitement précoce et régulier permet **de stabiliser voire d’améliorer la vision** dans la majorité des cas (essais [MARINA, NEJM 2006](https://doi.org/10.1056/NEJMoa054481) et [ANCHOR, NEJM 2006](https://doi.org/10.1056/NEJMoa062655)). Un suivi à long terme est nécessaire car la maladie reste chronique.
 
 #### Prise en charge de la DMLA atrophique
 
@@ -1130,7 +1130,7 @@ Elles sont réalisées **sous anesthésie locale par collyre**. La majorité des
 
 ##### La DMLA rend-elle aveugle ?
 
-La DMLA **n’entraîne jamais de cécité complète** : la vision périphérique est toujours préservée. Elle altère la vision centrale (lecture, visages, conduite). Les traitements modernes permettent de stabiliser voire d’améliorer la vision dans la majorité des formes exsudatives.
+La DMLA **n’entraîne jamais de cécité complète** : la vision périphérique est toujours préservée. Elle altère la vision centrale (lecture, visages, conduite). Les traitements modernes permettent de stabiliser voire d’améliorer la vision dans la majorité des formes exsudatives (essais [MARINA, NEJM 2006](https://doi.org/10.1056/NEJMoa054481) et [ANCHOR, NEJM 2006](https://doi.org/10.1056/NEJMoa062655)).
 
 ##### Peut-on prévenir la DMLA ?
 
@@ -3087,7 +3087,7 @@ Transitoirement dans les premiers jours, liée à la modification de l’interfa
 
 Le vitré adhère normalement à la rétine à plusieurs endroits : autour du nerf optique, autour de la macula, et à la **base du vitré** en périphérie. Lors du décollement, si une adhérence est anormalement forte, le vitré peut **tirer sur la rétine** et provoquer :
 
-- Une **déchirure rétinienne** (10-15 % des cas). Voir [Déchirure rétinienne](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
+- Une **déchirure rétinienne** (environ 1 cas sur 7 : 14 % dans une méta-analyse de 17 études, [JAMA 2009](https://doi.org/10.1001/jama.2009.1714)). Voir [Déchirure rétinienne](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 - Une **hémorragie intravitréenne** si un vaisseau rétinien est lésé.
 - Un **décollement de rétine** rhegmatogène si une déchirure laisse passer du liquide sous la rétine. Voir [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
 
