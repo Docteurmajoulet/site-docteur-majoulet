@@ -5435,7 +5435,7 @@ Le laser SLT (trabéculoplastie sélective), qui abaisse la pression de l’œil
 
 ##### Le laser SLT a-t-il des effets secondaires ?
 
-Ils sont le plus souvent **légers et passagers** : une petite inflammation de l’œil et une hausse temporaire de la pression oculaire dans les heures qui suivent le laser. Des complications plus sérieuses, comme un œdème de la macula, sont rares, et surtout décrites chez des patients déjà opérés de l’œil ([revue de la littérature, J Clin Med 2026](https://doi.org/10.3390/jcm15197510)). Dans l’étude LiGHT, qui a comparé le laser et les collyres chez 718 patients, 74 % des patients traités d’abord par laser n’avaient pas besoin de collyre trois ans plus tard ([Gazzard et al., Lancet 2019](https://doi.org/10.1016/S0140-6736(18)32213-X)).
+Ils sont le plus souvent **légers et passagers** : une hausse temporaire de la pression oculaire dans les heures qui suivent le laser, et une petite inflammation passagère de l’œil. Des complications plus sérieuses, comme un œdème de la macula, sont rares, et surtout décrites chez des patients déjà opérés de l’œil ([revue de la littérature, J Clin Med 2026](https://doi.org/10.3390/jcm15197510)). Dans l’étude LiGHT, qui a comparé le laser et les collyres chez 718 patients, 74 % des patients traités d’abord par laser n’avaient pas besoin de collyre trois ans plus tard ([Gazzard et al., Lancet 2019](https://doi.org/10.1016/S0140-6736(18)32213-X)).
 
 ##### Quand faut-il opérer un glaucome ?
 
