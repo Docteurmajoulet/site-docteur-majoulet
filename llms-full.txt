@@ -1133,7 +1133,7 @@ La DMLA **n’entraîne jamais de cécité complète** : la vision périphériqu
 
 ##### Peut-on prévenir la DMLA ?
 
-Oui, partiellement : **arrêt du tabac** (facteur de risque majeur), alimentation riche en légumes verts (lutéine/zéaxanthine) et en oméga-3, protection solaire (lunettes UV), contrôle du poids et activité physique régulière. La complémentation AREDS2 est indiquée uniquement dans les formes intermédiaires à évoluées sur prescription médicale.
+Oui, partiellement : **arrêt du tabac** (facteur de risque majeur), alimentation riche en légumes verts (lutéine/zéaxanthine) et en oméga-3, protection solaire (lunettes UV), contrôle du poids et activité physique régulière. La complémentation AREDS2 est indiquée, sur prescription médicale, dans les formes intermédiaires et lorsque l’atrophie n’a pas atteint le centre de la vision.
 
 ##### Combien de temps durent les injections d’anti-VEGF ?
 
@@ -1147,7 +1147,7 @@ Oui. Une **déformation nouvelle des lignes droites** ou une tache centrale réc
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1183,7 +1183,7 @@ Avec l’âge, des dépôts appelés **drusen** s’accumulent sous la rétine c
 
 L’évolution est **très variable d’une personne à l’autre** — souvent sur 5 à 10 ans ou plus. La vision périphérique est toujours préservée : la DMLA sèche ne rend pas aveugle au sens strict.
 
-#### Pourquoi n’y a-t-il pas encore de traitement en France ?
+#### Pourquoi aucun médicament n’est-il encore autorisé en France ?
 
 Deux médicaments (inhibiteurs du complément en injection intravitréenne) ont été approuvés **aux États-Unis** pour l’atrophie géographique : ils ralentissent la progression des lésions sans restaurer la vision perdue. L’agence européenne du médicament (EMA) a estimé que leur bénéfice clinique démontré était insuffisant au regard de leurs risques et **n’a pas délivré d’autorisation en Europe**. La recherche reste très active (nouvelles molécules, thérapie génique, rétine artificielle dans les formes évoluées) ; cette page sera mise à jour si un traitement devient disponible en France.
 
@@ -1191,19 +1191,19 @@ Deux médicaments (inhibiteurs du complément en injection intravitréenne) ont 
 
 Plusieurs essais testent en France de nouveaux traitements de l’atrophie géographique. Chacun a ses propres critères d’entrée (stade, taille de l’atrophie, acuité visuelle) ; nous pouvons en parler en consultation.
 
-- **Des injections sous la peau** qui freinent une partie du système immunitaire, le complément (phase 3, recrute) : [NCT06541704](https://clinicaltrials.gov/study/NCT06541704).
-- **Des comprimés ou des gélules** : une nouvelle molécule (phase 2, recrute), [NCT07441642](https://clinicaltrials.gov/study/NCT07441642) ; un médicament déjà utilisé dans la sclérose en plaques, essai de l’AP-HP (phase 2, recrute), [NCT04292080](https://clinicaltrials.gov/study/NCT04292080).
-- **Un collyre**, lorsque l’atrophie n’a pas atteint le centre de la vision (phase 2, recrute) : [NCT06659549](https://clinicaltrials.gov/study/NCT06659549).
-- **Une thérapie génique sans virus**, injectée dans l’œil (phase 2, ouverture prévue) : [NCT07705568](https://clinicaltrials.gov/study/NCT07705568).
-- **Pour les formes très évoluées**, un petit télescope implanté dans l’œil, qui aide à lire sans soigner la maladie (recrute) : [NCT07164378](https://clinicaltrials.gov/study/NCT07164378).
+- **Des injections sous la peau** qui freinent une partie du système immunitaire, le complément (phase 3, recrute) : [fiche de l’essai NCT06541704](https://clinicaltrials.gov/study/NCT06541704).
+- **Des gélules** : une nouvelle molécule (phase 2, recrute), [fiche de l’essai NCT07441642](https://clinicaltrials.gov/study/NCT07441642) ; un médicament déjà utilisé dans la sclérose en plaques, essai de l’AP-HP (phase 2, recrute), [fiche de l’essai NCT04292080](https://clinicaltrials.gov/study/NCT04292080).
+- **Un collyre**, lorsque l’atrophie n’a pas atteint le centre de la vision (phase 2, recrute) : [fiche de l’essai NCT06659549](https://clinicaltrials.gov/study/NCT06659549).
+- **Une thérapie génique sans virus**, injectée dans l’œil (phase 2, ouverture prévue) : [fiche de l’essai NCT07705568](https://clinicaltrials.gov/study/NCT07705568).
+- **Pour les formes très évoluées**, un petit télescope implanté dans l’œil, conçu pour aider à lire, sans soigner la maladie (recrute) : [fiche de l’essai NCT07164378](https://clinicaltrials.gov/study/NCT07164378).
 
-Trois autres essais ont fini de recruter et suivent leurs patients : une injection dans l’œil qui freine le complément ([NCT06510816](https://clinicaltrials.gov/study/NCT06510816)), un comprimé ([NCT05949593](https://clinicaltrials.gov/study/NCT05949593)) et un implant placé sous la rétine, qui rend une vision partielle dans les formes très évoluées ([NCT04676854](https://clinicaltrials.gov/study/NCT04676854)). Relevé du 28 octobre 2026 sur les registres ClinicalTrials.gov et européen (CTIS) : ces informations changent vite.
+Trois autres essais ont fini de recruter et suivent leurs patients : une injection dans l’œil qui freine le complément ([fiche de l’essai NCT06510816](https://clinicaltrials.gov/study/NCT06510816)), un comprimé ([fiche de l’essai NCT05949593](https://clinicaltrials.gov/study/NCT05949593)) et un implant placé sous la rétine, conçu pour rendre une vision partielle dans les formes très évoluées ([fiche de l’essai NCT04676854](https://clinicaltrials.gov/study/NCT04676854)). Relevé du 28 octobre 2026 sur les registres ClinicalTrials.gov et européen (CTIS) : ces informations changent vite.
 
 #### Ce que l’on peut faire aujourd’hui
 
 ##### Compléments AREDS2 — dans les formes intermédiaires
 
-La formule **AREDS2** (vitamines C et E, lutéine, zéaxanthine, zinc et cuivre) réduit le risque de progression vers une forme évoluée dans les **formes intermédiaires**, et lorsque l’atrophie n’a pas atteint le centre de la vision. Ce bénéfice a été démontré par l’essai AREDS (2001) ; l’essai AREDS2 (2013) a remplacé le bêta-carotène par la lutéine et la zéaxanthine. Une analyse plus récente de ces deux essais suggère qu’elle ralentit aussi l’avancée de l’atrophie vers le centre. Elle se prend sur prescription, au long cours ; elle n’a pas d’intérêt démontré aux stades très précoces ni en prévention chez le sujet sain.
+La formule **AREDS2** (vitamines C et E, lutéine, zéaxanthine, zinc et cuivre) réduit le risque de progression vers une forme évoluée dans les **formes intermédiaires**, et lorsque l’atrophie n’a pas atteint le centre de la vision. Ce bénéfice a été démontré par l’essai AREDS (2001) ; l’essai AREDS2 (2013) a conduit à remplacer le bêta-carotène par la lutéine et la zéaxanthine. Une analyse plus récente de ces deux essais suggère qu’elle ralentit aussi l’avancée de l’atrophie vers le centre. Elle se prend sur prescription, au long cours ; elle n’a pas d’intérêt démontré aux stades très précoces ni en prévention chez le sujet sain.
 
 ##### Hygiène de vie
 
@@ -1229,7 +1229,7 @@ Dans les formes évoluées touchant le centre de la macula, la **rééducation b
 
 ##### Existe-t-il un traitement de la DMLA sèche ?
 
-**Oui, en partie.** Dans les formes intermédiaires, et tant que l’atrophie n’a pas atteint le centre de la vision, une association de vitamines C et E, de lutéine, de zéaxanthine et de zinc (formule AREDS2), prise chaque jour sur prescription, réduit le risque d’aggravation. Aucun médicament n’est encore autorisé en France pour la **DMLA sèche**, ou atrophique : les deux médicaments injectés dans l’œil approuvés aux États-Unis n’ont pas obtenu d’autorisation en Europe, l’agence européenne du médicament (EMA) jugeant que le ralentissement des lésions ne s’accompagnait pas d’un bénéfice démontré sur la vision. Mais de **nombreuses études sont en cours**, y compris en France : des injections, sous la peau ou dans l’œil, qui freinent une partie du système immunitaire (le complément), des comprimés ou des gélules, un collyre et une thérapie génique. La prise en charge repose aussi sur l’arrêt du tabac et alimentation riche en légumes verts et en poissons gras ; **OCT maculaire tous les 6 mois** au cabinet ; **grille d’Amsler une fois par jour**, chaque œil séparément. Une déformation nouvelle des lignes droites peut signaler le passage à une forme humide, qui se traite par injections : elle justifie une consultation sous 24-48 h.
+**Oui, en partie.** Dans les formes intermédiaires, et tant que l’atrophie n’a pas atteint le centre de la vision, une association de vitamines C et E, de lutéine, de zéaxanthine, de zinc et de cuivre (formule AREDS2), prise chaque jour sur prescription, réduit le risque d’aggravation. Aucun médicament n’est encore autorisé en France pour la **DMLA sèche**, ou atrophique : les deux médicaments injectés dans l’œil approuvés aux États-Unis n’ont pas obtenu d’autorisation en Europe, l’agence européenne du médicament (EMA) jugeant que le ralentissement des lésions ne s’accompagnait pas d’un bénéfice démontré sur la vision. Mais de **nombreuses études sont en cours**, y compris en France : des injections, sous la peau ou dans l’œil, qui freinent une partie du système immunitaire (le complément), des comprimés ou des gélules, un collyre et une thérapie génique. La prise en charge repose aussi sur la prévention et la surveillance : arrêt du tabac et alimentation riche en légumes verts et en poissons gras ; **OCT maculaire tous les 6 mois** au cabinet ; **grille d’Amsler une fois par jour**, chaque œil séparément. Une déformation nouvelle des lignes droites peut signaler le passage à une forme humide, qui se traite par injections : elle justifie une consultation sous 24-48 h.
 
 ##### La DMLA sèche devient-elle toujours humide ?
 
@@ -1434,7 +1434,7 @@ Utilisé dans certains essais thérapeutiques ou chez des patients difficiles à
 
 ##### L’injection dans l’œil est-elle douloureuse ?
 
-**Non, elle est indolore** : elle se fait **sous anesthésie locale**, par un collyre appliqué plusieurs minutes avant le geste. La plupart des patients ressentent seulement une brève sensation de pression ; l’injection elle-même dure 1 à 2 minutes. Une gêne peut ensuite persister, ce qui est normal : sensation de sable, démangeaisons ou larmoiement, liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
+**Non, elle est indolore** : elle se fait **sous anesthésie locale**, par un collyre appliqué plusieurs minutes avant le geste. La plupart des patients ressentent seulement une brève sensation de pression ; l’injection elle-même dure 1 à 2 minutes. Une gêne peut ensuite persister, ce qui est normal. Sensation de sable, démangeaisons ou larmoiement liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
 
 ##### Vais-je voir l’aiguille venir ?
 
@@ -1442,7 +1442,7 @@ Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de v
 
 ##### Combien de temps dure un rendez-vous d’injection ?
 
-Environ **10 minutes** lorsque le rendez-vous comporte seulement l’injection, et environ **20 minutes** lorsqu’il comporte aussi un OCT et une mesure de l’acuité visuelle.
+Environ **10 minutes** lorsque le rendez-vous comporte seulement l’injection, et environ **20 minutes** lorsqu’il comporte aussi un OCT et une mesure de l’acuité visuelle. Le geste lui-même ne dure que quelques minutes.
 
 ##### Combien de temps dure l’effet d’une injection d’anti-VEGF ?
 
@@ -1731,7 +1731,7 @@ Les vitrectomies se pratiquent en ambulatoire : vous rentrez chez vous le jour m
 
 ##### Faut-il vraiment tenir la posture face-vers-le-bas après un trou maculaire ?
 
-Oui : un maximum de temps chaque jour, pendant quelques jours après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), si un tamponnement gazeux est utilisé — la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Les essais randomisés montrent que la posture est déterminante pour les grands trous (≥ 400 µm) et peu influente pour les petits. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.
+Oui : un maximum de temps chaque jour, pendant quelques jours après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), et la nuit sur le ventre pendant environ 48 heures, si un tamponnement gazeux est utilisé — la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Les essais randomisés montrent que la posture est déterminante pour les grands trous (≥ 400 µm) et peu influente pour les petits. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.
 
 ##### Une cataracte peut-elle apparaître après une vitrectomie ?
 
@@ -1739,7 +1739,7 @@ Oui, c’est fréquent chez le patient phaque de plus de 50 ans. La vitrectomie 
 
 ##### Peut-on reprendre l’avion après une vitrectomie sous gaz ?
 
-**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour, puis disparaît : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
+**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour, puis disparaît : en une semaine environ pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 ##### Faut-il arrêter les anticoagulants ou antiagrégants avant l’intervention ?
 
@@ -1755,11 +1755,11 @@ Les complications sérieuses restent rares : endophtalmie (infection intraoculai
 
 ##### Quelle est la prise en charge par l’Assurance Maladie ?
 
-La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, pris en charge par l’Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention conformément à la réglementation.
+La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, pris en charge par l’Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassement d’honoraires) est remis avant toute intervention conformément à la réglementation.
 
 ##### Combien coûte une opération de la rétine ?
 
-L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1863,7 +1863,7 @@ Selon l’indication, le chirurgien peut ensuite réaliser : pelage de MLI (avec
 
 #### Les tamponnements internes
 
-##### Air (2-3 jours de résorption)
+##### Air (une semaine environ de résorption)
 
 Tamponnement transitoire, souvent utilisé quand il suffit de maintenir une brève apposition rétinienne. Résorption rapide.
 
@@ -1952,7 +1952,7 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
-**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz persiste, l’altitude fait augmenter son volume et peut provoquer une hypertonie majeure. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour : une ligne apparaît dans le champ de vision et descend, puis il ne reste qu’une petite bulle, en bas du champ de vision, qui finit par disparaître. La bulle se résorbe d’elle-même : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
+**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz persiste, l’altitude fait augmenter son volume et peut provoquer une hypertonie majeure. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle disparaît ainsi d’elle-même, en une semaine environ pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Pendant ce temps, une ligne apparaît dans le champ de vision et descend, puis il ne reste qu’une petite bulle, en bas du champ de vision, qui finit par disparaître. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
 ##### Quand peut-on reprendre la voiture après une vitrectomie ?
 
@@ -1968,7 +1968,7 @@ Dans la grande majorité des cas, **il n’est pas nécessaire d’arrêter** un
 
 ##### L’intervention est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement et dépassements d’honoraires éventuels) est remis avant l’intervention conformément à la réglementation. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps.
+Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -2198,6 +2198,7 @@ Les indications opératoires classiques sont :
 
 - **Baisse d’acuité visuelle significative** (généralement ≤ 5/10).
 - **Métamorphopsies gênantes** dans la vie quotidienne (lecture, conduite, travail).
+- **Micropsies** : les objets paraissent plus petits avec l’œil atteint.
 - **Désorganisation architecturale de la fovéa** en OCT (stades 3-4 de Govetto).
 - **Évolution documentée** à l’OCT : épaississement fovéolaire progressif, apparition de kystes.
 
@@ -3120,7 +3121,7 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 
 ##### Un décollement postérieur du vitré est-il grave ?
 
-**Non, ce n’est pas grave.** Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, qui arrive à tout le monde un jour ou l’autre, le plus souvent après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Le seul risque est qu’en se décollant, le vitré tire sur la rétine et la déchire, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
+**Non, ce n’est pas grave.** Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, qui arrive à tout le monde un jour ou l’autre, le plus souvent après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Le principal risque est qu’en se décollant, le vitré tire sur la rétine et la déchire, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
 
 ##### Peut-on prévenir un DPV ?
 
@@ -3252,7 +3253,7 @@ La chirurgie de la cataracte consiste à remplacer le cristallin opacifié par u
 
 Le choix de l’implant est un élément clé de la consultation pré-opératoire : monofocal (gold standard), monofocal torique (astigmatisme cornéen), EDOF ou multifocal (indépendance aux lunettes — avec compromis).
 
-L’opération de la cataracte se fait en ambulatoire, le plus souvent sous anesthésie topique (un simple collyre anesthésiant), parfois locorégionale ; elle est indolore et dure 10 à 15 minutes. Le patient reste éveillé et ne voit qu’une lumière diffuse. Le chirurgien fait de petites incisions dans la cornée, ouvre la capsule du cristallin, fragmente le cristallin opacifié par ultrasons et l’aspire, puis place l’implant souple dans le sac capsulaire ; les incisions sont étanches et ne demandent pas de suture. Le patient rentre chez lui le jour même, avec une coque de protection à mettre la nuit les premiers jours.
+L’opération de la cataracte se fait en ambulatoire, le plus souvent sous anesthésie topique (un simple collyre anesthésiant), parfois locorégionale ; elle est indolore et dure 10 à 15 minutes. Le patient reste éveillé et ne voit qu’une lumière diffuse. Le chirurgien fait de petites incisions dans la cornée, ouvre la capsule du cristallin, fragmente le cristallin opacifié par ultrasons et l’aspire, puis place l’implant souple dans le sac capsulaire ; les incisions sont étanches et, en règle, ne demandent pas de suture. Le patient rentre chez lui le jour même, avec une coque de protection à mettre la nuit les premiers jours.
 
 Le Dr Majoulet fait le bilan et choisit l’implant avec le patient au Cabinet Ophtalife de Boulogne-Billancourt, opère à la Clinique Jouvenet (Paris 16e), puis contrôle l’œil au cabinet une semaine, puis un mois après l’opération. Le deuxième œil est habituellement opéré 1 à 4 semaines après le premier.
 
@@ -3638,7 +3639,7 @@ L’implant comporte une **optique centrale** (6,0 mm de diamètre habituellemen
 Le geste s’inscrit dans une **chirurgie de la cataracte standard par phacoémulsification** (voir la page [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte) pour le détail complet) :
 
 - **Anesthésie** : topique (collyres) dans la grande majorité des cas, ± péribulbaire si nécessaire. Hospitalisation ambulatoire.
-- **Durée** : 10 à 20 minutes d’intervention effective.
+- **Durée** : 10 à 15 minutes d’intervention effective.
 - **Étapes** : micro-incision cornéenne, capsulorhexis (ouverture circulaire de la capsule antérieure), phacoémulsification du noyau cristallinien, aspiration des masses corticales, **injection de l’implant** replié dans le sac capsulaire où il se déploie.
 - **Sutures** : aucune en règle générale (auto-étanchéité de l’incision).
 
@@ -3649,7 +3650,7 @@ L’intervention est indolore. Le deuxième œil est opéré habituellement 1 à
 - **Collyres postopératoires** : antibiotique + anti-inflammatoire pendant 1 mois.
 - **Protection oculaire** : coque nocturne 5 à 7 nuits ; lunettes de soleil en extérieur.
 - **Récupération visuelle** : nette amélioration dès J1-J3, stabilité complète à 4-6 semaines.
-- **Activités** : reprise du travail à 3-7 jours selon les cas ; conduite autorisée dès obtention d’une acuité suffisante sur l’œil opéré (habituellement J2-J3) ; sport sans impact à partir de 1 semaine, piscine et sports de contact à partir de 1 mois.
+- **Activités** : arrêt de travail d’une semaine, si nécessaire ; conduite après le contrôle d’une semaine, si la vision le permet ; sport sans impact à partir de 1 semaine, piscine et sports de contact à partir de 1 mois.
 - **Lunettes définitives** : prescrites après stabilisation, en général vers la 4e semaine.
 
 #### Résultats attendus
