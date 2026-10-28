@@ -3889,7 +3889,7 @@ Les contre-indications (absolues ou relatives) sont aussi importantes à connaî
 - **Topographie cornéenne** (Pentacam, Galilei) pour exclure un astigmatisme irrégulier et mesurer l’astigmatisme postérieur.
 - **OCT maculaire** systématique — examen *non négociable* avant tout implant multifocal.
 - **Pupillométrie** (diamètre photopique/mésopique) : utile pour prédire la tolérance aux halos.
-- **Aberrométrie** et analyse de la qualité optique (HD Analyzer, OQAS) en cas de doute.
+- **Aberrométrie** et analyse de la qualité optique en cas de doute.
 - Consultation dédiée longue, avec simulation de la vision multifocale et discussion explicite des compromis.
 
 #### Déroulé de l’intervention
