@@ -338,7 +338,8 @@ Lundi, mercredi, jeudi : 9 h – 20 h / Mardi, vendredi, samedi : 9 h – 18 h /
 
 #### Préparer votre consultation
 
-- **Convention :** secteur 2 conventionné (Assurance Maladie + mutuelle). Reste à charge d’une consultation : 60 à 100 € selon la consultation et les examens pratiqués (montants au 28 octobre 2026).
+- **Convention :** secteur 2 conventionné (Assurance Maladie + mutuelle).
+- **Reste à charge d’une consultation :** 60 à 100 €, selon la consultation et les examens pratiqués (montants au 28 octobre 2026).
 - **Carte Vitale :** à présenter à chaque consultation pour le tiers-payant éventuel.
 - **Ordonnances & examens antérieurs :** apporter toutes les ordonnances de lunettes ou de gouttes en cours, ainsi que les examens ophtalmologiques récents (OCT, champ visuel, photographies du fond d’œil).
 - **Pupille dilatée :** certaines consultations (fond d’œil détaillé, première consultation rétinienne) nécessitent une dilatation pupillaire. Prévoyez qu’après dilatation la vision de près est floue et la conduite déconseillée pendant 3 à 4 heures.
@@ -410,7 +411,7 @@ La prise de rendez-vous pour une **consultation libérale au Cabinet Ophtalife �
 Le Dr Majoulet exerce en **secteur 2 conventionné** (honoraires libres).
 
 - **Les honoraires sont disponibles sur [la fiche Doctolib du Dr Majoulet](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)** ; ils sont également affichés en salle d’attente et communiqués sur demande au secrétariat.
-- Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel applicable. Le reste à charge d’une consultation est de **60 à 100 €**, selon la consultation et les examens pratiqués (montants au 28 octobre 2026) ; selon votre contrat, votre mutuelle peut en rembourser tout ou partie.
+- Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel applicable. Le reste à charge d’une consultation est de **60 à 100 €**, selon la consultation et les examens pratiqués (montants au 28 octobre 2026).
 
 **Langues parlées :** français, anglais. / **Moyens de paiement :** carte bancaire, espèces, chèque. / **Carte Vitale :** à présenter à chaque consultation.
 
@@ -458,7 +459,7 @@ Pour orienter votre démarche, consultez la **[page dédiée aux urgences ophtal
 
 ##### Le Dr Majoulet est-il conventionné ?
 
-Oui, en secteur 2 conventionné, à honoraires libres. Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel. Le reste à charge d’une consultation est de **60 à 100 €**, selon la consultation et les examens pratiqués (montants au 28 octobre 2026) ; selon votre contrat, votre mutuelle peut en rembourser tout ou partie. Le détail figure sur la fiche Doctolib du Dr Majoulet.
+Oui, en secteur 2 conventionné, à honoraires libres. Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel. Le reste à charge d’une consultation est de **60 à 100 €**, selon la consultation et les examens pratiqués (montants au 28 octobre 2026). Le détail figure sur la fiche Doctolib du Dr Majoulet.
 
 ##### Quel est le délai pour obtenir un rendez-vous ?
 
@@ -1125,7 +1126,7 @@ La surveillance est recommandée à partir de **55 ans**, notamment en cas d’a
 
 ##### Les injections intravitréennes sont-elles douloureuses ?
 
-Elles sont réalisées **sous anesthésie locale par collyre**. La majorité des patients décrivent une sensation brève de pression plutôt qu’une douleur. Une sensation de grain de sable ou une rougeur peuvent persister 24-48 h, liées à la bétadine utilisée pour l’asepsie.
+Elles sont réalisées **sous anesthésie locale par collyre**. La majorité des patients décrivent une sensation brève de pression plutôt qu’une douleur. Une sensation de grain de sable ou une rougeur peuvent persister 24-48 h, liées à la povidone iodée utilisée pour l’asepsie.
 
 ##### La DMLA rend-elle aveugle ?
 
@@ -1341,8 +1342,10 @@ En cas de **forme humide de DMLA nouvellement diagnostiquée** ou de récidive a
 2. **Anesthésie topique** (collyre oxybuprocaïne ou tétracaïne, appliqué plusieurs minutes avant).
 3. **Désinfection** soigneuse de la peau péri-orbitaire et de la conjonctive à la **Povidone iodée 5 %** (ou chlorhexidine 0,05 % en cas d’allergie). C’est l’étape clé pour la prévention de l’endophtalmie.
 4. Mise en place d’un **champ stérile** et d’un **blépharostat** (écarteur palpébral).
-5. **Injection** avec une aiguille 30G à 3,5-4 mm du limbe en pars plana, dans le quadrant temporal inférieur ou supérieur. Le geste dure environ 5 minutes.
+5. **Injection** avec une aiguille 30G à 3,5-4 mm du limbe en pars plana, dans le quadrant temporal inférieur ou supérieur.
 6. **Contrôle de la perception lumineuse** immédiatement après.
+
+L’ensemble du geste dure environ 5 minutes.
 
 Une injection intravitréenne permet d’administrer un médicament dans le vitré, le gel transparent à l’intérieur de l’œil, au contact de la rétine. L’aiguille, ultra-fine, entre en arrière du limbe, en pars plana.
 
@@ -1363,7 +1366,7 @@ Information patient : [fiche de la Société Française d’Ophtalmologie sur le
 
 ##### DMLA exsudative (néovasculaire)
 
-La **DMLA humide** (exsudative ou néovasculaire) se traite par des injections répétées d’un médicament anti-VEGF dans l’œil, traitement de référence des **néovaisseaux choroïdiens** : ces vaisseaux anormaux, qui se développent sous la macula, fuient et peuvent saigner. Le traitement commence par 3 à 4 injections mensuelles selon la molécule (phase d’induction, *loading phase*). Le rythme est ensuite adapté à l’aspect de la rétine à l’OCT : le plus souvent selon le protocole *Treat & Extend*, où l’intervalle entre deux injections s’allonge progressivement tant que la rétine reste sèche, parfois selon un protocole *PRN*, avec une injection seulement en cas de récidive. Le traitement dure souvent plusieurs années. Au Cabinet Ophtalife de Boulogne-Billancourt, l’OCT est réalisé sur place le jour même, l’injection a lieu dans une salle dédiée aux normes ISO 7, sous anesthésie par collyre, et un collyre antiseptique est prescrit pendant 3 jours. Une déformation récente des lignes droites justifie une consultation sous 24-48 h.
+La **DMLA humide** (exsudative ou néovasculaire) se traite par des injections répétées d’un médicament anti-VEGF dans l’œil, traitement de référence des **néovaisseaux choroïdiens** : ces vaisseaux anormaux, qui se développent sous la macula, fuient et peuvent saigner. Le traitement commence par 3 à 4 injections mensuelles selon la molécule (phase d’induction, *loading phase*). Le rythme est ensuite adapté à l’aspect de la rétine à l’OCT : le plus souvent selon le protocole *Treat & Extend*, où l’intervalle entre deux injections s’allonge progressivement tant que la rétine reste sèche, parfois selon un protocole *PRN*, avec une injection seulement en cas de récidive. Le traitement dure souvent plusieurs années. Au Cabinet Ophtalife de Boulogne-Billancourt, l’OCT est réalisé sur place le jour même lorsqu’il est prévu, l’injection a lieu dans une salle dédiée aux normes ISO 7, sous anesthésie par collyre, et un collyre antiseptique est prescrit pendant 3 jours. Une déformation récente des lignes droites justifie une consultation sous 24-48 h.
 
 **Molécules principales** : aflibercept (Eylea 2 mg ou 8 mg), ranibizumab (Lucentis), faricimab (Vabysmo) ; le brolucizumab (Beovu) reste d’utilisation rare. Voir [DMLA](https://docteurmajoulet.com/dmla).
 
@@ -1638,7 +1641,7 @@ Chaque cas fait l’objet d’une discussion individualisée avec le patient.
 
 ##### Chirurgie maculaire (trou, membrane épirétinienne)
 
-La vitrectomie 25G ou 27G est associée à un **pelage de la membrane limitante interne (MLI)** sous coloration par bleu brillant. Le tamponnement gazeux (SF6 ou C2F6) et le positionnement postural sont adaptés à la taille et à la chronicité du trou maculaire. Pour la membrane épirétinienne isolée, il n’y a en règle pas de tamponnement gazeux ; chaque dossier est jugé au cas par cas.
+La vitrectomie 25G ou 27G est associée à un **pelage de la membrane limitante interne (MLI)** sous coloration par bleu brillant. Le tamponnement gazeux (SF6 ou C2F6) est adapté à la taille et à la chronicité du trou maculaire ; la posture dure 48 heures. Pour la membrane épirétinienne isolée, il n’y a en règle pas de tamponnement gazeux ; chaque dossier est jugé au cas par cas.
 
 ##### Chirurgie combinée cataracte + vitrectomie (*phaco-vitrectomie*)
 
@@ -1763,7 +1766,7 @@ La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou ma
 
 ##### Combien coûte une opération de la rétine ?
 
-L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Pour un décollement de rétine opéré en urgence, le reste à charge est de zéro pour le patient. Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Pour un décollement de rétine opéré en urgence, le reste à charge est de zéro pour le patient. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1855,7 +1858,7 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 
 ##### Pendant l’opération
 
-Le patient est installé, l’**anesthésie locorégionale** (péribulbaire ou sous-ténonienne) est réalisée. L’œil est désinfecté (Bétadine ophtalmique). Le chirurgien met en place **3 trocarts transconjonctivaux** de 25G (0,5 mm) ou 27G (0,4 mm) au niveau de la **pars plana** (zone sécurisée, 3,5-4 mm du limbe) :
+Le patient est installé, l’**anesthésie locorégionale** (péribulbaire ou sous-ténonienne) est réalisée. L’œil est désinfecté (povidone iodée). Le chirurgien met en place **3 trocarts transconjonctivaux** de 25G (0,5 mm) ou 27G (0,4 mm) au niveau de la **pars plana** (zone sécurisée, 3,5-4 mm du limbe) :
 
 1. Un trocart pour l’**infusion** (maintien de la pression intraoculaire par BSS).
 2. Un trocart pour l’**endo-illumination**.
@@ -2533,7 +2536,7 @@ Plus la chirurgie est **précoce** (moins de 6 à 12 mois d’évolution) et plu
 - **Coloration systématique de la MLI au bleu brillant** — agent de coloration peu toxique pour la rétine, préféré au vert d’indocyanine (ICG).
 - **Pelage MLI étendu** sur environ 2 diamètres papillaires autour du trou.
 - **Technique du lambeau inversé de MLI** (Michalewska 2010) pour les **grands trous > 400 µm** et les trous chroniques : amélioration documentée du taux de fermeture (méta-analyses 2019-2021) au prix d’une récupération fonctionnelle parfois plus lente.
-- **Choix du gaz** adapté : SF6 18-20 % pour les trous petits/moyens avec posture courte ; C2F6 pour les grands trous, les trous chroniques et les contextes myopes.
+- **Choix du gaz** adapté : SF6 18-20 % pour les trous petits/moyens ; C2F6 pour les grands trous, les trous chroniques et les contextes myopes.
 - **Chirurgie combinée phaco-vitrectomie** discutée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une seconde opération de la cataracte, fréquente dans les 1 à 2 ans.
 - **Surveillance de l’œil controlatéral** avec OCT à chaque contrôle.
 
@@ -3566,7 +3569,7 @@ Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande ma
 - **Rupture capsulaire per-opératoire** : 1 à 2 %.
 - **Décollement de rétine** : 0,5 à 1 %, plus fréquent chez le myope fort.
 - **Opacification capsulaire secondaire (cataracte secondaire)** : 15 à 30 % à 2-3 ans, traitée en consultation par [**laser YAG**](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) en quelques minutes.
-- Décentrement ou [luxation d’implant](https://docteurmajoulet.com/luxation-cristallin-implant) : rare (environ 1 à 2 % à 25 ans), plus fréquent en cas de pseudo-exfoliation.
+- Décentrement ou [luxation tardive de l’implant](https://docteurmajoulet.com/luxation-cristallin-implant) : rare (environ 1 à 2 % à 25 ans), plus fréquent en cas de pseudo-exfoliation.
 
 ##### Ce que montre notre étude au CHNO des Quinze-Vingts
 
@@ -3599,6 +3602,7 @@ C’est une **chirurgie très fréquente** : environ 640 000 opérations par an 
 #### Sources et références
 
 - Creuzot-Garcher C, Benzenine E, Mariet AS, et al. *Incidence of Acute Postoperative Endophthalmitis after Cataract Surgery: A Nationwide Study in France from 2005 to 2014*. Ophthalmology. 2016;123(7):1414-1420. [doi:10.1016/j.ophtha.2016.02.019](https://doi.org/10.1016/j.ophtha.2016.02.019)
+- Pueringer SL, Hodge DO, Erie JC. *Risk of late intraocular lens dislocation after cataract surgery, 1980-2009: a population-based study*. Am J Ophthalmol. 2011;152(4):618-623. [doi:10.1016/j.ajo.2011.03.009](https://doi.org/10.1016/j.ajo.2011.03.009)
 
 ##### Auteur et révision médicale
 
@@ -3705,6 +3709,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 - Melles RB, Holladay JT, Chang WJ. *Accuracy of Intraocular Lens Calculation Formulas*. Ophthalmology. 2018;125(2):169-178. [doi:10.1016/j.ophtha.2017.08.027](https://doi.org/10.1016/j.ophtha.2017.08.027)
 - Kane JX, Chang DF. *Intraocular Lens Power Formulas, Biometry, and Intraoperative Aberrometry: A Review*. Ophthalmology. 2021;128(11):e94-e114. [doi:10.1016/j.ophtha.2020.08.010](https://doi.org/10.1016/j.ophtha.2020.08.010)
 - American Academy of Ophthalmology. *Cataract in the Adult Eye — Preferred Practice Pattern*. 2021. [aaojournal.org](https://www.aaojournal.org/)
+- Pueringer SL, Hodge DO, Erie JC. *Risk of late intraocular lens dislocation after cataract surgery, 1980-2009: a population-based study*. Am J Ophthalmol. 2011;152(4):618-623. [doi:10.1016/j.ajo.2011.03.009](https://doi.org/10.1016/j.ajo.2011.03.009)
 
 #### Prendre rendez-vous
 
@@ -5615,7 +5620,7 @@ Le protocole initial comporte en général trois à quatre séances à deux à q
 
 ##### L’IPL est-elle remboursée ?
 
-Non. L’IPL n’est pas inscrite à la nomenclature de l’Assurance maladie : 150 € la séance (montant au 28 octobre 2026), annoncés lors de la consultation de bilan, avant toute décision. Les bouchons méatiques et l’incision de chalazion sont en revanche pris en charge, avec dépassement d’honoraires (secteur 2).
+Non. L’IPL n’est pas inscrite à la nomenclature de l’Assurance maladie : 150 € la séance (montant au 28 octobre 2026), annoncé lors de la consultation de bilan, avant toute décision. Les bouchons méatiques et l’incision de chalazion sont en revanche pris en charge, avec dépassement d’honoraires (secteur 2).
 
 ##### Un chalazion qui revient souvent, est-ce grave ?
 
