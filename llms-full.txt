@@ -3253,7 +3253,7 @@ La chirurgie de la cataracte consiste à remplacer le cristallin opacifié par u
 
 Le choix de l’implant est un élément clé de la consultation pré-opératoire : monofocal (gold standard), monofocal torique (astigmatisme cornéen), EDOF ou multifocal (indépendance aux lunettes — avec compromis).
 
-L’opération de la cataracte se fait en ambulatoire, le plus souvent sous anesthésie topique (un simple collyre anesthésiant), parfois locorégionale ; elle est indolore et dure 10 à 15 minutes. Le patient reste éveillé et ne voit qu’une lumière diffuse. Le chirurgien fait de petites incisions dans la cornée, ouvre la capsule du cristallin, fragmente le cristallin opacifié par ultrasons et l’aspire, puis place l’implant souple dans le sac capsulaire ; les incisions sont étanches et, en règle, ne demandent pas de suture. Le patient rentre chez lui le jour même, avec une coque de protection à mettre la nuit les premiers jours.
+L’opération de la cataracte se fait en ambulatoire, sous anesthésie locale, avec une sédation donnée par l’anesthésiste ; elle est indolore et dure 10 à 15 minutes. Le patient est détendu et ne voit qu’une lumière diffuse. Le chirurgien fait de petites incisions dans la cornée, ouvre la capsule du cristallin, fragmente le cristallin opacifié par ultrasons et l’aspire, puis place l’implant souple dans le sac capsulaire ; les incisions sont étanches et, en règle, ne demandent pas de suture. Le patient rentre chez lui le jour même, avec une coque de protection à mettre la nuit les premiers jours.
 
 Le Dr Majoulet fait le bilan et choisit l’implant avec le patient au Cabinet Ophtalife de Boulogne-Billancourt, opère à la Clinique Jouvenet (Paris 16e), puis contrôle l’œil au cabinet une semaine, puis un mois après l’opération. Le deuxième œil est habituellement opéré 1 à 4 semaines après le premier.
 
@@ -3317,7 +3317,7 @@ Discussion détaillée du projet visuel (lecture, conduite, travail sur écran),
 
 ###### Jour J Intervention
 
-Anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 10 à 15 minutes.
+Anesthésie locale avec sédation, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 10 à 15 minutes.
 
 5.
 
@@ -3339,7 +3339,7 @@ Contrôle un mois après l’opération.
 
 Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
-**Phacoémulsification.** Le cristallin est fragmenté par ultrasons à travers une petite incision, puis aspiré.
+**Phacoémulsification.** La pupille est dilatée ; le cristallin est fragmenté par ultrasons à travers une petite incision de la cornée, puis aspiré.
 
 **Implant.** Un implant souple et permanent remplace le cristallin opacifié, dans le sac capsulaire.
 
@@ -3363,7 +3363,7 @@ L’acte chirurgical est remboursé par la Sécurité sociale en secteur convent
 
 ##### L’anesthésie générale est-elle possible ?
 
-Elle est exceptionnelle pour la cataracte. L’anesthésie topique (simple collyre anesthésiant) est le standard. Une sédation légère IV peut être ajoutée par l’anesthésiste chez les patients anxieux.
+Elle est exceptionnelle pour la cataracte. L’opération se fait sous anesthésie locale, avec une sédation donnée par l’anesthésiste : le patient est détendu et ne ressent pas de douleur.
 
 ##### Combien de temps d’arrêt de travail ?
 
@@ -3506,7 +3506,7 @@ Offre une **indépendance large aux lunettes** à toutes les distances. En contr
 
 #### La chirurgie par phacoémulsification
 
-C’est une chirurgie très fréquente (environ 640 000 opérations par an en France, en moyenne sur 2005-2014) et standardisée ; les complications graves sont rares. Elle est réalisée en **ambulatoire**, sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire), et dure habituellement **10 à 15 minutes**.
+C’est une chirurgie très fréquente (environ 640 000 opérations par an en France, en moyenne sur 2005-2014) et standardisée ; les complications graves sont rares. Elle est réalisée en **ambulatoire**, sous **anesthésie locale**, avec une sédation donnée par l’anesthésiste, et dure habituellement **10 à 15 minutes**.
 
 Les étapes sont :
 
@@ -3558,7 +3558,7 @@ L’indication est posée sur le **retentissement fonctionnel** et non sur l’a
 
 ##### La chirurgie de la cataracte est-elle douloureuse ?
 
-**Non, elle est indolore.** Elle se réalise sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire) dans la très grande majorité des cas. Le patient est éveillé mais ne voit qu’une lumière diffuse. L’intervention dure généralement 10 à 15 minutes par œil et se fait en ambulatoire, avec une récupération visuelle rapide.
+**Non, elle est indolore.** Elle se réalise sous **anesthésie locale**, avec une sédation donnée par l’anesthésiste : le patient est détendu et ne voit qu’une lumière diffuse. L’intervention dure généralement 10 à 15 minutes par œil et se fait en ambulatoire, avec une récupération visuelle rapide.
 
 ##### Quel implant choisir : monofocal, torique, multifocal, EDOF ?
 
@@ -3638,7 +3638,7 @@ L’implant comporte une **optique centrale** (6,0 mm de diamètre habituellemen
 
 Le geste s’inscrit dans une **chirurgie de la cataracte standard par phacoémulsification** (voir la page [chirurgie de la cataracte](https://docteurmajoulet.com/chirurgie-cataracte) pour le détail complet) :
 
-- **Anesthésie** : topique (collyres) dans la grande majorité des cas, ± péribulbaire si nécessaire. Hospitalisation ambulatoire.
+- **Anesthésie** : locale, avec une sédation donnée par l’anesthésiste. Hospitalisation ambulatoire.
 - **Durée** : 10 à 15 minutes d’intervention effective.
 - **Étapes** : micro-incision cornéenne, capsulorhexis (ouverture circulaire de la capsule antérieure), phacoémulsification du noyau cristallinien, aspiration des masses corticales, **injection de l’implant** replié dans le sac capsulaire où il se déploie.
 - **Sutures** : aucune en règle générale (auto-étanchéité de l’incision).
@@ -3744,7 +3744,7 @@ Le temps chirurgical est **identique à une chirurgie de la cataracte standard**
 
 **Implant décalé de 10°.** Chaque degré de désalignement fait perdre environ 3,3 % de la correction : 10° en font perdre 33 %, 30° l’annulent.
 
-Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’intervention 10 à 15 minutes.
+Anesthésie locale avec sédation, hospitalisation ambulatoire, durée de l’intervention 10 à 15 minutes.
 
 #### Suites opératoires
 
@@ -4022,7 +4022,7 @@ En règle générale, **une seule fois par œil**. Une fois la capsule ouverte, 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ## Lasers
 
