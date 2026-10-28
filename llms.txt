@@ -119,7 +119,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 - [Décollement de rétine](https://docteurmajoulet.com/decollement-retine): Voile noir, éclairs, baisse brutale de la vision : que faire le jour même. Indentation ou vitrectomie selon le cas. Dr Majoulet, chirurgien de la rétine.
 - [Membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne): Membrane épirétinienne : vision déformée, examen OCT et chirurgie. Consultation avec le Dr Majoulet à Boulogne-Billancourt, opération à Jouvenet, Paris 16.
 - [Trou maculaire](https://docteurmajoulet.com/trou-maculaire): Trou maculaire : diagnostic OCT, opération et récupération. Consultation avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
-- [Hémorragie intra-vitréenne](https://docteurmajoulet.com/hemorragie-intravitreenne): Hémorragie intravitréenne : causes, échographie en mode B, vitrectomie si nécessaire. Dr Majoulet, chirurgien rétinologue à Boulogne-Billancourt. Prenez RDV.
+- [Hémorragie intravitréenne](https://docteurmajoulet.com/hemorragie-intravitreenne): Hémorragie intravitréenne : causes, échographie en mode B, vitrectomie si nécessaire. Dr Majoulet, chirurgien rétinologue à Boulogne-Billancourt. Prenez RDV.
 - [Luxation du cristallin ou d’un implant intraoculaire](https://docteurmajoulet.com/luxation-cristallin-implant): Luxation ou subluxation du cristallin ou d’un implant : symptômes, urgence et chirurgie de repositionnement. Consultation rapide à Boulogne (92).
 
 ## Signes d’alerte — le jour même ou sous 24-48 h
@@ -170,7 +170,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 ## Enfant
 
-- [Dépistage visuel de l’enfant](https://docteurmajoulet.com/depistage-visuel-enfant): Dépistage visuel de l’enfant : calendrier de dépistage, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
+- [Dépistage visuel de l’enfant](https://docteurmajoulet.com/depistage-visuel-enfant): Dépistage visuel de l’enfant : calendrier de dépistage, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt.
 - [Amblyopie (« œil paresseux »)](https://docteurmajoulet.com/amblyopie): Amblyopie ou œil paresseux : dépistage avant 7-8 ans, correction optique, occlusion. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
 
 ## Optional
