@@ -3145,7 +3145,7 @@ Non, ils n’évoluent pas vers le haut de l’œil. Au contraire, ils **sédime
 
 ##### Combien de temps durent les symptômes d’un décollement du vitré ?
 
-Les éclairs lumineux peuvent persister plusieurs semaines, puis s’estompent. Les corps flottants deviennent moins visibles avec le temps : ils se déposent dans le bas de l’œil et le cerveau s’y habitue. Un nouveau contrôle du fond d’œil est recommandé 4 à 6 semaines après le premier examen, car une déchirure peut apparaître secondairement. Si, après plus de 6 mois, des corps flottants restent très gênants, une vitrectomie ou un laser peuvent se discuter, avec un rapport bénéfice-risque à évaluer avec rigueur.
+Une fois une déchirure écartée par le fond d’œil dilaté, les éclairs lumineux peuvent persister plusieurs semaines, puis s’estompent. Les corps flottants deviennent moins visibles avec le temps : ils se déposent dans le bas de l’œil et le cerveau s’y habitue. Un nouveau contrôle du fond d’œil est recommandé 4 à 6 semaines après le premier examen, car une déchirure peut apparaître secondairement. Si, après plus de 6 mois, des corps flottants restent très gênants, une vitrectomie ou, pour des opacités bien sélectionnées, une vitréolyse au laser YAG (aux preuves d’efficacité limitées) peuvent se discuter, avec un rapport bénéfice-risque à évaluer avec rigueur. Entre-temps, l’apparition brutale de nouveaux corps flottants ou d’éclairs justifie un fond d’œil dilaté sous 24 à 48 h, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un examen le jour même.
 
 ##### Le second œil va-t-il aussi se décoller ?
 
@@ -4599,7 +4599,7 @@ Le pronostic du syndrome d’Irvine-Gass est **globalement favorable** : la majo
 
 ##### Quelles sont les causes d’un œdème maculaire cystoïde ?
 
-Les causes les plus fréquentes sont la **chirurgie de la cataracte** (syndrome d’Irvine-Gass, dans les 3 mois qui suivent l’opération), le **diabète**, les **occlusions veineuses de la rétine** et les **uvéites** chroniques. Il peut aussi accompagner une rétinite pigmentaire, une traction vitréomaculaire ou une membrane épirétinienne, ou suivre une chirurgie de la rétine. L’OCT maculaire confirme le diagnostic, et le traitement dépend de la cause.
+Les principales causes sont la **chirurgie de la cataracte** (syndrome d’Irvine-Gass, le plus souvent dans les 3 mois qui suivent l’opération), le **diabète**, les **occlusions veineuses de la rétine** et les **uvéites** chroniques. L’œdème peut aussi accompagner une rétinite pigmentaire, une traction vitréomaculaire ou une membrane épirétinienne, ou suivre une chirurgie de la rétine. L’OCT maculaire confirme le diagnostic, et le traitement dépend de la cause.
 
 ##### Quand survient l’œdème maculaire après une chirurgie de cataracte ?
 
