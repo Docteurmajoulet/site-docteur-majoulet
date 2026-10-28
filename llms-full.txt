@@ -476,6 +476,10 @@ Oui. Merci de le signaler au secrétariat lors de la prise de rendez-vous afin d
 
 Français et anglais.
 
+##### Le cabinet de Boulogne-Billancourt reçoit-il les urgences de la rétine ?
+
+Oui, aux heures d’ouverture : lundi, mercredi et jeudi de 9 h à 20 h, mardi, vendredi et samedi de 9 h à 18 h, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une occlusion de l’artère centrale de la rétine, y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
+
 ##### Que faire en dehors des horaires d’ouverture en cas d’urgence ?
 
 Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le CHNO des Quinze-Vingts (Paris 12), la Fondation Rothschild (Paris 19) et l’Ophtalmopôle de l’Hôpital Cochin (Paris 14). En cas d’urgence vitale : SAMU 15.
@@ -484,7 +488,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
-Dernière mise à jour : 27 octobre 2026.
+Dernière mise à jour : 28 octobre 2026.
 
 ### Urgences ophtalmologiques
 
@@ -594,6 +598,10 @@ Ne pas frotter. Rincer au sérum physiologique ou à l’eau claire. Si gêne pe
 
 **Quand appeler le [15](tel:15) (SAMU) plutôt que l’ophtalmologue :** traumatisme oculaire grave ou plaie pénétrante, projection chimique, perte brutale de la vision des deux yeux, ou baisse de vision accompagnée de signes neurologiques (trouble de la parole, faiblesse d’un membre, paralysie faciale, céphalée brutale inhabituelle). Un décollement de rétine, lui, relève d’un service d’urgences ophtalmologiques, pas du 15.
 
+##### Que faire en cas de voile noir ou de baisse brutale de la vision d’un œil ?
+
+Un voile noir, une ombre ou un rideau qui envahit le champ de vision d’un œil, ou une **baisse brutale de la vision**, peuvent révéler, entre autres, un décollement de rétine ou une occlusion d’une artère de la rétine : l’œil doit être examiné **le jour même**. Aux heures d’ouverture (lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h), appelez le Cabinet Ophtalife de Boulogne-Billancourt au [01 84 19 11 66](tel:+33184191166) : une suspicion de décollement de rétine ou d’occlusion de l’artère centrale de la rétine y est vue en urgence. En dehors de ces horaires, allez directement aux urgences ophtalmologiques ouvertes 24h/24 : Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Hôpital Cochin (Paris 14e). Si la perte de vision est brutale, indolore et quasi totale, une occlusion de l’artère centrale de la rétine est possible et chaque heure compte : venez en urgence au cabinet ou allez directement à la Fondation Rothschild. Appelez le **15** si s’y ajoutent un trouble de la parole, une faiblesse d’un membre ou un visage paralysé.
+
 ##### Dans quels cas faut-il appeler le 15 plutôt qu’un ophtalmologue ?
 
 Tout signe neurologique associé (troubles de la parole, faiblesse d’un membre, paralysie faciale, vertige avec baisse de vision, céphalée brutale inhabituelle) impose d’appeler le **15**. Une baisse brutale de la vision peut être un équivalent d’AVC (occlusion de l’artère centrale de la rétine, AVC occipital) et justifie une évaluation neurologique urgente.
@@ -628,7 +636,7 @@ L’apparition récente de flashs lumineux ou de nombreux corps flottants justif
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Dernière révision : 19 avril 2026 · Dernière mise à jour : 26 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière révision : 19 avril 2026 · Dernière mise à jour : 28 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Publications scientifiques
 
@@ -1166,6 +1174,10 @@ Dans les formes évoluées touchant le centre de la macula, la **rééducation b
 
 #### Questions fréquentes
 
+##### Existe-t-il un traitement de la DMLA sèche ?
+
+Il n’existe pas encore de médicament autorisé en France pour la **DMLA sèche**, ou atrophique. Deux médicaments injectés dans l’œil ont été approuvés aux États-Unis pour l’atrophie géographique : ils ralentissent la progression des lésions sans restaurer la vision perdue, et l’agence européenne du médicament (EMA) n’a pas délivré d’autorisation en Europe. Des essais cliniques sont en cours, y compris en France. La prise en charge repose aujourd’hui sur la surveillance et la prévention : compléments AREDS2 dans les formes intermédiaires, sur prescription ; arrêt du tabac et alimentation riche en légumes verts et en poissons gras ; **OCT maculaire tous les 6 mois** au cabinet ; **grille d’Amsler une fois par jour**, chaque œil séparément. Une déformation nouvelle des lignes droites peut signaler le passage à une forme humide, qui se traite par injections : elle justifie une consultation sous 24-48 h.
+
 ##### La DMLA sèche devient-elle toujours humide ?
 
 Non. La majorité des DMLA sèches restent atrophiques. La conversion néovasculaire est cependant possible à tout moment, d’où l’autosurveillance quotidienne par la grille d’Amsler et la surveillance OCT semestrielle : traitée tôt, la forme humide se contrôle d’autant mieux.
@@ -1331,6 +1343,10 @@ Utilisé dans certains essais thérapeutiques ou chez des patients difficiles à
 
 #### Questions fréquentes
 
+##### L’injection dans l’œil est-elle douloureuse ?
+
+Elle est réalisée **sous anesthésie locale par collyre**, appliqué plusieurs minutes avant le geste. La majorité des patients décrivent une sensation brève de pression plutôt qu’une douleur ; l’injection elle-même dure 1 à 2 minutes. Une sensation de sable, des démangeaisons ou un larmoiement peuvent suivre, liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
+
 ##### Vais-je voir l’aiguille venir ?
 
 Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre passagère, mais pas l’aiguille elle-même.
@@ -1355,7 +1371,7 @@ Les deux. En France, elles peuvent être réalisées au **cabinet** (en salle d�
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de la SFO et de la Société française d’hygiène hospitalière sur les injections intravitréennes (2019)](https://doi.org/10.1016/j.jfo.2019.11.002) et du [consensus EURETINA sur les injections intravitréennes (2018)](https://doi.org/10.1159/000486145). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de la SFO et de la Société française d’hygiène hospitalière sur les injections intravitréennes (2019)](https://doi.org/10.1016/j.jfo.2019.11.002) et du [consensus EURETINA sur les injections intravitréennes (2018)](https://doi.org/10.1159/000486145). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1839,7 +1855,7 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
-**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
+**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. La bulle se résorbe d’elle-même : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
 ##### Combien de temps d’arrêt de travail prévoir ?
 
@@ -2024,6 +2040,8 @@ Signes d’alerte et prévention des déchirures : [recommandations de l’Ameri
 Diagnostic OCT et chirurgie par vitrectomie avec pelage
 
 Une **membrane épirétinienne (MER)** est une fine pellicule qui se forme à la surface de la rétine, le plus souvent dans sa partie centrale, la **macula**. En se contractant, elle plisse la rétine : les lignes droites paraissent déformées et la vision peut baisser progressivement.
+
+Une membrane épirétinienne ne s’opère pas toujours : une membrane peu gênante est simplement surveillée par OCT. Lorsque la gêne s’installe (lignes déformées, baisse de la vision), le Dr Majoulet propose une **vitrectomie avec pelage de la membrane**. L’opération se fait en ambulatoire, à la Clinique Jouvenet (Paris 16e), et dure 30 à 45 minutes. En règle, aucun gaz n’est laissé dans l’œil, donc pas de posture après l’opération ni de restriction pour l’avion ; chaque dossier est jugé au cas par cas. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. La vision récupère progressivement, sur 3 à 6 mois : le but de l’opération est d’abord de stopper sa dégradation.
 
 **Un avis sur une intervention de la rétine**
 
@@ -2388,6 +2406,10 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 #### Questions fréquentes des patients
 
+##### Combien de temps dure l’opération du trou maculaire, et comment se passe-t-elle ?
+
+L’opération du trou maculaire dure en général **30 à 45 minutes**. Elle se fait en ambulatoire, sous anesthésie locorégionale ou générale, à la Clinique Jouvenet (Paris 16e). Le Dr Majoulet réalise une vitrectomie : il retire le gel de l’œil, puis la membrane limitante interne, une fine membrane qui tapisse la surface de la rétine, et laisse dans l’œil une bulle de gaz, le plus souvent du SF6, sinon du C2F6. Si le cristallin est encore en place, il opère souvent la cataracte dans le même temps. Après l’opération, la tête est maintenue face vers le bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Les collyres sont prescrits pendant 1 mois et les contrôles ont lieu au cabinet, à J7, à 1 mois et à 3 mois. Tant que la bulle est présente (environ 2 semaines pour le SF6, 4 à 5 semaines pour le C2F6), la vision de l’œil opéré est très floue, et l’avion comme l’altitude sont contre-indiqués. La vision récupère ensuite progressivement, sur 3 à 6 mois.
+
 ##### Combien de temps faut-il rester face vers le bas après l’opération ?
 
 La posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas, notamment de la taille du trou et du gaz utilisé. Pour les trous **< 400 µm**, l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020). Les consignes précises vous seront remises en fonction de votre cas.
@@ -2412,7 +2434,7 @@ La fermeture spontanée est **possible mais rare**, essentiellement dans les tr�
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2949,6 +2971,10 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 
 #### Questions fréquentes
 
+##### Un décollement postérieur du vitré est-il grave ?
+
+En lui-même, non. Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, surtout après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Mais en se décollant, le vitré peut tirer sur la rétine et la déchirer, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
+
 ##### Peut-on prévenir un DPV ?
 
 Non. Le DPV est un phénomène physiologique lié au vieillissement du vitré, au même titre que l’apparition de cheveux blancs. Aucun complément alimentaire, collyre ou médicament n’a démontré d’efficacité préventive.
@@ -2969,7 +2995,7 @@ Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinien
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Baisse brutale de la vision
 
@@ -3078,6 +3104,8 @@ Phacoémulsification par micro-incision, choix de l’implant intraoculaire
 La chirurgie de la cataracte consiste à remplacer le cristallin opacifié par un implant artificiel (IOL = Intra-Ocular Lens). La technique de référence en France est la phacoémulsification : fragmentation ultrasonore du cristallin à travers une incision de 2,2 à 2,8 mm, puis pose d’un implant pliable dans le sac capsulaire.
 
 Le choix de l’implant est un élément clé de la consultation pré-opératoire : monofocal (gold standard), monofocal torique (astigmatisme cornéen), EDOF ou multifocal (indépendance aux lunettes — avec compromis).
+
+L’opération de la cataracte se fait en ambulatoire, le plus souvent sous anesthésie topique (un simple collyre anesthésiant), parfois locorégionale ; elle est indolore. Le Dr Majoulet fait le bilan et choisit l’implant avec le patient au Cabinet Ophtalife de Boulogne-Billancourt, opère à la Clinique Jouvenet (Paris 16e), puis contrôle l’œil au cabinet une semaine, puis un mois après l’opération. Le deuxième œil est habituellement opéré 1 à 4 semaines après le premier.
 
 **Votre consultation cataracte à Boulogne** / Bilan préopératoire au Cabinet Ophtalife, intervention à la Clinique Jouvenet, Paris 16e.
 
@@ -3203,7 +3231,7 @@ L’implant est prévu pour toute la vie et ne demande aucun entretien. Il peut 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Cataracte
 
@@ -4054,6 +4082,10 @@ Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un sui
 
 **Non, pas au début.** La rétinopathie diabétique évolue longtemps de manière silencieuse, sans aucun symptôme. C’est toute l’importance du dépistage régulier. Les symptômes n’apparaissent souvent qu’à un stade déjà avancé : baisse de la vision centrale (œdème maculaire), mouches volantes ou voile noir (hémorragie intravitréenne), perte brutale de la vision (décollement de rétine tractionnel).
 
+##### Comment traite-t-on la rétinopathie diabétique ?
+
+Le traitement de la rétinopathie diabétique dépend de son stade. Il repose d’abord sur l’équilibre du diabète, de la pression artérielle et des lipides, et sur l’arrêt du tabac, en lien avec le médecin traitant et le diabétologue. L’**œdème maculaire diabétique**, première cause de baisse de la vision chez le diabétique, se traite en première intention par des **injections intravitréennes d’anti-VEGF**, réalisées au cabinet ; un implant intravitréen de dexaméthasone peut être utilisé en cas de réponse insuffisante. Les **formes proliférantes**, où des néovaisseaux se développent, se traitent par **photocoagulation panrétinienne au laser**, en plusieurs séances au cabinet, sous anesthésie topique. Une **vitrectomie** est indiquée en cas d’hémorragie intravitréenne qui persiste plus de 2 à 3 mois ou de décollement de rétine par traction qui menace la macula ; le Dr Majoulet opère à la Clinique Jouvenet (Paris 16e). Comme la rétinopathie reste longtemps sans symptôme, un dépistage au moins une fois par an est proposé au cabinet à toute personne diabétique.
+
 ##### Comment traiter un œdème maculaire diabétique ?
 
 Le traitement de **première intention** est l’**injection intravitréenne d’anti-VEGF** (aflibercept, ranibizumab, faricimab, brolucizumab). En cas de réponse insuffisante, un implant intravitréen de dexaméthasone (Ozurdex®) peut être utilisé, notamment chez les patients pseudophaques ou en cas de contre-indication aux injections mensuelles. Le laser focal a un rôle devenu accessoire.
@@ -4070,7 +4102,7 @@ Oui, partiellement. Un contrôle strict de la glycémie (HbA1c cible généralem
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) et des [recommandations EURETINA sur l’œdème maculaire diabétique (2017)](https://doi.org/10.1159/000458539). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) et des [recommandations EURETINA sur l’œdème maculaire diabétique (2017)](https://doi.org/10.1159/000458539). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5237,6 +5269,10 @@ Parce que le glaucome est une maladie **chronique** et silencieuse qui ne se gu�
 
 La SLT (Trabéculoplastie sélective au laser) cible les cellules pigmentées du trabéculum. Elle abaisse la PIO de **20-30 %** pendant **3 à 5 ans**, est indolore, répétable, et évite la contrainte quotidienne des collyres. Depuis l’étude **LiGHT (Lancet 2019)**, elle est recommandée en **1re ligne du GPAO**.
 
+##### Comment se déroule le laser SLT au cabinet ?
+
+Le laser SLT (trabéculoplastie sélective), qui abaisse la pression de l’œil dans le glaucome, se fait au cabinet, en consultation ; il est indolore. Le Dr Majoulet le réalise en **deux séances espacées de 4 à 6 semaines** : la moitié inférieure du trabéculum (180°) lors de la première, la moitié supérieure lors de la seconde, plutôt qu’en une seule séance de 360°. Cette approche limite le pic de pression et l’inflammation après le laser, à efficacité comparable. La SLT peut être répétée. Elle ne dispense pas du suivi, qui reste à vie : pression de l’œil, OCT et champ visuel sont contrôlés régulièrement.
+
 ##### Quand faut-il opérer un glaucome ?
 
 Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal et/ou une SLT, ou en cas de **progression du champ visuel / OCT**, d’**intolérance** ou de **mauvaise observance**. Le choix de la technique dépend du stade et des antécédents : **MIGS** (iStent, Hydrus) en glaucome léger ; **PreserFlo, XEN, trabéculectomie, sclérectomie** en modéré-sévère ; **implants tubulaires** en réfractaire.
@@ -5259,7 +5295,7 @@ Majoulet A, Scemla B, Hamard P, et al. *Safety and Efficacy of the Preserflo Mic
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de la Société européenne du glaucome (EGS, 6e édition, 2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 août 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de la Société européenne du glaucome (EGS, 6e édition, 2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
