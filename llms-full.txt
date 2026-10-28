@@ -460,6 +460,10 @@ Pour orienter votre démarche, consultez la **[page dédiée aux urgences ophtal
 
 Oui, en secteur 2 conventionné. Les honoraires sont disponibles sur la fiche Doctolib du Dr Majoulet. Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel ; le reste à charge éventuel dépend de votre mutuelle.
 
+##### Quel est le délai pour obtenir un rendez-vous ?
+
+Des rendez-vous sont habituellement disponibles dans la semaine, en ligne sur Doctolib ou par téléphone au cabinet. Pour des éclairs ou des corps flottants récents, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h.
+
 ##### Quels sont les principaux motifs de consultation ?
 
 Bilan ophtalmologique, suivi rétine (DMLA, rétinopathie diabétique, OVR, membrane épirétinienne, trou maculaire, décollement de rétine), consultation cataracte, suivi glaucome, injections intravitréennes, urgences ophtalmologiques sur créneaux dédiés.
@@ -478,7 +482,7 @@ Français et anglais.
 
 ##### Le cabinet de Boulogne-Billancourt reçoit-il les urgences de la rétine ?
 
-Oui, aux heures d’ouverture : lundi, mercredi et jeudi de 9 h à 20 h, mardi, vendredi et samedi de 9 h à 18 h, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une occlusion de l’artère centrale de la rétine, y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
+Oui, du lundi au samedi, aux heures d’ouverture : lundi, mercredi et jeudi de 9 h à 20 h, mardi, vendredi et samedi de 9 h à 18 h, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une occlusion de l’artère centrale de la rétine, y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
 
 ##### Que faire en dehors des horaires d’ouverture en cas d’urgence ?
 
@@ -1418,11 +1422,15 @@ Utilisé dans certains essais thérapeutiques ou chez des patients difficiles à
 
 ##### L’injection dans l’œil est-elle douloureuse ?
 
-Elle est réalisée **sous anesthésie locale par collyre**, appliqué plusieurs minutes avant le geste. La majorité des patients décrivent une sensation brève de pression plutôt qu’une douleur ; l’injection elle-même dure 1 à 2 minutes. Une sensation de sable, des démangeaisons ou un larmoiement peuvent suivre, liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
+**Non, elle est indolore** : elle se fait **sous anesthésie locale**, par un collyre appliqué plusieurs minutes avant le geste. La plupart des patients ressentent seulement une brève sensation de pression ; l’injection elle-même dure 1 à 2 minutes. Une gêne peut ensuite persister, ce qui est normal : sensation de sable, démangeaisons ou larmoiement, liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
 
 ##### Vais-je voir l’aiguille venir ?
 
 Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre passagère, mais pas l’aiguille elle-même.
+
+##### Combien de temps dure un rendez-vous d’injection ?
+
+Environ **10 minutes** lorsque le rendez-vous comporte seulement l’injection, et environ **20 minutes** lorsqu’il comporte aussi un OCT et une mesure de l’acuité visuelle.
 
 ##### Combien de temps dure l’effet d’une injection d’anti-VEGF ?
 
@@ -1719,7 +1727,7 @@ Oui, c’est fréquent chez le patient phaque de plus de 50 ans. La vitrectomie 
 
 ##### Peut-on reprendre l’avion après une vitrectomie sous gaz ?
 
-Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
+**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour, puis disparaît : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 ##### Faut-il arrêter les anticoagulants ou antiagrégants avant l’intervention ?
 
@@ -1736,6 +1744,10 @@ Les complications sérieuses restent rares : endophtalmie (infection intraoculai
 ##### Quelle est la prise en charge par l’Assurance Maladie ?
 
 La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, pris en charge par l’Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention conformément à la réglementation.
+
+##### Combien coûte une opération de la rétine ?
+
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1806,7 +1818,7 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 #### Déroulement de l’intervention
 
 - **25G / 27G** — Calibre des micro-incisions
-- **~45-90 min** — Durée moyenne
+- **30 à 45 min** — Durée moyenne
 - **Ambulatoire** — Sortie le même jour
 
 ##### Ma pratique
@@ -1928,7 +1940,7 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
-**Non, tant qu’une bulle de gaz persiste.** L’altitude fait augmenter le volume du gaz et peut provoquer une hypertonie majeure. La bulle se résorbe d’elle-même : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
+**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz persiste, l’altitude fait augmenter son volume et peut provoquer une hypertonie majeure. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour : une ligne apparaît dans le champ de vision et descend, puis il ne reste qu’une petite bulle, en bas du champ de vision, qui finit par disparaître. La bulle se résorbe d’elle-même : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
 ##### Combien de temps d’arrêt de travail prévoir ?
 
@@ -1940,7 +1952,7 @@ Dans la grande majorité des cas, **il n’est pas nécessaire d’arrêter** un
 
 ##### L’intervention est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement et dépassements d’honoraires éventuels) est remis avant l’intervention conformément à la réglementation.
+Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement et dépassements d’honoraires éventuels) est remis avant l’intervention conformément à la réglementation. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -2012,7 +2024,7 @@ Dû à une accumulation de liquide sous la rétine sans déchirure. Il peut comp
 
 #### Facteurs de risque
 
-- **Myopie forte** (> -6 dioptries) : risque multiplié par 10
+- **Myopie forte** (> -6 dioptries) : risque multiplié par 5 à 10
 - **Antécédent de chirurgie de la cataracte** (pseudophaquie)
 - **Traumatisme oculaire** (choc, plaie)
 - **Antécédent personnel** ou **familial** de décollement de rétine
@@ -2100,7 +2112,7 @@ La reprise est **progressive** : le sport, les efforts importants et le sauna so
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 27 octobre 2026.
+Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2114,7 +2126,7 @@ Diagnostic OCT et chirurgie par vitrectomie avec pelage
 
 Une **membrane épirétinienne (MER)** est une fine pellicule qui se forme à la surface de la rétine, le plus souvent dans sa partie centrale, la **macula**. En se contractant, elle plisse la rétine : les lignes droites paraissent déformées et la vision peut baisser progressivement.
 
-Une membrane épirétinienne ne s’opère pas toujours : une membrane peu gênante est simplement surveillée par OCT. Lorsque la gêne s’installe (lignes déformées, baisse de la vision), le Dr Majoulet propose une **vitrectomie avec pelage de la membrane**. L’opération se fait en ambulatoire, à la Clinique Jouvenet (Paris 16e), et dure 30 à 45 minutes. En règle, aucun gaz n’est laissé dans l’œil, donc pas de posture après l’opération ni de restriction pour l’avion ; chaque dossier est jugé au cas par cas. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. La vision récupère progressivement, sur 3 à 6 mois : le but de l’opération est d’abord de stopper sa dégradation.
+Il existe deux types de membranes épirétiniennes : certaines restent stables pendant des années, d’autres progressent. Une membrane qui ne gêne pas est simplement surveillée, par un OCT tous les 6 mois. On opère lorsque la membrane gêne : baisse de l’acuité visuelle, métamorphopsies (les lignes droites paraissent déformées) ou micropsies (les objets paraissent plus petits). Le Dr Majoulet propose alors une **vitrectomie avec pelage de la membrane**. L’opération se fait en ambulatoire, à la Clinique Jouvenet (Paris 16e), et dure 30 à 45 minutes. En règle, aucun gaz n’est laissé dans l’œil, donc pas de posture après l’opération ni de restriction pour l’avion ; chaque dossier est jugé au cas par cas. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. La vision récupère progressivement, sur 3 à 6 mois : le but de l’opération est d’abord de stopper sa dégradation.
 
 **Un avis sur une intervention de la rétine**
 
@@ -2273,7 +2285,7 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 ##### Faut-il toujours opérer une membrane épirétinienne ?
 
-Non. Lorsque la membrane est fine, peu symptomatique et que l’acuité visuelle reste satisfaisante, une simple **surveillance par OCT tous les 6 à 12 mois** est recommandée. L’indication opératoire est posée en présence de métamorphopsies invalidantes, d’une baisse d’acuité significative ou d’une désorganisation architecturale de la fovéa sur l’OCT.
+Non. Lorsque la membrane est fine, peu symptomatique et que l’acuité visuelle reste satisfaisante, une simple **surveillance par OCT tous les 6 mois** est recommandée. L’indication opératoire est posée en présence de métamorphopsies invalidantes, de micropsies (objets vus plus petits), d’une baisse d’acuité significative ou d’une désorganisation architecturale de la fovéa sur l’OCT.
 
 ##### Combien de temps pour récupérer la vision après la chirurgie ?
 
@@ -2297,7 +2309,7 @@ Chez un patient phaque de plus de 50 ans, la **cataracte** progresse dans plus d
 
 ##### Si je ne me fais pas opérer, la vision va-t-elle continuer à baisser ?
 
-L’évolution d’une MER peut être lente et rester stable pendant des années, ou au contraire progresser sur plusieurs mois. Un **suivi OCT tous les 6 à 12 mois** permet de documenter l’évolution (épaisseur fovéolaire, apparition d’*ectopic inner foveal layers*, apparition de kystes). Une chirurgie trop tardive, sur une rétine très désorganisée, donne un résultat fonctionnel moins favorable — d’où l’importance de ne pas tarder lorsque la gêne s’installe.
+L’évolution d’une MER peut être lente et rester stable pendant des années, ou au contraire progresser sur plusieurs mois. Un **suivi OCT tous les 6 mois** permet de documenter l’évolution (épaisseur fovéolaire, apparition d’*ectopic inner foveal layers*, apparition de kystes). Une chirurgie trop tardive, sur une rétine très désorganisée, donne un résultat fonctionnel moins favorable — d’où l’importance de ne pas tarder lorsque la gêne s’installe.
 
 ##### La chirurgie est-elle prise en charge par la Sécurité sociale ?
 
@@ -2374,13 +2386,13 @@ L’OCT permet également de différencier un **trou maculaire de pleine épaiss
 
 #### Traitement chirurgical : vitrectomie + pelage MLI + gaz
 
-Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Elle se déroule en **ambulatoire**, sous **anesthésie locorégionale** (péribulbaire) ou générale, et dure en général **30 à 45 minutes**.
+Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Elle se déroule en **ambulatoire**, sous **anesthésie locorégionale** (péribulbaire) ou générale, et dure **environ 40 minutes**.
 
 ##### Ma pratique
 
 - **L’opération** : vitrectomie, pelage de la membrane limitante interne et bulle de gaz. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
 - **Gaz** : SF6 ou C2F6, le plus souvent du SF6.
-- **Posture** : face vers le bas, un maximum de temps chaque jour, pendant quelques jours après l’opération ; la durée dépend des cas.
+- **Posture** : face vers le bas, un maximum de temps chaque jour, pendant quelques jours après l’opération ; la durée dépend des cas. La nuit, sur le ventre, pendant environ 48 heures.
 - **Collyres** : pendant 1 mois.
 - **Contrôles** : à J7, à 1 mois et à 3 mois.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
@@ -2414,13 +2426,13 @@ Examen et OCT au cabinet. Si le cristallin est encore en place, la cataracte est
 
 ##### Jour J L’opération, en ambulatoire
 
-Vitrectomie, pelage de la membrane limitante interne et bulle de gaz, le plus souvent du SF6, sous anesthésie locorégionale ou générale. Elle dure en général 30 à 45 minutes.
+Vitrectomie, pelage de la membrane limitante interne et bulle de gaz, le plus souvent du SF6, sous anesthésie locorégionale ou générale. Elle dure environ 40 minutes.
 
 3.
 
 ##### Les premiers jours Face vers le bas
 
-Un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Collyres pendant 1 mois.
+Un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. La nuit, dormir sur le ventre pendant environ 48 heures. Collyres pendant 1 mois.
 
 Tant que la bulle est là, la vision de l’œil opéré est très floue, l’avion et l’altitude sont contre-indiqués, et le gaz doit être signalé à tout soignant (pas de protoxyde d’azote). Elle se résorbe en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6.
 
@@ -2440,13 +2452,13 @@ Examen et OCT. Fin des collyres.
 
 ##### 3 mois Troisième contrôle
 
-Examen et OCT. La récupération visuelle est progressive, sur 3 à 6 mois.
+Examen et OCT. La récupération visuelle est progressive, sur 6 à 12 mois.
 
 Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 #### Positionnement post-opératoire et suites
 
-**Positionnement face vers le bas (« face down »)** : après la chirurgie, il est essentiel de maintenir la tête face vers le bas un maximum de temps chaque jour, pendant **quelques jours** après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), afin que la bulle de gaz vienne appuyer sur la macula. Les consignes personnalisées vous seront remises à la sortie.
+**Positionnement face vers le bas (« face down »)** : après la chirurgie, il est essentiel de maintenir la tête face vers le bas un maximum de temps chaque jour, pendant **quelques jours** après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), afin que la bulle de gaz vienne appuyer sur la macula. La nuit, dormez sur le ventre pendant environ 48 heures. Les consignes personnalisées vous seront remises à la sortie.
 
 Durant toute la période où la bulle de gaz est présente :
 
@@ -2465,7 +2477,7 @@ Durant toute la période où la bulle de gaz est présente :
 
 **En fin de résorption.** Il ne reste qu’une petite bulle, en bas du champ de vision, avant qu’elle disparaisse.
 
-Le suivi OCT est habituellement réalisé à **J7, M1 puis M3**. La récupération visuelle est progressive sur **3 à 6 mois**.
+Le suivi OCT est habituellement réalisé à **J7, M1 puis M3**. La récupération visuelle est progressive sur **6 à 12 mois**.
 
 #### Résultats et pronostic visuel
 
@@ -2523,15 +2535,19 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 ##### Combien de temps dure l’opération du trou maculaire, et comment se passe-t-elle ?
 
-L’opération du trou maculaire dure en général **30 à 45 minutes**. Elle se fait en ambulatoire, sous anesthésie locorégionale ou générale, à la Clinique Jouvenet (Paris 16e). Le Dr Majoulet réalise une vitrectomie : il retire le gel de l’œil, puis la membrane limitante interne, une fine membrane qui tapisse la surface de la rétine, et laisse dans l’œil une bulle de gaz, le plus souvent du SF6, sinon du C2F6. Si le cristallin est encore en place, il opère souvent la cataracte dans le même temps. Après l’opération, la tête est maintenue face vers le bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Les collyres sont prescrits pendant 1 mois et les contrôles ont lieu au cabinet, à J7, à 1 mois et à 3 mois. Tant que la bulle est présente (environ 2 semaines pour le SF6, 4 à 5 semaines pour le C2F6), la vision de l’œil opéré est très floue, et l’avion comme l’altitude sont contre-indiqués. La vision récupère ensuite progressivement, sur 3 à 6 mois.
+L’opération du trou maculaire dure **environ 40 minutes**. Elle se fait en ambulatoire, sous anesthésie locorégionale ou générale, à la Clinique Jouvenet (Paris 16e). Le Dr Majoulet réalise une vitrectomie : il retire le gel de l’œil, puis la membrane limitante interne, une fine membrane qui tapisse la surface de la rétine, et laisse dans l’œil une bulle de gaz, le plus souvent du SF6, sinon du C2F6. Si le cristallin est encore en place, il opère souvent la cataracte dans le même temps. Après l’opération, la tête est maintenue face vers le bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. La nuit, il faut dormir sur le ventre pendant environ 48 heures. Les collyres sont prescrits pendant 1 mois et les contrôles ont lieu au cabinet, à J7, à 1 mois et à 3 mois. Tant que la bulle est présente (environ 2 semaines pour le SF6, 4 à 5 semaines pour le C2F6), la vision de l’œil opéré est très floue, et l’avion comme l’altitude sont contre-indiqués. La vision récupère ensuite progressivement, sur 6 à 12 mois.
 
 ##### Combien de temps faut-il rester face vers le bas après l’opération ?
 
 La posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas, notamment de la taille du trou et du gaz utilisé. Pour les trous **< 400 µm**, l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020). Les consignes précises vous seront remises en fonction de votre cas.
 
+##### Comment dormir après l’opération du trou maculaire ?
+
+Sur le ventre, pendant **environ 48 heures** après l’opération. Le jour, la tête est maintenue face vers le bas un maximum de temps, pendant quelques jours ; la durée dépend des cas. Les consignes précises vous sont remises à la sortie.
+
 ##### Quel est le taux de succès de la chirurgie du trou maculaire ?
 
-Le taux de fermeture anatomique est de **90 à 95 %** pour les trous de petite et moyenne taille opérés dans l’année. Il reste élevé (≈ 90 %) jusqu’à 650 µm environ et diminue au-delà (≈ 75-80 % avec un pelage simple), d’où le recours au lambeau inversé de MLI pour les très grands trous et les trous chroniques. La récupération visuelle est progressive sur 3 à 6 mois, avec un gain moyen de **2 à 4 lignes** d’acuité visuelle.
+Le taux de fermeture anatomique est de **90 à 95 %** pour les trous de petite et moyenne taille opérés dans l’année. Il reste élevé (≈ 90 %) jusqu’à 650 µm environ et diminue au-delà (≈ 75-80 % avec un pelage simple), d’où le recours au lambeau inversé de MLI pour les très grands trous et les trous chroniques. La récupération visuelle est progressive sur 6 à 12 mois, avec un gain moyen de **2 à 4 lignes** d’acuité visuelle.
 
 ##### Quand vais-je pouvoir reprendre une vie normale ?
 
@@ -3088,7 +3104,7 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 
 ##### Un décollement postérieur du vitré est-il grave ?
 
-En lui-même, non. Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, surtout après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Mais en se décollant, le vitré peut tirer sur la rétine et la déchirer, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
+**Non, ce n’est pas grave.** Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, qui arrive à tout le monde un jour ou l’autre, le plus souvent après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Le seul risque est qu’en se décollant, le vitré tire sur la rétine et la déchire, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
 
 ##### Peut-on prévenir un DPV ?
 
@@ -3220,7 +3236,9 @@ La chirurgie de la cataracte consiste à remplacer le cristallin opacifié par u
 
 Le choix de l’implant est un élément clé de la consultation pré-opératoire : monofocal (gold standard), monofocal torique (astigmatisme cornéen), EDOF ou multifocal (indépendance aux lunettes — avec compromis).
 
-L’opération de la cataracte se fait en ambulatoire, le plus souvent sous anesthésie topique (un simple collyre anesthésiant), parfois locorégionale ; elle est indolore. Le Dr Majoulet fait le bilan et choisit l’implant avec le patient au Cabinet Ophtalife de Boulogne-Billancourt, opère à la Clinique Jouvenet (Paris 16e), puis contrôle l’œil au cabinet une semaine, puis un mois après l’opération. Le deuxième œil est habituellement opéré 1 à 4 semaines après le premier.
+L’opération de la cataracte se fait en ambulatoire, le plus souvent sous anesthésie topique (un simple collyre anesthésiant), parfois locorégionale ; elle est indolore et dure 10 à 15 minutes. Le patient reste éveillé et ne voit qu’une lumière diffuse. Le chirurgien fait de petites incisions dans la cornée, ouvre la capsule du cristallin, fragmente le cristallin opacifié par ultrasons et l’aspire, puis place l’implant souple dans le sac capsulaire ; les incisions sont étanches et ne demandent pas de suture. Le patient rentre chez lui le jour même, avec une coque de protection à mettre la nuit les premiers jours.
+
+Le Dr Majoulet fait le bilan et choisit l’implant avec le patient au Cabinet Ophtalife de Boulogne-Billancourt, opère à la Clinique Jouvenet (Paris 16e), puis contrôle l’œil au cabinet une semaine, puis un mois après l’opération. Le deuxième œil est habituellement opéré 1 à 4 semaines après le premier.
 
 **Votre consultation cataracte à Boulogne** / Bilan préopératoire au Cabinet Ophtalife, intervention à la Clinique Jouvenet, Paris 16e.
 
@@ -3282,13 +3300,13 @@ Discussion détaillée du projet visuel (lecture, conduite, travail sur écran),
 
 ###### Jour J Intervention
 
-Anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 15 à 20 minutes.
+Anesthésie topique, phacoémulsification par micro-incision, implantation dans le sac capsulaire, durée opératoire environ 10 à 15 minutes.
 
 5.
 
 ###### Les premiers jours Suites
 
-Collyres antibio-anti-inflammatoires pendant 4 semaines. Reprise de l’activité normale quelques jours après.
+Collyres antibio-anti-inflammatoires pendant 1 mois. Reprise de l’activité normale quelques jours après.
 
 6.
 
@@ -3332,7 +3350,11 @@ Elle est exceptionnelle pour la cataracte. L’anesthésie topique (simple colly
 
 ##### Combien de temps d’arrêt de travail ?
 
-Généralement 1 à 2 semaines, selon le métier. Reprise du travail de bureau possible dès J3-J7. Éviction de la piscine, du jardinage et des efforts intenses pendant 2 à 4 semaines.
+Une semaine, si nécessaire. Éviction de la piscine, du jardinage et des efforts intenses pendant 2 à 4 semaines.
+
+##### Peut-on prendre l’avion après une opération de la cataracte ?
+
+Oui. Si l’opération s’est bien déroulée, il n’y a pas de contre-indication à prendre l’avion après une chirurgie de la cataracte : contrairement à certaines opérations de la rétine, aucun gaz n’est laissé dans l’œil.
 
 ##### Peut-on opérer si j’ai d’autres pathologies oculaires ?
 
@@ -3463,7 +3485,7 @@ Offre une **indépendance large aux lunettes** à toutes les distances. En contr
 
 #### La chirurgie par phacoémulsification
 
-C’est une chirurgie très fréquente (environ 640 000 opérations par an en France, en moyenne sur 2005-2014) et standardisée ; les complications graves sont rares. Elle est réalisée en **ambulatoire**, sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire), et dure habituellement **15 à 25 minutes**.
+C’est une chirurgie très fréquente (environ 640 000 opérations par an en France, en moyenne sur 2005-2014) et standardisée ; les complications graves sont rares. Elle est réalisée en **ambulatoire**, sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire), et dure habituellement **10 à 15 minutes**.
 
 Les étapes sont :
 
@@ -3481,10 +3503,11 @@ Les étapes sont :
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
 - **Récupération visuelle rapide** : 24 à 72 heures dans la majorité des cas.
-- **Collyres antibio-corticoïdes** pendant 3 à 4 semaines.
+- **Collyres antibio-corticoïdes** pendant 1 mois.
 - **Protection oculaire** à domicile les premiers jours (coque la nuit).
 - Éviter de se frotter l’œil, la natation et la piscine pendant 2 à 3 semaines.
-- Reprise du travail habituelle sous 3 à 7 jours selon la profession.
+- Arrêt de travail d’une semaine, si nécessaire.
+- **Avion** : pas de contre-indication si l’opération s’est bien déroulée.
 - Contrôles habituels une semaine, puis un mois après l’opération. Prescription définitive des lunettes vers la 4e semaine.
 - Deuxième œil habituellement opéré à 1 à 4 semaines d’intervalle.
 
@@ -3513,7 +3536,7 @@ L’indication est posée sur le **retentissement fonctionnel** et non sur l’a
 
 ##### La chirurgie de la cataracte est-elle douloureuse ?
 
-**Non, elle est indolore.** Elle se réalise sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire) dans la très grande majorité des cas. Le patient est éveillé mais ne voit qu’une lumière diffuse. L’intervention dure généralement 15 à 25 minutes par œil et se fait en ambulatoire, avec une récupération visuelle rapide.
+**Non, elle est indolore.** Elle se réalise sous **anesthésie topique** (gouttes) ou **locorégionale** (péribulbaire) dans la très grande majorité des cas. Le patient est éveillé mais ne voit qu’une lumière diffuse. L’intervention dure généralement 10 à 15 minutes par œil et se fait en ambulatoire, avec une récupération visuelle rapide.
 
 ##### Quel implant choisir : monofocal, torique, multifocal, EDOF ?
 
@@ -3535,7 +3558,7 @@ C’est une **chirurgie très fréquente** : environ 640 000 opérations par an 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -3602,7 +3625,7 @@ L’intervention est indolore. Le deuxième œil est opéré habituellement 1 à
 
 #### Suites opératoires et récupération
 
-- **Collyres postopératoires** : antibiotique + anti-inflammatoire pendant 3 à 4 semaines.
+- **Collyres postopératoires** : antibiotique + anti-inflammatoire pendant 1 mois.
 - **Protection oculaire** : coque nocturne 5 à 7 nuits ; lunettes de soleil en extérieur.
 - **Récupération visuelle** : nette amélioration dès J1-J3, stabilité complète à 4-6 semaines.
 - **Activités** : reprise du travail à 3-7 jours selon les cas ; conduite autorisée dès obtention d’une acuité suffisante sur l’œil opéré (habituellement J2-J3) ; sport sans impact à partir de 1 semaine, piscine et sports de contact à partir de 1 mois.
@@ -3643,7 +3666,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Implants toriques
 
@@ -3699,11 +3722,11 @@ Le temps chirurgical est **identique à une chirurgie de la cataracte standard**
 
 **Implant décalé de 10°.** Chaque degré de désalignement fait perdre environ 3,3 % de la correction : 10° en font perdre 33 %, 30° l’annulent.
 
-Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’intervention 15 à 25 minutes.
+Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’intervention 10 à 15 minutes.
 
 #### Suites opératoires
 
-- Collyres antibiotique + anti-inflammatoire pendant 3 à 4 semaines.
+- Collyres antibiotique + anti-inflammatoire pendant 1 mois.
 - Coque oculaire nocturne 5 à 7 nuits.
 - Contrôles une semaine, puis un mois après l’opération. Mesure de l’axe de l’implant et de l’astigmatisme résiduel.
 - Éviter les traumatismes oculaires et les frottements les premiers jours — une rotation significative survient, si elle doit survenir, dans les 2 premières semaines.
@@ -3745,7 +3768,7 @@ Anesthésie topique le plus souvent, hospitalisation ambulatoire, durée de l’
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Implants multifocaux & EDOF
 
@@ -4199,7 +4222,7 @@ Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un sui
 
 ##### Comment traite-t-on la rétinopathie diabétique ?
 
-Le traitement de la rétinopathie diabétique dépend de son stade. Il repose d’abord sur l’équilibre du diabète, de la pression artérielle et des lipides, et sur l’arrêt du tabac, en lien avec le médecin traitant et le diabétologue. L’**œdème maculaire diabétique**, première cause de baisse de la vision chez le diabétique, se traite en première intention par des **injections intravitréennes d’anti-VEGF**, réalisées au cabinet ; un implant intravitréen de dexaméthasone peut être utilisé en cas de réponse insuffisante. Les **formes proliférantes**, où des néovaisseaux se développent, se traitent par **photocoagulation panrétinienne au laser**, en plusieurs séances au cabinet, sous anesthésie topique. Une **vitrectomie** est indiquée en cas d’hémorragie intravitréenne qui persiste plus de 2 à 3 mois ou de décollement de rétine par traction qui menace la macula ; le Dr Majoulet opère à la Clinique Jouvenet (Paris 16e). Comme la rétinopathie reste longtemps sans symptôme, un dépistage au moins une fois par an est proposé au cabinet à toute personne diabétique.
+Le traitement de la rétinopathie diabétique dépend de son stade et suit les recommandations internationales (American Academy of Ophthalmology, 2025 ; EURETINA, 2017). Il repose d’abord sur l’équilibre du diabète, de la pression artérielle et des lipides, et sur l’arrêt du tabac, en lien avec le médecin traitant et le diabétologue. L’**œdème maculaire diabétique**, première cause de baisse de la vision chez le diabétique, se traite en première intention par des **injections intravitréennes d’anti-VEGF**, réalisées au cabinet ; un implant intravitréen de dexaméthasone peut être utilisé en cas de réponse insuffisante, ou lorsque des injections rapprochées ne sont pas possibles. Les **formes proliférantes**, où des néovaisseaux se développent, se traitent par **photocoagulation panrétinienne au laser**, en plusieurs séances au cabinet, sous anesthésie topique ; les injections d’anti-VEGF peuvent la compléter, ou la remplacer dans certaines situations. Une **vitrectomie** est indiquée en cas d’hémorragie intravitréenne qui persiste plus de 2 à 3 mois ou de décollement de rétine par traction qui menace la macula ; le Dr Majoulet opère à la Clinique Jouvenet (Paris 16e). Comme la rétinopathie reste longtemps sans symptôme, un dépistage au moins une fois par an est proposé au cabinet à toute personne diabétique.
 
 ##### Comment traiter un œdème maculaire diabétique ?
 
@@ -4703,7 +4726,7 @@ La **myopie forte** est définie par une myopie **d’au moins 6 dioptries** ou 
 
 - **≥ -6 D** — Seuil de myopie forte
 - **≥ 26 mm** — Longueur axiale pathologique
-- **× 10 et plus** — Risque de décollement de rétine
+- **× 5 à 10** — Risque de décollement de rétine
 
 #### Comprendre la myopie forte
 
@@ -4731,7 +4754,7 @@ Forme particulière de trou maculaire, souvent associée à un fovéoschisis ou 
 
 ##### Décollement de rétine rhegmatogène
 
-La myopie forte multiplie **environ par 10**, voire davantage, le risque de décollement de rétine. Les déchirures périphériques sur rétine amincie (palissades, trous) sont plus fréquentes et souvent multiples. **Tout symptôme d’alerte** (myodésopsies brutales, phosphènes, voile noir) chez un myope fort impose une **consultation ophtalmologique en urgence**.
+La myopie forte multiplie **par 5 à 10** le risque de décollement de rétine. Les déchirures périphériques sur rétine amincie (palissades, trous) sont plus fréquentes et souvent multiples. **Tout symptôme d’alerte** (myodésopsies brutales, phosphènes, voile noir) chez un myope fort impose une **consultation ophtalmologique en urgence**.
 
 **Signes devant faire consulter en urgence :** multiplication soudaine des **corps flottants (myodésopsies)**, **éclairs lumineux (phosphènes)**, apparition d’un **voile noir** ou d’une **amputation du champ visuel**. Ces signes évoquent une déchirure rétinienne ou un décollement de rétine débutant. Voir la page [Déchirure de rétine et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants).
 
@@ -4798,7 +4821,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5311,7 +5334,7 @@ Le laser SLT cible **sélectivement les cellules pigmentées du trabéculum** po
 
 Depuis l’étude **LiGHT (Lancet 2019)**, la SLT est proposée en **1re ligne du GPAO**, avant les collyres : indolore, réalisable en consultation, elle évite les contraintes et les effets secondaires d’un traitement chronique par collyres.
 
-En pratique au cabinet, le traitement est réalisé en **deux séances de 180° espacées de 4 à 6 semaines** (moitié inférieure puis supérieure du trabéculum), plutôt qu’en une seule séance de 360° : cette approche limite le pic pressionnel et l’inflammation post-laser, à efficacité comparable.
+En pratique au cabinet, le traitement est réalisé en **deux séances de 180° espacées de 4 à 6 semaines** (moitié inférieure puis supérieure du trabéculum), plutôt qu’en une seule séance de 360° : cette approche limite le pic pressionnel et l’inflammation post-laser, à efficacité comparable. Chaque séance dure environ 4 minutes, après une goutte de collyre anesthésiant, avec un verre posé sur l’œil.
 
 ##### Iridotomie périphérique au laser YAG
 
@@ -5386,7 +5409,7 @@ La SLT (Trabéculoplastie sélective au laser) cible les cellules pigmentées du
 
 ##### Comment se déroule le laser SLT au cabinet ?
 
-Le laser SLT (trabéculoplastie sélective), qui abaisse la pression de l’œil dans le glaucome, se fait au cabinet, en consultation ; il est indolore. Le Dr Majoulet le réalise en **deux séances espacées de 4 à 6 semaines** : la moitié inférieure du trabéculum (180°) lors de la première, la moitié supérieure lors de la seconde, plutôt qu’en une seule séance de 360°. Cette approche limite le pic de pression et l’inflammation après le laser, à efficacité comparable. La SLT peut être répétée. Elle ne dispense pas du suivi, qui reste à vie : pression de l’œil, OCT et champ visuel sont contrôlés régulièrement.
+Le laser SLT (trabéculoplastie sélective), qui abaisse la pression de l’œil dans le glaucome, se fait au cabinet, en consultation. Une goutte de collyre anesthésiant (oxybuprocaïne) est instillée, puis un verre est posé sur l’œil pour diriger le laser. Le laser est indolore et la séance dure **environ 4 minutes**. Le Dr Majoulet le réalise en **deux séances espacées de 4 à 6 semaines** : la moitié inférieure du trabéculum (180°) lors de la première, la moitié supérieure lors de la seconde, plutôt qu’en une seule séance de 360°. Cette approche limite le pic de pression et l’inflammation après le laser, à efficacité comparable. La SLT peut être répétée. Elle ne dispense pas du suivi, qui reste à vie : pression de l’œil, OCT et champ visuel sont contrôlés régulièrement.
 
 ##### Quand faut-il opérer un glaucome ?
 
