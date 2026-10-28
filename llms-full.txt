@@ -1187,11 +1187,23 @@ L’évolution est **très variable d’une personne à l’autre** — souvent 
 
 Deux médicaments (inhibiteurs du complément en injection intravitréenne) ont été approuvés **aux États-Unis** pour l’atrophie géographique : ils ralentissent la progression des lésions sans restaurer la vision perdue. L’agence européenne du médicament (EMA) a estimé que leur bénéfice clinique démontré était insuffisant au regard de leurs risques et **n’a pas délivré d’autorisation en Europe**. La recherche reste très active (nouvelles molécules, thérapie génique, rétine artificielle dans les formes évoluées) ; cette page sera mise à jour si un traitement devient disponible en France.
 
+#### Les essais en cours en France
+
+Plusieurs essais testent en France de nouveaux traitements de l’atrophie géographique. Chacun a ses propres critères d’entrée (stade, taille de l’atrophie, acuité visuelle) ; nous pouvons en parler en consultation.
+
+- **Des injections sous la peau** qui freinent une partie du système immunitaire, le complément (phase 3, recrute) : [NCT06541704](https://clinicaltrials.gov/study/NCT06541704).
+- **Des comprimés ou des gélules** : une nouvelle molécule (phase 2, recrute), [NCT07441642](https://clinicaltrials.gov/study/NCT07441642) ; un médicament déjà utilisé dans la sclérose en plaques, essai de l’AP-HP (phase 2, recrute), [NCT04292080](https://clinicaltrials.gov/study/NCT04292080).
+- **Un collyre**, lorsque l’atrophie n’a pas atteint le centre de la vision (phase 2, recrute) : [NCT06659549](https://clinicaltrials.gov/study/NCT06659549).
+- **Une thérapie génique sans virus**, injectée dans l’œil (phase 2, ouverture prévue) : [NCT07705568](https://clinicaltrials.gov/study/NCT07705568).
+- **Pour les formes très évoluées**, un petit télescope implanté dans l’œil, qui aide à lire sans soigner la maladie (recrute) : [NCT07164378](https://clinicaltrials.gov/study/NCT07164378).
+
+Trois autres essais ont fini de recruter et suivent leurs patients : une injection dans l’œil qui freine le complément ([NCT06510816](https://clinicaltrials.gov/study/NCT06510816)), un comprimé ([NCT05949593](https://clinicaltrials.gov/study/NCT05949593)) et un implant placé sous la rétine, qui rend une vision partielle dans les formes très évoluées ([NCT04676854](https://clinicaltrials.gov/study/NCT04676854)). Relevé du 28 octobre 2026 sur les registres ClinicalTrials.gov et européen (CTIS) : ces informations changent vite.
+
 #### Ce que l’on peut faire aujourd’hui
 
 ##### Compléments AREDS2 — dans les formes intermédiaires
 
-La formule **AREDS2** (vitamines C et E, lutéine, zéaxanthine, zinc et cuivre) a démontré une réduction du risque de progression vers une forme évoluée d’environ 25 % dans les **formes intermédiaires**. Elle se prend sur prescription, au long cours ; elle n’a pas d’intérêt démontré aux stades très précoces ni en prévention chez le sujet sain.
+La formule **AREDS2** (vitamines C et E, lutéine, zéaxanthine, zinc et cuivre) réduit le risque de progression vers une forme évoluée dans les **formes intermédiaires**, et lorsque l’atrophie n’a pas atteint le centre de la vision. Ce bénéfice a été démontré par l’essai AREDS (2001) ; l’essai AREDS2 (2013) a remplacé le bêta-carotène par la lutéine et la zéaxanthine. Une analyse plus récente de ces deux essais suggère qu’elle ralentit aussi l’avancée de l’atrophie vers le centre. Elle se prend sur prescription, au long cours ; elle n’a pas d’intérêt démontré aux stades très précoces ni en prévention chez le sujet sain.
 
 ##### Hygiène de vie
 
@@ -1217,7 +1229,7 @@ Dans les formes évoluées touchant le centre de la macula, la **rééducation b
 
 ##### Existe-t-il un traitement de la DMLA sèche ?
 
-Il n’existe pas encore de médicament autorisé en France pour la **DMLA sèche**, ou atrophique. Deux médicaments injectés dans l’œil ont été approuvés aux États-Unis pour l’atrophie géographique : ils ralentissent la progression des lésions sans restaurer la vision perdue, et l’agence européenne du médicament (EMA) n’a pas délivré d’autorisation en Europe. Des essais cliniques sont en cours, y compris en France. La prise en charge repose aujourd’hui sur la surveillance et la prévention : compléments AREDS2 dans les formes intermédiaires, sur prescription ; arrêt du tabac et alimentation riche en légumes verts et en poissons gras ; **OCT maculaire tous les 6 mois** au cabinet ; **grille d’Amsler une fois par jour**, chaque œil séparément. Une déformation nouvelle des lignes droites peut signaler le passage à une forme humide, qui se traite par injections : elle justifie une consultation sous 24-48 h.
+**Oui, en partie.** Dans les formes intermédiaires, et tant que l’atrophie n’a pas atteint le centre de la vision, une association de vitamines C et E, de lutéine, de zéaxanthine et de zinc (formule AREDS2), prise chaque jour sur prescription, réduit le risque d’aggravation. Aucun médicament n’est encore autorisé en France pour la **DMLA sèche**, ou atrophique : les deux médicaments injectés dans l’œil approuvés aux États-Unis n’ont pas obtenu d’autorisation en Europe, l’agence européenne du médicament (EMA) jugeant que le ralentissement des lésions ne s’accompagnait pas d’un bénéfice démontré sur la vision. Mais de **nombreuses études sont en cours**, y compris en France : des injections, sous la peau ou dans l’œil, qui freinent une partie du système immunitaire (le complément), des comprimés ou des gélules, un collyre et une thérapie génique. La prise en charge repose aussi sur l’arrêt du tabac et alimentation riche en légumes verts et en poissons gras ; **OCT maculaire tous les 6 mois** au cabinet ; **grille d’Amsler une fois par jour**, chaque œil séparément. Une déformation nouvelle des lignes droites peut signaler le passage à une forme humide, qui se traite par injections : elle justifie une consultation sous 24-48 h.
 
 ##### La DMLA sèche devient-elle toujours humide ?
 
@@ -1225,11 +1237,11 @@ Non. La majorité des DMLA sèches restent atrophiques. La conversion néovascul
 
 ##### Les compléments alimentaires sont-ils utiles ?
 
-La formule **AREDS2** a un bénéfice démontré uniquement dans les **formes intermédiaires** (réduction d’environ 25 % du risque de progression). Les autres compléments « pour la vue » n’ont pas fait cette preuve. Parlez-en en consultation plutôt que d’acheter au hasard.
+La formule **AREDS2** a un bénéfice démontré dans les **formes intermédiaires** et lorsque l’atrophie n’a pas atteint le centre de la vision (essais AREDS, 2001, et AREDS2, 2013) : elle réduit le risque de progression vers une forme évoluée. Les autres compléments « pour la vue » n’ont pas fait cette preuve. Parlez-en en consultation plutôt que d’acheter au hasard.
 
 ##### Un traitement existe aux États-Unis : puis-je en bénéficier ?
 
-Les inhibiteurs du complément approuvés aux États-Unis n’ont **pas d’autorisation européenne** : l’EMA a jugé leur rapport bénéfice/risque insuffisant (ralentissement anatomique des lésions sans gain visuel démontré, et risque accru de forme humide). Ils ne sont donc pas accessibles en France hors essai clinique.
+Les inhibiteurs du complément approuvés aux États-Unis n’ont **pas d’autorisation européenne** : l’EMA a jugé leur rapport bénéfice/risque insuffisant (ralentissement anatomique des lésions sans gain visuel démontré, et risque accru de forme humide). Ils ne sont donc pas accessibles en France, et aucun essai ouvert en France ne permet aujourd’hui de les recevoir. D’autres traitements y sont à l’essai (voir « Les essais en cours en France »).
 
 ##### À quel rythme dois-je être suivi ?
 
