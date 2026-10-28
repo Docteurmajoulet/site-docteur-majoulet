@@ -1139,6 +1139,10 @@ Oui, partiellement : **arrêt du tabac** (facteur de risque majeur), alimentatio
 
 Le traitement est **prolongé, souvent sur plusieurs années**. Le protocole standard débute par une phase d’induction (3 à 4 injections mensuelles) puis passe en schéma « Treat & Extend » adapté à l’activité de la maladie sur l’OCT. Certains patients stabilisés peuvent être espacés à 12-16 semaines.
 
+##### Combien de temps dure un rendez-vous d’injection au cabinet ?
+
+Environ **10 minutes** lorsque le rendez-vous comporte seulement l’injection, et environ **20 minutes** lorsqu’il comporte aussi un OCT et une mesure de l’acuité visuelle. Le geste lui-même ne dure que quelques minutes.
+
 ##### Je vois les lignes déformées depuis quelques jours : est-ce urgent ?
 
 Oui. Une **déformation nouvelle des lignes droites** ou une tache centrale récente peuvent révéler une forme humide, dont le pronostic dépend de la rapidité du traitement. Une consultation est nécessaire **dans les 24 à 48 heures** ; le cabinet prévoit des créneaux d’urgence pour ces situations, avec OCT sur place et injection sans délai si elle est indiquée.
@@ -1901,7 +1905,7 @@ Lorsque le tamponnement est gazeux, la bulle de gaz remonte à la partie supéri
 
 La durée du positionnement dépend de la pathologie et du tamponnement : de quelques jours à une semaine environ, selon la taille du trou ou l’emplacement des déchirures (consignes précises remises avant la sortie). Des équipements (chaise de positionnement, matelas spéciaux) peuvent être proposés. La vision reste très limitée tant que la bulle est présente.
 
-#### Suites opératoires et récupération
+#### Après une vitrectomie : suites, précautions et récupération
 
 - **Collyres antibio-corticoïdes** pendant 1 mois.
 - **Contrôles** : J7, M1, M3 au minimum.
@@ -3139,6 +3143,10 @@ Non. Le DPV est un phénomène physiologique lié au vieillissement du vitré, a
 
 Non, ils n’évoluent pas vers le haut de l’œil. Au contraire, ils **sédimentent** en inférieur avec le temps et deviennent moins perçus par le cerveau. Le phénomène d’adaptation visuelle (*neural adaptation*) est réel et documenté.
 
+##### Combien de temps durent les symptômes d’un décollement du vitré ?
+
+Les éclairs lumineux peuvent persister plusieurs semaines, puis s’estompent. Les corps flottants deviennent moins visibles avec le temps : ils se déposent dans le bas de l’œil et le cerveau s’y habitue. Un nouveau contrôle du fond d’œil est recommandé 4 à 6 semaines après le premier examen, car une déchirure peut apparaître secondairement. Si, après plus de 6 mois, des corps flottants restent très gênants, une vitrectomie ou un laser peuvent se discuter, avec un rapport bénéfice-risque à évaluer avec rigueur.
+
 ##### Le second œil va-t-il aussi se décoller ?
 
 Oui, dans la grande majorité des cas, le second œil fait un DPV dans les 1 à 5 ans suivant le premier. C’est un phénomène symétrique, lié à l’évolution naturelle des deux vitrés.
@@ -3803,7 +3811,7 @@ Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cata
 ### Implants multifocaux & EDOF
 
 - URL : https://docteurmajoulet.com/implants-multifocaux
-- Description : Implants multifocaux et EDOF pour la cataracte : indications, bilan et limites. Consultation avec le Dr Majoulet à Boulogne-Billancourt. Rendez-vous.
+- Description : Implants multifocaux et à profondeur de champ étendue (EDOF) pour la cataracte : indications, bilan et limites. Consultation à Boulogne-Billancourt.
 - Relu le : 2026-04-22
 
 Indépendance aux lunettes · Chirurgie de la cataracte
@@ -4552,7 +4560,7 @@ L’**OCT-angiographie** peut compléter l’étude des petits vaisseaux de la r
 
 L’**angiographie à la fluorescéine** reste utile pour documenter une diffusion péricapillaire en « pétales de fleur » très caractéristique, surtout dans les formes chroniques ou lorsqu’on suspecte une vasculopathie sous-jacente.
 
-#### Prise en charge
+#### Traitement de l’œdème maculaire cystoïde
 
 ##### Traitement médical de première ligne (syndrome d’Irvine-Gass)
 
@@ -4589,6 +4597,10 @@ Le pronostic du syndrome d’Irvine-Gass est **globalement favorable** : la majo
 
 #### Questions fréquentes des patients
 
+##### Quelles sont les causes d’un œdème maculaire cystoïde ?
+
+Les causes les plus fréquentes sont la **chirurgie de la cataracte** (syndrome d’Irvine-Gass, dans les 3 mois qui suivent l’opération), le **diabète**, les **occlusions veineuses de la rétine** et les **uvéites** chroniques. Il peut aussi accompagner une rétinite pigmentaire, une traction vitréomaculaire ou une membrane épirétinienne, ou suivre une chirurgie de la rétine. L’OCT maculaire confirme le diagnostic, et le traitement dépend de la cause.
+
 ##### Quand survient l’œdème maculaire après une chirurgie de cataracte ?
 
 Le syndrome d’Irvine-Gass survient typiquement **dans les 3 mois** qui suivent la chirurgie. Des formes plus tardives (au-delà de 3 mois) existent, notamment en cas de rupture capsulaire peropératoire ou de complication associée.
@@ -4613,7 +4625,7 @@ Dans la majorité des syndromes d’Irvine-Gass pris en charge précocement, la 
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Syndrome d’Irvine-Gass (œdème après chirurgie de la cataracte) : [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Syndrome d’Irvine-Gass (œdème après chirurgie de la cataracte) : [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
