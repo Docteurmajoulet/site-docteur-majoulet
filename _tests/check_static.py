@@ -726,6 +726,21 @@ def check(root):
                     elif isinstance(x, list):
                         for _v in x: _w(_v)
                 _w(_d)
+    # ---- TECH69AC-2026-10-28 : TECH15AH étendue à toutes les pages — aucun nœud …/#cabinet (about de la page locale, de /en, de
+    # /contact…) ne porte le place_id ni l'identifiant GooglePlaceID du praticien (audit des données structurées du 28/10)
+    for name, pg in pages.items():
+        for _s in pg.scripts:
+            if _s['attrs'].get('type') != 'application/ld+json': continue
+            try: _d = json.loads(_s['text'])
+            except Exception: continue
+            def _c(x):
+                if isinstance(x, dict):
+                    if x.get('@id') == DOMAIN + '/#cabinet' and ('place_id:' in json.dumps(x) or 'GooglePlaceID' in json.dumps(x)):
+                        E(f'{name} : un nœud MedicalClinic (#cabinet) porte le place_id du praticien — la fiche Google est celle du Dr Majoulet — TECH69AC')
+                    for _v in x.values(): _c(_v)
+                elif isinstance(x, list):
+                    for _v in x: _c(_v)
+            _c(_d)
     # ---- TECH15AI-2026-09-14 : tout nœud portant l'@id …/#cabinet (worksFor, about, occupationLocation…) dit la même chose que le
     # nœud MedicalClinic complet de la home pour name / url / telephone / address quand il les déclare (sinon Google : « champ en double »)
     _cab = None
