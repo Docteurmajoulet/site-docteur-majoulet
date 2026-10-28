@@ -1343,6 +1343,10 @@ Utilisé dans certains essais thérapeutiques ou chez des patients difficiles à
 
 #### Questions fréquentes
 
+##### L’injection dans l’œil est-elle douloureuse ?
+
+Elle est réalisée **sous anesthésie locale par collyre**, appliqué plusieurs minutes avant le geste. La majorité des patients décrivent une sensation brève de pression plutôt qu’une douleur ; l’injection elle-même dure 1 à 2 minutes. Une sensation de sable, des démangeaisons ou un larmoiement peuvent suivre, liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
+
 ##### Vais-je voir l’aiguille venir ?
 
 Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de votre axe visuel. Vous pouvez apercevoir une ombre passagère, mais pas l’aiguille elle-même.
@@ -1367,7 +1371,7 @@ Les deux. En France, elles peuvent être réalisées au **cabinet** (en salle d�
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de la SFO et de la Société française d’hygiène hospitalière sur les injections intravitréennes (2019)](https://doi.org/10.1016/j.jfo.2019.11.002) et du [consensus EURETINA sur les injections intravitréennes (2018)](https://doi.org/10.1159/000486145). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de la SFO et de la Société française d’hygiène hospitalière sur les injections intravitréennes (2019)](https://doi.org/10.1016/j.jfo.2019.11.002) et du [consensus EURETINA sur les injections intravitréennes (2018)](https://doi.org/10.1159/000486145). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
