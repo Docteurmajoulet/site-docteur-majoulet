@@ -1774,7 +1774,7 @@ Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 
 ### Vitrectomie
 
 - URL : https://docteurmajoulet.com/vitrectomie
-- Description : Vitrectomie : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16. Préparez votre RDV.
+- Description : Vitrectomie par micro-incisions : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
 - Relu le : 2026-04-20
 
 Chirurgie vitréo-rétinienne mini-invasive (25G / 27G)
@@ -3026,7 +3026,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Décollement postérieur du vitré
 
 - URL : https://docteurmajoulet.com/decollement-posterieur-vitre
-- Description : Décollement postérieur du vitré : mouches volantes, éclairs lumineux, quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV.
+- Description : Décollement postérieur du vitré (DPV) : mouches volantes, éclairs, anneau de Weiss ; quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne.
 - Relu le : 2026-08-19
 
 Corps flottants et éclairs lumineux — comprendre et identifier les signes d’alerte
@@ -4739,7 +4739,7 @@ Rédigé à partir des [recommandations d’un groupe international d’experts 
 ### Myopie forte et complications rétiniennes
 
 - URL : https://docteurmajoulet.com/myopie-forte
-- Description : Myopie forte : complications rétiniennes (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
+- Description : Myopie forte : conus myopique, staphylome, complications de la rétine (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, Boulogne.
 - Relu le : 2026-04-20
 
 Staphylome, néovaisseaux myopiques, fovéoschisis, risque de décollement

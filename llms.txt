@@ -115,7 +115,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 ## Chirurgie de la rétine
 
 - [Chirurgie de la rétine](https://docteurmajoulet.com/chirurgie-retine): Décollement, trou maculaire, membrane épirétinienne : opérations à la Clinique Jouvenet (Paris 16), consultation au Cabinet Ophtalife à Boulogne.
-- [Vitrectomie](https://docteurmajoulet.com/vitrectomie): Vitrectomie : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16. Préparez votre RDV.
+- [Vitrectomie](https://docteurmajoulet.com/vitrectomie): Vitrectomie par micro-incisions : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
 - [Décollement de rétine](https://docteurmajoulet.com/decollement-retine): Voile noir, éclairs, baisse brutale de la vision : que faire le jour même. Indentation ou vitrectomie selon le cas. Dr Majoulet, chirurgien de la rétine.
 - [Membrane épirétinienne](https://docteurmajoulet.com/membrane-epiretinienne): Membrane épirétinienne : vision déformée, examen OCT et chirurgie. Consultation avec le Dr Majoulet à Boulogne-Billancourt, opération à Jouvenet, Paris 16.
 - [Trou maculaire](https://docteurmajoulet.com/trou-maculaire): Trou maculaire : diagnostic OCT, opération et récupération. Consultation avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
@@ -126,7 +126,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 
 - [Déchirure de rétine et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants): Corps flottants, éclairs, voile noir : signes d’une déchirure de rétine. Examen en urgence, laser préventif. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
 - [Flashs, phosphènes et corps flottants](https://docteurmajoulet.com/flashs-phosphenes-myodesopsies): Phosphènes (éclairs lumineux), corps flottants, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne.
-- [Décollement postérieur du vitré](https://docteurmajoulet.com/decollement-posterieur-vitre): Décollement postérieur du vitré : mouches volantes, éclairs lumineux, quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV.
+- [Décollement postérieur du vitré](https://docteurmajoulet.com/decollement-posterieur-vitre): Décollement postérieur du vitré (DPV) : mouches volantes, éclairs, anneau de Weiss ; quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne.
 - [Baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision): Baisse brutale de la vision (BAV) : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne.
 
 ## Cataracte et implants
@@ -149,7 +149,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 - [Occlusion de l’artère centrale de la rétine (OACR)](https://docteurmajoulet.com/occlusion-artere-centrale-retine): Occlusion de l’artère centrale de la rétine : un AVC de l’œil, urgence absolue. Signes, bilan, prise en charge. Dr Majoulet, rétinologue à Boulogne.
 - [Œdème maculaire cystoïde (syndrome d’Irvine-Gass)](https://docteurmajoulet.com/oedeme-maculaire-cystoide): Œdème maculaire cystoïde (OMC) : causes (après une cataracte, diabète, uvéite), diagnostic par OCT, traitements. Dr Majoulet, rétinologue à Boulogne.
 - [Choriorétinopathie séreuse centrale](https://docteurmajoulet.com/chorioretinopathie-sereuse-centrale): Choriorétinopathie séreuse centrale (CRSC) : rôle du stress et des corticoïdes, diagnostic OCT, traitements. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
-- [Myopie forte et complications rétiniennes](https://docteurmajoulet.com/myopie-forte): Myopie forte : complications rétiniennes (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
+- [Myopie forte et complications rétiniennes](https://docteurmajoulet.com/myopie-forte): Myopie forte : conus myopique, staphylome, complications de la rétine (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, Boulogne.
 - [Néovaisseaux choroïdiens du myope fort](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort): Néovaisseaux du myope fort : vision déformée, diagnostic OCT-angiographie, injections anti-VEGF. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
 - [Rétinite pigmentaire](https://docteurmajoulet.com/retinite-pigmentaire): Rétinite pigmentaire : diagnostic (ERG, génétique), suivi, thérapie génique Luxturna. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV en ligne.
 - [Suivi ophtalmologique — diabète & HTA](https://docteurmajoulet.com/suivi-diabete-hta): Diabète, hypertension et yeux : rythme des fonds d’œil, examens (OCT, angiographie), signes d’alerte. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
