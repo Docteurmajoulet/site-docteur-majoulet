@@ -3048,7 +3048,7 @@ Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urg
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 25 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Décollement postérieur du vitré
 
@@ -5853,7 +5853,7 @@ Oui. Les fortes myopies se corrigent en lunettes à verres de haut indice, en le
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Hypermétropie
 
