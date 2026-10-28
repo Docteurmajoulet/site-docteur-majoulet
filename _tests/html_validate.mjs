@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // Validation HTML W3C de toutes les pages avec le Nu Html Checker (vnu.jar, fourni par le paquet npm vnu-jar) — TECH18AQ-2026-09-15.
 //   node _tests/html_validate.mjs        (ou : cd _tests && npm run test:html)
-// Erreurs ET avertissements sont des échecs, sauf deux avertissements assumés : role="list" sur <ul> (Safari/VoiceOver retire la
-// sémantique de liste quand list-style: none) et role="contentinfo" sur <footer> (redondant, sans effet). Java ≥ 11 requis :
+// Erreurs ET avertissements sont des échecs, sauf deux avertissements assumés : role="list" sur <ul> et <ol> (Safari/VoiceOver retire la
+// sémantique de liste quand list-style: none ; <ol> depuis la frise du parcours opératoire TECH69W, 27/10) et role="contentinfo" sur <footer> (redondant, sans effet). Java ≥ 11 requis :
 // absent → contrôle sauté avec un message (il tourne sur GitHub à chaque push, où Java est installé). Le paquet vnu-jar ne
 // télécharge rien : _tests/.npmrc (ignore-scripts) désactive son script d'installation, qui irait chercher un Java s'il manquait.
 import { spawnSync } from 'node:child_process';
@@ -11,7 +11,7 @@ import { join } from 'node:path';
 import { ROOT, TESTS_DIR } from './lib.mjs';
 
 const JAR = join(TESTS_DIR, 'node_modules', 'vnu-jar', 'build', 'dist', 'vnu.jar');
-const ACCEPTED = [/^The “list” role is unnecessary for element “ul”\.$/, /^The “contentinfo” role is unnecessary for element “footer”\.$/];
+const ACCEPTED = [/^The “list” role is unnecessary for element “(?:ul|ol)”\.$/, /^The “contentinfo” role is unnecessary for element “footer”\.$/];
 
 if (!existsSync(JAR)) { console.log('html_validate : vnu.jar absent (cd _tests && npm ci) — ÉCHEC'); process.exit(1); }
 const probe = spawnSync('java', ['-version'], { encoding: 'utf8' });

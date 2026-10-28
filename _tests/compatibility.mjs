@@ -133,7 +133,7 @@ try {
               await page.waitForFunction(() =>
                 document.getElementById('map-status').textContent.includes('La carte tarde') &&
                 !document.querySelector('.contact-map').classList.contains('map-loading'),
-                undefined, { timeout: 12000 });
+                undefined, { timeout: 20000 });   // nav.js affiche le message au bout de 10 s : 12 s laissaient 2 s de marge, trop peu pour Firefox sur une machine chargée (28/10)
               const mapLink = page.locator('.cv12-map-note a');
               await mapLink.focus();
               assert.equal(await mapLink.evaluate(e => document.activeElement === e), true,

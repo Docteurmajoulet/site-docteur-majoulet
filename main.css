@@ -8435,3 +8435,9 @@ article.pathology-content > .forme-box :is(ul, ol) {
     .frise-etape--controle::after { border-width: 9px; }
     html.imprimer-frise body :not(:has(.frise), .frise, .frise *) { display: none !important; }
 }
+/* TECH69Z-2026-10-28 — ligne de date et de sources du bloc auteur (p.meta, 12,8 px) : au plus ~80 caractères par ligne.
+   À 538 px elle en contenait jusqu'à 88 sur Mac et 91 dans la CI (rendu Linux) : /secheresse-oculaire dépassait la limite
+   de 90 du test de longueur de ligne (TECH20AU). 62ch laisse de la marge sur toutes les fiches. */
+article.pathology-content .eeat-block .meta {
+    max-width: 62ch;
+}
