@@ -204,7 +204,7 @@ Le **Dr Alexandre Majoulet** est chirurgien ophtalmologue, spécialisé en **chi
 
 #### Cabinet Ophtalife — Boulogne-Billancourt
 
-Le **Dr Alexandre Majoulet** est chirurgien ophtalmologue. Il a fondé, avec ses associés le **Dr Léo Prudhomme** (chirurgie oculoplastique et des voies lacrymales) et le **Dr Alexandre Hage** (chirurgie réfractive), le **Cabinet Ophtalife**, cabinet d’ophtalmologie pluridisciplinaire situé au [37 rue d’Aguesseau, 92100 Boulogne-Billancourt](https://www.google.com/maps/search/?api=1&query=37+rue+d%27Aguesseau+92100+Boulogne-Billancourt).
+Le **Dr Alexandre Majoulet** est chirurgien ophtalmologue. Il a fondé, avec ses associés le **Dr Léo Prud’homme** (chirurgie oculoplastique et des voies lacrymales) et le **Dr Alexandre Hage** (chirurgie réfractive), le **Cabinet Ophtalife**, cabinet d’ophtalmologie pluridisciplinaire situé au [37 rue d’Aguesseau, 92100 Boulogne-Billancourt](https://www.google.com/maps/search/?api=1&query=37+rue+d%27Aguesseau+92100+Boulogne-Billancourt).
 
 Il y exerce l’essentiel de son activité : consultations d’ophtalmologie générale et spécialisée (rétine médicale, glaucome, surface oculaire), injections intravitréennes (DMLA, œdème maculaire diabétique, occlusions veineuses), traitements laser au cabinet (trabéculoplastie SLT, capsulotomie YAG, iridotomie, photocoagulation rétinienne) et bilans pré- et post-opératoires.
 
@@ -338,7 +338,7 @@ Lundi, mercredi, jeudi : 9 h – 20 h / Mardi, vendredi, samedi : 9 h – 18 h /
 
 #### Préparer votre consultation
 
-- **Convention :** secteur 2 conventionné (Assurance Maladie + mutuelle).
+- **Convention :** secteur 2 conventionné (Assurance Maladie + mutuelle). Reste à charge d’une consultation : 60 à 100 € selon la consultation et les examens pratiqués (montants au 28 octobre 2026).
 - **Carte Vitale :** à présenter à chaque consultation pour le tiers-payant éventuel.
 - **Ordonnances & examens antérieurs :** apporter toutes les ordonnances de lunettes ou de gouttes en cours, ainsi que les examens ophtalmologiques récents (OCT, champ visuel, photographies du fond d’œil).
 - **Pupille dilatée :** certaines consultations (fond d’œil détaillé, première consultation rétinienne) nécessitent une dilatation pupillaire. Prévoyez qu’après dilatation la vision de près est floue et la conduite déconseillée pendant 3 à 4 heures.
@@ -356,7 +356,7 @@ En dehors des heures d’ouverture du cabinet ou en cas d’urgence vitale : **S
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Informations pratiques mises à jour : 20 septembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Informations pratiques mises à jour : 28 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Ophtalmologue à Boulogne-Billancourt
 
@@ -410,7 +410,7 @@ La prise de rendez-vous pour une **consultation libérale au Cabinet Ophtalife �
 Le Dr Majoulet exerce en **secteur 2 conventionné** (honoraires libres).
 
 - **Les honoraires sont disponibles sur [la fiche Doctolib du Dr Majoulet](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)** ; ils sont également affichés en salle d’attente et communiqués sur demande au secrétariat.
-- Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel applicable. Le complément éventuel dépend de votre contrat de mutuelle.
+- Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel applicable. Le reste à charge d’une consultation est de **60 à 100 €**, selon la consultation et les examens pratiqués (montants au 28 octobre 2026) ; selon votre contrat, votre mutuelle peut en rembourser tout ou partie.
 
 **Langues parlées :** français, anglais. / **Moyens de paiement :** carte bancaire, espèces, chèque. / **Carte Vitale :** à présenter à chaque consultation.
 
@@ -458,7 +458,7 @@ Pour orienter votre démarche, consultez la **[page dédiée aux urgences ophtal
 
 ##### Le Dr Majoulet est-il conventionné ?
 
-Oui, en secteur 2 conventionné. Les honoraires sont disponibles sur la fiche Doctolib du Dr Majoulet. Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel ; le reste à charge éventuel dépend de votre mutuelle.
+Oui, en secteur 2 conventionné, à honoraires libres. Le remboursement par l’Assurance Maladie s’effectue sur la base du tarif conventionnel. Le reste à charge d’une consultation est de **60 à 100 €**, selon la consultation et les examens pratiqués (montants au 28 octobre 2026) ; selon votre contrat, votre mutuelle peut en rembourser tout ou partie. Le détail figure sur la fiche Doctolib du Dr Majoulet.
 
 ##### Quel est le délai pour obtenir un rendez-vous ?
 
@@ -1089,7 +1089,7 @@ Le traitement de référence est l’**injection intravitréenne (IVT) d’anti-
 ##### Ma pratique
 
 - **Les injections** : dans la salle dédiée du cabinet, aux normes ISO 7.
-- **L’OCT** : réalisé sur place, le jour même de l’injection.
+- **L’OCT** : réalisé sur place, le jour même de l’injection, lorsqu’il est prévu.
 - **Après l’injection** : collyre antiseptique pendant 3 jours.
 - **Déformation récente des lignes droites** : consultation sous 24-48 h. Le cabinet réserve des créneaux d’urgence rétinienne : [01 84 19 11 66](tel:+33184191166).
 
@@ -1141,7 +1141,7 @@ Le traitement est **prolongé, souvent sur plusieurs années**. Le protocole sta
 
 ##### Combien de temps dure un rendez-vous d’injection au cabinet ?
 
-Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même ne dure que quelques minutes.
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même dure environ 5 minutes.
 
 ##### Je vois les lignes déformées depuis quelques jours : est-ce urgent ?
 
@@ -1301,7 +1301,7 @@ Venir propre (douche, cheveux attachés, pas de maquillage), accompagné si poss
 
 ###### Au cabinet OCT puis injection
 
-OCT maculaire sur place, le jour même. Injection en salle dédiée aux normes ISO 7, sous anesthésie par collyre : le geste dure environ 5 minutes.
+OCT maculaire sur place, le jour même, lorsqu’il est prévu. Injection en salle dédiée aux normes ISO 7, sous anesthésie par collyre : le geste dure environ 5 minutes.
 
 3.
 
@@ -1327,7 +1327,7 @@ Ces repères ne remplacent pas les consignes données au cabinet. Dr Alexandre M
 
 ##### Avant l’injection
 
-- **Consultation** avec examen ophtalmologique complet et **OCT maculaire réalisé sur place**, le jour même.
+- **Consultation** avec examen ophtalmologique complet et **OCT maculaire réalisé sur place**, le jour même, lorsqu’il est prévu.
 - Indication posée et accord du patient (consentement éclairé).
 - Pas d’arrêt nécessaire des anticoagulants / antiagrégants.
 - Venir **propre** le jour de l’injection (douche, cheveux attachés, pas de maquillage).
@@ -1341,7 +1341,7 @@ En cas de **forme humide de DMLA nouvellement diagnostiquée** ou de récidive a
 2. **Anesthésie topique** (collyre oxybuprocaïne ou tétracaïne, appliqué plusieurs minutes avant).
 3. **Désinfection** soigneuse de la peau péri-orbitaire et de la conjonctive à la **Povidone iodée 5 %** (ou chlorhexidine 0,05 % en cas d’allergie). C’est l’étape clé pour la prévention de l’endophtalmie.
 4. Mise en place d’un **champ stérile** et d’un **blépharostat** (écarteur palpébral).
-5. **Injection** avec une aiguille 30G à 3,5-4 mm du limbe en pars plana, dans le quadrant temporal inférieur ou supérieur. Durée 1-2 minutes.
+5. **Injection** avec une aiguille 30G à 3,5-4 mm du limbe en pars plana, dans le quadrant temporal inférieur ou supérieur. Le geste dure environ 5 minutes.
 6. **Contrôle de la perception lumineuse** immédiatement après.
 
 Une injection intravitréenne permet d’administrer un médicament dans le vitré, le gel transparent à l’intérieur de l’œil, au contact de la rétine. L’aiguille, ultra-fine, entre en arrière du limbe, en pars plana.
@@ -1438,7 +1438,7 @@ Utilisé dans certains essais thérapeutiques ou chez des patients difficiles à
 
 ##### L’injection dans l’œil est-elle douloureuse ?
 
-**Non, elle est indolore** : elle se fait **sous anesthésie locale**, par un collyre appliqué plusieurs minutes avant le geste. La plupart des patients ressentent seulement une brève sensation de pression ; l’injection elle-même dure 1 à 2 minutes. Une gêne peut ensuite persister, ce qui est normal. Sensation de sable, démangeaisons ou larmoiement liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
+**Non, elle est indolore** : elle se fait **sous anesthésie locale**, par un collyre appliqué plusieurs minutes avant le geste. La plupart des patients ressentent seulement une brève sensation de pression ; le geste dure environ 5 minutes. Une gêne peut ensuite persister, ce qui est normal. Sensation de sable, démangeaisons ou larmoiement liés à la povidone iodée utilisée pour la désinfection : les larmes artificielles sont recommandées. En revanche, une douleur oculaire intense et croissante après l’injection est un signe d’alerte qui justifie une consultation en urgence.
 
 ##### Vais-je voir l’aiguille venir ?
 
@@ -1446,7 +1446,7 @@ Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de v
 
 ##### Combien de temps dure un rendez-vous d’injection ?
 
-Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même ne dure que quelques minutes.
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même dure environ 5 minutes.
 
 ##### Combien de temps dure l’effet d’une injection d’anti-VEGF ?
 
@@ -1691,7 +1691,7 @@ En ambulatoire ou hospitalisation de jour, anesthésie loco-régionale (péribul
 
 ##### Les premiers jours Suites immédiates
 
-Pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face-vers-le-bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. Collyres antibio-anti-inflammatoires pendant 1 mois.
+Pansement occlusif le jour de l’intervention, retiré le lendemain. Après chirurgie du trou maculaire, posture face vers le bas un maximum de temps pendant 48 heures, et sur le ventre la nuit. Collyres antibio-anti-inflammatoires pendant 1 mois.
 
 5.
 
@@ -1735,7 +1735,7 @@ Les vitrectomies se pratiquent en ambulatoire : vous rentrez chez vous le jour m
 
 ##### Faut-il vraiment tenir la posture face-vers-le-bas après un trou maculaire ?
 
-Oui : un maximum de temps chaque jour, pendant quelques jours après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), et la nuit sur le ventre pendant environ 48 heures, si un tamponnement gazeux est utilisé — la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Les essais randomisés montrent que la posture est déterminante pour les grands trous (≥ 400 µm) et peu influente pour les petits. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.
+Oui : pendant 48 heures après l’opération, face vers le bas un maximum de temps le jour et sur le ventre la nuit, si un tamponnement gazeux est utilisé — la bulle de gaz doit tamponner la macula pour permettre la fermeture du trou. Les essais randomisés montrent que la posture est déterminante pour les grands trous (≥ 400 µm) et peu influente pour les petits. Des accessoires de location (tabouret, miroir, support) facilitent cette posture.
 
 ##### Une cataracte peut-elle apparaître après une vitrectomie ?
 
@@ -1763,7 +1763,7 @@ La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou ma
 
 ##### Combien coûte une opération de la rétine ?
 
-L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Pour un décollement de rétine opéré en urgence, le reste à charge est de zéro pour le patient. Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1903,7 +1903,7 @@ Lorsque le tamponnement est gazeux, la bulle de gaz remonte à la partie supéri
 
 **Face vers le bas.** La bulle de gaz remonte toujours vers le haut : tête penchée en avant, elle vient appuyer sur la macula.
 
-La durée du positionnement dépend de la pathologie et du tamponnement : de quelques jours à une semaine environ, selon la taille du trou ou l’emplacement des déchirures (consignes précises remises avant la sortie). Des équipements (chaise de positionnement, matelas spéciaux) peuvent être proposés. La vision reste très limitée tant que la bulle est présente.
+La durée du positionnement dépend de la pathologie et du tamponnement : 48 heures pour un trou maculaire ; de quelques jours à une semaine environ pour un décollement de rétine, selon l’emplacement des déchirures (consignes précises remises avant la sortie). Des équipements (chaise de positionnement, matelas spéciaux) peuvent être proposés. La vision reste très limitée tant que la bulle est présente.
 
 #### Après une vitrectomie : suites, précautions et récupération
 
@@ -1929,7 +1929,7 @@ La vitrectomie mini-invasive moderne est une chirurgie sûre, mais comme toute c
 
 La vitrectomie a connu deux évolutions majeures depuis les années 2000 : le passage aux **micro-incisions transconjonctivales auto-obturantes** (25G en 2002, 27G en 2010) et la systématisation du **pelage de la membrane limitante interne** (MLI) dans la chirurgie maculaire.
 
-- **Pelage MLI dans le trou maculaire** : le pelage de la MLI colorée (bleu brillant, Dual Blue) améliore significativement le taux de fermeture anatomique, qui dépasse aujourd’hui **90 %** en un seul temps opératoire (méta-analyse Spiteri Cornish et al., *Cochrane Database Syst Rev*, 2013).
+- **Pelage MLI dans le trou maculaire** : le pelage de la MLI colorée (au bleu brillant) améliore significativement le taux de fermeture anatomique, qui dépasse aujourd’hui **90 %** en un seul temps opératoire (méta-analyse Spiteri Cornish et al., *Cochrane Database Syst Rev*, 2013).
 - **Cataracte post-vitrectomie** : chez le patient phaque de plus de 50 ans, la cataracte nucléaire progresse dans 98 % des yeux à 1 an et 100 % à 2 ans dans l’essai Vitrectomy for Macular Hole Study (Cheng et al., *Am J Ophthalmol*, 2001 ; Thompson, *Am J Ophthalmol*, 2004), ce qui motive la proposition fréquente d’une chirurgie combinée phaco-vitrectomie.
 - **Endophtalmie** : une revue systématique de 21 études (148 643 vitrectomies) retrouve une fréquence de l’ordre de **3 pour 10 000** en 20G et pas de sur-risque avec les micro-incisions 23-25G lorsque les incisions sont obliques, donc auto-étanches (Govetto et al., *Ophthalmology*, 2013).
 - **Positionnement post-opératoire** dans le trou maculaire : la posture face vers le bas n’influence pas la fermeture des trous < 400 µm (essai randomisé de Guillaubey et al., *Am J Ophthalmol*, 2008) ; pour les grands trous (≥ 400 µm), l’essai PIMS (Pasu et al., *JAMA Ophthalmol*, 2020) retrouve une fermeture comparable mais une meilleure acuité à 3 mois avec le face-vers-le-bas, et les méta-analyses d’essais randomisés (Hu et al., *Acta Ophthalmol*, 2016 ; Ye et al., *BMC Ophthalmol*, 2019) concluent de même. La durée prescrite reste adaptée à la taille du trou et au tamponnement retenu.
@@ -1948,7 +1948,7 @@ Les références ci-dessus sont citées à titre indicatif pour le lecteur avert
 
 ##### Combien de temps dois-je rester face vers le bas ?
 
-Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, la posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas (taille du trou, gaz utilisé). Pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures. Le positionnement précis vous sera indiqué avant la sortie, avec un support écrit.
+Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, la posture est maintenue **48 heures** après l’opération : face vers le bas un maximum de temps le jour, sur le ventre la nuit. Pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures. Le positionnement précis vous sera indiqué avant la sortie, avec un support écrit.
 
 ##### Vais-je retrouver toute ma vision ?
 
@@ -1976,7 +1976,7 @@ Dans la grande majorité des cas, **il n’est pas nécessaire d’arrêter** un
 
 ##### L’intervention est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
+Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Pour un décollement de rétine opéré en urgence, le reste à charge est de zéro pour le patient. Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -2069,7 +2069,7 @@ Le décollement de rétine par déchirure (rhegmatogène), le plus fréquent, es
 
 ##### 1. Vitrectomie postérieure mini-invasive
 
-Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale ou générale, en ambulatoire (vous rentrez chez vous le jour même, accompagné), elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
+Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale (exceptionnellement générale), en ambulatoire (vous rentrez chez vous le jour même, accompagné), elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
 
 ##### 2. Indentation sclérale (cerclage)
 
@@ -2124,6 +2124,14 @@ La prévention repose sur le **dépistage et le traitement par laser** des lési
 ##### Puis-je reprendre une activité normale après l’opération ?
 
 La reprise est **progressive** : le sport, les efforts importants et le sauna sont à éviter 4 à 6 semaines. Les voyages en avion et en altitude sont contre-indiqués tant que le gaz est présent dans l’œil. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Une **chirurgie de cataracte** est souvent nécessaire dans l’année qui suit la vitrectomie chez les patients phakiques.
+
+##### Quand peut-on reprendre la voiture après l’opération d’un décollement de rétine ?
+
+La reprise de la conduite est rediscutée lors de la **consultation de contrôle, une semaine après l’opération** (J7). Tant qu’une bulle de gaz est présente, la vision de l’œil opéré reste floue.
+
+##### Combien coûte l’opération d’un décollement de rétine ?
+
+L’opération est prise en charge par l’Assurance Maladie. Pour un décollement de rétine **opéré en urgence**, le reste à charge est de **zéro** pour le patient.
 
 #### Sources et références
 
@@ -2212,7 +2220,7 @@ Les indications opératoires classiques sont :
 
 #### La chirurgie : vitrectomie + pelage MER + pelage MLI
 
-La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégionale** ou générale, et dure **30 à 45 minutes**. Les étapes sont :
+La chirurgie est réalisée en **ambulatoire**, sous **anesthésie locorégionale** (exceptionnellement générale), et dure **30 à 45 minutes**. Les étapes sont :
 
 1. **[Vitrectomie postérieure 25G ou 27G](https://docteurmajoulet.com/vitrectomie)** par trois trocarts de petit calibre, sans suture.
 2. **Pelage de la membrane épirétinienne** à la pince microchirurgicale.
@@ -2246,7 +2254,7 @@ Examen et OCT au cabinet. Si le cristallin est encore en place, la cataracte est
 
 ##### Jour J L’opération, en ambulatoire
 
-Vitrectomie et pelage de la membrane, sous anesthésie locorégionale ou générale. Elle dure 30 à 45 minutes. Pas de gaz en règle : chaque dossier est jugé au cas par cas.
+Vitrectomie et pelage de la membrane, sous anesthésie locorégionale (exceptionnellement générale). Elle dure 30 à 45 minutes. Pas de gaz en règle : chaque dossier est jugé au cas par cas.
 
 3.
 
@@ -2288,7 +2296,7 @@ Ces repères ne remplacent pas les consignes personnalisées remises à la sorti
 
 - **Indication posée sur le retentissement fonctionnel** (acuité, métamorphopsies, gêne quotidienne) confronté à l’OCT (classification de Govetto), jamais sur la seule image morphologique.
 - **Vitrectomie 25G** en routine, avec induction d’un décollement postérieur du vitré si nécessaire.
-- **Pelage systématique MER + MLI** sous coloration par bleu brillant (Dual Blue) — la double étape limite le risque de récidive, validée par les méta-analyses récentes.
+- **Pelage systématique MER + MLI** sous coloration par bleu brillant — la double étape limite le risque de récidive, validée par les méta-analyses récentes.
 - **Pas de tamponnement gazeux** en règle pour une MER isolée, chaque dossier étant jugé au cas par cas — donc **pas de posture** post-opératoire et aucune restriction de vol.
 - **Chirurgie combinée phaco-vitrectomie** proposée au cas par cas chez le patient phaque de plus de 50 ans, pour éviter une seconde opération de la cataracte, fréquente dans les 1 à 2 ans.
 - **Information du patient sur la dynamique de récupération** : l’amélioration visuelle se poursuit jusqu’à 6 à 12 mois ; une stabilisation à 3 mois n’est pas la valeur finale.
@@ -2411,13 +2419,13 @@ L’OCT permet également de différencier un **trou maculaire de pleine épaiss
 
 #### Traitement chirurgical : vitrectomie + pelage MLI + gaz
 
-Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Elle se déroule en **ambulatoire**, sous **anesthésie locorégionale** (péribulbaire) ou générale, et dure **environ 40 minutes**.
+Le seul traitement ayant fait la preuve de son efficacité est la chirurgie. Elle se déroule en **ambulatoire**, sous **anesthésie locorégionale** (péribulbaire), exceptionnellement générale, et dure **environ 40 minutes**.
 
 ##### Ma pratique
 
 - **L’opération** : vitrectomie, pelage de la membrane limitante interne et bulle de gaz. Si le cristallin est encore en place, j’opère souvent la cataracte dans le même temps.
 - **Gaz** : SF6 ou C2F6, le plus souvent du SF6.
-- **Posture** : face vers le bas, un maximum de temps chaque jour, pendant quelques jours après l’opération ; la durée dépend des cas. La nuit, sur le ventre, pendant environ 48 heures.
+- **Posture** : pendant 48 heures après l’opération, face vers le bas un maximum de temps le jour, et sur le ventre la nuit.
 - **Collyres** : pendant 1 mois.
 - **Contrôles** : à J7, à 1 mois et à 3 mois.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
@@ -2451,13 +2459,13 @@ Examen et OCT au cabinet. Si le cristallin est encore en place, la cataracte est
 
 ##### Jour J L’opération, en ambulatoire
 
-Vitrectomie, pelage de la membrane limitante interne et bulle de gaz, le plus souvent du SF6, sous anesthésie locorégionale ou générale. Elle dure environ 40 minutes.
+Vitrectomie, pelage de la membrane limitante interne et bulle de gaz, le plus souvent du SF6, sous anesthésie locorégionale (exceptionnellement générale). Elle dure environ 40 minutes.
 
 3.
 
 ##### Les premiers jours Face vers le bas
 
-Un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. La nuit, dormir sur le ventre pendant environ 48 heures. Collyres pendant 1 mois.
+Un maximum de temps pendant 48 heures, et sur le ventre la nuit. Collyres pendant 1 mois.
 
 Tant que la bulle est là, la vision de l’œil opéré est très floue, l’avion et l’altitude sont contre-indiqués, et le gaz doit être signalé à tout soignant (pas de protoxyde d’azote). Elle se résorbe en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6.
 
@@ -2483,7 +2491,7 @@ Ces repères ne remplacent pas les consignes personnalisées remises à la sorti
 
 #### Positionnement post-opératoire et suites
 
-**Positionnement face vers le bas (« face down »)** : après la chirurgie, il est essentiel de maintenir la tête face vers le bas un maximum de temps chaque jour, pendant **quelques jours** après l’opération (la durée dépend des cas : taille du trou, gaz utilisé), afin que la bulle de gaz vienne appuyer sur la macula. La nuit, dormez sur le ventre pendant environ 48 heures. Les consignes personnalisées vous seront remises à la sortie.
+**Positionnement face vers le bas (« face down »)** : après la chirurgie, il est essentiel de maintenir la tête face vers le bas un maximum de temps pendant **48 heures** après l’opération, afin que la bulle de gaz vienne appuyer sur la macula. La nuit, pendant ces 48 heures, dormez sur le ventre. Les consignes personnalisées vous seront remises à la sortie.
 
 Durant toute la période où la bulle de gaz est présente :
 
@@ -2522,7 +2530,7 @@ Plus la chirurgie est **précoce** (moins de 6 à 12 mois d’évolution) et plu
 ##### Principes techniques appliqués
 
 - **Vitrectomie 25G** en routine, 27G réservée à des indications sélectionnées.
-- **Coloration systématique de la MLI au bleu brillant** (Dual Blue) — agent de coloration peu toxique pour la rétine, préféré au vert d’indocyanine (ICG).
+- **Coloration systématique de la MLI au bleu brillant** — agent de coloration peu toxique pour la rétine, préféré au vert d’indocyanine (ICG).
 - **Pelage MLI étendu** sur environ 2 diamètres papillaires autour du trou.
 - **Technique du lambeau inversé de MLI** (Michalewska 2010) pour les **grands trous > 400 µm** et les trous chroniques : amélioration documentée du taux de fermeture (méta-analyses 2019-2021) au prix d’une récupération fonctionnelle parfois plus lente.
 - **Choix du gaz** adapté : SF6 18-20 % pour les trous petits/moyens avec posture courte ; C2F6 pour les grands trous, les trous chroniques et les contextes myopes.
@@ -2560,15 +2568,15 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 ##### Combien de temps dure l’opération du trou maculaire, et comment se passe-t-elle ?
 
-L’opération du trou maculaire dure **environ 40 minutes**. Elle se fait en ambulatoire, sous anesthésie locorégionale ou générale, à la Clinique Jouvenet (Paris 16e). Le Dr Majoulet réalise une vitrectomie : il retire le gel de l’œil, puis la membrane limitante interne, une fine membrane qui tapisse la surface de la rétine, et laisse dans l’œil une bulle de gaz, le plus souvent du SF6, sinon du C2F6. Si le cristallin est encore en place, il opère souvent la cataracte dans le même temps. Après l’opération, la tête est maintenue face vers le bas un maximum de temps chaque jour, pendant quelques jours ; la durée dépend des cas. La nuit, il faut dormir sur le ventre pendant environ 48 heures. Les collyres sont prescrits pendant 1 mois et les contrôles ont lieu au cabinet, à J7, à 1 mois et à 3 mois. Tant que la bulle est présente (environ 2 semaines pour le SF6, 4 à 5 semaines pour le C2F6), la vision de l’œil opéré est très floue, et l’avion comme l’altitude sont contre-indiqués. La vision récupère ensuite progressivement, sur 6 à 12 mois.
+L’opération du trou maculaire dure **environ 40 minutes**. Elle se fait en ambulatoire, sous anesthésie locorégionale (exceptionnellement générale), à la Clinique Jouvenet (Paris 16e). Le Dr Majoulet réalise une vitrectomie : il retire le gel de l’œil, puis la membrane limitante interne, une fine membrane qui tapisse la surface de la rétine, et laisse dans l’œil une bulle de gaz, le plus souvent du SF6, sinon du C2F6. Si le cristallin est encore en place, il opère souvent la cataracte dans le même temps. Pendant 48 heures après l’opération, la tête est maintenue face vers le bas un maximum de temps le jour, et il faut dormir sur le ventre la nuit. Les collyres sont prescrits pendant 1 mois et les contrôles ont lieu au cabinet, à J7, à 1 mois et à 3 mois. Tant que la bulle est présente (environ 2 semaines pour le SF6, 4 à 5 semaines pour le C2F6), la vision de l’œil opéré est très floue, et l’avion comme l’altitude sont contre-indiqués. La vision récupère ensuite progressivement, sur 6 à 12 mois.
 
 ##### Combien de temps faut-il rester face vers le bas après l’opération ?
 
-La posture est maintenue **quelques jours** après l’opération ; la durée dépend des cas, notamment de la taille du trou et du gaz utilisé. Pour les trous **< 400 µm**, l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020). Les consignes précises vous seront remises en fonction de votre cas.
+La posture est maintenue **48 heures** après l’opération : face vers le bas un maximum de temps le jour, sur le ventre la nuit. Pour les trous **< 400 µm**, l’essai randomisé de Guillaubey et coll. (*Am J Ophthalmol*, 2008) montre que la position n’y change pas la fermeture. Pour les **grands trous** (≥ 400 µm) ou les trous chroniques, le face-vers-le-bas reste recommandé (Guillaubey 2008 ; essai PIMS, Pasu et coll., *JAMA Ophthalmol*, 2020). Les consignes précises vous seront remises en fonction de votre cas.
 
 ##### Comment dormir après l’opération du trou maculaire ?
 
-Sur le ventre, pendant **environ 48 heures** après l’opération. Le jour, la tête est maintenue face vers le bas un maximum de temps, pendant quelques jours ; la durée dépend des cas. Les consignes précises vous sont remises à la sortie.
+Sur le ventre, pendant **48 heures** après l’opération. Le jour, pendant ces 48 heures, la tête est maintenue face vers le bas un maximum de temps. Les consignes précises vous sont remises à la sortie.
 
 ##### Quel est le taux de succès de la chirurgie du trou maculaire ?
 
@@ -3127,7 +3135,7 @@ Rechercher systématiquement une déchirure (échographie B si fond d’œil non
 Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent invalidants. Deux options peuvent alors être discutées, **de manière exceptionnelle et au cas par cas**, avec un rapport bénéfice-risque à évaluer avec rigueur :
 
 - **Vitrectomie** 25G / 27G : elle retire le vitré et ses opacités, mais expose à la **cataracte** (fréquente chez le phaque) et à un risque faible mais non nul d’endophtalmie et de décollement de rétine.
-- **Vitréolyse au laser YAG** (Ellex Reflex®) : moins invasive, mais preuves d’efficacité limitées et réservée à des opacités bien sélectionnées (volumineuses, centrales, isolées).
+- **Vitréolyse au laser YAG** : moins invasive, mais preuves d’efficacité limitées et réservée à des opacités bien sélectionnées (volumineuses, centrales, isolées).
 
 #### Questions fréquentes
 
@@ -3558,7 +3566,7 @@ Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande ma
 - **Rupture capsulaire per-opératoire** : 1 à 2 %.
 - **Décollement de rétine** : 0,5 à 1 %, plus fréquent chez le myope fort.
 - **Opacification capsulaire secondaire (cataracte secondaire)** : 15 à 30 % à 2-3 ans, traitée en consultation par [**laser YAG**](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) en quelques minutes.
-- Décentrement ou [luxation d’implant](https://docteurmajoulet.com/luxation-cristallin-implant) : exceptionnels.
+- Décentrement ou [luxation d’implant](https://docteurmajoulet.com/luxation-cristallin-implant) : rare (environ 1 à 2 % à 25 ans), plus fréquent en cas de pseudo-exfoliation.
 
 ##### Ce que montre notre étude au CHNO des Quinze-Vingts
 
@@ -5553,7 +5561,7 @@ La stratégie s’appuie sur le consensus TFOS DEWS III (2025) : les mesures de 
 |---|---|---|
 | 1. Les bases, pour tous | **Larmes artificielles sans conservateur** plusieurs fois par jour (formules lipidiques si DGM ; gel ou pommade le soir) ; **hygiène des paupières** quotidienne : chaleur 5 à 10 minutes, massage doux du bord des paupières, nettoyage des cils ; pauses et clignements sur écran, air humidifié, hydratation ; oméga-3 (bénéfice non démontré dans le plus grand essai randomisé) ; collyres avec conservateurs remplacés par des unidoses, avec le prescripteur. | Sur ordonnance |
 | 2. Traiter l’inflammation | **Ciclosporine en collyre** (Ikervis®) dans les kératites sèches sévères, au long cours ; **cyclines orales** (doxycycline à faible dose) en cure de plusieurs semaines à quelques mois (DGM, rosacée oculaire) ; corticoïdes locaux en cure courte encadrée lors des poussées ; traitement du *Demodex* si blépharite antérieure. | Sur ordonnance |
-| 3. Les gestes au cabinet | IPL (dysfonction des glandes de Meibomius, rosacée oculaire) ; bouchons méatiques (déficit de production) ; incision de chalazion si échec des soins locaux au-delà de 4 à 6 semaines. | IPL non remboursée : 150 € la séance ; bouchons et incision pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires) |
+| 3. Les gestes au cabinet | IPL (dysfonction des glandes de Meibomius, rosacée oculaire) ; bouchons méatiques (déficit de production) ; incision de chalazion si échec des soins locaux au-delà de 4 à 6 semaines. | IPL non remboursée : 150 € la séance (montant au 28 octobre 2026) ; bouchons et incision pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires) |
 | 4. Les formes sévères | Sérum autologue, lentilles sclérales, greffe de membrane amniotique, occlusion définitive des points lacrymaux — patients orientés vers le service du CHNO des Quinze-Vingts, où j’exerce. | Prise en charge hospitalière |
 
 Le bilan de la surface oculaire au cabinet identifie le mécanisme en cause et le palier adapté. [Prendre rendez-vous](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
@@ -5568,7 +5576,7 @@ Le protocole comporte en général **3 à 4 séances espacées de 2 à 4 semaine
 
 **Ce que disent les données :** des essais randomisés et des méta-analyses montrent une amélioration de la stabilité du film lacrymal et du fonctionnement des glandes de Meibomius après IPL ; l’effet sur les symptômes est moins bien établi. Le niveau de preuve reste faible (protocoles hétérogènes, suivi souvent court), et le bénéfice s’entretient par les séances de rappel.
 
-**Contre-indications :** peau très foncée (phototypes V et VI), bronzage récent, grossesse, traitement photosensibilisant en cours, lésion cutanée suspecte ou tatouage dans la zone traitée. Les effets indésirables se limitent en règle à une rougeur transitoire de la peau. L’IPL n’est **pas prise en charge par l’Assurance maladie** : 150 € la séance, tarif annoncé lors de la consultation de bilan, avant toute décision.
+**Contre-indications :** peau très foncée (phototypes V et VI), bronzage récent, grossesse, traitement photosensibilisant en cours, lésion cutanée suspecte ou tatouage dans la zone traitée. Les effets indésirables se limitent en règle à une rougeur transitoire de la peau. L’IPL n’est **pas prise en charge par l’Assurance maladie** : 150 € la séance (montant au 28 octobre 2026), tarif annoncé lors de la consultation de bilan, avant toute décision.
 
 #### Les bouchons méatiques
 
@@ -5607,7 +5615,7 @@ Le protocole initial comporte en général trois à quatre séances à deux à q
 
 ##### L’IPL est-elle remboursée ?
 
-Non. L’IPL n’est pas inscrite à la nomenclature de l’Assurance maladie : 150 € la séance, annoncés lors de la consultation de bilan, avant toute décision. Les bouchons méatiques et l’incision de chalazion sont en revanche pris en charge, avec dépassement d’honoraires (secteur 2).
+Non. L’IPL n’est pas inscrite à la nomenclature de l’Assurance maladie : 150 € la séance (montant au 28 octobre 2026), annoncés lors de la consultation de bilan, avant toute décision. Les bouchons méatiques et l’incision de chalazion sont en revanche pris en charge, avec dépassement d’honoraires (secteur 2).
 
 ##### Un chalazion qui revient souvent, est-ce grave ?
 
@@ -5625,7 +5633,7 @@ Non. Les larmes sans conservateur peuvent être utilisées aussi souvent que né
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir du consensus TFOS DEWS III (Tear Film & Ocular Surface Society) : [rapport sur le diagnostic de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.033) et [rapport sur la prise en charge de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.039). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir du consensus TFOS DEWS III (Tear Film & Ocular Surface Society) : [rapport sur le diagnostic de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.033) et [rapport sur la prise en charge de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.039). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 #### Sources et références
 
