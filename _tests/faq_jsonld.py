@@ -20,8 +20,10 @@ SCRIPT = re.compile(r'<script type="application/ld\+json">(.*?)</script>', re.S)
 
 
 def text_of(fragment):
-    """Texte brut d'un fragment HTML : balises retirées, entités décodées, espaces repliés (l'insécable est conservée)."""
-    s = re.sub(r'<[^>]+>', '', fragment)
+    """Texte brut d'un fragment HTML : balises retirées, entités décodées, espaces repliés (l'insécable est conservée).
+    Les textes réservés aux lecteurs d'écran (span.sr-only, « (nouvelle fenêtre) ») ne vont pas dans la FAQ balisée."""
+    s = re.sub(r'<span class="sr-only">.*?</span>', '', fragment, flags=re.S)
+    s = re.sub(r'<[^>]+>', '', s)
     s = htmlmod.unescape(s)
     return re.sub(r'[ \t\r\n]+', ' ', s).strip()
 

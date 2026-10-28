@@ -453,6 +453,12 @@ def check(root):
         for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', pg.txt, re.S):
             e = re.search(r'&(?:[a-zA-Z]+|#[0-9]+|#x[0-9a-fA-F]+);', m.group(1))
             if e: E(f'{name}:{pg.txt.count(chr(10), 0, m.start(1) + e.start()) + 1} : entité HTML « {e.group(0)} » dans un JSON-LD (écrire le caractère lui-même) — TECH69AA')
+    # TECH69AF-2026-10-28 : les textes réservés aux lecteurs d'écran (« (nouvelle fenêtre) » des liens externes) ne sont pas
+    # recopiés dans les données structurées : faq_jsonld.py retire les span.sr-only (relecture du 28/10 ; en ligne sur 3 pages).
+    for name, pg in pages.items():
+        for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', pg.txt, re.S):
+            if 'nouvelle fenêtre' in m.group(1):
+                E(f'{name} : « nouvelle fenêtre » dans un JSON-LD (texte réservé aux lecteurs d’écran) — TECH69AF')
     # TECH69U-2026-10-26 : deux refus du validateur W3C, qui ne tourne qu'en CI (Java absent en local) — le 26/10, les
     # carrousels sont partis en ligne avec un aria-label sur un div sans rôle et un aria-hidden doublant hidden.
     for name, pg in pages.items():
