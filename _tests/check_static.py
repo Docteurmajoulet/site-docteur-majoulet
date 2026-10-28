@@ -440,6 +440,22 @@ def check(root):
         _t = open(_f, encoding='utf-8', errors='replace').read()
         for m in re.finditer(r'^(?:<{7}|>{7}|\|{7})(?: |$)|^={7}$', _t, re.M):
             E(f'{os.path.basename(_f)}:{_t.count(chr(10), 0, m.start()) + 1} : marqueur de conflit git « {m.group(0).strip()} » — TECH69X'); break
+    # TECH69AD-2026-10-28 : les honoraires de la chirurgie de la rétine (décision du Dr Majoulet du 28/10) sont recopiés sur plusieurs
+    # fiches, texte et FAQ balisée : partout les mêmes montants, la même date « Montants au … », et l'anesthésiste et la clinique à part.
+    _hon = {}
+    for name, pg in pages.items():
+        for m in re.finditer(r'dépassement d’honoraires est de\s+(?:<strong>)?([\d\s ]+|[\d&nbsp;]+)(?:&nbsp;| )€', pg.txt):
+            fin = pg.txt[m.start():m.start() + 1200]
+            a = re.search(r'opération de la rétine seule\s+et\s+de\s+(?:<strong>)?([\d&nbsp;  ]+?)(?:&nbsp;| )€', fin)
+            d = re.search(r'Montants au ([^.]+)\.', fin)
+            norm = lambda s: re.sub(r'&nbsp;| |\s', '', s or '')
+            cle = (norm(m.group(1)), norm(a.group(1)) if a else None, norm(d.group(1)) if d else None, 'facturés à part' in fin)
+            _hon.setdefault(cle, []).append(name)
+    if len(_hon) > 1:
+        E('honoraires de la chirurgie de la rétine différents selon les fiches : ' + ' ; '.join(f'{k} sur {sorted(set(v))}' for k, v in _hon.items()) + ' — TECH69AD')
+    for k, v in _hon.items():
+        if None in k[:3] or not k[3]:
+            E(f'honoraires de la rétine incomplets {k} sur {sorted(set(v))} : montant combiné, date « Montants au … » et « facturés à part » attendus — TECH69AD')
     # TECH69AB-2026-10-28 : chaque <article> porte un intertitre à son propre niveau, pas seulement dans des <section>
     # imbriquées (avertissement « Article lacks heading » du W3C, qui ne tourne qu'en CI : /en le 28/10).
     for name, pg in pages.items():

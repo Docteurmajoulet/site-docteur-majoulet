@@ -1934,6 +1934,10 @@ Les références ci-dessus sont citées à titre indicatif pour le lecteur avert
 
 #### Questions fréquentes
 
+##### Combien de temps dure une vitrectomie ?
+
+**De 30 à 45 minutes en général.** Elle se fait en ambulatoire : vous rentrez chez vous le jour même, accompagné.
+
 ##### La vitrectomie est-elle douloureuse ?
 
 **Non.** Elle est réalisée sous anesthésie locorégionale péribulbaire ou sous-ténonienne, qui rend l’œil complètement insensible pendant l’intervention. Un **confort anesthésique léger** (midazolam) peut être associé. L’anesthésie générale est réservée aux cas complexes ou aux enfants.
@@ -2330,7 +2334,7 @@ L’évolution d’une MER peut être lente et rester stable pendant des années
 
 ##### La chirurgie est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **pris en charge par l’Assurance Maladie** sur la base du tarif conventionnel. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention.
+Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **pris en charge par l’Assurance Maladie** sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant toute intervention.
 
 ##### Auteur et révision médicale
 
@@ -2577,6 +2581,10 @@ Après 50 ans, si le cristallin est conservé, la cataracte progresse après la 
 ##### Un trou maculaire peut-il se refermer tout seul ?
 
 La fermeture spontanée est **possible mais rare**, essentiellement dans les très petits trous ou après un décollement postérieur du vitré qui libère la traction. Elle ne doit pas être attendue dans les trous constitués de pleine épaisseur : **plus la chirurgie est précoce** (moins de 6 à 12 mois d’évolution), meilleur est le résultat visuel final.
+
+##### Combien coûte l’opération du trou maculaire ?
+
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Auteur et révision médicale
 
