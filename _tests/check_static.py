@@ -440,6 +440,12 @@ def check(root):
         _t = open(_f, encoding='utf-8', errors='replace').read()
         for m in re.finditer(r'^(?:<{7}|>{7}|\|{7})(?: |$)|^={7}$', _t, re.M):
             E(f'{os.path.basename(_f)}:{_t.count(chr(10), 0, m.start()) + 1} : marqueur de conflit git « {m.group(0).strip()} » — TECH69X'); break
+    # TECH69AF-2026-10-28 : les textes réservés aux lecteurs d'écran (« (nouvelle fenêtre) » des liens externes) ne sont pas
+    # recopiés dans les données structurées : faq_jsonld.py retire les span.sr-only (relecture du 28/10 ; en ligne sur 3 pages).
+    for name, pg in pages.items():
+        for m in re.finditer(r'<script type="application/ld\+json">(.*?)</script>', pg.txt, re.S):
+            if 'nouvelle fenêtre' in m.group(1):
+                E(f'{name} : « nouvelle fenêtre » dans un JSON-LD (texte réservé aux lecteurs d’écran) — TECH69AF')
     # TECH69AB-2026-10-28 : chaque <article> porte un intertitre à son propre niveau, pas seulement dans des <section>
     # imbriquées (avertissement « Article lacks heading » du W3C, qui ne tourne qu'en CI : /en le 28/10).
     for name, pg in pages.items():
