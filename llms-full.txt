@@ -2946,7 +2946,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Flashs, phosphènes et corps flottants
 
 - URL : https://docteurmajoulet.com/flashs-phosphenes-myodesopsies
-- Description : Phosphènes (éclairs lumineux), corps flottants, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne.
+- Description : Phosphènes (éclairs lumineux), mouches volantes, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne.
 - Relu le : 2026-08-19
 
 Bénin (DPV) dans 85 % des cas, mais un fond d’œil dilaté est indispensable
@@ -3148,7 +3148,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Baisse brutale de la vision
 
 - URL : https://docteurmajoulet.com/baisse-brutale-vision
-- Description : Baisse brutale de la vision (BAV) : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne.
+- Description : Baisse brutale de la vision (BAV brutale) : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne.
 - Relu le : 2026-08-19
 
 Ce qu’il faut faire tout de suite — et comment le médecin trouve la cause
@@ -4487,7 +4487,7 @@ Rédigé en tenant compte des [recommandations de l’American Academy of Ophtha
 ### Œdème maculaire cystoïde (syndrome d’Irvine-Gass)
 
 - URL : https://docteurmajoulet.com/oedeme-maculaire-cystoide
-- Description : Œdème maculaire cystoïde (OMC) : causes (après une cataracte, diabète, uvéite), diagnostic par OCT, traitements. Dr Majoulet, rétinologue à Boulogne.
+- Description : Œdème maculaire cystoïde (OMC) : causes (après une opération de la cataracte, diabète, uvéite), diagnostic par OCT, traitements. Dr Majoulet, Boulogne.
 - Relu le : 2026-04-22
 
 Accumulation de liquide dans la macula — cause la plus fréquente de mauvais résultat visuel après une chirurgie de la cataracte

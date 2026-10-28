@@ -125,9 +125,9 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 ## Signes d’alerte — le jour même ou sous 24-48 h
 
 - [Déchirure de rétine et corps flottants](https://docteurmajoulet.com/dechirure-retine-corps-flottants): Corps flottants, éclairs, voile noir : signes d’une déchirure de rétine. Examen en urgence, laser préventif. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
-- [Flashs, phosphènes et corps flottants](https://docteurmajoulet.com/flashs-phosphenes-myodesopsies): Phosphènes (éclairs lumineux), corps flottants, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne.
+- [Flashs, phosphènes et corps flottants](https://docteurmajoulet.com/flashs-phosphenes-myodesopsies): Phosphènes (éclairs lumineux), mouches volantes, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne.
 - [Décollement postérieur du vitré](https://docteurmajoulet.com/decollement-posterieur-vitre): Décollement postérieur du vitré (DPV) : mouches volantes, éclairs, anneau de Weiss ; quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne.
-- [Baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision): Baisse brutale de la vision (BAV) : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne.
+- [Baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision): Baisse brutale de la vision (BAV brutale) : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne.
 
 ## Cataracte et implants
 
@@ -147,7 +147,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 - [Rétinopathie diabétique](https://docteurmajoulet.com/retinopathie-diabetique): Rétinopathie diabétique : dépistage et suivi, injections anti-VEGF, laser et vitrectomie. Dr Majoulet, rétinologue à Boulogne. Prenez rendez-vous au cabinet.
 - [Occlusions veineuses rétiniennes](https://docteurmajoulet.com/occlusions-veineuses): Occlusion veineuse rétinienne (OVCR, OBVR) : œdème maculaire, injections anti-VEGF, laser. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV.
 - [Occlusion de l’artère centrale de la rétine (OACR)](https://docteurmajoulet.com/occlusion-artere-centrale-retine): Occlusion de l’artère centrale de la rétine : un AVC de l’œil, urgence absolue. Signes, bilan, prise en charge. Dr Majoulet, rétinologue à Boulogne.
-- [Œdème maculaire cystoïde (syndrome d’Irvine-Gass)](https://docteurmajoulet.com/oedeme-maculaire-cystoide): Œdème maculaire cystoïde (OMC) : causes (après une cataracte, diabète, uvéite), diagnostic par OCT, traitements. Dr Majoulet, rétinologue à Boulogne.
+- [Œdème maculaire cystoïde (syndrome d’Irvine-Gass)](https://docteurmajoulet.com/oedeme-maculaire-cystoide): Œdème maculaire cystoïde (OMC) : causes (après une opération de la cataracte, diabète, uvéite), diagnostic par OCT, traitements. Dr Majoulet, Boulogne.
 - [Choriorétinopathie séreuse centrale](https://docteurmajoulet.com/chorioretinopathie-sereuse-centrale): Choriorétinopathie séreuse centrale (CRSC) : rôle du stress et des corticoïdes, diagnostic OCT, traitements. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
 - [Myopie forte et complications rétiniennes](https://docteurmajoulet.com/myopie-forte): Myopie forte : conus myopique, staphylome, complications de la rétine (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, Boulogne.
 - [Néovaisseaux choroïdiens du myope fort](https://docteurmajoulet.com/neovaisseaux-choroidiens-myope-fort): Néovaisseaux du myope fort : vision déformée, diagnostic OCT-angiographie, injections anti-VEGF. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
