@@ -2150,7 +2150,7 @@ Diagnostic OCT et chirurgie par vitrectomie avec pelage
 
 Une **membrane épirétinienne (MER)** est une fine pellicule qui se forme à la surface de la rétine, le plus souvent dans sa partie centrale, la **macula**. En se contractant, elle plisse la rétine : les lignes droites paraissent déformées et la vision peut baisser progressivement.
 
-Il existe deux types de membranes épirétiniennes : certaines restent stables pendant des années, d’autres progressent. Une membrane qui ne gêne pas est simplement surveillée, par un OCT tous les 6 mois. On opère lorsque la membrane gêne : baisse de l’acuité visuelle, métamorphopsies (les lignes droites paraissent déformées) ou micropsies (les objets paraissent plus petits). Le Dr Majoulet propose alors une **vitrectomie avec pelage de la membrane**. L’opération se fait en ambulatoire, à la Clinique Jouvenet (Paris 16e), et dure 30 à 45 minutes. En règle, aucun gaz n’est laissé dans l’œil, donc pas de posture après l’opération ni de restriction pour l’avion ; chaque dossier est jugé au cas par cas. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. La vision récupère progressivement, sur 3 à 6 mois : le but de l’opération est d’abord de stopper sa dégradation.
+Il existe deux types de membranes épirétiniennes : certaines restent stables pendant des années, d’autres progressent. Une membrane qui ne gêne pas est simplement surveillée, par un OCT tous les 6 mois. On opère lorsque la membrane gêne : baisse de l’acuité visuelle, métamorphopsies (les lignes droites paraissent déformées) ou macropsie (les objets paraissent plus grands). Le Dr Majoulet propose alors une **vitrectomie avec pelage de la membrane**. L’opération se fait en ambulatoire, à la Clinique Jouvenet (Paris 16e), et dure 30 à 45 minutes. En règle, aucun gaz n’est laissé dans l’œil, donc pas de posture après l’opération ni de restriction pour l’avion ; chaque dossier est jugé au cas par cas. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. La vision récupère progressivement, sur 3 à 6 mois : le but de l’opération est d’abord de stopper sa dégradation.
 
 **Un avis sur une intervention de la rétine**
 
@@ -2206,7 +2206,7 @@ Les indications opératoires classiques sont :
 
 - **Baisse d’acuité visuelle significative** (généralement ≤ 5/10).
 - **Métamorphopsies gênantes** dans la vie quotidienne (lecture, conduite, travail).
-- **Micropsies** : les objets paraissent plus petits avec l’œil atteint.
+- **Macropsie** : les objets paraissent plus grands avec l’œil atteint.
 - **Désorganisation architecturale de la fovéa** en OCT (stades 3-4 de Govetto).
 - **Évolution documentée** à l’OCT : épaississement fovéolaire progressif, apparition de kystes.
 
@@ -2310,7 +2310,7 @@ Références indicatives pour le lecteur averti ; elles ne se substituent pas à
 
 ##### Faut-il toujours opérer une membrane épirétinienne ?
 
-Non. Lorsque la membrane est fine, peu symptomatique et que l’acuité visuelle reste satisfaisante, une simple **surveillance par OCT tous les 6 mois** est recommandée. L’indication opératoire est posée en présence de métamorphopsies invalidantes, de micropsies (objets vus plus petits), d’une baisse d’acuité significative ou d’une désorganisation architecturale de la fovéa sur l’OCT.
+Non. Lorsque la membrane est fine, peu symptomatique et que l’acuité visuelle reste satisfaisante, une simple **surveillance par OCT tous les 6 mois** est recommandée. L’indication opératoire est posée en présence de métamorphopsies invalidantes, d’une macropsie gênante (objets vus plus grands), d’une baisse d’acuité significative ou d’une désorganisation architecturale de la fovéa sur l’OCT.
 
 ##### Combien de temps pour récupérer la vision après la chirurgie ?
 
