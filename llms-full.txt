@@ -244,7 +244,7 @@ Titres reconnus par le Conseil National de l’Ordre des Médecins et inscrits a
 
 ##### Chirurgie vitréo-rétinienne
 
-Décollement de rétine (vitrectomie, cryo-indentation), trou maculaire, membrane épi-rétinienne, hémorragie intra-vitréenne, traumatismes oculaires, chirurgie du diabète proliférant.
+Décollement de rétine (vitrectomie, cryo-indentation), trou maculaire, membrane épirétinienne, hémorragie intravitréenne, traumatismes oculaires, chirurgie du diabète proliférant.
 
 ##### Rétine médicale
 
@@ -1917,7 +1917,7 @@ La vitrectomie mini-invasive moderne est une chirurgie sûre, mais comme toute c
 - **Hypertonie oculaire** transitoire (inflammation, tamponnement) ou durable (glaucome post-vitrectomie).
 - **Endophtalmie** : rare, de l’ordre de **0,03 à 0,1 %** (moins de 1 cas sur 1 000).
 - **Nouveau décollement de rétine** : 1 à 5 % selon les indications.
-- **Hémorragie intra-vitréenne**, **déchirures iatrogènes**.
+- **Hémorragie intravitréenne**, **déchirures iatrogènes**.
 - **Anomalies réfractives** après huile de silicone (rare).
 - **Œdème maculaire** post-opératoire.
 
