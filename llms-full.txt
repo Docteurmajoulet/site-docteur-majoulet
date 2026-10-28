@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-28
+Dernière mise à jour : 2026-10-29
 
 ## Identité et coordonnées
 
@@ -2072,7 +2072,7 @@ Le décollement de rétine par déchirure (rhegmatogène), le plus fréquent, es
 
 ##### 1. Vitrectomie postérieure mini-invasive
 
-Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale (exceptionnellement générale), en ambulatoire (vous rentrez chez vous le jour même, accompagné), elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Elle dure en général 30 à 45 minutes. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
+Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale (exceptionnellement générale), en ambulatoire (vous rentrez chez vous le jour même, accompagné), elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
 
 ##### 2. Indentation sclérale (cerclage)
 
@@ -2347,9 +2347,9 @@ Chez un patient phaque de plus de 50 ans, la **cataracte** progresse dans plus d
 
 L’évolution d’une MER peut être lente et rester stable pendant des années, ou au contraire progresser sur plusieurs mois. Un **suivi OCT tous les 6 mois** permet de documenter l’évolution (épaisseur fovéolaire, apparition d’*ectopic inner foveal layers*, apparition de kystes). Une chirurgie trop tardive, sur une rétine très désorganisée, donne un résultat fonctionnel moins favorable — d’où l’importance de ne pas tarder lorsque la gêne s’installe.
 
-##### Quand peut-on reprendre la voiture après l’opération d’une membrane ?
+##### Quand peut-on reprendre la voiture après l’opération d’une membrane épirétinienne ?
 
-**Après le contrôle d’une semaine (J7), pas avant.** À ce rendez-vous, le Dr Majoulet mesure votre vision et vous dit si elle vous permet de reprendre le volant.
+**Après le contrôle d’une semaine (J7), pas avant.** À ce rendez-vous, le Dr Majoulet mesure votre vision et vous dit si elle vous permet de reprendre le volant. La réglementation du permis de conduire ([arrêté du 28 mars 2022 sur les affections médicales et le permis de conduire](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000045464094)) demande, pour le permis B, une acuité visuelle d’au moins 5/10 avec les deux yeux ouverts, lunettes comprises, et un champ de vision horizontal d’au moins 120°. Le médecin informe ; il n’autorise ni n’interdit. C’est au conducteur de s’assurer, avant de prendre le volant, qu’il remplit ces conditions (article R412-6 du Code de la route).
 
 ##### La chirurgie est-elle prise en charge par la Sécurité sociale ?
 
@@ -3031,7 +3031,7 @@ Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urg
 
 #### Facteurs de risque de déchirure rétinienne lors d’un DPV
 
-- Myopie forte (> −6 D).
+- Myopie forte (au moins 6 dioptries).
 - Antécédent personnel de décollement de rétine ou de déchirure.
 - Antécédent familial de décollement de rétine.
 - Chirurgie oculaire récente (cataracte surtout).
@@ -3168,7 +3168,7 @@ Oui, dans la grande majorité des cas, le second œil fait un DPV dans les 1 à 
 
 ##### J’ai un DPV et je suis myope : suis-je à risque ?
 
-Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinienne. Un examen du fond d’œil dilaté soigneux est indispensable, et un suivi plus rapproché est recommandé. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) et [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
+Oui, la myopie (surtout à partir de 6 dioptries) est un facteur de risque de déchirure rétinienne. Un examen du fond d’œil dilaté soigneux est indispensable, et un suivi plus rapproché est recommandé. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) et [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
 
 ##### Auteur et révision médicale
 
@@ -4791,7 +4791,7 @@ Staphylome, néovaisseaux myopiques, fovéoschisis, risque de décollement
 
 La **myopie forte** est définie par une myopie **d’au moins 6 dioptries** ou une **longueur axiale d’au moins 26 mm**. On parle de myopie pathologique quand des lésions apparaissent au fond d’œil (staphylome, atrophie, néovaisseaux). La myopie forte concerne aujourd’hui **2 à 3 % de la population française**, et sa prévalence augmente fortement dans le monde, notamment en Asie. Au-delà du simple défaut réfractif, la myopie forte est un **facteur de risque majeur de complications rétiniennes** qui justifie un **suivi ophtalmologique spécialisé annuel**.
 
-- **≥ -6 D** — Seuil de myopie forte
+- **≥ 6 D** — Seuil de myopie forte
 - **≥ 26 mm** — Longueur axiale pathologique
 - **× 5 à 10** — Risque de décollement de rétine
 
@@ -4841,7 +4841,7 @@ La myopie forte augmente le risque de glaucome primitif à angle ouvert par un f
 
 #### Bilan et suivi du myope fort
 
-Un **bilan annuel** est recommandé chez tout patient ayant une myopie ≥ -6 D ou une longueur axiale ≥ 26 mm. Il comprend :
+Un **bilan annuel** est recommandé chez tout patient ayant une myopie d’au moins 6 dioptries ou une longueur axiale ≥ 26 mm. Il comprend :
 
 - **Mesure de la longueur axiale** par biométrie optique (IOL Master).
 - **Rétinographie grand champ couleur** et en autofluorescence.
@@ -5791,7 +5791,7 @@ Dans un œil emmétrope (sans correction), les rayons lumineux parallèles arriv
 |---|---|---|
 | Faible | −0,25 à −3 D | Correction pour la conduite, le cinéma |
 | Moyenne | −3 à −6 D | Correction nécessaire en permanence |
-| Forte | > −6 D ou longueur axiale ≥ 26 mm | Suivi rétinien annuel indispensable (voir la fiche [myopie forte](https://docteurmajoulet.com/myopie-forte)) |
+| Forte | Au moins 6 D, ou longueur axiale ≥ 26 mm | Suivi rétinien annuel indispensable (voir la fiche [myopie forte](https://docteurmajoulet.com/myopie-forte)) |
 
 #### Moyens de correction
 
