@@ -482,7 +482,7 @@ Français et anglais.
 
 ##### Le cabinet de Boulogne-Billancourt reçoit-il les urgences de la rétine ?
 
-Oui, du lundi au samedi, aux heures d’ouverture : lundi, mercredi et jeudi de 9 h à 20 h, mardi, vendredi et samedi de 9 h à 18 h, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une occlusion de l’artère centrale de la rétine, y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
+Oui, du lundi au samedi, aux heures d’ouverture : lundi, mercredi et jeudi de 9 h à 20 h, mardi, vendredi et samedi de 9 h à 18 h, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une [occlusion de l’artère centrale de la rétine](https://docteurmajoulet.com/occlusion-artere-centrale-retine), y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
 
 ##### Que faire en dehors des horaires d’ouverture en cas d’urgence ?
 
@@ -3054,7 +3054,7 @@ Transitoirement dans les premiers jours, liée à la modification de l’interfa
 #### Facteurs de risque
 
 - **Âge** : ≥ 50 ans (facteur principal).
-- **Myopie**, surtout myopie forte : DPV plus précoce (parfois dès 40 ans), souvent plus brutal. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte).
+- **[Myopie](https://docteurmajoulet.com/myopie)**, surtout myopie forte : DPV plus précoce (parfois dès 40 ans), souvent plus brutal. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte).
 - **Chirurgie de cataracte** : le DPV survient souvent dans les mois qui suivent la chirurgie. Voir [Cataracte](https://docteurmajoulet.com/cataracte).
 - **Traumatisme oculaire**.
 - **Uvéite**, inflammation intraoculaire.
@@ -3542,7 +3542,7 @@ Lorsque le reste de l’œil est sain, la vision s’améliore dans la grande ma
 - **Rupture capsulaire per-opératoire** : 1 à 2 %.
 - **Décollement de rétine** : 0,5 à 1 %, plus fréquent chez le myope fort.
 - **Opacification capsulaire secondaire (cataracte secondaire)** : 15 à 30 % à 2-3 ans, traitée en consultation par [**laser YAG**](https://docteurmajoulet.com/cataracte-secondaire-laser-yag) en quelques minutes.
-- Décentrement ou luxation d’implant : exceptionnels.
+- Décentrement ou [luxation d’implant](https://docteurmajoulet.com/luxation-cristallin-implant) : exceptionnels.
 
 ##### Ce que montre notre étude au CHNO des Quinze-Vingts
 
@@ -3667,7 +3667,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 - **Opacification capsulaire postérieure** (« cataracte secondaire ») : 10 à 20 % à 5 ans, traitée en une séance par [laser YAG](https://docteurmajoulet.com/cataracte-secondaire-laser-yag).
 - **Œdème maculaire postopératoire** (syndrome d’Irvine-Gass) : < 2 % des cas, régressif sous collyres.
 - **Endophtalmie** (infection intraoculaire) : de l’ordre de 2 à 3 cas pour 10 000 opérations, et 0,007 % sur la dernière décennie au CHNO des Quinze-Vingts — prévenue par antibiotique intracamérulaire (céfuroxime).
-- **Décentrement ou luxation tardive de l’implant** : rare (environ 1 à 2 % à 25 ans), plus fréquent en cas de pseudo-exfoliation.
+- **Décentrement ou [luxation tardive de l’implant](https://docteurmajoulet.com/luxation-cristallin-implant)** : rare (environ 1 à 2 % à 25 ans), plus fréquent en cas de pseudo-exfoliation.
 - **Erreur biométrique résiduelle** : rare avec les formules modernes ; peut conduire à une petite correction par lunettes, lentilles ou, dans de rares cas, un geste de retouche (échange d’implant, LASIK de retouche).
 
 #### Alternatives aux implants monofocaux
@@ -5950,7 +5950,7 @@ Le **dépistage visuel de l’enfant** vise à repérer précocement les trouble
 ##### 4-6 ans (pré-scolaire)
 
 - Amblyopie modérée passée inaperçue.
-- Amétropies modérées : myopie débutante, hypermétropie décompensée, astigmatisme.
+- Amétropies modérées : [myopie débutante](https://docteurmajoulet.com/myopie), hypermétropie décompensée, astigmatisme.
 - Troubles fonctionnels : insuffisance de convergence, trouble accommodatif.
 
 ##### Enfant scolarisé (6-15 ans)
