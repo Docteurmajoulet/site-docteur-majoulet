@@ -2,7 +2,7 @@
 
 > Dr Alexandre Majoulet : Chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, DMLA et cataracte. Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt. Ce fichier (format llmstxt.org) est généré depuis les pages publiées de docteurmajoulet.com et leurs données structurées — rien n'y est rédigé à part ; la version longue, le texte intégral des pages, est disponible dans [llms-full.txt](https://docteurmajoulet.com/llms-full.txt).
 
-Dernière mise à jour : 2026-10-28
+Dernière mise à jour : 2026-10-29
 
 ## Identité et coordonnées
 
@@ -97,7 +97,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 ## Cabinet, prise de rendez-vous et urgences
 
 - [Dr Alexandre Majoulet, ophtalmologue & rétinologue à Boulogne-Billancourt](https://docteurmajoulet.com/): Chirurgien ophtalmologue spécialisé en rétine à Boulogne-Billancourt : DMLA, décollement de rétine, cataracte. OCT et injections au Cabinet Ophtalife.
-- [Le Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet): Chirurgien ophtalmologue rétinologue, praticien au CHNO des Quinze-Vingts et cofondateur du Cabinet Ophtalife. Parcours, diplômes et publications.
+- [Le Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet): Chirurgien ophtalmologue – rétinologue, praticien au CHNO des Quinze-Vingts et cofondateur du Cabinet Ophtalife. Parcours, diplômes et publications.
 - [Contact et rendez-vous](https://docteurmajoulet.com/contact): Coordonnées du Dr Majoulet : Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt. Tél. 01 84 19 11 66. Rendez-vous en ligne sur Doctolib.
 - [Ophtalmologue à Boulogne-Billancourt](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt): Cabinet Ophtalife, 37 rue d’Aguesseau à Boulogne-Billancourt : consultations d’ophtalmologie et de rétine, OCT sur place. Accès, horaires et rendez-vous.
 - [Urgences ophtalmologiques](https://docteurmajoulet.com/urgences-ophtalmologiques): Voile noir, baisse brutale de la vision, éclairs : où aller maintenant. Le cabinet de Boulogne le jour même, sinon les urgences 24h/24 à Paris.
