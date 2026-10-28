@@ -1141,7 +1141,7 @@ Le traitement est **prolongé, souvent sur plusieurs années**. Le protocole sta
 
 ##### Combien de temps dure un rendez-vous d’injection au cabinet ?
 
-Environ **10 minutes** lorsque le rendez-vous comporte seulement l’injection, et environ **20 minutes** lorsqu’il comporte aussi un OCT et une mesure de l’acuité visuelle. Le geste lui-même ne dure que quelques minutes.
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même ne dure que quelques minutes.
 
 ##### Je vois les lignes déformées depuis quelques jours : est-ce urgent ?
 
@@ -1446,7 +1446,7 @@ Non. L’aiguille est **très fine (30G)** et insérée latéralement, hors de v
 
 ##### Combien de temps dure un rendez-vous d’injection ?
 
-Environ **10 minutes** lorsque le rendez-vous comporte seulement l’injection, et environ **20 minutes** lorsqu’il comporte aussi un OCT et une mesure de l’acuité visuelle. Le geste lui-même ne dure que quelques minutes.
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même ne dure que quelques minutes.
 
 ##### Combien de temps dure l’effet d’une injection d’anti-VEGF ?
 
@@ -1829,7 +1829,7 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 - **Endophtalmie** (infection intraoculaire) — urgence chirurgicale.
 - **Corps étrangers intraoculaires**.
 - **Vitrite / uvéites postérieures** réfractaires, suspicion de lymphome oculaire (biopsie diagnostique).
-- **Corps flottants invalidants** (indication à discuter au cas par cas, balance bénéfice/risque).
+- **Corps flottants invalidants** (indication exceptionnelle, à discuter au cas par cas, balance bénéfice/risque).
 
 #### Déroulement de l’intervention
 
@@ -2916,8 +2916,8 @@ Lorsque les corps flottants sont anciens, non évolutifs et que l’examen du fo
 
 - La **neuroadaptation** (cerveau qui « gomme » les ombres) améliore l’inconfort en 3 à 6 mois dans la majorité des cas.
 - Les **collyres ou compléments alimentaires** n’ont pas d’efficacité démontrée.
-- La **vitrectomie pour corps flottants isolés** n’est envisagée qu’en cas de gêne fonctionnelle majeure, réfractaire, après bilan complet et information détaillée sur les risques (décollement de rétine post-opératoire, cataracte).
-- Le **laser YAG vitréolyse** reste une indication très sélective, dont les preuves d’efficacité restent limitées.
+- La **vitrectomie pour corps flottants isolés** n’est réalisée que de manière exceptionnelle et au cas par cas, en cas de gêne fonctionnelle majeure, réfractaire, après bilan complet et information détaillée sur les risques (décollement de rétine post-opératoire, cataracte).
+- La **vitréolyse au laser YAG** n’est, elle aussi, réalisée que de manière exceptionnelle et au cas par cas ; ses preuves d’efficacité restent limitées.
 
 #### Questions fréquentes des patients
 
@@ -2935,7 +2935,7 @@ Une déchirure rétinienne symptomatique est traitée **en urgence par photocoag
 
 ##### Les corps flottants disparaissent-ils ?
 
-Chez la plupart des patients, les corps flottants **diminuent progressivement en 3 à 6 mois** par effet de neuroadaptation et d’affaissement du vitré. Ils ne disparaissent pas totalement en général mais deviennent beaucoup moins gênants. La vitrectomie pour corps flottants isolés est **rarement indiquée** et réservée aux cas très invalidants après bilan complet.
+Chez la plupart des patients, les corps flottants **diminuent progressivement en 3 à 6 mois** par effet de neuroadaptation et d’affaissement du vitré. Ils ne disparaissent pas totalement en général mais deviennent beaucoup moins gênants. La vitrectomie ou le laser YAG pour des corps flottants isolés ne sont réalisés que **de manière exceptionnelle et au cas par cas**, pour des cas très invalidants, après bilan complet.
 
 ##### Quelle est la différence entre corps flottants et décollement de rétine ?
 
@@ -2951,7 +2951,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -3124,7 +3124,7 @@ Rechercher systématiquement une déchirure (échographie B si fond d’œil non
 
 ##### Corps flottants chroniques très gênants
 
-Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent invalidants. Deux options peuvent être discutées, mais avec un **rapport bénéfice-risque à évaluer avec rigueur** :
+Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent invalidants. Deux options peuvent alors être discutées, **de manière exceptionnelle et au cas par cas**, avec un rapport bénéfice-risque à évaluer avec rigueur :
 
 - **Vitrectomie** 25G / 27G : elle retire le vitré et ses opacités, mais expose à la **cataracte** (fréquente chez le phaque) et à un risque faible mais non nul d’endophtalmie et de décollement de rétine.
 - **Vitréolyse au laser YAG** (Ellex Reflex®) : moins invasive, mais preuves d’efficacité limitées et réservée à des opacités bien sélectionnées (volumineuses, centrales, isolées).
@@ -3145,7 +3145,7 @@ Non, ils n’évoluent pas vers le haut de l’œil. Au contraire, ils **sédime
 
 ##### Combien de temps durent les symptômes d’un décollement du vitré ?
 
-Une fois une déchirure écartée par le fond d’œil dilaté, les éclairs lumineux peuvent persister plusieurs semaines, puis s’estompent. Les corps flottants deviennent moins visibles avec le temps : ils se déposent dans le bas de l’œil et le cerveau s’y habitue. Un nouveau contrôle du fond d’œil est recommandé 4 à 6 semaines après le premier examen, car une déchirure peut apparaître secondairement. Si, après plus de 6 mois, des corps flottants restent très gênants, une vitrectomie ou, pour des opacités bien sélectionnées, une vitréolyse au laser YAG (aux preuves d’efficacité limitées) peuvent se discuter, avec un rapport bénéfice-risque à évaluer avec rigueur. Entre-temps, l’apparition brutale de nouveaux corps flottants ou d’éclairs justifie un fond d’œil dilaté sous 24 à 48 h, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un examen le jour même.
+Une fois une déchirure écartée par le fond d’œil dilaté, les éclairs lumineux peuvent persister plusieurs semaines, puis s’estompent. Les corps flottants deviennent moins visibles avec le temps : ils se déposent dans le bas de l’œil et le cerveau s’y habitue. Un nouveau contrôle du fond d’œil est recommandé 4 à 6 semaines après le premier examen, car une déchirure peut apparaître secondairement. Si, après plus de 6 mois, des corps flottants restent très gênants, une vitrectomie ou, pour des opacités bien sélectionnées, une vitréolyse au laser YAG (aux preuves d’efficacité limitées) peuvent se discuter, de manière exceptionnelle et au cas par cas, avec un rapport bénéfice-risque à évaluer avec rigueur. Entre-temps, l’apparition brutale de nouveaux corps flottants ou d’éclairs justifie un fond d’œil dilaté sous 24 à 48 h, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un examen le jour même.
 
 ##### Le second œil va-t-il aussi se décoller ?
 
