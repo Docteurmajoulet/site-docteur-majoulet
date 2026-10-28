@@ -209,7 +209,10 @@ def check(root):
         t = pg.txt; is404 = name == '404.html'
         noindex = 'noindex' in (pg.meta('name', 'robots') or '')
         # --- squelette
-        if '<html lang="fr">' not in t: E(f'{name} : <html lang="fr"> absent')
+        # TECH69Y-2026-10-28 : /en est la seule page en anglais (lang="en", chrome commun en lang="fr")
+        if name == 'en.html':
+            if '<html lang="en">' not in t: E(f'{name} : <html lang="en"> absent (TECH69Y)')
+        elif '<html lang="fr">' not in t: E(f'{name} : <html lang="fr"> absent')
         if '<meta charset="UTF-8">' not in t and '<meta charset="utf-8">' not in t: E(f'{name} : charset absent')
         if 'name="viewport"' not in t: E(f'{name} : viewport absent')
         titles = re.findall(r'<title>(.*?)</title>', t, re.S)
@@ -373,7 +376,7 @@ def check(root):
             if cp > 32 and not any(lo <= cp <= hi for lo, hi in FONT_RANGES):
                 E(f'{name} : caractère « {ch} » (U+{cp:04X}) absent de la police du site — texte, pictogramme SVG ou glyphe à ajouter au sous-ensemble'); break
         # TECH5G-2026-09-06 : un texte français marqué lang="en" (ponctuation française « \u00a0: », mots « de la », « des »…)
-        for m in re.finditer(r'<(\w+)[^>]*\slang="en"[^>]*>(.*?)</\1>', t, re.S):
+        for m in re.finditer(r'<(?!html\b)(\w+)[^>]*\slang="en"[^>]*>(.*?)</\1>', t, re.S):   # TECH69Y : <html lang="en"> de /en exclu
             frag = re.sub(r'<[^>]+>', '', html.unescape(m.group(2)))
             if re.search(r'\u00a0[:;?!]|\b(de la|des|les|une|revue|étude)\b', frag):
                 E(f'{name} : texte français marqué lang="en" → {frag.strip()[:70]}')
@@ -383,12 +386,14 @@ def check(root):
         m = re.search(start, t)
         if not m: return None
         e = re.search(end, t[m.start():])
-        return re.sub(r'\s+', ' ', t[m.start():m.start() + e.end()]).replace(' aria-current="page"', '').replace(' aria-current="true"', '') if e else None   # TECH18AP-2026-09-15 : le bouton de la rubrique courante porte aria-current="true"
+        # TECH69Y-2026-10-28 : lang="fr" posé sur le chrome de /en seulement ; pied de page sans sa date (accueil)
+        return re.sub(r'<p class="footer-meta">.*?</p> ?', '', re.sub(r'\s+', ' ', t[m.start():m.start() + e.end()])).replace(' aria-current="page"', '').replace(' aria-current="true"', '').replace(' lang="fr"', '') if e else None   # TECH18AP-2026-09-15 : le bouton de la rubrique courante porte aria-current="true"
     chrome = {}
     for name, pg in pages.items():
         t = pg.txt
         for key, start, end in (('lien d’évitement', r'<a[^>]*class="skip-link"', r'</a>'), ('bandeau', r'<div class="topbar[^"]*"', r'</div>\s*</div>'),
-                                ('en-tête', r'<header class="site-header"', r'</header>'), ('barre fixe', r'<nav class="sticky-rdv"', r'</nav>')):
+                                ('en-tête', r'<header class="site-header"', r'</header>'), ('barre fixe', r'<nav class="sticky-rdv"', r'</nav>'),
+                                ('pied de page', r'<footer class="site-footer"', r'</footer>')):   # TECH69Y : pied de page identique (le lien « In English » oublié sur /confidentialite le 28/10)
             b = _block(t, start, end)
             if b is None:
                 if key == 'barre fixe' and name in ('confidentialite.html', 'mentions-legales.html'): continue

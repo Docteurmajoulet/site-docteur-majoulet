@@ -90,6 +90,7 @@ http://www.docteurmajoulet.com/*   https://docteurmajoulet.com/:splat     301!
 /le-dr-majoulet.html                     /le-dr-majoulet                     301!
 /contact.html                            /contact                            301!
 /ophtalmologue-boulogne-billancourt.html /ophtalmologue-boulogne-billancourt 301!
+/en.html /en 301!
 /implants-monofocaux.html                /implants-monofocaux                301!
 /implants-toriques.html                  /implants-toriques                  301!
 /implants-multifocaux.html               /implants-multifocaux               301!
