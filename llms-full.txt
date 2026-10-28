@@ -1156,7 +1156,7 @@ Un **OCT maculaire semestriel**, réalisé sur place au cabinet, permet de suivr
 
 Le test de la [**grille d’Amsler**](https://docteurmajoulet.com/grille-amsler), une fois par jour, chaque œil séparément, est le meilleur moyen de détecter entre deux consultations une déformation nouvelle des lignes — premier signe d’une éventuelle complication néovasculaire.
 
-**Le risque à connaître : la conversion en forme humide.** Une DMLA sèche peut se compliquer de néovaisseaux (forme humide), en particulier quand l’autre œil en est déjà atteint. Déformation nouvelle des lignes, tache centrale, baisse rapide de la vision : consultation **sous 48 h** — créneaux d’urgence au cabinet, OCT sur place, [injection sans délai](https://docteurmajoulet.com/injection-intravitreenne) si l’indication est confirmée.
+**Le risque à connaître : la conversion en forme humide.** Une DMLA sèche peut se compliquer de néovaisseaux (forme humide), en particulier quand l’autre œil en est déjà atteint. Déformation nouvelle des lignes, tache centrale, baisse rapide de la vision : consultation **sous 24-48 h** — créneaux d’urgence au cabinet, OCT sur place, [injection sans délai](https://docteurmajoulet.com/injection-intravitreenne) si l’indication est confirmée.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -1180,13 +1180,13 @@ Les inhibiteurs du complément approuvés aux États-Unis n’ont **pas d’auto
 
 ##### À quel rythme dois-je être suivi ?
 
-Au cabinet : **OCT maculaire tous les 6 mois**, rythme adapté au stade. Chez vous : **grille d’Amsler une fois par jour**, chaque œil séparément, avec consultation sous 48 h en cas de changement.
+Au cabinet : **OCT maculaire tous les 6 mois**, rythme adapté au stade. Chez vous : **grille d’Amsler une fois par jour**, chaque œil séparément, avec consultation sous 24-48 h en cas de changement.
 
 ##### Auteur et révision médicale
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de la Fédération France Macula sur la DMLA atrophique (2025)](https://doi.org/10.1016/j.jfo.2025.104473). / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de la Fédération France Macula sur la DMLA atrophique (2025)](https://doi.org/10.1016/j.jfo.2025.104473). / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1646,7 +1646,7 @@ Les complications sérieuses restent rares : endophtalmie (infection intraoculai
 
 ##### Quelle est la prise en charge par l’Assurance Maladie ?
 
-La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, intégralement pris en charge par l’Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention conformément à la réglementation.
+La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou maculaire et de la membrane épirétinienne sont des actes inscrits à la CCAM, pris en charge par l’Assurance Maladie sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention conformément à la réglementation.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1656,7 +1656,7 @@ Sa durée dépend du métier exercé et de la technique chirurgicale (tamponneme
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Dernière révision : 1er septembre 2026 · Dernière mise à jour : 27 octobre 2026.
+Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Vitrectomie
 
@@ -1734,7 +1734,7 @@ Cause fréquente : **rétinopathie diabétique proliférante**, déchirure réti
 - **Consultation d’anesthésie** préalable.
 - **Anticoagulants et antiagrégants** : en général poursuivis (chirurgie peu hémorragique) ; la conduite est fixée lors de la consultation d’anesthésie.
 - **Jeûne pré-opératoire** strict (6 h d’aliments, 2 h de liquides clairs).
-- Arrivée à l’hôpital le matin de l’intervention, sortie en fin de journée.
+- Arrivée à la clinique le matin de l’intervention, sortie en fin de journée.
 
 ##### Pendant l’opération
 
@@ -1851,7 +1851,7 @@ Dans la grande majorité des cas, **il n’est pas nécessaire d’arrêter** un
 
 ##### L’intervention est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **intégralement pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement et dépassements d’honoraires éventuels) est remis avant l’intervention conformément à la réglementation.
+Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Un devis détaillé (base de remboursement et dépassements d’honoraires éventuels) est remis avant l’intervention conformément à la réglementation.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -1861,7 +1861,7 @@ Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 26 octobre 2026.
+Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2168,13 +2168,13 @@ L’évolution d’une MER peut être lente et rester stable pendant des années
 
 ##### La chirurgie est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **intégralement pris en charge par l’Assurance Maladie** sur la base du tarif conventionnel. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention.
+Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **pris en charge par l’Assurance Maladie** sur la base du tarif conventionnel. Un devis détaillé (base de remboursement, dépassements d’honoraires éventuels) est remis avant toute intervention.
 
 ##### Auteur et révision médicale
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 26 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
