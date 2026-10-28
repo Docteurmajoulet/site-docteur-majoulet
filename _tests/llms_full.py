@@ -22,7 +22,7 @@ import llms_pages
 ROOT = llms_pages.ROOT
 SITE = 'https://docteurmajoulet.com'
 DATE_RE = re.compile(r'^Dernière mise à jour : \d{4}-\d{2}-\d{2}$', re.M)
-SKIP_TAGS = {'script', 'style', 'svg', 'noscript', 'iframe', 'template', 'button', 'picture', 'img', 'source', 'form', 'input', 'select', 'label', 'nav'}
+SKIP_TAGS = {'script', 'style', 'svg', 'noscript', 'iframe', 'template', 'button', 'picture', 'img', 'source', 'form', 'input', 'select', 'label', 'nav', 'video'}   # video : le texte de repli du lecteur n'est pas du contenu (relecture du 28/10)
 SKIP_CLASSES = {'breadcrumb-mini', 'toc', 'cta-block', 'cta-actions', 'cta-alt', 'related-pathologies', 'hero-buttons', 'hero-visual', 'hero-photo',
                 'hero-oct', 'map-facade', 'contact-map', 'cv12-action', 'sr-only', 'visually-hidden', 'skip-link', 'header-meta',
                 'drawer-actions', 'placeholder-block', 'hero-chips', 'pub-links', 'external-links', 'specialty-icon', 'usp-check'}
