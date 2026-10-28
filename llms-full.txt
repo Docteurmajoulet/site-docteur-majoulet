@@ -5433,6 +5433,10 @@ La SLT (Trabéculoplastie sélective au laser) cible les cellules pigmentées du
 
 Le laser SLT (trabéculoplastie sélective), qui abaisse la pression de l’œil dans le glaucome, se fait au cabinet, en consultation. Une goutte de collyre anesthésiant (oxybuprocaïne) est instillée, puis un verre est posé sur l’œil pour diriger le laser. Le laser est indolore et la séance dure **environ 4 minutes**. Le Dr Majoulet le réalise en **deux séances espacées de 4 à 6 semaines** : la moitié inférieure du trabéculum (180°) lors de la première, la moitié supérieure lors de la seconde, plutôt qu’en une seule séance de 360°. Cette approche limite le pic de pression et l’inflammation après le laser, à efficacité comparable. La SLT peut être répétée. Elle ne dispense pas du suivi, qui reste à vie : pression de l’œil, OCT et champ visuel sont contrôlés régulièrement.
 
+##### Le laser SLT a-t-il des effets secondaires ?
+
+Ils sont le plus souvent **légers et passagers** : une petite inflammation de l’œil et une hausse temporaire de la pression oculaire dans les heures qui suivent le laser. Des complications plus sérieuses, comme un œdème de la macula, sont rares, et surtout décrites chez des patients déjà opérés de l’œil ([revue de la littérature, J Clin Med 2026](https://doi.org/10.3390/jcm15197510)). Dans l’étude LiGHT, qui a comparé le laser et les collyres chez 718 patients, 74 % des patients traités d’abord par laser n’avaient pas besoin de collyre trois ans plus tard ([Gazzard et al., Lancet 2019](https://doi.org/10.1016/S0140-6736(18)32213-X)).
+
 ##### Quand faut-il opérer un glaucome ?
 
 Quand la PIO reste au-dessus de la cible malgré un traitement médical maximal et/ou une SLT, ou en cas de **progression du champ visuel / OCT**, d’**intolérance** ou de **mauvaise observance**. Le choix de la technique dépend du stade et des antécédents : **MIGS** (iStent, Hydrus) en glaucome léger ; **PreserFlo, XEN, trabéculectomie, sclérectomie** en modéré-sévère ; **implants tubulaires** en réfractaire.
