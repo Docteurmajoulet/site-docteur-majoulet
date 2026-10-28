@@ -2586,7 +2586,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
-### Hémorragie intra-vitréenne
+### Hémorragie intravitréenne
 
 - URL : https://docteurmajoulet.com/hemorragie-intravitreenne
 - Description : Hémorragie intravitréenne : causes, échographie en mode B, vitrectomie si nécessaire. Dr Majoulet, chirurgien rétinologue à Boulogne-Billancourt. Prenez RDV.
@@ -2594,7 +2594,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 
 Sang dans la cavité vitréenne — diagnostic par échographie, traitement adapté à la cause
 
-L’**hémorragie intra-vitréenne** correspond à la présence de sang dans la cavité vitréenne (le gel transparent qui remplit les 4/5 du volume de l’œil). Le sang provient en règle de la **rupture d’un vaisseau rétinien** ou d’un néovaisseau pathologique. Son importance varie d’un simple **petit saignement** perçu comme quelques mouches noires à une **hémorragie massive** responsable d’une baisse visuelle complète. C’est une situation clinique qui impose une **consultation ophtalmologique rapide** pour identifier la cause, qui peut être bénigne ou représenter une urgence chirurgicale.
+L’**hémorragie intravitréenne** correspond à la présence de sang dans la cavité vitréenne (le gel transparent qui remplit les 4/5 du volume de l’œil). Le sang provient en règle de la **rupture d’un vaisseau rétinien** ou d’un néovaisseau pathologique. Son importance varie d’un simple **petit saignement** perçu comme quelques mouches noires à une **hémorragie massive** responsable d’une baisse visuelle complète. C’est une situation clinique qui impose une **consultation ophtalmologique rapide** pour identifier la cause, qui peut être bénigne ou représenter une urgence chirurgicale.
 
 - **3** — Causes principales (RD proliférante, DPV, déchirure)
 - **Écho B** — Examen clé quand la rétine n’est pas visible
@@ -2612,7 +2612,7 @@ Les symptômes dépendent du volume et de la localisation du sang dans le vitré
 
 L’hémorragie intravitréenne correspond à la présence de sang dans la cavité vitréenne (le gel transparent qui remplit les 4/5 du volume de l’œil). Le sang provient en règle de la rupture d’un vaisseau rétinien ou d’un néovaisseau pathologique.
 
-**Consultation ophtalmologique sous 24 à 48 heures.** Une hémorragie intra-vitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
+**Consultation ophtalmologique sous 24 à 48 heures.** Une hémorragie intravitréenne récente doit bénéficier d’un examen en ophtalmologie dans les 24 à 48 heures, pour rechercher une cause chirurgicale urgente (déchirure, décollement de rétine).
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
@@ -2632,7 +2632,7 @@ La **déchirure rétinienne** expose à un saignement par section d’un vaissea
 
 ##### Macroanévrysme artériel rétinien
 
-Dilatation d’une artère rétinienne (branche artérielle temporale le plus souvent), typique du sujet hypertendu de 60-80 ans, parfois femme. Peut saigner à plusieurs niveaux (sous-rétinien, intra-rétinien, intra-vitréen) et nécessiter un anti-VEGF ou un laser.
+Dilatation d’une artère rétinienne (branche artérielle temporale le plus souvent), typique du sujet hypertendu de 60-80 ans, parfois femme. Peut saigner à plusieurs niveaux (sous-rétinien, intra-rétinien, intravitréen) et nécessiter un anti-VEGF ou un laser.
 
 ##### Occlusion veineuse rétinienne
 
@@ -2709,7 +2709,7 @@ La plupart des anticoagulants et antiagrégants sont **poursuivis** car leur arr
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Selon la cause : [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) ; [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré et les déchirures de la rétine (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 26 octobre 2026.
+Selon la cause : [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) ; [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré et les déchirures de la rétine (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5903,7 +5903,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Dépistage visuel de l’enfant
 
 - URL : https://docteurmajoulet.com/depistage-visuel-enfant
-- Description : Dépistage visuel de l’enfant : calendrier de dépistage, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt. Prenez RDV.
+- Description : Dépistage visuel de l’enfant : calendrier de dépistage, amblyopie, strabisme, troubles réfractifs. Dr Majoulet, ophtalmologue à Boulogne-Billancourt.
 - Relu le : 2026-07-06
 
 Recommandations ANAES (2002) et AFSOP (2021), de la naissance à 6 ans
