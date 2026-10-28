@@ -1954,6 +1954,10 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 **Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz persiste, l’altitude fait augmenter son volume et peut provoquer une hypertonie majeure. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour : une ligne apparaît dans le champ de vision et descend, puis il ne reste qu’une petite bulle, en bas du champ de vision, qui finit par disparaître. La bulle se résorbe d’elle-même : en 2 à 3 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
+##### Quand peut-on reprendre la voiture après une vitrectomie ?
+
+**Après le contrôle d’une semaine (J7), pas avant.** À ce rendez-vous, le Dr Majoulet mesure votre vision et vous dit si elle vous permet de reprendre le volant. La réglementation du permis de conduire ([arrêté du 28 mars 2022 sur les affections médicales et le permis de conduire](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000045464094)) demande, pour le permis B, une acuité visuelle d’au moins 5/10 avec les deux yeux ouverts, lunettes comprises, et un champ de vision horizontal d’au moins 120°. Le médecin informe ; il n’autorise ni n’interdit. C’est au conducteur de s’assurer, avant de prendre le volant, qu’il remplit ces conditions (article R412-6 du Code de la route).
+
 ##### Combien de temps d’arrêt de travail prévoir ?
 
 La durée dépend de votre profession et de la technique utilisée (avec ou sans gaz, posture post-opératoire, cas complexes). **Un arrêt de travail adapté est systématiquement remis le jour de l’intervention.**
@@ -2563,7 +2567,7 @@ Le taux de fermeture anatomique est de **90 à 95 %** pour les trous de petite e
 
 ##### Quand vais-je pouvoir reprendre une vie normale ?
 
-La reprise d’activité est progressive. Éviction des efforts violents et de la natation **2 à 4 semaines**. Conduite automobile reprise quand la vision permet les exigences légales (en général 2 à 4 semaines). **Les voyages en avion et en altitude sont contre-indiqués tant que la bulle de gaz est présente.** Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
+La reprise d’activité est progressive. Éviction des efforts violents et de la natation **2 à 4 semaines**. Conduite automobile : pas avant le contrôle de J7, où le Dr Majoulet vous dit si votre vision répond aux exigences légales ; en général 2 à 4 semaines après l’opération. **Les voyages en avion et en altitude sont contre-indiqués tant que la bulle de gaz est présente.** Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 ##### Vais-je avoir une cataracte après l’opération ?
 
@@ -3364,6 +3368,10 @@ Elle est exceptionnelle pour la cataracte. L’anesthésie topique (simple colly
 
 Une semaine, si nécessaire. Éviction de la piscine, du jardinage et des efforts intenses pendant 2 à 4 semaines.
 
+##### Quand peut-on reprendre la voiture après une opération de la cataracte ?
+
+**Après le contrôle d’une semaine, pas avant.** À ce rendez-vous, le Dr Majoulet mesure votre vision et vous dit si elle vous permet de reprendre le volant. La réglementation du permis de conduire ([arrêté du 28 mars 2022 sur les affections médicales et le permis de conduire](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000045464094)) demande, pour le permis B, une acuité visuelle d’au moins 5/10 avec les deux yeux ouverts, lunettes comprises, et un champ de vision horizontal d’au moins 120°. Après une intervention qui modifie la réfraction de l’œil, ce qui est le cas de l’opération de la cataracte, cet arrêté prévoit aussi un avis médical spécialisé avant la reprise de la conduite : c’est l’objet de ce contrôle. Le médecin informe ; il n’autorise ni n’interdit. C’est au conducteur de s’assurer, avant de prendre le volant, qu’il remplit ces conditions (article R412-6 du Code de la route).
+
 ##### Peut-on prendre l’avion après une opération de la cataracte ?
 
 Oui. Si l’opération s’est bien déroulée, il n’y a pas de contre-indication à prendre l’avion après une chirurgie de la cataracte : contrairement à certaines opérations de la rétine, aucun gaz n’est laissé dans l’œil.
@@ -3519,6 +3527,7 @@ Les étapes sont :
 - **Protection oculaire** à domicile les premiers jours (coque la nuit).
 - Éviter de se frotter l’œil, la natation et la piscine pendant 2 à 3 semaines.
 - Arrêt de travail d’une semaine, si nécessaire.
+- **Conduite** : après le contrôle d’une semaine, si la vision le permet.
 - **Avion** : pas de contre-indication si l’opération s’est bien déroulée.
 - Contrôles habituels une semaine, puis un mois après l’opération. Prescription définitive des lunettes vers la 4e semaine.
 - Deuxième œil habituellement opéré à 1 à 4 semaines d’intervalle.
