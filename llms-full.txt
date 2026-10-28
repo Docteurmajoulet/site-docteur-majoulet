@@ -1232,6 +1232,42 @@ La rétine est protégée par la **barrière hémato-rétinienne**, qui empêche
 - **30G** — Aiguille ultra-fine
 - **1 sur 3 000 à 5 000** — Risque d’endophtalmie (< 0,05 %)
 
+##### Vos consignes, avant et après l’injection
+
+1.
+
+###### Avant de venir Se préparer
+
+Venir propre (douche, cheveux attachés, pas de maquillage), accompagné si possible : ne conduisez pas dans les heures qui suivent l’injection. Pas d’arrêt nécessaire des anticoagulants ni des antiagrégants.
+
+2.
+
+###### Au cabinet OCT puis injection
+
+OCT maculaire sur place, le jour même. Injection en salle dédiée aux normes ISO 7, sous anesthésie par collyre : le geste dure environ 5 minutes.
+
+3.
+
+###### Les premières heures Vision floue, sensation de sable
+
+La vision peut rester floue quelques heures. Une sensation de sable, des démangeaisons ou un larmoiement peuvent survenir : les larmes artificielles sont recommandées. Une petite tache rouge sur le blanc de l’œil (hémorragie conjonctivale) est bénigne ; de nouvelles mouches volantes (bulles d’air) apparaissent parfois, transitoires.
+
+4.
+
+###### Pendant 3 jours Collyre antiseptique
+
+Collyre antiseptique pendant 3 jours. Pas de piscine pendant 48 h, et éviter de frotter l’œil.
+
+5.
+
+###### Ensuite Prochain rendez-vous
+
+Le rythme des rendez-vous et des injections suivantes dépend du protocole choisi et de l’aspect de la rétine à l’OCT.
+
+**Signes d’alerte, consultation en urgence :** douleur oculaire intense et croissante, baisse visuelle significative (au-delà du flou des premières heures), œil très rouge, photophobie marquée. Cabinet aux heures d’ouverture ([01 84 19 11 66](tel:+33184191166)) ; lorsqu’il est fermé, urgences ophtalmologiques : Quinze-Vingts (01 40 02 16 80), Fondation Rothschild (01 48 03 68 84) ou Hôpital Cochin (01 58 41 23 00).
+
+Ces repères ne remplacent pas les consignes données au cabinet. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
+
 ##### Avant l’injection
 
 - **Consultation** avec examen ophtalmologique complet et **OCT maculaire réalisé sur place**, le jour même.
@@ -2121,6 +2157,48 @@ Une **chirurgie combinée cataracte + MER** est fréquemment proposée chez les 
 - **Gaz** : pas de gaz en règle ; chaque dossier est jugé au cas par cas.
 - **Anticoagulants** : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
 - **Arrêt de travail** : sa durée dépend de votre métier et de la technique utilisée.
+
+#### Le parcours d’une opération de la membrane épirétinienne, étape par étape
+
+De la consultation au troisième mois, ce que vous vivez à chaque étape.
+
+1.
+
+##### Avant La consultation
+
+Examen et OCT au cabinet. Si le cristallin est encore en place, la cataracte est souvent opérée dans le même temps. Anticoagulants : en règle, il n’est pas nécessaire de les arrêter ; la conduite est fixée par le protocole d’anesthésie.
+
+2.
+
+##### Jour J L’opération, en ambulatoire
+
+Vitrectomie et pelage de la membrane, sous anesthésie locorégionale ou générale. Elle dure 30 à 45 minutes. Pas de gaz en règle : chaque dossier est jugé au cas par cas.
+
+3.
+
+##### Les premiers jours En règle, pas de position particulière
+
+Sans gaz, pas de posture ni de contre-indication au voyage aérien. Si un gaz a été nécessaire, une posture et l’interdiction de l’avion s’appliquent tant que la bulle est présente. Collyres pendant 1 mois.
+
+4.
+
+##### J7 Premier contrôle
+
+Examen et OCT au cabinet.
+
+5.
+
+##### 1 mois Deuxième contrôle
+
+Examen et OCT. Fin des collyres.
+
+6.
+
+##### 3 mois Troisième contrôle
+
+Examen et OCT. La récupération est progressive, sur 3 à 6 mois, et peut se poursuivre jusqu’à 6 à 12 mois.
+
+Ces repères ne remplacent pas les consignes personnalisées remises à la sortie. Dr Alexandre Majoulet, Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt, 01 84 19 11 66.
 
 #### Résultats et récupération
 
