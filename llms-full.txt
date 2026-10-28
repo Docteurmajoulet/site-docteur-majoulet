@@ -1197,7 +1197,7 @@ Plusieurs essais testent en France de nouveaux traitements de l’atrophie géog
 - **Une thérapie génique sans virus**, injectée dans l’œil (phase 2, ouverture prévue) : [fiche de l’essai NCT07705568](https://clinicaltrials.gov/study/NCT07705568).
 - **Pour les formes très évoluées**, un petit télescope implanté dans l’œil, conçu pour aider à lire, sans soigner la maladie (recrute) : [fiche de l’essai NCT07164378](https://clinicaltrials.gov/study/NCT07164378).
 
-Trois autres essais ont fini de recruter et suivent leurs patients : une injection dans l’œil qui freine le complément ([fiche de l’essai NCT06510816](https://clinicaltrials.gov/study/NCT06510816)), un comprimé ([fiche de l’essai NCT05949593](https://clinicaltrials.gov/study/NCT05949593)) et un implant placé sous la rétine, conçu pour rendre une vision partielle dans les formes très évoluées ([fiche de l’essai NCT04676854](https://clinicaltrials.gov/study/NCT04676854)). Relevé du 28 octobre 2026 sur les registres ClinicalTrials.gov et européen (CTIS) : ces informations changent vite.
+Trois autres essais ont fini de recruter et suivent leurs patients : une injection dans l’œil qui freine le complément ([fiche de l’essai NCT06510816](https://clinicaltrials.gov/study/NCT06510816)), un comprimé ([fiche de l’essai NCT05949593](https://clinicaltrials.gov/study/NCT05949593)) et un implant placé sous la rétine, conçu pour rendre une vision partielle dans les formes très évoluées ([fiche de l’essai NCT04676854](https://clinicaltrials.gov/study/NCT04676854)). Ailleurs en Europe (Allemagne, Italie, Royaume-Uni, Suède, Espagne…), d’autres essais testent de nouvelles injections, des thérapies géniques ou cellulaires, et des traitements par la lumière ou par une stimulation électrique. Relevé du 28 octobre 2026 sur les registres ClinicalTrials.gov et européen (CTIS) : ces informations changent vite.
 
 #### Ce que l’on peut faire aujourd’hui
 
@@ -1739,7 +1739,7 @@ Oui, c’est fréquent chez le patient phaque de plus de 50 ans. La vitrectomie 
 
 ##### Peut-on reprendre l’avion après une vitrectomie sous gaz ?
 
-**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour, puis disparaît : en une semaine environ pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
+**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz est présente dans l’œil, les voyages en avion et en altitude sont contre-indiqués. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle rapetisse jour après jour, puis disparaît : en 7 à 10 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Signalez sa présence à tout soignant avant une anesthésie ou un traitement de la douleur : le protoxyde d’azote (N₂O) est contre-indiqué. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour.
 
 ##### Faut-il arrêter les anticoagulants ou antiagrégants avant l’intervention ?
 
@@ -1759,7 +1759,7 @@ La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou ma
 
 ##### Combien coûte une opération de la rétine ?
 
-L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1863,7 +1863,7 @@ Selon l’indication, le chirurgien peut ensuite réaliser : pelage de MLI (avec
 
 #### Les tamponnements internes
 
-##### Air (une semaine environ de résorption)
+##### Air (7 à 10 jours de résorption)
 
 Tamponnement transitoire, souvent utilisé quand il suffit de maintenir une brève apposition rétinienne. Résorption rapide.
 
@@ -1952,7 +1952,7 @@ Le retrait du vitré modifie l’environnement métabolique et oxydant du crista
 
 ##### Peut-on reprendre l’avion après une vitrectomie ?
 
-**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz persiste, l’altitude fait augmenter son volume et peut provoquer une hypertonie majeure. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle disparaît ainsi d’elle-même, en une semaine environ pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Pendant ce temps, une ligne apparaît dans le champ de vision et descend, puis il ne reste qu’une petite bulle, en bas du champ de vision, qui finit par disparaître. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
+**Oui, une fois que le gaz a complètement disparu de l’œil.** Tant qu’une bulle de gaz persiste, l’altitude fait augmenter son volume et peut provoquer une hypertonie majeure. Le gaz n’est pas retiré par une nouvelle opération : il passe peu à peu dans le sang, et l’œil le remplace par le liquide qu’il fabrique en permanence. La bulle disparaît ainsi d’elle-même, en 7 à 10 jours pour l’air, en 2 semaines environ pour le SF6, en 4 à 5 semaines pour le C2F6. Pendant ce temps, une ligne apparaît dans le champ de vision et descend, puis il ne reste qu’une petite bulle, en bas du champ de vision, qui finit par disparaître. Le Dr Majoulet utilise le plus souvent du SF6 dans le trou maculaire et du C2F6 dans le décollement de rétine. Lorsqu’aucun gaz n’est laissé dans l’œil, ce qui est la règle pour une membrane épirétinienne isolée, il n’y a pas de restriction pour l’avion. Les délais de résorption sont indicatifs ; les consignes de votre chirurgien priment pour organiser votre retour. Si l’intervention a été faite sous huile de silicone, discutez également avec votre chirurgien de l’organisation du retour et du suivi.
 
 ##### Quand peut-on reprendre la voiture après une vitrectomie ?
 
@@ -1968,7 +1968,7 @@ Dans la grande majorité des cas, **il n’est pas nécessaire d’arrêter** un
 
 ##### L’intervention est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
+Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -4227,7 +4227,7 @@ Les **anti-VEGF** peuvent être utilisés en complément, notamment avant chirur
 
 La chirurgie par **[vitrectomie postérieure 25G](https://docteurmajoulet.com/vitrectomie)** est indiquée en cas de :
 
-- **Hémorragie intravitréenne persistante** (> 2 à 3 mois) empêchant le laser et la vision.
+- **Hémorragie intravitréenne qui ne se résorbe pas**, empêchant le laser et la vision.
 - **Décollement de rétine tractionnel** menaçant la macula.
 - **Décollement mixte (tractionnel et rhegmatogène)**.
 - **Œdème maculaire diabétique tractionnel** lié à une traction vitréomaculaire documentée à l’OCT.
@@ -4244,7 +4244,7 @@ Au cabinet, un dépistage **au moins une fois par an** est proposé, avec un sui
 
 ##### Comment traite-t-on la rétinopathie diabétique ?
 
-Le traitement de la rétinopathie diabétique dépend de son stade et suit les recommandations internationales (American Academy of Ophthalmology, 2025 ; EURETINA, 2017). Il repose d’abord sur l’équilibre du diabète, de la pression artérielle et des lipides, et sur l’arrêt du tabac, en lien avec le médecin traitant et le diabétologue. L’**œdème maculaire diabétique**, première cause de baisse de la vision chez le diabétique, se traite en première intention par des **injections intravitréennes d’anti-VEGF**, réalisées au cabinet ; un implant intravitréen de dexaméthasone peut être utilisé en cas de réponse insuffisante, ou lorsque des injections rapprochées ne sont pas possibles. Les **formes proliférantes**, où des néovaisseaux se développent, se traitent par **photocoagulation panrétinienne au laser**, en plusieurs séances au cabinet, sous anesthésie topique ; les injections d’anti-VEGF peuvent la compléter, ou la remplacer dans certaines situations. Une **vitrectomie** est indiquée en cas d’hémorragie intravitréenne qui persiste plus de 2 à 3 mois ou de décollement de rétine par traction qui menace la macula ; le Dr Majoulet opère à la Clinique Jouvenet (Paris 16e). Comme la rétinopathie reste longtemps sans symptôme, un dépistage au moins une fois par an est proposé au cabinet à toute personne diabétique.
+Le traitement de la rétinopathie diabétique dépend de son stade et suit les recommandations internationales (American Academy of Ophthalmology, 2025 ; EURETINA, 2017). Il repose d’abord sur l’équilibre du diabète, de la pression artérielle et des lipides, et sur l’arrêt du tabac, en lien avec le médecin traitant et le diabétologue. L’**œdème maculaire diabétique**, première cause de baisse de la vision chez le diabétique, se traite en première intention par des **injections intravitréennes d’anti-VEGF**, réalisées au cabinet ; un implant intravitréen de dexaméthasone peut être utilisé en cas de réponse insuffisante, ou lorsque des injections rapprochées ne sont pas possibles. Les **formes proliférantes**, où des néovaisseaux se développent, se traitent par **photocoagulation panrétinienne au laser**, en plusieurs séances au cabinet, sous anesthésie topique ; les injections d’anti-VEGF peuvent la compléter, ou la remplacer dans certaines situations. Une **vitrectomie** est indiquée en cas d’hémorragie intravitréenne qui ne se résorbe pas ou de décollement de rétine par traction qui menace la macula ; le Dr Majoulet opère à la Clinique Jouvenet (Paris 16e). Comme la rétinopathie reste longtemps sans symptôme, un dépistage au moins une fois par an est proposé au cabinet à toute personne diabétique.
 
 ##### Comment traiter un œdème maculaire diabétique ?
 
