@@ -1,4 +1,4 @@
-# Dr Alexandre Majoulet — Chirurgien Ophtalmologue & Rétinologue (dossier complet)
+# Dr Alexandre Majoulet, chirurgien ophtalmologue – rétinologue (dossier complet)
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
@@ -6,7 +6,7 @@ Dernière mise à jour : 2026-10-29
 
 ## Identité et coordonnées
 
-- **Praticien** : Dr Alexandre Majoulet — Chirurgien Ophtalmologue — Rétinologue
+- **Praticien** : Dr Alexandre Majoulet — Chirurgien ophtalmologue – rétinologue
 - **RPPS** : 10101500121
 - **Cabinet** : Cabinet Ophtalife — Dr Alexandre Majoulet — 37 Rue d’Aguesseau, 92100 Boulogne-Billancourt
 - **Téléphone** : 01 84 19 11 66
@@ -195,10 +195,10 @@ Prise en charge Sécurité sociale + mutuelle
 ### Le Dr Alexandre Majoulet
 
 - URL : https://docteurmajoulet.com/le-dr-majoulet
-- Description : Chirurgien ophtalmologue rétinologue, praticien au CHNO des Quinze-Vingts et cofondateur du Cabinet Ophtalife. Parcours, diplômes et publications.
+- Description : Chirurgien ophtalmologue – rétinologue, praticien au CHNO des Quinze-Vingts et cofondateur du Cabinet Ophtalife. Parcours, diplômes et publications.
 - Relu le : 2026-07-02
 
-Chirurgien ophtalmologue · Spécialiste de la rétine & du segment antérieur
+Chirurgien ophtalmologue – rétinologue · Rétine & segment antérieur
 
 Le **Dr Alexandre Majoulet** est chirurgien ophtalmologue, spécialisé en **chirurgie vitréo-rétinienne** (RPPS 10101500121). Il consulte au **Cabinet Ophtalife**, 37 rue d’Aguesseau à Boulogne-Billancourt, qu’il a cofondé, et réalise ses interventions libérales à la **Clinique Jouvenet** (Paris 16e). Il exerce également comme praticien contractuel au **CHNO des Quinze-Vingts** (Paris 12e), dans le service du Pr Baudouin. Ancien interne (2017–2022) puis assistant (2022–2024) des Hôpitaux de Paris, il est titulaire du DES d’ophtalmologie (2023) et du DIU de chirurgie vitréo-rétinienne (Université Paris-Saclay, 2024), et Fellow of the European Board of Ophthalmology (FEBO) depuis 2022. Il est auteur ou co-auteur de six articles indexés dans PubMed. [Retrouver les lieux de soins et les modalités de rendez-vous](https://docteurmajoulet.com/contact#lieux-de-soins).
 
@@ -280,7 +280,7 @@ Le Dr Majoulet intervient ponctuellement dans les médias grand public pour des 
 
 ##### À propos de cette fiche
 
-Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), cofondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
+Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), cofondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
 
 Dernière mise à jour : 27 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
@@ -355,7 +355,7 @@ En dehors des heures d’ouverture du cabinet ou en cas d’urgence vitale : **S
 
 ##### À propos de cette fiche
 
-Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
+Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
 Informations pratiques mises à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
@@ -365,7 +365,7 @@ Informations pratiques mises à jour : 29 octobre 2026 · Sources : recommandati
 - Description : Cabinet Ophtalife, 37 rue d’Aguesseau à Boulogne-Billancourt : consultations d’ophtalmologie et de rétine, OCT sur place. Accès, horaires et rendez-vous.
 - Relu le : 2026-05-04
 
-Dr Alexandre Majoulet · Rétinologue · Cabinet Ophtalife (92100)
+Dr Alexandre Majoulet · Chirurgien ophtalmologue – rétinologue · Cabinet Ophtalife (92100)
 
 Le **Dr Alexandre Majoulet** est **chirurgien ophtalmologue et rétinologue** à **Boulogne-Billancourt**. Il consulte au **Cabinet Ophtalife**, situé au **37 rue d’Aguesseau** (92100), au cœur du centre-ville. La prise en charge couvre le **bilan ophtalmologique général**, la **chirurgie de la rétine et du vitré**, la **chirurgie de la cataracte**, le **suivi du glaucome** et les **injections intravitréennes**. Les interventions chirurgicales sont réalisées à la **Clinique Jouvenet** (Paris 16).
 
@@ -491,7 +491,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 ##### À propos de cette page
 
-Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
+Page rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
 Dernière mise à jour : 29 octobre 2026.
 
@@ -639,7 +639,7 @@ L’apparition récente de flashs lumineux ou de nombreux corps flottants justif
 
 ##### À propos de cette fiche
 
-Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
+Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
 Dernière révision : 19 avril 2026 · Dernière mise à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
@@ -648,7 +648,7 @@ Dernière révision : 19 avril 2026 · Dernière mise à jour : 29 octobre 2026 
 - URL : https://docteurmajoulet.com/publications
 - Description : Publications scientifiques PubMed et presse grand public du Dr Majoulet, chirurgien ophtalmologue rétinologue (Quinze-Vingts, Cabinet Ophtalife Boulogne).
 
-Recherche, enseignement et présence médiatique du Dr Alexandre Majoulet — chirurgien ophtalmologue rétinologue au CHNO des Quinze-Vingts et au Cabinet Ophtalife.
+Recherche, enseignement et présence médiatique du Dr Alexandre Majoulet, chirurgien ophtalmologue – rétinologue au CHNO des Quinze-Vingts et au Cabinet Ophtalife.
 
 Le Dr Alexandre Majoulet est auteur ou co-auteur de **6 publications scientifiques** indexées sur PubMed, portant sur la **chirurgie du glaucome réfractaire**, la **sécurité de la chirurgie de la cataracte**, la **surface oculaire et le kératocône** ainsi que la **neuro-ophtalmologie**. Ces travaux ont été réalisés au sein du service du **Pr Christophe Baudouin** et du **Pr Antoine Labbé** (CHNO des Quinze-Vingts) et du service du **Pr Marc Labetoulle** / **Pr Antoine Rousseau** (Hôpital Bicêtre, AP-HP). Ils sont publiés dans *Journal of Clinical Medicine*, *Journal Français d’Ophtalmologie* et *Documenta Ophthalmologica*.
 
@@ -746,7 +746,7 @@ Intervention pédagogique sur les stratégies actuelles de **freination de la my
 
 ##### Auteur
 
-[**Dr Alexandre Majoulet**](https://docteurmajoulet.com/le-dr-majoulet) — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022. / Membre de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/).
+[**Dr Alexandre Majoulet**](https://docteurmajoulet.com/le-dr-majoulet), chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022. / Membre de la [Société Française d’Ophtalmologie (SFO)](https://www.sfo-online.fr/).
 
 Identifiants externes : [PubMed](https://pubmed.ncbi.nlm.nih.gov/?term=Majoulet+A) · [ORCID 0000-0003-1116-1937](https://orcid.org/0000-0003-1116-1937) · RPPS 10101500121. / Dernière révision : 22 avril 2026.
 
@@ -949,7 +949,7 @@ Inflammations de la choroïde et de la rétine, infectieuses (toxoplasmose, herp
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
@@ -1150,7 +1150,7 @@ Oui. Une **déformation nouvelle des lignes droites** ou une tache centrale réc
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -1254,7 +1254,7 @@ Au cabinet : **OCT maculaire tous les 6 mois**, rythme adapté au stade. Chez vo
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de la Fédération France Macula sur la DMLA atrophique (2025)](https://doi.org/10.1016/j.jfo.2025.104473). / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -1469,7 +1469,7 @@ Les deux. En France, elles peuvent être réalisées au **cabinet** (en salle d�
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de la SFO et de la Société française d’hygiène hospitalière sur les injections intravitréennes (2019)](https://doi.org/10.1016/j.jfo.2019.11.002) et du [consensus EURETINA sur les injections intravitréennes (2018)](https://doi.org/10.1159/000486145). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -1548,7 +1548,7 @@ Oui. Entre deux injections, la grille permet de détecter une **réactivation** 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age), qui recommande l’autosurveillance par la grille d’Amsler. / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 26 octobre 2026.
 
@@ -1774,7 +1774,7 @@ Sa durée dépend du métier exercé et de la technique chirurgicale (tamponneme
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -1987,7 +1987,7 @@ Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -2141,7 +2141,7 @@ La reprise de la conduite est rediscutée lors de la **consultation de contrôle
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
@@ -2349,7 +2349,7 @@ Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **pr
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -2599,7 +2599,7 @@ L’opération est remboursée par l’Assurance Maladie sur la base du tarif co
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -2726,7 +2726,7 @@ La plupart des anticoagulants et antiagrégants sont **poursuivis** car leur arr
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Selon la cause : [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) ; [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré et les déchirures de la rétine (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -2824,7 +2824,7 @@ La luxation ne touche le plus souvent qu’un œil. En cas de fragilité zonulai
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Dernière révision : 19 août 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -2956,7 +2956,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
@@ -3038,7 +3038,7 @@ Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En deh
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
@@ -3164,7 +3164,7 @@ Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinien
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
@@ -3258,7 +3258,7 @@ La **baisse brutale de la vision (BAV)** est un motif fréquent de consultation 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Dernière révision : 19 août 2026 · Dernière mise à jour : 1er septembre 2026.
 
@@ -3410,7 +3410,7 @@ L’implant est prévu pour toute la vie et ne demande aucun entretien. Il peut 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -3602,7 +3602,7 @@ C’est une **chirurgie très fréquente** : environ 640 000 opérations par an 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -3711,7 +3711,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -3813,7 +3813,7 @@ Anesthésie locale avec sédation, hospitalisation ambulatoire, durée de l’in
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -3927,7 +3927,7 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -4045,7 +4045,7 @@ En règle générale, **une seule fois par œil**. Une fois la capsule ouverte, 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -4151,7 +4151,7 @@ Pour un bilan de rétinopathie diabétique, une suspicion de déchirure rétinie
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Principales indications : [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) ; [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré et les déchirures de la rétine (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 26 octobre 2026.
 
@@ -4285,7 +4285,7 @@ Oui, partiellement. Un contrôle strict de la glycémie (HbA1c cible généralem
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) et des [recommandations EURETINA sur l’œdème maculaire diabétique (2017)](https://doi.org/10.1159/000458539). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -4414,7 +4414,7 @@ Le risque d’occlusion de l’autre œil est d’environ 8 % à 2 ans et 12 % �
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations EURETINA sur les occlusions veineuses rétiniennes (2019)](https://doi.org/10.1159/000502041). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -4505,7 +4505,7 @@ Le pronostic est **sombre** dans la grande majorité des cas : sans traitement, 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé en tenant compte des [recommandations de l’American Academy of Ophthalmology sur les occlusions artérielles de la rétine (2025)](https://doi.org/10.1016/j.ophtha.2024.12.024) et de la [déclaration scientifique de l’American Heart Association sur l’OACR (2021)](https://doi.org/10.1161/STR.0000000000000366). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 26 octobre 2026.
 
@@ -4632,7 +4632,7 @@ Dans la majorité des syndromes d’Irvine-Gass pris en charge précocement, la 
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Syndrome d’Irvine-Gass (œdème après chirurgie de la cataracte) : [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -4759,7 +4759,7 @@ Oui, les récidives sont fréquentes (**30 à 50 % sur 10 ans**), particulièrem
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations d’un groupe international d’experts (2024)](https://doi.org/10.1016/j.preteyeres.2024.101236) et du [consensus international de l’Asia Pacific Vitreo-retina Society (2025)](https://doi.org/10.1016/j.apjo.2025.100252) sur la choriorétinopathie séreuse centrale. / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -4870,7 +4870,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -4994,7 +4994,7 @@ Oui. Le risque de **bilatéralisation** existe (environ 30 % à 5-10 ans), surto
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -5141,7 +5141,7 @@ La filière **SENSGENE** (maladies rares sensorielles) coordonne un réseau nati
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -5250,7 +5250,7 @@ La grossesse peut aggraver rapidement une rétinopathie diabétique. En cas de d
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rétinopathie diabétique : [recommandation de la HAS sur le dépistage (2010)](https://www.has-sante.fr/jcms/c_1028305/fr/depistage-de-la-retinopathie-diabetique-par-lecture-differee-de-photographies-du-fond-d-oeil) et [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -5486,7 +5486,7 @@ Majoulet A, Scemla B, Hamard P, et al. *Safety and Efficacy of the Preserflo Mic
 
 ##### Auteur et révision médicale
 
-**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de la Société européenne du glaucome (EGS, 6e édition, 2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -5632,7 +5632,7 @@ Non. Les larmes sans conservateur peuvent être utilisées aussi souvent que né
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir du consensus TFOS DEWS III (Tear Film & Ocular Surface Society) : [rapport sur le diagnostic de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.033) et [rapport sur la prise en charge de l’œil sec (2025)](https://doi.org/10.1016/j.ajo.2025.05.039). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
 
@@ -5831,7 +5831,7 @@ Oui. Les fortes myopies se corrigent en lunettes à verres de haut indice, en le
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -5927,7 +5927,7 @@ Oui. La chirurgie de la cataracte est l’occasion de corriger durablement l’h
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour le risque de fermeture de l’angle, des [recommandations de la Société européenne du glaucome (2025)](https://doi.org/10.1136/bjophthalmol-2025-egsguidelines). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -6035,7 +6035,7 @@ La consultation ophtalmologique est remboursée par la Sécurité sociale. Les l
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé en tenant compte des [recommandations de l’AFSOP sur le dépistage visuel de l’enfant (2021)](https://doi.org/10.1016/j.jfo.2020.07.005). / Dernière révision : 6 juillet 2026 · Dernière mise à jour : 27 octobre 2026.
 
@@ -6114,7 +6114,7 @@ Chez l’enfant de 3 à 7 ans atteint d’amblyopie modérée, **3 sur 4 atteign
 
 ##### Auteur et révision médicale
 
-**Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
+**Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
 Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur l’amblyopie (2023)](https://doi.org/10.1016/j.ophtha.2022.11.003) et de l’[AFSOP sur le dépistage visuel de l’enfant (2021)](https://doi.org/10.1016/j.jfo.2020.07.005). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
 
