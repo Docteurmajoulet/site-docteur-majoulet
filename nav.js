@@ -339,20 +339,46 @@
        Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
        écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas. Jours fériés inconnus.
        Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
-    var etatCabinet = document.querySelector('[data-etat-cabinet]');
-    if (etatCabinet && window.Intl && Intl.DateTimeFormat) {
+    var etatCabinetParis = function () {
+        if (!window.Intl || !Intl.DateTimeFormat) { return null; }
         try {
             var heureParis = {};
             new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
                 .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
             var fin = { Mon: 20, Wed: 20, Thu: 20, Tue: 18, Fri: 18, Sat: 18 }[heureParis.weekday];
             var h = parseInt(heureParis.hour, 10) % 24;
-            var ouvert = Boolean(fin && h >= 9 && h < fin);
-            var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
-            etatCabinet.textContent = ouvert ? 'Ouvert' : 'Fermé';
-            if (boutonCabinet) { boutonCabinet.classList.add(ouvert ? 'est-ouvert' : 'est-ferme'); }
-            etatCabinet.hidden = false;
-        } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
+            return { ouvert: Boolean(fin && h >= 9 && h < fin), fin: fin || 0 };
+        } catch (e) { return null; /* fuseau inconnu */ }
+    };
+    var etatCabinet = document.querySelector('[data-etat-cabinet]');
+    var etatUrgences = etatCabinet ? etatCabinetParis() : null;
+    if (etatCabinet && etatUrgences) {
+        var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
+        etatCabinet.textContent = etatUrgences.ouvert ? 'Ouvert' : 'Fermé';
+        if (boutonCabinet) { boutonCabinet.classList.add(etatUrgences.ouvert ? 'est-ouvert' : 'est-ferme'); }
+        etatCabinet.hidden = false;
+    }
+
+    /* ---------- TECH69AH-2026-10-29 : barre fixe selon l’heure de Paris (demande du Dr Majoulet, 29/10) ----------
+       Cabinet ouvert : « Appeler le cabinet » passe en bouton principal, le rendez-vous en ligne en second.
+       Cabinet fermé, sans JavaScript ou sans Intl : la barre d’origine (rendez-vous en ligne en principal, appel à côté).
+       Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés inconnus. La barre de /urgences
+       (appel et « Urgences 24h/24 », sans rendez-vous en ligne) n’est pas concernée. */
+    if (stickyRdv && stickyRdv.querySelector('.sticky-doctolib')) {
+        var lblTel = stickyRdv.querySelector('.sticky-tel .lbl');
+        var lienRdv = stickyRdv.querySelector('.sticky-doctolib');
+        var texteRdv = lienRdv && lienRdv.firstChild && lienRdv.firstChild.nodeType === 3 ? lienRdv.firstChild : null;
+        var libellesOrigine = { tel: lblTel ? lblTel.textContent : '', rdv: texteRdv ? texteRdv.nodeValue : '' };
+        var appliquerHoraires = function () {
+            var etat = etatCabinetParis();
+            var ouvert = Boolean(etat && etat.ouvert);
+            body.classList.toggle('cabinet-ouvert', ouvert);
+            if (lblTel) { lblTel.textContent = ouvert ? 'Appeler le cabinet' : libellesOrigine.tel; }
+            if (texteRdv) { texteRdv.nodeValue = ouvert ? 'Rendez-vous' : libellesOrigine.rdv; }
+        };
+        appliquerHoraires();
+        window.setInterval(appliquerHoraires, 300000);
+        document.addEventListener('visibilitychange', function () { if (!document.hidden) { appliquerHoraires(); } });
     }
 
     /* ---------- TECH69W-2026-10-27 : frise du parcours opératoire, « Imprimer ce parcours » (CLAUDE.md §6, piste 4) ----------

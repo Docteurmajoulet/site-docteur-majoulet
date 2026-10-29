@@ -8441,3 +8441,57 @@ article.pathology-content > .forme-box :is(ul, ol) {
 article.pathology-content .eeat-block .meta {
     max-width: 62ch;
 }
+
+/* TECH69AH-2026-10-29 — barre fixe selon l’heure de Paris (nav.js TECH69AH, demande du Dr Majoulet du 29/10).
+   body.cabinet-ouvert : l’appel devient le bouton principal (plein, prusse) et le rendez-vous en ligne le second (contour cuivre,
+   texte cuivre foncé 8,2:1). Sans la classe (cabinet fermé, sans JavaScript), la barre d’origine. */
+body.cabinet-ouvert .sticky-rdv .sticky-tel {
+    flex: 1 1 auto;
+    background: var(--prusse);
+    color: var(--blanc);
+    border-color: var(--prusse);
+}
+body.cabinet-ouvert .sticky-rdv .sticky-tel:active {
+    background: var(--prusse-dark);
+    color: var(--blanc);
+}
+body.cabinet-ouvert .sticky-rdv .sticky-doctolib {
+    flex: 0 1 auto;
+    background: var(--blanc);
+    color: var(--cuivre-rdv-deep);
+    border: 2px solid var(--cuivre-rdv);
+    padding: 10px 18px;
+}
+body.cabinet-ouvert .sticky-rdv .sticky-doctolib:active {
+    background: var(--blanc-naturel);
+    color: var(--cuivre-rdv-deep);
+}
+@media (hover: hover) {
+    body.cabinet-ouvert .sticky-rdv .sticky-tel:hover { background: var(--prusse-dark); color: var(--blanc); }
+    body.cabinet-ouvert .sticky-rdv .sticky-doctolib:hover { background: var(--blanc-naturel); color: var(--cuivre-rdv-deep); }
+}
+@media (max-width: 37.4375em) {
+    body.cabinet-ouvert .sticky-rdv .sticky-tel {
+        width: auto;
+        height: auto;
+        padding: 10px 18px;
+        border-radius: 50px;
+    }
+    body.cabinet-ouvert .sticky-rdv .sticky-tel .lbl {
+        display: inline;
+    }
+    body.cabinet-ouvert .sticky-rdv .sticky-doctolib {
+        flex: 0 1 auto;
+        letter-spacing: 0;
+    }
+}
+@media (max-width: 22.5em) {
+    body.cabinet-ouvert .sticky-rdv a {
+        padding-left: 12px;
+        padding-right: 12px;
+        font-size: 0.78rem;
+    }
+    body.cabinet-ouvert .sticky-rdv .sticky-doctolib {
+        white-space: nowrap;
+    }
+}
