@@ -8569,3 +8569,25 @@ body.cabinet-ouvert .sticky-rdv .sticky-doctolib:active {
 body.cabinet-ferme .sticky-rdv .sticky-tel {
     display: none;
 }
+/* TECH69AE-2026-10-28 : vidéo de l'opération de la cataracte sur /chirurgie-cataracte. Fichier MP4 hébergé sur le site
+   (ni lecteur tiers ni traceur), chargé seulement au clic sur lecture (preload none), proportions tenues par les attributs
+   width et height. Le texte de la vidéo est dans un details dépliable sous le lecteur. */
+.schema-planche video {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-sm);
+    background: var(--blanc-naturel);
+}
+.video-texte {
+    margin: 0 0 28px;
+}
+.video-texte summary {
+    cursor: pointer;
+    padding: 10px 0;
+    font-weight: 600;
+    color: var(--prusse);
+}
+.video-texte p {
+    margin: 0 0 12px;
+}
