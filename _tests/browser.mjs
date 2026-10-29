@@ -786,12 +786,12 @@ try {
   // TECH69AH-2026-10-29 — barre fixe selon l'heure de Paris (horaires du cabinet : du lundi au jeudi 9 h-20 h, vendredi et samedi
   // 9 h-18 h) : jeudi 10 h 30 et mardi 19 h → cabinet ouvert, « Appeler le cabinet » visible ; jeudi 21 h 15, vendredi 19 h et
   // dimanche → cabinet fermé, plus de bouton d'appel, le rendez-vous en ligne seul. TECH69AI-2026-10-29 : jours fériés fermés
-  // (mercredi 11 novembre 2026, lundi de Pâques 29 mars 2027, jeudi de l'Ascension 6 mai 2027, lundi de Pentecôte 17 mai 2027) ;
-  // le lendemain du 11 novembre, ouvert. La date est celle de Paris, pas celle du navigateur : à Honolulu, le 11/11 à 10 h 30 de
+  // (mercredi 11 novembre 2026, lundi de Pâques 29 mars 2027, jeudi de l'Ascension 6 mai 2027) ; le lendemain du 11 novembre
+  // et le lundi de Pentecôte 17 mai 2027, ouvert (le cabinet ouvre ce jour-là, Dr Majoulet, 29/10). La date est celle de Paris, pas celle du navigateur : à Honolulu, le 11/11 à 10 h 30 de
   // Paris est encore le 10/11 (fermé quand même) ; à Kiritimati, le mardi 10/11 à 19 h de Paris est déjà le 11/11 (ouvert quand même).
   if (slugs.includes('dmla')) {
     for (const [quand, ouvert, fuseau] of [['2026-10-29T10:30:00+01:00', true], ['2026-10-27T19:00:00+01:00', true], ['2026-10-29T21:15:00+01:00', false], ['2026-10-30T19:00:00+01:00', false], ['2026-11-01T11:00:00+01:00', false],
-      ['2026-11-11T10:30:00+01:00', false], ['2026-11-12T10:30:00+01:00', true], ['2027-03-29T10:30:00+02:00', false], ['2027-05-06T10:30:00+02:00', false], ['2027-05-17T10:30:00+02:00', false],
+      ['2026-11-11T10:30:00+01:00', false], ['2026-11-12T10:30:00+01:00', true], ['2027-03-29T10:30:00+02:00', false], ['2027-05-06T10:30:00+02:00', false], ['2027-05-17T10:30:00+02:00', true],
       ['2026-11-11T10:30:00+01:00', false, 'Pacific/Honolulu'], ['2026-11-10T19:00:00+01:00', true, 'Pacific/Kiritimati']]) {
       const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR', ...(fuseau ? { timezoneId: fuseau } : {}) });
       await ctx.clock.setFixedTime(new Date(quand));

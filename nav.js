@@ -338,8 +338,8 @@
        Horaires du cabinet : du lundi au jeudi 9 h-20 h ; vendredi et samedi 9 h-18 h ; fermé le dimanche (rappel du Dr Majoulet, 29/10).
        Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
        écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas.
-       TECH69AI-2026-10-29 : cabinet fermé les 11 jours fériés légaux (Code du travail, art. L3133-1) ; Pâques par
-       l’algorithme de Meeus, d’où le lundi de Pâques, l’Ascension (+ 39 j) et le lundi de Pentecôte (+ 50 j).
+       TECH69AI-2026-10-29 : cabinet fermé les jours fériés légaux (Code du travail, art. L3133-1), sauf le lundi de Pentecôte,
+       où il est ouvert (Dr Majoulet, 29/10) ; Pâques par l’algorithme de Meeus, d’où le lundi de Pâques (+ 1 j) et l’Ascension (+ 39 j).
        hour12: false plutôt que hourCycle (inconnu avant Safari 13 : l’heure revenait sur 12 h) ; « 24 » ramené à 0 par % 24.
        Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
     var jourFerie = function (annee, mois, jour) {
@@ -348,7 +348,7 @@
         var i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
         var paques = Date.UTC(annee, Math.floor((h + l - 7 * m + 114) / 31) - 1, ((h + l - 7 * m + 114) % 31) + 1);
         var feries = ['1-1', '5-1', '5-8', '7-14', '8-15', '11-1', '11-11', '12-25'];
-        [1, 39, 50].forEach(function (n) {
+        [1, 39].forEach(function (n) {
             var x = new Date(paques + n * 86400000);
             feries.push((x.getUTCMonth() + 1) + '-' + x.getUTCDate());
         });
