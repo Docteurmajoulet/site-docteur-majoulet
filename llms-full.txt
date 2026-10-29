@@ -3142,6 +3142,10 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 
 **Non, ce n’est pas grave.** Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, qui arrive à tout le monde un jour ou l’autre, le plus souvent après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Le principal risque est qu’en se décollant, le vitré tire sur la rétine et la déchire, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
 
+##### Qu’est-ce que l’anneau de Weiss ?
+
+C’est un **corps flottant en forme d’anneau**, parfois incomplet, que l’on remarque surtout sur un fond clair. Il correspond à l’attache du vitré autour du nerf optique : quand le vitré se décolle, cette attache se détache à son tour et reste visible dans le gel, en avant de la rétine. Vu au fond d’œil, il indique que le décollement postérieur du vitré est **complet**. L’anneau de Weiss n’est pas grave en lui-même. Ce qui compte, comme pour tout décollement du vitré récent, c’est de vérifier qu’il n’y a pas de déchirure de la rétine : l’apparition brutale de corps flottants justifie un **fond d’œil dilaté sous 24 à 48 h**.
+
 ##### Peut-on prévenir un DPV ?
 
 Non. Le DPV est un phénomène physiologique lié au vieillissement du vitré, au même titre que l’apparition de cheveux blancs. Aucun complément alimentaire, collyre ou médicament n’a démontré d’efficacité préventive.
@@ -3166,7 +3170,7 @@ Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinien
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 ### Baisse brutale de la vision
 
@@ -4852,6 +4856,10 @@ La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste p
 
 Elle se stabilise le plus souvent à l’âge adulte. Une **aggravation rapide** doit faire rechercher d’autres causes : cataracte nucléaire débutante, décompensation d’un kératocône, diabète déséquilibré. Une augmentation prolongée au-delà de 30 ans chez un myope déjà fort doit alerter.
 
+##### Qu’est-ce que le conus myopique ?
+
+C’est un **croissant clair au bord de la papille** (la tête du nerf optique), le plus souvent du côté de la tempe, que l’on voit au fond d’œil. En s’allongeant, l’œil myope étire les tissus qui entourent le nerf optique : à cet endroit, la sclère, la paroi blanche de l’œil, n’est plus recouverte par la rétine et la choroïde. Le conus ne donne aucun symptôme et ne se traite pas. Il témoigne de l’allongement de l’œil et rend l’examen du nerf optique plus délicat : c’est l’une des raisons du [dépistage annuel du glaucome](https://docteurmajoulet.com/glaucome) chez le myope fort.
+
 ##### La chirurgie réfractive guérit-elle la myopie forte ?
 
 **Non.** La chirurgie réfractive (LASIK, PKR, SMILE, implants phakes, PRELEX) supprime le besoin de correction optique mais ne modifie pas la **longueur axiale** ni le terrain rétinien. Le patient opéré reste à risque de toutes les complications rétiniennes de la myopie forte. **Le suivi annuel de la rétine demeure indispensable après chirurgie réfractive.**
@@ -4872,7 +4880,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
