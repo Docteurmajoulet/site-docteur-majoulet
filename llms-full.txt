@@ -567,7 +567,7 @@ Une **urgence ophtalmologique** se définit par un risque de **perte visuelle ir
 
 ##### Urgences au cabinet Ophtalife (Boulogne-Billancourt)
 
-Le cabinet prend les **urgences ambulatoires aux heures d’ouverture** — lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h, au [01 84 19 11 66](tel:+33184191166) — (œil rouge, corps étranger superficiel, contrôle post-chirurgical, flashs et corps flottants récents nécessitant un fond d’œil dilaté, bilan post-traumatique sans plaie pénétrante).
+Le cabinet prend les **urgences ambulatoires aux heures d’ouverture** — du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h, au [01 84 19 11 66](tel:+33184191166) — (œil rouge, corps étranger superficiel, contrôle post-chirurgical, flashs et corps flottants récents nécessitant un fond d’œil dilaté, bilan post-traumatique sans plaie pénétrante).
 
 Une suspicion de décollement de rétine ou d’occlusion de l’artère centrale de la rétine (OACR) est vue en urgence au cabinet aux heures d’ouverture. Une plaie pénétrante ou un glaucome aigu relèvent directement d’un service d’urgences ophtalmologiques 24h/24.
 
@@ -617,7 +617,7 @@ Les trois services publics d’urgence ophtalmologique 24h/24 de référence en 
 
 ##### Le cabinet du Dr Majoulet prend-il des urgences ?
 
-Le cabinet Ophtalife de Boulogne-Billancourt traite les urgences ambulatoires aux heures d’ouverture — lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h — (œil rouge, corps étranger superficiel, flashs/corps flottants récents, bilan post-traumatique léger). Une suspicion de décollement de rétine ou d’OACR y est vue en urgence aux heures d’ouverture ; pour l’OACR, on peut aussi aller directement à la Fondation Rothschild. La nuit, le dimanche, ou pour une plaie pénétrante, l’orientation se fait vers un service d’urgences ophtalmologiques 24h/24.
+Le cabinet Ophtalife de Boulogne-Billancourt traite les urgences ambulatoires aux heures d’ouverture — du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h — (œil rouge, corps étranger superficiel, flashs/corps flottants récents, bilan post-traumatique léger). Une suspicion de décollement de rétine ou d’OACR y est vue en urgence aux heures d’ouverture ; pour l’OACR, on peut aussi aller directement à la Fondation Rothschild. La nuit, le dimanche, ou pour une plaie pénétrante, l’orientation se fait vers un service d’urgences ophtalmologiques 24h/24.
 
 ##### Peut-on faire une téléconsultation d’urgence en ophtalmologie ?
 
@@ -766,7 +766,7 @@ Retrouvez votre pathologie, ou commencez par vos symptômes.
 
 [Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Urgences : conduite à tenir](https://docteurmajoulet.com/urgences-ophtalmologiques)
 
-Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
+Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
 #### Commencer par vos symptômes
 
@@ -951,7 +951,7 @@ Inflammations de la choroïde et de la rétine, infectieuses (toxoplasmose, herp
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Dernière révision : 24 août 2026 · Dernière mise à jour : 27 octobre 2026.
+Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 #### Une question sur votre vision ?
 
@@ -2007,7 +2007,7 @@ Urgence ophtalmologique
 
 **Mouches volantes ou éclairs lumineux récents, sans voile :** fond d’œil dilaté **sous 24 à 48 h** pour rechercher une déchirure rétinienne — prenez un créneau urgence.
 
-Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
+Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
 Hors horaires — urgences hospitalières 24h/24
 
@@ -2143,7 +2143,7 @@ La reprise de la conduite est rediscutée lors de la **consultation de contrôle
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 28 octobre 2026.
+Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2844,7 +2844,7 @@ Consultation sous 24-48 h
 
 **Apparition brutale de nouveaux corps flottants, éclairs lumineux ([phosphènes](https://docteurmajoulet.com/flashs-phosphenes-myodesopsies)) dans la vision latérale, pluie de points noirs ou de filaments rouges, sans voile :** fond d’œil dilaté **sous 24 à 48 h** — ces symptômes peuvent annoncer une **déchirure rétinienne** qui, non traitée, peut évoluer vers un **décollement de rétine** ; prenez un créneau urgence.
 
-Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
+Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
 Les **corps flottants** (ou *myodésopsies*) sont des petites ombres mobiles perçues dans le champ visuel, décrites comme des « mouches », des « toiles d’araignée », « du sable » ou des « filaments ». Ils sont extrêmement fréquents après 50 ans et le plus souvent bénins — mais ils peuvent aussi révéler un événement rétinien (**décollement postérieur du vitré** ou **déchirure rétinienne**) qui justifie une consultation ophtalmologique **rapide**.
 
@@ -2958,7 +2958,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -3002,7 +3002,7 @@ Le vitré est un gel transparent qui remplit la cavité oculaire. Avec l’âge 
 
 **Éclairs lumineux répétés, pluie de corps flottants ou de points noirs récents, sans voile :** fond d’œil dilaté **sous 24 à 48 h** — éclairs + corps flottants récents = déchirure rétinienne jusqu’à preuve du contraire ; prenez un créneau urgence.
 
-Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
+Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
 #### Examen ophtalmologique nécessaire
 
@@ -3040,7 +3040,7 @@ Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urg
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 25 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 ### Décollement postérieur du vitré
 
@@ -3105,7 +3105,7 @@ Ces symptômes évoquent une **déchirure rétinienne** ou un **décollement de 
 
 **Pluie soudaine de corps flottants, éclairs lumineux persistants ou filaments rouges (sang), sans voile :** fond d’œil dilaté **sous 24 à 48 h** pour rechercher une déchirure rétinienne compliquant le DPV — prenez un créneau urgence.
 
-Cabinet ouvert lun, mer, jeu 9 h-20 h · mar, ven, sam 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
+Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
 #### Diagnostic : l’examen du fond d’œil dilaté est indispensable
 
@@ -3166,7 +3166,7 @@ Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinien
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 ### Baisse brutale de la vision
 
