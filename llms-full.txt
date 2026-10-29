@@ -28,7 +28,7 @@ Pour toute question médicale personnelle, ces pages ne remplacent pas une consu
 - Description : Chirurgien ophtalmologue spécialisé en rétine à Boulogne-Billancourt : DMLA, décollement de rétine, cataracte. OCT et injections au Cabinet Ophtalife.
 - Relu le : 2026-09-01
 
-Chirurgien spécialiste de la rétine & de la cataracte
+Chirurgie de la rétine et de la cataracte
 
 Je vous accueille au [cabinet de Boulogne-Billancourt](https://docteurmajoulet.com/ophtalmologue-boulogne-billancourt) pour des **consultations spécialisées rétine et cataracte** comme pour le suivi ophtalmologique habituel : **OCT maculaire** (imagerie fine de la rétine) **sur place le jour même**, **injections intravitréennes en salle dédiée**.
 
@@ -625,7 +625,7 @@ La téléconsultation a une utilité limitée en urgence ophtalmologique : elle 
 
 ##### Combien de temps peut-on attendre pour voir un ophtalmologue après un flash lumineux ou des corps flottants ?
 
-L’apparition récente de flashs lumineux ou de nombreux corps flottants justifie un fond d’œil dilaté dans les 24 à 48 heures. En effet, une déchirure rétinienne associée au décollement postérieur du vitré est retrouvée dans environ 10 à 15 % des cas, et un traitement laser de barrage précoce permet d’éviter l’évolution vers un décollement de rétine constitué.
+L’apparition récente de flashs lumineux ou de nombreux corps flottants justifie un fond d’œil dilaté dans les 24 à 48 heures. En effet, une déchirure rétinienne associée au décollement postérieur du vitré est retrouvée dans environ 10 à 15 % des cas, et un traitement laser de barrage précoce réduit fortement le risque d’évolution vers un décollement de rétine constitué.
 
 #### Pathologies d’urgence abordées sur le site
 
@@ -1099,7 +1099,7 @@ Le protocole habituel est :
 1. **Phase d’induction** : 3 à 4 injections mensuelles pour contrôler l’œdème et les néovaisseaux.
 2. **Phase d’entretien « Treat & Extend »** : intervalle progressivement adapté (de 6 à 16 semaines) selon la réponse observée sur l’OCT à chaque visite.
 
-Les études ont montré qu’un traitement précoce et régulier permet **de stabiliser voire d’améliorer la vision** dans la majorité des cas. Un suivi à long terme est nécessaire car la maladie reste chronique.
+Les études ont montré qu’un traitement régulier permet **de stabiliser voire d’améliorer la vision** dans la majorité des cas. Un suivi à long terme est nécessaire car la maladie reste chronique.
 
 #### Prise en charge de la DMLA atrophique
 
@@ -1152,7 +1152,7 @@ Oui. Une **déformation nouvelle des lignes droites** ou une tache centrale réc
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -1906,7 +1906,7 @@ Lorsque le tamponnement est gazeux, la bulle de gaz remonte à la partie supéri
 
 **Face vers le bas.** La bulle de gaz remonte toujours vers le haut : tête penchée en avant, elle vient appuyer sur la macula.
 
-La durée du positionnement dépend de la pathologie et du tamponnement : 48 heures pour un trou maculaire ; de quelques jours à une semaine environ pour un décollement de rétine, selon l’emplacement des déchirures (consignes précises remises avant la sortie). Des équipements (chaise de positionnement, matelas spéciaux) peuvent être proposés. La vision reste très limitée tant que la bulle est présente.
+La durée du positionnement dépend de la pathologie et du tamponnement : 48 heures pour un trou maculaire ; pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures, et la durée vous est indiquée à la sortie, en général 48 heures. Des équipements (chaise de positionnement, matelas spéciaux) peuvent être proposés. La vision reste très limitée tant que la bulle est présente.
 
 #### Après une vitrectomie : suites, précautions et récupération
 
@@ -1951,7 +1951,7 @@ Les références ci-dessus sont citées à titre indicatif pour le lecteur avert
 
 ##### Combien de temps dois-je rester face vers le bas ?
 
-Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, la posture est maintenue **48 heures** après l’opération : face vers le bas un maximum de temps le jour, sur le ventre la nuit. Pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures. Le positionnement précis vous sera indiqué avant la sortie, avec un support écrit.
+Cela dépend de la pathologie et du tamponnement. Pour un trou maculaire, la posture est maintenue **48 heures** après l’opération : face vers le bas un maximum de temps le jour, sur le ventre la nuit. Pour un décollement de rétine, la position de la tête dépend de l’emplacement des déchirures, et la durée vous est indiquée à la sortie, en général 48 heures, avec un support écrit.
 
 ##### Vais-je retrouver toute ma vision ?
 
@@ -1989,7 +1989,7 @@ Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Indications maculaires : [recommandations de l’American Academy of Ophthalmology sur le trou maculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.021) ; [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2072,7 +2072,7 @@ Le décollement de rétine par déchirure (rhegmatogène), le plus fréquent, es
 
 ##### 1. Vitrectomie postérieure mini-invasive
 
-Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale (exceptionnellement générale), en ambulatoire (vous rentrez chez vous le jour même, accompagné), elle consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** strict est souvent nécessaire (plusieurs jours face vers le sol).
+Technique de référence pour la majorité des cas. Réalisée sous anesthésie locorégionale (exceptionnellement générale), en ambulatoire (vous rentrez chez vous le jour même, accompagné), elle dure en général 45 minutes et consiste à retirer le vitré par trois micro-incisions (25 ou 27 gauge), aspirer le liquide sous-rétinien, traiter les déchirures par **laser** ou **cryothérapie**, puis tamponner l’œil avec du **gaz** (le plus souvent du C2F6) ou de l’**huile de silicone**. Un **positionnement post-opératoire** est souvent nécessaire, selon l’emplacement des déchirures : sa durée vous est indiquée à la sortie, en général 48 heures.
 
 ##### 2. Indentation sclérale (cerclage)
 
