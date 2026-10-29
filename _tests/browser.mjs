@@ -785,10 +785,15 @@ try {
   }
   // TECH69AH-2026-10-29 — barre fixe selon l'heure de Paris (horaires du cabinet : du lundi au jeudi 9 h-20 h, vendredi et samedi
   // 9 h-18 h) : jeudi 10 h 30 et mardi 19 h → cabinet ouvert, « Appeler le cabinet » visible ; jeudi 21 h 15, vendredi 19 h et
-  // dimanche → cabinet fermé, plus de bouton d'appel, le rendez-vous en ligne seul.
+  // dimanche → cabinet fermé, plus de bouton d'appel, le rendez-vous en ligne seul. TECH69AI-2026-10-29 : jours fériés fermés
+  // (mercredi 11 novembre 2026, lundi de Pâques 29 mars 2027, jeudi de l'Ascension 6 mai 2027) ; le lendemain du 11 novembre
+  // et le lundi de Pentecôte 17 mai 2027, ouvert (le cabinet ouvre ce jour-là, Dr Majoulet, 29/10). La date est celle de Paris, pas celle du navigateur : à Honolulu, le 11/11 à 10 h 30 de
+  // Paris est encore le 10/11 (fermé quand même) ; à Kiritimati, le mardi 10/11 à 19 h de Paris est déjà le 11/11 (ouvert quand même).
   if (slugs.includes('dmla')) {
-    for (const [quand, ouvert] of [['2026-10-29T10:30:00+01:00', true], ['2026-10-27T19:00:00+01:00', true], ['2026-10-29T21:15:00+01:00', false], ['2026-10-30T19:00:00+01:00', false], ['2026-11-01T11:00:00+01:00', false]]) {
-      const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+    for (const [quand, ouvert, fuseau] of [['2026-10-29T10:30:00+01:00', true], ['2026-10-27T19:00:00+01:00', true], ['2026-10-29T21:15:00+01:00', false], ['2026-10-30T19:00:00+01:00', false], ['2026-11-01T11:00:00+01:00', false],
+      ['2026-11-11T10:30:00+01:00', false], ['2026-11-12T10:30:00+01:00', true], ['2027-03-29T10:30:00+02:00', false], ['2027-05-06T10:30:00+02:00', false], ['2027-05-17T10:30:00+02:00', true],
+      ['2026-11-11T10:30:00+01:00', false, 'Pacific/Honolulu'], ['2026-11-10T19:00:00+01:00', true, 'Pacific/Kiritimati']]) {
+      const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR', ...(fuseau ? { timezoneId: fuseau } : {}) });
       await ctx.clock.setFixedTime(new Date(quand));
       await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
       const page = await ctx.newPage();
@@ -800,9 +805,25 @@ try {
             ouvert: document.body.classList.contains('cabinet-ouvert'), ferme: document.body.classList.contains('cabinet-ferme') };
         });
         const bon = ouvert ? (r.ouvert && !r.ferme && r.tel && r.lbl === 'Appeler le cabinet' && r.rdv) : (!r.ouvert && r.ferme && !r.tel && r.rdv);
-        if (!bon) failures.push(`dmla @390 barre selon l'heure (${quand}) — attendu ${ouvert ? 'cabinet ouvert, « Appeler le cabinet » visible' : 'cabinet fermé, rendez-vous en ligne seul'}, trouvé ${JSON.stringify(r)} (TECH69AH)`);
+        if (!bon) failures.push(`dmla @390 barre selon l'heure (${quand}${fuseau ? ', ' + fuseau : ''}) — attendu ${ouvert ? 'cabinet ouvert, « Appeler le cabinet » visible' : 'cabinet fermé, rendez-vous en ligne seul'}, trouvé ${JSON.stringify(r)} (TECH69AH)`);
         loads++;
       } catch (e) { failures.push(`dmla @390 barre selon l'heure (${quand}) — ${String(e).slice(0, 160)}`); }
+      await ctx.close();
+    }
+  }
+  // TECH69AI-2026-10-29 — badge « Ouvert / Fermé » de /urgences : même calcul (fermé le mercredi 11 novembre, ouvert le jeudi 12).
+  if (slugs.includes('urgences-ophtalmologiques')) {
+    for (const [quand, attendu] of [['2026-11-11T10:30:00+01:00', 'Fermé'], ['2026-11-12T10:30:00+01:00', 'Ouvert']]) {
+      const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+      await ctx.clock.setFixedTime(new Date(quand));
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('urgences-ophtalmologiques', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const r = await page.evaluate(() => { const b = document.querySelector('[data-etat-cabinet]'); return b ? { texte: b.textContent.trim(), cache: b.hidden } : null; });
+        if (!r || r.cache || r.texte !== attendu) failures.push(`urgences-ophtalmologiques @390 badge du cabinet (${quand}) — attendu « ${attendu} », trouvé ${JSON.stringify(r)} (TECH69AI)`);
+        loads++;
+      } catch (e) { failures.push(`urgences-ophtalmologiques @390 badge du cabinet (${quand}) — ${String(e).slice(0, 160)}`); }
       await ctx.close();
     }
   }
