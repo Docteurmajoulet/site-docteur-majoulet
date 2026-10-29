@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-28
+Dernière mise à jour : 2026-10-29
 
 ## Identité et coordonnées
 
@@ -1766,7 +1766,7 @@ La vitrectomie, la chirurgie du décollement de rétine, la chirurgie du trou ma
 
 ##### Combien coûte une opération de la rétine ?
 
-L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Pour un décollement de rétine opéré en urgence, le reste à charge est de zéro pour le patient. Un devis détaillé vous est remis avant l’intervention.
+L’opération est remboursée par l’Assurance Maladie sur la base du tarif conventionnel. Le Dr Majoulet exerce en secteur 2, à honoraires libres : son dépassement d’honoraires est de **600 €** pour une opération de la rétine seule et de **1 000 €** pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Selon votre contrat, votre complémentaire santé peut en rembourser tout ou partie. Un devis détaillé vous est remis avant l’intervention.
 
 ##### Quel arrêt de travail prévoir ?
 
@@ -1979,7 +1979,7 @@ Dans la grande majorité des cas, **il n’est pas nécessaire d’arrêter** un
 
 ##### L’intervention est-elle prise en charge par la Sécurité sociale ?
 
-Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Pour un décollement de rétine opéré en urgence, le reste à charge est de zéro pour le patient. Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
+Oui. La vitrectomie (codes CCAM BGFA009 / BGFA003 / BGFA008 selon l’indication) est un acte **pris en charge par l’Assurance Maladie** sur la base des tarifs conventionnels. Le Dr Majoulet exerce en secteur 2 : son dépassement d’honoraires est de 600 € pour une opération de la rétine seule et de 1 000 € pour une chirurgie combinée, où la cataracte est opérée dans le même temps. Les honoraires de l’anesthésiste et les frais de la clinique sont facturés à part. Montants au 28 octobre 2026. Aucun dépassement n’est appliqué aux bénéficiaires de la complémentaire santé solidaire (C2S). Un devis détaillé (base de remboursement et dépassement d’honoraires) est remis avant l’intervention conformément à la réglementation.
 
 ##### Peut-on opérer les deux yeux en même temps ?
 
@@ -2131,10 +2131,6 @@ La reprise est **progressive** : le sport, les efforts importants et le sauna so
 ##### Quand peut-on reprendre la voiture après l’opération d’un décollement de rétine ?
 
 La reprise de la conduite est rediscutée lors de la **consultation de contrôle, une semaine après l’opération** (J7). Tant qu’une bulle de gaz est présente, la vision de l’œil opéré reste floue.
-
-##### Combien coûte l’opération d’un décollement de rétine ?
-
-L’opération est prise en charge par l’Assurance Maladie. Pour un décollement de rétine **opéré en urgence**, le reste à charge est de **zéro** pour le patient.
 
 #### Sources et références
 
