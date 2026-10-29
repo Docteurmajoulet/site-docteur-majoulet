@@ -4963,7 +4963,7 @@ Le protocole est en règle un schéma **Pro Re Nata** (PRN, littéralement « à
 - **Surveillance mensuelle** par OCT pendant la 1re année.
 - **Re-traitement** uniquement si signes d’activité à l’OCT ou à l’examen clinique (fluide persistant, nouvelle hémorragie, métamorphopsies).
 
-En moyenne, le patient reçoit **2 à 4 injections** la première année, puis moins les années suivantes. Certains ne nécessitent aucune ré-injection au-delà de la première année. Voir [Injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) pour le déroulement pratique (gestes, anesthésie topique, durée ≈ 15 minutes en ambulatoire).
+En moyenne, le patient reçoit **2 à 4 injections** la première année, puis moins les années suivantes. Certains ne nécessitent aucune ré-injection au-delà de la première année. Voir [Injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) pour le déroulement pratique (gestes, anesthésie par collyre, un créneau de 20 minutes : prévoyez environ 30 à 45 minutes sur place).
 
 ##### Place de la photothérapie dynamique (PDT)
 
@@ -5004,7 +5004,7 @@ Oui. Le risque de **bilatéralisation** existe (environ 30 % à 5-10 ans), surto
 
 **Dr Alexandre Majoulet** — Chirurgien ophtalmologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
