@@ -33,6 +33,18 @@ const slugs = args.pages ? args.pages.split(',') : pages();
 
 const stop = await startServer(PORT);
 const browser = await chromium.launch();
+// TECH69AH-2026-10-29 : la barre fixe dépend de l'heure de Paris (appel aux heures d'ouverture, rendez-vous en ligne seul sinon).
+// Les pages sont testées à une heure d'ouverture fixe (jeudi 10 h 30) jusqu'à 1 024 px, là où la barre existe, pour que le
+// résultat ne dépende pas de l'heure du test (la CI tourne aussi le soir et le dimanche) ; au-delà, l'horloge n'est pas figée
+// (une horloge figée fausse les contrôles de chargement des polices et d'anticipation à 1 366 px). Le contrôle TECH69AH, plus
+// bas, vérifie chaque état.
+const HEURE_OUVERTE = new Date('2026-10-29T10:30:00+01:00');
+const _newContext = browser.newContext.bind(browser);
+browser.newContext = async (options) => {
+  const c = await _newContext(options);
+  if (!options || !options.viewport || options.viewport.width <= 1024) await c.clock.setFixedTime(HEURE_OUVERTE);
+  return c;
+};
 const failures = [];
 let loads = 0, axeRuns = 0;
 try {
@@ -768,6 +780,29 @@ try {
         } catch (e) { failures.push(`${slug} @${w} transition de mise en page — ${String(e).slice(0, 160)}`); }
         await page.close();
       }
+      await ctx.close();
+    }
+  }
+  // TECH69AH-2026-10-29 — barre fixe selon l'heure de Paris (horaires du cabinet : du lundi au jeudi 9 h-20 h, vendredi et samedi
+  // 9 h-18 h) : jeudi 10 h 30 et mardi 19 h → cabinet ouvert, « Appeler le cabinet » visible ; jeudi 21 h 15, vendredi 19 h et
+  // dimanche → cabinet fermé, plus de bouton d'appel, le rendez-vous en ligne seul.
+  if (slugs.includes('dmla')) {
+    for (const [quand, ouvert] of [['2026-10-29T10:30:00+01:00', true], ['2026-10-27T19:00:00+01:00', true], ['2026-10-29T21:15:00+01:00', false], ['2026-10-30T19:00:00+01:00', false], ['2026-11-01T11:00:00+01:00', false]]) {
+      const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+      await ctx.clock.setFixedTime(new Date(quand));
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('dmla', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const r = await page.evaluate(() => {
+          const t = document.querySelector('.sticky-rdv .sticky-tel'), d = document.querySelector('.sticky-rdv .sticky-doctolib');
+          return { tel: !!t && getComputedStyle(t).display !== 'none', lbl: t ? t.textContent.trim() : '', rdv: !!d && getComputedStyle(d).display !== 'none',
+            ouvert: document.body.classList.contains('cabinet-ouvert'), ferme: document.body.classList.contains('cabinet-ferme') };
+        });
+        const bon = ouvert ? (r.ouvert && !r.ferme && r.tel && r.lbl === 'Appeler le cabinet' && r.rdv) : (!r.ouvert && r.ferme && !r.tel && r.rdv);
+        if (!bon) failures.push(`dmla @390 barre selon l'heure (${quand}) — attendu ${ouvert ? 'cabinet ouvert, « Appeler le cabinet » visible' : 'cabinet fermé, rendez-vous en ligne seul'}, trouvé ${JSON.stringify(r)} (TECH69AH)`);
+        loads++;
+      } catch (e) { failures.push(`dmla @390 barre selon l'heure (${quand}) — ${String(e).slice(0, 160)}`); }
       await ctx.close();
     }
   }
