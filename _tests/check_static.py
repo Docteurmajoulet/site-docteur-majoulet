@@ -359,6 +359,10 @@ def check(root):
         for m in re.finditer(r'\bbaisses? (?:de (?:la )?vision|visuelles?)(?: centrales?)? brutales?\b', body, re.I):
             E(f'{name} : « {m.group(0)} » → « baisse brutale de la vision » (formulation imposée, TECH69V)')
         if re.search(r'\bOPTAM\b', body): E(f'{name} : mention de l’OPTAM (interdite sur le site)')
+        # TECH69AJ-2026-10-29 : horaires du cabinet, du lundi au jeudi 9 h-20 h, vendredi et samedi 9 h-18 h (rappel du Dr Majoulet,
+        # 29/10). L’ancienne forme abrégée était restée dans le menu mobile, les encadrés d’urgence et /urgences après la correction de midi.
+        if re.search(r'\blun, mer, jeu\b|\bmar, ven, sam\b', t):
+            E(f'{name} : anciens horaires du cabinet (« lun, mer, jeu … mar, ven, sam ») → du lundi au jeudi 9 h-20 h, vendredi et samedi 9 h-18 h (TECH69AJ)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
