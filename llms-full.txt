@@ -1781,7 +1781,7 @@ Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 
 ### Vitrectomie
 
 - URL : https://docteurmajoulet.com/vitrectomie
-- Description : Vitrectomie : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16. Préparez votre RDV.
+- Description : Vitrectomie par micro-incisions : opération, gaz dans l’œil et récupération. Avis avec le Dr Majoulet à Boulogne-Billancourt, chirurgie à Jouvenet, Paris 16.
 - Relu le : 2026-04-20
 
 Chirurgie vitréo-rétinienne mini-invasive (25G / 27G)
@@ -2735,7 +2735,7 @@ Selon la cause : [recommandations de l’American Academy of Ophthalmology sur l
 ### Luxation du cristallin ou d’un implant intraoculaire
 
 - URL : https://docteurmajoulet.com/luxation-cristallin-implant
-- Description : Cristallin ou implant luxé, descendu ou décalé : symptômes, urgence et chirurgie vitréo-rétinienne de repositionnement. Consultation rapide à Boulogne (92).
+- Description : Luxation ou subluxation du cristallin ou d’un implant : symptômes, urgence et chirurgie de repositionnement. Consultation rapide à Boulogne (92).
 - Relu le : 2026-08-19
 
 Quand la lentille de l’œil se déplace : une prise en charge vitréo-rétinienne spécialisée
@@ -2965,7 +2965,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Flashs, phosphènes et corps flottants
 
 - URL : https://docteurmajoulet.com/flashs-phosphenes-myodesopsies
-- Description : Éclairs lumineux, mouches volantes, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne. Prenez RDV.
+- Description : Phosphènes (éclairs lumineux), mouches volantes, voile : quand consulter en urgence ? Fond d’œil dilaté au cabinet. Dr Majoulet, rétinologue à Boulogne.
 - Relu le : 2026-08-19
 
 Bénin (DPV) dans 85 % des cas, mais un fond d’œil dilaté est indispensable
@@ -3045,7 +3045,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Décollement postérieur du vitré
 
 - URL : https://docteurmajoulet.com/decollement-posterieur-vitre
-- Description : Décollement postérieur du vitré : mouches volantes, éclairs lumineux, quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV.
+- Description : Décollement postérieur du vitré (DPV) : mouches volantes, éclairs, anneau de Weiss ; quand consulter en urgence. Dr Majoulet, rétinologue à Boulogne.
 - Relu le : 2026-08-19
 
 Corps flottants et éclairs lumineux — comprendre et identifier les signes d’alerte
@@ -3171,7 +3171,7 @@ Rédigé à partir des [recommandations de l’American Academy of Ophthalmology
 ### Baisse brutale de la vision
 
 - URL : https://docteurmajoulet.com/baisse-brutale-vision
-- Description : Baisse brutale de la vision : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne-Billancourt.
+- Description : Baisse brutale de la vision (BAV brutale) : causes (OACR, OVCR, décollement de rétine, névrite) et niveaux d’urgence. Dr Majoulet, ophtalmologue à Boulogne.
 - Relu le : 2026-08-19
 
 Ce qu’il faut faire tout de suite — et comment le médecin trouve la cause
@@ -4054,7 +4054,7 @@ Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 ### Photocoagulation laser rétinienne
 
 - URL : https://docteurmajoulet.com/photocoagulation-laser
-- Description : Photocoagulation laser de la rétine : barrage de déchirure, panphotocoagulation diabétique. Dr Majoulet, rétinologue à Boulogne-Billancourt. Prenez RDV.
+- Description : Photocoagulation laser de la rétine : barrage d’une déchirure, panphotocoagulation rétinienne (PPR) du diabète. Dr Majoulet, rétinologue à Boulogne.
 - Relu le : 2026-04-22
 
 Laser Argon · PPR · Barrage laser
@@ -4512,7 +4512,7 @@ Rédigé en tenant compte des [recommandations de l’American Academy of Ophtha
 ### Œdème maculaire cystoïde (syndrome d’Irvine-Gass)
 
 - URL : https://docteurmajoulet.com/oedeme-maculaire-cystoide
-- Description : Œdème maculaire cystoïde : causes (post-cataracte, diabète, uvéite), diagnostic OCT, traitements. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
+- Description : Œdème maculaire cystoïde (OMC) : causes (après une opération de la cataracte, diabète, uvéite), diagnostic par OCT, traitements. Dr Majoulet, Boulogne.
 - Relu le : 2026-04-22
 
 Accumulation de liquide dans la macula — cause la plus fréquente de mauvais résultat visuel après une chirurgie de la cataracte
@@ -4768,7 +4768,7 @@ Rédigé à partir des [recommandations d’un groupe international d’experts 
 ### Myopie forte et complications rétiniennes
 
 - URL : https://docteurmajoulet.com/myopie-forte
-- Description : Myopie forte : complications rétiniennes (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, rétinologue à Boulogne. Prenez RDV en ligne.
+- Description : Myopie forte : conus myopique, staphylome, complications de la rétine (néovaisseaux, décollement), surveillance du fond d’œil. Dr Majoulet, Boulogne.
 - Relu le : 2026-04-20
 
 Staphylome, néovaisseaux myopiques, fovéoschisis, risque de décollement
