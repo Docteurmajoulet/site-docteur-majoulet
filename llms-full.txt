@@ -3144,7 +3144,7 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 
 ##### Qu’est-ce que l’anneau de Weiss ?
 
-C’est un **corps flottant en forme d’anneau**, parfois incomplet, que l’on remarque surtout sur un fond clair. Il correspond à l’attache du vitré autour du nerf optique : quand le vitré se décolle, cette attache se détache à son tour et reste visible dans le gel, en avant de la rétine. Vu au fond d’œil, il indique que le décollement postérieur du vitré est **complet**. L’anneau de Weiss n’est pas grave en lui-même. Ce qui compte, comme pour tout décollement du vitré récent, c’est de vérifier qu’il n’y a pas de déchirure de la rétine : l’apparition brutale de corps flottants justifie un **fond d’œil dilaté sous 24 à 48 h**.
+C’est un **corps flottant en forme d’anneau**, parfois incomplet, que l’on remarque surtout sur un fond clair. Il correspond à l’attache du vitré autour du nerf optique : quand le vitré se décolle, cette attache se détache à son tour et reste visible dans le gel, en avant de la rétine. Vu au fond d’œil, il indique que le décollement postérieur du vitré est **complet**. L’anneau de Weiss n’est pas grave en lui-même. Ce qui compte, comme pour tout décollement du vitré récent, c’est de vérifier qu’il n’y a pas de déchirure de la rétine : l’apparition brutale de corps flottants justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même**.
 
 ##### Peut-on prévenir un DPV ?
 
@@ -4858,7 +4858,7 @@ Elle se stabilise le plus souvent à l’âge adulte. Une **aggravation rapide**
 
 ##### Qu’est-ce que le conus myopique ?
 
-C’est un **croissant clair au bord de la papille** (la tête du nerf optique), le plus souvent du côté de la tempe, que l’on voit au fond d’œil. En s’allongeant, l’œil myope étire les tissus qui entourent le nerf optique : à cet endroit, la sclère, la paroi blanche de l’œil, n’est plus recouverte par la rétine et la choroïde. Le conus ne donne aucun symptôme et ne se traite pas. Il témoigne de l’allongement de l’œil et rend l’examen du nerf optique plus délicat : c’est l’une des raisons du [dépistage annuel du glaucome](https://docteurmajoulet.com/glaucome) chez le myope fort.
+C’est un **croissant clair au bord de la papille** (la tête du nerf optique), le plus souvent du côté de la tempe, que l’on voit au fond d’œil. En s’allongeant, l’œil myope étire les tissus qui entourent le nerf optique : à cet endroit, la choroïde et les couches profondes de la rétine manquent, et l’on voit par transparence la sclère, la paroi blanche de l’œil. Le conus ne donne aucun symptôme et ne se traite pas. Il témoigne de l’allongement de l’œil et rend plus difficile le repérage d’un glaucome, plus fréquent chez le myope fort : c’est pourquoi un [dépistage annuel du glaucome](https://docteurmajoulet.com/glaucome) est recommandé dès 40 ans.
 
 ##### La chirurgie réfractive guérit-elle la myopie forte ?
 
@@ -4963,7 +4963,7 @@ Le protocole est en règle un schéma **Pro Re Nata** (PRN, littéralement « à
 - **Surveillance mensuelle** par OCT pendant la 1re année.
 - **Re-traitement** uniquement si signes d’activité à l’OCT ou à l’examen clinique (fluide persistant, nouvelle hémorragie, métamorphopsies).
 
-En moyenne, le patient reçoit **2 à 4 injections** la première année, puis moins les années suivantes. Certains ne nécessitent aucune ré-injection au-delà de la première année. Voir [Injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) pour le déroulement pratique (gestes, anesthésie par collyre, un créneau de 20 minutes : prévoyez environ 30 à 45 minutes sur place).
+En moyenne, le patient reçoit **2 à 4 injections** la première année, puis moins les années suivantes. Certains ne nécessitent aucune ré-injection au-delà de la première année. Voir [Injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) pour le déroulement pratique (gestes, anesthésie par collyre, un créneau de 20 minutes, mais prévoyez environ 30 à 45 minutes sur place).
 
 ##### Place de la photothérapie dynamique (PDT)
 
