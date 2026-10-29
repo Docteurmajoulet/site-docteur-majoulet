@@ -335,7 +335,7 @@
     }
 
     /* ---------- TECH69M-2026-10-26 : /urgences, cabinet ouvert ou fermé à l’heure de Paris (CLAUDE.md §6, piste 5) ----------
-       Horaires du cabinet : lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h ; fermé le dimanche.
+       Horaires du cabinet : du lundi au jeudi 9 h-20 h ; vendredi et samedi 9 h-18 h ; fermé le dimanche (rappel du Dr Majoulet, 29/10).
        Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
        écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas. Jours fériés inconnus.
        Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
@@ -345,7 +345,7 @@
             var heureParis = {};
             new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
                 .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
-            var fin = { Mon: 20, Wed: 20, Thu: 20, Tue: 18, Fri: 18, Sat: 18 }[heureParis.weekday];
+            var fin = { Mon: 20, Tue: 20, Wed: 20, Thu: 20, Fri: 18, Sat: 18 }[heureParis.weekday];
             var h = parseInt(heureParis.hour, 10) % 24;
             return { ouvert: Boolean(fin && h >= 9 && h < fin), fin: fin || 0 };
         } catch (e) { return null; /* fuseau inconnu */ }
@@ -361,7 +361,8 @@
 
     /* ---------- TECH69AH-2026-10-29 : barre fixe selon l’heure de Paris (demande du Dr Majoulet, 29/10) ----------
        Cabinet ouvert : « Appeler le cabinet » passe en bouton principal, le rendez-vous en ligne en second.
-       Cabinet fermé, sans JavaScript ou sans Intl : la barre d’origine (rendez-vous en ligne en principal, appel à côté).
+       Cabinet fermé : le bouton d’appel disparaît, seul reste le rendez-vous en ligne (décision du Dr Majoulet, 29/10).
+       Sans JavaScript ou sans Intl : la barre d’origine (rendez-vous en ligne en principal, appel à côté).
        Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés inconnus. La barre de /urgences
        (appel et « Urgences 24h/24 », sans rendez-vous en ligne) n’est pas concernée. */
     if (stickyRdv && stickyRdv.querySelector('.sticky-doctolib')) {
@@ -373,6 +374,7 @@
             var etat = etatCabinetParis();
             var ouvert = Boolean(etat && etat.ouvert);
             body.classList.toggle('cabinet-ouvert', ouvert);
+            body.classList.toggle('cabinet-ferme', Boolean(etat) && !ouvert);
             if (lblTel) { lblTel.textContent = ouvert ? 'Appeler le cabinet' : libellesOrigine.tel; }
             if (texteRdv) { texteRdv.nodeValue = ouvert ? 'Rendez-vous' : libellesOrigine.rdv; }
         };

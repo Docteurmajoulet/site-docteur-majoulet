@@ -12,7 +12,7 @@ Dernière mise à jour : 2026-10-29
 - **Téléphone** : 01 84 19 11 66
 - **Email** : secretariat@ophtalife.com
 - **Conventionnement** : Secteur 2
-- **Horaires du cabinet** : lundi, mercredi, jeudi 09 h – 20 h ; mardi, vendredi, samedi 09 h – 18 h
+- **Horaires du cabinet** : lundi, mardi, mercredi, jeudi 09 h – 20 h ; vendredi, samedi 09 h – 18 h
 - **Jours de consultation — Dr Alexandre Majoulet** (fiche Google) : mardi, jeudi, vendredi, samedi 09 h – 18 h ; mercredi 09 h – 20 h
 - **Langues** : français, anglais
 - **Prise de rendez-vous** : [Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
@@ -172,8 +172,8 @@ Métro Boulogne — Jean Jaurès (ligne 10) / Métro Marcel Sembat (ligne 9)
 
 **Horaires :**
 
-- Lundi, mercredi, jeudi 9 h – 20 h
-- Mardi, vendredi, samedi 9 h – 18 h
+- Du lundi au jeudi 9 h – 20 h
+- Vendredi et samedi 9 h – 18 h
 - Dimanche fermé
 
 **Secrétariat :**
@@ -322,7 +322,7 @@ Apportez vos examens ophtalmologiques antérieurs et vos ordonnances. Les inform
 
 **Horaires du cabinet :**
 
-Lundi, mercredi, jeudi : 9 h – 20 h / Mardi, vendredi, samedi : 9 h – 18 h / Dimanche : fermé. / Les créneaux du Dr Majoulet sont consultables sur Doctolib.
+Du lundi au jeudi : 9 h – 20 h / Vendredi et samedi : 9 h – 18 h / Dimanche : fermé. / Les créneaux du Dr Majoulet sont consultables sur Doctolib.
 
 **Email administratif :**
 
@@ -357,7 +357,7 @@ En dehors des heures d’ouverture du cabinet ou en cas d’urgence vitale : **S
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Informations pratiques mises à jour : 28 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Informations pratiques mises à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Ophtalmologue à Boulogne-Billancourt
 
@@ -379,7 +379,7 @@ Praticien Contractuel au **CHNO des Quinze-Vingts** (service du Pr Baudouin), an
 
 ##### Téléphone
 
-[01 84 19 11 66](tel:+33184191166) / *Lundi, mercredi, jeudi : 9 h – 20 h · mardi, vendredi, samedi : 9 h – 18 h*
+[01 84 19 11 66](tel:+33184191166) / *Du lundi au jeudi : 9 h – 20 h · vendredi et samedi : 9 h – 18 h*
 
 ##### Email administratif
 
@@ -483,7 +483,7 @@ Français et anglais.
 
 ##### Le cabinet de Boulogne-Billancourt reçoit-il les urgences de la rétine ?
 
-Oui, du lundi au samedi, aux heures d’ouverture : lundi, mercredi et jeudi de 9 h à 20 h, mardi, vendredi et samedi de 9 h à 18 h, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une [occlusion de l’artère centrale de la rétine](https://docteurmajoulet.com/occlusion-artere-centrale-retine), y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
+Oui, du lundi au samedi, aux heures d’ouverture : de 9 h à 20 h du lundi au jeudi, de 9 h à 18 h le vendredi et le samedi, au [01 84 19 11 66](tel:+33184191166). Un voile noir ou une baisse brutale de la vision d’un œil, qui peuvent révéler un décollement de rétine ou une [occlusion de l’artère centrale de la rétine](https://docteurmajoulet.com/occlusion-artere-centrale-retine), y sont vus en urgence le jour même. Pour des éclairs ou des corps flottants récents, sans voile noir, le cabinet propose un créneau d’urgence rétinienne sous 24-48 h, par téléphone ou sur Doctolib, pour un fond d’œil dilaté. En dehors de ces horaires, rendez-vous aux urgences ophtalmologiques ouvertes 24 h/24 : CHNO des Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Ophtalmopôle de l’Hôpital Cochin (Paris 14e).
 
 ##### Que faire en dehors des horaires d’ouverture en cas d’urgence ?
 
@@ -493,7 +493,7 @@ Les urgences ophtalmologiques d’Île-de-France sont assurées 24 h/24 par le C
 
 Page rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin) et co-fondateur du Cabinet Ophtalife.
 
-Dernière mise à jour : 28 octobre 2026.
+Dernière mise à jour : 29 octobre 2026.
 
 ### Urgences ophtalmologiques
 
@@ -511,7 +511,7 @@ En l’absence de réponse, allez aux urgences 24h/24 ci-dessous.
 
 **Voile noir ou baisse brutale de la vision :**
 
-**Le jour même.** Aux heures d’ouverture, appelez le cabinet : [01 84 19 11 66](tel:+33184191166) (lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h).
+**Le jour même.** Aux heures d’ouverture, appelez le cabinet : [01 84 19 11 66](tel:+33184191166) (du lundi au jeudi 9 h-20 h ; vendredi et samedi 9 h-18 h).
 
 En dehors de ces horaires, urgences ophtalmologiques 24h/24 :
 
@@ -605,7 +605,7 @@ Ne pas frotter. Rincer au sérum physiologique ou à l’eau claire. Si gêne pe
 
 ##### Que faire en cas de voile noir ou de baisse brutale de la vision d’un œil ?
 
-Un voile noir, une ombre ou un rideau qui envahit le champ de vision d’un œil, ou une **baisse brutale de la vision**, peuvent révéler, entre autres, un décollement de rétine ou une occlusion d’une artère de la rétine : l’œil doit être examiné **le jour même**. Aux heures d’ouverture (lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h), appelez le Cabinet Ophtalife de Boulogne-Billancourt au [01 84 19 11 66](tel:+33184191166) : une suspicion de décollement de rétine ou d’occlusion de l’artère centrale de la rétine y est vue en urgence. En dehors de ces horaires, allez directement aux urgences ophtalmologiques ouvertes 24h/24 : Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Hôpital Cochin (Paris 14e). Si la perte de vision est brutale, indolore et quasi totale, une occlusion de l’artère centrale de la rétine est possible et chaque heure compte : venez en urgence au cabinet ou allez directement à la Fondation Rothschild. Appelez le **15** si s’y ajoutent un trouble de la parole, une faiblesse d’un membre ou un visage paralysé.
+Un voile noir, une ombre ou un rideau qui envahit le champ de vision d’un œil, ou une **baisse brutale de la vision**, peuvent révéler, entre autres, un décollement de rétine ou une occlusion d’une artère de la rétine : l’œil doit être examiné **le jour même**. Aux heures d’ouverture (du lundi au jeudi 9 h-20 h ; vendredi et samedi 9 h-18 h), appelez le Cabinet Ophtalife de Boulogne-Billancourt au [01 84 19 11 66](tel:+33184191166) : une suspicion de décollement de rétine ou d’occlusion de l’artère centrale de la rétine y est vue en urgence. En dehors de ces horaires, allez directement aux urgences ophtalmologiques ouvertes 24h/24 : Quinze-Vingts (Paris 12e), Fondation Rothschild (Paris 19e) ou Hôpital Cochin (Paris 14e). Si la perte de vision est brutale, indolore et quasi totale, une occlusion de l’artère centrale de la rétine est possible et chaque heure compte : venez en urgence au cabinet ou allez directement à la Fondation Rothschild. Appelez le **15** si s’y ajoutent un trouble de la parole, une faiblesse d’un membre ou un visage paralysé.
 
 ##### Dans quels cas faut-il appeler le 15 plutôt qu’un ophtalmologue ?
 
@@ -641,7 +641,7 @@ L’apparition récente de flashs lumineux ou de nombreux corps flottants justif
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, ophtalmologue-rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Dernière révision : 19 avril 2026 · Dernière mise à jour : 28 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière révision : 19 avril 2026 · Dernière mise à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Publications scientifiques
 
@@ -992,7 +992,7 @@ The rest of this website is in French. This page gives the essentials in English
 #### Appointments and practical information
 
 - **Address**: Cabinet Ophtalife, 37 rue d’Aguesseau, 92100 Boulogne-Billancourt. Metro Boulogne–Jean Jaurès (line 10) or Marcel Sembat (line 9).
-- **Opening hours**: Monday, Wednesday and Thursday 9am–8pm; Tuesday, Friday and Saturday 9am–6pm.
+- **Opening hours**: Monday to Thursday 9am–8pm; Friday and Saturday 9am–6pm.
 - **Surgery**: Clinique Jouvenet, 6 square Jouvenet, Paris 16th, as day surgery. The consultation before surgery and the follow-up afterwards take place at the practice.
 - **Fees**: Dr Majoulet is a “secteur 2” doctor: his fees may be above the standard French health insurance rate. They are shown on his Doctolib page.
 

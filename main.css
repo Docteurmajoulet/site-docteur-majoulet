@@ -8444,7 +8444,8 @@ article.pathology-content .eeat-block .meta {
 
 /* TECH69AH-2026-10-29 — barre fixe selon l’heure de Paris (nav.js TECH69AH, demande du Dr Majoulet du 29/10).
    body.cabinet-ouvert : l’appel devient le bouton principal (plein, prusse) et le rendez-vous en ligne le second (contour cuivre,
-   texte cuivre foncé 8,2:1). Sans la classe (cabinet fermé, sans JavaScript), la barre d’origine. */
+   texte cuivre foncé 8,2:1). body.cabinet-ferme : plus de bouton d’appel, le rendez-vous en ligne occupe la barre.
+   Sans l’une ni l’autre classe (sans JavaScript), la barre d’origine. */
 body.cabinet-ouvert .sticky-rdv .sticky-tel {
     flex: 1 1 auto;
     background: var(--prusse);
@@ -8494,4 +8495,7 @@ body.cabinet-ouvert .sticky-rdv .sticky-doctolib:active {
     body.cabinet-ouvert .sticky-rdv .sticky-doctolib {
         white-space: nowrap;
     }
+}
+body.cabinet-ferme .sticky-rdv .sticky-tel {
+    display: none;
 }
