@@ -8441,3 +8441,74 @@ article.pathology-content > .forme-box :is(ul, ol) {
 article.pathology-content .eeat-block .meta {
     max-width: 62ch;
 }
+
+/* TECH69AG-2026-10-29 — questions fréquentes en volets (nav.js TECH69AG, demande du Dr Majoulet du 29/10).
+   Sans JavaScript, rien ne change : la question reste un intertitre et la réponse est visible. Avec JavaScript, la question
+   devient un bouton plein largeur (44 px de haut au moins) suivi d’un signe + ou −, la réponse fermée porte l’attribut hidden.
+   Un trait sépare les questions ; à l’impression, toutes les réponses sont dépliées. */
+.qr-block.qr-volet {
+    margin-bottom: 0;
+    padding-block: 0;
+    background: none;
+    border-radius: 0;
+    border-bottom: 1px solid var(--border);
+}
+.qr-volet:not(.qr-volet + .qr-volet) {
+    border-top: 1px solid var(--border);
+}
+.qr-block.qr-volet h3.q {
+    margin: 0;
+}
+.qr-block h3.q .qr-bascule {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    width: 100%;
+    min-height: 44px;
+    padding: 12px 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    font: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    text-align: left;
+    text-wrap: pretty;
+    cursor: pointer;
+}
+.qr-block h3.q .qr-bascule::after {
+    content: "+";
+    content: "+" / "";
+    flex: none;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--bleu-gris);
+    border-radius: 50%;
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    color: var(--prusse);
+}
+.qr-block h3.q .qr-bascule[aria-expanded="true"]::after {
+    content: "−";
+    content: "−" / "";
+}
+.qr-block h3.q .qr-bascule:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+.qr-volet .qr-reponse {
+    padding-bottom: 18px;
+}
+@media (hover: hover) {
+    .qr-block h3.q .qr-bascule:hover::after { background: var(--prusse); color: var(--blanc); border-color: var(--prusse); }
+}
+@media print {
+    .qr-reponse[hidden] { display: block !important; }
+    .qr-block h3.q .qr-bascule::after { display: none; }
+    .qr-block.qr-volet { border: 0; }
+}

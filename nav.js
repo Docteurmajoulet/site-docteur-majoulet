@@ -373,6 +373,50 @@
         });
     }
 
+    /* ---------- TECH69AG-2026-10-29 : questions fréquentes en volets (demande du Dr Majoulet, 29/10) ----------
+       La question et la réponse restent dans le HTML : Google, les assistants, l’impression et la lecture sans
+       JavaScript voient tout. Avec JavaScript, la question (h3.q) reçoit un bouton plein largeur (aria-expanded,
+       aria-controls) qui ouvre ou ferme la réponse, regroupée dans div.qr-reponse ; les réponses partent fermées.
+       Une ancre de l’adresse qui vise une réponse ouvre son volet. */
+    var blocsQR = document.querySelectorAll('.qr-block');
+    Array.prototype.forEach.call(blocsQR, function (bloc, i) {
+        var question = bloc.querySelector('h3.q');
+        if (!question || question.querySelector('.qr-bascule')) { return; }
+        var suite = [];
+        for (var n = question.nextElementSibling; n; n = n.nextElementSibling) { suite.push(n); }
+        if (!suite.length) { return; }
+        var reponse = document.createElement('div');
+        reponse.className = 'qr-reponse';
+        reponse.id = 'qr-reponse-' + (i + 1);
+        suite.forEach(function (el) { reponse.appendChild(el); });
+        bloc.appendChild(reponse);
+        var bascule = document.createElement('button');
+        bascule.type = 'button';
+        bascule.className = 'qr-bascule';
+        bascule.setAttribute('aria-expanded', 'false');
+        bascule.setAttribute('aria-controls', reponse.id);
+        while (question.firstChild) { bascule.appendChild(question.firstChild); }
+        question.appendChild(bascule);
+        reponse.hidden = true;
+        bloc.classList.add('qr-volet');
+        bascule.addEventListener('click', function () {
+            var ouvert = bascule.getAttribute('aria-expanded') === 'true';
+            bascule.setAttribute('aria-expanded', ouvert ? 'false' : 'true');
+            reponse.hidden = ouvert;
+        });
+    });
+    var ouvrirVoletCible = function () {
+        if (!location.hash) { return; }
+        var cible = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        var volet = cible && cible.closest ? cible.closest('.qr-volet') : null;
+        if (!volet) { return; }
+        var b = volet.querySelector('.qr-bascule');
+        var r = volet.querySelector('.qr-reponse');
+        if (b && r) { b.setAttribute('aria-expanded', 'true'); r.hidden = false; }
+    };
+    ouvrirVoletCible();
+    window.addEventListener('hashchange', ouvrirVoletCible);
+
     /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
     function observeHeroCta() {
         if (!heroCta || !('IntersectionObserver' in window)) { return; }
