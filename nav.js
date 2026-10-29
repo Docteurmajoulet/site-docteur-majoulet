@@ -340,6 +340,7 @@
        écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas.
        TECH69AI-2026-10-29 : cabinet fermé les 11 jours fériés légaux (Code du travail, art. L3133-1) ; Pâques par
        l’algorithme de Meeus, d’où le lundi de Pâques, l’Ascension (+ 39 j) et le lundi de Pentecôte (+ 50 j).
+       hour12: false plutôt que hourCycle (inconnu avant Safari 13 : l’heure revenait sur 12 h) ; « 24 » ramené à 0 par % 24.
        Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
     var jourFerie = function (annee, mois, jour) {
         var a = annee % 19, b = Math.floor(annee / 100), c = annee % 100, d = Math.floor(b / 4), e = b % 4;
@@ -357,7 +358,7 @@
         if (!window.Intl || !Intl.DateTimeFormat) { return null; }
         try {
             var heureParis = {};
-            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
+            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false })
                 .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
             var fin = { Mon: 20, Tue: 20, Wed: 20, Thu: 20, Fri: 18, Sat: 18 }[heureParis.weekday];
             if (jourFerie(parseInt(heureParis.year, 10), parseInt(heureParis.month, 10), parseInt(heureParis.day, 10))) { fin = 0; }
