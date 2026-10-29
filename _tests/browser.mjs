@@ -789,6 +789,9 @@ try {
             if (li && h2) { const gap = h2.getBoundingClientRect().top - li.getBoundingClientRect().bottom; if (gap > 100) out.push(`hub : ${Math.round(gap)} px entre le dernier symptôme et le titre « ${h2.textContent.trim()} » (attendu ≤ 100)`); }
             return out;
           }
+          // TECH69AG-2026-10-29 : les réponses de FAQ partent fermées (volets) ; la garde ouvre le premier volet avant de mesurer.
+          const volet = document.querySelector('article.pathology-content .qr-bascule[aria-expanded="false"]');
+          if (volet) volet.click();
           for (const s of ['article.pathology-content .alert-urgence', 'article.pathology-content .forme-box', 'article.pathology-content .qr-block .r', 'article.pathology-content .eeat-block']) {
             const el = document.querySelector(s); if (!el) continue;
             const cs = getComputedStyle(el); const cw = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
