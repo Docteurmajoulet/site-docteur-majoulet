@@ -337,15 +337,30 @@
     /* ---------- TECH69M-2026-10-26 : /urgences, cabinet ouvert ou fermé à l’heure de Paris (CLAUDE.md §6, piste 5) ----------
        Horaires du cabinet : du lundi au jeudi 9 h-20 h ; vendredi et samedi 9 h-18 h ; fermé le dimanche (rappel du Dr Majoulet, 29/10).
        Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
-       écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas. Jours fériés inconnus.
+       écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas.
+       TECH69AI-2026-10-29 : cabinet fermé les 11 jours fériés légaux (Code du travail, art. L3133-1) ; Pâques par
+       l’algorithme de Meeus, d’où le lundi de Pâques, l’Ascension (+ 39 j) et le lundi de Pentecôte (+ 50 j).
        Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
+    var jourFerie = function (annee, mois, jour) {
+        var a = annee % 19, b = Math.floor(annee / 100), c = annee % 100, d = Math.floor(b / 4), e = b % 4;
+        var f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30;
+        var i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+        var paques = Date.UTC(annee, Math.floor((h + l - 7 * m + 114) / 31) - 1, ((h + l - 7 * m + 114) % 31) + 1);
+        var feries = ['1-1', '5-1', '5-8', '7-14', '8-15', '11-1', '11-11', '12-25'];
+        [1, 39, 50].forEach(function (n) {
+            var x = new Date(paques + n * 86400000);
+            feries.push((x.getUTCMonth() + 1) + '-' + x.getUTCDate());
+        });
+        return feries.indexOf(mois + '-' + jour) !== -1;
+    };
     var etatCabinetParis = function () {
         if (!window.Intl || !Intl.DateTimeFormat) { return null; }
         try {
             var heureParis = {};
-            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
+            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
                 .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
             var fin = { Mon: 20, Tue: 20, Wed: 20, Thu: 20, Fri: 18, Sat: 18 }[heureParis.weekday];
+            if (jourFerie(parseInt(heureParis.year, 10), parseInt(heureParis.month, 10), parseInt(heureParis.day, 10))) { fin = 0; }
             var h = parseInt(heureParis.hour, 10) % 24;
             return { ouvert: Boolean(fin && h >= 9 && h < fin), fin: fin || 0 };
         } catch (e) { return null; /* fuseau inconnu */ }
@@ -363,7 +378,7 @@
        Cabinet ouvert : « Appeler le cabinet » passe en bouton principal, le rendez-vous en ligne en second.
        Cabinet fermé : le bouton d’appel disparaît, seul reste le rendez-vous en ligne (décision du Dr Majoulet, 29/10).
        Sans JavaScript ou sans Intl : la barre d’origine (rendez-vous en ligne en principal, appel à côté).
-       Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés inconnus. La barre de /urgences
+       Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés fermés (TECH69AI). La barre de /urgences
        (appel et « Urgences 24h/24 », sans rendez-vous en ligne) n’est pas concernée. */
     if (stickyRdv && stickyRdv.querySelector('.sticky-doctolib')) {
         var lblTel = stickyRdv.querySelector('.sticky-tel .lbl');
