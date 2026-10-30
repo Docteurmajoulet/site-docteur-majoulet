@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-29
+Dernière mise à jour : 2026-10-30
 
 ## Identité et coordonnées
 
@@ -2899,7 +2899,7 @@ La consultation d’urgence comporte systématiquement :
 
 - **Interrogatoire précis** : ancienneté et rythme d’apparition des symptômes, antécédents, réfraction.
 - **Acuité visuelle** des deux yeux.
-- **Examen à la lampe à fente** : recherche d’un anneau de Weiss (signe typique de DPV), d’une hémorragie vitréenne, de pigment dans le vitré antérieur (signe dit de « Schaffer » — très évocateur d’une déchirure).
+- **Examen à la lampe à fente** : recherche d’un anneau de Weiss (signe typique de DPV), d’une hémorragie vitréenne, de pigment dans le vitré antérieur (signe de Shafer, dit « poussière de tabac » — très évocateur d’une déchirure).
 - **Fond d’œil dilaté** avec examen très attentif de la périphérie à la lentille trois miroirs (ou à l’ophtalmoscopie indirecte avec indentation sclérale).
 - **Échographie oculaire en mode B** si hémorragie vitréenne empêchant la visualisation du fond d’œil.
 
@@ -2948,9 +2948,14 @@ Chez la plupart des patients, les corps flottants **diminuent progressivement en
 
 Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitréennes. Le **décollement de rétine** est une urgence chirurgicale caractérisée par un **voile noir qui s’étend progressivement** comme un rideau et qui, non traité, progresse vers la macula et provoque une perte visuelle centrale. Un DPV avec corps flottants peut cependant se compliquer d’une déchirure puis d’un décollement : c’est la raison pour laquelle il faut toujours **consulter rapidement**.
 
+##### Qu’est-ce que le signe de Shafer ?
+
+C’est un signe que l’ophtalmologiste recherche à la lampe à fente : de fins grains de pigment en suspension dans le vitré, juste derrière le cristallin (on parle de « poussière de tabac »). Après un décollement postérieur du vitré récent, il fait fortement suspecter une **déchirure de la rétine** : dans une [étude de 200 yeux (Br J Ophthalmol, 2000)](https://doi.org/10.1136/bjo.84.11.1264), 23 des 25 déchirures trouvées s’accompagnaient de ce signe. Il impose un examen complet de la rétine, pupille dilatée ; son absence ne dispense pas de cet examen.
+
 #### Sources et références
 
 - Hollands H, Johnson D, Brox AC, et al. *Acute-onset floaters and flashes: is this patient at risk for retinal detachment?*. JAMA. 2009;302(20):2243-2249. [doi:10.1001/jama.2009.1714](https://doi.org/10.1001/jama.2009.1714)
+- Tanner V, Harle D, Tan J, et al. *Acute posterior vitreous detachment: the predictive value of vitreous pigment and symptomatology*. Br J Ophthalmol. 2000;84(11):1264-1268. [doi:10.1136/bjo.84.11.1264](https://doi.org/10.1136/bjo.84.11.1264)
 - Blindbaek S, Grauslund J. *Prophylactic treatment of retinal breaks--a systematic review*. Acta Ophthalmol. 2015;93(1):3-8. [doi:10.1111/aos.12447](https://doi.org/10.1111/aos.12447)
 - Garoon RB, Smiddy WE, Flynn HW. *Treated retinal breaks: clinical course and outcomes*. Graefes Arch Clin Exp Ophthalmol. 2018;256(6):1053-1057. [doi:10.1007/s00417-018-3950-8](https://doi.org/10.1007/s00417-018-3950-8)
 
@@ -2958,7 +2963,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 30 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
