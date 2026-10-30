@@ -2950,7 +2950,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 ##### Qu’est-ce que le signe de Shafer ?
 
-C’est un signe que l’ophtalmologiste recherche à la lampe à fente : de fins grains de pigment en suspension dans le vitré, juste derrière le cristallin (on parle de « poussière de tabac »). Après un décollement postérieur du vitré récent, il fait fortement suspecter une **déchirure de la rétine** : dans une [étude de 200 yeux (Br J Ophthalmol, 2000)](https://doi.org/10.1136/bjo.84.11.1264), 23 des 25 déchirures trouvées s’accompagnaient de ce signe. Il impose un examen complet de la rétine, pupille dilatée ; son absence ne dispense pas de cet examen.
+C’est un signe que l’ophtalmologiste recherche à la lampe à fente : de fins grains de pigment en suspension dans le vitré, juste derrière le cristallin (on parle de « poussière de tabac »). Après un décollement postérieur du vitré récent, sa présence doit faire craindre une **déchirure de la rétine** et impose un examen complet de la rétine, pupille dilatée. Dans une [étude de 200 yeux (Br J Ophthalmol, 2000)](https://doi.org/10.1136/bjo.84.11.1264), 23 des 25 déchirures trouvées s’accompagnaient de ce signe, mais 2 non : son absence ne dispense donc pas de cet examen.
 
 #### Sources et références
 
@@ -2995,7 +2995,7 @@ Le vitré est un gel transparent qui remplit la cavité oculaire. Avec l’âge 
 
 - **Voile ou rideau** fixe dans le champ visuel (décollement constitué).
 - **Ombre noire périphérique** qui progresse vers le centre.
-- **Nuée de nouveaux corps flottants** (souvent poussière de tabac à la lampe à fente — hémorragie vitréenne par déchirure d’un vaisseau).
+- **Nuée de nouveaux corps flottants** (à la lampe à fente, souvent du pigment dans le vitré, le [signe de Shafer](https://docteurmajoulet.com/dechirure-retine-corps-flottants#examen-ophtalmologique), ou du sang lorsque la déchirure a rompu un vaisseau).
 - **Baisse d’acuité visuelle** rapide.
 - Symptômes après **traumatisme oculaire**.
 
@@ -3045,7 +3045,7 @@ Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En deh
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 30 octobre 2026.
 
 ### Décollement postérieur du vitré
 
