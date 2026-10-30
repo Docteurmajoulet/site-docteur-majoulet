@@ -335,24 +335,68 @@
     }
 
     /* ---------- TECH69M-2026-10-26 : /urgences, cabinet ouvert ou fermé à l’heure de Paris (CLAUDE.md §6, piste 5) ----------
-       Horaires du cabinet : lundi, mercredi, jeudi 9 h-20 h ; mardi, vendredi, samedi 9 h-18 h ; fermé le dimanche.
+       Horaires du cabinet : du lundi au jeudi 9 h-20 h ; vendredi et samedi 9 h-18 h ; fermé le dimanche (rappel du Dr Majoulet, 29/10).
        Le bouton d’appel reçoit un badge « Ouvert » ou « Fermé » et change d’apparence (plein ou contour) ; la consigne
-       écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas. Jours fériés inconnus.
+       écrite sous le bouton (appeler, puis les urgences en l’absence de réponse) ne change pas.
+       TECH69AI-2026-10-29 : cabinet fermé les jours fériés légaux (Code du travail, art. L3133-1), sauf le lundi de Pentecôte,
+       où il est ouvert (Dr Majoulet, 29/10) ; Pâques par l’algorithme de Meeus, d’où le lundi de Pâques (+ 1 j) et l’Ascension (+ 39 j).
+       hour12: false plutôt que hourCycle (inconnu avant Safari 13 : l’heure revenait sur 12 h) ; « 24 » ramené à 0 par % 24.
        Sans JavaScript ou sans Intl, le badge reste masqué (attribut hidden) et le bouton garde son apparence pleine. */
-    var etatCabinet = document.querySelector('[data-etat-cabinet]');
-    if (etatCabinet && window.Intl && Intl.DateTimeFormat) {
+    var jourFerie = function (annee, mois, jour) {
+        var a = annee % 19, b = Math.floor(annee / 100), c = annee % 100, d = Math.floor(b / 4), e = b % 4;
+        var f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3), h = (19 * a + b - d - g + 15) % 30;
+        var i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+        var paques = Date.UTC(annee, Math.floor((h + l - 7 * m + 114) / 31) - 1, ((h + l - 7 * m + 114) % 31) + 1);
+        var feries = ['1-1', '5-1', '5-8', '7-14', '8-15', '11-1', '11-11', '12-25'];
+        [1, 39].forEach(function (n) {
+            var x = new Date(paques + n * 86400000);
+            feries.push((x.getUTCMonth() + 1) + '-' + x.getUTCDate());
+        });
+        return feries.indexOf(mois + '-' + jour) !== -1;
+    };
+    var etatCabinetParis = function () {
+        if (!window.Intl || !Intl.DateTimeFormat) { return null; }
         try {
             var heureParis = {};
-            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', hour: 'numeric', minute: 'numeric', hourCycle: 'h23' })
+            new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Paris', weekday: 'short', year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', hour12: false })
                 .formatToParts(new Date()).forEach(function (p) { heureParis[p.type] = p.value; });
-            var fin = { Mon: 20, Wed: 20, Thu: 20, Tue: 18, Fri: 18, Sat: 18 }[heureParis.weekday];
+            var fin = { Mon: 20, Tue: 20, Wed: 20, Thu: 20, Fri: 18, Sat: 18 }[heureParis.weekday];
+            if (jourFerie(parseInt(heureParis.year, 10), parseInt(heureParis.month, 10), parseInt(heureParis.day, 10))) { fin = 0; }
             var h = parseInt(heureParis.hour, 10) % 24;
-            var ouvert = Boolean(fin && h >= 9 && h < fin);
-            var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
-            etatCabinet.textContent = ouvert ? 'Ouvert' : 'Fermé';
-            if (boutonCabinet) { boutonCabinet.classList.add(ouvert ? 'est-ouvert' : 'est-ferme'); }
-            etatCabinet.hidden = false;
-        } catch (e) { /* fuseau inconnu : le badge reste masqué */ }
+            return { ouvert: Boolean(fin && h >= 9 && h < fin), fin: fin || 0 };
+        } catch (e) { return null; /* fuseau inconnu */ }
+    };
+    var etatCabinet = document.querySelector('[data-etat-cabinet]');
+    var etatUrgences = etatCabinet ? etatCabinetParis() : null;
+    if (etatCabinet && etatUrgences) {
+        var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
+        etatCabinet.textContent = etatUrgences.ouvert ? 'Ouvert' : 'Fermé';
+        if (boutonCabinet) { boutonCabinet.classList.add(etatUrgences.ouvert ? 'est-ouvert' : 'est-ferme'); }
+        etatCabinet.hidden = false;
+    }
+
+    /* ---------- TECH69AH-2026-10-29 : barre fixe selon l’heure de Paris (demande du Dr Majoulet, 29/10) ----------
+       Cabinet ouvert : « Appeler le cabinet » passe en bouton principal, le rendez-vous en ligne en second.
+       Cabinet fermé : le bouton d’appel disparaît, seul reste le rendez-vous en ligne (décision du Dr Majoulet, 29/10).
+       Sans JavaScript ou sans Intl : la barre d’origine (rendez-vous en ligne en principal, appel à côté).
+       Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés fermés (TECH69AI). La barre de /urgences
+       (appel et « Urgences 24h/24 », sans rendez-vous en ligne) n’est pas concernée. */
+    if (stickyRdv && stickyRdv.querySelector('.sticky-doctolib')) {
+        var lblTel = stickyRdv.querySelector('.sticky-tel .lbl');
+        var lienRdv = stickyRdv.querySelector('.sticky-doctolib');
+        var texteRdv = lienRdv && lienRdv.firstChild && lienRdv.firstChild.nodeType === 3 ? lienRdv.firstChild : null;
+        var libellesOrigine = { tel: lblTel ? lblTel.textContent : '', rdv: texteRdv ? texteRdv.nodeValue : '' };
+        var appliquerHoraires = function () {
+            var etat = etatCabinetParis();
+            var ouvert = Boolean(etat && etat.ouvert);
+            body.classList.toggle('cabinet-ouvert', ouvert);
+            body.classList.toggle('cabinet-ferme', Boolean(etat) && !ouvert);
+            if (lblTel) { lblTel.textContent = ouvert ? 'Appeler le cabinet' : libellesOrigine.tel; }
+            if (texteRdv) { texteRdv.nodeValue = ouvert ? 'Rendez-vous' : libellesOrigine.rdv; }
+        };
+        appliquerHoraires();
+        window.setInterval(appliquerHoraires, 300000);
+        document.addEventListener('visibilitychange', function () { if (!document.hidden) { appliquerHoraires(); } });
     }
 
     /* ---------- TECH69W-2026-10-27 : frise du parcours opératoire, « Imprimer ce parcours » (CLAUDE.md §6, piste 4) ----------
@@ -372,6 +416,50 @@
             document.documentElement.classList.remove('imprimer-frise');
         });
     }
+
+    /* ---------- TECH69AG-2026-10-29 : questions fréquentes en volets (demande du Dr Majoulet, 29/10) ----------
+       La question et la réponse restent dans le HTML : Google, les assistants, l’impression et la lecture sans
+       JavaScript voient tout. Avec JavaScript, la question (h3.q) reçoit un bouton plein largeur (aria-expanded,
+       aria-controls) qui ouvre ou ferme la réponse, regroupée dans div.qr-reponse ; les réponses partent fermées.
+       Une ancre de l’adresse qui vise une réponse ouvre son volet. */
+    var blocsQR = document.querySelectorAll('.qr-block');
+    Array.prototype.forEach.call(blocsQR, function (bloc, i) {
+        var question = bloc.querySelector('h3.q');
+        if (!question || question.querySelector('.qr-bascule')) { return; }
+        var suite = [];
+        for (var n = question.nextElementSibling; n; n = n.nextElementSibling) { suite.push(n); }
+        if (!suite.length) { return; }
+        var reponse = document.createElement('div');
+        reponse.className = 'qr-reponse';
+        reponse.id = 'qr-reponse-' + (i + 1);
+        suite.forEach(function (el) { reponse.appendChild(el); });
+        bloc.appendChild(reponse);
+        var bascule = document.createElement('button');
+        bascule.type = 'button';
+        bascule.className = 'qr-bascule';
+        bascule.setAttribute('aria-expanded', 'false');
+        bascule.setAttribute('aria-controls', reponse.id);
+        while (question.firstChild) { bascule.appendChild(question.firstChild); }
+        question.appendChild(bascule);
+        reponse.hidden = true;
+        bloc.classList.add('qr-volet');
+        bascule.addEventListener('click', function () {
+            var ouvert = bascule.getAttribute('aria-expanded') === 'true';
+            bascule.setAttribute('aria-expanded', ouvert ? 'false' : 'true');
+            reponse.hidden = ouvert;
+        });
+    });
+    var ouvrirVoletCible = function () {
+        if (!location.hash) { return; }
+        var cible = document.getElementById(decodeURIComponent(location.hash.slice(1)));
+        var volet = cible && cible.closest ? cible.closest('.qr-volet') : null;
+        if (!volet) { return; }
+        var b = volet.querySelector('.qr-bascule');
+        var r = volet.querySelector('.qr-reponse');
+        if (b && r) { b.setAttribute('aria-expanded', 'true'); r.hidden = false; }
+    };
+    ouvrirVoletCible();
+    window.addEventListener('hashchange', ouvrirVoletCible);
 
     /* ---------- Barre RDV fixe : un bouton entièrement accessible dans la zone de lecture ---------- */
     function observeHeroCta() {
