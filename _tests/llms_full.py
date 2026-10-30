@@ -22,7 +22,7 @@ import llms_pages
 ROOT = llms_pages.ROOT
 SITE = 'https://docteurmajoulet.com'
 DATE_RE = re.compile(r'^Dernière mise à jour : \d{4}-\d{2}-\d{2}$', re.M)
-SKIP_TAGS = {'script', 'style', 'svg', 'noscript', 'iframe', 'template', 'button', 'picture', 'img', 'source', 'form', 'input', 'select', 'label', 'nav'}
+SKIP_TAGS = {'script', 'style', 'svg', 'noscript', 'iframe', 'template', 'button', 'picture', 'img', 'source', 'form', 'input', 'select', 'label', 'nav', 'video'}   # video : le texte de repli du lecteur n'est pas du contenu (relecture du 28/10)
 SKIP_CLASSES = {'breadcrumb-mini', 'toc', 'cta-block', 'cta-actions', 'cta-alt', 'related-pathologies', 'hero-buttons', 'hero-visual', 'hero-photo',
                 'hero-oct', 'map-facade', 'contact-map', 'cv12-action', 'sr-only', 'visually-hidden', 'skip-link', 'header-meta',
                 'drawer-actions', 'placeholder-block', 'hero-chips', 'pub-links', 'external-links', 'specialty-icon', 'usp-check'}
@@ -192,7 +192,7 @@ identity = llms_pages.identity   # TECH16AK-2026-09-14 : bloc identité/coordonn
 def generated(root=ROOT, date=None):
     """Le fichier complet ; `date` = jour écrit dans « Dernière mise à jour » (aujourd'hui par défaut)."""
     date = date or datetime.date.today().isoformat()
-    out = ['# Dr Alexandre Majoulet — Chirurgien Ophtalmologue & Rétinologue (dossier complet)\n\n',
+    out = ['# Dr Alexandre Majoulet, chirurgien ophtalmologue – rétinologue (dossier complet)\n\n',
            f"> Version longue de [llms.txt]({SITE}/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis "
            "les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL "
            "canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en "

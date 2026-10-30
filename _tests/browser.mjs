@@ -33,6 +33,18 @@ const slugs = args.pages ? args.pages.split(',') : pages();
 
 const stop = await startServer(PORT);
 const browser = await chromium.launch();
+// TECH69AH-2026-10-29 : la barre fixe dépend de l'heure de Paris (appel aux heures d'ouverture, rendez-vous en ligne seul sinon).
+// Les pages sont testées à une heure d'ouverture fixe (jeudi 10 h 30) jusqu'à 1 024 px, là où la barre existe, pour que le
+// résultat ne dépende pas de l'heure du test (la CI tourne aussi le soir et le dimanche) ; au-delà, l'horloge n'est pas figée
+// (une horloge figée fausse les contrôles de chargement des polices et d'anticipation à 1 366 px). Le contrôle TECH69AH, plus
+// bas, vérifie chaque état.
+const HEURE_OUVERTE = new Date('2026-10-29T10:30:00+01:00');
+const _newContext = browser.newContext.bind(browser);
+browser.newContext = async (options) => {
+  const c = await _newContext(options);
+  if (!options || !options.viewport || options.viewport.width <= 1024) await c.clock.setFixedTime(HEURE_OUVERTE);
+  return c;
+};
 const failures = [];
 let loads = 0, axeRuns = 0;
 try {
@@ -771,6 +783,50 @@ try {
       await ctx.close();
     }
   }
+  // TECH69AH-2026-10-29 — barre fixe selon l'heure de Paris (horaires du cabinet : du lundi au jeudi 9 h-20 h, vendredi et samedi
+  // 9 h-18 h) : jeudi 10 h 30 et mardi 19 h → cabinet ouvert, « Appeler le cabinet » visible ; jeudi 21 h 15, vendredi 19 h et
+  // dimanche → cabinet fermé, plus de bouton d'appel, le rendez-vous en ligne seul. TECH69AI-2026-10-29 : jours fériés fermés
+  // (mercredi 11 novembre 2026, lundi de Pâques 29 mars 2027, jeudi de l'Ascension 6 mai 2027) ; le lendemain du 11 novembre
+  // et le lundi de Pentecôte 17 mai 2027, ouvert (le cabinet ouvre ce jour-là, Dr Majoulet, 29/10). La date est celle de Paris, pas celle du navigateur : à Honolulu, le 11/11 à 10 h 30 de
+  // Paris est encore le 10/11 (fermé quand même) ; à Kiritimati, le mardi 10/11 à 19 h de Paris est déjà le 11/11 (ouvert quand même).
+  if (slugs.includes('dmla')) {
+    for (const [quand, ouvert, fuseau] of [['2026-10-29T10:30:00+01:00', true], ['2026-10-27T19:00:00+01:00', true], ['2026-10-29T21:15:00+01:00', false], ['2026-10-30T19:00:00+01:00', false], ['2026-11-01T11:00:00+01:00', false],
+      ['2026-11-11T10:30:00+01:00', false], ['2026-11-12T10:30:00+01:00', true], ['2027-03-29T10:30:00+02:00', false], ['2027-05-06T10:30:00+02:00', false], ['2027-05-17T10:30:00+02:00', true],
+      ['2026-11-11T10:30:00+01:00', false, 'Pacific/Honolulu'], ['2026-11-10T19:00:00+01:00', true, 'Pacific/Kiritimati']]) {
+      const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR', ...(fuseau ? { timezoneId: fuseau } : {}) });
+      await ctx.clock.setFixedTime(new Date(quand));
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('dmla', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const r = await page.evaluate(() => {
+          const t = document.querySelector('.sticky-rdv .sticky-tel'), d = document.querySelector('.sticky-rdv .sticky-doctolib');
+          return { tel: !!t && getComputedStyle(t).display !== 'none', lbl: t ? t.textContent.trim() : '', rdv: !!d && getComputedStyle(d).display !== 'none',
+            ouvert: document.body.classList.contains('cabinet-ouvert'), ferme: document.body.classList.contains('cabinet-ferme') };
+        });
+        const bon = ouvert ? (r.ouvert && !r.ferme && r.tel && r.lbl === 'Appeler le cabinet' && r.rdv) : (!r.ouvert && r.ferme && !r.tel && r.rdv);
+        if (!bon) failures.push(`dmla @390 barre selon l'heure (${quand}${fuseau ? ', ' + fuseau : ''}) — attendu ${ouvert ? 'cabinet ouvert, « Appeler le cabinet » visible' : 'cabinet fermé, rendez-vous en ligne seul'}, trouvé ${JSON.stringify(r)} (TECH69AH)`);
+        loads++;
+      } catch (e) { failures.push(`dmla @390 barre selon l'heure (${quand}) — ${String(e).slice(0, 160)}`); }
+      await ctx.close();
+    }
+  }
+  // TECH69AI-2026-10-29 — badge « Ouvert / Fermé » de /urgences : même calcul (fermé le mercredi 11 novembre, ouvert le jeudi 12).
+  if (slugs.includes('urgences-ophtalmologiques')) {
+    for (const [quand, attendu] of [['2026-11-11T10:30:00+01:00', 'Fermé'], ['2026-11-12T10:30:00+01:00', 'Ouvert']]) {
+      const ctx = await _newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+      await ctx.clock.setFixedTime(new Date(quand));
+      await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+      const page = await ctx.newPage();
+      try {
+        await page.goto(urlFor('urgences-ophtalmologiques', PORT), { waitUntil: 'networkidle', timeout: 30000 });
+        const r = await page.evaluate(() => { const b = document.querySelector('[data-etat-cabinet]'); return b ? { texte: b.textContent.trim(), cache: b.hidden } : null; });
+        if (!r || r.cache || r.texte !== attendu) failures.push(`urgences-ophtalmologiques @390 badge du cabinet (${quand}) — attendu « ${attendu} », trouvé ${JSON.stringify(r)} (TECH69AI)`);
+        loads++;
+      } catch (e) { failures.push(`urgences-ophtalmologiques @390 badge du cabinet (${quand}) — ${String(e).slice(0, 160)}`); }
+      await ctx.close();
+    }
+  }
   // TECH20AX-2026-09-16 — colonne de lecture des fiches sur téléphone : à 390 et 320 px, sur 4 fiches, la largeur utile (contenu) de
   // l'alerte d'urgence, des .forme-box, des réponses de FAQ et du bloc « À propos » vaut au moins largeur d'écran − 120 px (390 : 270 ;
   // avant le lot : 214-244) ; sur le hub à 390 px, au plus 100 px entre le dernier symptôme et le titre « DMLA » (avant : 164).
@@ -789,6 +845,9 @@ try {
             if (li && h2) { const gap = h2.getBoundingClientRect().top - li.getBoundingClientRect().bottom; if (gap > 100) out.push(`hub : ${Math.round(gap)} px entre le dernier symptôme et le titre « ${h2.textContent.trim()} » (attendu ≤ 100)`); }
             return out;
           }
+          // TECH69AG-2026-10-29 : les réponses de FAQ partent fermées (volets) ; la garde ouvre le premier volet avant de mesurer.
+          const volet = document.querySelector('article.pathology-content .qr-bascule[aria-expanded="false"]');
+          if (volet) volet.click();
           for (const s of ['article.pathology-content .alert-urgence', 'article.pathology-content .forme-box', 'article.pathology-content .qr-block .r', 'article.pathology-content .eeat-block']) {
             const el = document.querySelector(s); if (!el) continue;
             const cs = getComputedStyle(el); const cw = el.clientWidth - parseFloat(cs.paddingLeft) - parseFloat(cs.paddingRight);
