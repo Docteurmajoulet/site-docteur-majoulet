@@ -372,10 +372,14 @@ def check(root):
                 if re.search(r'class="[^"]*(?:sticky-doctolib|btn-rdv|btn-alert-rdv|drawer-rdv|nav-cta|hv-btn|cta-line-link)', _a):
                     E(f'{name} : bouton de rendez-vous vers le profil Doctolib au lieu de la prise de rendez-vous (TECH69AK)')
                 continue
-            _m = re.fullmatch(re.escape(_dl) + r'/booking\?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false((?:&amp;visit_motive_category_ids%5B%5D=\d+)*)', _h)
+            _m = re.fullmatch(re.escape(_dl) + r'/booking\?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false((?:&amp;visit_motive_category_ids%5B%5D=\d+)*|&amp;vmids%5B%5D=13767008)', _h)
             if not _m: E(f'{name} : lien Doctolib mal formé « {_h[:110]} » (TECH69AK)'); continue
-            _inconnues = set(re.findall(r'=(\d+)', _m.group(1))) - {'400137', '400138', '400139', '400141', '400187'}
+            _inconnues = set(re.findall(r'visit_motive_category_ids%5B%5D=(\d+)', _m.group(1))) - {'400137', '400138', '400139', '400141', '400187'}
             if _inconnues: E(f'{name} : catégorie Doctolib inconnue {sorted(_inconnues)} (TECH69AK)')
+        # « Créneau urgence sur Doctolib » ouvre le seul motif « Urgence » (id 13767008), pas une liste de catégories
+        for _a, _txt in re.findall(r'(<a [^>]*href="' + re.escape(_dl) + r'[^"]*"[^>]*>)(.*?)</a>', t, re.S):
+            if 'Créneau urgence' in _txt and 'vmids%5B%5D=13767008' not in _a:
+                E(f'{name} : « Créneau urgence sur Doctolib » ne mène pas au motif « Urgence » (TECH69AK)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
