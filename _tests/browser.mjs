@@ -822,6 +822,11 @@ try {
         await page.goto(urlFor('urgences-ophtalmologiques', PORT), { waitUntil: 'networkidle', timeout: 30000 });
         const r = await page.evaluate(() => { const b = document.querySelector('[data-etat-cabinet]'); return b ? { texte: b.textContent.trim(), cache: b.hidden } : null; });
         if (!r || r.cache || r.texte !== attendu) failures.push(`urgences-ophtalmologiques @390 badge du cabinet (${quand}) — attendu « ${attendu} », trouvé ${JSON.stringify(r)} (TECH69AI)`);
+        // TECH69AM-2026-11-01 — cabinet fermé : les urgences 24h/24 sous le bouton d'appel, au-dessus de la barre fixe du premier écran (760 px sur 844) ; ouvert : masquées
+        const f = await page.evaluate(() => { const b = document.querySelector('[data-urgences-ferme]'); if (!b) return null;
+          const t = b.querySelector('a[href^="tel:"]'); return { visible: !b.hidden && b.offsetHeight > 0, bas: t ? Math.round(t.getBoundingClientRect().bottom + scrollY) : null }; });
+        const fermeAttendu = attendu === 'Fermé';
+        if (!f || f.visible !== fermeAttendu || (fermeAttendu && !(f.bas <= 760))) failures.push(`urgences-ophtalmologiques @390 urgences 24h/24 cabinet ${attendu.toLowerCase()} (${quand}) — attendu ${fermeAttendu ? 'visibles dans le premier écran' : 'masquées'}, trouvé ${JSON.stringify(f)} (TECH69AM)`);
         loads++;
       } catch (e) { failures.push(`urgences-ophtalmologiques @390 badge du cabinet (${quand}) — ${String(e).slice(0, 160)}`); }
       await ctx.close();

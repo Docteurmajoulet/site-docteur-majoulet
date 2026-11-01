@@ -373,6 +373,14 @@
         etatCabinet.textContent = etatUrgences.ouvert ? 'Ouvert' : 'Fermé';
         if (boutonCabinet) { boutonCabinet.classList.add(etatUrgences.ouvert ? 'est-ouvert' : 'est-ferme'); }
         etatCabinet.hidden = false;
+        /* TECH69AM-2026-11-01 : cabinet fermé, les numéros des urgences 24h/24 passent sous le bouton d’appel (piste 5,
+           « où aller maintenant ») ; sans JavaScript ou cabinet ouvert, le bloc reste masqué et la liste du bas fait foi. */
+        var urgencesFerme = document.querySelector('[data-urgences-ferme]');
+        if (urgencesFerme && !etatUrgences.ouvert) {
+            urgencesFerme.hidden = false;
+            var consigne = document.querySelector('.etat-consigne');
+            if (consigne) { consigne.hidden = true; }   /* « En l’absence de réponse… » : sans objet cabinet fermé */
+        }
     }
 
     /* ---------- TECH69AH-2026-10-29 : barre fixe selon l’heure de Paris (demande du Dr Majoulet, 29/10) ----------
