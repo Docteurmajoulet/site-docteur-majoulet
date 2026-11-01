@@ -363,6 +363,19 @@ def check(root):
         # 29/10). L’ancienne forme abrégée était restée dans le menu mobile, les encadrés d’urgence et /urgences après la correction de midi.
         if re.search(r'\blun, mer, jeu\b|\bmar, ven, sam\b', t):
             E(f'{name} : anciens horaires du cabinet (« lun, mer, jeu … mar, ven, sam ») → du lundi au jeudi 9 h-20 h, vendredi et samedi 9 h-18 h (TECH69AJ)')
+        # TECH69AK-2026-11-01 : rendez-vous au bon motif. Les boutons Doctolib mènent au début de la prise de rendez-vous du
+        # cabinet (lieu practice-649140), avec au plus des catégories connues (relevées le 01/11) ; le profil seul reste pour les honoraires.
+        _dl = 'https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris'
+        for _a in re.findall(r'<a [^>]*href="' + re.escape(_dl) + r'[^"]*"[^>]*>', t):
+            _h = re.search(r'href="([^"]*)"', _a).group(1)
+            if _h == _dl:
+                if re.search(r'class="[^"]*(?:sticky-doctolib|btn-rdv|btn-alert-rdv|drawer-rdv|nav-cta|hv-btn|cta-line-link)', _a):
+                    E(f'{name} : bouton de rendez-vous vers le profil Doctolib au lieu de la prise de rendez-vous (TECH69AK)')
+                continue
+            _m = re.fullmatch(re.escape(_dl) + r'/booking\?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false((?:&amp;visit_motive_category_ids%5B%5D=\d+)*)', _h)
+            if not _m: E(f'{name} : lien Doctolib mal formé « {_h[:110]} » (TECH69AK)'); continue
+            _inconnues = set(re.findall(r'=(\d+)', _m.group(1))) - {'400137', '400138', '400139', '400141', '400187'}
+            if _inconnues: E(f'{name} : catégorie Doctolib inconnue {sorted(_inconnues)} (TECH69AK)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
@@ -407,6 +420,8 @@ def check(root):
                 if 'href="tel:+33184191166"' not in b or 'class="sticky-urgences" href="#ou-consulter-en-urgence-en-ile-de-france"' not in b:
                     E(f'{name} : barre fixe des urgences incomplète (téléphone du cabinet + « Urgences 24h/24 ») — TECH69D')
                 continue
+            # TECH69AK-2026-11-01 : le bouton Doctolib de la barre fixe mène à la catégorie de la fiche — seule différence admise
+            if key == 'barre fixe': b = re.sub(r'&amp;visit_motive_category_ids%5B%5D=\d+', '', b)
             chrome.setdefault(key, {}).setdefault(b, []).append(name)
         bc = re.search(r'<nav class="breadcrumb-mini"[^>]*>(.*?)</nav>', t, re.S)
         if bc:
