@@ -75,6 +75,11 @@
 /img/icons/*
   Cache-Control: public, max-age=31536000, immutable
 
+# ---------- Vidéos hébergées (TECH69AL-2026-11-01) ----------
+# Nom de fichier fixe (operation-cataracte.mp4) : une semaine, sans immutable ; l'affiche .jpg reste sous la règle /*.jpg.
+/video/*.mp4
+  Cache-Control: public, max-age=604800
+
 # ---------- Cache : CSS / JS versionnés (?v=… bumpé par chaque lot — CSP-2026-08-25) ----------
 # ⚠️ Toute modification de main.css ou nav.js doit s'accompagner d'un nouveau ?v= dans les pages,
 #    sinon les visiteurs gardent l'ancien fichier jusqu'à un an.
