@@ -294,15 +294,15 @@ Cabinet Ophtalife · Boulogne-Billancourt
 
 #### Quel rendez-vous choisir sur Doctolib ?
 
-Chaque lien ouvre directement la bonne rubrique de la prise de rendez-vous du Dr Majoulet.
-
-- [Rétine et injections](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400139) : DMLA, diabète, occlusion veineuse, injection intravitréenne, OCT, avis de chirurgie de la rétine.
-- [Cataracte](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400138) : première consultation, avis chirurgical, suivi.
-- [Glaucome](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400141) : consultation de glaucome, OCT.
-- [Laser](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400187) : capsulotomie, trabéculoplastie SLT, iridotomie, laser de la rétine.
-- [Consultation d’ophtalmologie](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400137) : première consultation ou suivi, lunettes et lentilles, enfant, sécheresse oculaire et lumière pulsée (IPL), urgence.
-
 Voile noir ou baisse brutale de la vision : appelez le jour même ([01 84 19 11 66](tel:+33184191166) ; hors horaires, urgences hospitalières). Éclairs ou corps flottants récents : créneau sous 24-48 h.
+
+Pour un rendez-vous programmé, chaque lien ouvre directement la bonne rubrique de la prise de rendez-vous du Dr Majoulet.
+
+- [Rendez-vous rétine et injections](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400139) : DMLA, diabète, occlusion veineuse, injection intravitréenne, OCT, avis de chirurgie de la rétine.
+- [Rendez-vous cataracte](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400138) : première consultation, avis chirurgical, suivi.
+- [Rendez-vous glaucome](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400141) : consultation de glaucome, OCT.
+- [Rendez-vous laser](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400187) : capsulotomie, trabéculoplastie SLT, iridotomie, laser de la rétine.
+- [Consultation d’ophtalmologie](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400137) : première consultation ou suivi, lunettes et lentilles, enfant, sécheresse oculaire et lumière pulsée (IPL), urgence.
 
 #### Un avis spécialisé sur votre rétine
 
@@ -4185,7 +4185,7 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 
 Pour un bilan de rétinopathie diabétique, une suspicion de déchirure rétinienne (éclairs, corps flottants), ou une séance de laser programmée :
 
-[Rendez-vous Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400187) [01 84 19 11 66](tel:+33184191166)
+[Rendez-vous Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400137&visit_motive_category_ids%5B%5D=400187) [01 84 19 11 66](tel:+33184191166)
 
 ##### Auteur et révision médicale
 

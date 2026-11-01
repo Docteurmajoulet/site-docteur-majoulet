@@ -137,6 +137,13 @@ def check(root):
     errs, warns = [], []
     E = lambda s: errs.append(s); W = lambda s: warns.append(s)
     pages = {os.path.basename(p): Page(p) for p in sorted(glob.glob(os.path.join(root, '*.html')))}
+    # TECH69AK-2026-11-01 : carte des liens Doctolib (fiche → catégories), cohérente avec les pages et les catégories relevées
+    _rdv = json.load(open(os.path.join(root, '_tests', 'doctolib_motifs.json'), encoding='utf-8'))
+    for _s, _ids in _rdv['pages'].items():
+        if _s + '.html' not in pages: E(f'_tests/doctolib_motifs.json : fiche inconnue « {_s} » (TECH69AK)')
+        if not _ids or any(str(_i) not in _rdv['categories'] for _i in _ids): E(f'_tests/doctolib_motifs.json : catégorie inconnue pour « {_s} » (TECH69AK)')
+    for _s in _rdv['sans_motif']:
+        if _s + '.html' not in pages: E(f'_tests/doctolib_motifs.json : fiche « sans_motif » inconnue « {_s} » (TECH69AK)')
     if not pages: return ['aucune page HTML dans ' + root], []
     exists = lambda rel: os.path.exists(os.path.join(root, rel.lstrip('/')))
 
@@ -363,23 +370,26 @@ def check(root):
         # 29/10). L’ancienne forme abrégée était restée dans le menu mobile, les encadrés d’urgence et /urgences après la correction de midi.
         if re.search(r'\blun, mer, jeu\b|\bmar, ven, sam\b', t):
             E(f'{name} : anciens horaires du cabinet (« lun, mer, jeu … mar, ven, sam ») → du lundi au jeudi 9 h-20 h, vendredi et samedi 9 h-18 h (TECH69AJ)')
-        # TECH69AK-2026-11-01 : rendez-vous au bon motif. Les boutons Doctolib mènent au début de la prise de rendez-vous du
-        # cabinet (lieu practice-649140), avec au plus des catégories connues (relevées le 01/11) ; le profil seul reste pour les honoraires.
-        _dl = 'https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris'
-        for _a in re.findall(r'<a [^>]*href="' + re.escape(_dl) + r'[^"]*"[^>]*>', t):
+        # TECH69AK-2026-11-01 : rendez-vous au bon motif (maquette du 01/11, carte à valider). Chaque lien Doctolib de la page suit
+        # _tests/doctolib_motifs.json : honoraires → profil ; menu et en-tête → début de la prise de rendez-vous ; guide de /contact
+        # (data-rdv-guide) → une catégorie connue ; fiches « sans_motif » ou hors carte → début ; « Créneau urgence » → motif
+        # « Urgence » ; autres boutons → les catégories de la fiche. Relecture du 01/11 : l'ancienne garde laissait passer une
+        # catégorie fausse mais connue, ou deux boutons différents sur une même fiche.
+        _slug, _deb = name[:-5], _rdv['debut'].replace('&', '&amp;')
+        for _m in re.finditer(r'(<a [^>]*href="' + re.escape(_rdv['profil']) + r'(?:/booking\?[^"]*)?"[^>]*>)(.*?)</a>', t, re.S):
+            _a, _txt = _m.group(1), _m.group(2)
             _h = re.search(r'href="([^"]*)"', _a).group(1)
-            if _h == _dl:
-                if re.search(r'class="[^"]*(?:sticky-doctolib|btn-rdv|btn-alert-rdv|drawer-rdv|nav-cta|hv-btn|cta-line-link)', _a):
-                    E(f'{name} : bouton de rendez-vous vers le profil Doctolib au lieu de la prise de rendez-vous (TECH69AK)')
+            _lib = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', _txt))).strip()[:40]
+            if 'data-rdv-guide' in _a:
+                _c = re.fullmatch(re.escape(_deb) + r'&amp;visit_motive_category_ids%5B%5D=(\d+)', _h)
+                if not _c or _c.group(1) not in _rdv['categories']: E(f'{name} : lien « {_lib} » du guide hors des catégories Doctolib connues (TECH69AK)')
                 continue
-            _m = re.fullmatch(re.escape(_dl) + r'/booking\?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false((?:&amp;visit_motive_category_ids%5B%5D=\d+)*|&amp;vmids%5B%5D=13767008)', _h)
-            if not _m: E(f'{name} : lien Doctolib mal formé « {_h[:110]} » (TECH69AK)'); continue
-            _inconnues = set(re.findall(r'visit_motive_category_ids%5B%5D=(\d+)', _m.group(1))) - {'400137', '400138', '400139', '400141', '400187'}
-            if _inconnues: E(f'{name} : catégorie Doctolib inconnue {sorted(_inconnues)} (TECH69AK)')
-        # « Créneau urgence sur Doctolib » ouvre le seul motif « Urgence » (id 13767008), pas une liste de catégories
-        for _a, _txt in re.findall(r'(<a [^>]*href="' + re.escape(_dl) + r'[^"]*"[^>]*>)(.*?)</a>', t, re.S):
-            if 'Créneau urgence' in _txt and 'vmids%5B%5D=13767008' not in _a:
-                E(f'{name} : « Créneau urgence sur Doctolib » ne mène pas au motif « Urgence » (TECH69AK)')
+            if re.search(r'honoraires|fiche Doctolib', _txt + t[max(0, _m.start() - 200):_m.start()]): _att = _rdv['profil']
+            elif re.search(r'class="[^"]*\b(?:drawer-rdv|nav-cta)\b', _a): _att = _deb
+            elif _slug in _rdv['sans_motif'] or _slug not in _rdv['pages']: _att = _deb
+            elif 'Créneau urgence' in _txt: _att = _deb + f"&amp;vmids%5B%5D={_rdv['motif_urgence']}"
+            else: _att = _deb + ''.join(f'&amp;visit_motive_category_ids%5B%5D={i}' for i in _rdv['pages'][_slug])
+            if _h != _att: E(f'{name} : lien Doctolib « {_lib} » → « …{_h[len(_rdv["profil"]):][-70:]} », attendu « …{_att[len(_rdv["profil"]):][-70:]} » (carte _tests/doctolib_motifs.json, TECH69AK)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
