@@ -194,6 +194,29 @@ def check(root):
         _n = int.from_bytes(_ico[4:6], 'little') if _ico[:4] == b'\x00\x00\x01\x00' else 0
         _sizes = {(_ico[6 + 16 * i] or 256, _ico[7 + 16 * i] or 256) for i in range(_n)} if len(_ico) >= 6 + 16 * _n else set()
         if not {(16, 16), (32, 32)} <= _sizes: E(f'favicon.ico : attendu un ICO contenant 16 et 32 px, trouvé {sorted(_sizes)}')
+
+    # ---- TECH69AN-2026-11-16 : icône du site = visage du portrait de l'accueil (choix du 16/11, option A), à la place du
+    # monogramme « DM ». Google affiche l'icône à côté du nom du site ; il la lit sur l'accueil et recommande plus de 48 px.
+    # Chaque page déclare les mêmes icônes, chaque fichier existe et a la taille annoncée ; plus de favicon.svg (le « DM »).
+    # Les PNG sont servis « immutable » un an : changer d'image impose de changer de nom de fichier.
+    _icones = [l.strip() for l in re.findall(r'^[ \t]*<link rel="(?:icon|apple-touch-icon)"[^>]*>$', open(os.path.join(root, 'index.html'), encoding='utf-8').read(), re.M)]
+    _attendu = ['<link rel="icon" type="image/png" sizes="96x96" href="/favicon-portrait-96.png">',
+                '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-portrait-32.png">',
+                '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-portrait-16.png">',
+                '<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-portrait.png">']
+    if _icones != _attendu: E(f'index.html : icônes déclarées inattendues {_icones} — TECH69AN')
+    for _p in pages:
+        _h = open(os.path.join(root, _p), encoding='utf-8').read()
+        if [l.strip() for l in re.findall(r'^[ \t]*<link rel="(?:icon|apple-touch-icon)"[^>]*>$', _h, re.M)] != _attendu:
+            E(f'{_p} : icônes différentes de celles de l’accueil — TECH69AN')
+        if 'favicon.svg' in _h: E(f'{_p} : référence à favicon.svg (ancien monogramme « DM ») — TECH69AN')
+    for _l in _attendu + ['href="/apple-touch-icon.png" sizes="180x180"', 'href="/android-chrome-portrait-192.png" sizes="192x192"', 'href="/android-chrome-portrait-512.png" sizes="512x512"']:
+        _f = re.search(r'href="(/[^"]+)"', _l).group(1); _t = int(re.search(r'sizes="(\d+)x', _l).group(1))
+        if not exists(_f): E(f'icône absente : {_f} — TECH69AN'); continue
+        _b = open(os.path.join(root, _f.lstrip('/')), 'rb').read(32)
+        if _b[:8] != b'\x89PNG\r\n\x1a\n' or (int.from_bytes(_b[16:20], 'big'), int.from_bytes(_b[20:24], 'big')) != (_t, _t):
+            E(f'{_f} : attendu un PNG de {_t} × {_t} px — TECH69AN')
+    if exists('favicon.svg'): E('favicon.svg (monogramme « DM ») encore présent — TECH69AN')
     _pp = re.search(r'^\s*Permissions-Policy:\s*(.+)$', headers, re.M)
     if not _pp or 'browsing-topics=()' not in _pp.group(1): E('_headers : Permissions-Policy sans browsing-topics=() (API Topics de Chrome non refusée)')
     if not re.search(r'^/favicon\.ico\n  Cache-Control: public, max-age=\d+\n', headers, re.M): E('_headers : bloc /favicon.ico (Cache-Control) absent')

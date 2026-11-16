@@ -206,6 +206,13 @@ aux outils qui le demandent à l'aveugle), `Permissions-Policy` refuse `browsing
 d'Amsler déclare sa page `/grille-amsler` comme canonique (en-tête `Link`) : `check_static.py` vérifie le fichier ICO, la politique et
 les deux blocs de `_headers` ; `prod_check.py` contrôle `/favicon.ico`, la politique servie et l'en-tête `Link` du PDF en production.
 
+Depuis le 16/11/2026 (TECH69AN), l'icône du site est le visage du portrait de l'accueil (recadré dans `img/dr-majoulet-hero3-1080.jpg`),
+à la place du monogramme « DM » : c'est elle que Google affiche à côté du nom du site. Fichiers `favicon-portrait-16/32/96.png`,
+`apple-touch-icon-portrait.png` (et `apple-touch-icon.png`, demandé à l'aveugle par Safari), `android-chrome-portrait-192/512.png`
+(manifeste), `favicon.ico` (16, 32, 48 px). `check_static.py` vérifie que les 49 pages déclarent les mêmes quatre icônes, que chaque PNG
+existe à la taille annoncée et que `favicon.svg` a disparu. Les PNG sont servis `immutable` pendant un an : une nouvelle image impose un
+nouveau nom de fichier.
+
 Depuis le tour 18 (TECH18AO-2026-09-15), `browser.mjs` force `:focus-visible` (CDP) sur chaque élément focalisable visible — toutes les
 pages à 1 366 px, quatre pages à 390 px — et compare deux captures de la zone : quelque chose doit changer, et un contour déclaré doit
 contraster à 3:1 au moins avec les pixels qui l'entourent (WCAG 2.2, 1.4.11). Le CTA « Prendre rendez-vous » des fiches était
