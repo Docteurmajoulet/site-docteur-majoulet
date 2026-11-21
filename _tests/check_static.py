@@ -1150,7 +1150,8 @@ def check(root):
     # ---- TECH69AP-2026-11-21 : le numéro du cabinet ne s'affiche qu'aux heures d'ouverture (demande du Dr Majoulet, 21/11).
     # main.css masque, cabinet fermé, tout lien tel: du cabinet et tout [data-tel-cabinet]. Pour qu'aucune phrase ne reste bancale :
     # (a) un lien d'appel sans classe (numéro écrit dans une phrase) est toujours dans un élément [data-tel-cabinet] ;
-    # (b) le numéro n'est jamais écrit hors d'un lien d'appel, sauf le pied imprimé des frises et les mentions légales ;
+    # (b) hors d'un lien d'appel, le numéro n'est écrit que dans un élément [data-tel-cabinet] (pied des frises : masqué à l'écran cabinet
+    #     fermé, gardé à l'impression) — les mentions légales exceptées (identification de l'éditeur) ;
     # (c) les numéros des urgences 24h/24 que nav.js affiche à la place sont ceux du bloc [data-urgences-ferme] de /urgences,
     #     qui porte aussi la consigne du 15.
     _num69ap = r'84(?:&nbsp;|\s| )19(?:&nbsp;|\s| )11(?:&nbsp;|\s| )66'
@@ -1160,10 +1161,9 @@ def check(root):
         _hors = re.sub(r'<(span|p)\b[^>]*\bdata-tel-cabinet\b[^>]*>.*?</\1>', '', _b, flags=re.S)
         _nus = re.findall(r'<a href="tel:\+33184191166">', _hors)
         if _nus: E(f'{name} : {len(_nus)} numéro(s) du cabinet dans une phrase, hors de tout élément [data-tel-cabinet] (il resterait une phrase bancale cabinet fermé) — TECH69AP')
-        _texte = re.sub(r'<a\b[^>]*href="tel:\+33184191166"[^>]*>.*?</a>', '', _b, flags=re.S)
-        _texte = re.sub(r'<p class="frise-pied">.*?</p>', '', _texte, flags=re.S)
+        _texte = re.sub(r'<a\b[^>]*href="tel:\+33184191166"[^>]*>.*?</a>', '', _hors, flags=re.S)
         _texte = re.sub(r'\baria-label="[^"]*"', '', _texte)
-        if name != 'mentions-legales.html' and re.search(_num69ap, _texte): E(f'{name} : numéro du cabinet écrit hors d’un lien d’appel (il resterait affiché cabinet fermé) — TECH69AP')
+        if name != 'mentions-legales.html' and re.search(_num69ap, _texte): E(f'{name} : numéro du cabinet écrit hors d’un lien d’appel et hors de tout élément [data-tel-cabinet] (il resterait affiché cabinet fermé) — TECH69AP')
     if not re.search(r'@media screen\s*\{\s*body\.cabinet-ferme a\[href="tel:\+33184191166"\],\s*body\.cabinet-ferme \[data-tel-cabinet\],\s*body\.cabinet-ferme \[data-si-ouvert\]\s*\{\s*display:\s*none !important;', css_txt):
         E('main.css : règle « cabinet fermé » absente (liens d’appel du cabinet, [data-tel-cabinet] et [data-si-ouvert] masqués à l’écran) — TECH69AP')
     _u69ap = pages.get('urgences-ophtalmologiques.html')
