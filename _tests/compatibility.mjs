@@ -93,7 +93,9 @@ try {
                 await popup.waitForLoadState('domcontentloaded', { timeout: 10000 });
                 const destination = new URL(popup.url());
                 assert.equal(destination.hostname, 'www.doctolib.fr');
-                assert.equal(destination.pathname, '/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris');
+                // TECH69AK-2026-11-01 : le menu ouvre le début de la prise de rendez-vous du cabinet (plus le profil)
+                assert.equal(destination.pathname, '/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking');
+                assert.equal(destination.searchParams.get('pid'), 'practice-649140');
               } finally { await popup.close(); }
               assert.equal(await toggle.getAttribute('aria-expanded'), 'false');
               assert.equal(await page.locator('main').evaluate(e => e.inert), false);

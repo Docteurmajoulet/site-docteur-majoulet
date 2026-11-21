@@ -137,6 +137,13 @@ def check(root):
     errs, warns = [], []
     E = lambda s: errs.append(s); W = lambda s: warns.append(s)
     pages = {os.path.basename(p): Page(p) for p in sorted(glob.glob(os.path.join(root, '*.html')))}
+    # TECH69AK-2026-11-01 : carte des liens Doctolib (fiche → catégories), cohérente avec les pages et les catégories relevées
+    _rdv = json.load(open(os.path.join(root, '_tests', 'doctolib_motifs.json'), encoding='utf-8'))
+    for _s, _ids in _rdv['pages'].items():
+        if _s + '.html' not in pages: E(f'_tests/doctolib_motifs.json : fiche inconnue « {_s} » (TECH69AK)')
+        if not _ids or any(str(_i) not in _rdv['categories'] for _i in _ids): E(f'_tests/doctolib_motifs.json : catégorie inconnue pour « {_s} » (TECH69AK)')
+    for _s in _rdv['sans_motif']:
+        if _s + '.html' not in pages: E(f'_tests/doctolib_motifs.json : fiche « sans_motif » inconnue « {_s} » (TECH69AK)')
     if not pages: return ['aucune page HTML dans ' + root], []
     exists = lambda rel: os.path.exists(os.path.join(root, rel.lstrip('/')))
 
@@ -386,6 +393,36 @@ def check(root):
         # 29/10). L’ancienne forme abrégée était restée dans le menu mobile, les encadrés d’urgence et /urgences après la correction de midi.
         if re.search(r'\blun, mer, jeu\b|\bmar, ven, sam\b', t):
             E(f'{name} : anciens horaires du cabinet (« lun, mer, jeu … mar, ven, sam ») → du lundi au jeudi 9 h-20 h, vendredi et samedi 9 h-18 h (TECH69AJ)')
+        # TECH69AK-2026-11-01 : rendez-vous au bon motif (maquette du 01/11, carte à valider). Chaque lien Doctolib de la page suit
+        # _tests/doctolib_motifs.json : honoraires → profil ; menu et en-tête → début de la prise de rendez-vous ; guide de /contact
+        # (data-rdv-guide) → une catégorie connue ; fiches « sans_motif » ou hors carte → début ; « Créneau urgence » → motif
+        # « Urgence » ; autres boutons → les catégories de la fiche. Relecture du 01/11 : l'ancienne garde laissait passer une
+        # catégorie fausse mais connue, ou deux boutons différents sur une même fiche.
+        _slug, _deb = name[:-5], _rdv['debut'].replace('&', '&amp;')
+        for _m in re.finditer(r'(<a [^>]*href="' + re.escape(_rdv['profil']) + r'(?:/booking\?[^"]*)?"[^>]*>)(.*?)</a>', t, re.S):
+            _a, _txt = _m.group(1), _m.group(2)
+            _h = re.search(r'href="([^"]*)"', _a).group(1)
+            _lib = re.sub(r'\s+', ' ', html.unescape(re.sub(r'<[^>]+>', '', _txt))).strip()[:40]
+            if 'data-rdv-guide' in _a:
+                _c = re.fullmatch(re.escape(_deb) + r'&amp;visit_motive_category_ids%5B%5D=(\d+)', _h)
+                if not _c or _c.group(1) not in _rdv['categories']: E(f'{name} : lien « {_lib} » du guide hors des catégories Doctolib connues (TECH69AK)')
+                continue
+            if re.search(r'honoraires|fiche Doctolib', _txt + t[max(0, _m.start() - 200):_m.start()]): _att = _rdv['profil']
+            elif re.search(r'class="[^"]*\b(?:drawer-rdv|nav-cta)\b', _a): _att = _deb
+            elif _slug in _rdv['sans_motif'] or _slug not in _rdv['pages']: _att = _deb
+            elif 'Créneau urgence' in _txt: _att = _deb + f"&amp;vmids%5B%5D={_rdv['motif_urgence']}"
+            else: _att = _deb + ''.join(f'&amp;visit_motive_category_ids%5B%5D={i}' for i in _rdv['pages'][_slug])
+            if _h != _att: E(f'{name} : lien Doctolib « {_lib} » → « …{_h[len(_rdv["profil"]):][-70:]} », attendu « …{_att[len(_rdv["profil"]):][-70:]} » (carte _tests/doctolib_motifs.json, TECH69AK)')
+        # TECH69AO-2026-11-21 : encadrés d’alerte à deux niveaux (décision du Dr Majoulet du 21/11). « Appeler le cabinet » seul en tête,
+        # avant « voile noir → le jour même » ; le bouton Doctolib « Créneau urgence » (motif Urgence, premier créneau en ligne souvent
+        # à plusieurs jours) suit le dernier niveau, « sous 24 à 48 h », jamais avant le niveau du jour même.
+        for _bx in re.finditer(r'<div class="alert-urgence alert-urgence--niveaux">(.*?)</div>', t, re.S):
+            _b = _bx.group(1)
+            _n1, _nz = _b.find('class="alert-niveau"'), _b.rfind('class="alert-niveau"')
+            _tel, _rv = _b.find('btn-alert-tel'), _b.find('btn-alert-rdv')
+            if _n1 == -1: continue
+            if _tel == -1 or _tel > _n1: E(f'{name} : encadré d’alerte à niveaux sans « Appeler le cabinet » en tête (TECH69AO)')
+            if _rv != -1 and _rv < _nz: E(f'{name} : bouton Doctolib de l’encadré d’alerte placé avant le niveau « sous 24 à 48 h » — il le suit (TECH69AO)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
@@ -430,6 +467,8 @@ def check(root):
                 if 'href="tel:+33184191166"' not in b or 'class="sticky-urgences" href="#ou-consulter-en-urgence-en-ile-de-france"' not in b:
                     E(f'{name} : barre fixe des urgences incomplète (téléphone du cabinet + « Urgences 24h/24 ») — TECH69D')
                 continue
+            # TECH69AK-2026-11-01 : le bouton Doctolib de la barre fixe mène à la catégorie de la fiche — seule différence admise
+            if key == 'barre fixe': b = re.sub(r'&amp;visit_motive_category_ids%5B%5D=\d+', '', b)
             chrome.setdefault(key, {}).setdefault(b, []).append(name)
         bc = re.search(r'<nav class="breadcrumb-mini"[^>]*>(.*?)</nav>', t, re.S)
         if bc:
