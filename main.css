@@ -7448,7 +7448,7 @@ body.page-index.page-index #contact .cv12-action .btn-doctolib {
 body.page-index.page-index .hero-v3 .hero-buttons .btn-primary,
 body.page-index.page-index #contact .cv12-action .btn-doctolib {
     background: var(--cuivre-rdv);
-    border: 0;
+    border: 1.5px solid transparent;   /* visible en contraste élevé, où le fond disparaît ; même épaisseur que le bouton voisin */
     color: #fff;
 }
 body.page-index.page-index .hero-v3 .hero-buttons .btn-outline {
