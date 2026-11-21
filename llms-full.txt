@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-29
+Dernière mise à jour : 2026-10-30
 
 ## Identité et coordonnées
 
@@ -2051,7 +2051,7 @@ Dû à une accumulation de liquide sous la rétine sans déchirure. Il peut comp
 
 #### Facteurs de risque
 
-- **Myopie forte** (> -6 dioptries) : risque multiplié par 5 à 10
+- **Myopie forte** (au moins 6 dioptries) : risque multiplié par 5 à 10
 - **Antécédent de chirurgie de la cataracte** (pseudophaquie)
 - **Traumatisme oculaire** (choc, plaie)
 - **Antécédent personnel** ou **familial** de décollement de rétine
@@ -2342,6 +2342,10 @@ Chez un patient phaque de plus de 50 ans, la **cataracte** progresse dans plus d
 ##### Si je ne me fais pas opérer, la vision va-t-elle continuer à baisser ?
 
 L’évolution d’une MER peut être lente et rester stable pendant des années, ou au contraire progresser sur plusieurs mois. Un **suivi OCT tous les 6 mois** permet de documenter l’évolution (épaisseur fovéolaire, apparition d’*ectopic inner foveal layers*, apparition de kystes). Une chirurgie trop tardive, sur une rétine très désorganisée, donne un résultat fonctionnel moins favorable — d’où l’importance de ne pas tarder lorsque la gêne s’installe.
+
+##### Quand peut-on reprendre la voiture après l’opération d’une membrane épirétinienne ?
+
+**Après le contrôle d’une semaine (J7), pas avant.** À ce rendez-vous, le Dr Majoulet mesure votre vision et vous dit si elle vous permet de reprendre le volant. La réglementation du permis de conduire ([arrêté du 28 mars 2022 sur les affections médicales et le permis de conduire](https://www.legifrance.gouv.fr/loda/id/JORFTEXT000045464094)) demande, pour le permis B, une acuité visuelle d’au moins 5/10 avec les deux yeux ouverts, lunettes comprises, et un champ de vision horizontal d’au moins 120°. Le médecin informe ; il n’autorise ni n’interdit. C’est au conducteur de s’assurer, avant de prendre le volant, qu’il remplit ces conditions (article R412-6 du Code de la route).
 
 ##### La chirurgie est-elle prise en charge par la Sécurité sociale ?
 
@@ -2885,7 +2889,7 @@ Les signes évocateurs d’une déchirure sont :
 
 #### Facteurs de risque
 
-- **Myopie forte** (> -6 dioptries) : risque multiplié par 5 à 10.
+- **Myopie forte** (au moins 6 dioptries) : risque multiplié par 5 à 10.
 - **Antécédent personnel** de décollement de rétine ou de déchirure.
 - **Antécédents familiaux** de décollement rétinien.
 - **Chirurgie intraoculaire récente** (notamment de la cataracte).
@@ -3023,7 +3027,7 @@ Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En deh
 
 #### Facteurs de risque de déchirure rétinienne lors d’un DPV
 
-- Myopie forte (> −6 D).
+- Myopie forte (au moins 6 dioptries).
 - Antécédent personnel de décollement de rétine ou de déchirure.
 - Antécédent familial de décollement de rétine.
 - Chirurgie oculaire récente (cataracte surtout).
@@ -3160,7 +3164,7 @@ Oui, dans la grande majorité des cas, le second œil fait un DPV dans les 1 à 
 
 ##### J’ai un DPV et je suis myope : suis-je à risque ?
 
-Oui, la myopie (surtout > -6 D) est un facteur de risque de déchirure rétinienne. Un examen du fond d’œil dilaté soigneux est indispensable, et un suivi plus rapproché est recommandé. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) et [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
+Oui, la myopie (surtout à partir de 6 dioptries) est un facteur de risque de déchirure rétinienne. Un examen du fond d’œil dilaté soigneux est indispensable, et un suivi plus rapproché est recommandé. Voir [Myopie forte](https://docteurmajoulet.com/myopie-forte) et [Décollement de rétine](https://docteurmajoulet.com/decollement-retine).
 
 ##### Auteur et révision médicale
 
@@ -3699,7 +3703,7 @@ L’intervention est indolore. Le deuxième œil est opéré habituellement 1 à
 
 - **Collyres postopératoires** : antibiotique + anti-inflammatoire pendant 1 mois.
 - **Protection oculaire** : coque nocturne 5 à 7 nuits ; lunettes de soleil en extérieur.
-- **Récupération visuelle** : nette amélioration dès J1-J3, stabilité complète à 4-6 semaines.
+- **Récupération visuelle** : nette amélioration dès les premiers jours, stabilité complète à 4-6 semaines.
 - **Activités** : arrêt de travail d’une semaine, si nécessaire ; conduite après le contrôle d’une semaine, si la vision le permet ; sport sans impact à partir de 1 semaine, piscine et sports de contact à partir de 1 mois.
 - **Lunettes définitives** : prescrites après stabilisation, en général vers la 4e semaine.
 
@@ -3907,7 +3911,7 @@ Les contre-indications (absolues ou relatives) sont aussi importantes à connaî
 - **Topographie cornéenne** (Pentacam, Galilei) pour exclure un astigmatisme irrégulier et mesurer l’astigmatisme postérieur.
 - **OCT maculaire** systématique — examen *non négociable* avant tout implant multifocal.
 - **Pupillométrie** (diamètre photopique/mésopique) : utile pour prédire la tolérance aux halos.
-- **Aberrométrie** et analyse de la qualité optique (HD Analyzer, OQAS) en cas de doute.
+- **Aberrométrie** et analyse de la qualité optique en cas de doute.
 - Consultation dédiée longue, avec simulation de la vision multifocale et discussion explicite des compromis.
 
 #### Déroulé de l’intervention
@@ -3955,7 +3959,7 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 29 octobre 2026.
 
 ### Cataracte secondaire
 
@@ -4301,6 +4305,10 @@ Le traitement de la rétinopathie diabétique dépend de son stade et suit les r
 
 Le traitement de **première intention** est l’**injection intravitréenne d’anti-VEGF** (aflibercept, ranibizumab, faricimab, brolucizumab). En cas de réponse insuffisante, un implant intravitréen de dexaméthasone (Ozurdex®) peut être utilisé, notamment chez les patients pseudophaques ou en cas de contre-indication aux injections mensuelles. Le laser focal a un rôle devenu accessoire.
 
+##### Combien de temps dure un rendez-vous d’injection au cabinet ?
+
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même dure environ 5 minutes.
+
 ##### Qu’est-ce que le laser panrétinien (PPR) ?
 
 Il s’agit d’une **photocoagulation au laser de la rétine périphérique ischémique**, réalisée en plusieurs séances au cabinet sous anesthésie topique. Son but est d’éliminer les zones de rétine non perfusée qui produisent les facteurs de croissance (VEGF) responsables des néovaisseaux. Il traite les formes proliférantes et prévient les complications hémorragiques et tractionnelles.
@@ -4434,6 +4442,10 @@ Un **bilan cardiovasculaire complet** : pression artérielle, bilan lipidique, g
 
 Il est difficile de donner un chiffre exact : le traitement est adapté à chaque patient selon la réponse de l’œdème à l’OCT. Après une phase d’induction (habituellement 3 injections mensuelles), le schéma « Treat & Extend » permet d’espacer progressivement les injections. Le traitement dure souvent **plusieurs années** ; dans une étude de suivi à 4 ans, environ la moitié des patients n’avaient plus besoin d’injection.
 
+##### Combien de temps dure un rendez-vous d’injection au cabinet ?
+
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même dure environ 5 minutes.
+
 ##### Peut-on avoir une occlusion veineuse sur l’autre œil ?
 
 Le risque d’occlusion de l’autre œil est d’environ 8 % à 2 ans et 12 % à 4 ans dans la plus grande série publiée. La prise en charge des facteurs de risque vasculaires (HTA, diabète, cholestérol, tabac, apnées du sommeil) est indispensable pour la santé générale ; son effet sur ce risque n’a pas été mesuré. Une surveillance régulière de l’autre œil est recommandée.
@@ -4442,7 +4454,7 @@ Le risque d’occlusion de l’autre œil est d’environ 8 % à 2 ans et 12 % �
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations EURETINA sur les occlusions veineuses rétiniennes (2019)](https://doi.org/10.1159/000502041). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations EURETINA sur les occlusions veineuses rétiniennes (2019)](https://doi.org/10.1159/000502041). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4801,7 +4813,7 @@ Staphylome, néovaisseaux myopiques, fovéoschisis, risque de décollement
 
 La **myopie forte** est définie par une myopie **d’au moins 6 dioptries** ou une **longueur axiale d’au moins 26 mm**. On parle de myopie pathologique quand des lésions apparaissent au fond d’œil (staphylome, atrophie, néovaisseaux). La myopie forte concerne aujourd’hui **2 à 3 % de la population française**, et sa prévalence augmente fortement dans le monde, notamment en Asie. Au-delà du simple défaut réfractif, la myopie forte est un **facteur de risque majeur de complications rétiniennes** qui justifie un **suivi ophtalmologique spécialisé annuel**.
 
-- **≥ -6 D** — Seuil de myopie forte
+- **≥ 6 D** — Seuil de myopie forte
 - **≥ 26 mm** — Longueur axiale pathologique
 - **× 5 à 10** — Risque de décollement de rétine
 
@@ -4851,7 +4863,7 @@ La myopie forte augmente le risque de glaucome primitif à angle ouvert par un f
 
 #### Bilan et suivi du myope fort
 
-Un **bilan annuel** est recommandé chez tout patient ayant une myopie ≥ -6 D ou une longueur axiale ≥ 26 mm. Il comprend :
+Un **bilan annuel** est recommandé chez tout patient ayant une myopie d’au moins 6 dioptries ou une longueur axiale ≥ 26 mm. Il comprend :
 
 - **Mesure de la longueur axiale** par biométrie optique (IOL Master).
 - **Rétinographie grand champ couleur** et en autofluorescence.
@@ -5006,6 +5018,10 @@ La surveillance de l’**œil adelphe** (sain) est également essentielle : le r
 
 Le protocole habituel est **Pro Re Nata (PRN)** : une injection initiale, puis injections de re-traitement uniquement en cas de signes d’activité à l’OCT mensuel. En moyenne, les patients reçoivent **2 à 4 injections la première année**, puis moins les années suivantes. Certains n’ont besoin d’aucune ré-injection au-delà de la première année.
 
+##### Combien de temps dure un rendez-vous d’injection au cabinet ?
+
+Le rendez-vous d’injection est un créneau de **20 minutes**, mais prévoyez **environ 30 à 45 minutes** sur place. Le geste lui-même dure environ 5 minutes.
+
 ##### Quelle est l’urgence du traitement ?
 
 **Semi-urgente.** L’objectif est de commencer les injections dans les **1 à 2 semaines** suivant le diagnostic. Un retard réduit les chances de récupération visuelle complète car l’aire maculaire, plus petite chez le myope fort, tolère mal les hémorragies et l’exsudation prolongées. Tout signe aigu (métamorphopsies, scotome central) doit amener à consulter rapidement.
@@ -5022,7 +5038,7 @@ Oui. Le risque de **bilatéralisation** existe (environ 30 % à 5-10 ans), surto
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5797,7 +5813,7 @@ Dans un œil emmétrope (sans correction), les rayons lumineux parallèles arriv
 |---|---|---|
 | Faible | −0,25 à −3 D | Correction pour la conduite, le cinéma |
 | Moyenne | −3 à −6 D | Correction nécessaire en permanence |
-| Forte | > −6 D ou longueur axiale ≥ 26 mm | Suivi rétinien annuel indispensable (voir la fiche [myopie forte](https://docteurmajoulet.com/myopie-forte)) |
+| Forte | Au moins 6 D, ou longueur axiale ≥ 26 mm | Suivi rétinien annuel indispensable (voir la fiche [myopie forte](https://docteurmajoulet.com/myopie-forte)) |
 
 #### Moyens de correction
 
@@ -5859,7 +5875,7 @@ Oui. Les fortes myopies se corrigent en lunettes à verres de haut indice, en le
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 27 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
 
 ### Hypermétropie
 
