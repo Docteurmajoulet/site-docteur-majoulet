@@ -886,7 +886,8 @@ try {
                   if (bot - top + 1 < 44) out.push(`${a.getAttribute('href')} : ${Math.round(bot - top + 1)} px de zone tactile (< 44)`);
                 }
                 const barre = document.querySelector('.sticky-rdv');
-                const attendue = slug === 'urgences-ophtalmologiques' || !!document.querySelector('.alert-urgence a[href="tel:+33184191166"]');
+                const attendue = slug === 'urgences-ophtalmologiques' || (slug !== 'index' && !!document.querySelector('.alert-urgence a[href="tel:+33184191166"]'));   // l'accueil garde le seul rendez-vous en ligne
+                if (slug === 'index' && barre && barre.querySelector('.sticky-urgences')) out.push('barre fixe de l’accueil avec « Urgences 24h/24 » (elle garde le seul rendez-vous en ligne, décision du 29/10)');
                 if (barre && getComputedStyle(barre).display !== 'none' && attendue) {
                   const u = barre.querySelector('.sticky-urgences');
                   if (!u || !rendu(u)) out.push('barre fixe sans « Urgences 24h/24 »');

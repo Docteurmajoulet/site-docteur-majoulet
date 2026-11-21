@@ -8927,6 +8927,15 @@ body.cabinet-ferme .sticky-rdv .sticky-tel {
 .sticky-rdv .sticky-urgences[hidden] {
     display: none !important;
 }
+/* Impression : la feuille porte toujours le texte des heures d’ouverture (numéro compris), jamais les variantes « cabinet fermé »,
+   même imprimée un dimanche — sinon les deux variantes d’une même phrase se suivraient. */
+@media print {
+    [data-si-ferme],
+    [data-urgences-ferme],
+    .urgences-ferme {
+        display: none !important;
+    }
+}
 .alert-urgence .urgences-ferme {
     margin: 16px 0 0;
 }

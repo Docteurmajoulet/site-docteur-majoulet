@@ -376,7 +376,7 @@
        l’écran les liens tel: du cabinet et les éléments [data-tel-cabinet] (le numéro avec la ponctuation qui l’entoure) ;
        les éléments [data-si-ferme], masqués par l’attribut hidden dans le HTML, apparaissent ; dans chaque encadré d’alerte
        qui proposait d’appeler le cabinet, les urgences ophtalmologiques 24h/24 de Paris et le 15 prennent la place du
-       bouton d’appel, et la barre fixe de ces pages reçoit « Urgences 24h/24 ». Sur /urgences, le bloc écrit dans la page
+       bouton d’appel, et la barre fixe de ces fiches reçoit « Urgences 24h/24 » (pas celle de l’accueil). Sur /urgences, le bloc écrit dans la page
        ([data-urgences-ferme], TECH69AM) joue ce rôle. Sans JavaScript ou sans Intl : le numéro reste affiché, à côté des
        horaires. Les numéros des hôpitaux sont ceux de /urgences-ophtalmologiques (check_static compare les deux). */
     var URGENCES_PARIS = [
@@ -475,7 +475,8 @@
                 if (actions) { encadre.insertBefore(bloc, actions); } else { encadre.appendChild(bloc); }
                 blocsFerme.push(bloc);
             });
-            if (lienRdv && encadresAppel.length) {
+            /* La barre de l’accueil garde le seul rendez-vous en ligne (décision du 29/10) : « Urgences 24h/24 » ne s’ajoute que sur les fiches */
+            if (lienRdv && encadresAppel.length && !body.classList.contains('page-index')) {
                 stickyUrgences = document.createElement('a');
                 stickyUrgences.className = 'sticky-urgences';
                 stickyUrgences.href = ADRESSE_URGENCES;
