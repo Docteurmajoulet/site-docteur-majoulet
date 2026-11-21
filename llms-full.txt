@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-11-01
+Dernière mise à jour : 2026-11-21
 
 ## Identité et coordonnées
 
@@ -2013,11 +2013,13 @@ Indications maculaires : [recommandations de l’American Academy of Ophthalmolo
 
 Urgence ophtalmologique
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, rideau ou baisse brutale de la vision :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24 — hors Île-de-France, le CHU de votre région.
 
 **Mouches volantes ou éclairs lumineux récents, sans voile :** fond d’œil dilaté **sous 24 à 48 h** pour rechercher une déchirure rétinienne — prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -2850,11 +2852,13 @@ Dernière révision : 19 août 2026 · Dernière mise à jour : 27 octobre 2026.
 
 Consultation sous 24-48 h
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, ombre fixe ou amputation d’un secteur du champ visuel :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24.
 
 **Apparition brutale de nouveaux corps flottants, éclairs lumineux ([phosphènes](https://docteurmajoulet.com/flashs-phosphenes-myodesopsies)) dans la vision latérale, pluie de points noirs ou de filaments rouges, sans voile :** fond d’œil dilaté **sous 24 à 48 h** — ces symptômes peuvent annoncer une **déchirure rétinienne** qui, non traitée, peut évoluer vers un **décollement de rétine** ; prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -3008,11 +3012,13 @@ Le vitré est un gel transparent qui remplit la cavité oculaire. Avec l’âge 
 
 **Toute apparition d’un de ces signes impose une consultation en urgence** (le jour même) avec fond d’œil dilaté.
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, ombre fixe ou amputation d’un secteur du champ visuel :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24.
 
 **Éclairs lumineux répétés, pluie de corps flottants ou de points noirs récents, sans voile :** fond d’œil dilaté **sous 24 à 48 h** — éclairs + corps flottants récents = déchirure rétinienne jusqu’à preuve du contraire ; prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -3111,11 +3117,13 @@ Le vitré adhère normalement à la rétine à plusieurs endroits : autour du ne
 
 Ces symptômes évoquent une **déchirure rétinienne** ou un **décollement de rétine débutant**.
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, ombre fixe ou amputation d’un secteur du champ visuel :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24.
 
 **Pluie soudaine de corps flottants, éclairs lumineux persistants ou filaments rouges (sang), sans voile :** fond d’œil dilaté **sous 24 à 48 h** pour rechercher une déchirure rétinienne compliquant le DPV — prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 

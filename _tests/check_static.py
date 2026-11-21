@@ -390,6 +390,16 @@ def check(root):
             elif 'Créneau urgence' in _txt: _att = _deb + f"&amp;vmids%5B%5D={_rdv['motif_urgence']}"
             else: _att = _deb + ''.join(f'&amp;visit_motive_category_ids%5B%5D={i}' for i in _rdv['pages'][_slug])
             if _h != _att: E(f'{name} : lien Doctolib « {_lib} » → « …{_h[len(_rdv["profil"]):][-70:]} », attendu « …{_att[len(_rdv["profil"]):][-70:]} » (carte _tests/doctolib_motifs.json, TECH69AK)')
+        # TECH69AO-2026-11-21 : encadrés d’alerte à deux niveaux (décision du Dr Majoulet du 21/11). « Appeler le cabinet » seul en tête,
+        # avant « voile noir → le jour même » ; le bouton Doctolib « Créneau urgence » (motif Urgence, premier créneau en ligne souvent
+        # à plusieurs jours) suit le dernier niveau, « sous 24 à 48 h », jamais avant le niveau du jour même.
+        for _bx in re.finditer(r'<div class="alert-urgence alert-urgence--niveaux">(.*?)</div>', t, re.S):
+            _b = _bx.group(1)
+            _n1, _nz = _b.find('class="alert-niveau"'), _b.rfind('class="alert-niveau"')
+            _tel, _rv = _b.find('btn-alert-tel'), _b.find('btn-alert-rdv')
+            if _n1 == -1: continue
+            if _tel == -1 or _tel > _n1: E(f'{name} : encadré d’alerte à niveaux sans « Appeler le cabinet » en tête (TECH69AO)')
+            if _rv != -1 and _rv < _nz: E(f'{name} : bouton Doctolib de l’encadré d’alerte placé avant le niveau « sous 24 à 48 h » — il le suit (TECH69AO)')
         if re.search(r'\b24\s*/\s*7\b', body): E(f'{name} : « 24/7 » (le cabinet n’est pas ouvert 24/7)')
         # TECH6H-2026-09-07 : la FAQ structurée (JSON-LD FAQPage) est exactement la FAQ visible (.qr-block, questions en <h3>)
         for err in faq_jsonld.diverges(t): E(f'{name} : FAQ structurée ≠ FAQ visible — {err} (python3 _tests/faq_jsonld.py --write)')
