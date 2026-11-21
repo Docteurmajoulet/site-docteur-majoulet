@@ -369,7 +369,7 @@ En dehors des heures d’ouverture du cabinet ou en cas d’urgence vitale : **S
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Informations pratiques mises à jour : 1er novembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Informations pratiques mises à jour : 21 novembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Ophtalmologue à Boulogne-Billancourt
 
@@ -653,7 +653,7 @@ L’apparition récente de flashs lumineux ou de nombreux corps flottants justif
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Dernière révision : 19 avril 2026 · Dernière mise à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière révision : 19 avril 2026 · Dernière mise à jour : 21 novembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Publications scientifiques
 
@@ -1164,7 +1164,7 @@ Oui. Une **déformation nouvelle des lignes droites** ou une tache centrale réc
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir de la [fiche mémo de la HAS sur la DMLA (2022)](https://www.has-sante.fr/jcms/p_3383781/fr/degenerescence-maculaire-liee-a-l-age) et des [recommandations EURETINA sur la DMLA néovasculaire (2014)](https://doi.org/10.1136/bjophthalmol-2014-305702). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2157,7 +2157,7 @@ La reprise de la conduite est rediscutée lors de la **consultation de contrôle
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Signes d’alerte et prévention des déchirures : [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2369,7 +2369,7 @@ Oui. La vitrectomie avec pelage de membrane est un acte inscrit à la CCAM, **pr
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la membrane épirétinienne et la traction vitréomaculaire (2025)](https://doi.org/10.1016/j.ophtha.2024.12.019). / Dernière révision : 1er septembre 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2983,7 +2983,7 @@ C’est un signe que l’ophtalmologiste recherche à la lampe à fente : de fin
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 30 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -3077,7 +3077,7 @@ Oui. La **migraine avec aura**, que l’on appelle aussi migraine ophtalmique, d
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023) ; aura migraineuse : [classification internationale des céphalées de l’International Headache Society (ICHD-3, 2018)](https://doi.org/10.1177/0333102417738202). / Dernière révision : 19 août 2026 · Dernière mise à jour : 30 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023) ; aura migraineuse : [classification internationale des céphalées de l’International Headache Society (ICHD-3, 2018)](https://doi.org/10.1177/0333102417738202). / Dernière révision : 19 août 2026 · Dernière mise à jour : 21 novembre 2026.
 
 ### Décollement postérieur du vitré
 
@@ -3209,7 +3209,7 @@ Oui, la myopie (surtout à partir de 6 dioptries) est un facteur de risque de d�
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 21 novembre 2026.
 
 ### Baisse brutale de la vision
 
@@ -3782,7 +3782,7 @@ La chirurgie de la cataracte est une intervention courante et très encadrée ; 
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 ### Implants toriques
 
@@ -3998,7 +3998,7 @@ Identique à la chirurgie de la cataracte par phacoémulsification — voir la p
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 22 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 ### Cataracte secondaire
 
@@ -4360,7 +4360,7 @@ Oui, partiellement. Un contrôle strict de la glycémie (HbA1c cible généralem
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) et des [recommandations EURETINA sur l’œdème maculaire diabétique (2017)](https://doi.org/10.1159/000458539). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur la rétinopathie diabétique (2025)](https://doi.org/10.1016/j.ophtha.2024.12.020) et des [recommandations EURETINA sur l’œdème maculaire diabétique (2017)](https://doi.org/10.1159/000458539). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4493,7 +4493,7 @@ Le risque d’occlusion de l’autre œil est d’environ 8 % à 2 ans et 12 % �
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations EURETINA sur les occlusions veineuses rétiniennes (2019)](https://doi.org/10.1159/000502041). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations EURETINA sur les occlusions veineuses rétiniennes (2019)](https://doi.org/10.1159/000502041). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -4953,7 +4953,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 29 octobre 2026.
+Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5081,7 +5081,7 @@ Oui. Le risque de **bilatéralisation** existe (environ 30 % à 5-10 ans), surto
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5918,7 +5918,7 @@ Oui. Les fortes myopies se corrigent en lunettes à verres de haut indice, en le
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur les troubles de la réfraction (2023)](https://doi.org/10.1016/j.ophtha.2022.10.031) et, pour la freination chez l’enfant, des [recommandations cliniques de l’International Myopia Institute (2019)](https://doi.org/10.1167/iovs.18-25977). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 21 novembre 2026.
 
 ### Hypermétropie
 
