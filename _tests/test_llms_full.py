@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from llms_full import page_meta
+from llms_full import page_markdown, page_meta
 
 
 class MedicalReviewDateTest(unittest.TestCase):
@@ -23,6 +23,18 @@ class MedicalReviewDateTest(unittest.TestCase):
                 '</script>', encoding='utf-8')
             self.assertEqual(page_meta(root, 'page'), '')
 
+
+
+class HiddenContentTest(unittest.TestCase):
+    """TECH69AM : un bloc masqué par l’attribut hidden (sans valeur) n’entre pas dans llms-full.txt."""
+    def test_hidden_block_is_left_out(self):
+        with tempfile.TemporaryDirectory() as root:
+            Path(root, 'page.html').write_text(
+                '<main><h1>Titre</h1><p>Texte visible.</p>'
+                '<div data-urgences-ferme hidden><p>Le cabinet est fermé.</p></div></main>', encoding='utf-8')
+            texte = page_markdown(root, 'page')
+            self.assertIn('Texte visible.', texte)
+            self.assertNotIn('Le cabinet est fermé', texte)
 
 if __name__ == '__main__':
     unittest.main()

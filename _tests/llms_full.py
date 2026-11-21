@@ -73,7 +73,7 @@ class ToMarkdown(HTMLParser):
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         cls = set((a.get('class') or '').split())
-        if self.skip_depth or tag in SKIP_TAGS or cls & SKIP_CLASSES or a.get('hidden') is not None or a.get('aria-hidden') == 'true':
+        if self.skip_depth or tag in SKIP_TAGS or cls & SKIP_CLASSES or 'hidden' in a or a.get('aria-hidden') == 'true':   # TECH69AM : « hidden » sans valeur vaut None pour html.parser
             if tag not in ('br', 'hr', 'img', 'input', 'source', 'wbr', 'meta', 'link'): self.skip_depth += 1
             return
         if tag == 'br': self.buf.append(' / '); return
