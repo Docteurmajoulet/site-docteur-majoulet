@@ -880,15 +880,12 @@ def check(root):
             if len(_true) != 1 or len(_any) != 1: E(f'{name} : {len(_any)} aria-current="true" dans le menu (attendu un seul, sur le bouton de la rubrique {_panel})')
             elif f'aria-controls="{_panel}"' not in _true[0]: E(f'{name} : aria-current="true" sur un bouton qui ne commande pas le panneau {_panel} de la page courante')
         elif _any: E(f'{name} : aria-current="true" dans le menu alors que la page n\'est dans aucun panneau')
-    # TECH24BO-2026-09-19 : le CTA du hero est un bouton à icône imbriquée — la pastille et son SVG restent décoratifs (aria-hidden),
-    # et la classe .btn-primary est conservée dans .hero-buttons (nav.js s'en sert pour masquer la barre fixe tant que le CTA est à l'écran)
+    # TECH69AQ-2026-11-21 (remplace TECH24BO) : le CTA du hero est un bouton simple, sans pastille ; la classe .btn-primary reste dans
+    # .hero-buttons (nav.js s'en sert pour masquer la barre fixe tant que le CTA est à l'écran) et le libellé ne change pas
     _hb = re.search(r'<div class="hero-buttons">(.*?)</div>', pages['index.html'].txt, re.S)
-    _cta = re.search(r'<a [^>]*class="btn-primary hv-btn hv-btn--rdv"[^>]*>(.*?)</a>', _hb.group(1), re.S) if _hb else None
-    if not _cta: E('index.html : CTA « Prendre rendez-vous » du hero introuvable (a.btn-primary.hv-btn.hv-btn--rdv dans .hero-buttons) — TECH24BO')
-    else:
-        _ico = re.search(r'<span class="hv-btn-ico"([^>]*)>\s*(<svg[^>]*>)', _cta.group(1))
-        if not _ico or 'aria-hidden="true"' not in _ico.group(1) or 'aria-hidden="true"' not in _ico.group(2): E('index.html : pastille du CTA du hero sans aria-hidden="true" (décorative, lue « image » par VoiceOver) — TECH24BO')
-        if '<span class="hv-btn-label">Prendre rendez-vous</span>' not in _cta.group(1) or '<span class="sr-only"> (nouvelle fenêtre)</span>' not in _cta.group(1): E('index.html : libellé du CTA du hero modifié (« Prendre rendez-vous » + « (nouvelle fenêtre) » attendus) — TECH24BO')
+    _cta = re.search(r'<a [^>]*class="btn-primary"[^>]*>(.*?)</a>', _hb.group(1), re.S) if _hb else None
+    if not _cta: E('index.html : CTA « Prendre rendez-vous » du hero introuvable (a.btn-primary dans .hero-buttons) — TECH69AQ')
+    elif _cta.group(1) != 'Prendre rendez-vous<span class="sr-only"> (nouvelle fenêtre)</span>': E('index.html : libellé du CTA du hero modifié (« Prendre rendez-vous » + mention de nouvelle fenêtre, sans pictogramme) — TECH69AQ')
 
     # ---- TECH20AU-2026-09-16 : lignes de lecture ≤ 42 em hors corps de fiche — le bloc existe une fois, en fin de feuille, avec sa règle
     _au = css_txt.count('TECH20AU-2026-09-16')
@@ -1047,55 +1044,54 @@ def check(root):
         _body = _main.group(0) if _main else ''
         for _t in ('/chirurgie-cataracte', '/cataracte-secondaire-laser-yag'):
             if not re.search(r'<a [^>]*href="' + re.escape(_t) + r'"', _body): E(f'cataracte.html : aucun lien vers {_t} dans <main> (maillage du silo cataracte) — TECH22BN')
-    # ---- TECH24BO-2026-09-19 : socle « cadre double » de la home — le bloc existe une fois ; aucun !important, aucune animation de mise en page,
-    # aucune seconde police ; les trois boutons à pastille de la home (hero ×2, bloc contact) gardent leur structure
-    _b23 = re.search(r'TECH24BO-2026-09-19 — Home.*?(?=\n/\* =+\n   TECH|\Z)', css_txt, re.S)
-    if css_txt.count('TECH24BO-2026-09-19 — Home') != 1 or not _b23: E('main.css : bloc TECH24BO absent ou en double')
+    # ---- TECH69AQ-2026-11-21 : l'accueil au dessin du reste du site (demande du Dr Majoulet du 21/11 : « qu'elle ne fasse pas trop IA »).
+    # Remplace les gardes TECH24BO à BS de la facture « cadre double ». (a) Le bloc CSS existe une fois, sans !important, sans seconde
+    # police, sans transition de mise en page, sans cuivre écrit en dur. (b) Les marques du gabarit ne reviennent pas : aucune classe
+    # hv-* (cadre double, étiquette en pilule, flèche dans un rond, coche) ni majuscules forcées dans le bloc. (c) Accès rapide : deux
+    # entrées-liens et l'encadré d'alerte des fiches, avec ses deux boutons, sans cuivre. (d) Spécialités : six lignes-liens dans l'ordre,
+    # pictogrammes du graphiste (jamais de SVG dessiné à la place) ; la photo du microscope reste une section à part, hors de tout lien.
+    # (e) Points clés : quatre repères, sans pictogramme. (f) Trois en-têtes de section (sur-titre, h2, chapô) aux textes d'avant ;
+    # le récit du parcours reste un texte continu.
+    _ix = pages['index.html'].txt
+    _b23 = re.search(r'ACCUEIL-2026-11-21 \(TECH69AQ\).*?(?=\n/\* TECH24BT|\Z)', css_txt, re.S)
+    if css_txt.count('ACCUEIL-2026-11-21 (TECH69AQ)') != 1 or not _b23: E('main.css : bloc ACCUEIL-2026-11-21 (TECH69AQ) absent ou en double')
     else:
         _b = re.sub(r'/\*.*?\*/', '', _b23.group(0), flags=re.S)
-        if '!important' in _b: E('main.css : !important dans le bloc TECH24BO')
-        if 'font-family' in _b: E('main.css : font-family dans le bloc TECH24BO (une seule famille : Montserrat, héritée)')
-        for _t in re.findall(r'transition:([^;}]*)', _b):
-            if re.search(r'\b(all|width|height|padding|margin|gap|top|left|right|bottom)\b', _t): E(f'main.css : transition de mise en page dans le bloc TECH24BO « {_t.strip()[:60]} »')
-        if re.search(r'#9C4B2E|#82391F', re.sub(r'\.hv-btn--rdv[^{]*\{[^}]*\}', '', _b), re.I): E('main.css : cuivre RDV hors .hv-btn--rdv dans le bloc TECH24BO (règle du geste unique)')
-    _ix23 = pages['index.html'].txt
-    if len(re.findall(r'class="[^"]*\bhv-btn--rdv\b', _ix23)) != 2: E('index.html : deux boutons cuivre à pastille attendus (hero, bloc contact) — TECH24BO')
-    for _m in re.finditer(r'<a [^>]*class="[^"]*\bhv-btn\b[^"]*"[^>]*>(.*?)</a>', _ix23, re.S):
-        if _m.group(1).count('class="hv-btn-label"') != 1 or _m.group(1).count('class="hv-btn-ico" aria-hidden="true"') != 1: E('index.html : bouton .hv-btn sans libellé unique ou sans pastille décorative — TECH24BO')
-    # ---- TECH24BP-2026-09-19 : accès rapide de la home — deux tuiles-liens + la bande urgence (titre-lien vers la conduite à tenir, bouton d'appel)
-    _acc = re.search(r'<section class="hv-access" aria-label="Accès rapide">(.*?)</section>', pages['index.html'].txt, re.S)
-    if not _acc: E('index.html : section .hv-access « Accès rapide » introuvable — TECH24BP')
+        if '!important' in _b: E('main.css : !important dans le bloc de l’accueil — TECH69AQ')
+        if 'font-family' in _b: E('main.css : font-family dans le bloc de l’accueil (une seule famille : Montserrat, héritée) — TECH69AQ')
+        for _t in re.findall(r'transition:([^;]+);', _b):
+            if re.search(r'\b(all|width|height|padding|margin|gap|top|left|right|bottom)\b', _t): E(f'main.css : transition de mise en page dans le bloc de l’accueil « {_t.strip()[:60]} » — TECH69AQ')
+        if re.search(r'#9C4B2E|#82391F', _b, re.I): E('main.css : cuivre RDV écrit en dur dans le bloc de l’accueil (var(--cuivre-rdv), réservé au rendez-vous) — TECH69AQ')
+        if re.search(r'text-transform:\s*uppercase|letter-spacing:\s*0\.[1-9]', _b): E('main.css : majuscules ou lettres espacées dans le bloc de l’accueil (casse normale, comme le reste du site) — TECH69AQ')
+    _hv = sorted(set(re.findall(r'\bhv-[\w-]+', _ix + css_txt)))
+    if _hv: E(f'accueil : classes du gabarit « cadre double » encore présentes ({", ".join(_hv[:6])}) — TECH69AQ')
+    _acc = re.search(r'<section class="accueil-acces" aria-label="Accès rapide">(.*?)</section>', _ix, re.S)
+    if not _acc: E('index.html : section .accueil-acces « Accès rapide » introuvable — TECH69AQ')
     else:
         _a = _acc.group(1)
-        if len(re.findall(r'<a class="hv-tile hv-bezel" href="/[a-z-]+">', _a)) != 2: E('index.html : deux tuiles-liens .hv-tile attendues dans l’accès rapide — TECH24BP')
-        if 'class="hv-urgence-title tc-title" href="/urgences-ophtalmologiques"' not in _a or 'class="hv-btn hv-btn--slate hv-call" href="tel:+33184191166"' not in _a: E('index.html : bande urgence sans lien « conduite à tenir » ou sans bouton d’appel — TECH24BP')
-        if 'hv-btn--rdv' in _a: E('index.html : bouton cuivre dans la bande urgence (ambre et cuivre ne se côtoient pas) — TECH24BP')
-    # ---- TECH24BQ-2026-09-19 : spécialités de la home — six cartes-liens égales (grille 3 × 2), pictogrammes du graphiste (jamais de SVG
-    # dessiné à la place) ; la photo du microscope reste une section à part, juste après, hors de toute carte (décision d'Alexandre, 19/09/2026)
-    _ix = pages['index.html'].txt
+        if len(re.findall(r'<a class="accueil-entree" href="/[a-z-]+">', _a)) != 2: E('index.html : deux entrées-liens .accueil-entree attendues dans l’accès rapide — TECH69AQ')
+        if not re.search(r'<div class="alert-urgence accueil-urgence">.*?<p class="alert-actions">\s*<a class="btn-alert-tel" href="tel:\+33184191166">.*?</a>\s*<a class="btn-alert-rdv" href="/urgences-ophtalmologiques">', _a, re.S):
+            E('index.html : encadré d’alerte de l’accueil sans ses deux boutons (appel du cabinet, « Urgences : conduite à tenir ») — TECH69AQ')
+        if 'btn-rdv"' in _a or 'btn-doctolib' in _a or 'doctolib.fr' in _a: E('index.html : rendez-vous en ligne dans l’accès rapide (ambre et cuivre ne se côtoient pas) — TECH69AQ')
     _sp = re.search(r'<section id="specialites"[^>]*>(.*?)</section>', _ix, re.S)
-    if not _sp: E('index.html : section #specialites introuvable — TECH24BQ')
+    if not _sp: E('index.html : section #specialites introuvable — TECH69AQ')
     else:
-        _cards = re.findall(r'<a class="hv-card hv-bezel" href="(/[a-z-]+)">(.*?)</a>', _sp.group(1), re.S)
-        if [h for h, _ in _cards] != ['/chirurgie-retine', '/dmla', '/injection-intravitreenne', '/chirurgie-cataracte', '/glaucome', '/suivi-corrections-optiques']: E(f'index.html : cartes des spécialités inattendues {[h for h, _ in _cards]} — TECH24BQ')
+        _cards = re.findall(r'<a class="accueil-ligne" href="(/[a-z-]+)">(.*?)</a>', _sp.group(1), re.S)
+        if [h for h, _ in _cards] != ['/chirurgie-retine', '/dmla', '/injection-intravitreenne', '/chirurgie-cataracte', '/glaucome', '/suivi-corrections-optiques']: E(f'index.html : lignes des spécialités inattendues ({[h for h, _ in _cards]}) — TECH69AQ')
         for _h, _c in _cards:
             _ic = re.search(r'<div class="specialty-icon">(.*?)</div>', _c, re.S)
-            if not _ic or '<svg' in _ic.group(1) or not re.search(r'<img src="[A-Za-z-]+-120\.webp" alt="" width="40" height="40"', _ic.group(1)): E(f'index.html : carte {_h} sans pictogramme du graphiste (.webp de la série, jamais un SVG) — TECH24BQ')
-            if re.search(r'<img[^>]+(chirurgie-|hero)', _c): E(f'index.html : photo dans la carte {_h} — les photos restent hors des cartes — TECH24BQ')
-        if 'class="section-espace"' in _sp.group(1): E('index.html : la photo du microscope est dans la section des spécialités — elle reste une section à part — TECH24BQ')
+            if not _ic or '<svg' in _ic.group(1) or not re.search(r'<img src="[A-Za-z-]+-120\.webp" alt="" width="40" height="40"', _ic.group(1)): E(f'index.html : ligne {_h} sans pictogramme du graphiste (image *-120.webp décorative, jamais de SVG dessiné à la place) — TECH69AQ')
+            if re.search(r'<img[^>]+(chirurgie-|hero)', _c): E(f'index.html : photo dans la ligne {_h} — les photos restent hors des liens — TECH69AQ')
+            if not re.search(r'<h3>[^<]+</h3>\s*<p>[^<]+</p>\s*<span class="accueil-suite">En savoir plus <svg class="ico"[^>]*aria-hidden="true"', _c): E(f'index.html : ligne {_h} sans intitulé, description et « En savoir plus » — TECH69AQ')
+        if 'class="section-espace"' in _sp.group(1): E('index.html : la photo du microscope est dans la section des spécialités — elle reste une section à part — TECH69AQ')
     _ph = re.search(r'</section>\s*<!-- ===== PHOTO CHIRURGIE ===== -->\s*<div class="section-espace">(.*?)\n</div>', _ix, re.S)
-    if not _ph or _ix.count('class="section-espace"') != 1 or _ph.group(1).count('<img ') != 1 or 'class="img-bloc"' not in _ph.group(1) or re.search(r'<a\b', _ph.group(1)): E('index.html : la photo du microscope doit rester une section à part (.section-espace, une image .img-bloc, hors lien), juste après les spécialités — TECH24BQ')
-    # ---- TECH24BR-2026-09-19 : points clés de la home — une barre de quatre cellules (liste), coches décoratives
-    _lg = re.search(r'<section class="hv-ledger" aria-label="Points clés">(.*?)</section>', pages['index.html'].txt, re.S)
-    if not _lg or len(re.findall(r'<li><span class="hv-tick" aria-hidden="true"><svg[^>]*aria-hidden="true"[^>]*>.*?</svg></span><p class="usp-title">[^<]+</p><p class="usp-text">[^<]+</p></li>', _lg.group(1))) != 4: E('index.html : barre des points clés (.hv-ledger-bar, 4 cellules titre + texte, coche décorative) attendue — TECH24BR')
-    # ---- TECH24BS-2026-09-19 : en-têtes de section de la home — étiquette + titre à gauche, chapô à droite ; trois sections .hv-section
-    # (spécialités, parcours, contact) ; un seul h1 et les mêmes h2 qu'avant ; le récit du parcours reste un texte continu
-    _ix = pages['index.html'].txt
-    for _sid, _eb in (('specialites', 'Consultation &amp; chirurgie'), ('parcours', 'Parcours'), ('contact', 'Le cabinet')):
-        if not re.search(r'<section id="' + _sid + r'" class="hv-section">\s*<div class="container">\s*<div class="hv-head[^"]*">\s*<div><span class="hv-eyebrow">' + re.escape(_eb) + r'</span><h2>[^<]+(?:&amp;[^<]+)?</h2></div>\s*<p>[^<]+</p>', _ix): E(f'index.html : en-tête éditorial de #{_sid} (étiquette « {_eb} », h2, chapô) attendu — TECH24BS')
-    if _ix.count('class="hv-eyebrow"') != 3: E('index.html : trois étiquettes .hv-eyebrow attendues — TECH24BS')
-    if 'class="section-header"' in _ix: E('index.html : ancien en-tête centré .section-header encore présent — TECH24BS')
-    if len(re.findall(r'<p>', re.search(r'<div class="parcours-recit">(.*?)</div>', _ix, re.S).group(1))) < 4: E('index.html : le récit du parcours doit rester un texte continu d’au moins quatre paragraphes — TECH24BS')
+    if not _ph or _ix.count('class="section-espace"') != 1 or _ph.group(1).count('<img ') != 1 or 'class="img-bloc"' not in _ph.group(1) or re.search(r'<a\b', _ph.group(1)): E('index.html : la photo du microscope doit rester une section à part (.section-espace, une image .img-bloc, hors lien), juste après les spécialités — TECH69AQ')
+    _lg = re.search(r'<section class="accueil-reperes" aria-label="Points clés">(.*?)</section>', _ix, re.S)
+    if not _lg or len(re.findall(r'<li><p class="usp-title">[^<]+</p><p class="usp-text">[^<]+</p></li>', _lg.group(1))) != 4 or '<svg' in _lg.group(1): E('index.html : quatre repères attendus (.accueil-reperes-liste, titre + texte, sans coche ni pictogramme) — TECH69AQ')
+    for _sid, _eb, _h2 in (('specialites', 'Consultation &amp; chirurgie', 'Spécialités'), ('parcours', 'Parcours', 'Formation &amp; expérience'), ('contact', 'Le cabinet', 'Informations pratiques')):
+        if not re.search(r'<section id="' + _sid + r'" class="accueil-section">\s*<div class="container">\s*<div class="accueil-tete[^"]*">\s*<p class="accueil-surtitre">' + re.escape(_eb) + r'</p>\s*<h2>' + re.escape(_h2) + r'</h2>\s*<p class="accueil-chapo">[^<]+</p>', _ix): E(f'index.html : en-tête de #{_sid} (sur-titre « {_eb} », h2, chapô) attendu — TECH69AQ')
+    if 'class="section-header"' in _ix: E('index.html : ancien en-tête centré .section-header encore présent — TECH69AQ')
+    if len(re.findall(r'<p>', re.search(r'<div class="parcours-recit">(.*?)</div>', _ix, re.S).group(1))) < 4: E('index.html : le récit du parcours doit rester un texte continu d’au moins quatre paragraphes — TECH69AQ')
     # ---- TECH67BV-2026-09-21 : libellés centrés — .btn-rdv (flex) centre son contenu, les boutons d'alerte centrent leurs lignes
     _css67bv = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
     if not re.search(r'(?m)^\.btn-rdv\s*\{[^}]*justify-content:\s*center', _css67bv): E('main.css : règle « .btn-rdv { justify-content: center } » absente (libellé plaqué à gauche sur téléphone) — TECH67BV')

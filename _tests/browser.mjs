@@ -1272,9 +1272,9 @@ try {
     }
     await ctx.close();
   }
-  // TECH24BO-2026-09-19 — home à 1 366, 390 et 320 px : boutons à pastille (hero ×2, bloc contact) — pastille ronde de 38 px entièrement
-  // dans le bouton, libellé sur une seule ligne à 1 366 et 390 px, bouton ≥ 48 px de haut, nom accessible inchangé ; à 390 px la barre
-  // fixe reste masquée tant que le CTA du hero est à l'écran (nav.js observe .hero-buttons .btn-primary).
+  // TECH69AQ-2026-11-21 (remplace TECH24BO) — accueil à 1 366, 390 et 320 px : trois boutons simples (hero ×2, bloc contact), sans pastille
+  // ni pictogramme, en casse normale, ≥ 48 px de haut, libellé sur une seule ligne à 1 366 et 390 px ; à 390 px la barre fixe reste
+  // masquée tant que le CTA du hero est à l'écran (nav.js observe .hero-buttons .btn-primary).
   for (const w of [1366, 390, 320]) {
     const ctx = await browser.newContext({ viewport: { width: w, height: 800 }, deviceScaleFactor: 1, locale: 'fr-FR', isMobile: w < 500, hasTouch: w < 500 });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
@@ -1283,59 +1283,82 @@ try {
       try {
         await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
         const res = await page.evaluate((w) => {
-          const out = []; const btns = [...document.querySelectorAll('main a.hv-btn')].filter(b => !b.classList.contains('hv-call') && !b.hasAttribute('data-si-ferme'));   // TECH69AP : le bouton « Urgences 24h/24 » de la carte d'urgence remplace l'appel cabinet fermé, comme .hv-call il est hors compte
-          if (btns.length !== 3) out.push(`${btns.length} boutons à pastille hors accès rapide (3 attendus)`);
+          const out = []; const btns = [...document.querySelectorAll('main .hero-buttons a, main #contact a.btn-doctolib')];
+          if (btns.length !== 3) out.push(`${btns.length} boutons (3 attendus : hero ×2, bloc contact)`);
           for (const b of btns) {
-            const t = b.textContent.trim().slice(0, 22), rb = b.getBoundingClientRect(), ico = b.querySelector('.hv-btn-ico'), lab = b.querySelector('.hv-btn-label');
-            if (!ico || !lab) { out.push(`« ${t} » : structure incomplète`); continue; }
-            const ri = ico.getBoundingClientRect();
-            if (Math.abs(ri.width - 38) > 1 || Math.abs(ri.height - 38) > 1) out.push(`« ${t} » : pastille ${Math.round(ri.width)}×${Math.round(ri.height)} (38 attendu)`);
-            if (ri.left < rb.left || ri.right > rb.right + 0.5 || ri.top < rb.top || ri.bottom > rb.bottom + 0.5) out.push(`« ${t} » : pastille hors du bouton`);
+            const t = b.textContent.trim().slice(0, 22), rb = b.getBoundingClientRect(), cs = getComputedStyle(b);
+            if (b.querySelector('svg')) out.push(`« ${t} » : pictogramme dans le bouton (les boutons de l'accueil sont simples)`);
+            if (cs.textTransform !== 'none') out.push(`« ${t} » : libellé en ${cs.textTransform} (casse normale attendue)`);
             if (rb.height < 48) out.push(`« ${t} » : bouton de ${Math.round(rb.height)} px de haut (48 attendus)`);
-            if (w >= 390) { const lines = new Set(); const tw = document.createTreeWalker(lab, NodeFilter.SHOW_TEXT); for (let nd = tw.nextNode(); nd; nd = tw.nextNode()) { if (nd.parentElement.closest('.sr-only') || !nd.textContent.trim()) continue; const r = document.createRange(); r.selectNodeContents(nd); for (const q of r.getClientRects()) if (q.width > 1) lines.add(Math.round(q.top)); } if (lines.size > 1) out.push(`« ${t} » : libellé sur ${lines.size} lignes`); }
+            if (w >= 390) { const lines = new Set(); const tw = document.createTreeWalker(b, NodeFilter.SHOW_TEXT); for (let nd = tw.nextNode(); nd; nd = tw.nextNode()) { if (nd.parentElement.closest('.sr-only') || !nd.textContent.trim()) continue; const r = document.createRange(); r.selectNodeContents(nd); for (const q of r.getClientRects()) if (q.width > 1) lines.add(Math.round(q.top)); } if (lines.size > 1) out.push(`« ${t} » : libellé sur ${lines.size} lignes`); }
           }
-          const cta = document.querySelector('.hero-buttons .btn-primary.hv-btn--rdv');
-          if (!cta) out.push('CTA du hero sans .btn-primary (la barre fixe ne se masquerait plus)');
+          if (!document.querySelector('.hero-buttons .btn-primary')) out.push('CTA du hero sans .btn-primary (la barre fixe ne se masquerait plus)');
+          const marques = document.querySelectorAll('main [class*="hv-"]').length;
+          if (marques) out.push(`${marques} élément(s) du gabarit « cadre double » (classes hv-*)`);
           return out;
         }, w);
-        for (const r of res) failures.push(`index @${w} boutons à pastille — ${r}`);
+        for (const r of res) failures.push(`index @${w} boutons de l'accueil — ${r} (TECH69AQ)`);
         if (w === 390) {
           await page.evaluate(() => document.querySelector('.hero-buttons .btn-primary').scrollIntoView({ block: 'center' }));
           await page.waitForTimeout(400);
           const vis = await page.evaluate(() => document.body.classList.contains('hero-cta-visible'));
-          if (!vis) failures.push('index @390 boutons à pastille — CTA du hero à l’écran mais body sans .hero-cta-visible (barre fixe en double)');
+          if (!vis) failures.push('index @390 boutons de l’accueil — CTA du hero à l’écran mais body sans .hero-cta-visible (barre fixe en double)');
         }
         loads++;
-      } catch (e) { failures.push(`index @${w} boutons à pastille — ${String(e).slice(0, 160)}`); }
+      } catch (e) { failures.push(`index @${w} boutons de l'accueil — ${String(e).slice(0, 160)}`); }
       await page.close();
     }
     await ctx.close();
   }
-  // TECH24BQ-2026-09-19 — home : six cartes de spécialités égales — 3 colonnes à 1 366 px, 2 à 768 px, 1 à 390 px ; même hauteur dans une
-  // rangée ; pictogramme chargé (40 px) ; la photo du microscope (.section-espace) suit la section, hors de toute carte, à sa taille (≤ 700 px).
-  for (const [w, cols] of [[1366, 3], [768, 2], [390, 1]]) {
+  // TECH69AQ-2026-11-21 (remplace TECH24BQ) — accueil : les spécialités en sommaire, six lignes-liens l'une sous l'autre à toutes les
+  // largeurs ; pictogramme du graphiste chargé (40 px, 34 px sous 900 px, 30 px sur téléphone) ; à 1 366 px, intitulés, descriptions et
+  // « En savoir plus » forment trois colonnes (même bord gauche d'une ligne à l'autre) et partent de la même ligne dans chaque rangée ;
+  // la photo du microscope (.section-espace) suit la section, hors de tout lien, à sa taille (≤ 700 px).
+  // Alignement (demande du Dr Majoulet, 21/11) : à 390 px, hors hero, tout bloc de texte part de l'un des trois bords de la page —
+  // 16 px (texte courant), 33 px (texte posé sur une surface : cartes, encadré d'alerte, fiche du cabinet), 80 px (après un pictogramme).
+  for (const [w, picto] of [[1366, 40], [768, 34], [390, 30]]) {
     const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
     if (slugs.includes('index')) {
       const page = await ctx.newPage();
       try {
         await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
-        await page.evaluate(async () => { document.querySelector('#specialites').scrollIntoView(); await new Promise(r => setTimeout(r, 300)); document.querySelector('.section-espace').scrollIntoView(); await new Promise(r => setTimeout(r, 500)); });
-        const res = await page.evaluate((cols) => {
-          const out = []; const cards = [...document.querySelectorAll('#specialites .hv-cards > a.hv-card')];
-          if (cards.length !== 6) { out.push(`${cards.length} cartes (6 attendues)`); return out; }
-          const rows = new Map();
-          for (const c of cards) { const r = c.getBoundingClientRect(); const k = Math.round(r.top); if (!rows.has(k)) rows.set(k, []); rows.get(k).push(r); }
-          for (const [k, rs] of rows) { if (rs.length !== cols) out.push(`rangée de ${rs.length} carte(s) (${cols} attendues)`); if (Math.max(...rs.map(r => r.height)) - Math.min(...rs.map(r => r.height)) > 1) out.push('cartes de hauteurs différentes dans une rangée'); }
-          for (const c of cards) { const im = c.querySelector('.specialty-icon img'); if (!im || !im.complete || !im.naturalWidth || Math.abs(im.getBoundingClientRect().width - 40) > 1) out.push(`pictogramme absent ou mal dimensionné (${c.getAttribute('href')})`); }
+        await page.evaluate(async () => { await document.fonts.ready; document.querySelector('#specialites').scrollIntoView(); await new Promise(r => setTimeout(r, 300)); document.querySelector('.section-espace').scrollIntoView(); await new Promise(r => setTimeout(r, 500)); });
+        const res = await page.evaluate(({ w, picto }) => {
+          const out = []; const lignes = [...document.querySelectorAll('#specialites .accueil-sommaire > a.accueil-ligne')];
+          if (lignes.length !== 6) { out.push(`${lignes.length} lignes (6 attendues)`); return out; }
+          const haut = e => { const r = document.createRange(); r.selectNodeContents(e); const rs = [...r.getClientRects()].filter(x => x.width > 2 && x.height > 2); return rs.length ? Math.min(...rs.map(x => x.top)) : e.getBoundingClientRect().top; };
+          const tops = lignes.map(l => Math.round(l.getBoundingClientRect().top));
+          if (new Set(tops).size !== 6 || tops.some((t, i) => i && t <= tops[i - 1])) out.push('les six lignes ne sont pas l’une sous l’autre');
+          for (const sel of ['h3', 'p', '.accueil-suite']) {
+            const xs = lignes.map(l => l.querySelector(sel).getBoundingClientRect().left);
+            if (Math.max(...xs) - Math.min(...xs) > 1) out.push(`« ${sel} » : bords gauches décalés de ${(Math.max(...xs) - Math.min(...xs)).toFixed(1)} px d'une ligne à l'autre`);
+          }
+          if (w >= 1024) for (const l of lignes) {
+            const centres = ['h3', 'p', '.accueil-suite'].map(sel => { const e = l.querySelector(sel); const r = document.createRange(); r.selectNodeContents(e); const q = [...r.getClientRects()].filter(x => x.width > 2 && x.height > 6).sort((a, b) => a.top - b.top)[0]; return q.top + q.height / 2; });
+            if (Math.max(...centres) - Math.min(...centres) > 2.5) out.push(`${l.getAttribute('href')} : premières lignes décalées de ${(Math.max(...centres) - Math.min(...centres)).toFixed(1)} px`);
+          }
+          for (const l of lignes) { const im = l.querySelector('.specialty-icon img'); if (!im || !im.complete || !im.naturalWidth || Math.abs(im.getBoundingClientRect().width - picto) > 1) out.push(`pictogramme absent ou mal dimensionné (${l.getAttribute('href')} : ${im ? Math.round(im.getBoundingClientRect().width) : '—'} px, ${picto} attendus)`); }
           const ph = document.querySelector('.section-espace img.img-bloc');
-          if (!ph || ph.closest('a, .hv-card, #specialites')) out.push('photo du microscope absente ou placée dans une carte');
+          if (!ph || ph.closest('a, #specialites')) out.push('photo du microscope absente ou placée dans un lien');
           else { const r = ph.getBoundingClientRect(); if (r.width > 701 || r.width < 250 || !ph.naturalWidth) out.push(`photo du microscope : largeur ${Math.round(r.width)} px`); if (r.top + scrollY < document.querySelector('#specialites').getBoundingClientRect().bottom + scrollY - 1) out.push('photo du microscope avant la fin des spécialités'); }
+          if (w === 390) {
+            const hero = document.querySelector('.hero'); const hors = new Map();
+            for (const bloc of document.querySelectorAll('main :is(p, h2, h3, h4, li, dt, dd, .tc-title, .tc-text)')) {
+              if (hero.contains(bloc) || bloc.closest('.sr-only, [hidden], .map-facade, .alert-actions, .cv12-action, .cv12-map-note') || !bloc.getClientRects().length) continue;
+              if (bloc.querySelector('p, li, dt, dd, h3, h4')) continue;   // conteneur : ses blocs sont mesurés
+              const r = document.createRange(); r.selectNodeContents(bloc); const rs = [...r.getClientRects()].filter(x => x.width > 2 && x.height > 6);
+              if (!rs.length) continue;
+              const x = Math.min(...rs.map(q => q.left));
+              if (![16, 33, 80].some(b => Math.abs(x - b) <= 1.5)) hors.set(Math.round(x), (bloc.className || bloc.tagName) + ' « ' + bloc.textContent.trim().slice(0, 28) + ' »');
+            }
+            for (const [x, qui] of hors) out.push(`texte à ${x} px du bord gauche (16, 33 ou 80 attendus) : ${qui}`);
+          }
           return out;
-        }, cols);
-        for (const r of res) failures.push(`index @${w} spécialités — ${r}`);
+        }, { w, picto });
+        for (const r of res) failures.push(`index @${w} spécialités et alignements — ${r} (TECH69AQ)`);
         loads++;
-      } catch (e) { failures.push(`index @${w} spécialités — ${String(e).slice(0, 160)}`); }
+      } catch (e) { failures.push(`index @${w} spécialités et alignements — ${String(e).slice(0, 160)}`); }
       await page.close();
     }
     await ctx.close();
@@ -1443,7 +1466,7 @@ try {
   for (const w of [768, 1366]) {
     const ctx = await browser.newContext({ viewport: { width: w, height: 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
     await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
-    const cas = { 'index': [['.hv-cards > a.hv-card', ['p', '.hv-more']]],
+    const cas = { 'index': [['.accueil-entrees > a.accueil-entree', ['.accueil-entree-titre', '.accueil-entree-texte']]],   // TECH69AQ : les deux entrées de l'accueil (les spécialités sont en lignes, contrôlées plus haut)
       'pathologies': [['.hub-grid > .hub-card', ['p', '.hub-more']], ['.hub-sym-list > li', ['a']]],
       'injection-intravitreenne': [['.key-facts > .key-fact', ['.key-fact-label']]],
       'trou-maculaire': [['.schema-grille > .schema-vignette', ['figcaption']]] };

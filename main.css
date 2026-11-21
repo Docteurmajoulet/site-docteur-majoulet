@@ -395,38 +395,6 @@ body.v26 {
     border-radius: var(--radius);
     border-left: 3px solid var(--sable);
 }
-:where(body.page-index) .parcours-card-header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 16px;
-    padding-bottom: 12px;
-    border-bottom: 1px solid rgba(191, 178, 151, 0.22);
-}
-:where(body.page-index) .parcours-card-header h3 {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: var(--prusse);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    margin: 0;
-}
-:where(body.page-index) .parcours-card-icon {
-    width: 22px;
-    height: 22px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--sable);
-    flex-shrink: 0;
-}
-:where(body.page-index) .parcours-card-icon svg {
-    width: 18px;
-    height: 18px;
-    stroke: currentColor;
-    fill: none;
-    stroke-width: 1.8;
-}
 :where(body.page-publications) .pub-year {
     display: inline-block;
     padding: 3px 10px;
@@ -4422,9 +4390,6 @@ body.page-index .parcours-reperes {
     margin: 0;
     padding: 24px 26px 20px;
 }
-body.page-index .parcours-reperes .parcours-card-header {
-    margin-bottom: 14px;
-}
 body.page-index .pr-group {
     font-size: 0.68rem;
     font-weight: 700;
@@ -6769,7 +6734,6 @@ article.pathology-content .cta-line-link {
    Contrôlé par _tests/browser.mjs à 390 et 1366 px.
    ============================================================ */
 .implant-card .ic-more,
-.parcours-card-header h3,
 .pub-year, .pub-link, .pub-role, .press-source,
 .eeat-block .meta, body.page-pathologies .hub-eeat .meta,
 .pillar-card .read-more,
@@ -7393,204 +7357,576 @@ div.key-facts:not(:has(.key-fact)) {
 }
 
 /* ============================================================
-   TECH24BO-2026-09-19 — Home : facture « cadre double » (maquette
-   v2 validée par Alexandre le 19/09/2026). Socle commun aux lots
-   BO-BS du tour 24 : variables --hv-*, cadre double .hv-bezel (cœur
-   + plateau + filet en box-shadow, sans div en plus ; plat au repos,
-   ombre ambiante au survol seulement), pastille .hv-ico-ring, bouton
-   à icône imbriquée .hv-btn (cuivre réservé au RDV), en-têtes de
-   section .hv-head + étiquette .hv-eyebrow, accès rapide .hv-access,
-   cartes .hv-cards, barre des points clés .hv-ledger. Les règles des
-   blocs que posent BP-BS sont inertes tant que leur balisage n'est
-   pas en ligne (#parcours / #contact : gardées par .hv-section).
-   Mouvement : transform, couleurs, ombres — jamais de mise en page ;
-   tout :hover sous @media (hover: hover) ; rien sous 0,8 rem.
-   La photo du microscope (.section-espace) n'est PAS concernée :
-   elle reste une section à part, telle quelle (décision du 19/09).
+   ACCUEIL-2026-11-21 (TECH69AQ) — l’accueil au dessin du reste du site (demande du Dr Majoulet du 21/11 : « qu’elle
+   ne fasse pas trop IA » ; relecture du 16/11, constat 1). Remplace la facture « cadre double » du tour 24
+   (TECH24BO à BS) : plus de cadre double, d’étiquette en pilule, de flèche dans un rond ni de coche.
+   Titres en casse normale avec le filet sable des autres pages ; entrées en cartes à bordure simple (celles de
+   /pathologies) ; l’urgence dans l’encadré d’alerte des fiches ; les spécialités en sommaire, une ligne par famille ;
+   quatre repères entre deux filets ; « Postes et diplômes » en colonne, sans carte. Un seul bord gauche par section,
+   celui du conteneur (16 px sur téléphone) ; dans une rangée, les textes partent de la même ligne. Les textes sont
+   ceux d’avant, mot pour mot. Le portrait et le titre du hero ne changent pas ; la photo du microscope reste une
+   section à part, telle quelle. Tout :hover sous @media (hover: hover) ; rien sous 0,8 rem.
    ============================================================ */
-:root {
-    --hv-ease: cubic-bezier(0.32, 0.72, 0, 1);
-    --hv-r: 20px;      /* rayon du cœur */
-    --hv-b: 6px;       /* épaisseur du cadre extérieur */
+
+/* ---------- 1. Fonds et rythme : une seule couleur de page, des sections séparées par l’espace ---------- */
+body.page-index.page-index :is(#specialites, #parcours, .accueil-acces, .accueil-reperes, .section-espace) {
+    background: var(--blanc-naturel);
+}
+.accueil-section {
+    padding: 88px 0;
+}
+.accueil-acces {
+    padding: 56px 0 0;
+}
+.accueil-reperes {
+    padding: 24px 0 0;
+}
+body.page-index.page-index .section-espace {
+    padding: 0 0 40px;
 }
 
-/* ---------- 1. Cadre double (bezel) : cœur + plateau + filet, sans div en plus ---------- */
-.hv-bezel {
-    --_core: var(--blanc); --_shell: #f1eee7; --_hair: #e2ddd4; --_hi: rgba(255, 255, 255, 0.95); --_lift: rgba(40, 51, 57, 0.30);
-    position: relative;
-    background: var(--_core);
-    border: 1px solid rgba(40, 51, 57, 0.08);
-    border-radius: var(--hv-r);
-    box-shadow: inset 0 1px 0 var(--_hi), 0 0 0 var(--hv-b) var(--_shell), 0 0 0 calc(var(--hv-b) + 1px) var(--_hair);
-    transition: transform 0.6s var(--hv-ease), box-shadow 0.6s var(--hv-ease);
+/* ---------- 2. En-tête de section : sur-titre en texte, titre, filet sable, chapô — tout à gauche ---------- */
+.accueil-tete {
+    max-width: 41.475rem;
+    margin: 0 0 40px;
 }
-a.hv-bezel { display: block; color: inherit; text-decoration: none; }
+.accueil-surtitre {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--sable-fonce);
+}
+body.page-index.page-index .accueil-tete h2 {
+    margin: 0;
+    font-size: clamp(1.6rem, 1.3rem + 1.2vw, 2.1rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-transform: none;
+}
+body.page-index.page-index .accueil-tete h2::after {
+    content: "";
+    display: block;
+    width: 52px;
+    height: 2px;
+    margin-top: 16px;
+    background: var(--sable);
+}
+.accueil-chapo {
+    margin: 18px 0 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-light);
+}
+.accueil-tete--sombre .accueil-surtitre {
+    color: var(--sable-light);
+}
+body.page-index.page-index .accueil-tete--sombre h2 {
+    color: var(--blanc-naturel);
+}
+.accueil-tete--sombre .accueil-chapo {
+    color: rgba(249, 247, 242, 0.8);
+}
+
+/* ---------- 3. Hero : mêmes boutons, mêmes libellés, sans pastille ; note d’urgence sur un filet, sans boîte ---------- */
+body.page-index.page-index .hero-v3 .hero-buttons :is(.btn-primary, .btn-outline),
+body.page-index.page-index #contact .cv12-action .btn-doctolib {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    line-height: 1.3;
+    letter-spacing: 0;
+    text-transform: none;
+    text-decoration: none;
+    box-shadow: none;
+    transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+}
+body.page-index.page-index .hero-v3 .hero-buttons .btn-primary,
+body.page-index.page-index #contact .cv12-action .btn-doctolib {
+    background: var(--cuivre-rdv);
+    border: 0;
+    color: #fff;
+}
+body.page-index.page-index .hero-v3 .hero-buttons .btn-outline {
+    background: transparent;
+    border: 1.5px solid rgba(249, 247, 242, 0.45);
+    color: var(--blanc-naturel);
+}
 @media (hover: hover) {
-a.hv-bezel:hover {
-    transform: translateY(-4px);
-    box-shadow: inset 0 1px 0 var(--_hi), 0 0 0 var(--hv-b) var(--_shell), 0 0 0 calc(var(--hv-b) + 1px) var(--_hair), 0 36px 64px -36px var(--_lift);
+body.page-index.page-index .hero-v3 .hero-buttons .btn-primary:hover,
+body.page-index.page-index #contact .cv12-action .btn-doctolib:hover {
+    background: var(--cuivre-rdv-deep);
+    color: #fff;
+}
+body.page-index.page-index .hero-v3 .hero-buttons .btn-outline:hover {
+    border-color: var(--sable);
+    color: var(--sable-light);
 }
 }
-a.hv-bezel:active { transform: scale(0.985); transition-duration: 0.15s; }
-a.hv-bezel:focus-visible { outline: 3px solid var(--prusse); outline-offset: 10px; }
-
-/* ---------- 2. Icône imbriquée (anneau) et bouton « bouton dans le bouton » ---------- */
-.hv-ico-ring { flex: none; display: inline-grid; place-items: center; width: 36px; height: 36px; border-radius: 50%; background: rgba(40, 51, 57, 0.06); color: var(--prusse); transition: transform 0.5s var(--hv-ease), background-color 0.35s var(--hv-ease), color 0.35s var(--hv-ease); }
-.hv-ico-ring svg, .hv-btn-ico svg { width: 16px; height: 16px; display: block; }
-@media (hover: hover) {
-a:hover > .hv-ico-ring, a:hover .hv-more .hv-ico-ring { transform: translateX(4px); background-color: var(--prusse); color: var(--blanc-naturel); }
+body.page-index.page-index .hero-v3 .hero-buttons :is(.btn-primary, .btn-outline):focus-visible,
+body.page-index.page-index #contact .cv12-action .btn-doctolib:focus-visible {
+    outline: 3px solid var(--sable-light);
+    outline-offset: 3px;
 }
-a:focus-visible > .hv-ico-ring, a:focus-visible .hv-more .hv-ico-ring { transform: translateX(4px); background-color: var(--prusse); color: var(--blanc-naturel); }
-
-.hv-btn { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 54px; padding: 8px 8px 8px 28px; border: 0; border-radius: 999px; font-size: 0.82rem; font-weight: 600; letter-spacing: 0.06em; line-height: 1.3; text-transform: uppercase; text-decoration: none; cursor: pointer; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16); transition: transform 0.5s var(--hv-ease), background-color 0.35s var(--hv-ease), box-shadow 0.5s var(--hv-ease), border-color 0.35s var(--hv-ease); }
-.hv-btn-ico { flex: none; display: grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: rgba(255, 255, 255, 0.16); transition: transform 0.5s var(--hv-ease), background-color 0.35s var(--hv-ease); }
-.hv-btn--slate { background: var(--prusse); color: var(--blanc-naturel); }
-.hv-btn--rdv { background: #9C4B2E; color: #fff; }
-.hv-btn--ghost { background: transparent; color: var(--blanc-naturel); border: 1.5px solid rgba(249, 247, 242, 0.32); box-shadow: none; padding: 6.5px 6.5px 6.5px 26px; }
-.hv-btn--ghost .hv-btn-ico { background: rgba(255, 255, 255, 0.08); }
-@media (hover: hover) {
-.hv-btn:hover { transform: translateY(-2px); }
-.hv-btn:hover .hv-btn-ico { transform: translate(3px, -1px) scale(1.06); background-color: rgba(255, 255, 255, 0.24); }
-.hv-btn--slate:hover { background-color: var(--prusse-light); color: var(--blanc-naturel); }
-.hv-btn--rdv:hover { background-color: #82391F; color: #fff; box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.16), 0 22px 40px -22px rgba(130, 57, 31, 0.7); }
-.hv-btn--ghost:hover { border-color: var(--sable); color: var(--sable-light); }
-.hv-btn--ghost:hover .hv-btn-ico { transform: translateY(3px); }
-}
-.hv-btn:active { transform: scale(0.98); transition-duration: 0.12s; }
-.hv-btn:focus-visible { outline: 3px solid var(--prusse); outline-offset: 3px; }
-
-/* Hero : mêmes boutons, mêmes libellés — seule la facture change */
-body.page-index.page-index .hero-v3 .hero-buttons .hv-btn { padding: 8px 8px 8px 28px; gap: 16px; font-size: 0.82rem; transition: transform 0.5s var(--hv-ease), background-color 0.35s var(--hv-ease), box-shadow 0.5s var(--hv-ease), border-color 0.35s var(--hv-ease), color 0.35s var(--hv-ease); }
-body.page-index.page-index .hero-v3 .hero-buttons .hv-btn--ghost { padding: 6.5px 6.5px 6.5px 26px; }
-body.page-index.page-index .hero-v3 .hero-buttons .hv-btn:focus-visible { outline: 3px solid var(--sable-light); outline-offset: 3px; }
-/* Note d'urgence du hero : îlot à filet, pictogramme ambre — texte inchangé */
 body.page-index.page-index .hero-v3 .hero-note {
-    padding: 14px 18px 14px 50px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.09);
-    background: rgba(255, 255, 255, 0.035) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d98c2a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13.5'/%3E%3Ccircle cx='12' cy='17' r='0.4'/%3E%3C/svg%3E") 18px 15px / 20px 20px no-repeat;
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.06), 0 0 0 5px rgba(255, 255, 255, 0.022), 0 0 0 6px rgba(255, 255, 255, 0.055);
+    margin-top: 28px;
+    padding: 16px 0 0 32px;
+    border: 0;
+    border-top: 1px solid rgba(249, 247, 242, 0.16);
+    border-radius: 0;
+    box-shadow: none;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23d98c2a' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13.5'/%3E%3Ccircle cx='12' cy='17' r='0.4'/%3E%3C/svg%3E") 0 18px / 20px 20px no-repeat;
     line-height: 1.6;
 }
 
-/* ---------- 3. En-tête de section éditorial : étiquette + titre à gauche, chapô à droite ---------- */
-.hv-section { padding: 112px 0; }
-.hv-head { display: grid; grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr); gap: 24px 64px; align-items: end; margin: 0 0 60px; padding-bottom: 30px; border-bottom: 1px solid var(--border); }
-.hv-head h2 { margin: 16px 0 0; text-wrap: balance; }
-.hv-head > p { margin: 0; max-width: 44ch; justify-self: end; color: var(--text-muted); font-size: 1rem; line-height: 1.7; font-weight: 400; }
-.hv-eyebrow { display: inline-flex; align-items: center; padding: 5px 13px; border-radius: 999px; border: 1px solid rgba(92, 80, 57, 0.22); background: rgba(191, 178, 151, 0.16); color: var(--sable-fonce); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.16em; line-height: 1.4; text-transform: uppercase; }
-.hv-head--dark { border-bottom-color: rgba(255, 255, 255, 0.10); }
-.hv-head--dark h2 { color: var(--blanc-naturel); }
-.hv-head--dark > p { color: rgba(249, 247, 242, 0.78); }
-.hv-head--dark .hv-eyebrow { color: var(--sable-light); background: rgba(191, 178, 151, 0.10); border-color: rgba(191, 178, 151, 0.30); }
-
-/* ---------- 4. Accès rapide : 7/5 + bande urgence ---------- */
-.hv-access { background: var(--blanc-naturel); padding: 72px 0 88px; }
-.hv-access-grid { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 36px; }
-a.hv-tile { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 24px; align-items: center; align-content: center; padding: 30px 28px 30px 32px; }
-.hv-tile-title { grid-column: 1; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.07em; line-height: 1.4; text-transform: uppercase; color: var(--prusse); margin-bottom: 8px; }
-.hv-tile-text { grid-column: 1; font-size: 0.92rem; line-height: 1.6; color: var(--text-muted); max-width: 52ch; }
-.hv-tile > .hv-ico-ring { grid-column: 2; grid-row: 1 / span 2; width: 44px; height: 44px; }
-.hv-urgence { --_core: #fdf3e0; --_shell: #fbf0dc; --_hair: rgba(217, 140, 42, 0.45); --_hi: rgba(255, 255, 255, 0.7); grid-column: 1 / -1; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 22px; align-items: center; padding: 24px 24px 24px 28px; border-color: rgba(217, 140, 42, 0.28); }
-.hv-urgence-ico { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: rgba(217, 140, 42, 0.14); color: #a65f12; }
-.hv-urgence-ico svg { width: 22px; height: 22px; }
-.hv-urgence-title { display: inline-block; font-size: 0.92rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; text-decoration: none; color: var(--alerte-texte); margin-bottom: 4px; }
-.hv-urgence-title { position: relative; }
-.hv-urgence-title::after { content: ""; position: absolute; inset: -10px 0; } /* zone de toucher 44 px, invisible */
-.hv-urgence-title:focus-visible { outline: 3px solid var(--prusse); outline-offset: 3px; border-radius: 4px; }
-@media (hover: hover) { .hv-urgence-title:hover { text-decoration: underline; text-underline-offset: 4px; } }
-.hv-urgence-text { font-size: 0.92rem; line-height: 1.6; color: var(--alerte-texte); max-width: 70ch; }
-.hv-call { white-space: nowrap; }
-
-/* ---------- 5. Spécialités : grille régulière 3 × 2, cartes à cadre double (la photo du microscope reste une section à part, inchangée) ---------- */
-.hv-cards { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 36px; }
-a.hv-card { display: flex; flex-direction: column; overflow: hidden; }
-.hv-card-body { display: flex; flex-direction: column; flex: 1 1 auto; padding: 30px 30px 28px; }
-body.page-index.page-index .hv-card .specialty-icon { margin-bottom: 20px; }
-body.page-index.page-index .hv-card h3 { margin: 0 0 10px; font-size: 1rem; text-transform: uppercase; letter-spacing: 0.06em; }
-body.page-index.page-index .hv-card p { color: var(--text-muted); font-size: 0.9rem; line-height: 1.65; margin: 0 0 22px; }
-.hv-more { margin-top: auto; display: inline-flex; align-items: center; gap: 12px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--prusse); }
-.hv-more .hv-ico-ring { width: 32px; height: 32px; }
-
-/* ---------- 6. Points clés : une barre, quatre cellules, filets verticaux ---------- */
-.hv-ledger { background: var(--blanc); padding: 88px 0 112px; }
-.hv-ledger-bar { list-style: none; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0; padding: 0; }
-.hv-ledger-bar > li { display: grid; grid-template-columns: auto minmax(0, 1fr); column-gap: 12px; align-content: start; padding: 26px 20px; }
-.hv-ledger-bar > li + li { border-left: 1px solid var(--border); }
-.hv-tick { grid-row: 1 / span 2; display: grid; place-items: center; width: 28px; height: 28px; margin-top: 1px; border-radius: 50%; border: 1px solid rgba(92, 80, 57, 0.35); color: var(--sable-fonce); }
-.hv-tick svg { width: 13px; height: 13px; }
-body.page-index .hv-ledger-bar .usp-title { margin: 0 0 3px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.07em; line-height: 1.45; text-transform: uppercase; color: var(--prusse); }
-body.page-index .hv-ledger-bar .usp-text { margin: 0; font-size: 0.88rem; line-height: 1.5; color: var(--text-muted); }
-
-/* ---------- 7. Parcours : récit intact, premier paragraphe en chapô, carte à cadre double ---------- */
-body.page-index.page-index #parcours.hv-section { padding: 112px 0; }
-body.page-index.page-index #parcours.hv-section .parcours-recit > p:first-child { font-size: 1.12rem; line-height: 1.7; color: var(--prusse); }
-body.page-index.page-index #parcours.hv-section .parcours-card.parcours-reperes { border: 1px solid rgba(40, 51, 57, 0.08); border-radius: var(--hv-r); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.95), 0 0 0 var(--hv-b) #f1eee7, 0 0 0 calc(var(--hv-b) + 1px) #e2ddd4; }
-
-/* ---------- 8. Informations pratiques : mêmes contenus, cadres doubles sur l'ardoise ---------- */
-body.page-index.page-index #contact.hv-section { padding: 112px 0 120px; }
-body.page-index.page-index #contact.hv-section .contact-card-v12,
-body.page-index.page-index #contact.hv-section .map-facade { border: 1px solid rgba(255, 255, 255, 0.07); border-radius: var(--hv-r); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.07), 0 0 0 var(--hv-b) #2d383e, 0 0 0 calc(var(--hv-b) + 1px) #3d494f; }
-body.page-index.page-index #contact.hv-section .contact-v12 { gap: 40px; }
-body.page-index.page-index #contact .cv12-action .hv-btn { padding: 8px 8px 8px 28px; }
-body.page-index.page-index #contact .cv12-action .hv-btn:focus-visible { outline: 3px solid var(--sable-light); outline-offset: 3px; }
-
-/* ---------- 9. Responsive : une colonne, gouttières de 16 px, pas de chevauchement ---------- */
-@media (max-width: 64em) {
-.hv-urgence { grid-template-columns: auto minmax(0, 1fr); }
-.hv-call { grid-column: 1 / -1; justify-self: start; }
+/* ---------- 4. Accès rapide : deux entrées en cartes simples, puis l’encadré d’alerte des fiches ---------- */
+.accueil-entrees {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: auto auto;
+    gap: 0 20px;
 }
+a.accueil-entree {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-row: span 2;
+    column-gap: 20px;
+    align-content: start;
+    padding: 22px 24px;
+    background: var(--blanc);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    color: inherit;
+    text-decoration: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+@supports (grid-template-rows: subgrid) {
+    a.accueil-entree {
+        grid-template-rows: subgrid;
+        row-gap: 0;
+    }
+}
+.accueil-entree-titre {
+    grid-column: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--prusse);
+}
+.accueil-entree-texte {
+    grid-column: 1;
+    margin-top: 6px;
+    font-size: 0.96rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+.accueil-entree > .ico {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: start;
+    margin-top: 2px;
+    width: 22px;
+    height: 22px;
+    color: var(--prusse);
+    transition: transform 0.2s;
+}
+@media (hover: hover) {
+a.accueil-entree:hover {
+    border-color: var(--bleu-gris);
+    box-shadow: var(--shadow-md);
+}
+a.accueil-entree:hover > .ico {
+    transform: translateX(4px);
+}
+}
+a.accueil-entree:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 3px;
+}
+.accueil-urgence {
+    margin: 20px 0 0;
+}
+.accueil-urgence p {
+    margin: 0;
+    max-width: 41.475rem;
+    color: var(--text);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+.accueil-urgence .accueil-urgence-titre {
+    margin-bottom: 4px;
+    font-size: 1.1rem;
+    line-height: 1.35;
+}
+.accueil-urgence .accueil-urgence-titre strong {
+    font-weight: 600;
+    color: var(--alerte-texte);
+}
+.accueil-urgence .alert-actions {
+    max-width: none;
+}
+/* Cabinet fermé (nav.js TECH69AP) : les numéros des urgences 24h/24 se lisent comme des liens, hors des fiches aussi */
+.accueil-urgence .urgences-ferme {
+    margin-top: 14px;
+}
+.accueil-urgence .urgences-ferme a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+/* ---------- 5. Spécialités : un sommaire, une ligne par famille (pictogramme, intitulé, description, suite) ---------- */
+.accueil-sommaire {
+    border-top: 1px solid var(--border);
+}
+a.accueil-ligne {
+    display: grid;
+    grid-template-columns: 64px minmax(0, 16.5rem) minmax(0, 1fr) auto;
+    column-gap: 32px;
+    align-items: start;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--border);
+    color: inherit;
+    text-decoration: none;
+}
+body.page-index.page-index .accueil-ligne .specialty-icon {
+    margin: 0;
+}
+/* Première ligne de l’intitulé, de la description et de « En savoir plus » à mi-hauteur du pictogramme (64 px) */
+body.page-index.page-index .accueil-ligne h3 {
+    margin: 0;
+    padding-top: 19px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--prusse);
+}
+body.page-index.page-index .accueil-ligne p {
+    margin: 0;
+    padding-top: 19px;
+    max-width: 34rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text-light);
+}
+.accueil-suite {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.6;
+    white-space: nowrap;
+    color: var(--prusse);
+}
+.accueil-suite .ico {
+    flex: none;
+    width: 18px;
+    height: 18px;
+    transition: transform 0.2s;
+}
+@media (hover: hover) {
+a.accueil-ligne:hover h3 {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+}
+a.accueil-ligne:hover .accueil-suite .ico {
+    transform: translateX(4px);
+}
+}
+a.accueil-ligne:focus-visible {
+    outline: 3px solid var(--prusse);
+    outline-offset: 2px;
+    border-radius: 4px;
+}
+
+/* ---------- 6. Points clés : quatre repères entre deux filets, sans coche ---------- */
+.accueil-reperes-liste {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px 40px;
+    margin: 0;
+    padding: 28px 0;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+.accueil-reperes-liste > li {
+    margin: 0;
+}
+body.page-index .accueil-reperes-liste .usp-title {
+    margin: 0 0 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: var(--prusse);
+}
+body.page-index .accueil-reperes-liste .usp-text {
+    margin: 0;
+    font-size: 0.96rem;
+    line-height: 1.55;
+    color: var(--text-light);
+}
+
+/* ---------- 7. Parcours : récit intact ; « Postes et diplômes » en colonne réglée, années sur une même verticale ---------- */
+body.page-index.page-index #parcours .parcours-v11 {
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+    gap: 64px;
+}
+body.page-index.page-index #parcours .parcours-card.parcours-reperes {
+    padding: 0;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+body.page-index.page-index #parcours .parcours-reperes h3 {
+    margin: 0 0 18px;
+    padding: 0 0 14px;
+    border-bottom: 2px solid var(--prusse);
+    font-size: 1.15rem;
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--prusse);
+}
+body.page-index.page-index #parcours .pr-group {
+    margin: 0 0 4px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--sable-fonce);
+}
+body.page-index.page-index #parcours .parcours-list + .pr-group {
+    margin-top: 22px;
+    padding-top: 0;
+    border-top: 0;
+}
+body.page-index.page-index #parcours .parcours-list li {
+    gap: 20px;
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+}
+body.page-index.page-index #parcours .parcours-list li:first-child {
+    border-top: 0;
+}
+body.page-index.page-index #parcours .pc-when {
+    flex: none;
+    width: 6.5rem;
+    min-width: 0;
+    padding-top: 1px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0;
+    text-transform: none;
+    color: var(--sable-fonce);
+}
+body.page-index.page-index #parcours .pc-what {
+    font-size: 0.96rem;
+    line-height: 1.45;
+}
+body.page-index.page-index #parcours .pc-where {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-light);
+}
+body.page-index.page-index .parcours-more {
+    margin: 40px 0 0;
+    text-align: left;
+}
+body.page-index.page-index .parcours-more .sc-more {
+    font-size: 0.95rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+/* ---------- 8. Informations pratiques : mêmes contenus, surfaces simples sur l’ardoise ---------- */
+body.page-index.page-index #contact.accueil-section {
+    padding: 88px 0 96px;
+}
+body.page-index.page-index #contact .contact-card-v12,
+body.page-index.page-index #contact .map-facade {
+    border: 1px solid rgba(249, 247, 242, 0.12);
+    border-radius: var(--radius);
+    box-shadow: none;
+}
+body.page-index.page-index #contact .contact-v12 {
+    gap: 24px;
+}
+/* Libellés, liens et boutons en casse normale, comme le reste du site */
+body.page-index.page-index #contact .cv12-row dt {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    text-transform: none;
+    color: rgba(249, 247, 242, 0.8);
+}
+body.page-index.page-index #contact .cv12-link,
+body.page-index.page-index #contact .map-facade-btn {
+    font-size: 0.9rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+body.page-index.page-index #contact .map-facade-title {
+    font-size: 1rem;
+    letter-spacing: 0;
+    text-transform: none;
+}
+body.page-index.page-index #contact .cv12-action .btn-doctolib {
+    gap: 0;
+}
+/* La façade de la carte garde une proportion de carte au lieu de s’étirer sur toute la hauteur de la fiche */
+@media (min-width: 56.3125em) {
+body.page-index.page-index #contact .contact-map {
+    align-self: start;
+}
+body.page-index.page-index #contact .map-facade {
+    min-height: 0;
+    aspect-ratio: 4 / 3;
+}
+}
+
+/* ---------- 9. Tablette et téléphone : une colonne, gouttières de 16 px ---------- */
 @media (max-width: 56.25em) {
-.hv-section, body.page-index.page-index #parcours.hv-section, body.page-index.page-index #contact.hv-section { padding: 72px 0; }
-.hv-access { padding: 48px 0 64px; }
-.hv-ledger { padding: 56px 0 72px; }
-.hv-head { grid-template-columns: minmax(0, 1fr); margin-bottom: 44px; padding-bottom: 24px; }
-.hv-head > p { justify-self: start; }
-.hv-access-grid { grid-template-columns: minmax(0, 1fr); gap: 30px; }
-.hv-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
-.hv-ledger-bar { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-.hv-ledger-bar > li + li { border-left: 0; }
-.hv-ledger-bar > li:nth-child(even) { border-left: 1px solid var(--border); }
-.hv-ledger-bar > li:nth-child(n+3) { border-top: 1px solid var(--border); }
+.accueil-section,
+body.page-index.page-index #contact.accueil-section {
+    padding: 64px 0;
+}
+.accueil-acces {
+    padding-top: 40px;
+}
+.accueil-tete {
+    margin-bottom: 32px;
+}
+a.accueil-ligne {
+    grid-template-columns: 56px minmax(0, 1fr);
+    column-gap: 20px;
+    padding: 20px 0;
+}
+body.page-index.page-index .accueil-ligne .specialty-icon {
+    grid-row: 1 / span 3;
+    width: 56px;
+    height: 56px;
+}
+body.page-index.page-index .accueil-ligne .specialty-icon img {
+    width: 34px;
+    height: 34px;
+}
+body.page-index.page-index .accueil-ligne :is(h3, p),
+.accueil-suite {
+    grid-column: 2;
+}
+body.page-index.page-index .accueil-ligne h3 {
+    padding-top: 15px;
+}
+body.page-index.page-index .accueil-ligne p {
+    padding-top: 6px;
+    max-width: none;
+}
+.accueil-suite {
+    padding-top: 8px;
+}
+.accueil-reperes-liste {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+body.page-index.page-index #parcours .parcours-v11 {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 48px;
+}
 }
 @media (max-width: 37.5em) {
-:root { --hv-r: 18px; --hv-b: 5px; }
-.hv-section, body.page-index.page-index #parcours.hv-section, body.page-index.page-index #contact.hv-section { padding: 64px 0; }
-.hv-cards { grid-template-columns: minmax(0, 1fr); }
-.hv-tile { padding: 24px 20px 24px 22px; column-gap: 16px; }
-.hv-tile > .hv-ico-ring { width: 40px; height: 40px; }
-.hv-urgence { grid-template-columns: minmax(0, 1fr); padding: 22px 20px; gap: 14px; }
-.hv-call { width: 100%; }
-.hv-card-body { padding: 26px 22px 24px; }
-.hv-ledger-bar { grid-template-columns: minmax(0, 1fr); }
-.hv-ledger-bar > li:nth-child(even) { border-left: 0; }
-.hv-ledger-bar > li + li { border-top: 1px solid var(--border); }
-.hv-ledger-bar > li { padding: 20px 20px; }
-body.page-index.page-index .hero-v3 .hero-buttons .hv-btn,
-body.page-index.page-index #contact .cv12-action .hv-btn { width: 100%; }
-.hv-btn-label { flex: 1 1 auto; text-align: center; padding-left: 22px; }
+.accueil-section,
+body.page-index.page-index #contact.accueil-section {
+    padding: 56px 0;
+}
+.accueil-entrees {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    gap: 12px;
+}
+a.accueil-entree {
+    grid-row: auto;
+    grid-template-rows: none;
+    padding: 18px 16px;
+    column-gap: 12px;
+}
+.accueil-urgence {
+    margin-top: 12px;
+}
+/* Sur téléphone, le pictogramme d’alerte passe au-dessus du texte : le texte de l’encadré part du même bord que celui des deux cartes */
+.alert-urgence.accueil-urgence {
+    padding: 52px 16px 16px;
+}
+.alert-urgence.accueil-urgence::before {
+    left: 16px;
+    top: 18px;
+}
+a.accueil-ligne {
+    grid-template-columns: 48px minmax(0, 1fr);
+    column-gap: 16px;
+}
+body.page-index.page-index .accueil-ligne .specialty-icon {
+    width: 48px;
+    height: 48px;
+}
+body.page-index.page-index .accueil-ligne .specialty-icon img {
+    width: 30px;
+    height: 30px;
+}
+body.page-index.page-index .accueil-ligne h3 {
+    padding-top: 11px;
+}
+.accueil-reperes-liste {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    padding: 24px 0;
+}
+/* Même marge intérieure que les deux cartes et l’encadré d’alerte : un seul bord pour les textes posés sur une surface */
+body.page-index.page-index #contact .contact-card-v12 {
+    padding-inline: 16px;
+}
+body.page-index.page-index .hero-v3 .hero-buttons :is(.btn-primary, .btn-outline),
+body.page-index.page-index #contact .cv12-action .btn-doctolib {
+    width: 100%;
+}
+}
+@media (max-width: 30em) {
+/* L’année passe au-dessus de l’intitulé : plus de colonne, un écart serré */
+body.page-index.page-index #parcours .parcours-list li {
+    gap: 3px;
+}
+body.page-index.page-index #parcours .pc-when {
+    width: auto;
+}
 }
 
-@media (max-width: 23.75em) {
-.hv-call { white-space: normal; }
-.hv-btn { gap: 10px; padding-left: 18px; letter-spacing: 0.04em; }
-.hv-btn-label { padding-left: 0; }
-.hv-card-body { padding-inline: 18px; }
-}
-
-/* ---------- 10. Mouvement réduit, contraste forcé ---------- */
+/* ---------- 10. Mouvement réduit ---------- */
 @media (prefers-reduced-motion: reduce) {
-a.hv-bezel:active, .hv-btn:active { transform: none; }
+.accueil-entree > .ico,
+.accueil-suite .ico {
+    transition: none;
 }
-@media (prefers-reduced-motion: reduce) and (hover: hover) {
-a.hv-bezel:hover, .hv-btn:hover, .hv-btn:hover .hv-btn-ico, .hv-btn--ghost:hover .hv-btn-ico, a:hover > .hv-ico-ring, a:hover .hv-more .hv-ico-ring { transform: none; }
 }
-/* contraste élevé : les cadres en box-shadow disparaissent — une bordure réelle les remplace (sur une ligne, comme .map-facade-btn : le bloc multi-lignes forced-colors reste unique) */
-@media (forced-colors: active) { .hv-bezel, .hv-btn, .hv-ico-ring, .hv-btn-ico, .hv-tick, .hv-eyebrow { border: 1px solid currentColor; } }
 
 /* TECH24BT-2026-09-19 — Intégration du tour 23 au nouveau design.
    Cartes, cadres doubles, en-têtes et pictogrammes du tour 24 conservés.
    Descriptions plus lisibles, fiches liées en lignes.
    L’action suit la présentation depuis la demande du 21/09/2026. */
-body.page-index.page-index .hv-card p { font-size: 1rem; }
 body.page-index .parcours-recit p:not(.parcours-recherche),
 article.pathology-content .pillar-intro p,
 article.pathology-content .expertise-block p:not(.meta),
@@ -7763,7 +8099,7 @@ article.pathology-content .consultation-route p {
     .cta-block > * { display: none !important; }
     .cta-block > .cta-alt { display: block !important; }
     /* Accueil : un document linéaire, sans espace réservé à une image masquée. */
-    .page-index :is(.hero-visual, .section-espace, .hv-more, .hv-ico-ring, .hv-btn-ico, .hv-tick, .hv-eyebrow, .parcours-card-icon, .contact-map) {
+    .page-index :is(.hero-visual, .section-espace, .accueil-suite, .accueil-entree > .ico, .contact-map) {
         display: none !important;
     }
     .page-index :is(.hero, .hero-content, .hero-left) {
@@ -7779,16 +8115,15 @@ article.pathology-content .consultation-route p {
     .page-index .hero h1 { margin-block: 8pt !important; font-size: 22pt !important; }
     .page-index .hero :is(.h1-major, .h1-amp) { font-size: 22pt !important; }
     .page-index .hero :is(.hero-text, .hero-note, .hero-subtitle) { text-align: left !important; }
-    .page-index :is(.hv-section, .hv-access, .hv-ledger) { padding-block: 12pt !important; }
-    .page-index :is(.hv-head, .hv-access-grid, .hv-cards, .hv-ledger-bar, .parcours-v11, .contact-v12) { display: block !important; }
-    .page-index :is(.hv-head, .hv-card, .hv-tile, .hv-card-body, .hv-ledger-bar > li, .parcours-card, .contact-card-v12) {
+    .page-index :is(.accueil-section, .accueil-acces, .accueil-reperes) { padding-block: 12pt !important; }
+    .page-index :is(.accueil-entrees, .accueil-reperes-liste, .parcours-v11, .contact-v12) { display: block !important; }
+    .page-index :is(.accueil-ligne, .accueil-entree, .accueil-reperes-liste > li, .parcours-card, .contact-card-v12) {
         padding: 6pt 0 !important;
         margin: 0 !important;
         border-radius: 0 !important;
     }
-    .page-index :is(.hv-card, .hv-tile, .cv12-row) { break-inside: avoid; }
-    .page-index :is(.hv-card, .hv-tile) { display: block !important; }
-    .page-index .hv-ledger-bar > li { border: 0 !important; }
+    .page-index :is(.accueil-ligne, .accueil-entree, .cv12-row) { break-inside: avoid; }
+    .page-index :is(.accueil-ligne, .accueil-entree) { display: block !important; border: 0 !important; }
     .page-index .cv12-row {
         grid-template-columns: 140pt minmax(0, 1fr) !important;
         gap: 12pt !important;
@@ -8193,18 +8528,6 @@ body.sticky-rdv-repli .sticky-rdv {
    sa rangée), légende. L'espace entre les cartes ne change pas ; à l'intérieur, row-gap 0 garde les marges
    actuelles. Sans sous-grille (navigateurs anciens) : affichage inchangé. */
 @supports (grid-template-rows: subgrid) {
-    a.hv-card {
-        display: grid;
-        grid-row: span 4;
-        grid-template-rows: subgrid;
-        row-gap: 0;
-    }
-    .hv-card-body {
-        display: grid;
-        grid-row: 1 / -1;
-        grid-template-rows: subgrid;
-        row-gap: 0;
-    }
     body.page-pathologies .hub-grid > .hub-card {
         display: grid;
         grid-template-columns: auto minmax(0, 1fr);
