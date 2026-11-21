@@ -1365,9 +1365,7 @@ body.v5.menu-open .mobile-toggle span:nth-child(3) {
 }
 :where(body.v1) .related-pathologies {
     margin-top: 40px;
-    padding: 24px 28px;
-    background: var(--blanc-naturel);
-    border-radius: var(--radius);
+    padding: 0;   /* ALIGN-2026-11-21 : la boîte avait la couleur du fond, il n’en restait qu’un retrait de 28 px ; le bloc part du bord du texte */
 }
 :where(body.v5) .related-pathologies h3 {
     font-size: 0.9rem;
@@ -5504,7 +5502,7 @@ body.page-pathologies .hub-cta .btn-rdv:focus-visible {
 body.page-pathologies .hub-cta .cta-alt {
     font-size: 0.85rem;
     color: rgba(249, 247, 242, 0.75);
-    margin: 16px 0 0;
+    margin: 16px auto 0;   /* ALIGN-2026-11-21 : centrée comme le texte et le bouton du bloc (elle partait à gauche de 60ch) */
 }
 body.page-pathologies .hub-cta .cta-alt a {
     color: var(--sable-light);
@@ -7155,7 +7153,7 @@ article.pathology-content .alert-urgence:not(.alert-urgence--niveaux)::before {
     left: 18px;
     top: 18px;
 }
-article.pathology-content :is(.forme-box, .qr-block, .enbref, .eeat-block, .travaux-block, .expertise-block, .related-pathologies, .cta-block, .key-fact) {
+article.pathology-content :is(.forme-box, .qr-block, .enbref, .eeat-block, .travaux-block, .expertise-block, .cta-block, .key-fact) {
     padding-inline: 18px;
 }
 article.pathology-content .qr-block .r {
@@ -7959,9 +7957,7 @@ body.page-contact .page-header {
 }
 article.pathology-content .contact-booking {
     margin-top: 0;
-    padding: 28px 18px;
-    outline: 1px solid var(--bleu-gris);
-    outline-offset: -8px;
+    padding: 28px 18px;   /* ALIGN-2026-11-21 : filet intérieur retiré (cadre dans le cadre, seul exemple du site) */
 }
 article.pathology-content .contact-booking h2 {
     margin: 0 0 18px;
