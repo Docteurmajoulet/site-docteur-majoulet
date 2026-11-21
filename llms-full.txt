@@ -3034,6 +3034,16 @@ Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En deh
 - Traumatisme oculaire.
 - Présence de pigment ou d’hémorragie dans le vitré à l’examen initial.
 
+#### Questions fréquentes
+
+##### Un phosphène est-il bénin ?
+
+Le plus souvent, oui. Un éclair bref, sur le côté du champ visuel d’un seul œil, souvent déclenché par les mouvements des yeux ou mieux vu dans la pénombre, vient en général du vitré qui se décolle et tire sur la rétine : c’est le **décollement postérieur du vitré**, un phénomène bénin du vieillissement de l’œil. Mais on ne peut le dire bénin qu’après un **fond d’œil dilaté**, qui écarte une déchirure de la rétine : des éclairs ou des corps flottants récents justifient cet examen **sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même**.
+
+##### Les éclairs peuvent-ils venir d’une migraine ?
+
+Oui. La **migraine avec aura**, que l’on appelle aussi migraine ophtalmique, donne une ligne brisée qui scintille, en zigzag, qui s’étend peu à peu puis disparaît en moins d’une heure, suivie ou non d’un mal de tête. Elle se voit avec les deux yeux : elle persiste quand on cache un œil, puis l’autre. Les éclairs du vitré, eux, sont brefs, ne concernent qu’un œil et se répètent pendant des jours ou des semaines. Une première crise après 40 ans, ou une perte de la vision d’un côté qui s’installe d’un coup, sans scintiller ni s’étendre, ne doit pas être mise sur le compte d’une migraine : comme des troubles visuels accompagnés d’une faiblesse, d’un trouble de la parole ou d’un visage asymétrique, elle impose d’**appeler le 15** (voir [Baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision)).
+
 #### Fiches associées
 
 - [Décollement postérieur du vitré (fiche complète)](https://docteurmajoulet.com/decollement-posterieur-vitre)
@@ -3044,7 +3054,7 @@ Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En deh
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023) ; aura migraineuse : [classification internationale des céphalées de l’International Headache Society (ICHD-3, 2018)](https://doi.org/10.1177/0333102417738202). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 ### Décollement postérieur du vitré
 

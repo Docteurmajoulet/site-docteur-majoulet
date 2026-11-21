@@ -97,7 +97,10 @@ def sync(html):
         html = html[:s] + new + html[e:]
         for s2, e2, _ in reversed(scripts[1:]): html = html[:s2] + html[e2:]
     else:
-        html = html.replace('</head>', '    ' + new + '\n</head>', 1)
+        # un FAQPage nouveau se place avant le repère TECH8N (dernière ligne de l’en-tête sur toutes les fiches), sinon avant </head>
+        i, j = html.find('\n<!-- TECH8N'), html.find('</head>')
+        if 0 <= i < j: html = html[:i] + '\n    ' + new + html[i:]
+        else: html = html.replace('</head>', '    ' + new + '\n</head>', 1)
     return html
 
 
