@@ -2,7 +2,7 @@
 
 > Version longue de [llms.txt](https://docteurmajoulet.com/llms.txt) : le texte intégral des pages de docteurmajoulet.com, converti en Markdown depuis les pages publiées (généré par _tests/llms_full.py — rien n'est rédigé à part). Chaque section est une page du site : titre, URL canonique, description, date de relecture, puis son contenu. Le Dr Alexandre Majoulet est chirurgien ophtalmologue spécialisé en chirurgie vitréo-rétinienne, co-fondateur du Cabinet Ophtalife à Boulogne-Billancourt (92) et praticien au CHNO des Quinze-Vingts (Paris).
 
-Dernière mise à jour : 2026-10-30
+Dernière mise à jour : 2026-11-21
 
 ## Identité et coordonnées
 
@@ -282,7 +282,7 @@ Le Dr Majoulet intervient ponctuellement dans les médias grand public pour des 
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), cofondateur du Cabinet Ophtalife à Boulogne-Billancourt, et Praticien Contractuel au CHNO des Quinze-Vingts (service du Pr Baudouin).
 
-Dernière mise à jour : 27 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Dernière mise à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Contact et rendez-vous
 
@@ -291,6 +291,18 @@ Dernière mise à jour : 27 octobre 2026 · Sources : recommandations SFO (Soci�
 - Relu le : 2026-04-19
 
 Cabinet Ophtalife · Boulogne-Billancourt
+
+#### Quel rendez-vous choisir sur Doctolib ?
+
+Voile noir ou baisse brutale de la vision : appelez le jour même ([01 84 19 11 66](tel:+33184191166) ; hors horaires, urgences hospitalières). Éclairs ou corps flottants récents : créneau sous 24-48 h.
+
+Pour un rendez-vous programmé, chaque lien ouvre directement la bonne rubrique de la prise de rendez-vous du Dr Majoulet.
+
+- [Rendez-vous rétine et injections](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400139) : DMLA, diabète, occlusion veineuse, injection intravitréenne, OCT, avis de chirurgie de la rétine.
+- [Rendez-vous cataracte](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400138) : première consultation, avis chirurgical, suivi.
+- [Rendez-vous glaucome](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400141) : consultation de glaucome, OCT.
+- [Rendez-vous laser](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400187) : capsulotomie, trabéculoplastie SLT, iridotomie, laser de la rétine.
+- [Consultation d’ophtalmologie](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400137) : première consultation ou suivi, lunettes et lentilles, enfant, sécheresse oculaire et lumière pulsée (IPL), urgence.
 
 #### Un avis spécialisé sur votre rétine
 
@@ -357,7 +369,7 @@ En dehors des heures d’ouverture du cabinet ou en cas d’urgence vitale : **S
 
 Rédigée et relue par le **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue (RPPS 10101500121), Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris.
 
-Informations pratiques mises à jour : 29 octobre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
+Informations pratiques mises à jour : 1er novembre 2026 · Sources : recommandations SFO (Société Française d’Ophtalmologie), HAS, et publications scientifiques indexées PubMed.
 
 ### Ophtalmologue à Boulogne-Billancourt
 
@@ -523,7 +535,7 @@ En dehors de ces horaires, urgences ophtalmologiques 24h/24 :
 
 Consultation sous 24-48 h, avec fond d’œil dilaté.
 
-[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 **Trouble de la parole, faiblesse d’un membre, visage paralysé :**
 
@@ -810,7 +822,7 @@ Première cause de malvoyance après 50 ans dans les pays industrialisés. Dépi
 
 OCT le jour même, injections en salle dédiée, consultation spécialisée rétine à Boulogne-Billancourt.
 
-[Prendre rendez-vous sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Prendre rendez-vous sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false)
 
 #### Chirurgies
 
@@ -957,7 +969,7 @@ Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
 
 Consultation spécialisée rétine et cataracte au Cabinet Ophtalife, 37 rue d’Aguesseau, Boulogne-Billancourt.
 
-[Prendre rendez-vous sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Prendre rendez-vous sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false)
 
 ### Eye surgeon in west Paris, consultations in English
 
@@ -2001,11 +2013,13 @@ Indications maculaires : [recommandations de l’American Academy of Ophthalmolo
 
 Urgence ophtalmologique
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, rideau ou baisse brutale de la vision :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24 — hors Île-de-France, le CHU de votre région.
 
 **Mouches volantes ou éclairs lumineux récents, sans voile :** fond d’œil dilaté **sous 24 à 48 h** pour rechercher une déchirure rétinienne — prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -2842,11 +2856,13 @@ Dernière révision : 19 août 2026 · Dernière mise à jour : 27 octobre 2026.
 
 Consultation sous 24-48 h
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, ombre fixe ou amputation d’un secteur du champ visuel :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24.
 
 **Apparition brutale de nouveaux corps flottants, éclairs lumineux ([phosphènes](https://docteurmajoulet.com/flashs-phosphenes-myodesopsies)) dans la vision latérale, pluie de points noirs ou de filaments rouges, sans voile :** fond d’œil dilaté **sous 24 à 48 h** — ces symptômes peuvent annoncer une **déchirure rétinienne** qui, non traitée, peut évoluer vers un **décollement de rétine** ; prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -2903,7 +2919,7 @@ La consultation d’urgence comporte systématiquement :
 
 - **Interrogatoire précis** : ancienneté et rythme d’apparition des symptômes, antécédents, réfraction.
 - **Acuité visuelle** des deux yeux.
-- **Examen à la lampe à fente** : recherche d’un anneau de Weiss (signe typique de DPV), d’une hémorragie vitréenne, de pigment dans le vitré antérieur (signe dit de « Schaffer » — très évocateur d’une déchirure).
+- **Examen à la lampe à fente** : recherche d’un anneau de Weiss (signe typique de DPV), d’une hémorragie vitréenne, de pigment dans le vitré antérieur (signe de Shafer, dit « poussière de tabac » — très évocateur d’une déchirure).
 - **Fond d’œil dilaté** avec examen très attentif de la périphérie à la lentille trois miroirs (ou à l’ophtalmoscopie indirecte avec indentation sclérale).
 - **Échographie oculaire en mode B** si hémorragie vitréenne empêchant la visualisation du fond d’œil.
 
@@ -2952,9 +2968,14 @@ Chez la plupart des patients, les corps flottants **diminuent progressivement en
 
 Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitréennes. Le **décollement de rétine** est une urgence chirurgicale caractérisée par un **voile noir qui s’étend progressivement** comme un rideau et qui, non traité, progresse vers la macula et provoque une perte visuelle centrale. Un DPV avec corps flottants peut cependant se compliquer d’une déchirure puis d’un décollement : c’est la raison pour laquelle il faut toujours **consulter rapidement**.
 
+##### Qu’est-ce que le signe de Shafer (parfois écrit « Schaffer ») ?
+
+C’est un signe que l’ophtalmologiste recherche à la lampe à fente : de fins grains de pigment en suspension dans le vitré, juste derrière le cristallin (on parle de « poussière de tabac »). Après un décollement postérieur du vitré récent, sa présence doit faire craindre une **déchirure de la rétine** et impose un examen complet de la rétine, pupille dilatée. Dans une [étude de 200 yeux (Br J Ophthalmol, 2000)](https://doi.org/10.1136/bjo.84.11.1264), 23 des 25 déchirures trouvées s’accompagnaient de ce signe, mais 2 non : son absence ne dispense donc pas de cet examen.
+
 #### Sources et références
 
 - Hollands H, Johnson D, Brox AC, et al. *Acute-onset floaters and flashes: is this patient at risk for retinal detachment?*. JAMA. 2009;302(20):2243-2249. [doi:10.1001/jama.2009.1714](https://doi.org/10.1001/jama.2009.1714)
+- Tanner V, Harle D, Tan J, et al. *Acute posterior vitreous detachment: the predictive value of vitreous pigment and symptomatology*. Br J Ophthalmol. 2000;84(11):1264-1268. [doi:10.1136/bjo.84.11.1264](https://doi.org/10.1136/bjo.84.11.1264)
 - Blindbaek S, Grauslund J. *Prophylactic treatment of retinal breaks--a systematic review*. Acta Ophthalmol. 2015;93(1):3-8. [doi:10.1111/aos.12447](https://doi.org/10.1111/aos.12447)
 - Garoon RB, Smiddy WE, Flynn HW. *Treated retinal breaks: clinical course and outcomes*. Graefes Arch Clin Exp Ophthalmol. 2018;256(6):1053-1057. [doi:10.1007/s00417-018-3950-8](https://doi.org/10.1007/s00417-018-3950-8)
 
@@ -2962,7 +2983,7 @@ Les corps flottants ne sont **pas** un décollement : ce sont des opacités vitr
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023). / Dernière révision : 24 août 2026 · Dernière mise à jour : 30 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -2994,17 +3015,19 @@ Le vitré est un gel transparent qui remplit la cavité oculaire. Avec l’âge 
 
 - **Voile ou rideau** fixe dans le champ visuel (décollement constitué).
 - **Ombre noire périphérique** qui progresse vers le centre.
-- **Nuée de nouveaux corps flottants** (souvent poussière de tabac à la lampe à fente — hémorragie vitréenne par déchirure d’un vaisseau).
+- **Nuée de nouveaux corps flottants** (à la lampe à fente, souvent du pigment dans le vitré, le [signe de Shafer](https://docteurmajoulet.com/dechirure-retine-corps-flottants#examen-ophtalmologique), ou du sang lorsque la déchirure a rompu un vaisseau).
 - **Baisse d’acuité visuelle** rapide.
 - Symptômes après **traumatisme oculaire**.
 
 **Toute apparition d’un de ces signes impose une consultation en urgence** (le jour même) avec fond d’œil dilaté.
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, ombre fixe ou amputation d’un secteur du champ visuel :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24.
 
 **Éclairs lumineux répétés, pluie de corps flottants ou de points noirs récents, sans voile :** fond d’œil dilaté **sous 24 à 48 h** — éclairs + corps flottants récents = déchirure rétinienne jusqu’à preuve du contraire ; prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -3042,7 +3065,7 @@ Le plus souvent, oui. Un éclair bref, sur le côté du champ visuel d’un seul
 
 ##### Les éclairs peuvent-ils venir d’une migraine ?
 
-Oui. La **migraine avec aura**, que l’on appelle aussi migraine ophtalmique, donne une ligne brisée qui scintille, en zigzag, qui s’étend peu à peu puis disparaît en moins d’une heure, suivie ou non d’un mal de tête. Elle se voit avec les deux yeux : elle persiste quand on cache un œil, puis l’autre. Les éclairs du vitré, eux, sont brefs, ne concernent qu’un œil et se répètent pendant des jours ou des semaines. Une première crise après 40 ans, ou une perte de la vision d’un côté qui s’installe d’un coup, sans scintiller ni s’étendre, ne doit pas être mise sur le compte d’une migraine : comme des troubles visuels accompagnés d’une faiblesse, d’un trouble de la parole ou d’un visage asymétrique, elle impose d’**appeler le 15** (voir [Baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision)).
+Oui. La **migraine avec aura**, que l’on appelle aussi migraine ophtalmique, donne une ligne brisée qui scintille, en zigzag, qui s’étend peu à peu puis disparaît en moins d’une heure, suivie ou non d’un mal de tête. Elle se voit avec les deux yeux : elle persiste quand on cache un œil, puis l’autre. Les éclairs du vitré, eux, sont brefs, ne concernent qu’un œil et se répètent pendant des jours ou des semaines. Une première crise après 40 ans, ou des troubles visuels accompagnés d’une faiblesse, d’un trouble de la parole ou d’un visage asymétrique, ne doivent pas être mis sur le compte d’une migraine : ils imposent d’**appeler le 15**. Une perte de la vision d’un œil qui s’installe d’un coup, sans scintiller ni s’étendre, impose un examen en urgence **le jour même**, au cabinet ou à la Fondation Rothschild (voir [Baisse brutale de la vision](https://docteurmajoulet.com/baisse-brutale-vision)).
 
 #### Fiches associées
 
@@ -3054,7 +3077,7 @@ Oui. La **migraine avec aura**, que l’on appelle aussi migraine ophtalmique, d
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023) ; aura migraineuse : [classification internationale des céphalées de l’International Headache Society (ICHD-3, 2018)](https://doi.org/10.1177/0333102417738202). / Dernière révision : 19 août 2026 · Dernière mise à jour : 29 octobre 2026.
+Rédigé à partir des [recommandations de l’American Academy of Ophthalmology sur le décollement postérieur du vitré, les déchirures de la rétine et les palissades (2025)](https://doi.org/10.1016/j.ophtha.2024.12.023) ; aura migraineuse : [classification internationale des céphalées de l’International Headache Society (ICHD-3, 2018)](https://doi.org/10.1177/0333102417738202). / Dernière révision : 19 août 2026 · Dernière mise à jour : 30 octobre 2026.
 
 ### Décollement postérieur du vitré
 
@@ -3113,11 +3136,13 @@ Le vitré adhère normalement à la rétine à plusieurs endroits : autour du ne
 
 Ces symptômes évoquent une **déchirure rétinienne** ou un **décollement de rétine débutant**.
 
-[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166) [Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+[Appeler le cabinet — 01 84 19 11 66](tel:+33184191166)
 
 **Voile noir, ombre fixe ou amputation d’un secteur du champ visuel :** suspicion de décollement de rétine — à examiner **le jour même**. Aux heures d’ouverture, appelez le cabinet ; en dehors, rendez-vous sans attendre dans un service d’urgences ophtalmologiques hospitalier, ouvert 24h/24.
 
 **Pluie soudaine de corps flottants, éclairs lumineux persistants ou filaments rouges (sang), sans voile :** fond d’œil dilaté **sous 24 à 48 h** pour rechercher une déchirure rétinienne compliquant le DPV — prenez un créneau urgence.
+
+[Créneau urgence sur Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&vmids%5B%5D=13767008)
 
 Cabinet ouvert du lundi au jeudi 9 h-20 h · vendredi et samedi 9 h-18 h. En dehors : urgences ophtalmologiques hospitalières 24h/24 (Quinze-Vingts, Rothschild, Cochin).
 
@@ -3155,6 +3180,10 @@ Après plus de 6 mois d’adaptation visuelle, certains corps flottants restent 
 ##### Un décollement postérieur du vitré est-il grave ?
 
 **Non, ce n’est pas grave.** Le **décollement postérieur du vitré (DPV)** est un phénomène naturel du vieillissement de l’œil, qui arrive à tout le monde un jour ou l’autre, le plus souvent après 50 ans : le gel qui remplit l’œil se détache de la rétine, ce qui fait apparaître brutalement des corps flottants (« mouches volantes ») et parfois des éclairs lumineux. Le principal risque est qu’en se décollant, le vitré tire sur la rétine et la déchire, et une déchirure non traitée peut conduire à un décollement de rétine. C’est pourquoi l’apparition brutale de corps flottants ou d’éclairs justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même** : aux heures d’ouverture, au Cabinet Ophtalife de Boulogne-Billancourt ([01 84 19 11 66](tel:+33184191166)) ; en dehors, aux urgences ophtalmologiques ouvertes 24h/24 (Quinze-Vingts, Rothschild, Cochin). Sans déchirure, aucun traitement n’est nécessaire, mais un contrôle est recommandé 4 à 6 semaines plus tard ; une déchirure se traite par un laser de barrage, au cabinet.
+
+##### Qu’est-ce que l’anneau de Weiss ?
+
+C’est un **corps flottant en forme d’anneau**, parfois incomplet, que l’on remarque surtout sur un fond clair. Il correspond à l’attache du vitré autour du nerf optique : quand le vitré se décolle, cette attache se détache à son tour et reste visible dans le gel, en avant de la rétine. Vu au fond d’œil, il indique que le décollement postérieur du vitré est **complet**. L’anneau de Weiss n’est pas grave en lui-même. Ce qui compte, comme pour tout décollement du vitré récent, c’est de vérifier qu’il n’y a pas de déchirure de la rétine : l’apparition brutale de corps flottants justifie un **fond d’œil dilaté sous 24 à 48 h**, et un voile noir, une ombre fixe, un rideau ou une baisse brutale de la vision, un **examen le jour même**.
 
 ##### Peut-on prévenir un DPV ?
 
@@ -3452,7 +3481,7 @@ L’implant est prévu pour toute la vie et ne demande aucun entretien. Il peut 
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir des [recommandations de l’ESCRS sur la chirurgie de la cataracte (2024)](https://doi.org/10.1097/j.jcrs.0000000000002012). / Dernière révision : 20 août 2026 · Dernière mise à jour : 30 octobre 2026.
 
 ### Cataracte
 
@@ -4187,7 +4216,7 @@ La **photocoagulation laser rétinienne** consiste à appliquer de fins impacts 
 
 Pour un bilan de rétinopathie diabétique, une suspicion de déchirure rétinienne (éclairs, corps flottants), ou une séance de laser programmée :
 
-[Rendez-vous Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris) [01 84 19 11 66](tel:+33184191166)
+[Rendez-vous Doctolib](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400137&visit_motive_category_ids%5B%5D=400187) [01 84 19 11 66](tel:+33184191166)
 
 ##### Auteur et révision médicale
 
@@ -4900,6 +4929,10 @@ La prise en charge de l’enfant myope est du ressort de l’**ophtalmologiste p
 
 Elle se stabilise le plus souvent à l’âge adulte. Une **aggravation rapide** doit faire rechercher d’autres causes : cataracte nucléaire débutante, décompensation d’un kératocône, diabète déséquilibré. Une augmentation prolongée au-delà de 30 ans chez un myope déjà fort doit alerter.
 
+##### Qu’est-ce que le conus myopique ?
+
+C’est un **croissant clair au bord de la papille** (la tête du nerf optique), le plus souvent du côté de la tempe, que l’on voit au fond d’œil. En s’allongeant, l’œil myope étire les tissus qui entourent le nerf optique : à cet endroit, la choroïde et les couches profondes de la rétine manquent, et l’on voit par transparence la sclère, la paroi blanche de l’œil. Le conus ne donne aucun symptôme et ne se traite pas. Il témoigne de l’allongement de l’œil et rend plus difficile le repérage d’un glaucome, plus fréquent chez le myope fort : c’est pourquoi un [dépistage annuel du glaucome](https://docteurmajoulet.com/glaucome) est recommandé dès 40 ans.
+
 ##### La chirurgie réfractive guérit-elle la myopie forte ?
 
 **Non.** La chirurgie réfractive (LASIK, PKR, SMILE, implants phakes, PRELEX) supprime le besoin de correction optique mais ne modifie pas la **longueur axiale** ni le terrain rétinien. Le patient opéré reste à risque de toutes les complications rétiniennes de la myopie forte. **Le suivi annuel de la rétine demeure indispensable après chirurgie réfractive.**
@@ -4920,7 +4953,7 @@ C’est la **classification internationale** de la maculopathie myopique (*META-
 
 **[Dr Alexandre Majoulet](https://docteurmajoulet.com/le-dr-majoulet)**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Néovaisseaux choroïdiens myopiques : [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028). Glaucome du myope fort : [recommandations de la Société française du glaucome et du Club francophone des spécialistes de la rétine (2026)](https://doi.org/10.1016/j.jfo.2026.104958). / Dernière révision : 20 avril 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5003,7 +5036,7 @@ Le protocole est en règle un schéma **Pro Re Nata** (PRN, littéralement « à
 - **Surveillance mensuelle** par OCT pendant la 1re année.
 - **Re-traitement** uniquement si signes d’activité à l’OCT ou à l’examen clinique (fluide persistant, nouvelle hémorragie, métamorphopsies).
 
-En moyenne, le patient reçoit **2 à 4 injections** la première année, puis moins les années suivantes. Certains ne nécessitent aucune ré-injection au-delà de la première année. Voir [Injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) pour le déroulement pratique (gestes, anesthésie topique, durée ≈ 15 minutes en ambulatoire).
+En moyenne, le patient reçoit **2 à 4 injections** la première année, puis moins les années suivantes. Certains ne nécessitent aucune ré-injection au-delà de la première année. Voir [Injection intravitréenne](https://docteurmajoulet.com/injection-intravitreenne) pour le déroulement pratique (gestes, anesthésie par collyre, un créneau de 20 minutes, mais prévoyez environ 30 à 45 minutes sur place).
 
 ##### Place de la photothérapie dynamique (PDT)
 
@@ -5048,7 +5081,7 @@ Oui. Le risque de **bilatéralisation** existe (environ 30 % à 5-10 ans), surto
 
 **Dr Alexandre Majoulet**, chirurgien ophtalmologue – rétinologue, cofondateur du Cabinet Ophtalife (Boulogne-Billancourt). / Praticien Contractuel au Centre Hospitalier National d’Ophtalmologie des Quinze-Vingts (Paris), ancien Assistant des Hôpitaux de Paris (Quinze-Vingts) et ancien Interne des Hôpitaux de Paris. / Titulaire du DES d’Ophtalmologie (UVSQ, 2023) et du DIU de Chirurgie Vitréo-Rétinienne (Paris-Saclay, 2024). **FEBO** (Fellow of the European Board of Ophthalmology) depuis 2022.
 
-Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 28 octobre 2026.
+Rédigé à partir du [consensus international sur les néovaisseaux choroïdiens du myope fort (2017)](https://doi.org/10.1016/j.ophtha.2017.04.028) et des [recommandations de la Fédération France Macula (2014)](https://doi.org/10.1016/j.jfo.2013.12.003). / RPPS : 10101500121 — Dernière révision : 22 avril 2026 · Dernière mise à jour : 29 octobre 2026.
 
 *Cette page a un but d’information et ne se substitue pas à une consultation médicale.*
 
@@ -5617,7 +5650,7 @@ La stratégie s’appuie sur le consensus TFOS DEWS III (2025) : les mesures de 
 | 3. Les gestes au cabinet | IPL (dysfonction des glandes de Meibomius, rosacée oculaire) ; bouchons méatiques (déficit de production) ; incision de chalazion si échec des soins locaux au-delà de 4 à 6 semaines. | IPL non remboursée : 150 € la séance (montant au 28 octobre 2026) ; bouchons et incision pris en charge par l’Assurance maladie (secteur 2, avec dépassement d’honoraires) |
 | 4. Les formes sévères | Sérum autologue, lentilles sclérales, greffe de membrane amniotique, occlusion définitive des points lacrymaux — patients orientés vers le service du CHNO des Quinze-Vingts, où j’exerce. | Prise en charge hospitalière |
 
-Le bilan de la surface oculaire au cabinet identifie le mécanisme en cause et le palier adapté. [Prendre rendez-vous](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris)
+Le bilan de la surface oculaire au cabinet identifie le mécanisme en cause et le palier adapté. [Prendre rendez-vous](https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&source=profile&speciality_ids%5B%5D=4&telehealth=false&visit_motive_category_ids%5B%5D=400137)
 
 #### L’IPL : la lumière intense pulsée
 
