@@ -19,7 +19,7 @@
 import { chromium } from 'playwright';
 import { readFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
-import { pages, urlFor, startServer } from './lib.mjs';
+import { pages, urlFor, startServer, figerHeureCabinet } from './lib.mjs';
 import { readingLines } from './reading.mjs';
 import { assertReadingFixtures } from './reading-fixtures.mjs';
 
@@ -43,6 +43,7 @@ const _newContext = browser.newContext.bind(browser);
 browser.newContext = async (options) => {
   const c = await _newContext(options);
   if (!options || !options.viewport || options.viewport.width <= 1024) await c.clock.setFixedTime(HEURE_OUVERTE);
+  else await figerHeureCabinet(c, HEURE_OUVERTE);   // TECH69AP-2026-11-21 : au-delà, seule l'heure lue par nav.js est figée (le numéro du cabinet dépend de l'heure sur toutes les largeurs)
   return c;
 };
 const failures = [];
@@ -832,6 +833,77 @@ try {
       await ctx.close();
     }
   }
+  // TECH69AP-2026-11-21 — le numéro du cabinet ne s'affiche qu'aux heures d'ouverture (demande du Dr Majoulet, 21/11).
+  // Dimanche 15 novembre, 10 h 30, sur chaque page à 390 px et sur 5 pages à 1 366 px : aucun texte affiché ne contient le numéro (mentions légales
+  // exceptées : identification de l'éditeur), aucun lien d'appel du cabinet n'est rendu, aucune parenthèse ne reste vide ; tout encadré d'alerte qui
+  // proposait l'appel montre les trois urgences 24h/24 de Paris et le 15, chaque numéro gardant 44 px de zone tactile ; la barre fixe de ces pages
+  // porte « Urgences 24h/24 ». Jeudi 12, 10 h 30 : le numéro est affiché et aucun élément « cabinet fermé » ne l'est.
+  {
+    const LARGES = ['index', 'contact', 'urgences-ophtalmologiques', 'decollement-retine', 'ophtalmologue-boulogne-billancourt'];
+    for (const [quand, ferme] of [['2026-11-15T10:30:00+01:00', true], ['2026-11-12T10:30:00+01:00', false]]) {
+      for (const w of [390, 1366]) {
+        const ctx = await _newContext({ viewport: { width: w, height: w < 700 ? 844 : 900 }, deviceScaleFactor: 1, locale: 'fr-FR' });
+        await ctx.clock.setFixedTime(new Date(quand));
+        await ctx.route(/^https?:\/\/(?!127\.0\.0\.1)/, r => r.abort());
+        for (const slug of slugs) {
+          if ((w === 1366 || !ferme) && !LARGES.includes(slug)) continue;
+          const page = await ctx.newPage();
+          try {
+            await page.goto(urlFor(slug, PORT), { waitUntil: 'networkidle', timeout: 30000 });
+            const res = await page.evaluate(async ({ ferme, slug }) => {
+              const out = []; const NUM = /84[\s ]19[\s ]11[\s ]66/;
+              const rendu = el => el.getClientRects().length > 0 && getComputedStyle(el).visibility !== 'hidden';
+              const texte = document.body.innerText;
+              const appels = [...document.querySelectorAll('a[href="tel:+33184191166"]')].filter(rendu);
+              const blocs = [...document.querySelectorAll('.urgences-ferme, [data-urgences-ferme], [data-si-ferme]')].filter(rendu);
+              if (!ferme) {
+                if (!document.body.classList.contains('cabinet-ouvert')) out.push('cabinet ouvert : classe cabinet-ouvert absente');
+                if (!appels.length) out.push('cabinet ouvert : aucun lien d’appel du cabinet affiché');
+                if (blocs.length) out.push(`cabinet ouvert : ${blocs.length} élément(s) « cabinet fermé » affiché(s)`);
+                return out;
+              }
+              if (!document.body.classList.contains('cabinet-ferme')) out.push('classe cabinet-ferme absente');
+              if (appels.length) out.push(`${appels.length} lien(s) d’appel du cabinet encore affiché(s) (${appels[0].className || appels[0].parentElement.tagName})`);
+              if (slug !== 'mentions-legales' && NUM.test(texte)) out.push('le numéro du cabinet reste affiché');
+              const vide = texte.match(/.{0,30}(\(\s*\)|\(\s*[;,]|[:,]\s*\.)/);
+              if (vide) out.push(`ponctuation orpheline après masquage du numéro : « ${vide[0]} »`);
+              for (const box of document.querySelectorAll('.alert-urgence')) {
+                if (!box.querySelector('a[href="tel:+33184191166"]')) continue;
+                const bloc = box.querySelector('.urgences-ferme, [data-urgences-ferme]');
+                if (!bloc || !rendu(bloc)) { out.push('encadré d’alerte sans les urgences 24h/24 à la place du bouton d’appel'); continue; }
+                const tels = [...bloc.querySelectorAll('a[href^="tel:"]')].map(a => a.getAttribute('href'));
+                for (const t of ['tel:+33140021680', 'tel:+33148036884', 'tel:+33158412300', 'tel:15']) if (!tels.includes(t)) out.push(`urgences 24h/24 de l’encadré sans ${t}`);
+              }
+              if (innerWidth < 700) {
+                for (const a of document.querySelectorAll('.urgences-ferme a[href^="tel:"], [data-urgences-ferme] a[href^="tel:"]')) {
+                  if (!rendu(a)) continue;
+                  a.scrollIntoView({ block: 'center' }); await new Promise(r => setTimeout(r, 20));
+                  const r = a.getBoundingClientRect(); const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+                  const hit = (x, y) => { const e = document.elementFromPoint(x, y); return !!e && (e === a || a.contains(e)); };
+                  let top = cy, bot = cy;
+                  while (top > cy - 40 && hit(cx, top - 1)) top--;
+                  while (bot < cy + 40 && hit(cx, bot + 1)) bot++;
+                  if (bot - top + 1 < 44) out.push(`${a.getAttribute('href')} : ${Math.round(bot - top + 1)} px de zone tactile (< 44)`);
+                }
+                const barre = document.querySelector('.sticky-rdv');
+                const attendue = slug === 'urgences-ophtalmologiques' || !!document.querySelector('.alert-urgence a[href="tel:+33184191166"]');
+                if (barre && getComputedStyle(barre).display !== 'none' && attendue) {
+                  const u = barre.querySelector('.sticky-urgences');
+                  if (!u || !rendu(u)) out.push('barre fixe sans « Urgences 24h/24 »');
+                  else if (!/urgences-ophtalmologiques#ou-consulter-en-urgence-en-ile-de-france$|^#ou-consulter-en-urgence-en-ile-de-france$/.test(u.getAttribute('href'))) out.push(`« Urgences 24h/24 » mène à ${u.getAttribute('href')}`);
+                }
+              }
+              return out;
+            }, { ferme, slug });
+            for (const r of res) failures.push(`${slug} @${w} numéro du cabinet selon l'heure (${quand}) — ${r} (TECH69AP)`);
+            loads++;
+          } catch (e) { failures.push(`${slug} @${w} numéro du cabinet selon l'heure (${quand}) — ${String(e).slice(0, 160)}`); }
+          await page.close();
+        }
+        await ctx.close();
+      }
+    }
+  }
   // TECH20AX-2026-09-16 — colonne de lecture des fiches sur téléphone : à 390 et 320 px, sur 4 fiches, la largeur utile (contenu) de
   // l'alerte d'urgence, des .forme-box, des réponses de FAQ et du bloc « À propos » vaut au moins largeur d'écran − 120 px (390 : 270 ;
   // avant le lot : 214-244) ; sur le hub à 390 px, au plus 100 px entre le dernier symptôme et le titre « DMLA » (avant : 164).
@@ -1211,7 +1283,7 @@ try {
       try {
         await page.goto(urlFor('index', PORT), { waitUntil: 'networkidle', timeout: 30000 });
         const res = await page.evaluate((w) => {
-          const out = []; const btns = [...document.querySelectorAll('main a.hv-btn')].filter(b => !b.classList.contains('hv-call'));
+          const out = []; const btns = [...document.querySelectorAll('main a.hv-btn')].filter(b => !b.classList.contains('hv-call') && !b.hasAttribute('data-si-ferme'));   // TECH69AP : le bouton « Urgences 24h/24 » de la carte d'urgence remplace l'appel cabinet fermé, comme .hv-call il est hors compte
           if (btns.length !== 3) out.push(`${btns.length} boutons à pastille hors accès rapide (3 attendus)`);
           for (const b of btns) {
             const t = b.textContent.trim().slice(0, 22), rb = b.getBoundingClientRect(), ico = b.querySelector('.hv-btn-ico'), lab = b.querySelector('.hv-btn-label');

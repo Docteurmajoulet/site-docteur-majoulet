@@ -8591,3 +8591,32 @@ body.cabinet-ferme .sticky-rdv .sticky-tel {
 .video-texte p {
     margin: 0 0 12px;
 }
+/* TECH69AP-2026-11-21 — le numéro du cabinet ne s’affiche qu’aux heures d’ouverture (nav.js TECH69AP, demande du
+   Dr Majoulet du 21/11). Cabinet fermé (body.cabinet-ferme) : à l’écran, plus aucun lien d’appel du cabinet ni élément
+   [data-tel-cabinet] (le numéro et la ponctuation qui l’entoure) ni [data-si-ouvert] (consigne sans objet cabinet fermé) ; les éléments [data-si-ferme] et les blocs
+   .urgences-ferme (urgences ophtalmologiques 24h/24 de Paris, puis le 15) apparaissent. À l’impression, le numéro
+   reste : une feuille se lit plus tard. Sans JavaScript, aucune des deux classes : le numéro reste affiché. */
+@media screen {
+    body.cabinet-ferme a[href="tel:+33184191166"],
+    body.cabinet-ferme [data-tel-cabinet],
+    body.cabinet-ferme [data-si-ouvert] {
+        display: none !important;
+    }
+}
+[data-si-ferme][hidden],
+.urgences-ferme[hidden],
+.sticky-rdv .sticky-urgences[hidden] {
+    display: none !important;
+}
+.alert-urgence .urgences-ferme {
+    margin: 16px 0 0;
+}
+.alert-urgence .urgences-ferme p,
+.maintenant .urgences-ferme-15 {
+    margin: 0;
+}
+/* 12 px au-dessus et au-dessous : la zone tactile de 44 px du « 15 » ne recouvre pas celle du numéro de la ligne précédente */
+.alert-urgence .urgences-ferme .urgences-ferme-15,
+.maintenant .urgences-ferme-15 {
+    padding: 12px 0;
+}

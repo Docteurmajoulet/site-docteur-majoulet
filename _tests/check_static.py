@@ -1151,6 +1151,34 @@ def check(root):
             if _tel and _tel[-1] != len(_alts) - 1: E(f'{name} : dans le bloc rendez-vous, la ligne du téléphone n’est pas la dernière — TECH67BZ')
     _css67bz = re.sub(r'/\*.*?\*/', '', css_txt, flags=re.S)
     if not re.search(r'article\.pathology-content \.cta-block \.cta-links\s*\{[^}]*flex-wrap:\s*wrap', _css67bz): E('main.css : règle .cta-links (rangée qui passe à la ligne) absente — TECH67BZ')
+    # ---- TECH69AP-2026-11-21 : le numéro du cabinet ne s'affiche qu'aux heures d'ouverture (demande du Dr Majoulet, 21/11).
+    # main.css masque, cabinet fermé, tout lien tel: du cabinet et tout [data-tel-cabinet]. Pour qu'aucune phrase ne reste bancale :
+    # (a) un lien d'appel sans classe (numéro écrit dans une phrase) est toujours dans un élément [data-tel-cabinet] ;
+    # (b) le numéro n'est jamais écrit hors d'un lien d'appel, sauf le pied imprimé des frises et les mentions légales ;
+    # (c) les numéros des urgences 24h/24 que nav.js affiche à la place sont ceux du bloc [data-urgences-ferme] de /urgences,
+    #     qui porte aussi la consigne du 15.
+    _num69ap = r'84(?:&nbsp;|\s| )19(?:&nbsp;|\s| )11(?:&nbsp;|\s| )66'
+    for name, pg in pages.items():
+        _b = pg.txt[pg.txt.find('<body'):]
+        _b = re.sub(r'<script\b.*?</script>', '', _b, flags=re.S)
+        _hors = re.sub(r'<(span|p)\b[^>]*\bdata-tel-cabinet\b[^>]*>.*?</\1>', '', _b, flags=re.S)
+        _nus = re.findall(r'<a href="tel:\+33184191166">', _hors)
+        if _nus: E(f'{name} : {len(_nus)} numéro(s) du cabinet dans une phrase, hors de tout élément [data-tel-cabinet] (il resterait une phrase bancale cabinet fermé) — TECH69AP')
+        _texte = re.sub(r'<a\b[^>]*href="tel:\+33184191166"[^>]*>.*?</a>', '', _b, flags=re.S)
+        _texte = re.sub(r'<p class="frise-pied">.*?</p>', '', _texte, flags=re.S)
+        _texte = re.sub(r'\baria-label="[^"]*"', '', _texte)
+        if name != 'mentions-legales.html' and re.search(_num69ap, _texte): E(f'{name} : numéro du cabinet écrit hors d’un lien d’appel (il resterait affiché cabinet fermé) — TECH69AP')
+    if not re.search(r'@media screen\s*\{\s*body\.cabinet-ferme a\[href="tel:\+33184191166"\],\s*body\.cabinet-ferme \[data-tel-cabinet\],\s*body\.cabinet-ferme \[data-si-ouvert\]\s*\{\s*display:\s*none !important;', css_txt):
+        E('main.css : règle « cabinet fermé » absente (liens d’appel du cabinet, [data-tel-cabinet] et [data-si-ouvert] masqués à l’écran) — TECH69AP')
+    _u69ap = pages.get('urgences-ophtalmologiques.html')
+    if _u69ap and exists('nav.js'):
+        _m = re.search(r'<div data-urgences-ferme hidden>(.*?)</div>', _u69ap.txt, re.S)
+        _page = re.findall(r'href="tel:(\+?\d+)"', _m.group(1)) if _m else []
+        _nav = open(os.path.join(root, 'nav.js'), encoding='utf-8').read()
+        _liste = re.search(r'var URGENCES_PARIS = \[(.*?)\];', _nav, re.S)
+        _js = re.findall(r"'(\+33\d{9})'", _liste.group(1)) if _liste else []
+        if not _js or _js != [n for n in _page if n != '15']: E(f'nav.js : urgences 24h/24 affichées cabinet fermé ({_js}) différentes de celles de /urgences-ophtalmologiques ({_page}) — TECH69AP')
+        if '15' not in _page or "lienTel('15', '15')" not in _nav: E('cabinet fermé : la consigne du 15 manque dans /urgences-ophtalmologiques ou dans nav.js — TECH69AP')
     # ---- cohérence des versions
     if len(css_versions) != 1: E(f'main.css référencé avec {len(css_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in css_versions.items()))
     if len(js_versions) != 1: E(f'nav.js référencé avec {len(js_versions)} versions différentes : ' + ', '.join(f'{k} ×{len(v)}' for k, v in js_versions.items()))

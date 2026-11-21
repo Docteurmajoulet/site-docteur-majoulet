@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20261121a">
+    <link rel="stylesheet" href="/main.css?v=20261121b">
     <!-- FONTS-2026-08-29 / TECH12Y-2026-09-12 : Montserrat auto-hébergé — une seule police variable (graisses 300 à 700, 37,3 Ko) préchargée -->
     <link rel="preload" as="font" type="font/woff2" crossorigin href="/fonts/montserrat-wght-3.woff2">
     <title>Urgence ophtalmologique : que faire ? — Dr Majoulet, Boulogne</title>
@@ -235,7 +235,7 @@
 <div class="menu-overlay" aria-hidden="true"></div>
 
 <!-- Topbar urgence -->
-<div class="topbar" role="region" aria-label="Urgences et coordonnées du cabinet"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg> <span>Urgence r&eacute;tinienne&nbsp;: le jour m&ecirc;me ou sous <span class="sans-coupure">24-48&nbsp;h</span></span><span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> &middot; 37 rue d’Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
+<div class="topbar" role="region" aria-label="Urgences et coordonnées du cabinet"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg> <span>Urgence r&eacute;tinienne&nbsp;: le jour m&ecirc;me ou sous <span class="sans-coupure">24-48&nbsp;h</span></span><span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><span data-tel-cabinet><a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> &middot; </span>37 rue d’Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
 <header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue Boulogne-Billancourt — Accueil">
@@ -410,7 +410,7 @@
 
             <section class="maintenant" aria-labelledby="que-faire-maintenant">
                 <h2 id="que-faire-maintenant">Que faire maintenant&nbsp;?</h2>
-                <p class="etat-cabinet"><a class="btn-etat-cabinet" href="tel:+33184191166"><span class="etat-pastille" data-etat-cabinet hidden></span> Appeler le cabinet — 01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></p>
+                <p class="etat-cabinet" data-tel-cabinet><a class="btn-etat-cabinet" href="tel:+33184191166"><span class="etat-pastille" data-etat-cabinet hidden></span> Appeler le cabinet — 01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></p>
                 <p class="etat-consigne">En l’absence de réponse, allez aux urgences 24h/24 ci-dessous.</p>
                 <div data-urgences-ferme hidden>
                     <p><strong>Cabinet fermé.</strong> Voile noir ou baisse brutale de la vision&nbsp;: urgences 24h/24</p>
@@ -419,12 +419,13 @@
                         <li><span>Fondation Rothschild (Paris 19<sup>e</sup>)</span> <a href="tel:+33148036884">01&nbsp;48&nbsp;03&nbsp;68&nbsp;84</a></li>
                         <li><span>Hôpital Cochin (Paris 14<sup>e</sup>)</span> <a href="tel:+33158412300">01&nbsp;58&nbsp;41&nbsp;23&nbsp;00</a></li>
                     </ul>
+                    <p class="urgences-ferme-15">Si vous ne pouvez pas vous déplacer&nbsp;: appelez le <a href="tel:15">15</a>.</p>
                 </div>
                 <dl class="maintenant-liste">
                     <div class="maintenant-cas">
                         <dt>Voile noir ou baisse brutale de la vision</dt>
-                        <dd><strong>Le jour même.</strong> Aux heures d’ouverture, appelez le cabinet&nbsp;: <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> (du lundi au jeudi 9&nbsp;h-20&nbsp;h&nbsp;; vendredi et samedi 9&nbsp;h-18&nbsp;h).</dd>
-                        <dd>En dehors de ces horaires, urgences ophtalmologiques 24h/24&nbsp;:
+                        <dd><strong>Le jour même.</strong><span data-tel-cabinet> Aux heures d’ouverture, appelez le cabinet&nbsp;: <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> (du lundi au jeudi 9&nbsp;h-20&nbsp;h&nbsp;; vendredi et samedi 9&nbsp;h-18&nbsp;h).</span></dd>
+                        <dd data-si-ouvert>En dehors de ces horaires, urgences ophtalmologiques 24h/24&nbsp;:
                             <ul class="maintenant-tels">
                                 <li><span>Quinze-Vingts (Paris 12<sup>e</sup>)</span> <a href="tel:+33140021680">01&nbsp;40&nbsp;02&nbsp;16&nbsp;80</a></li>
                                 <li><span>Fondation Rothschild (Paris 19<sup>e</sup>)</span> <a href="tel:+33148036884">01&nbsp;48&nbsp;03&nbsp;68&nbsp;84</a></li>
@@ -486,8 +487,8 @@
                     <tr><th scope="col">Signe</th><th scope="col">Conduite à tenir</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Baisse brutale et indolore de la vision d’un œil</td><td>Le jour même&nbsp;: aux heures d’ouverture, appelez le cabinet (<a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>)&nbsp;; en dehors, <a href="#ou-consulter-en-urgence-en-ile-de-france">urgences ophtalmologiques 24h/24</a>. Si une occlusion de l’artère centrale de la rétine (OACR) est suspectée&nbsp;: rendez-vous en urgence au cabinet ou directement à la Fondation Rothschild. Causes possibles&nbsp;: OACR, neuropathie optique ischémique (NOIA), occlusion veineuse, DMLA exsudative, hémorragie.</td></tr>
-                    <tr><td>Voile noir ou rideau fixe dans le champ visuel</td><td>Le jour même&nbsp;: aux heures d’ouverture, appelez le cabinet (<a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>)&nbsp;; en dehors, <a href="#ou-consulter-en-urgence-en-ile-de-france">urgences ophtalmologiques 24h/24</a> (suspicion de décollement de rétine).</td></tr>
+                    <tr><td>Baisse brutale et indolore de la vision d’un œil</td><td>Le jour même&nbsp;: aux heures d’ouverture, appelez le cabinet<span data-tel-cabinet> (<a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>)</span>&nbsp;; en dehors, <a href="#ou-consulter-en-urgence-en-ile-de-france">urgences ophtalmologiques 24h/24</a>. Si une occlusion de l’artère centrale de la rétine (OACR) est suspectée&nbsp;: rendez-vous en urgence au cabinet ou directement à la Fondation Rothschild. Causes possibles&nbsp;: OACR, neuropathie optique ischémique (NOIA), occlusion veineuse, DMLA exsudative, hémorragie.</td></tr>
+                    <tr><td>Voile noir ou rideau fixe dans le champ visuel</td><td>Le jour même&nbsp;: aux heures d’ouverture, appelez le cabinet<span data-tel-cabinet> (<a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>)</span>&nbsp;; en dehors, <a href="#ou-consulter-en-urgence-en-ile-de-france">urgences ophtalmologiques 24h/24</a> (suspicion de décollement de rétine).</td></tr>
                     <tr><td>Flashs lumineux ou corps flottants récents, sans voile noir ni baisse brutale de la vision</td><td>Consultation ophtalmologique dans les 24-48&nbsp;h (fond d’œil dilaté)</td></tr>
                     <tr><td>Œil rouge, douloureux, baisse de vision + nausées</td><td>Urgence hospitalière (glaucome aigu par fermeture d’angle)</td></tr>
                     <tr><td>Traumatisme oculaire avec plaie pénétrante</td><td>Protection coque, à jeun, urgence chirurgicale</td></tr>
@@ -522,7 +523,7 @@
             <div class="forme-box">
                 <h3>Urgences au cabinet Ophtalife (Boulogne-Billancourt)</h3>
                 <p>
-                    Le cabinet prend les <strong>urgences ambulatoires aux heures d’ouverture</strong> — du lundi au jeudi 9&nbsp;h-20&nbsp;h · vendredi&nbsp;et&nbsp;samedi 9&nbsp;h-18&nbsp;h, au <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> —
+                    Le cabinet prend les <strong>urgences ambulatoires aux heures d’ouverture</strong> — du lundi au jeudi 9&nbsp;h-20&nbsp;h · vendredi&nbsp;et&nbsp;samedi 9&nbsp;h-18&nbsp;h<span data-tel-cabinet>, au <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></span> —
                     (œil rouge, corps étranger superficiel, contrôle post-chirurgical, flashs
                     et corps flottants récents nécessitant un fond d’œil dilaté,
                     bilan post-traumatique sans plaie pénétrante).
@@ -602,7 +603,7 @@
                 <strong>baisse brutale de la vision</strong>, peuvent révéler, entre autres, un décollement de rétine ou une
                 occlusion d’une artère de la rétine&nbsp;: l’œil doit être examiné <strong>le jour même</strong>. Aux heures
                 d’ouverture (du lundi au jeudi 9&nbsp;h-20&nbsp;h&nbsp;; vendredi et samedi 9&nbsp;h-18&nbsp;h), appelez
-                le Cabinet Ophtalife de Boulogne-Billancourt au <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>&nbsp;:
+                le Cabinet Ophtalife de Boulogne-Billancourt<span data-tel-cabinet> au <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></span>&nbsp;:
                 une suspicion de décollement de rétine ou d’occlusion de l’artère centrale de la rétine y est vue en urgence.
                 En dehors de ces horaires, allez directement aux urgences ophtalmologiques ouvertes 24h/24&nbsp;: Quinze-Vingts
                 (Paris 12<sup>e</sup>), Fondation Rothschild (Paris 19<sup>e</sup>) ou Hôpital Cochin (Paris 14<sup>e</sup>).
@@ -685,13 +686,13 @@
 <footer class="site-footer" role="contentinfo">
     <div class="container">
         <p>&copy; 2026 Dr&nbsp;Alexandre Majoulet, chirurgien ophtalmologue – rétinologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife<span class="sr-only"> (nouvelle fenêtre)</span></a> &middot; 37 rue d’Aguesseau, 92100 Boulogne-Billancourt</p>
-        <p class="footer-links"><a href="/ophtalmologue-boulogne-billancourt">Ophtalmologue à Boulogne-Billancourt</a> &middot; <a href="/pathologies">Toutes les pathologies</a> &middot; <a href="/urgences-ophtalmologiques" aria-current="page">Urgences ophtalmologiques</a> &middot; <a href="/publications">Publications</a> &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/en" hreflang="en" lang="en">In English</a> &middot; <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></p>
+        <p class="footer-links"><a href="/ophtalmologue-boulogne-billancourt">Ophtalmologue à Boulogne-Billancourt</a> &middot; <a href="/pathologies">Toutes les pathologies</a> &middot; <a href="/urgences-ophtalmologiques" aria-current="page">Urgences ophtalmologiques</a> &middot; <a href="/publications">Publications</a> &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/en" hreflang="en" lang="en">In English</a><span data-tel-cabinet> &middot; <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></span></p>
     </div>
 </footer>
 
 
 
-<script src="/nav.js?v=20261121a" defer></script>
+<script src="/nav.js?v=20261121b" defer></script>
 
 
 
