@@ -3,7 +3,7 @@
 // Chaque scénario ouvre une page neuve, sous la CSP du site, sans accès aux services externes.
 import assert from 'node:assert/strict';
 import { chromium } from 'playwright';
-import { startServer, urlFor } from './lib.mjs';
+import { startServer, urlFor, figerHeureCabinet } from './lib.mjs';
 
 const PORT = 8794;
 const stop = await startServer(PORT);
@@ -13,6 +13,7 @@ const failures = [];
 
 async function scenario(name, width, run, slug = 'index') {
   const context = await browser.newContext({ viewport: { width, height: 900 }, locale: 'fr-FR' });
+  await figerHeureCabinet(context, '2026-10-29T10:30:00+01:00');   // TECH69AP : jeudi, cabinet ouvert — le tiroir commence par le bouton d'appel
   await context.route(/^https?:\/\/(?!127\.0\.0\.1)/, route => route.abort());
   const page = await context.newPage();
   const errors = [];

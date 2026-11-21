@@ -366,46 +366,130 @@
             return { ouvert: Boolean(fin && h >= 9 && h < fin), fin: fin || 0 };
         } catch (e) { return null; /* fuseau inconnu */ }
     };
-    var etatCabinet = document.querySelector('[data-etat-cabinet]');
-    var etatUrgences = etatCabinet ? etatCabinetParis() : null;
-    if (etatCabinet && etatUrgences) {
-        var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
-        etatCabinet.textContent = etatUrgences.ouvert ? 'Ouvert' : 'Fermé';
-        if (boutonCabinet) { boutonCabinet.classList.add(etatUrgences.ouvert ? 'est-ouvert' : 'est-ferme'); }
-        etatCabinet.hidden = false;
-        /* TECH69AM-2026-11-01 : cabinet fermé, les numéros des urgences 24h/24 passent sous le bouton d’appel (piste 5,
-           « où aller maintenant ») ; sans JavaScript ou cabinet ouvert, le bloc reste masqué et la liste du bas fait foi. */
-        var urgencesFerme = document.querySelector('[data-urgences-ferme]');
-        if (urgencesFerme && !etatUrgences.ouvert) {
-            urgencesFerme.hidden = false;
-            var consigne = document.querySelector('.etat-consigne');
-            if (consigne) { consigne.hidden = true; }   /* « En l’absence de réponse… » : sans objet cabinet fermé */
-        }
-    }
-
     /* ---------- TECH69AH-2026-10-29 : barre fixe selon l’heure de Paris (demande du Dr Majoulet, 29/10) ----------
        Cabinet ouvert : « Appeler le cabinet » passe en bouton principal, le rendez-vous en ligne en second.
        Cabinet fermé : le bouton d’appel disparaît, seul reste le rendez-vous en ligne (décision du Dr Majoulet, 29/10).
        Sans JavaScript ou sans Intl : la barre d’origine (rendez-vous en ligne en principal, appel à côté).
-       Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés fermés (TECH69AI). La barre de /urgences
-       (appel et « Urgences 24h/24 », sans rendez-vous en ligne) n’est pas concernée. */
-    if (stickyRdv && stickyRdv.querySelector('.sticky-doctolib')) {
-        var lblTel = stickyRdv.querySelector('.sticky-tel .lbl');
-        var lienRdv = stickyRdv.querySelector('.sticky-doctolib');
-        var texteRdv = lienRdv && lienRdv.firstChild && lienRdv.firstChild.nodeType === 3 ? lienRdv.firstChild : null;
-        var libellesOrigine = { tel: lblTel ? lblTel.textContent : '', rdv: texteRdv ? texteRdv.nodeValue : '' };
-        var appliquerHoraires = function () {
-            var etat = etatCabinetParis();
-            var ouvert = Boolean(etat && etat.ouvert);
-            body.classList.toggle('cabinet-ouvert', ouvert);
-            body.classList.toggle('cabinet-ferme', Boolean(etat) && !ouvert);
+       Recalculé au retour sur l’onglet et toutes les 5 minutes ; jours fériés fermés (TECH69AI).
+       TECH69AP-2026-11-21 : le numéro du cabinet ne s’affiche qu’aux heures d’ouverture, sur toutes les pages (demande du
+       Dr Majoulet, 21/11). body.cabinet-ouvert ou body.cabinet-ferme est posée partout. Cabinet fermé : main.css masque à
+       l’écran les liens tel: du cabinet et les éléments [data-tel-cabinet] (le numéro avec la ponctuation qui l’entoure) ;
+       les éléments [data-si-ferme], masqués par l’attribut hidden dans le HTML, apparaissent ; dans chaque encadré d’alerte
+       qui proposait d’appeler le cabinet, les urgences ophtalmologiques 24h/24 de Paris et le 15 prennent la place du
+       bouton d’appel, et la barre fixe de ces fiches reçoit « Urgences 24h/24 » (pas celle de l’accueil). Sur /urgences, le bloc écrit dans la page
+       ([data-urgences-ferme], TECH69AM) joue ce rôle. Sans JavaScript ou sans Intl : le numéro reste affiché, à côté des
+       horaires. Les numéros des hôpitaux sont ceux de /urgences-ophtalmologiques (check_static compare les deux). */
+    var URGENCES_PARIS = [
+        ['Quinze-Vingts (Paris 12', '+33140021680', '01 40 02 16 80'],
+        ['Fondation Rothschild (Paris 19', '+33148036884', '01 48 03 68 84'],
+        ['Hôpital Cochin (Paris 14', '+33158412300', '01 58 41 23 00']
+    ];
+    var ADRESSE_URGENCES = '/urgences-ophtalmologiques#ou-consulter-en-urgence-en-ile-de-france';
+    var lienTel = function (numero, texte) {
+        var a = document.createElement('a');
+        a.href = 'tel:' + numero;
+        a.textContent = texte;
+        return a;
+    };
+    var consigneQuinze = function () {
+        var p = document.createElement('p');
+        p.className = 'urgences-ferme-15';
+        p.appendChild(document.createTextNode('Si vous ne pouvez pas vous déplacer : appelez le '));
+        p.appendChild(lienTel('15', '15'));
+        p.appendChild(document.createTextNode('.'));
+        return p;
+    };
+    var blocUrgencesFerme = function () {
+        var bloc = document.createElement('div');
+        bloc.className = 'urgences-ferme';
+        var titre = document.createElement('p');
+        var fort = document.createElement('strong');
+        fort.textContent = 'Cabinet fermé.';
+        titre.appendChild(fort);
+        titre.appendChild(document.createTextNode(' Urgences ophtalmologiques 24h/24 à Paris :'));
+        bloc.appendChild(titre);
+        var liste = document.createElement('ul');
+        liste.className = 'maintenant-tels';
+        URGENCES_PARIS.forEach(function (u) {
+            var li = document.createElement('li');
+            var nom = document.createElement('span');
+            var exposant = document.createElement('sup');
+            exposant.textContent = 'e';
+            nom.appendChild(document.createTextNode(u[0]));
+            nom.appendChild(exposant);
+            nom.appendChild(document.createTextNode(')'));
+            li.appendChild(nom);
+            li.appendChild(document.createTextNode(' '));
+            li.appendChild(lienTel(u[1], u[2]));
+            liste.appendChild(li);
+        });
+        bloc.appendChild(liste);
+        bloc.appendChild(consigneQuinze());
+        return bloc;
+    };
+    var etatCabinet = document.querySelector('[data-etat-cabinet]');
+    var urgencesFerme = document.querySelector('[data-urgences-ferme]');
+    var lblTel = stickyRdv ? stickyRdv.querySelector('.sticky-tel .lbl') : null;
+    var lienRdv = stickyRdv ? stickyRdv.querySelector('.sticky-doctolib') : null;
+    var texteRdv = lienRdv && lienRdv.firstChild && lienRdv.firstChild.nodeType === 3 ? lienRdv.firstChild : null;
+    var libellesOrigine = { tel: lblTel ? lblTel.textContent : '', rdv: texteRdv ? texteRdv.nodeValue : '' };
+    var encadresAppel = Array.prototype.filter.call(document.querySelectorAll('.alert-urgence'), function (encadre) {
+        return encadre.querySelector('a[href="tel:+33184191166"]');
+    });
+    var blocsFerme = [];
+    var stickyUrgences = null;
+    var fermeInstalle = false;
+    var appliquerHoraires = function () {
+        var etat = etatCabinetParis();
+        var ouvert = Boolean(etat && etat.ouvert);
+        var ferme = Boolean(etat) && !ouvert;
+        body.classList.toggle('cabinet-ouvert', ouvert);
+        body.classList.toggle('cabinet-ferme', ferme);
+        if (lienRdv) {
             if (lblTel) { lblTel.textContent = ouvert ? 'Appeler le cabinet' : libellesOrigine.tel; }
             if (texteRdv) { texteRdv.nodeValue = ouvert ? 'Rendez-vous' : libellesOrigine.rdv; }
-        };
-        appliquerHoraires();
-        window.setInterval(appliquerHoraires, 300000);
-        document.addEventListener('visibilitychange', function () { if (!document.hidden) { appliquerHoraires(); } });
-    }
+        }
+        Array.prototype.forEach.call(document.querySelectorAll('[data-si-ferme]'), function (el) { el.hidden = !ferme; });
+        /* /urgences (TECH69M, TECH69AM) : badge « Ouvert » sur le bouton d’appel ; cabinet fermé, les urgences 24h/24 à sa place */
+        if (etatCabinet && etat) {
+            var boutonCabinet = etatCabinet.closest('.btn-etat-cabinet');
+            etatCabinet.textContent = ouvert ? 'Ouvert' : 'Fermé';
+            if (boutonCabinet) {
+                boutonCabinet.classList.toggle('est-ouvert', ouvert);
+                boutonCabinet.classList.toggle('est-ferme', !ouvert);
+            }
+            etatCabinet.hidden = false;
+        }
+        if (urgencesFerme && etat) {
+            urgencesFerme.hidden = ouvert;
+            var consigne = document.querySelector('.etat-consigne');
+            if (consigne) { consigne.hidden = !ouvert; }   /* « En l’absence de réponse… » : sans objet cabinet fermé */
+        }
+        /* Encadrés d’alerte des autres pages : le bloc n’est créé qu’à la première fermeture constatée */
+        if (ferme && !fermeInstalle) {
+            fermeInstalle = true;
+            encadresAppel.forEach(function (encadre) {
+                if (encadre.querySelector('[data-urgences-ferme]')) { return; }
+                var bloc = blocUrgencesFerme();
+                var actions = encadre.querySelector('.alert-actions');
+                if (actions) { encadre.insertBefore(bloc, actions); } else { encadre.appendChild(bloc); }
+                blocsFerme.push(bloc);
+            });
+            /* La barre de l’accueil garde le seul rendez-vous en ligne (décision du 29/10) : « Urgences 24h/24 » ne s’ajoute que sur les fiches */
+            if (lienRdv && encadresAppel.length && !body.classList.contains('page-index')) {
+                stickyUrgences = document.createElement('a');
+                stickyUrgences.className = 'sticky-urgences';
+                stickyUrgences.href = ADRESSE_URGENCES;
+                stickyUrgences.textContent = 'Urgences 24h/24';
+                stickyRdv.insertBefore(stickyUrgences, lienRdv);
+            }
+        }
+        blocsFerme.forEach(function (bloc) { bloc.hidden = !ferme; });
+        if (stickyUrgences) { stickyUrgences.hidden = !ferme; }
+    };
+    appliquerHoraires();
+    window.setInterval(appliquerHoraires, 300000);
+    document.addEventListener('visibilitychange', function () { if (!document.hidden) { appliquerHoraires(); } });
 
     /* ---------- TECH69W-2026-10-27 : frise du parcours opératoire, « Imprimer ce parcours » (CLAUDE.md §6, piste 4) ----------
        Le bouton reste masqué sans JavaScript. Au clic, html.imprimer-frise limite l’impression à la frise (main.css),

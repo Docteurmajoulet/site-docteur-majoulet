@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Tronc CSS commun (charte + reset + a11y) -->
-    <link rel="stylesheet" href="/main.css?v=20261121a">
+    <link rel="stylesheet" href="/main.css?v=20261121c">
     <!-- Preload LCP hero portrait — AVIF seul (Chromium/Safari 16.4+ chargeaient les deux formats ; le WebP reste le repli du <picture>) -->
     <link rel="preload" as="image" type="image/avif" media="(max-width: 860px)"
           href="/img/dr-majoulet-hero3-800.avif"
@@ -293,7 +293,7 @@
 
 <!-- ===== NAVIGATION ===== -->
 <!-- Topbar urgence -->
-<div class="topbar" role="region" aria-label="Urgences et coordonnées du cabinet"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg> <span>Urgence r&eacute;tinienne&nbsp;: le jour m&ecirc;me ou sous <span class="sans-coupure">24-48&nbsp;h</span></span><span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> &middot; 37 rue d’Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
+<div class="topbar" role="region" aria-label="Urgences et coordonnées du cabinet"><div class="topbar-inner"><a class="topbar-urgence" href="/urgences-ophtalmologiques"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg> <span>Urgence r&eacute;tinienne&nbsp;: le jour m&ecirc;me ou sous <span class="sans-coupure">24-48&nbsp;h</span></span><span class="tb-plus"> &mdash; conduite &agrave; tenir</span></a><span class="topbar-info"><span data-tel-cabinet><a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a> &middot; </span>37 rue d’Aguesseau, Boulogne-Billancourt &middot; Secteur 2 conventionn&eacute;</span></div></div>
 <header class="site-header">
     <div class="header-inner">
         <a href="/" class="site-logo" aria-label="Dr Majoulet — Rétinologue Boulogne-Billancourt — Accueil">
@@ -472,10 +472,10 @@
                     Co-fondateur du Cabinet Ophtalife, <strong>Praticien Contractuel à l’hôpital des Quinze-Vingts</strong> (CHNO, service du Pr&nbsp;Baudouin), ancien interne et assistant des Hôpitaux de Paris, certifié FEBO (Board européen) et titulaire du DIU de chirurgie vitréo-rétinienne.
                 </p>
                 <div class="hero-buttons">
-                    <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false" target="_blank" rel="noopener" class="btn-primary hv-btn hv-btn--rdv"><span class="hv-btn-label">Prendre rendez-vous</span><span class="hv-btn-ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (nouvelle fenêtre)</span></a>
-                    <a href="#specialites" class="btn-outline hv-btn hv-btn--ghost"><span class="hv-btn-label">Les spécialités</span><span class="hv-btn-ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 5v14M6 13l6 6 6-6"/></svg></span></a>
+                    <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false" target="_blank" rel="noopener" class="btn-primary">Prendre rendez-vous<span class="sr-only"> (nouvelle fenêtre)</span></a>
+                    <a href="#specialites" class="btn-outline">Les spécialités</a>
                 </div>
-                <p class="hero-note">Voile noir ou baisse brutale de la vision&nbsp;: appelez le jour même (<a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>&nbsp;; hors horaires, urgences hospitalières). Éclairs ou corps flottants récents&nbsp;: créneau sous 24-48&nbsp;h.</p>
+                <p class="hero-note">Voile noir ou baisse brutale de la vision&nbsp;: appelez le jour même (<span data-tel-cabinet><a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a>&nbsp;; </span>hors horaires, urgences hospitalières). Éclairs ou corps flottants récents&nbsp;: créneau sous 24-48&nbsp;h.</p>
             </div>
             <div class="hero-visual">
                 <div class="hero-photo">
@@ -500,94 +500,84 @@
 </section>
 
 <!-- ===== ACCÈS RAPIDE / RÉASSURANCE ===== -->
-<section class="hv-access" aria-label="Accès rapide">
+<!-- ACCUEIL-2026-11-21 : deux entrées en cartes simples (celles de /pathologies) et l’encadré d’alerte des fiches, avec ses deux boutons -->
+<section class="accueil-acces" aria-label="Accès rapide">
     <div class="container">
-        <div class="hv-access-grid">
-            <a class="hv-tile hv-bezel" href="/ophtalmologue-boulogne-billancourt">
-                <div class="hv-tile-title tc-title">Consultation classique &amp; spécialisée rétine</div>
-                <div class="hv-tile-text tc-text">Suivi ophtalmologique complet et consultations rétine — OCT sur place le jour même</div>
-                <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        <div class="accueil-entrees">
+            <a class="accueil-entree" href="/ophtalmologue-boulogne-billancourt">
+                <div class="accueil-entree-titre tc-title">Consultation classique &amp; spécialisée rétine</div>
+                <div class="accueil-entree-texte tc-text">Suivi ophtalmologique complet et consultations rétine — OCT sur place le jour même</div>
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg>
             </a>
-            <a class="hv-tile hv-bezel" href="/chirurgie-retine">
-                <div class="hv-tile-title tc-title">Chirurgie rétine &amp; cataracte</div>
-                <div class="hv-tile-text tc-text">Vitrectomie, décollement, membrane, trou maculaire&nbsp;; cataracte — Clinique Jouvenet (Paris 16)</div>
-                <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+            <a class="accueil-entree" href="/chirurgie-retine">
+                <div class="accueil-entree-titre tc-title">Chirurgie rétine &amp; cataracte</div>
+                <div class="accueil-entree-texte tc-text">Vitrectomie, décollement, membrane, trou maculaire&nbsp;; cataracte — Clinique Jouvenet (Paris 16)</div>
+                <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg>
             </a>
-            <div class="hv-urgence hv-bezel">
-                <span class="hv-urgence-ico" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.3 3.6 1.9 18a2 2 0 0 0 1.7 3h16.8a2 2 0 0 0 1.7-3L13.7 3.6a2 2 0 0 0-3.4 0z"/><line x1="12" y1="9" x2="12" y2="13.5"/><circle cx="12" cy="17" r="0.4"/></svg></span>
-                <div class="hv-urgence-body">
-                    <a class="hv-urgence-title tc-title" href="/urgences-ophtalmologiques">Urgence rétinienne</a>
-                    <div class="hv-urgence-text tc-text">Voile noir, baisse brutale de la vision&nbsp;: le jour même — appelez le cabinet, hors horaires urgences hospitalières 24h/24. Éclairs, corps flottants récents&nbsp;: créneau sous 24-48&nbsp;h.</div>
-                </div>
-                <a class="hv-btn hv-btn--slate hv-call" href="tel:+33184191166"><span class="hv-btn-label">Appeler le 01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</span><span class="hv-btn-ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span></a>
-            </div>
+        </div>
+        <div class="alert-urgence accueil-urgence">
+            <p class="accueil-urgence-titre tc-title"><strong>Urgence rétinienne</strong></p>
+            <p class="accueil-urgence-texte tc-text">Voile noir, baisse brutale de la vision&nbsp;: le jour même — appelez le cabinet, hors horaires urgences hospitalières 24h/24. Éclairs, corps flottants récents&nbsp;: créneau sous 24-48&nbsp;h.</p>
+            <p class="alert-actions">
+                <a class="btn-alert-tel" href="tel:+33184191166"><svg class="ico" width="18" height="18" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Appeler le cabinet<span class="num"> — 01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</span></a>
+                <a class="btn-alert-rdv" href="/urgences-ophtalmologiques">Urgences&nbsp;: conduite à tenir</a>
+            </p>
         </div>
     </div>
 </section>
 
 <!-- ===== SPÉCIALITÉS ===== -->
-<section id="specialites" class="hv-section">
+<section id="specialites" class="accueil-section">
     <div class="container">
-        <div class="hv-head">
-            <div><span class="hv-eyebrow">Consultation &amp; chirurgie</span><h2>Spécialités</h2></div>
-            <p>Consultations, examens et traitements pour les maladies de la rétine, la cataracte et le suivi de votre vue.</p>
+        <div class="accueil-tete">
+            <p class="accueil-surtitre">Consultation &amp; chirurgie</p>
+            <h2>Spécialités</h2>
+            <p class="accueil-chapo">Consultations, examens et traitements pour les maladies de la rétine, la cataracte et le suivi de votre vue.</p>
         </div>
-        <div class="hv-cards">
+        <div class="accueil-sommaire">
             <!-- Chirurgie de la rétine -->
-            <a class="hv-card hv-bezel" href="/chirurgie-retine">
-                <div class="hv-card-body">
-                    <div class="specialty-icon"><picture><source srcset="Chirurgie-Retine-120.webp" type="image/webp"><img src="Chirurgie-Retine-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
-                    <h3>Chirurgie de la rétine</h3>
-                    <p>Chirurgie vitréo-rétinienne&nbsp;: décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive.</p>
-                    <span class="hv-more">En savoir plus <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-                </div>
+            <a class="accueil-ligne" href="/chirurgie-retine">
+                <div class="specialty-icon"><picture><source srcset="Chirurgie-Retine-120.webp" type="image/webp"><img src="Chirurgie-Retine-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
+                <h3>Chirurgie de la rétine</h3>
+                <p>Chirurgie vitréo-rétinienne&nbsp;: décollement de rétine, membrane épirétinienne, trou maculaire, hémorragie du vitré. Vitrectomie mini-invasive.</p>
+                <span class="accueil-suite">En savoir plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span>
             </a>
             <!-- DMLA -->
-            <a class="hv-card hv-bezel" href="/dmla">
-                <div class="hv-card-body">
-                    <div class="specialty-icon"><picture><source srcset="DMLA-120.webp" type="image/webp"><img src="DMLA-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
-                    <h3>DMLA</h3>
-                    <p>Diagnostic et traitement de la dégénérescence maculaire liée à l’âge (forme sèche et exsudative). Suivi par OCT et injections intravitréennes d’anti-VEGF (médicaments qui assèchent les vaisseaux anormaux).</p>
-                    <span class="hv-more">En savoir plus <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-                </div>
+            <a class="accueil-ligne" href="/dmla">
+                <div class="specialty-icon"><picture><source srcset="DMLA-120.webp" type="image/webp"><img src="DMLA-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
+                <h3>DMLA</h3>
+                <p>Diagnostic et traitement de la dégénérescence maculaire liée à l’âge (forme sèche et exsudative). Suivi par OCT et injections intravitréennes d’anti-VEGF (médicaments qui assèchent les vaisseaux anormaux).</p>
+                <span class="accueil-suite">En savoir plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span>
             </a>
             <!-- IVT -->
-            <a class="hv-card hv-bezel" href="/injection-intravitreenne">
-                <div class="hv-card-body">
-                    <div class="specialty-icon"><picture><source srcset="Injections-120.webp" type="image/webp"><img src="Injections-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
-                    <h3>Injections intravitréennes</h3>
-                    <p>Injections dans l’œil (IVT) d’anti-VEGF ou de corticoïdes pour la DMLA exsudative, l’œdème maculaire diabétique et les occlusions veineuses rétiniennes.</p>
-                    <span class="hv-more">En savoir plus <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-                </div>
+            <a class="accueil-ligne" href="/injection-intravitreenne">
+                <div class="specialty-icon"><picture><source srcset="Injections-120.webp" type="image/webp"><img src="Injections-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
+                <h3>Injections intravitréennes</h3>
+                <p>Injections dans l’œil (IVT) d’anti-VEGF ou de corticoïdes pour la DMLA exsudative, l’œdème maculaire diabétique et les occlusions veineuses rétiniennes.</p>
+                <span class="accueil-suite">En savoir plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span>
             </a>
             <!-- Cataracte -->
-            <a class="hv-card hv-bezel" href="/chirurgie-cataracte">
-                <div class="hv-card-body">
-                    <div class="specialty-icon"><picture><source srcset="Cataracte-120.webp" type="image/webp"><img src="Cataracte-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
-                    <h3>Chirurgie de la cataracte</h3>
-                    <p>Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique).</p>
-                    <span class="hv-more">En savoir plus <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-                </div>
+            <a class="accueil-ligne" href="/chirurgie-cataracte">
+                <div class="specialty-icon"><picture><source srcset="Cataracte-120.webp" type="image/webp"><img src="Cataracte-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
+                <h3>Chirurgie de la cataracte</h3>
+                <p>Phacoémulsification par micro-incision avec implant personnalisé (monofocal, multifocal, torique).</p>
+                <span class="accueil-suite">En savoir plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span>
             </a>
             <!-- Glaucome -->
-            <a class="hv-card hv-bezel" href="/glaucome">
-                <div class="hv-card-body">
-                    <div class="specialty-icon"><picture><source srcset="Glaucome-120.webp" type="image/webp"><img src="Glaucome-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
-                    <h3>Glaucome</h3>
-                    <p>Dépistage, suivi et traitement du glaucome. Mesure de la pression intraoculaire, champ visuel, OCT du nerf optique et prise en charge médicale ou chirurgicale.</p>
-                    <span class="hv-more">En savoir plus <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-                </div>
+            <a class="accueil-ligne" href="/glaucome">
+                <div class="specialty-icon"><picture><source srcset="Glaucome-120.webp" type="image/webp"><img src="Glaucome-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
+                <h3>Glaucome</h3>
+                <p>Dépistage, suivi et traitement du glaucome. Mesure de la pression intraoculaire, champ visuel, OCT du nerf optique et prise en charge médicale ou chirurgicale.</p>
+                <span class="accueil-suite">En savoir plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span>
             </a>
             <!-- Suivi ophtalmologique -->
-            <a class="hv-card hv-bezel" href="/suivi-corrections-optiques">
-                <div class="hv-card-body">
-                    <div class="specialty-icon"><picture><source srcset="Lentilles-120.webp" type="image/webp"><img src="Lentilles-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
-                    <h3>Suivi ophtalmologique</h3>
-                    <p>Consultation ophtalmologique complète, prescription de lunettes et lentilles de contact, dépistage des pathologies oculaires (glaucome, DMLA, rétinopathie diabétique).</p>
-                    <span class="hv-more">En savoir plus <span class="hv-ico-ring" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></span>
-                </div>
+            <a class="accueil-ligne" href="/suivi-corrections-optiques">
+                <div class="specialty-icon"><picture><source srcset="Lentilles-120.webp" type="image/webp"><img src="Lentilles-120.webp" alt="" width="40" height="40" loading="lazy" decoding="async"></picture></div>
+                <h3>Suivi ophtalmologique</h3>
+                <p>Consultation ophtalmologique complète, prescription de lunettes et lentilles de contact, dépistage des pathologies oculaires (glaucome, DMLA, rétinopathie diabétique).</p>
+                <span class="accueil-suite">En savoir plus <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h13M13 7l5 5-5 5"/></svg></span>
             </a>
-            </div>
+        </div>
     </div>
 </section>
 
@@ -606,22 +596,23 @@
 
 <!-- ===== PARCOURS ===== -->
 <!-- ===== POINTS CLÉS ===== -->
-<section class="hv-ledger" aria-label="Points clés">
+<section class="accueil-reperes" aria-label="Points clés">
     <div class="container">
-        <ul class="hv-ledger-bar hv-bezel" role="list">
-            <li><span class="hv-tick" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p class="usp-title">Secteur 2 conventionné</p><p class="usp-text">Sécurité sociale + mutuelle</p></li>
-            <li><span class="hv-tick" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p class="usp-title">OCT sur place</p><p class="usp-text">Diagnostic le jour même</p></li>
-            <li><span class="hv-tick" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p class="usp-title">Injections (IVT) en salle dédiée</p><p class="usp-text">Sans délai si indiquée</p></li>
-            <li><span class="hv-tick" aria-hidden="true"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><p class="usp-title">Clinique Jouvenet</p><p class="usp-text">Chirurgies à Paris 16</p></li>
+        <ul class="accueil-reperes-liste" role="list">
+            <li><p class="usp-title">Secteur 2 conventionné</p><p class="usp-text">Sécurité sociale + mutuelle</p></li>
+            <li><p class="usp-title">OCT sur place</p><p class="usp-text">Diagnostic le jour même</p></li>
+            <li><p class="usp-title">Injections (IVT) en salle dédiée</p><p class="usp-text">Sans délai si indiquée</p></li>
+            <li><p class="usp-title">Clinique Jouvenet</p><p class="usp-text">Chirurgies à Paris 16</p></li>
         </ul>
     </div>
 </section>
 
-<section id="parcours" class="hv-section">
+<section id="parcours" class="accueil-section">
     <div class="container">
-        <div class="hv-head">
-            <div><span class="hv-eyebrow">Parcours</span><h2>Formation &amp; expérience</h2></div>
-            <p>Un parcours hospitalier parisien, de l’internat au CHNO des Quinze-Vingts.</p>
+        <div class="accueil-tete">
+            <p class="accueil-surtitre">Parcours</p>
+            <h2>Formation &amp; expérience</h2>
+            <p class="accueil-chapo">Un parcours hospitalier parisien, de l’internat au CHNO des Quinze-Vingts.</p>
         </div>
         <div class="parcours-v11">
 
@@ -656,12 +647,7 @@
 
             <!-- Repères : une seule carte, fonctions puis diplômes (dates confirmées le 20/08/2026 : internat 2017-2022, assistanat 2022-2024, PC depuis 2024) -->
             <aside class="parcours-card parcours-reperes" aria-labelledby="parcours-reperes-title">
-                <div class="parcours-card-header">
-                    <span class="parcours-card-icon" aria-hidden="true">
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m-11 0h14a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1Z"/></svg>
-                    </span>
-                    <h3 id="parcours-reperes-title">Postes &amp; diplômes</h3>
-                </div>
+                <h3 id="parcours-reperes-title">Postes &amp; diplômes</h3>
                 <h4 class="pr-group">Fonctions hospitalières et libérales</h4>
                 <ul class="parcours-list" role="list">
                     <li>
@@ -709,11 +695,12 @@
 
 <!-- Section Publications retiree de la home (2026-04-20) — acces via /publications dans la nav -->
 <!-- ===== CONTACT (lot contact v12, 20/08/2026) ===== -->
-<section id="contact" class="hv-section">
+<section id="contact" class="accueil-section">
     <div class="container">
-        <div class="hv-head hv-head--dark">
-            <div><span class="hv-eyebrow">Le cabinet</span><h2>Informations pratiques</h2></div>
-            <p>Cabinet Ophtalife — Boulogne-Billancourt</p>
+        <div class="accueil-tete accueil-tete--sombre">
+            <p class="accueil-surtitre">Le cabinet</p>
+            <h2>Informations pratiques</h2>
+            <p class="accueil-chapo">Cabinet Ophtalife — Boulogne-Billancourt</p>
         </div>
         <div class="contact-v12">
             <div class="contact-card-v12">
@@ -761,7 +748,7 @@
                     </div>
                 </dl>
                 <div class="cv12-action">
-                    <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false" target="_blank" rel="noopener" class="btn-doctolib hv-btn hv-btn--rdv"><span class="hv-btn-label">Prendre rendez-vous<span class="cv12-btn-more">&nbsp;sur Doctolib</span></span><span class="hv-btn-ico" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M7 17 17 7M9 7h8v8"/></svg></span><span class="sr-only"> (nouvelle fenêtre)</span></a>
+                    <a href="https://www.doctolib.fr/ophtalmologue/boulogne-billancourt/alexandre-majoulet-paris/booking?pid=practice-649140&amp;source=profile&amp;speciality_ids%5B%5D=4&amp;telehealth=false" target="_blank" rel="noopener" class="btn-doctolib">Prendre rendez-vous<span class="cv12-btn-more">&nbsp;sur Doctolib</span><span class="sr-only"> (nouvelle fenêtre)</span></a>
                     <p class="cv12-action-note">En ligne ou par téléphone · <a href="/urgences-ophtalmologiques">Urgence rétinienne&nbsp;: conduite à tenir</a></p>
                 </div>
             </div>
@@ -790,12 +777,12 @@
 <footer class="site-footer" role="contentinfo">
     <div class="container">
         <p>&copy; 2026 Dr&nbsp;Alexandre Majoulet, chirurgien ophtalmologue – rétinologue &middot; <a href="https://www.ophtalife.fr" target="_blank" rel="noopener">Cabinet Ophtalife<span class="sr-only"> (nouvelle fenêtre)</span></a> &middot; 37 rue d’Aguesseau, 92100 Boulogne-Billancourt</p>
-        <p class="footer-links"><a href="/ophtalmologue-boulogne-billancourt">Ophtalmologue à Boulogne-Billancourt</a> &middot; <a href="/pathologies">Toutes les pathologies</a> &middot; <a href="/urgences-ophtalmologiques">Urgences ophtalmologiques</a> &middot; <a href="/publications">Publications</a> &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/en" hreflang="en" lang="en">In English</a> &middot; <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></p>
+        <p class="footer-links"><a href="/ophtalmologue-boulogne-billancourt">Ophtalmologue à Boulogne-Billancourt</a> &middot; <a href="/pathologies">Toutes les pathologies</a> &middot; <a href="/urgences-ophtalmologiques">Urgences ophtalmologiques</a> &middot; <a href="/publications">Publications</a> &middot; <a href="/mentions-legales">Mentions légales</a> &middot; <a href="/confidentialite">Confidentialité</a> &middot; <a href="/en" hreflang="en" lang="en">In English</a><span data-tel-cabinet> &middot; <a href="tel:+33184191166">01&nbsp;84&nbsp;19&nbsp;11&nbsp;66</a></span></p>
         <p class="footer-meta">Dernière mise à jour&nbsp;: <time datetime="2026-10-29">29 octobre 2026</time></p>
     </div>
 </footer>
 
-<script src="/nav.js?v=20261121a" defer></script>
+<script src="/nav.js?v=20261121c" defer></script>
 
 
 </body>

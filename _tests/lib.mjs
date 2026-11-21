@@ -44,3 +44,15 @@ export async function startServer(port) {
   });
   return () => { try { proc.kill(); } catch {} };
 }
+
+/** TECH69AP-2026-11-21 : fige l'heure que nav.js lit pour savoir si le cabinet est ouvert (heure de Paris), sans toucher à
+ *  Date ni aux minuteries : seule la mise en forme « Europe/Paris » reçoit la date imposée. Les scénarios qui attendent le
+ *  bouton d'appel ne dépendent plus de l'heure à laquelle les tests tournent (le soir, le dimanche, un jour férié). */
+export async function figerHeureCabinet(context, date) {
+  await context.addInitScript(t => {
+    const formater = Intl.DateTimeFormat.prototype.formatToParts;
+    Intl.DateTimeFormat.prototype.formatToParts = function (d) {
+      return formater.call(this, this.resolvedOptions().timeZone === 'Europe/Paris' ? new Date(t) : d);
+    };
+  }, new Date(date).getTime());
+}

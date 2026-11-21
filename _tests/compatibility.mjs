@@ -7,7 +7,7 @@ import { createServer } from 'node:https';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { firefox, webkit } from 'playwright';
-import { startServer, TESTS_DIR } from './lib.mjs';
+import { startServer, TESTS_DIR, figerHeureCabinet } from './lib.mjs';
 
 const reportDir = join(TESTS_DIR, 'reports');
 const results = [];
@@ -41,6 +41,7 @@ try {
       for (const width of [375, 1366]) {
         const context = await browser.newContext({ viewport: { width, height: 900 },
           ignoreHTTPSErrors: true, reducedMotion: 'reduce', locale: 'fr-FR' });
+        await figerHeureCabinet(context, '2026-10-29T10:30:00+01:00');   // TECH69AP : jeudi, cabinet ouvert
         context.setDefaultTimeout(10000);
         context.setDefaultNavigationTimeout(15000);
         await context.route(/^https?:\/\/(?!127\.0\.0\.1)/, route => {
